@@ -1,0 +1,17 @@
+/* darkmode.css */
+body.dark-mode {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+button.dark-mode {
+    background-color: #333333;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+button.dark-mode:hover {
+    background-color: #555555;
+}

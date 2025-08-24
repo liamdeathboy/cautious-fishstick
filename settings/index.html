@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #222;
+            color: #fff;
+            text-align: center;
+            padding: 50px;
+        }
+
+        h1 {
+            color: white;
+            margin-bottom: 20px;
+        }
+
+        button {
+            padding: 15px 20px;
+            font-size: 18px;
+            background-color: #444;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 8px;
+            transition: background-color 0.3s;
+            width: 200px;
+        }
+
+        button:hover {
+            background-color: #555;
+        }
+
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+
+        .modal-content {
+            margin: 15% auto;
+            padding: 20px;
+            border: 1px solid #888;
+            width: 80%;
+            background-color: rgba(54, 54, 54, 0.9);
+        }
+
+        .close {
+            color: white;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        #faviconSelection img {
+            width: 100px;
+            height: 100px;
+            display: inline-block;
+            margin: 10px;
+            cursor: pointer;
+            transition: border 0.3s;
+        }
+
+        #faviconSelection img:hover {
+            border: 2px solid #555;
+        }
+
+        #autoClickerModal input {
+            width: 50px;
+            text-align: center;
+        }
+    </style>
+</head>
+    <h1>Settings</h1>
+
+<center><a href="/"><button>Go Back</button></a></center>
+<br></br>
+<body>
+    <button id="openFaviconUI">Change Favicon</button>
+    <button id="setKeybindButton">Panic Keybind</button>
+    <button id="openAutoClickerModalButton">Auto Clicker</button>
+
+    <div id="faviconModal" class="modal">
+        <div class="modal-content">
+            <span id="closeFaviconModal" class="close">&times;</span>
+            <h2>Select Favicon</h2>
+            <div id="faviconSelection">
+                <img src="/images/favicon.png" class="favicon-option" data-favicon="/images/favicon.png" data-title="Grades & Attendance">
+                <img src="https://ssl.gstatic.com/classroom/ic_product_classroom_144.png" class="favicon-option" data-favicon="https://ssl.gstatic.com/classroom/favicon.png" data-title="Home">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOKSBV-WuzkwkPLTB5AQwpOCyTOs25hXkkVA&s" class="favicon-option" data-favicon="https://www.google.com/favicon.ico" data-title="Google">
+                <img src="/favicon/googledocs.png" class="favicon-option" data-favicon="/favicon/googledocs.png" data-title="Google Docs">
+            </div>
+        </div>
+    </div>
+
+    <div id="keybindModal" class="modal">
+        <div class="modal-content">
+            <span id="closeKeybindModal" class="close">&times;</span>
+            <h2>Set Panic Keybind</h2>
+            <label for="keybind">Keybind:</label>
+            <input type="text" id="keybind" maxlength="1">
+            <button id="saveKeybind">Save Keybind</button>
+        </div>
+    </div>
+
+    <!-- Auto Clicker Modal -->
+    <div id="autoClickerModal" class="modal">
+        <div class="modal-content">
+            <span id="closeAutoClickerModal" class="close">&times;</span>
+            <h2>Auto Clicker Settings</h2>
+            <label for="autoKeybind">Keybind to Start/Stop Auto Clicker:</label>
+            <input type="text" id="autoKeybind" maxlength="1" value="a">
+            <br><br>
+
+            <label for="autoClickSpeed">Click Speed (ms):</label>
+            <input type="number" id="autoClickSpeed" value="1000" min="1">
+            <br><br>
+
+            <button id="saveAutoClickerSettings">Save Settings</button>
+            <p id="autoClickerStatusMessage" style="color: green;"></p>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const faviconModal = document.getElementById('faviconModal');
+            const keybindModal = document.getElementById('keybindModal');
+            const autoClickerModal = document.getElementById('autoClickerModal');
+            const openFaviconButton = document.getElementById('openFaviconUI');
+            const setKeybindButton = document.getElementById('setKeybindButton');
+            const openAutoClickerModalButton = document.getElementById('openAutoClickerModalButton');
+            const closeFaviconModal = document.getElementById('closeFaviconModal');
+            const closeKeybindModal = document.getElementById('closeKeybindModal');
+            const closeAutoClickerModal = document.getElementById('closeAutoClickerModal');
+            const faviconImages = document.querySelectorAll('#faviconSelection img');
+            const keybindInput = document.getElementById('keybind');
+            const saveKeybindButton = document.getElementById('saveKeybind');
+            const autoKeybindInput = document.getElementById('autoKeybind');
+            const autoClickSpeedInput = document.getElementById('autoClickSpeed');
+            const saveAutoClickerSettingsButton = document.getElementById('saveAutoClickerSettings');
+            const autoClickerStatusMessage = document.getElementById('autoClickerStatusMessage');
+
+            let panicKeybind = localStorage.getItem('panicKeybind') || '\\';
+            let autoClickerKeybind = localStorage.getItem('autoClickerKeybind') || 'a';
+            let autoClickerSpeed = localStorage.getItem('autoClickerSpeed') || 1000;
+
+            // Load saved settings
+            const selectedFavicon = localStorage.getItem('selectedFavicon') || '';
+            const selectedTitle = localStorage.getItem('selectedTitle') || '';
+
+            // Set favicon and title on load
+            if (selectedFavicon) {
+                const link = document.querySelector("link[rel*='icon']") || document.createElement('link');
+                link.rel = 'icon';
+                link.href = selectedFavicon;
+                document.head.appendChild(link);
+                document.title = selectedTitle || document.title;
+            }
+
+            // Open Modals
+            openFaviconButton.addEventListener('click', () => {
+                faviconModal.style.display = 'block';
+            });
+
+            setKeybindButton.addEventListener('click', () => {
+                keybindInput.value = panicKeybind;
+                keybindModal.style.display = 'block';
+            });
+
+            openAutoClickerModalButton.addEventListener('click', () => {
+                autoKeybindInput.value = autoClickerKeybind;
+                autoClickSpeedInput.value = autoClickerSpeed;
+                autoClickerModal.style.display = 'block';
+            });
+
+            // Close Modals
+            closeFaviconModal.addEventListener('click', () => {
+                faviconModal.style.display = 'none';
+            });
+
+            closeKeybindModal.addEventListener('click', () => {
+                keybindModal.style.display = 'none';
+            });
+
+            closeAutoClickerModal.addEventListener('click', () => {
+                autoClickerModal.style.display = 'none';
+            });
+
+            // Handle Favicon Selection
+            faviconImages.forEach(img => {
+                img.addEventListener('click', () => {
+                    const selectedFavicon = img.dataset.favicon;
+                    const selectedTitle = img.dataset.title;
+
+                    localStorage.setItem('selectedFavicon', selectedFavicon);
+                    localStorage.setItem('selectedTitle', selectedTitle);
+
+                    const link = document.querySelector("link[rel*='icon']") || document.createElement('link');
+                    link.rel = 'icon';
+                    link.href = selectedFavicon;
+                    document.head.appendChild(link);
+                    document.title = selectedTitle;
+
+                    alert(`Favicon changed to: ${selectedTitle}`);
+                    faviconModal.style.display = 'none';
+                });
+            });
+
+            // Save Panic Keybind
+            saveKeybindButton.addEventListener('click', () => {
+                const keybind = keybindInput.value.trim();
+                if (keybind.length === 1) {
+                    panicKeybind = keybind;
+                    localStorage.setItem('panicKeybind', panicKeybind);
+                    alert(`Panic Keybind set to: ${panicKeybind}`);
+                    keybindModal.style.display = 'none';
+                } else {
+                    alert('Please enter a single character.');
+                }
+            });
+
+            // Save Auto Clicker Settings
+            saveAutoClickerSettingsButton.addEventListener('click', () => {
+                const keybind = autoKeybindInput.value.trim();
+                const clickSpeed = parseInt(autoClickSpeedInput.value, 10);
+
+                if (keybind.length === 1 && clickSpeed > 0) {
+                    autoClickerKeybind = keybind;
+                    autoClickerSpeed = clickSpeed;
+
+                    localStorage.setItem('autoClickerKeybind', autoClickerKeybind);
+                    localStorage.setItem('autoClickerSpeed', autoClickerSpeed);
+
+                    alert(`Auto Clicker Keybind set to: ${autoClickerKeybind}\nClick Speed set to: ${autoClickerSpeed}ms`);
+                    autoClickerStatusMessage.textContent = 'Auto Clicker settings saved.';
+                    autoClickerModal.style.display = 'none';
+                } else {
+                    alert('Please enter valid settings for Auto Clicker.');
+                }
+            });
+
+            // Auto-clicker function
+            let autoClickerInterval;
+            document.addEventListener('keydown', (event) => {
+                if (event.key === autoClickerKeybind) {
+                    if (autoClickerInterval) {
+                        clearInterval(autoClickerInterval);
+                        autoClickerInterval = null;
+                    } else {
+                        autoClickerInterval = setInterval(() => {
+                            document.querySelector('button').click();
+                        }, autoClickerSpeed);
+                    }
+                }
+            });
+        });
+    </script>
+</body>
+</html>

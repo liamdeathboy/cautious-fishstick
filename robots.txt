@@ -1,0 +1,20 @@
+# Block all web crawlers from the following directories and files
+User-agent: *
+
+# Directories
+Disallow: /admin/
+Disallow: /login/
+Disallow: /register/
+Disallow: /user/
+
+# Files
+Disallow: /private.html
+Disallow: /secret.html
+
+# Block specific file types
+Disallow: /*.pdf$
+Disallow: /*.doc$
+Disallow: /*.zip$
+
+# Allow all other content
+Allow: /
