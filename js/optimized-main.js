@@ -1,5 +1,5 @@
 /**
- * Optimized Main JavaScript for Unblocked Games 621
+ * Optimized Main JavaScript for Schplay
  * Handles game management, search, time tracking, and UI interactions
  */
 
@@ -351,7 +351,7 @@ class UnblockedGamesApp {
       this.updateFooterYear();
       
       this.isInitialized = true;
-      console.log('Unblocked Games 621 initialized successfully');
+      console.log('Schplay initialized successfully');
     } catch (error) {
       console.error('Error initializing application:', error);
     }
