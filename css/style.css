@@ -1,56 +1,160 @@
+/* Coolmathgames Neon Cyberpunk Theme - Main Styles */
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&display=swap');
+
+/* CSS Variables for consistent theming */
+:root {
+  --bg-primary: #000000;
+  --bg-secondary: #050505;
+  --bg-deep: #020202;
+  --bg-void: #000000;
+  --text-primary: #FFFFFF;
+  --text-secondary: #CCCCCC;
+  --neon-green: #00FF66;
+  --neon-cyan: #33CCFF;
+  --neon-pink: #FF3366;
+  --neon-orange: #FFCC00;
+  --button-default: #00CC66;
+  --button-hover: #00FF66;
+  --button-active: #00994D;
+  --glow-green: rgba(0, 255, 102, 0.5);
+  --glow-cyan: rgba(51, 204, 255, 0.6);
+  --glow-pink: rgba(255, 51, 102, 0.6);
+  --glow-orange: rgba(255, 204, 0, 0.6);
+  --subtle-green: rgba(0, 255, 102, 0.3);
+  --subtle-cyan: rgba(51, 204, 255, 0.4);
+  --deep-shadow: rgba(0, 0, 0, 0.9);
+  --void-shadow: rgba(0, 0, 0, 0.95);
+}
+
+/* Reset and base styles */
+* {
+  box-sizing: border-box;
+}
+
 /* Link Styles */
 a:link, a:visited, a:hover, a:active {
-  color: white;
+  color: var(--neon-green);
   background-color: transparent;
   text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+a:hover {
+  color: var(--neon-cyan);
+  text-shadow: 0 0 10px var(--glow-cyan);
 }
 
 /* Body and Headings */
 body {
-  font-family: Arial, sans-serif;
-  background-color: #219ebc; /* Dark gray background color */
-  color: #fdf0d5; /* White text color */
+  font-family: 'Orbitron', sans-serif;
+  background: var(--bg-void);
+  color: var(--text-primary);
   margin: 0;
   padding: 0;
   overflow-x: hidden;
+  line-height: 1.6;
 }
 
-h1, h2 {
+/* Animated background pattern */
+body:before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.05;
+  z-index: -1;
+  background-image: 
+    radial-gradient(circle at 20% 80%, var(--neon-green) 0%, transparent 60%),
+    radial-gradient(circle at 80% 20%, var(--neon-cyan) 0%, transparent 60%),
+    radial-gradient(circle at 40% 40%, var(--neon-pink) 0%, transparent 60%);
+  animation: backgroundShift 25s ease-in-out infinite alternate;
+}
+
+@keyframes backgroundShift {
+  0% { transform: scale(1) rotate(0deg); }
+  100% { transform: scale(1.1) rotate(1deg); }
+}
+
+h1, h2, h3, h4, h5, h6 {
   text-align: center;
-  color: #fdf0d5;
+  color: var(--neon-green);
+  text-shadow: 0 0 15px var(--glow-green);
+  font-weight: 700;
 }
 
 /* Search Container */
 .search-container {
   text-align: center;
   margin-bottom: 20px;
+  background: var(--bg-secondary);
+  border-radius: 20px;
+  padding: 20px;
+  box-shadow: 0 0 30px var(--glow-green);
+  border: 2px solid var(--neon-green);
+  position: relative;
+  overflow: hidden;
+}
+
+.search-container:before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: linear-gradient(45deg, transparent, rgba(0, 255, 102, 0.1), transparent);
+  animation: searchGlow 3s linear infinite;
+}
+
+@keyframes searchGlow {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
 }
 
 #searchInput {
   width: 100%;
-  padding: 10px;
-  border: none;
-  border-radius: 5px;
-  color: white; /* Set text color to white */
+  padding: 15px 25px;
+  border: 2px solid var(--neon-green);
+  border-radius: 15px;
+  background: var(--bg-primary);
+  color: var(--text-primary);
   font-size: 16px;
   width: 300px;
   outline: none;
+  transition: all 0.3s ease;
+  font-family: 'Orbitron', sans-serif;
+  font-weight: 600;
+  position: relative;
+  z-index: 1;
+}
+
+#searchInput:focus {
+  border-color: var(--neon-cyan);
+  box-shadow: 0 0 25px var(--glow-cyan);
+  transform: scale(1.02);
+}
+
+#searchInput::placeholder {
+  color: var(--text-secondary);
+  opacity: 0.7;
 }
 
 /* Button Container */
 .button-container {
   display: flex;
-  flex-wrap: wrap; /* Allow buttons to wrap to the next line */
+  flex-wrap: wrap;
   justify-content: center;
   text-decoration: none;
+  gap: 20px;
+  padding: 20px;
 }
 
 .button-wrapper {
-  position: relative; /* Make the wrapper a positioned element */
-  display: inline-block; /* Allow the ribbon to position relative to the button */
+  position: relative;
+  display: inline-block;
 }
-
-
 
 .button {
   display: flex;
@@ -58,55 +162,163 @@ h1, h2 {
   align-items: center;
   justify-content: center;
   margin: 10px;
-  padding: 15px 20px; /* Enlarge the padding */
-  background-color: #444; /* Darker gray button color */
-  color: white;
+  padding: 20px 25px;
+  background: var(--button-default);
+  color: var(--bg-primary);
   text-align: center;
   text-decoration: none;
-  border: none;
-  border-radius: 5px;
+  border: 3px solid var(--neon-green);
+  border-radius: 20px;
   cursor: pointer;
-  transition: background-color 0.3s;
-  max-width: 200px;
-  width: 100%; /* Make button width 100% */
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  max-width: 220px;
+  width: 100%;
+  box-shadow: 0 0 25px var(--glow-green);
+  font-weight: 700;
+  font-size: 14px;
+  position: relative;
+  overflow: hidden;
+}
+
+.button:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+  transition: left 0.7s;
 }
 
 .button:hover {
-  background-color: #333; /* Even darker gray on hover */
+  background: var(--button-hover);
+  border-color: var(--neon-cyan);
+  transform: translateY(-5px) scale(1.05);
+  box-shadow: 0 0 40px var(--glow-green), 0 0 60px var(--glow-cyan);
+  color: var(--bg-primary);
   text-decoration: none;
 }
 
+.button:hover:before {
+  left: 100%;
+}
+
+.button:active {
+  background: var(--button-active);
+  transform: translateY(-2px) scale(1.02);
+}
+
 .button img {
-  width: 150px;
-  height: 150px;
-  margin-bottom: 10px;
+  width: 160px;
+  height: 160px;
+  margin-bottom: 15px;
+  border-radius: 15px;
+  transition: all 0.4s ease;
+  border: 2px solid transparent;
+}
+
+.button:hover img {
+  transform: scale(1.1) rotate(2deg);
+  border-color: var(--neon-cyan);
+  box-shadow: 0 0 20px var(--glow-cyan);
 }
 
 /* Button Container 1 */
 .button-container1 {
   display: flex;
-  justify-content: center; /* Distribute the buttons evenly along the container */
-  margin-top: 20px; /* Add margin to separate from other elements */
+  justify-content: center;
+  margin-top: 30px;
+  gap: 20px;
+  flex-wrap: wrap;
 }
 
-/* Favicon Modal Styles (Dark Gray Theme) */
+/* Favicon Modal Styles */
 #faviconSelection img {
-  width: 128px;    /* Set the width to 128px */
-  height: auto;    /* Maintain aspect ratio */
-  display: inline-block; /* Optional: make them line up horizontally */
+  width: 128px;
+  height: auto;
+  display: inline-block;
+  border-radius: 15px;
+  transition: all 0.4s ease;
+  border: 2px solid transparent;
+  margin: 10px;
+}
+
+#faviconSelection img:hover {
+  transform: scale(1.15);
+  border-color: var(--neon-green);
+  box-shadow: 0 0 25px var(--glow-green);
 }
 
 /* Ribbon Styles */
 .ribbon {
   position: absolute;
-  top: -10px; /* Adjust as needed */
-  left: -10px; /* Adjust as needed */
-  background-color: red;
-  color: white;
-  padding: 5px 10px;
+  top: -15px;
+  left: -15px;
+  background: linear-gradient(135deg, var(--neon-pink) 0%, var(--neon-orange) 100%);
+  color: var(--bg-primary);
+  padding: 10px 15px;
   font-size: 12px;
   text-align: center;
-  border-radius: 5px; /* Rounded corners */
-  transform: rotate(-15deg); /* Angle the ribbon */
-  z-index: 1; /* Ensure it appears above the button */
+  border-radius: 10px;
+  transform: rotate(-15deg);
+  z-index: 2;
+  box-shadow: 0 0 20px var(--glow-pink);
+  font-weight: 700;
+  border: 2px solid var(--neon-orange);
+}
+
+/* Enhanced animations */
+@keyframes neonPulse {
+  0%, 100% { 
+    box-shadow: 0 0 20px var(--glow-green);
+  }
+  50% { 
+    box-shadow: 0 0 40px var(--glow-green), 0 0 60px var(--glow-green);
+  }
+}
+
+@keyframes neonFloat {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .button-container {
+    gap: 15px;
+    padding: 15px;
+  }
+  
+  .button {
+    max-width: 180px;
+    padding: 15px 20px;
+  }
+  
+  .button img {
+    width: 120px;
+    height: 120px;
+  }
+  
+  #searchInput {
+    width: 250px;
+    padding: 12px 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .button-container {
+    gap: 10px;
+    padding: 10px;
+  }
+  
+  .button {
+    max-width: 150px;
+    padding: 12px 15px;
+  }
+  
+  .button img {
+    width: 100px;
+    height: 100px;
+  }
 }
