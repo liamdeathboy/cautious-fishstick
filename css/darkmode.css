@@ -1,17 +1,246 @@
-/* darkmode.css */
-body.dark-mode {
-    background-color: #121212;
-    color: #ffffff;
+/* Dark Mode Styles - Coolmathgames Neon Cyberpunk Theme */
+
+/* CSS Variables */
+:root {
+  --bg-primary: #000000;
+  --bg-secondary: #050505;
+  --bg-deep: #020202;
+  --bg-void: #000000;
+  --bg-dark: #000000;
+  --text-primary: #FFFFFF;
+  --text-secondary: #CCCCCC;
+  --neon-green: #00FF66;
+  --neon-cyan: #33CCFF;
+  --neon-pink: #FF3366;
+  --neon-orange: #FFCC00;
+  --button-default: #00CC66;
+  --button-hover: #00FF66;
+  --button-active: #00994D;
+  --glow-green: rgba(0, 255, 102, 0.5);
+  --glow-cyan: rgba(51, 204, 255, 0.6);
+  --glow-pink: rgba(255, 51, 102, 0.6);
+  --glow-orange: rgba(255, 204, 0, 0.6);
+  --subtle-green: rgba(0, 255, 102, 0.3);
+  --subtle-cyan: rgba(51, 204, 255, 0.4);
+  --deep-shadow: rgba(0, 0, 0, 0.9);
+  --void-shadow: rgba(0, 0, 0, 0.95);
 }
 
+/* Dark mode base styles */
+body.dark-mode {
+    background: var(--bg-dark);
+    color: var(--text-primary);
+}
+
+/* Enhanced dark mode with neon accents */
+body.dark-mode:before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.08;
+    z-index: -1;
+    background-image: 
+        radial-gradient(circle at 20% 80%, var(--neon-green) 0%, transparent 50%),
+        radial-gradient(circle at 80% 20%, var(--neon-cyan) 0%, transparent 50%),
+        radial-gradient(circle at 40% 40%, var(--neon-pink) 0%, transparent 50%),
+        radial-gradient(circle at 60% 60%, var(--neon-orange) 0%, transparent 50%);
+    animation: darkBackgroundShift 25s ease-in-out infinite alternate;
+}
+
+@keyframes darkBackgroundShift {
+    0% { 
+        transform: scale(1) rotate(0deg);
+        opacity: 0.08;
+    }
+    100% { 
+        transform: scale(1.3) rotate(3deg);
+        opacity: 0.12;
+    }
+}
+
+/* Dark mode button styles */
 button.dark-mode {
-    background-color: #333333;
-    color: #ffffff;
-    border: none;
-    padding: 10px 20px;
+    background: var(--button-default);
+    color: var(--bg-primary);
+    border: 3px solid var(--neon-green);
+    padding: 15px 30px;
     cursor: pointer;
+    border-radius: 15px;
+    transition: all 0.4s ease;
+    box-shadow: 0 0 25px var(--glow-green);
+    font-weight: 700;
+    font-family: 'Orbitron', sans-serif;
+    position: relative;
+    overflow: hidden;
+}
+
+button.dark-mode:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+    transition: left 0.7s;
 }
 
 button.dark-mode:hover {
-    background-color: #555555;
+    background: var(--button-hover);
+    border-color: var(--neon-cyan);
+    transform: translateY(-3px);
+    box-shadow: 0 0 40px var(--glow-green), 0 0 60px var(--glow-cyan);
+    color: var(--bg-primary);
+}
+
+button.dark-mode:hover:before {
+    left: 100%;
+}
+
+button.dark-mode:active {
+    background: var(--button-active);
+    transform: translateY(-1px);
+    box-shadow: 0 0 20px var(--glow-green);
+}
+
+/* Dark mode specific component styles */
+.dark-mode .site-header {
+    background: var(--bg-dark);
+    border-bottom: 3px solid var(--neon-green);
+    box-shadow: 0 0 30px var(--glow-green);
+}
+
+.dark-mode .container {
+    background: var(--bg-dark);
+    border: 3px solid var(--neon-green);
+    color: var(--text-primary);
+    box-shadow: 0 0 40px var(--glow-green);
+}
+
+.dark-mode .game-card {
+    background: var(--button-default);
+    border: 3px solid var(--neon-green);
+    box-shadow: 0 0 30px var(--glow-green);
+}
+
+.dark-mode .game-card:hover {
+    background: var(--button-hover);
+    border-color: var(--neon-cyan);
+    box-shadow: 0 0 50px var(--glow-green), 0 0 70px var(--glow-cyan);
+}
+
+.dark-mode .sidebar {
+    background: var(--button-default) !important;
+    border: 3px solid var(--neon-green) !important;
+    box-shadow: 0 0 30px var(--glow-green) !important;
+}
+
+.dark-mode .sidebar:hover {
+    background: var(--button-hover) !important;
+    border-color: var(--neon-cyan) !important;
+    box-shadow: 0 0 40px var(--glow-green), 0 0 60px var(--glow-cyan) !important;
+}
+
+/* Dark mode search container */
+.dark-mode .search-container {
+    background: var(--bg-dark);
+    border: 3px solid var(--neon-green);
+    box-shadow: 0 0 35px var(--glow-green);
+}
+
+.dark-mode .search-container input {
+    background: var(--bg-dark);
+    color: var(--text-primary);
+    border: 2px solid var(--neon-green);
+}
+
+.dark-mode .search-container input:focus {
+    border-color: var(--neon-cyan);
+    box-shadow: 0 0 30px var(--glow-cyan);
+}
+
+/* Dark mode announcement bar */
+.dark-mode .announcement-bar {
+    background: var(--button-default);
+    border-bottom: 3px solid var(--neon-green);
+    box-shadow: 0 0 30px var(--glow-green);
+}
+
+/* Dark mode footer */
+.dark-mode .site-footer {
+    background: var(--bg-dark);
+    border-top: 3px solid var(--neon-green);
+    box-shadow: 0 0 30px var(--glow-green);
+}
+
+/* Dark mode text enhancements */
+.dark-mode h1, .dark-mode h2, .dark-mode h3 {
+    color: var(--neon-green);
+    text-shadow: 0 0 20px var(--glow-green);
+}
+
+.dark-mode .site-title {
+    color: var(--neon-green) !important;
+    text-shadow: 0 0 15px var(--glow-green);
+}
+
+.dark-mode .games-section-title {
+    color: var(--neon-green) !important;
+    text-shadow: 0 0 20px var(--glow-green);
+}
+
+/* Dark mode button container */
+.dark-mode .button-container1 .button {
+    background: var(--button-default);
+    border: 3px solid var(--neon-green);
+    color: var(--bg-primary);
+    box-shadow: 0 0 25px var(--glow-green);
+}
+
+.dark-mode .button-container1 .button:hover {
+    background: var(--button-hover);
+    border-color: var(--neon-cyan);
+    box-shadow: 0 0 40px var(--glow-green), 0 0 60px var(--glow-cyan);
+}
+
+/* Dark mode social icons */
+.dark-mode .social-icon {
+    background: var(--button-default);
+    border: 2px solid var(--neon-green);
+}
+
+.dark-mode .social-icon:hover {
+    background: var(--button-hover);
+    border-color: var(--neon-cyan);
+    box-shadow: 0 0 25px var(--glow-green);
+}
+
+/* Dark mode animations */
+@keyframes darkNeonPulse {
+    0%, 100% { 
+        box-shadow: 0 0 25px var(--glow-green);
+    }
+    50% { 
+        box-shadow: 0 0 50px var(--glow-green), 0 0 75px var(--glow-green);
+    }
+}
+
+.dark-mode .container:hover {
+    animation: darkNeonPulse 2s ease-in-out infinite;
+}
+
+/* Dark mode responsive adjustments */
+@media (max-width: 768px) {
+    .dark-mode .container {
+        margin: 10px;
+        padding: 15px;
+    }
+    
+    .dark-mode .button-container1 .button {
+        padding: 12px 20px;
+        font-size: 14px;
+    }
 }

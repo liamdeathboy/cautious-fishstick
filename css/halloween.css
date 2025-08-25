@@ -1,50 +1,191 @@
+/* Halloween Styles - Coolmathgames Neon Cyberpunk Theme with Spooky Vibes */
+
+/* CSS Variables */
+:root {
+  --bg-primary: #000000;
+  --bg-secondary: #050505;
+  --bg-deep: #020202;
+  --bg-void: #000000;
+  --bg-spooky: #000000;
+  --text-primary: #FFFFFF;
+  --text-secondary: #CCCCCC;
+  --neon-green: #00FF66;
+  --neon-cyan: #33CCFF;
+  --neon-pink: #FF3366;
+  --neon-orange: #FFCC00;
+  --spooky-purple: #8B00FF;
+  --spooky-red: #FF0000;
+  --button-default: #00CC66;
+  --button-hover: #00FF66;
+  --button-active: #00994D;
+  --glow-green: rgba(0, 255, 102, 0.5);
+  --glow-cyan: rgba(51, 204, 255, 0.6);
+  --glow-pink: rgba(255, 51, 102, 0.6);
+  --glow-orange: rgba(255, 204, 0, 0.6);
+  --glow-purple: rgba(139, 0, 255, 0.6);
+  --glow-red: rgba(255, 0, 0, 0.6);
+  --subtle-green: rgba(0, 255, 102, 0.3);
+  --subtle-cyan: rgba(51, 204, 255, 0.4);
+  --deep-shadow: rgba(0, 0, 0, 0.9);
+  --void-shadow: rgba(0, 0, 0, 0.95);
+}
+
 /* Link Styles */
 a:link, a:visited, a:hover, a:active {
-  color: orange;
+  color: var(--neon-green);
   background-color: transparent;
   text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+a:hover {
+  color: var(--neon-cyan);
+  text-shadow: 0 0 15px var(--glow-cyan);
 }
 
 /* Body and Headings */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #111; /* Dark black background */
-    color: #ff7518; /* Halloween-themed orange color for text */
+    font-family: 'Orbitron', sans-serif;
+    background: var(--bg-spooky);
+    color: var(--text-primary);
     margin: 0;
     padding: 0;
     overflow-x: hidden;
-
-    /* Background image settings */
-    background-image: url('/images/halloween.png');
-    background-size: cover; /* Scale the image to cover the entire area */
-    background-position: center; /* Center the image */
-    background-repeat: no-repeat; /* Prevent the image from repeating */
-    /* Set a transparent background color */
-    background-blend-mode: multiply; /* Blends the background color with the image */
+    line-height: 1.6;
+    position: relative;
 }
 
+/* Spooky animated background */
+body:before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.15;
+    z-index: -1;
+    background-image: 
+        radial-gradient(circle at 20% 80%, var(--spooky-purple) 0%, transparent 50%),
+        radial-gradient(circle at 80% 20%, var(--spooky-red) 0%, transparent 50%),
+        radial-gradient(circle at 40% 40%, var(--neon-green) 0%, transparent 50%),
+        radial-gradient(circle at 60% 60%, var(--neon-orange) 0%, transparent 50%);
+    animation: spookyBackground 30s ease-in-out infinite alternate;
+}
 
-h1, h2 {
+@keyframes spookyBackground {
+    0% { 
+        transform: scale(1) rotate(0deg);
+        opacity: 0.15;
+    }
+    50% {
+        transform: scale(1.2) rotate(2deg);
+        opacity: 0.2;
+    }
+    100% { 
+        transform: scale(1.1) rotate(-1deg);
+        opacity: 0.15;
+    }
+}
+
+/* Halloween background image overlay */
+body:after {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('/images/halloween.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-blend-mode: multiply;
+    opacity: 0.1;
+    z-index: -1;
+    animation: spookyFloat 20s ease-in-out infinite;
+}
+
+@keyframes spookyFloat {
+    0%, 100% { transform: translateY(0px) scale(1); }
+    50% { transform: translateY(-10px) scale(1.05); }
+}
+
+h1, h2, h3, h4, h5, h6 {
   text-align: center;
-  color: #ff7518;
+  color: var(--neon-orange);
+  text-shadow: 0 0 20px var(--glow-orange), 0 0 40px var(--glow-orange);
+  font-weight: 700;
+  animation: spookyText 3s ease-in-out infinite alternate;
+}
+
+@keyframes spookyText {
+    0% { 
+        text-shadow: 0 0 20px var(--glow-orange), 0 0 40px var(--glow-orange);
+        transform: scale(1);
+    }
+    100% { 
+        text-shadow: 0 0 25px var(--glow-orange), 0 0 50px var(--glow-orange), 0 0 75px var(--glow-orange);
+        transform: scale(1.02);
+    }
 }
 
 /* Search Container */
 .search-container {
   text-align: center;
   margin-bottom: 20px;
+  background: var(--bg-spooky);
+  border-radius: 25px;
+  padding: 25px;
+  border: 3px solid var(--neon-orange);
+  box-shadow: 0 0 40px var(--glow-orange);
+  position: relative;
+  overflow: hidden;
+  backdrop-filter: blur(10px);
+}
+
+.search-container:before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: linear-gradient(45deg, transparent, rgba(255, 204, 0, 0.1), transparent);
+  animation: spookyGlow 4s linear infinite;
+}
+
+@keyframes spookyGlow {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
 }
 
 #searchInput {
   width: 100%;
-  padding: 10px;
-  border: none;
-  border-radius: 5px;
-  background-color: #333; /* Darker background */
-  color: #ff7518; /* Orange text color */
+  padding: 18px 30px;
+  border: 3px solid var(--neon-orange);
+  border-radius: 20px;
+  background: var(--bg-primary);
+  color: var(--text-primary);
   font-size: 16px;
   width: 300px;
   outline: none;
+  transition: all 0.4s ease;
+  font-family: 'Orbitron', sans-serif;
+  font-weight: 600;
+  position: relative;
+  z-index: 1;
+}
+
+#searchInput:focus {
+  border-color: var(--spooky-purple);
+  box-shadow: 0 0 35px var(--glow-purple);
+  transform: scale(1.03);
+}
+
+#searchInput::placeholder {
+  color: var(--text-secondary);
+  opacity: 0.8;
 }
 
 /* Button Container */
@@ -53,6 +194,8 @@ h1, h2 {
   flex-wrap: wrap;
   justify-content: center;
   text-decoration: none;
+  gap: 25px;
+  padding: 25px;
 }
 
 .button-wrapper {
@@ -65,36 +208,79 @@ h1, h2 {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin: 10px;
-  padding: 15px 20px;
-  background-color: #333; /* Darker gray button */
-  color: #ff7518;
+  margin: 15px;
+  padding: 25px 30px;
+  background: var(--button-default);
+  color: var(--bg-primary);
   text-align: center;
   text-decoration: none;
-  border: none;
-  border-radius: 5px;
+  border: 3px solid var(--neon-green);
+  border-radius: 25px;
   cursor: pointer;
-  transition: background-color 0.3s;
-  max-width: 200px;
+  transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  max-width: 240px;
   width: 100%;
+  box-shadow: 0 0 30px var(--glow-green);
+  font-weight: 700;
+  font-size: 15px;
+  position: relative;
+  overflow: hidden;
+}
+
+.button:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+  transition: left 0.8s;
 }
 
 .button:hover {
-  background-color: #444; /* Dark gray on hover */
+  background: var(--button-hover);
+  border-color: var(--spooky-purple);
+  transform: translateY(-8px) scale(1.08) rotate(2deg);
+  box-shadow: 0 0 50px var(--glow-green), 0 0 80px var(--glow-purple);
+  color: var(--bg-primary);
   text-decoration: none;
 }
 
+.button:hover:before {
+  left: 100%;
+}
+
+.button:active {
+  background: var(--button-active);
+  transform: translateY(-3px) scale(1.05);
+  box-shadow: 0 0 30px var(--glow-green);
+}
+
 .button img {
-  width: 150px;
-  height: 150px;
-  margin-bottom: 10px;
+  width: 170px;
+  height: 170px;
+  margin-bottom: 20px;
+  border-radius: 20px;
+  transition: all 0.5s ease;
+  border: 3px solid transparent;
+  filter: drop-shadow(0 0 10px var(--glow-green));
+}
+
+.button:hover img {
+  transform: scale(1.15) rotate(5deg);
+  border-color: var(--spooky-purple);
+  box-shadow: 0 0 30px var(--glow-purple);
+  filter: drop-shadow(0 0 20px var(--glow-purple));
 }
 
 /* Button Container 1 */
 .button-container1 {
   display: flex;
   justify-content: center;
-  margin-top: 20px;
+  margin-top: 35px;
+  gap: 25px;
+  flex-wrap: wrap;
 }
 
 /* Favicon Modal Styles */
@@ -102,20 +288,112 @@ h1, h2 {
   width: 128px;
   height: auto;
   display: inline-block;
+  border-radius: 20px;
+  transition: all 0.5s ease;
+  border: 3px solid transparent;
+  margin: 15px;
+  filter: drop-shadow(0 0 15px var(--glow-green));
+}
+
+#faviconSelection img:hover {
+  transform: scale(1.2) rotate(8deg);
+  border-color: var(--neon-orange);
+  box-shadow: 0 0 40px var(--glow-orange);
+  filter: drop-shadow(0 0 25px var(--glow-orange));
 }
 
 /* Ribbon Styles */
 .ribbon {
   position: absolute;
-  top: -10px;
-  left: -10px;
-  background-color: orange;
-  color: white;
-  padding: 5px 10px;
-  font-size: 12px;
+  top: -20px;
+  left: -20px;
+  background: linear-gradient(135deg, var(--spooky-red) 0%, var(--spooky-purple) 100%);
+  color: var(--bg-primary);
+  padding: 12px 18px;
+  font-size: 13px;
   text-align: center;
-  border-radius: 5px;
-  transform: rotate(-15deg);
-  z-index: 1;
+  border-radius: 15px;
+  transform: rotate(-20deg);
+  z-index: 2;
+  box-shadow: 0 0 25px var(--glow-red);
+  font-weight: 700;
+  border: 3px solid var(--neon-orange);
+  animation: spookyRibbon 2s ease-in-out infinite alternate;
+}
+
+@keyframes spookyRibbon {
+    0% { 
+        transform: rotate(-20deg) scale(1);
+        box-shadow: 0 0 25px var(--glow-red);
+    }
+    100% { 
+        transform: rotate(-18deg) scale(1.05);
+        box-shadow: 0 0 35px var(--glow-red), 0 0 50px var(--glow-purple);
+    }
+}
+
+/* Enhanced spooky animations */
+@keyframes spookyNeonPulse {
+  0%, 100% { 
+    box-shadow: 0 0 30px var(--glow-green);
+  }
+  50% { 
+    box-shadow: 0 0 60px var(--glow-green), 0 0 90px var(--glow-green);
+  }
+}
+
+@keyframes spookyFloat {
+  0%, 100% { transform: translateY(0px) rotate(0deg); }
+  50% { transform: translateY(-15px) rotate(1deg); }
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .button-container {
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  .button {
+    max-width: 200px;
+    padding: 20px 25px;
+  }
+  
+  .button img {
+    width: 140px;
+    height: 140px;
+  }
+  
+  #searchInput {
+    width: 250px;
+    padding: 15px 25px;
+  }
+  
+  .search-container {
+    padding: 20px;
+    margin: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .button-container {
+    gap: 15px;
+    padding: 15px;
+  }
+  
+  .button {
+    max-width: 180px;
+    padding: 18px 22px;
+  }
+  
+  .button img {
+    width: 120px;
+    height: 120px;
+  }
+  
+  .ribbon {
+    padding: 10px 15px;
+    font-size: 12px;
+  }
 }
 

@@ -1,3 +1,23 @@
+/* Footer Styles - Coolmathgames Neon Cyberpunk Theme */
+
+/* CSS Variables */
+:root {
+  --bg-primary: #000000;
+  --bg-secondary: #050505;
+  --bg-deep: #020202;
+  --bg-void: #000000;
+  --neon-green: #00FF66;
+  --neon-cyan: #33CCFF;
+  --neon-pink: #FF3366;
+  --neon-orange: #FFCC00;
+  --glow-green: rgba(0, 255, 102, 0.5);
+  --glow-cyan: rgba(51, 204, 255, 0.6);
+  --subtle-green: rgba(0, 255, 102, 0.3);
+  --subtle-cyan: rgba(51, 204, 255, 0.4);
+  --deep-shadow: rgba(0, 0, 0, 0.9);
+  --void-shadow: rgba(0, 0, 0, 0.95);
+}
+
 /* Dropdown Menu */
 .dropdown {
     position: relative;
@@ -8,13 +28,27 @@
     position: absolute;
     top: 100%;
     left: 0;
-    background-color: #81b29a; /* Match navbar color */
+    background: var(--bg-secondary);
     list-style: none;
-    padding: 10px 0;
-    border-radius: 4px;
-    min-width: 150px;
-    z-index: 1000; /* Ensure dropdown appears above other content */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 15px 0;
+    border-radius: 15px;
+    min-width: 180px;
+    z-index: 1000;
+    box-shadow: 0 0 30px var(--glow-green);
+    border: 2px solid var(--neon-green);
+    backdrop-filter: blur(10px);
+    animation: dropdownSlide 0.3s ease-out;
+}
+
+@keyframes dropdownSlide {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 .dropdown-menu li {
@@ -22,17 +56,86 @@
 }
 
 .dropdown-menu li a {
-    padding: 8px 16px;
+    padding: 12px 20px;
     display: block;
-    color: white; /* Match navbar text color */
+    color: var(--neon-green);
     text-decoration: none;
+    transition: all 0.3s ease;
+    border-left: 3px solid transparent;
+    margin: 5px 10px;
+    border-radius: 8px;
 }
 
 .dropdown-menu li a:hover {
-    background-color: #6a8d73; /* Darker pastel green on hover */
+    background: rgba(0, 255, 102, 0.1);
+    color: var(--neon-cyan);
+    transform: translateX(8px);
+    border-left-color: var(--neon-cyan);
+    text-shadow: 0 0 10px var(--glow-cyan);
+    box-shadow: 0 0 15px rgba(51, 204, 255, 0.3);
 }
 
 /* Show dropdown on hover */
 .dropdown:hover .dropdown-menu {
     display: block;
+}
+
+/* Enhanced dropdown animations */
+.dropdown-menu::before {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: 20px;
+    width: 0;
+    height: 0;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-bottom: 8px solid var(--neon-green);
+    animation: arrowGlow 2s ease-in-out infinite alternate;
+}
+
+@keyframes arrowGlow {
+    0% { 
+        border-bottom-color: var(--neon-green);
+        filter: drop-shadow(0 0 5px var(--glow-green));
+    }
+    100% { 
+        border-bottom-color: var(--neon-cyan);
+        filter: drop-shadow(0 0 15px var(--glow-cyan));
+    }
+}
+
+/* Dropdown item hover effects */
+.dropdown-menu li a::before {
+    content: '▶';
+    position: absolute;
+    left: 8px;
+    opacity: 0;
+    transition: all 0.3s ease;
+    color: var(--neon-cyan);
+}
+
+.dropdown-menu li a:hover::before {
+    opacity: 1;
+    transform: translateX(5px);
+}
+
+/* Responsive dropdown */
+@media (max-width: 768px) {
+    .dropdown-menu {
+        position: static;
+        width: 100%;
+        border-radius: 10px;
+        margin-top: 10px;
+        border: 1px solid var(--neon-green);
+    }
+    
+    .dropdown-menu::before {
+        display: none;
+    }
+    
+    .dropdown-menu li a {
+        margin: 2px 5px;
+        padding: 10px 15px;
+    }
 }
