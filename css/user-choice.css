@@ -1,0 +1,43 @@
+.user-choice-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.user-choice-card .promo-content {
+    flex-grow: 1;
+}
+
+.user-choice-card .promo-content h3 {
+    color: var(--text-color); /* White color */
+    font-size: 28px; /* Larger font size */
+    margin-bottom: 20px; /* Add some space below the title */
+}
+
+.user-choice-buttons {
+    display: flex;
+    justify-content: center; /* Center buttons */
+    gap: 15px; /* Increase gap between buttons */
+    margin-top: 15px;
+    flex-wrap: wrap; /* Allow buttons to wrap on smaller screens */
+}
+
+.user-choice-buttons .btn-learn-more {
+    background-color: var(--secondary-color);
+    color: #000;
+    padding: 12px 25px; /* Increase padding */
+    border-radius: 25px; /* More rounded corners */
+    font-weight: 700;
+    display: inline-block;
+    transition: background-color 0.3s, transform 0.3s; /* Add transition */
+}
+
+.user-choice-buttons .btn-learn-more:hover {
+    background-color: #ffdb58; /* Lighter yellow on hover */
+    transform: translateY(-3px); /* Slight lift on hover */
+}
+
+.user-choice-card .promo-image i {
+    font-size: 80px;
+    color: var(--secondary-color);
+}

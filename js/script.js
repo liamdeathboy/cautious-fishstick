@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 if (gifSrc) {
                     img.src = gifSrc;
                 }
-            }, 3000);
+            }, 700);
         });
 
         card.addEventListener('mouseleave', () => {
