@@ -3,275 +3,231 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>schplay</title>
+    <title>Schplay | Safe Learning Games &amp; Activities</title>
+    <meta name="description" content="Discover Schplay's curated catalog of safe, classroom-friendly online games that build strategy, numeracy, and creativity for learners of every age.">
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#0f1a2a">
+    <meta name="author" content="Schplay">
+    <!-- Update the canonical URL if the production domain changes. -->
+    <link rel="canonical" href="https://schplay.com/">
+    <link rel="icon" type="image/webp" href="images/favicon.webp">
+    <link rel="apple-touch-icon" href="images/favicon.webp">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:site_name" content="Schplay">
+    <meta property="og:title" content="Schplay | Safe Learning Games &amp; Activities">
+    <meta property="og:description" content="Discover Schplay's curated catalog of safe, classroom-friendly online games that build strategy, numeracy, and creativity for learners of every age.">
+    <meta property="og:url" content="https://schplay.com/">
+    <meta property="og:image" content="https://schplay.com/images/logo.webp">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Schplay | Safe Learning Games &amp; Activities">
+    <meta name="twitter:description" content="Discover Schplay's curated catalog of safe, classroom-friendly online games that build strategy, numeracy, and creativity for learners of every age.">
+    <meta name="twitter:image" content="https://schplay.com/images/logo.webp">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&amp;display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/new-style.css">
     <link rel="stylesheet" href="css/restyle.css">
     <link rel="stylesheet" href="css/user-choice.css">
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "WebSite",
+            "name": "Schplay",
+            "url": "https://schplay.com/",
+            "description": "Discover Schplay's curated catalog of safe, classroom-friendly online games that build strategy, numeracy, and creativity for learners of every age."
+        }
+    </script>
 </head>
 <body>
-  <header class="site-header">
-    <div class="header-container">
-      <a href="/" class="logo">
-        <img src="images/logo.webp" alt="schplay Logo">
-      </a>
-      <nav class="header-nav">
-        <ul>
-          <li><a href="#">Strategy <i class="fas fa-chevron-down"></i></a></li>
-          <li><a href="#">Skill <i class="fas fa-chevron-down"></i></a></li>
-          <li><a href="#">Numbers <i class="fas fa-chevron-down"></i></a></li>
-          <li><a href="#">Logic <i class="fas fa-chevron-down"></i></a></li>
-          <li><a href="#">Classic <i class="fas fa-chevron-down"></i></a></li>
-          <li><a href="#">Trivia <i class="fas fa-chevron-down"></i></a></li>
-          <li><a href="#">Categories <i class="fas fa-chevron-down"></i></a></li>
-          <li><a href="#">All Games</a></li>
-        </ul>
-      </nav>
-      <div class="header-right">
-        <div class="search-container">
-          <i class="fas fa-search"></i>
-          <input type="text" id="searchInput" placeholder="Search">
-        </div>
-        <a href="#" class="header-icon"><i class="fas fa-globe"></i> EN</a>
-        <a href="#" class="header-icon"><i class="fas fa-user"></i> Log In</a>
-      </div>
-    </div>
+  <header id="site-header" role="banner">
+    <div id="navbar-placeholder"></div>
   </header>
 
-  <main class="container">
+  <noscript>
+    <div class="no-js-notice">Schplay works best with JavaScript enabled. Please turn it on to explore the full game library.</div>
+  </noscript>
+
+  <main class="container" role="main">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-content">
+        <h1 id="hero-title">Play Safe Learning Games Anywhere</h1>
+        <p>Explore hundreds of hand-selected titles that nurture problem solving, creativity, and curiosity without compromising privacy.</p>
+        <div class="hero-actions">
+          <a class="hero-primary" href="#featured-games">Browse featured games</a>
+          <a class="hero-secondary" href="#schplay-promise">Learn about our promise</a>
+        </div>
+      </div>
+    </section>
+
     <div class="main-grid">
-      <section class="games-grid-section new-this-week">
+      <section class="games-grid-section new-this-week" aria-labelledby="new-this-week-title">
         <div class="section-header">
-          <h2>New This Week</h2>
-          <a href="#" class="see-all">See All</a>
+          <h2 id="new-this-week-title">New This Week</h2>
+          <a href="#featured-games" class="see-all" aria-label="See all featured games">See All</a>
         </div>
         <div class="games-list" id="new-this-week-grid">
           <a href="games/slope.html" class="game-card-small" data-gif="../images/slope.gif">
-            <img src="images/slope.webp" alt="Slope">
+            <img src="images/slope.webp" alt="Slope" loading="lazy" decoding="async">
             <div><h3>Slope</h3><p>Skill</p></div>
           </a>
           <a href="games/retrobowl.html" class="game-card-small" data-gif="images/retrobowl.gif">
-            <img src="images/retrobowl.webp" alt="Retro Bowl">
+            <img src="images/retrobowl.webp" alt="Retro Bowl" loading="lazy" decoding="async">
             <div><h3>Retro Bowl</h3><p>Sports</p></div>
           </a>
           <a href="games/monkey-mart.html" class="game-card-small" data-gif="images/monkeymart.gif">
-            <img src="images/monkeymart.webp" alt="Monkey Mart">
+            <img src="images/monkeymart.webp" alt="Monkey Mart" loading="lazy" decoding="async">
             <div><h3>Monkey Mart</h3><p>Strategy</p></div>
           </a>
         </div>
       </section>
 
-      <section class="games-grid-section featured-playing">
-        <h2>What We're Playing: Featured</h2>
+      <section class="games-grid-section featured-playing" aria-labelledby="featured-playing-title">
+        <h2 id="featured-playing-title">What We're Playing: Featured</h2>
         <div class="games-list" id="what-were-playing-grid">
           <a href="games/minecraft.html" class="game-card-small" data-gif="images/minecraft.gif">
-            <img src="images/mc.webp" alt="Minecraft">
+            <img src="images/mc.webp" alt="Minecraft" loading="lazy" decoding="async">
             <div><h3>Minecraft</h3><p>Sandbox</p></div>
           </a>
           <a href="games/run3.html" class="game-card-small" data-gif="images/run3.gif">
-            <img src="images/run3.webp" alt="Run 3">
+            <img src="images/run3.webp" alt="Run 3" loading="lazy" decoding="async">
             <div><h3>Run 3</h3><p>Skill</p></div>
           </a>
         </div>
       </section>
 
-      <section class="games-grid-section large-cards">
+      <section class="games-grid-section large-cards" aria-label="Highlighted games">
         <div class="large-card">
             <a href="games/vex7.html" data-gif="images/vex7.gif">
-                <img src="images/vex7.webp" alt="Vex 7">
+                <img src="images/vex7.webp" alt="Vex 7" loading="lazy" decoding="async">
                 <h3>Vex 7</h3>
                 <p>Another chapter in the Vex series!</p>
             </a>
         </div>
          <div class="large-card">
             <a href="games/paperio2.html" data-gif="/images/slope.gif">
-                <img src="images/paperio2.webp" alt="Paper.io 2">
+                <img src="images/paperio2.webp" alt="Paper.io 2" loading="lazy" decoding="async">
                 <h3>Paper.io 2</h3>
                 <p>Capture as much territory as you can!</p>
             </a>
         </div>
       </section>
 
-      <section class="promo-card">
+      <section class="promo-card" aria-labelledby="about-us-title">
         <div class="promo-content">
-          <h3>About Us</h3>
+          <h3 id="about-us-title">About Us</h3>
           <h2>Safe by Design</h2>
-          <p>From games we feature to data we collect, we're committed to your trust & privacy.</p>
-          <a href="#" class="btn-learn-more">Learn More</a>
+          <p>From games we feature to data we collect, we're committed to your trust &amp; privacy.</p>
+          <a href="about.html" class="btn-learn-more">Learn More</a>
         </div>
         <div class="promo-image">
-            <img src="images/favicon.webp" alt="Security Lock">
+            <img src="images/favicon.webp" alt="Security lock icon" loading="lazy" decoding="async">
         </div>
       </section>
 
-      <section class="promo-card user-choice-card">
+      <section class="promo-card user-choice-card" aria-labelledby="user-choice-title">
         <div class="promo-content">
-          <h3>Users Choice Settings</h3>
+          <h3 id="user-choice-title">User Choice Settings</h3>
           <div class="user-choice-buttons">
             <a href="comments.html" class="btn-learn-more">Comments</a>
-            <a href="#" class="btn-learn-more">Incognito Mode</a>
-            <a href="#" class="btn-learn-more">Game Request</a>
+            <a href="privacy-policy.html" class="btn-learn-more">Incognito Mode</a>
+            <a href="contact.html" class="btn-learn-more">Game Request</a>
             <a href="amazon.html" class="btn-learn-more">Shop on Amazon</a>
           </div>
         </div>
         <div class="promo-image">
-            <i class="fas fa-cog"></i>
+            <i class="fas fa-cog" aria-hidden="true"></i>
         </div>
       </section>
     </div>
 
-    <section class="games-grid-section">
-      <h2>Featured Games</h2>
+    <section class="games-grid-section" id="featured-games" aria-labelledby="featured-games-title">
+      <h2 id="featured-games-title">Featured Games</h2>
       <div class="games-grid" id="top-10-grid">
-        <a href="games/minecraft.html" class="game-card" data-gif="images/minecraft.gif"><img src="images/mc.webp" alt="Minecraft"><h3>Minecraft</h3></a>
-        <a href="games/slope.html" class="game-card" data-gif="images/slope.gif"><img src="images/slope.webp" alt="Slope"><h3>Slope</h3></a>
-        <a href="games/retrobowl.html" class="game-card" data-gif="images/retrobowl.gif"><img src="images/retrobowl.webp" alt="Retro Bowl"><h3>Retro Bowl</h3></a>
-        <a href="games/1v1lol.html" class="game-card" data-gif="images/1v1lol.gif"><img src="https://play-lh.googleusercontent.com/QYGRIDJbyVO7L7jH8CwiKJ4NumTGgcTVqU3ITooLWxro-eeNns1RZ0uwGGFe-r8M4co" alt="1v1.lol"><h3>1v1.lol</h3></a>
-        <a href="games/run3.html" class="game-card" data-gif="images/run3.gif"><img src="images/run3.webp" alt="Run 3"><h3>Run 3</h3></a>
-        <a href="games/cookieclicker.html" class="game-card" data-gif="images/cookieclicker.gif"><img src="https://play-lh.googleusercontent.com/Z1MOuuiD05ZN5LkVmMEvKF0mqAc-FknaQ2j8s4dZiO-LSPQX4EEA3RVJdlQEtxe96ok" alt="Cookie Clicker"><h3>Cookie Clicker</h3></a>
-        <a href="games/happy-wheels.html" class="game-card" data-gif="images/happywheels.gif"><img src="images/happywheels.webp" alt="Happy Wheels"><h3>Happy Wheels</h3></a>
-        <a href="games/geodash.html" class="game-card" data-gif="images/geodash.gif"><img src="images/geodash.webp" alt="Geometry Dash"><h3>Geometry Dash</h3></a>
-        <a href="games/subwaysurfer.html" class="game-card" data-gif="images/subwaysurfer.gif"><img src="https://img.poki.com/cdn-cgi/image/quality=78,width=314,height=314,fit=cover,f=auto/81a0a3f18cf0ee129e56edb50fc52c3b.png" alt="Subway Surfers"><h3>Subway Surfers</h3></a>
-        <a href="games/motox3m.html" class="game-card" data-gif="images/motox3m.gif"><img src="images/motocross.webp" alt="MotoX3M"><h3>MotoX3M</h3></a>
-        <a href="games/vex7.html" class="game-card" data-gif="images/vex7.gif"><img src="images/vex7.webp" alt="Vex 7"><h3>Vex 7</h3></a>
-        <a href="games/paperio2.html" class="game-card" data-gif="images/paperio2.gif"><img src="images/paperio2.webp" alt="Paper.io 2"><h3>Paper.io 2</h3></a>
+        <a href="games/minecraft.html" class="game-card" data-gif="images/minecraft.gif"><img src="images/mc.webp" alt="Minecraft" loading="lazy" decoding="async"><h3>Minecraft</h3></a>
+        <a href="games/slope.html" class="game-card" data-gif="images/slope.gif"><img src="images/slope.webp" alt="Slope" loading="lazy" decoding="async"><h3>Slope</h3></a>
+        <a href="games/retrobowl.html" class="game-card" data-gif="images/retrobowl.gif"><img src="images/retrobowl.webp" alt="Retro Bowl" loading="lazy" decoding="async"><h3>Retro Bowl</h3></a>
+        <a href="games/1v1lol.html" class="game-card" data-gif="images/1v1lol.gif"><img src="https://play-lh.googleusercontent.com/QYGRIDJbyVO7L7jH8CwiKJ4NumTGgcTVqU3ITooLWxro-eeNns1RZ0uwGGFe-r8M4co" alt="1v1.lol" loading="lazy" decoding="async"><h3>1v1.lol</h3></a>
+        <a href="games/run3.html" class="game-card" data-gif="images/run3.gif"><img src="images/run3.webp" alt="Run 3" loading="lazy" decoding="async"><h3>Run 3</h3></a>
+        <a href="games/cookieclicker.html" class="game-card" data-gif="images/cookieclicker.gif"><img src="https://play-lh.googleusercontent.com/Z1MOuuiD05ZN5LkVmMEvKF0mqAc-FknaQ2j8s4dZiO-LSPQX4EEA3RVJdlQEtxe96ok" alt="Cookie Clicker" loading="lazy" decoding="async"><h3>Cookie Clicker</h3></a>
+        <a href="games/happy-wheels.html" class="game-card" data-gif="images/happywheels.gif"><img src="images/happywheels.webp" alt="Happy Wheels" loading="lazy" decoding="async"><h3>Happy Wheels</h3></a>
+        <a href="games/geodash.html" class="game-card" data-gif="images/geodash.gif"><img src="images/geodash.webp" alt="Geometry Dash" loading="lazy" decoding="async"><h3>Geometry Dash</h3></a>
+        <a href="games/subwaysurfer.html" class="game-card" data-gif="images/subwaysurfer.gif"><img src="https://img.poki.com/cdn-cgi/image/quality=78,width=314,height=314,fit=cover,f=auto/81a0a3f18cf0ee129e56edb50fc52c3b.png" alt="Subway Surfers" loading="lazy" decoding="async"><h3>Subway Surfers</h3></a>
+        <a href="games/motox3m.html" class="game-card" data-gif="images/motox3m.gif"><img src="images/motocross.webp" alt="MotoX3M" loading="lazy" decoding="async"><h3>MotoX3M</h3></a>
+        <a href="games/vex7.html" class="game-card" data-gif="images/vex7.gif"><img src="images/vex7.webp" alt="Vex 7" loading="lazy" decoding="async"><h3>Vex 7</h3></a>
+        <a href="games/paperio2.html" class="game-card" data-gif="images/paperio2.gif"><img src="images/paperio2.webp" alt="Paper.io 2" loading="lazy" decoding="async"><h3>Paper.io 2</h3></a>
       </div>
     </section>
 
-    <section class="schplay-promise">
-        <h2>The schplay Promise</h2>
+    <section class="schplay-promise" id="schplay-promise" aria-labelledby="schplay-promise-title">
+        <h2 id="schplay-promise-title">The Schplay Promise</h2>
         <div class="promise-points">
             <div class="promise-point">
-                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-check-circle" aria-hidden="true"></i>
                 <h3>Thoughtfully Curated</h3>
                 <p>Our team of experts has handpicked 2,500 games designed to make you think!</p>
             </div>
             <div class="promise-point">
-                <i class="fas fa-shield-alt"></i>
+                <i class="fas fa-shield-alt" aria-hidden="true"></i>
                 <h3>Privacy Focused</h3>
                 <p>We minimize data collection and respect your sensitive Personal Identifiable Information.</p>
             </div>
             <div class="promise-point">
-                <i class="fas fa-lightbulb"></i>
+                <i class="fas fa-lightbulb" aria-hidden="true"></i>
                 <h3>Learning Through Fun</h3>
                 <p>We seek out games that exercise critical thinking skills, develop numeracy, and explore creativity.</p>
             </div>
             <div class="promise-point">
-                <i class="fas fa-universal-access"></i>
+                <i class="fas fa-universal-access" aria-hidden="true"></i>
                 <h3>Accessible</h3>
                 <p>We're committed to digital accessibility and WCAG 2.2 AA compliant.</p>
             </div>
         </div>
     </section>
 
-    <section class="games-grid-section">
-        <h2>Clicker Games</h2>
+
+
+    <section class="games-grid-section" aria-labelledby="popular-games-title">
+        <h2 id="popular-games-title">Popular Games</h2>
         <div class="games-grid">
-            <a href="games/cookieclicker.html" class="game-card"><img src="https://play-lh.googleusercontent.com/Z1MOuuiD05ZN5LkVmMEvKF0mqAc-FknaQ2j8s4dZiO-LSPQX4EEA3RVJdlQEtxe96ok" alt="Cookie Clicker"><h3>Cookie Clicker</h3></a>
-            <a href="games/csgo-clicker.html" class="game-card"><img src="images/csgoclicker.webp" alt="CSGO Case Opener"><h3>CSGO Case Opener</h3></a>
-            <a href="games/adventurecapitalist.html" class="game-card"><img src="images/adventurecapitalist.webp" alt="Adventure Capitalist"><h3>Adventure Capitalist</h3></a>
-            <a href="games/mrmine.html" class="game-card"><img src="images/mrmine.webp" alt="Mr Mine"><h3>Mr Mine</h3></a>
-            <a href="games/idle-breakout.html" class="game-card"><img src="images/idlebreakout.webp" alt="Idle Breakout"><h3>Idle Breakout</h3></a>
-            <a href="games/idle-shark.html" class="game-card"><img src="images/idleshark.webp" alt="Idle Shark"><h3>Idle Shark</h3></a>
+            <a href="games/pvz.html" class="game-card"><img src="images/pvz.webp" alt="Plants vs. Zombies" loading="lazy" decoding="async"><h3>Plants V Zombies</h3></a>
+            <a href="games/fnaf.html" class="game-card"><img src="images/fnaf.webp" alt="Five Nights at Freddy's" loading="lazy" decoding="async"><h3>FNAF</h3></a>
+            <a href="games/drifthunters.html" class="game-card"><img src="images/drifthunters.webp" alt="Drift Hunters" loading="lazy" decoding="async"><h3>Drift Hunters</h3></a>
+            <a href="games/getaway-shootout.html" class="game-card"><img src="images/getawayshootout.webp" alt="Getaway Shootout" loading="lazy" decoding="async"><h3>Getaway Shootout</h3></a>
+            <a href="games/basketballstars.html" class="game-card"><img src="images/basketballstars.webp" alt="Basketball Stars" loading="lazy" decoding="async"><h3>Basketball Stars</h3></a>
+            <a href="games/paperio2.html" class="game-card"><img src="images/paperio2.webp" alt="Paper.io 2" loading="lazy" decoding="async"><h3>Paper.io 2</h3></a>
+            <a href="games/templerun2.html" class="game-card"><img src="https://play-lh.googleusercontent.com/go4XqS4mYs-G2tZymiVLF4wJYXIi5QrvwixNRzssk4G_vRBHrAdg4E1ddNwy9c2cZA" alt="Temple Run 2" loading="lazy" decoding="async"><h3>Temple Run 2</h3></a>
+            <a href="games/slitherio.html" class="game-card"><img src="images/slitherio.webp" alt="Slither.io" loading="lazy" decoding="async"><h3>Slither.io</h3></a>
+            <a href="games/agario.html" class="game-card"><img src="images/agario.webp" alt="Agar.io" loading="lazy" decoding="async"><h3>Agar.io</h3></a>
+            <a href="games/henry-stickman.html" class="game-card"><img src="https://cdn2.steamgriddb.com/icon/9f61408e3afb633e50cdf1b20de6f466.png" alt="Henry Stickman" loading="lazy" decoding="async"><h3>Henry Stickman</h3></a>
         </div>
     </section>
 
-    <section class="games-grid-section">
-        <h2>Logic Games</h2>
-        <div class="games-grid">
-            <a href="games/2048.html" class="game-card"><img src="images/2048.webp" alt="2048"><h3>2048</h3></a>
-            <a href="games/bloxors.html" class="game-card"><img src="images/bloxors.webp" alt="Bloxors"><h3>Bloxors</h3></a>
-            <a href="games/cut-the-rope.html" class="game-card"><img src="images/cuttherope.webp" alt="Cut The Rope"><h3>Cut The Rope</h3></a>
-            <a href="games/minesweeper.html" class="game-card"><img src="images/minesweeper.webp" alt="Minesweeper"><h3>Minesweeper</h3></a>
-            <a href="games/tetris.html" class="game-card"><img src="images/tetris.webp" alt="Tetris"><h3>Tetris</h3></a>
-            <a href="games/worldshardestgame.html" class="game-card"><img src="images/worldshardestgame.webp" alt="World's Hardest Game"><h3>World's Hardest Game</h3></a>
-        </div>
+    <section class="recent-articles" aria-labelledby="recent-articles-title">
+        <h2 id="recent-articles-title">Recent Articles</h2>
     </section>
 
-
-    <section class="games-grid-section">
-        <h2>Popular Games</h2>
-        <div class="games-grid">
-            <a href="games/pvz.html" class="game-card"><img src="images/pvz.webp" alt="Plants V Zombies"><h3>Plants V Zombies</h3></a>
-            <a href="games/fnaf.html" class="game-card"><img src="images/fnaf.webp" alt="FNAF"><h3>FNAF</h3></a>
-            <a href="games/drifthunters.html" class="game-card"><img src="images/drifthunters.webp" alt="Drift Hunters"><h3>Drift Hunters</h3></a>
-            <a href="games/getaway-shootout.html" class="game-card"><img src="images/getawayshootout.webp" alt="Getaway Shootout"><h3>Getaway Shootout</h3></a>
-            <a href="games/basketballstars.html" class="game-card"><img src="images/basketballstars.webp" alt="Basketball Stars"><h3>Basketball Stars</h3></a>
-            <a href="games/paperio2.html" class="game-card"><img src="images/paperio2.webp" alt="Paper.io 2"><h3>Paper.io 2</h3></a>
-            <a href="games/templerun2.html" class="game-card"><img src="https://play-lh.googleusercontent.com/go4XqS4mYs-G2tZymiVLF4wJYXIi5QrvwixNRzssk4G_vRBHrAdg4E1ddNwy9c2cZA" alt="Temple Run 2"><h3>Temple Run 2</h3></a>
-            <a href="games/slitherio.html" class="game-card"><img src="images/slitherio.webp" alt="Slither.io"><h3>Slither.io</h3></a>
-            <a href="games/agario.html" class="game-card"><img src="images/agario.webp" alt="Agar.io"><h3>Agar.io</h3></a>
-            <a href="games/henry-stickman.html" class="game-card"><img src="https://cdn2.steamgriddb.com/icon/9f61408e3afb633e50cdf1b20de6f466.png" alt="Henry Stickman"><h3>Henry Stickman</h3></a>
-        </div>
+    <section class="publish-game" aria-labelledby="publish-game-title">
+        <h2 id="publish-game-title">Requesting a game?</h2>
+        <a href="contact.html" class="btn-submit-game">Submit Your Game Here!</a>
     </section>
 
-    <section class="recent-articles">
-        <h2>Recent Articles</h2>
-    </section>
-
-    <section class="publish-game">
-        <h2>Requesting a game?</h2>
-        <a href="#" class="btn-submit-game">Submit Your Game Here!</a>
-    </section>
-
-    <section class="games-grid-section">
-        <h2>You Might Like</h2>
+    <section class="games-grid-section" aria-labelledby="you-might-like-title">
+        <h2 id="you-might-like-title">You Might Like</h2>
         <div class="games-grid" id="you-might-like-grid">
         </div>
     </section>
   </main>
 
-  <footer class="site-footer">
-    <div class="footer-container">
-        <div class="footer-column">
-            <h3>SCHPLAY.COM</h3>
-            <ul>
-                <li><a href="#">Games for Kids</a></li>
-                <li><a href="#">About Us</a></li>
-                <li><a href="#">Terms of Use</a></li>
-                <li><a href="#">About Our Ads</a></li>
-                <li><a href="#">Adblock FAQ</a></li>
-                <li><a href="#">Blog</a></li>
-                <li><a href="#">Contact Us</a></li>
-                <li><a href="comments.html">Comment Box</a></li>
-            </ul>
-        </div>
-        <div class="footer-column">
-            <h3>BROWSE GAMES</h3>
-            <ul>
-                <li><a href="#">Strategy Games</a></li>
-                <li><a href="#">Skill Games</a></li>
-                <li><a href="#">Number Games</a></li>
-                <li><a href="#">Logic Games</a></li>
-                <li><a href="#">Memory Games</a></li>
-                <li><a href="#">Classic Games</a></li>
-                <li><a href="#">Science Games</a></li>
-            </ul>
-        </div>
-        <div class="footer-column">
-            <h3>FOLLOW US</h3>
-            <ul>
-                <li><a href="#">TikTok</a></li>
-                <li><a href="#">X / Twitter</a></li>
-                <li><a href="#">Instagram</a></li>
-                <li><a href="#">Facebook</a></li>
-                <li><a href="#">YouTube</a></li>
-            </ul>
-        </div>
-        <div class="footer-column">
-            <h3>ARTICLES</h3>
-            <ul>
-                <li><a href="#">Recent Articles</a></li>
-            </ul>
-        </div>
-    </div>
-    <div class="footer-bottom">
-        <p>&copy; 2025 schplay.com LLC. All rights reserved.</p>
-    </div>
+  <footer id="site-footer" role="contentinfo">
+    <div id="footer-placeholder"></div>
   </footer>
 
-  <script src="js/script.js"></script>
-  <script src="js/random-games.js"></script>
+  <script src="js/script.js" defer></script>
+  <script src="js/random-games.js" defer></script>
+  <script src="js/search.js" defer></script>
+  <script src="js/nav-games.js" defer></script>
+  <script src="js/load-components.js" defer></script>
 </body>
 </html>

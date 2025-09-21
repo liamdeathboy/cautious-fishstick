@@ -1,336 +1,117 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Skill Games - Schplay</title>
-  <link rel="stylesheet" type="text/css" href="style.css">
-  <link rel="stylesheet" href="/css/footer.css">
-  <link rel="stylesheet" type="text/css" href="navbar.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-  <style>
-    /* Basic Reset */
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
-    body {
-      font-family: Arial, sans-serif;
-      line-height: 1.6;
-      background-color: #1a1a1a; /* Dark background */
-      color: #e0e0e0; /* Light text for contrast */
-    }
-
-    /* Main Content */
-    .main-content {
-      max-width: 1200px;
-      margin: 20px auto;
-      padding: 20px;
-    }
-
-    .game-list {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      gap: 20px;
-    }
-
-    .game-card {
-      background-color: #2d2d2d; /* Dark card background */
-      padding: 20px;
-      border-radius: 8px;
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
-      text-align: center;
-      transition: transform 0.2s, box-shadow 0.2s;
-    }
-
-    .game-card:hover {
-      transform: scale(1.05) translateY(-5px);
-      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.5);
-    }
-
-    .game-card img {
-      max-width: 100%;
-      border-radius: 8px;
-      margin-bottom: 10px;
-      width: 250px;
-      height: 250px;
-      object-fit: cover;
-      object-position: center;
-      display: block;
-      margin-left: auto;
-      margin-right: auto;
-    }
-
-    .game-card h2 {
-      font-size: 24px;
-      margin-bottom: 10px;
-      color: #ffffff; /* Bright white for titles */
-    }
-
-    .game-card p {
-      font-size: 16px;
-      color: #b0b0b0; /* Light gray for descriptions */
-    }
-
-    /* Footer */
-    footer {
-      padding: 20px;
-      background-color: #2d2d2d; /* Dark footer background */
-      color: #e0e0e0;
-      text-align: center;
-    }
-
-    .footer-links a {
-      color: #81b29a; /* Keeping the accent color but slightly muted */
-      text-decoration: none;
-      margin: 0 10px;
-    }
-
-    .footer-links a:hover {
-      color: #a5c9b7;
-      text-decoration: underline;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Play the best skill games on schplay!">
+    <title>Skill Games - schplay</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/new-style.css">
+    <link rel="stylesheet" href="css/restyle.css">
 </head>
 <body>
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5690564842575659"
-     crossorigin="anonymous"></script>
-  <!-- Include the navbar template -->
-  <div id="navbar-placeholder"></div>
-
-  <div class="main-content">
-    <h1 style="color:#fff;">Skill Games</h1>
-    <div class="game-list" id="gameList">
-      <!-- Game cards will be inserted here by JavaScript -->
+  <header class="site-header">
+    <div class="header-container">
+      <a href="/" class="logo">
+        <img src="images/logo.webp" alt="schplay Logo">
+      </a>
+      <nav class="header-nav">
+        <ul>
+          <li><a href="strategy.html">Strategy <i class="fas fa-chevron-down"></i></a></li>
+          <li><a href="skill.html">Skill <i class="fas fa-chevron-down"></i></a></li>
+          <li><a href="numbers.html">Numbers <i class="fas fa-chevron-down"></i></a></li>
+          <li><a href="classic.html">Classic <i class="fas fa-chevron-down"></i></a></li>
+          <li><a href="trivia.html">Trivia <i class="fas fa-chevron-down"></i></a></li>
+          <li><a href="allgames.html">All Games</a></li>
+        </ul>
+      </nav>
+      <div class="header-right">
+        <div class="search-container">
+          <i class="fas fa-search"></i>
+          <input type="text" id="searchInput" placeholder="Search">
+        </div>
+      </div>
     </div>
-    <div style="text-align:center; margin-top:30px;">
-      <button id="loadMoreBtn" style="padding:12px 32px; font-size:18px; background:#81b29a; color:#fff; border:none; border-radius:6px; cursor:pointer; transition:background 0.2s;">Load More</button>
+  </header>
+
+  <main class="container">
+    <section class="games-grid-section">
+      <h2>Skill Games</h2>
+      <div class="games-grid" id="skill-games-grid">
+        </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-container">
+        <div class="footer-column">
+            <h3>SCHPLAY.COM</h3>
+            <ul>
+                <li><a href="#">Games for Kids</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Terms of Use</a></li>
+                <li><a href="#">About Our Ads</a></li>
+                <li><a href="#">Adblock FAQ</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="comments.html">Comment Box</a></li>
+            </ul>
+        </div>
+        <div class="footer-column">
+            <h3>BROWSE GAMES</h3>
+            <ul>
+                <li><a href="#">Strategy Games</a></li>
+                <li><a href="#">Skill Games</a></li>
+                <li><a href="#">Number Games</a></li>
+                <li><a href="#">Memory Games</a></li>
+                <li><a href="#">Classic Games</a></li>
+                <li><a href="#">Science Games</a></li>
+            </ul>
+        </div>
+        <div class="footer-column">
+            <h3>FOLLOW US</h3>
+            <ul>
+                <li><a href="#">TikTok</a></li>
+                <li><a href="#">X / Twitter</a></li>
+                <li><a href="#">Instagram</a></li>
+                <li><a href="#">Facebook</a></li>
+                <li><a href="#">YouTube</a></li>
+            </ul>
+        </div>
+        <div class="footer-column">
+            <h3>ARTICLES</h3>
+            <ul>
+                <li><a href="#">Recent Articles</a></li>
+            </ul>
+        </div>
     </div>
-  </div>
-
-  <!-- Footer -->
-<footer>
-  <div class="footer-container">
-    <div class="footer-links">
-      <a href="/privacy-policy">Privacy Policy</a> |
-      <a href="/terms-of-service">Terms of Service</a> |
-      <a href="/contact">Contact Us</a> |
-      <a href="/about">About Us</a>
+    <div class="footer-bottom">
+        <p>&copy; 2025 schplay.com LLC. All rights reserved.</p>
     </div>
-    <p>&copy; <span id="year"></span> Retro621. All rights reserved.</p>
-  </div>
-</footer>
-<script>
-  // Update the year in the footer
-  document.getElementById("year").textContent = new Date().getFullYear();
+  </footer>
 
-  // Skill games data (18 total, 9 per "page")
-  const skillGames = [
-    {
-      link: '../games/bad-timesimulator.html',
-      img: 'images/badtimesimulator.webp',
-      alt: 'Bad Time Simulator (sans fight)',
-      title: 'Bad Time Simulator',
-      desc: 'Experience the thrill of the Sans fight in this skill-based game. Can you master the mechanics? This is a fan-made game based on the popular Undertale series. About sans fight.'
-    },
-    {
-      link: '../games/cut-the-rope.html',
-      img: 'images/cuttherope.webp',
-      alt: 'Cut the Rope',
-      title: 'Cut The Rope',
-      desc: 'Use your skill and logic to cut ropes and feed candy to Om Nom. Timing and precision are key!'
-    },
-    {
-      link: '../games/flappybird.html',
-      img: 'images/flappybird.webp',
-      alt: 'Flappy Bird',
-      title: 'Flappy Bird',
-      desc: 'Tap to fly and navigate through pipes. Test your reflexes and patience in this classic skill game.'
-    },
-    {
-      link: '../games/doodlejump.html',
-      img: 'images/doodlejump.webp',
-      alt: 'Doodle Jump',
-      title: 'Doodle Jump',
-      desc: 'Bounce as high as you can, avoid obstacles, and use power-ups. How high can you go?'
-    },
-    {
-      link: '../games/run3.html',
-      img: 'images/run3.webp',
-      alt: 'Run 3',
-      title: 'Run 3',
-      desc: 'Run and jump through space tunnels. Quick reactions and skillful jumps are needed to survive!'
-    },
-    {
-      link: '../games/slope.html',
-      img: 'images/slope.webp',
-      alt: 'Slope',
-      title: 'Slope',
-      desc: 'Roll down a fast-paced slope, dodging obstacles. Test your reflexes and hand-eye coordination!'
-    },
-    {
-      link: '../games/ovo.html',
-      img: 'images/ovo.webp',
-      alt: 'OVO',
-      title: 'OVO',
-      desc: 'Parkour your way through challenging levels using skillful jumps, slides, and wall runs.'
-    },
-    {
-      link: '../games/curveball.html',
-      img: 'images/curveball.webp',
-      alt: 'Curveball',
-      title: 'Curveball',
-      desc: '3D pong with a twist! Curve the ball and outplay your opponent with skillful shots.'
-    },
-    {
-      link: '../games/tanktrouble.html',
-      img: 'images/tanktrouble.webp',
-      alt: 'Tank Trouble',
-      title: 'Tank Trouble',
-      desc: 'Battle in a maze with ricocheting bullets. Quick thinking and skillful aiming win the game!'
-    },
-    // --- Next 9 games for "page 2" ---
-    {
-      link: '../games/curveball.html',
-      img: 'images/curveball.webp',
-      alt: 'Curveball',
-      title: 'Curveball',
-      desc: '3D pong with a twist! Curve the ball and outplay your opponent with skillful shots.'
-    },
-    {
-      link: '../games/volleyrandom.html',
-      img: 'images/volleyrandom.webp',
-      alt: 'Volley Random',
-      title: 'Volley Random',
-      desc: 'A fun and unpredictable volleyball game. Use your skill to outplay your opponent!'
-    },
-    {
-      link: '../games/houseofhazards.html',
-      img: 'images/houseofhazards.webp',
-      alt: 'House Of Hazards',
-      title: 'House Of Hazards',
-      desc: 'Survive a house full of hazards and traps. Quick reflexes and timing are key!'
-    },
-    {
-      link: '../games/rooftopsnipers.html',
-      img: 'images/rooftopsnipers.webp',
-      alt: 'Rooftop Sniper',
-      title: 'Rooftop Sniper',
-      desc: 'Duel on rooftops! Aim and shoot with skill to knock your opponent off.'
-    },
-    {
-      link: '../games/boxingrandom',
-      img: 'images/boxingrandom.webp',
-      alt: 'Boxing Random',
-      title: 'Boxing Random',
-      desc: 'Unpredictable boxing action. Use your skill and luck to win!'
-    },
-    {
-      link: '../games/stacktris.html',
-      img: 'images/stacktris.webp',
-      alt: 'Stacktris',
-      title: 'Stacktris',
-      desc: 'Stack blocks as high as you can. Precision and timing are everything!'
-    },
-    {
-      link: '../games/blackjack.html',
-      img: 'images/blackjack.webp',
-      alt: 'Black Jack',
-      title: 'Black Jack',
-      desc: 'Test your skill and luck in this classic card game.'
-    },
-    {
-      link: '../games/jetpack-joyride.html',
-      img: 'images/jetpackjoyride.webp',
-      alt: 'Jetpack Joyride',
-      title: 'Jetpack Joyride',
-      desc: 'Fly with your jetpack, dodge obstacles, and collect coins. Fast reflexes required!'
-    },
-    {
-      link: '../games/drivemad.html',
-      img: 'images/drivemad.webp',
-      alt: 'Drive Mad',
-      title: 'Drive Mad',
-      desc: 'Drive through crazy tracks. Balance and skill are needed to reach the finish!'
-    }
-  ];
+  <script>
+    const skillGames = [
+        { name: '10 Minutes Till Dawn', href: 'games/10-minutes-till-dawn.html', imgSrc: 'images/10mintilldawn.webp' },
+        { name: '1v1.lol', href: 'games/1v1lol.html', imgSrc: 'https://play-lh.googleusercontent.com/QYGRIDJbyVO7L7jH8CwiKJ4NumTGgcTVqU3ITooLWxro-eeNns1RZ0uwGGFe-r8M4co' },
+        { name: 'Ace Gangster', href: 'games/acegangster.html', imgSrc: 'images/acegangster.webp' },
+        { name: 'Agar.io', href: 'games/agario.html', imgSrc: 'images/agario.webp' },
+        { name: 'Slope', href: 'games/slope.html', imgSrc: 'images/slope.webp' },
+    ];
 
-  let loadedPages = 0;
-  const cardsPerPage = 9;
-
-  function renderNextPage() {
-    const start = loadedPages * cardsPerPage;
-    const end = start + cardsPerPage;
-    const gamesToShow = skillGames.slice(start, end);
-    const gameList = document.getElementById('gameList');
-    gamesToShow.forEach(game => {
-      const card = document.createElement('div');
-      card.className = 'game-card';
-      card.onclick = () => { location.href = game.link; };
-      card.innerHTML = `
-        <img src="${game.img}" alt="${game.alt}">
-        <h2>${game.title}</h2>
-        <p>${game.desc}</p>
-      `;
-      gameList.appendChild(card);
+    const gamesGrid = document.getElementById('skill-games-grid');
+    skillGames.forEach(game => {
+        const gameCard = document.createElement('a');
+        gameCard.href = game.href;
+        gameCard.classList.add('game-card');
+        gameCard.innerHTML = `
+            <img src="${game.imgSrc}" alt="${game.name}">
+            <h3>${game.name}</h3>
+        `;
+        gamesGrid.appendChild(gameCard);
     });
-    loadedPages++;
-    // Hide button if all games are loaded
-    if (loadedPages * cardsPerPage >= skillGames.length) {
-      document.getElementById('loadMoreBtn').style.display = 'none';
-    }
-  }
-
-  // Initial render
-  document.addEventListener('DOMContentLoaded', function() {
-    renderNextPage();
-    // ...existing code for navbar...
-    document.getElementById('navbar-placeholder').setAttribute('data-include', 'navbar.html');
-    includeHTML();
-    // Load More button event
-    document.getElementById('loadMoreBtn').addEventListener('click', renderNextPage);
-  });
-
-  // Scroll event for infinite loading
-  window.addEventListener('scroll', function() {
-    const scrollPosition = window.innerHeight + window.scrollY;
-    const threshold = document.body.offsetHeight * 0.9;
-    if (scrollPosition >= threshold && loadedPages * cardsPerPage < skillGames.length) {
-      renderNextPage();
-    }
-  });
-
-  // Function to include HTML templates
-  function includeHTML() {
-    var z, i, elmnt, file, xhttp;
-    z = document.getElementsByTagName("*");
-    for (i = 0; i < z.length; i++) {
-      elmnt = z[i];
-      file = elmnt.getAttribute("data-include");
-      if (file) {
-        xhttp = new XMLHttpRequest();
-        xhttp.onreadystatechange = function() {
-          if (this.readyState == 4) {
-            if (this.status == 200) {elmnt.innerHTML = this.responseText;}
-            if (this.status == 404) {elmnt.innerHTML = "Page not found.";}
-            elmnt.removeAttribute("data-include");
-            includeHTML();
-          }
-        }
-        xhttp.open("GET", file, true);
-        xhttp.send();
-        return;
-      }
-    }
-  }
-
-  // Include the navbar HTML
-  document.addEventListener('DOMContentLoaded', function() {
-    document.getElementById('navbar-placeholder').setAttribute('data-include', 'navbar.html');
-    includeHTML();
-  });
-</script>
+  </script>
+  <script src="js/search.js"></script>
 </body>
 </html>
