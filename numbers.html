@@ -3,115 +3,151 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Play the best numbers games on schplay!">
-    <title>Numbers Games - schplay</title>
+    <meta name="robots" content="index, follow">
+    <meta name="description" content="Stretch your brain with number and puzzle games from Schplay. Practice logic, pattern matching, and quick calculations in unblocked favorites.">
+    <meta name="keywords" content="number games, math games, puzzle games, logic games, unblocked games, schplay">
+    <meta name="theme-color" content="#0f1a2a">
+    <title>Number &amp; Puzzle Games | Schplay</title>
+    <link rel="canonical" href="https://schplay.com/numbers.html">
+    <link rel="icon" type="image/webp" href="images/favicon.ico">
+    <link rel="apple-touch-icon" href="images/favicon-32x32.png">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Schplay">
+    <meta property="og:title" content="Number &amp; Puzzle Games | Schplay">
+    <meta property="og:description" content="Stretch your brain with number and puzzle games from Schplay. Practice logic, pattern matching, and quick calculations in unblocked favorites.">
+    <meta property="og:url" content="https://schplay.com/numbers.html">
+    <meta property="og:image" content="https://schplay.com/images/logo.webp">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Number &amp; Puzzle Games | Schplay">
+    <meta name="twitter:description" content="Stretch your brain with number and puzzle games from Schplay. Practice logic, pattern matching, and quick calculations in unblocked favorites.">
+    <meta name="twitter:image" content="https://schplay.com/images/logo.webp">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/new-style.css">
     <link rel="stylesheet" href="css/restyle.css">
+    <link rel="stylesheet" href="css/user-choice.css">
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "CollectionPage",
+            "name": "Number and Puzzle Games",
+            "description": "Play unblocked math, number, and puzzle games on Schplay. Practice logic, pattern spotting, and strategic thinking with classroom-friendly titles."
+        }
+    </script>
 </head>
 <body>
-  <header class="site-header">
-    <div class="header-container">
-      <a href="/" class="logo">
-        <img src="images/logo.webp" alt="schplay Logo">
-      </a>
-      <nav class="header-nav">
-        <ul>
-          <li><a href="strategy.html">Strategy <i class="fas fa-chevron-down"></i></a></li>
-          <li><a href="skill.html">Skill <i class="fas fa-chevron-down"></i></a></li>
-          <li><a href="numbers.html">Numbers <i class="fas fa-chevron-down"></i></a></li>
-          <li><a href="classic.html">Classic <i class="fas fa-chevron-down"></i></a></li>
-          <li><a href="trivia.html">Trivia <i class="fas fa-chevron-down"></i></a></li>
-          <li><a href="allgames.html">All Games</a></li>
-        </ul>
-      </nav>
-      <div class="header-right">
-        <div class="search-container">
-          <i class="fas fa-search"></i>
-          <input type="text" id="searchInput" placeholder="Search">
-        </div>
-      </div>
-    </div>
+  <header id="site-header" role="banner">
+    <div id="navbar-placeholder"></div>
   </header>
 
-  <main class="container">
-    <section class="games-grid-section">
-      <h2>Numbers Games</h2>
-      <div class="games-grid" id="numbers-games-grid">
+  <main class="container" role="main">
+    <section class="hero" aria-labelledby="numbers-hero-title">
+      <div class="hero-content">
+        <h1 id="numbers-hero-title">Solve, Stack, Repeat</h1>
+        <p>Keep your mind sharp with number puzzles, merge madness, and logic mashups that are perfect for a quick classroom brain break.</p>
+        <div class="hero-actions">
+          <a class="hero-primary" href="allgames.html">Browse all games</a>
+          <a class="hero-secondary" href="games/2048.html">Play 2048</a>
         </div>
+      </div>
+    </section>
+
+    <section class="games-grid-section" aria-labelledby="numbers-games-title">
+      <div class="section-header">
+        <h2 id="numbers-games-title">Number &amp; Puzzle Picks</h2>
+        <span id="numbers-games-count" class="games-count" aria-live="polite"></span>
+      </div>
+      <div class="games-grid" id="numbers-games-grid" aria-live="polite"></div>
+    </section>
+
+    <section class="publish-game" aria-labelledby="numbers-request-title">
+      <h2 id="numbers-request-title">Have a puzzle we should feature?</h2>
+      <a href="contact.html" class="btn-submit-game">Share a Number Game</a>
     </section>
   </main>
 
-  <footer class="site-footer">
-    <div class="footer-container">
-        <div class="footer-column">
-            <h3>SCHPLAY.COM</h3>
-            <ul>
-                <li><a href="#">Games for Kids</a></li>
-                <li><a href="#">About Us</a></li>
-                <li><a href="#">Terms of Use</a></li>
-                <li><a href="#">About Our Ads</a></li>
-                <li><a href="#">Adblock FAQ</a></li>
-                <li><a href="#">Blog</a></li>
-                <li><a href="#">Contact Us</a></li>
-                <li><a href="comments.html">Comment Box</a></li>
-            </ul>
-        </div>
-        <div class="footer-column">
-            <h3>BROWSE GAMES</h3>
-            <ul>
-                <li><a href="#">Strategy Games</a></li>
-                <li><a href="#">Skill Games</a></li>
-                <li><a href="#">Number Games</a></li>
-                <li><a href="#">Memory Games</a></li>
-                <li><a href="#">Classic Games</a></li>
-                <li><a href="#">Science Games</a></li>
-            </ul>
-        </div>
-        <div class="footer-column">
-            <h3>FOLLOW US</h3>
-            <ul>
-                <li><a href="#">TikTok</a></li>
-                <li><a href="#">X / Twitter</a></li>
-                <li><a href="#">Instagram</a></li>
-                <li><a href="#">Facebook</a></li>
-                <li><a href="#">YouTube</a></li>
-            </ul>
-        </div>
-        <div class="footer-column">
-            <h3>ARTICLES</h3>
-            <ul>
-                <li><a href="#">Recent Articles</a></li>
-            </ul>
-        </div>
-    </div>
-    <div class="footer-bottom">
-        <p>&copy; 2025 schplay.com LLC. All rights reserved.</p>
-    </div>
+  <footer id="site-footer" role="contentinfo">
+    <div id="footer-placeholder"></div>
   </footer>
 
   <script>
-    const numbersGames = [
-        { name: '2048', href: 'games/2048.html', imgSrc: 'images/2048.webp' },
-        { name: 'Bejeweled 2', href: 'games/bejeweled2.html', imgSrc: 'images/bejeweled2.webp' },
-        { name: 'Block Blast', href: 'games/blockblast.html', imgSrc: 'images/blockblast.webp' },
-        { name: 'Cookie Clicker', href: 'games/cookieclicker.html', imgSrc: 'https://play-lh.googleusercontent.com/Z1MOuuiD05ZN5LkVmMEvKF0mqAc-FknaQ2j8s4dZiO-LSPQX4EEA3RVJdlQEtxe96ok' },
-        { name: 'Crossy Road', href: 'games/crossyroad.html', imgSrc: 'images/crossyroad.webp' },
+    const numberGameNames = [
+      '2048',
+      'Cupcake 2048',
+      'Flappy 2048',
+      'Bejeweled 2',
+      'Block Blast',
+      'Bloxors',
+      'Draw The Hill',
+      'Idle Breakout',
+      'Idle Shark',
+      'Mine Sweeper',
+      'Paper.io 2',
+      'Pacman',
+      'Pacxon',
+      'Pool',
+      'Shuffle',
+      'Snake',
+      'Google Snake',
+      'Stacktris',
+      'Tetris',
+      'Tower Blaster',
+      'Tower Master',
+      'World\'s Hardest Game',
+      'World\'s Hardest Game 2',
+      'Snailiad',
+      'Riddle School Games',
+      'Sort the Court',
+      'The Big Adventure of Owata\'s Life',
+      'The Final Experiment Mod',
+      'The Binding of Isaac',
+      'Adventure Capitalist',
+      'Antbuster',
+      'MonkeyMart',
+      'Plants V Zombies (Full)',
+      'Mr Mine',
+      'Motherload',
+      'Papa\'s Games',
+      'Spend Elon\'s Money',
     ];
 
-    const gamesGrid = document.getElementById('numbers-games-grid');
-    numbersGames.forEach(game => {
-        const gameCard = document.createElement('a');
-        gameCard.href = game.href;
-        gameCard.classList.add('game-card');
-        gameCard.innerHTML = `
-            <img src="${game.imgSrc}" alt="${game.name}">
-            <h3>${game.name}</h3>
+    const renderNumberGames = () => {
+      const grid = document.getElementById('numbers-games-grid');
+      const count = document.getElementById('numbers-games-count');
+      if (!grid) return;
+
+      const catalog = (window.SCHPLAY_GAMES && window.SCHPLAY_GAMES.list) || [];
+      const items = numberGameNames.map((gameName) => {
+        const match = catalog.find(({ name }) => name === gameName);
+        if (!match) {
+          console.warn(`Schplay: missing game data for "${gameName}"`);
+        }
+        return match;
+      }).filter(Boolean);
+
+      grid.innerHTML = '';
+      items.forEach(({ name, href, img }) => {
+        const card = document.createElement('a');
+        card.className = 'game-card';
+        card.href = href;
+        card.innerHTML = `
+          <img src="${img}" alt="${name}" loading="lazy" decoding="async">
+          <h3>${name}</h3>
         `;
-        gamesGrid.appendChild(gameCard);
-    });
+        grid.appendChild(card);
+      });
+
+      if (count) {
+        count.textContent = `${items.length} games`;
+      }
+    };
+
+    if (window.SCHPLAY_GAMES && window.SCHPLAY_GAMES.list) {
+      renderNumberGames();
+    } else {
+      document.addEventListener('schplay:games-ready', renderNumberGames, { once: true });
+    }
   </script>
-  <script src="js/search.js"></script>
+  <script src="js/load-components.js" defer></script>
 </body>
 </html>
