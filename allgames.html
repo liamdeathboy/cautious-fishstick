@@ -3,10 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="refresh" content="2; url=https://schplay.com">
-    <title>Redirecting...</title>
+    <title>All Games | Schplay</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/new-style.css">
+    <link rel="stylesheet" href="css/restyle.css">
 </head>
 <body>
-    <p>If you are not redirected, <a href="https://schplay.com/">click here</a>.</p>
+    <header id="site-header" role="banner">
+        <div id="navbar-placeholder"></div>
+    </header>
+
+    <main class="container" role="main">
+        <section class="hero all-games-hero" aria-labelledby="all-games-title">
+            <h1 id="all-games-title">Browse Every Schplay Game</h1>
+            <p>Explore our complete library of classroom-friendly games. Each title opens in a distraction-free player so you can focus on fun and learning.</p>
+        </section>
+
+        <section class="games-grid-section all-games-section" aria-labelledby="all-games-list-title">
+            <div class="section-header">
+                <h2 id="all-games-list-title">All Games</h2>
+                <span id="all-games-count" class="games-count"></span>
+            </div>
+            <div class="games-grid all-games-grid" id="all-games-grid" aria-live="polite"></div>
+        </section>
+    </main>
+
+    <footer id="site-footer" role="contentinfo">
+        <div id="footer-placeholder"></div>
+    </footer>
+
+    <script src="js/games-data.js" defer></script>
+    <script src="js/all-games-page.js" defer></script>
+    <script src="js/load-components.js" defer></script>
 </body>
 </html>

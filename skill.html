@@ -3,115 +3,159 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Play the best skill games on schplay!">
-    <title>Skill Games - schplay</title>
+    <meta name="robots" content="index, follow">
+    <meta name="description" content="Sharpen your reflexes with quick-thinking skill games from Schplay. Dash, dodge, and master speed runs in classroom-friendly titles that stay unblocked.">
+    <meta name="keywords" content="skill games, reflex games, action games, unblocked games, schplay">
+    <meta name="theme-color" content="#0f1a2a">
+    <title>Skill Games | Schplay</title>
+    <link rel="canonical" href="https://schplay.com/skill.html">
+    <link rel="icon" type="image/webp" href="images/favicon.ico">
+    <link rel="apple-touch-icon" href="images/favicon-32x32.png">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Schplay">
+    <meta property="og:title" content="Skill Games | Schplay">
+    <meta property="og:description" content="Sharpen your reflexes with quick-thinking skill games from Schplay. Dash, dodge, and master speed runs in classroom-friendly titles that stay unblocked.">
+    <meta property="og:url" content="https://schplay.com/skill.html">
+    <meta property="og:image" content="https://schplay.com/images/logo.webp">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Skill Games | Schplay">
+    <meta name="twitter:description" content="Sharpen your reflexes with quick-thinking skill games from Schplay. Dash, dodge, and master speed runs in classroom-friendly titles that stay unblocked.">
+    <meta name="twitter:image" content="https://schplay.com/images/logo.webp">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/new-style.css">
     <link rel="stylesheet" href="css/restyle.css">
+    <link rel="stylesheet" href="css/user-choice.css">
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "CollectionPage",
+            "name": "Skill Games",
+            "description": "Play free unblocked skill games curated by Schplay, featuring parkour challenges, precision platformers, and reaction-based favorites."
+        }
+    </script>
 </head>
 <body>
-  <header class="site-header">
-    <div class="header-container">
-      <a href="/" class="logo">
-        <img src="images/logo.webp" alt="schplay Logo">
-      </a>
-      <nav class="header-nav">
-        <ul>
-          <li><a href="strategy.html">Strategy <i class="fas fa-chevron-down"></i></a></li>
-          <li><a href="skill.html">Skill <i class="fas fa-chevron-down"></i></a></li>
-          <li><a href="numbers.html">Numbers <i class="fas fa-chevron-down"></i></a></li>
-          <li><a href="classic.html">Classic <i class="fas fa-chevron-down"></i></a></li>
-          <li><a href="trivia.html">Trivia <i class="fas fa-chevron-down"></i></a></li>
-          <li><a href="allgames.html">All Games</a></li>
-        </ul>
-      </nav>
-      <div class="header-right">
-        <div class="search-container">
-          <i class="fas fa-search"></i>
-          <input type="text" id="searchInput" placeholder="Search">
-        </div>
-      </div>
-    </div>
+  <header id="site-header" role="banner">
+    <div id="navbar-placeholder"></div>
   </header>
 
-  <main class="container">
-    <section class="games-grid-section">
-      <h2>Skill Games</h2>
-      <div class="games-grid" id="skill-games-grid">
+  <main class="container" role="main">
+    <section class="hero" aria-labelledby="skill-hero-title">
+      <div class="hero-content">
+        <h1 id="skill-hero-title">Master Every Move</h1>
+        <p>Speed through obstacle courses, hone your timing, and test precise reactions with a mix of fast-paced, skill-based hits.</p>
+        <div class="hero-actions">
+          <a class="hero-primary" href="allgames.html">Browse all games</a>
+          <a class="hero-secondary" href="games/slope.html">Play Slope</a>
         </div>
+      </div>
+    </section>
+
+    <section class="games-grid-section" aria-labelledby="skill-games-title">
+      <div class="section-header">
+        <h2 id="skill-games-title">Top Skill Challenges</h2>
+        <span id="skill-games-count" class="games-count" aria-live="polite"></span>
+      </div>
+      <div class="games-grid" id="skill-games-grid" aria-live="polite"></div>
+    </section>
+
+    <section class="publish-game" aria-labelledby="skill-request-title">
+      <h2 id="skill-request-title">Know a reflex test we should add?</h2>
+      <a href="contact.html" class="btn-submit-game">Recommend a Skill Game</a>
     </section>
   </main>
 
-  <footer class="site-footer">
-    <div class="footer-container">
-        <div class="footer-column">
-            <h3>SCHPLAY.COM</h3>
-            <ul>
-                <li><a href="#">Games for Kids</a></li>
-                <li><a href="#">About Us</a></li>
-                <li><a href="#">Terms of Use</a></li>
-                <li><a href="#">About Our Ads</a></li>
-                <li><a href="#">Adblock FAQ</a></li>
-                <li><a href="#">Blog</a></li>
-                <li><a href="#">Contact Us</a></li>
-                <li><a href="comments.html">Comment Box</a></li>
-            </ul>
-        </div>
-        <div class="footer-column">
-            <h3>BROWSE GAMES</h3>
-            <ul>
-                <li><a href="#">Strategy Games</a></li>
-                <li><a href="#">Skill Games</a></li>
-                <li><a href="#">Number Games</a></li>
-                <li><a href="#">Memory Games</a></li>
-                <li><a href="#">Classic Games</a></li>
-                <li><a href="#">Science Games</a></li>
-            </ul>
-        </div>
-        <div class="footer-column">
-            <h3>FOLLOW US</h3>
-            <ul>
-                <li><a href="#">TikTok</a></li>
-                <li><a href="#">X / Twitter</a></li>
-                <li><a href="#">Instagram</a></li>
-                <li><a href="#">Facebook</a></li>
-                <li><a href="#">YouTube</a></li>
-            </ul>
-        </div>
-        <div class="footer-column">
-            <h3>ARTICLES</h3>
-            <ul>
-                <li><a href="#">Recent Articles</a></li>
-            </ul>
-        </div>
-    </div>
-    <div class="footer-bottom">
-        <p>&copy; 2025 schplay.com LLC. All rights reserved.</p>
-    </div>
+  <footer id="site-footer" role="contentinfo">
+    <div id="footer-placeholder"></div>
   </footer>
 
   <script>
-    const skillGames = [
-        { name: '10 Minutes Till Dawn', href: 'games/10-minutes-till-dawn.html', imgSrc: 'images/10mintilldawn.webp' },
-        { name: '1v1.lol', href: 'games/1v1lol.html', imgSrc: 'https://play-lh.googleusercontent.com/QYGRIDJbyVO7L7jH8CwiKJ4NumTGgcTVqU3ITooLWxro-eeNns1RZ0uwGGFe-r8M4co' },
-        { name: 'Ace Gangster', href: 'games/acegangster.html', imgSrc: 'images/acegangster.webp' },
-        { name: 'Agar.io', href: 'games/agario.html', imgSrc: 'images/agario.webp' },
-        { name: 'Slope', href: 'games/slope.html', imgSrc: 'images/slope.webp' },
+    const skillGameNames = [
+      '10 Minutes Till Dawn',
+      '1v1.lol',
+      'Ace Gangster',
+      'Agar.io',
+      'Angry Birds Halloween',
+      'Arcade Wizard',
+      'Basketball Stars',
+      'Block Blast',
+      'Boxing Random',
+      'Curveball',
+      'Cut The Rope',
+      'Deep Freeze',
+      'Doodle Jump',
+      'Draw The Hill',
+      'Drift Hunters',
+      'Drive Mad',
+      'Dune Buggy',
+      'Electric Man 2',
+      'Fireboy and Watergirl Fire Temple',
+      'Flappy Bird',
+      'Galaga',
+      'Geometry Dash',
+      'Google Snake',
+      'Gravity Guy',
+      'Gunspin',
+      'Happy Wheels',
+      'Hide & Smash',
+      'Jetpack Joyride',
+      'Learn To Fly',
+      'Learn To Fly 2',
+      'Learn To Fly 3',
+      'MotoX3M Games',
+      'OVO',
+      'Rooftop Sniper',
+      'Run 2',
+      'Run 3',
+      'Slope',
+      'Snailiad',
+      'Stickman Golf',
+      'Supersonic',
+      'Temple Run 2',
+      'Vex\'s Games',
+      'Volley Random',
+      'World\'s Hardest Game',
+      'World\'s Hardest Game 2',
     ];
 
-    const gamesGrid = document.getElementById('skill-games-grid');
-    skillGames.forEach(game => {
-        const gameCard = document.createElement('a');
-        gameCard.href = game.href;
-        gameCard.classList.add('game-card');
-        gameCard.innerHTML = `
-            <img src="${game.imgSrc}" alt="${game.name}">
-            <h3>${game.name}</h3>
+    const renderSkillGames = () => {
+      const grid = document.getElementById('skill-games-grid');
+      const count = document.getElementById('skill-games-count');
+      if (!grid) return;
+
+      const catalog = (window.SCHPLAY_GAMES && window.SCHPLAY_GAMES.list) || [];
+      const items = skillGameNames.map((gameName) => {
+        const match = catalog.find(({ name }) => name === gameName);
+        if (!match) {
+          console.warn(`Schplay: missing game data for "${gameName}"`);
+        }
+        return match;
+      }).filter(Boolean);
+
+      grid.innerHTML = '';
+      items.forEach(({ name, href, img }) => {
+        const card = document.createElement('a');
+        card.className = 'game-card';
+        card.href = href;
+        card.innerHTML = `
+          <img src="${img}" alt="${name}" loading="lazy" decoding="async">
+          <h3>${name}</h3>
         `;
-        gamesGrid.appendChild(gameCard);
-    });
+        grid.appendChild(card);
+      });
+
+      if (count) {
+        count.textContent = `${items.length} games`;
+      }
+    };
+
+    if (window.SCHPLAY_GAMES && window.SCHPLAY_GAMES.list) {
+      renderSkillGames();
+    } else {
+      document.addEventListener('schplay:games-ready', renderSkillGames, { once: true });
+    }
   </script>
-  <script src="js/search.js"></script>
+  <script src="js/load-components.js" defer></script>
 </body>
 </html>

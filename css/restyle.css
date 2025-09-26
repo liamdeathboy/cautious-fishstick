@@ -1,11 +1,11 @@
 .games-grid-section {
-    margin-bottom: 40px;
+    margin-bottom: 32px;
 }
 
 .games-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-    gap: 20px;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 16px;
 }
 
 .game-card {
@@ -31,7 +31,7 @@
 }
 
 .game-card h3 {
-    padding: 15px;
+    padding: 12px;
     font-size: 18px;
     font-weight: 600;
     text-align: left;
@@ -39,35 +39,35 @@
 
 .schplay-promise {
     background-color: var(--card-background);
-    padding: 40px;
+    padding: 32px;
     text-align: center;
     border-radius: 15px;
-    margin-bottom: 40px;
+    margin-bottom: 32px;
 }
 
 .schplay-promise h2 {
     font-size: 28px;
-    margin-bottom: 30px;
+    margin-bottom: 26px;
 }
 
 .promise-points {
     display: flex;
     justify-content: center;
-    gap: 24px;
+    gap: 20px;
     flex-wrap: wrap;
 }
 
 .promise-point {
     flex: 1 1 220px;
     max-width: 260px;
-    text-align: left;
+    text-align: center;
     margin: 0 auto;
 }
 
 .promise-point i {
     font-size: 32px;
     color: var(--primary-color);
-    margin-bottom: 15px;
+    margin-bottom: 12px;
 }
 
 .promise-point h3 {
@@ -77,30 +77,47 @@
 
 .promise-point p {
     color: var(--text-muted);
-    font-size: 14px;
+    font-size: 13px;
+    max-width: 280px;
+    margin: 0 auto;
 }
 
-.recent-articles, .publish-game {
+.publish-game {
     background-color: var(--card-background);
-    padding: 40px;
+    padding: 32px;
     text-align: center;
     border-radius: 15px;
-    margin-bottom: 40px;
+    margin-bottom: 32px;
 }
 
-.recent-articles h2, .publish-game h2 {
-    font-size: 28px;
-    margin-bottom: 30px;
+.publish-game h2 {
+    font-size: 26px;
+    margin-bottom: 24px;
 }
 
 .btn-submit-game {
     background-color: var(--secondary-color);
     color: #000;
-    padding: 15px 30px;
-    border-radius: 30px;
+    padding: 12px 24px;
+    border-radius: 26px;
     font-weight: 700;
-    font-size: 18px;
+    font-size: 16px;
     display: inline-block;
+}
+
+.promise-cta {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 24px;
+    border-radius: 24px;
+    background-color: rgba(0, 160, 233, 0.18);
+    color: var(--primary-color);
+    font-weight: 700;
+}
+
+.promise-cta:hover,
+.promise-cta:focus-visible {
+    background-color: rgba(0, 160, 233, 0.28);
 }
 
 .site-footer {
@@ -167,17 +184,15 @@ html {
 
 @media (max-width: 992px) {
     .schplay-promise,
-    .recent-articles,
     .publish-game {
-        padding: 32px 24px;
+        padding: 28px 22px;
     }
 }
 
 @media (max-width: 600px) {
     .schplay-promise,
-    .recent-articles,
     .publish-game {
-        padding: 24px 18px;
+        padding: 22px 18px;
     }
 
     .promise-point {

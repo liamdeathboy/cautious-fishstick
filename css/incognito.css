@@ -1,0 +1,123 @@
+body.incognito-mode {
+    background: #fafafa;
+    color: #111;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+}
+
+body.incognito-mode * {
+    color: inherit !important;
+    background-image: none !important;
+}
+
+body.incognito-mode img,
+body.incognito-mode video,
+body.incognito-mode picture,
+body.incognito-mode svg,
+body.incognito-mode canvas,
+body.incognito-mode .promo-image,
+body.incognito-mode .promo-image i,
+body.incognito-mode .promise-point i {
+    display: none !important;
+}
+
+body.incognito-mode .container {
+    max-width: 820px;
+}
+
+body.incognito-mode .site-header,
+body.incognito-mode .site-footer,
+body.incognito-mode .hero,
+body.incognito-mode .games-grid-section,
+body.incognito-mode .promo-card,
+body.incognito-mode .schplay-promise,
+body.incognito-mode .publish-game,
+body.incognito-mode .all-games-section {
+    background: #ffffff;
+    border: 1px solid #dcdcdc;
+    border-radius: 10px;
+    box-shadow: none;
+    padding: 2rem;
+}
+
+body.incognito-mode .site-header {
+    border-bottom-width: 2px;
+}
+
+body.incognito-mode .logo img {
+    display: none;
+}
+
+body.incognito-mode .hero::after {
+    display: none;
+}
+
+body.incognito-mode .hero-content {
+    text-align: left;
+}
+
+body.incognito-mode .hero-actions {
+    gap: 0.5rem;
+}
+
+body.incognito-mode .hero-primary,
+body.incognito-mode .hero-secondary,
+body.incognito-mode .btn-learn-more,
+body.incognito-mode .promise-cta,
+body.incognito-mode .btn-submit-game {
+    background: #f1f1f1;
+    border: 1px solid #c3c3c3;
+    border-radius: 18px;
+    padding: 0.55rem 1.2rem;
+    box-shadow: none;
+}
+
+body.incognito-mode .hero-primary:hover,
+body.incognito-mode .hero-secondary:hover,
+body.incognito-mode .btn-learn-more:hover,
+body.incognito-mode .promise-cta:hover,
+body.incognito-mode .btn-submit-game:hover {
+    background: #e5e5e5;
+    transform: none;
+}
+
+body.incognito-mode .games-grid,
+body.incognito-mode .all-games-grid {
+    gap: 0.5rem;
+}
+
+body.incognito-mode .game-card,
+body.incognito-mode .game-card-large {
+    background: #ffffff;
+    border: 1px solid #dcdcdc;
+    box-shadow: none;
+    color: #111;
+    padding: 0.75rem;
+}
+
+body.incognito-mode .game-card:hover,
+body.incognito-mode .game-card-large:hover {
+    transform: none;
+    background: #f6f6f6;
+}
+
+body.incognito-mode a {
+    color: #0000ee !important;
+    text-decoration: underline;
+}
+
+body.incognito-mode .search-container {
+    background: #ffffff;
+    border: 1px solid #dcdcdc;
+}
+
+body.incognito-mode #searchResults,
+body.incognito-mode .search-result,
+body.incognito-mode .view-all-button {
+    background: #ffffff;
+    border: 1px solid #dcdcdc;
+    color: #111;
+}
+
+body.incognito-mode #searchResults {
+    box-shadow: none;
+}

@@ -3,115 +3,149 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Play the best classic games on schplay!">
-    <title>Classic Games - schplay</title>
+    <meta name="robots" content="index, follow">
+    <meta name="description" content="Relive retro favorites with Schplay's classic game collection. Play timeless adventures and arcade hits that stay unblocked and classroom friendly.">
+    <meta name="keywords" content="classic games, retro games, arcade games, nostalgic games, unblocked games, schplay">
+    <meta name="theme-color" content="#0f1a2a">
+    <title>Classic Games | Schplay</title>
+    <link rel="canonical" href="https://schplay.com/classic.html">
+    <link rel="icon" type="image/webp" href="images/favicon.ico">
+    <link rel="apple-touch-icon" href="images/favicon-32x32.png">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Schplay">
+    <meta property="og:title" content="Classic Games | Schplay">
+    <meta property="og:description" content="Relive retro favorites with Schplay's classic game collection. Play timeless adventures and arcade hits that stay unblocked and classroom friendly.">
+    <meta property="og:url" content="https://schplay.com/classic.html">
+    <meta property="og:image" content="https://schplay.com/images/logo.webp">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Classic Games | Schplay">
+    <meta name="twitter:description" content="Relive retro favorites with Schplay's classic game collection. Play timeless adventures and arcade hits that stay unblocked and classroom friendly.">
+    <meta name="twitter:image" content="https://schplay.com/images/logo.webp">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/new-style.css">
     <link rel="stylesheet" href="css/restyle.css">
+    <link rel="stylesheet" href="css/user-choice.css">
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "CollectionPage",
+            "name": "Classic Games",
+            "description": "Play nostalgic and retro-inspired games on Schplay, including arcade legends and flash classics restored for modern browsers."
+        }
+    </script>
 </head>
 <body>
-  <header class="site-header">
-    <div class="header-container">
-      <a href="/" class="logo">
-        <img src="images/logo.webp" alt="schplay Logo">
-      </a>
-      <nav class="header-nav">
-        <ul>
-          <li><a href="strategy.html">Strategy <i class="fas fa-chevron-down"></i></a></li>
-          <li><a href="skill.html">Skill <i class="fas fa-chevron-down"></i></a></li>
-          <li><a href="numbers.html">Numbers <i class="fas fa-chevron-down"></i></a></li>
-          <li><a href="classic.html">Classic <i class="fas fa-chevron-down"></i></a></li>
-          <li><a href="trivia.html">Trivia <i class="fas fa-chevron-down"></i></a></li>
-          <li><a href="allgames.html">All Games</a></li>
-        </ul>
-      </nav>
-      <div class="header-right">
-        <div class="search-container">
-          <i class="fas fa-search"></i>
-          <input type="text" id="searchInput" placeholder="Search">
-        </div>
-      </div>
-    </div>
+  <header id="site-header" role="banner">
+    <div id="navbar-placeholder"></div>
   </header>
 
-  <main class="container">
-    <section class="games-grid-section">
-      <h2>Classic Games</h2>
-      <div class="games-grid" id="classic-games-grid">
+  <main class="container" role="main">
+    <section class="hero" aria-labelledby="classic-hero-title">
+      <div class="hero-content">
+        <h1 id="classic-hero-title">Retro Classics, Modern Access</h1>
+        <p>Dive back into beloved flash throwbacks, pixel adventures, and arcade staples—no downloads, no blockers, just nostalgia.</p>
+        <div class="hero-actions">
+          <a class="hero-primary" href="allgames.html">Browse all games</a>
+          <a class="hero-secondary" href="games/catmario.html">Play Cat Mario</a>
         </div>
+      </div>
+    </section>
+
+    <section class="games-grid-section" aria-labelledby="classic-games-title">
+      <div class="section-header">
+        <h2 id="classic-games-title">Classic Favorites</h2>
+        <span id="classic-games-count" class="games-count" aria-live="polite"></span>
+      </div>
+      <div class="games-grid" id="classic-games-grid" aria-live="polite"></div>
+    </section>
+
+    <section class="publish-game" aria-labelledby="classic-request-title">
+      <h2 id="classic-request-title">Missing a vintage gem?</h2>
+      <a href="contact.html" class="btn-submit-game">Request a Classic</a>
     </section>
   </main>
 
-  <footer class="site-footer">
-    <div class="footer-container">
-        <div class="footer-column">
-            <h3>SCHPLAY.COM</h3>
-            <ul>
-                <li><a href="#">Games for Kids</a></li>
-                <li><a href="#">About Us</a></li>
-                <li><a href="#">Terms of Use</a></li>
-                <li><a href="#">About Our Ads</a></li>
-                <li><a href="#">Adblock FAQ</a></li>
-                <li><a href="#">Blog</a></li>
-                <li><a href="#">Contact Us</a></li>
-                <li><a href="comments.html">Comment Box</a></li>
-            </ul>
-        </div>
-        <div class="footer-column">
-            <h3>BROWSE GAMES</h3>
-            <ul>
-                <li><a href="#">Strategy Games</a></li>
-                <li><a href="#">Skill Games</a></li>
-                <li><a href="#">Number Games</a></li>
-                <li><a href="#">Memory Games</a></li>
-                <li><a href="#">Classic Games</a></li>
-                <li><a href="#">Science Games</a></li>
-            </ul>
-        </div>
-        <div class="footer-column">
-            <h3>FOLLOW US</h3>
-            <ul>
-                <li><a href="#">TikTok</a></li>
-                <li><a href="#">X / Twitter</a></li>
-                <li><a href="#">Instagram</a></li>
-                <li><a href="#">Facebook</a></li>
-                <li><a href="#">YouTube</a></li>
-            </ul>
-        </div>
-        <div class="footer-column">
-            <h3>ARTICLES</h3>
-            <ul>
-                <li><a href="#">Recent Articles</a></li>
-            </ul>
-        </div>
-    </div>
-    <div class="footer-bottom">
-        <p>&copy; 2025 schplay.com LLC. All rights reserved.</p>
-    </div>
+  <footer id="site-footer" role="contentinfo">
+    <div id="footer-placeholder"></div>
   </footer>
 
   <script>
-    const classicGames = [
-        { name: 'Bad Time Simulator', href: 'games/bad-time-simulator.html', imgSrc: 'images/badtimesimulator.webp' },
-        { name: 'Cat Mario', href: 'games/catmario.html', imgSrc: 'images/catmario.webp' },
-        { name: 'Club Penguin', href: 'games/clubpenguin.html', imgSrc: 'images/clubpenguin.webp' },
-        { name: 'DBZ Devolution', href: 'games/dbz.html', imgSrc: 'images/dbz.webp' },
-        { name: 'FNAF', href: 'games/fnaf.html', imgSrc: 'images/fnaf.webp' },
+    const classicGameNames = [
+      'Bad Time Simulator',
+      'Cat Mario',
+      'Club Penguin',
+      'DBZ Devolution',
+      'Deep Freeze',
+      'Doodle Jump',
+      'Duck Hunt',
+      'Fireboy and Watergirl Fire Temple',
+      'Galaga',
+      'Geometry Dash',
+      'Henry Stickman: Full Collection',
+      'Motherload',
+      'Pacman',
+      'Pacxon',
+      'Plants V Zombies (Full)',
+      'Riddle School Games',
+      'Rooftop Sniper',
+      'Run 2',
+      'Run 3',
+      'Snailiad',
+      'Swords and Sandals 2',
+      'Tank Trouble',
+      'Tetris',
+      'The Binding of Isaac',
+      'Undertale (Demo)',
+      'Undertale: Rejuvenation Mod',
+      'World\'s Hardest Game',
+      'World\'s Hardest Game 2',
+      'Adventure Capitalist',
+      'Antbuster',
+      'Papa\'s Games',
+      'Spend Elon\'s Money',
+      'Steal This Election',
+      'The Final Experiment Mod',
+      'The Big Adventure of Owata\'s Life',
     ];
 
-    const gamesGrid = document.getElementById('classic-games-grid');
-    classicGames.forEach(game => {
-        const gameCard = document.createElement('a');
-        gameCard.href = game.href;
-        gameCard.classList.add('game-card');
-        gameCard.innerHTML = `
-            <img src="${game.imgSrc}" alt="${game.name}">
-            <h3>${game.name}</h3>
+    const renderClassicGames = () => {
+      const grid = document.getElementById('classic-games-grid');
+      const count = document.getElementById('classic-games-count');
+      if (!grid) return;
+
+      const catalog = (window.SCHPLAY_GAMES && window.SCHPLAY_GAMES.list) || [];
+      const items = classicGameNames.map((gameName) => {
+        const match = catalog.find(({ name }) => name === gameName);
+        if (!match) {
+          console.warn(`Schplay: missing game data for "${gameName}"`);
+        }
+        return match;
+      }).filter(Boolean);
+
+      grid.innerHTML = '';
+      items.forEach(({ name, href, img }) => {
+        const card = document.createElement('a');
+        card.className = 'game-card';
+        card.href = href;
+        card.innerHTML = `
+          <img src="${img}" alt="${name}" loading="lazy" decoding="async">
+          <h3>${name}</h3>
         `;
-        gamesGrid.appendChild(gameCard);
-    });
+        grid.appendChild(card);
+      });
+
+      if (count) {
+        count.textContent = `${items.length} games`;
+      }
+    };
+
+    if (window.SCHPLAY_GAMES && window.SCHPLAY_GAMES.list) {
+      renderClassicGames();
+    } else {
+      document.addEventListener('schplay:games-ready', renderClassicGames, { once: true });
+    }
   </script>
-  <script src="js/search.js"></script>
+  <script src="js/load-components.js" defer></script>
 </body>
 </html>
