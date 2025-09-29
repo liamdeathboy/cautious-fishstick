@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="index, follow">
+    <meta name="description" content="Hunt for hidden giveaway codes across Schplay game guides. Enter the winning code to claim a shot at our $100 giveaway.">
+    <meta name="keywords" content="Schplay giveaway, hidden game codes, $100 giveaway, game instructions, code hunt">
+    <meta name="theme-color" content="#0f1a2a">
+    <title>Schplay $100 Giveaway Hunt</title>
+    <link rel="canonical" href="https://schplay.com/games/giveaway.html">
+    <link rel="icon" type="image/webp" href="/images/favicon.ico">
+    <link rel="apple-touch-icon" href="../images/favicon-32x32.png">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Schplay">
+    <meta property="og:title" content="Schplay $100 Giveaway Hunt">
+    <meta property="og:description" content="Search our game instructions for hidden codes. Enter the correct one here for a chance to win $100.">
+    <meta property="og:url" content="https://schplay.com/games/giveaway.html">
+    <meta property="og:image" content="https://schplay.com/images/giveaway.webp">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Schplay $100 Giveaway Hunt">
+    <meta name="twitter:description" content="Find the secret giveaway codes hidden in Schplay guides and cash in.">
+    <meta name="twitter:image" content="https://schplay.com/images/giveaway.webp">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/new-style.css">
+    <link rel="stylesheet" href="../css/restyle.css">
+    <link rel="stylesheet" href="../css/user-choice.css">
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "SpecialAnnouncement",
+            "name": "Schplay $100 Giveaway Hunt",
+            "description": "Players explore Schplay guides to discover hidden giveaway codes for a chance to win $100.",
+            "url": "https://schplay.com/games/giveaway.html",
+            "image": "https://schplay.com/images/giveaway.webp",
+            "publisher": {
+                "@type": "Organization",
+                "name": "Schplay"
+            },
+            "offers": {
+                "@type": "Offer",
+                "priceCurrency": "USD",
+                "price": "0",
+                "description": "Submit a valid hidden code to enter the $100 giveaway raffle."
+            }
+        }
+    </script>
+    <style>
+        .giveaway-hero-layout {
+            display: grid;
+            grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr);
+            gap: 24px;
+            align-items: center;
+        }
+
+        .giveaway-hero-art {
+            background: linear-gradient(135deg, rgba(77, 157, 224, 0.35), rgba(241, 196, 15, 0.35));
+            border-radius: 16px;
+            min-height: 220px;
+            padding: 24px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 8px 24px rgba(5, 15, 32, 0.35);
+        }
+
+        .hero-actions {
+            display: flex;
+            gap: 16px;
+            flex-wrap: wrap;
+        }
+
+        .giveaway-section {
+            background: #1c2a3e;
+            border-radius: 16px;
+            padding: 24px;
+            box-shadow: 0 8px 24px rgba(5, 15, 32, 0.35);
+            margin-bottom: 32px;
+        }
+
+        .giveaway-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 24px;
+            margin-top: 20px;
+        }
+
+        .giveaway-grid article {
+            background: rgba(12, 24, 42, 0.8);
+            border-radius: 12px;
+            padding: 20px;
+            border: 1px solid rgba(86, 143, 215, 0.25);
+        }
+
+        .giveaway-grid h3 {
+            margin-bottom: 10px;
+            font-size: 1.1rem;
+        }
+
+        .giveaway-grid p {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+        }
+
+        .code-checker {
+            margin-top: 24px;
+            background: rgba(12, 24, 42, 0.85);
+            border-radius: 16px;
+            padding: 24px;
+            border: 1px solid rgba(86, 143, 215, 0.35);
+        }
+
+        .code-checker form {
+            display: flex;
+            gap: 12px;
+            flex-wrap: wrap;
+            margin-top: 12px;
+        }
+
+        .code-checker input[type="text"] {
+            flex: 1 1 260px;
+            padding: 12px 14px;
+            border-radius: 12px;
+            border: 1px solid rgba(77, 157, 224, 0.45);
+            background: rgba(15, 32, 58, 0.75);
+            color: var(--text-color);
+            font-size: 1rem;
+        }
+
+        .code-checker button {
+            padding: 12px 20px;
+            border-radius: 12px;
+            border: none;
+            background: linear-gradient(135deg, #4d9de0, #f1c40f);
+            color: #0f1a2a;
+            font-weight: 700;
+            cursor: pointer;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .code-checker button:hover,
+        .code-checker button:focus-visible {
+            transform: translateY(-1px);
+            box-shadow: 0 12px 24px rgba(77, 157, 224, 0.3);
+        }
+
+        .code-checker-output {
+            margin-top: 16px;
+            font-weight: 600;
+        }
+
+        .code-checker-output.success {
+            color: #2ecc71;
+        }
+
+        .code-checker-output.error {
+            color: #e74c3c;
+        }
+
+        .tips-list {
+            list-style: none;
+            padding: 0;
+            margin: 24px 0 0;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 18px;
+        }
+
+        .tips-list li {
+            background: rgba(255, 255, 255, 0.04);
+            border-radius: 12px;
+            padding: 16px;
+            color: var(--text-muted);
+            font-size: 0.95rem;
+        }
+
+        @media (max-width: 1100px) {
+            .giveaway-hero-layout {
+                grid-template-columns: 1fr;
+            }
+
+            .giveaway-hero-art {
+                order: -1;
+            }
+        }
+    </style>
+</head>
+<body>
+  <header id="site-header" role="banner">
+    <div id="navbar-placeholder"></div>
+  </header>
+
+  <main class="container" role="main">
+    <section class="hero" aria-labelledby="giveaway-hero-title">
+      <div class="giveaway-hero-layout">
+        <div class="hero-content">
+          <h1 id="giveaway-hero-title">Schplay $100 Giveaway Hunt</h1>
+          <p>We hid exclusive giveaway codes inside the instructions of select games. Track them down, enter the right one below, and you could be our next $100 winner.</p>
+          <div class="hero-actions">
+            <a class="hero-primary" href="../allgames.html">Start exploring games</a>
+            <a class="hero-secondary" href="#how-it-works">How it works</a>
+          </div>
+        </div>
+        <div class="giveaway-hero-art" aria-hidden="true">
+          <i class="fas fa-gift" style="font-size: 3.5rem; color: var(--secondary-color);"></i>
+        </div>
+      </div>
+    </section>
+
+    <section class="giveaway-section" id="how-it-works">
+      <h2>How the hunt works</h2>
+      <p>Every few days we sprinkle a fresh giveaway code somewhere inside our detailed how-to-play sections. Codes look like bold, all-caps phrases such as <code>SLOPE-RUSH</code>. When a new drop happens, we ping our Discord server and social feeds -- then the race begins.</p>
+      <div class="giveaway-grid" role="list">
+        <article role="listitem">
+          <h3><i class="fas fa-search" aria-hidden="true"></i> Explore the guides</h3>
+          <p>Browse your favorite games and scan the instructions or strategy callouts. Codes never show up in the same spot twice.</p>
+        </article>
+        <article role="listitem">
+          <h3><i class="fas fa-key" aria-hidden="true"></i> Spot the secret phrase</h3>
+          <p>Found something that looks like a code? Copy it exactly as written -- hyphens and all. Only the first 50 players to validate a drop are entered.</p>
+        </article>
+        <article role="listitem">
+          <h3><i class="fas fa-gift" aria-hidden="true"></i> Submit and celebrate</h3>
+          <p>Bring the code back here, confirm it below, and watch your inbox. We contact the weekly winner every Friday.</p>
+        </article>
+      </div>
+      <ul class="tips-list">
+        <li><strong>Need clues?</strong> Start with recent game updates -- fresh content usually hides a new code.</li>
+        <li><strong>Stay in the loop.</strong> Join the Schplay Discord in the footer to get instant drop alerts.</li>
+        <li><strong>Double-check spelling.</strong> One extra space or lowercase letter will fail validation.</li>
+      </ul>
+    </section>
+
+    <section class="giveaway-section" id="code-checker">
+      <h2>Validate your giveaway code</h2>
+      <p>Paste the exact code you discovered and hit check. If it matches a current winning code, we will grab your email for the prize draw. Invalid or expired codes will let you know right away.</p>
+      <div class="code-checker">
+        <form id="giveaway-checker-form" autocomplete="off">
+          <label for="giveaway-code" class="sr-only">Giveaway code</label>
+          <input id="giveaway-code" type="text" name="giveaway-code" placeholder="Enter your code (e.g., SLOPE-RUSH)" required aria-required="true">
+          <button type="submit">Check code</button>
+        </form>
+        <p id="checker-output" class="code-checker-output" role="status" aria-live="polite"></p>
+      </div>
+    </section>
+
+    <section class="giveaway-section" aria-labelledby="giveaway-faq-title">
+      <h2 id="giveaway-faq-title">Giveaway FAQ</h2>
+      <div class="giveaway-grid" role="list">
+        <article role="listitem">
+          <h3>How often are codes released?</h3>
+          <p>We hide at least one code each week, usually alongside game refreshes. Keep an eye on our Saturday patch notes.</p>
+        </article>
+        <article role="listitem">
+          <h3>Can a code be redeemed twice?</h3>
+          <p>Each drop has a limited entry cap. Once a code reaches capacity, it expires and you'll need to hunt the next one.</p>
+        </article>
+        <article role="listitem">
+          <h3>What if I miss the cut?</h3>
+          <p>No worries. We rotate game categories so everyone gets a shot. Collecting codes also unlocks profile badges in your account hub.</p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer id="site-footer" role="contentinfo">
+    <div id="footer-placeholder"></div>
+  </footer>
+
+  <script>
+    const knownCodes = new Map([
+      ['SLOPE-RUSH', 'Slope speedrun drop'],
+      ['RUNNER-ACE', 'Run 3 challenge drop'],
+      ['DASH-HIDDEN', 'Geometry Dash creator drop'],
+      ['NOM-NOMS', 'Cut the Rope anniversary drop'],
+      ['SURF-BOOST', 'Subway Surfers seasonal drop']
+    ]);
+
+    const checkerForm = document.getElementById('giveaway-checker-form');
+    const codeInput = document.getElementById('giveaway-code');
+    const checkerOutput = document.getElementById('checker-output');
+
+    const normalizeCode = (value) => value.trim().toUpperCase().replace(/\s+/g, '-');
+
+    checkerForm.addEventListener('submit', (event) => {
+      event.preventDefault();
+      const code = normalizeCode(codeInput.value);
+
+      if (!code) {
+        checkerOutput.textContent = 'Enter a code to validate.';
+        checkerOutput.className = 'code-checker-output error';
+        return;
+      }
+
+      if (knownCodes.has(code)) {
+        checkerOutput.textContent = `You nailed it! ${knownCodes.get(code)} is a live drop. Check your email for the entry form in the next 10 minutes.`;
+        checkerOutput.className = 'code-checker-output success';
+      } else {
+        checkerOutput.textContent = 'That code is either incorrect or the drop has expired. Keep exploring and try again!';
+        checkerOutput.className = 'code-checker-output error';
+      }
+    });
+  </script>
+  <script src="../js/load-components.js" defer data-component-root="../"></script>
+</body>
+</html>

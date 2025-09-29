@@ -3,53 +3,232 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us</title>
+    <meta name="robots" content="index, follow">
+    <meta name="description" content="Get in touch with the Schplay team for partnerships, school support, content updates, or to report a game.">
+    <meta name="keywords" content="contact Schplay, Schplay support, game request, school whitelist, advertising inquiry">
+    <meta name="theme-color" content="#0f1a2a">
+    <title>Contact Schplay</title>
+    <link rel="canonical" href="https://schplay.com/contact.html">
+    <link rel="icon" type="image/webp" href="images/favicon.ico">
+    <link rel="apple-touch-icon" href="images/favicon-32x32.png">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Schplay">
+    <meta property="og:title" content="Contact Schplay">
+    <meta property="og:description" content="Reach the Schplay crew for help with classroom access, brand partnerships, and hidden code submissions.">
+    <meta property="og:url" content="https://schplay.com/contact.html">
+    <meta property="og:image" content="https://schplay.com/images/logo.webp">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Contact Schplay">
+    <meta name="twitter:description" content="Message the Schplay team for technical support, collaboration ideas, or to report an issue.">
+    <meta name="twitter:image" content="https://schplay.com/images/logo.webp">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/new-style.css">
+    <link rel="stylesheet" href="css/restyle.css">
+    <link rel="stylesheet" href="css/user-choice.css">
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "ContactPage",
+            "name": "Contact Schplay",
+            "url": "https://schplay.com/contact.html",
+            "description": "Official contact hub for Schplay support, partnerships, and content requests.",
+            "publisher": {
+                "@type": "Organization",
+                "name": "Schplay",
+                "url": "https://schplay.com"
+            },
+            "contactPoint": [{
+                "@type": "ContactPoint",
+                "contactType": "customer support",
+                "email": "support@schplay.com",
+                "areaServed": "US"
+            }]
+        }
+    </script>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            margin: 20px;
-            padding: 20px;
-            max-width: 600px;
-            margin: auto;
+        .page-grid {
+            display: grid;
+            gap: 24px;
+            margin-bottom: 36px;
         }
-        h1 {
-            color: #333;
+
+        .info-card {
+            background: var(--card-background);
+            border-radius: 18px;
+            padding: 26px;
+            box-shadow: 0 16px 36px rgba(7, 19, 35, 0.4);
         }
+
+        .info-card h2 {
+            font-size: 1.45rem;
+            margin-bottom: 18px;
+        }
+
+        .info-card p,
+        .info-card li {
+            color: var(--text-muted);
+        }
+
+        .contact-options {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: grid;
+            gap: 16px;
+        }
+
+        .contact-options li {
+            display: flex;
+            gap: 14px;
+            align-items: flex-start;
+        }
+
+        .contact-options i {
+            color: var(--secondary-color);
+            margin-top: 4px;
+        }
+
+        form {
+            display: grid;
+            gap: 16px;
+        }
+
+        label {
+            font-weight: 600;
+        }
+
         input, textarea {
-            width: 100%;
-            padding: 10px;
-            margin: 10px 0;
+            background: rgba(12, 24, 42, 0.85);
+            border: 1px solid rgba(77, 157, 224, 0.4);
+            border-radius: 12px;
+            padding: 12px 14px;
+            color: var(--text-color);
+            font-size: 1rem;
+            transition: border-color 0.2s ease, box-shadow 0.2s ease;
         }
-        button {
-            padding: 10px 15px;
-            background: #007bff;
-            color: #fff;
+
+        input:focus-visible, textarea:focus-visible {
+            outline: none;
+            border-color: var(--secondary-color);
+            box-shadow: 0 0 0 3px rgba(241, 196, 15, 0.25);
+        }
+
+        textarea {
+            min-height: 160px;
+            resize: vertical;
+        }
+
+        button[type=submit] {
+            justify-self: flex-start;
+            padding: 12px 22px;
+            border-radius: 12px;
             border: none;
+            background: linear-gradient(135deg, #4d9de0, #f1c40f);
+            color: #0f1a2a;
+            font-weight: 700;
             cursor: pointer;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
         }
-        button:hover {
-            background: #0056b3;
+
+        button[type=submit]:hover, button[type=submit]:focus-visible {
+            transform: translateY(-1px);
+            box-shadow: 0 12px 24px rgba(77, 157, 224, 0.3);
+        }
+
+        .form-feedback {
+            font-weight: 600;
+        }
+
+        .form-feedback.success {
+            color: #2ecc71;
+        }
+
+        .form-feedback.error {
+            color: #e74c3c;
+        }
+
+        @media (max-width: 768px) {
+            .info-card {
+                padding: 22px;
+            }
         }
     </style>
 </head>
 <body>
+  <header id="site-header" role="banner">
+    <div id="navbar-placeholder"></div>
+  </header>
 
-    <h1>Contact Us</h1>
-    <p>If you have any questions, feel free to reach out using the form below.</p>
+  <main class="container" role="main">
+    <section class="hero hero-with-ad" aria-labelledby="contact-hero-title">
+      <div class="hero-grid">
+        <div class="hero-content">
+          <h1 id="contact-hero-title">Talk with the Schplay Team</h1>
+          <p>Whether you need a classroom-friendly whitelist, want to partner on a drop, or spotted a game issue, this inbox gets you the fastest response.</p>
+          <div class="hero-actions">
+            <a class="hero-primary" href="mailto:support@schplay.com">Email Support</a>
+            <a class="hero-secondary" href="https://discord.gg/eAYw73K5XA" target="_blank" rel="noopener">Join our Discord</a>
+          </div>
+        </div>
+        <div class="hero-ad" aria-label="Sponsored">
+          <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5690564842575659" crossorigin="anonymous"></script>
+          <!-- ad space -->
+          <ins class="adsbygoogle"
+               style="display:block"
+               data-ad-client="ca-pub-5690564842575659"
+               data-ad-slot="9885096122"
+               data-ad-format="auto"
+               data-full-width-responsive="true"></ins>
+          <script>
+            (adsbygoogle = window.adsbygoogle || []).push({});
+          </script>
+        </div>
+      </div>
+    </section>
 
-    <form action="mailto:[Your Contact Email]" method="post" enctype="text/plain">
-        <label for="name">Name: Retro 621</label>
-        <input type="text" id="name" name="name" required>
+    <section class="page-grid">
+      <div class="info-card">
+        <h2>How to reach us</h2>
+        <ul class="contact-options">
+          <li><i class="fas fa-envelope" aria-hidden="true"></i><span><strong>Support:</strong> <a href="mailto:support@schplay.com">support@schplay.com</a> for troubleshooting, game requests, or safety questions.</span></li>
+          <li><i class="fas fa-briefcase" aria-hidden="true"></i><span><strong>Partnerships:</strong> Pitch brand collabs or sponsored drops at <a href="mailto:partnerships@schplay.com">partnerships@schplay.com</a>.</span></li>
+          <li><i class="fas fa-shield-alt" aria-hidden="true"></i><span><strong>Legal:</strong> DMCA or rights concerns go to <a href="mailto:legal@schplay.com">legal@schplay.com</a>.</span></li>
+          <li><i class="fas fa-comments" aria-hidden="true"></i><span><strong>Community:</strong> Share feedback with staff inside our Discord office hours every Wednesday.</span></li>
+        </ul>
+      </div>
 
-        <label for="email">Email: contactus@retro621.com</label>
-        <input type="email" id="email" name="email" required>
+      <div class="info-card" aria-labelledby="contact-form-title">
+        <h2 id="contact-form-title">Send us a quick note</h2>
+        <p>Use the form to draft a message. We will open your email client so you can hit send from your preferred account.</p>
+        <form id="contact-form">
+          <div>
+            <label for="contact-name">Name</label>
+            <input type="text" id="contact-name" name="name" placeholder="Jane Player" autocomplete="name" required aria-required="true">
+          </div>
+          <div>
+            <label for="contact-email">Email</label>
+            <input type="email" id="contact-email" name="email" placeholder="you@school.org" autocomplete="email" required aria-required="true">
+          </div>
+          <div>
+            <label for="contact-subject">Subject</label>
+            <input type="text" id="contact-subject" name="subject" placeholder="Game request or question" required aria-required="true">
+          </div>
+          <div>
+            <label for="contact-message">Message</label>
+            <textarea id="contact-message" name="message" placeholder="Describe how we can help..." required aria-required="true"></textarea>
+          </div>
+          <button type="submit">Preview email</button>
+        </form>
+        <p id="contact-feedback" class="form-feedback" role="status" aria-live="polite"></p>
+      </div>
+    </section>
+  </main>
 
-        <label for="message">Message:</label>
-        <textarea id="message" name="message" rows="5" required></textarea>
+  <footer id="site-footer" role="contentinfo">
+    <div id="footer-placeholder"></div>
+  </footer>
 
-        <button type="submit">Send Message</button>
-    </form>
-
+  <script src="js/load-components.js" defer data-component-root="./"></script>
 </body>
 </html>

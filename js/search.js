@@ -1,4 +1,5 @@
 (function() {
+    const resolver = window.SCHPLAY_RESOLVE_ASSET_PATH || ((path) => path);
     const games = (window.SCHPLAY_GAMES && window.SCHPLAY_GAMES.list) ? window.SCHPLAY_GAMES.list : [];
     const MAX_RESULTS = 8;
 
@@ -41,18 +42,18 @@
 
             matches.slice(0, MAX_RESULTS).forEach(game => {
                 const gameElement = document.createElement('a');
-                gameElement.href = game.href;
+                gameElement.href = resolver(game.href);
                 gameElement.classList.add('search-result');
                 gameElement.setAttribute('role', 'option');
                 gameElement.innerHTML = `
-                    <img src="${game.img}" alt="${game.name}">
+                    <img src="${resolver(game.img)}" alt="${game.name}">
                     <span>${game.name}</span>
                 `;
                 searchResultsContainer.appendChild(gameElement);
             });
 
             const viewAllButton = document.createElement('a');
-            viewAllButton.href = 'allgames.html';
+            viewAllButton.href = resolver('allgames.html');
             viewAllButton.classList.add('view-all-button');
             viewAllButton.textContent = 'View all games';
             viewAllButton.setAttribute('role', 'option');

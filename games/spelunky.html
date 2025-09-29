@@ -1,332 +1,541 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Play Spelunky - Classic Adventure Game</title>
-  <meta name="description" content="Play Spelunky, the classic adventure game. Explore caves, collect treasures, and avoid traps in this exciting platformer.">
-  <meta name="keywords" content="Spelunky, adventure game, play Spelunky, Spelunky game online, classic game">
-  <link rel="stylesheet" type="text/css" href="../style.css">
-  <link rel="stylesheet" href="../css/footer.css">
-  <link rel="stylesheet" type="text/css" href="../navbar.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-  <style>
-    /* Basic Reset */
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
-    body {
-      font-family: Arial, sans-serif;
-      line-height: 1.6;
-      background-color: #f4f1de; /* Pastel beige background */
-      color: #3d405b; /* Dark blue-gray text for contrast */
-    }
-
-    /* Game Container */
-    .game-container {
-      display: flex;
-      max-width: 1924px;
-      max-height: 768px;
-      margin: 20px auto;
-      gap: 20px;
-    }
-
-    .game-area {
-      flex: 3;
-      background-color: #f2cc8f; /* Pastel orange for game area */
-      padding: 15px;
-      border-radius: 8px;
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    }
-
-    .game-window {
-      text-align: center;
-      padding: 20px;
-      background-color: #f4f1de; /* Pastel beige for game window */
-      border-radius: 8px;
-    }
-
-    /* Sidebar */
-    .sidebar {
-      flex: 1;
-      background-color: #B0E57C; /* Pastel green for sidebar */
-      padding: 20px;
-      border-radius: 8px;
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-      overflow-y: auto; /* Enable vertical scrolling */
-      max-height: 500px; /* Set a maximum height for the sidebar */
-    }
-
-    .instructions, .ads {
-      margin-bottom: 20px;
-    }
-
-    .instructions h3, .ads h3 {
-      margin-bottom: 10px;
-      color: white; /* White text for headings */
-    }
-
-    .instructions p, .ads p {
-      color: #3d405b; /* Dark blue-gray text */
-    }
-
-    /* Footer */
-    footer {
-      padding: 20px;
-      background-color: #81b29a; /* Pastel green for footer */
-      color: white;
-      text-align: center;
-    }
-
-    .footer-links a {
-      color: white;
-      text-decoration: none;
-      margin: 0 10px;
-    }
-
-    .footer-links a:hover {
-      text-decoration: underline;
-    }
-  </style>
-</head>
-<body>
-  <header>
-      <div id="navbar-placeholder"></div>
-  </header>
-  <div class="game-container">
-    <!-- Game Area -->
-    <div class="game-area">
-      <div class="game-window">
-        <iframe id="game-frame" src="../games/Spelunky/src/index.html" width="100%" height="600px" style="border:none;"></iframe>
-        <!-- ...existing code... -->
-      </div>
-    </div>
-
-    <!-- Sidebar -->
-    <div class="sidebar">
-      <div class="instructions">
-        <h3>Play Spelunky</h3>
-        <p>Spelunky is a classic adventure game where you explore caves, collect treasures, and avoid traps. Use your skills to navigate through challenging levels and uncover hidden secrets!</p>
-      </div>
-      <div class="ads">
-        <h3>Support Our Site with Ads</h3>
-        <p><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5690564842575659"
-     crossorigin="anonymous"></script>
- <!-- display ad sidebar -->
-<ins class="adsbygoogle"
-     style="display:block"
-     data-ad-client="ca-pub-5690564842575659"
-     data-ad-slot="5102033888"
-     data-ad-format="auto"
-     data-full-width-responsive="true"></ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script></p>
-        <h3>How to Play Spelunky?</h3>
-        <p>Explore caves, collect treasures, and avoid traps to score points. Use power-ups and strategies to complete levels and achieve high scores!</p>
-        <h3>Who Created Spelunky?</h3>
-        <p>Spelunky was developed by a team of passionate game designers dedicated to creating fun and engaging adventure games.</p>
-        <h3>Is Spelunky Free and Unblocked?</h3>
-        <p>Yes, Spelunky is free to play and unblocked. Enjoy this classic adventure game anytime, anywhere.</p>
-        <h3>Can Spelunky Be Played on Chromebooks in School?</h3>
-        <p>Yes, Spelunky can be played on Chromebooks, making it a perfect choice for students looking for a quick and fun break.</p>
-      </div>
-        <p></p>
-      </div>
-    </div>
-  </div>
-  <br>
-    <title>Game Card Link</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="index, follow">
+    <meta name="description" content="Play Spelunky, the classic adventure game. Explore caves, collect treasures, and avoid traps in this exciting platformer. Updated Oct 24, 2025 on Schplay.">
+    <meta name="keywords" content="Spelunky, adventure game, play Spelunky, Spelunky game online, classic game, schplay, online play, unblocked">
+    <meta name="theme-color" content="#0f1a2a">
+    <title>Play Spelunky Online | Schplay</title>
+    <link rel="canonical" href="https://schplay.com/games/spelunky.html">
+    <link rel="icon" type="image/webp" href="/images/favicon.ico">
+    <link rel="apple-touch-icon" href="../images/favicon-32x32.png">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Schplay">
+    <meta property="og:title" content="Play Spelunky Online | Schplay">
+    <meta property="og:description" content="Play Spelunky, the classic adventure game. Explore caves, collect treasures, and avoid traps in this exciting platformer. Updated Oct 24, 2025 on Schplay.">
+    <meta property="og:url" content="https://schplay.com/games/spelunky.html">
+    <meta property="og:image" content="https://schplay.com/images/spelunky.webp">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Play Spelunky Online | Schplay">
+    <meta name="twitter:description" content="Play Spelunky, the classic adventure game. Explore caves, collect treasures, and avoid traps in this exciting platformer. Updated Oct 24, 2025 on Schplay.">
+    <meta name="twitter:image" content="https://schplay.com/images/spelunky.webp">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/new-style.css">
+    <link rel="stylesheet" href="../css/restyle.css">
+    <link rel="stylesheet" href="../css/user-choice.css">
+    <script type="application/ld+json">
+        {
+                  "@context": "https://schema.org",
+                  "@type": "VideoGame",
+                  "name": "Spelunky",
+                  "description": "Play Spelunky, the classic adventure game. Explore caves, collect treasures, and avoid traps in this exciting platformer.",
+                  "genre": [
+                            "Roguelike",
+                            "Platformer"
+                  ],
+                  "url": "https://schplay.com/games/spelunky.html",
+                  "image": "https://schplay.com/images/spelunky.webp",
+                  "publisher": {
+                            "@type": "Organization",
+                            "name": "Schplay"
+                  }
+        }
+    </script>
     <style>
-        .game-card {
-            background-color: #fff;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-            text-align: center;
-            cursor: pointer;
-            transition: transform 0.2s;
-        }
-        .game-card:hover {
-            transform: scale(1.05);
-        }
-        .recommendations-container {
-            display: flex;
-            justify-content: center;
-            margin-top: 20px;
-        }
-        .recommendations {
-            display: grid;
-            grid-template-columns: repeat(5, 1fr);
-            gap: 30px;
-            justify-content: center;
-            text-align: center;
-        }
-        .recommendation {
-            background-color: #B0E57C;
-            padding: 15px;
-            border-radius: 8px;
-            text-align: center;
-            width: 200px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-                              width: 256px; /* Fixed width */
-      height: 256px; /* Fixed height */
-        }
-        .recommendation img {
-            max-width: 100%;
-            border-radius: 8px;
-            width: 200px; /* Fixed width */
-     		height: 200px; /* Fixed height */
-        }
-               .recommendation h3 {
-            color: white;
-            text-decoration: none;
-        }
-        /* Footer */
-        footer {
-        padding: 20px;
-        background-color: #81b29a; /* Pastel green for footer */
-        color: white;
-        text-align: center;
-        }
-
-        .footer-links a {
-        color: white;
-        text-decoration: none;
-        margin: 0 10px;
-        }
-
-        .footer-links a:hover {
-        text-decoration: underline;
-        }
+        
+                .game-player-section {
+                    display: grid;
+                    grid-template-columns: minmax(0, 1fr);
+                    gap: 20px;
+                    margin-bottom: 32px;
+                }
+        
+                .game-player-card, .game-meta-card {
+                    background-color: #1c2a3e;
+                    border-radius: 16px;
+                    padding: 20px;
+                    box-shadow: 0 8px 24px rgba(5, 15, 32, 0.35);
+                }
+        
+                .game-player-header {
+                    display: flex;
+                    justify-content: flex-end;
+                    margin-bottom: 12px;
+                }
+        
+                .game-fullscreen-toggle {
+                    display: inline-flex;
+                    align-items: center;
+                    gap: 8px;
+                    background: rgba(15, 32, 58, 0.75);
+                    border: 1px solid rgba(86, 143, 215, 0.65);
+                    color: var(--text-color);
+                    padding: 8px 14px;
+                    border-radius: 12px;
+                    cursor: pointer;
+                    font-weight: 600;
+                    transition: transform 0.2s ease, background-color 0.2s ease;
+                }
+        
+                .game-fullscreen-toggle i {
+                    color: var(--secondary-color);
+                }
+        
+                .game-fullscreen-toggle:hover,
+                .game-fullscreen-toggle:focus-visible {
+                    transform: translateY(-1px);
+                    background: rgba(24, 46, 78, 0.9);
+                    outline: none;
+                }
+        
+                .game-player-card iframe {
+                    width: 100%;
+                    height: 640px;
+                    border: none;
+                    border-radius: 12px;
+                    background-color: #000;
+                }
+        
+                .game-player-card iframe:fullscreen,
+                .game-player-card iframe:-webkit-full-screen,
+                .game-player-card iframe:-moz-full-screen,
+                .game-player-card iframe:-ms-fullscreen {
+                    width: 100vw;
+                    height: 100vh;
+                    border-radius: 0;
+                }
+        
+                .game-meta-card h2 {
+                    font-size: 1.35rem;
+                    margin-bottom: 12px;
+                }
+        
+                .game-meta-card p {
+                    color: var(--text-muted);
+                    line-height: 1.6;
+                    margin-bottom: 16px;
+                }
+        
+                .game-meta-card ul {
+                    padding-left: 20px;
+                    color: var(--text-muted);
+                }
+        
+                .game-meta-card li {
+                    margin-bottom: 10px;
+                }
+        
+                .game-meta-card .game-ad-slot {
+                    margin: 0 0 20px;
+                }
+        
+                .meta-callout {
+                    display: flex;
+                    align-items: flex-start;
+                    gap: 14px;
+                    background: rgba(12, 24, 42, 0.85);
+                    border: 1px solid rgba(86, 143, 215, 0.35);
+                    border-radius: 12px;
+                    padding: 16px;
+                    margin-bottom: 24px;
+                }
+        
+                .meta-callout-icon {
+                    display: inline-flex;
+                    align-items: center;
+                    justify-content: center;
+                    width: 44px;
+                    height: 44px;
+                    border-radius: 12px;
+                    background: rgba(188, 165, 73, 0.15);
+                    color: var(--secondary-color);
+                    font-size: 1.4rem;
+                    flex-shrink: 0;
+                }
+        
+                .meta-callout-content {
+                    flex: 1;
+                }
+        
+                .meta-callout-eyebrow {
+                    font-size: 0.95rem;
+                    color: var(--text-muted);
+                    margin-bottom: 4px;
+                }
+        
+                .meta-callout a {
+                    color: var(--primary-color);
+                    font-weight: 600;
+                    font-size: 0.95rem;
+                }
+        
+                .meta-details {
+                    display: grid;
+                    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+                    gap: 18px;
+                    margin-bottom: 24px;
+                    list-style: none;
+                    padding: 0;
+                }
+        
+                .meta-details dt {
+                    font-size: 0.85rem;
+                    letter-spacing: 0.05em;
+                    text-transform: uppercase;
+                    color: var(--text-muted);
+                    margin-bottom: 6px;
+                }
+        
+                .meta-details dd {
+                    margin: 0;
+                    font-weight: 600;
+                }
+        
+                .meta-divider {
+                    height: 1px;
+                    border: none;
+                    background: rgba(255, 255, 255, 0.08);
+                    margin: 26px 0;
+                }
+        
+                .meta-subheading {
+                    font-size: 1.1rem;
+                    margin-top: 26px;
+                    margin-bottom: 12px;
+                }
+        
+                .meta-code-list {
+                    list-style: none;
+                    padding: 0;
+                    margin: 18px 0;
+                    font-family: "Courier New", Courier, monospace;
+                    font-size: 0.95rem;
+                    color: var(--text-muted);
+                }
+        
+                .meta-code-list li {
+                    margin-bottom: 6px;
+                }
+        
+                .meta-hint {
+                    font-size: 0.95rem;
+                    color: var(--text-muted);
+                    margin-top: 16px;
+                }
+        
+                .game-ad-slot {
+                    margin-top: 20px;
+                    background: rgba(12, 24, 42, 0.65);
+                    border-radius: 12px;
+                    padding: 12px;
+                    text-align: center;
+                }
+        
+                .game-ad-slot p {
+                    font-size: 0.85rem;
+                    margin-bottom: 12px;
+                    color: var(--text-muted);
+                }
+        
+                @media (max-width: 1100px) {
+                    .game-player-section {
+                        grid-template-columns: 1fr;
+                    }
+                    .game-player-card iframe {
+                        height: 520px;
+                    }
+                    .game-player-header {
+                        justify-content: center;
+                    }
+                }
+            
     </style>
 </head>
 <body>
-    
-    <div class="recommendations-container">
-        <div class="recommendations" id="recommendations"></div>
-    </div>
-    
-    <script>
-        document.addEventListener("DOMContentLoaded", function() {
-            const games = [
-            { link: "../games/slope.html", img: "../images/slope.webp", title: "Slope" },
-                { link: "../games/retrobowl.html", img: "../images/retrobowl.webp", title: "Retro Bowl" },
-                { link: "../games/blockblast.html", img: "../images/blockblast.webp", title: "Block Blast" },
-                { link: "../games/idlebreakout.html", img: "../images/idlebreakout.webp", title: "Idle Breakout" },
-                { link: "../games/gunspin.html", img: "../images/gunspin.webp", title: "Gun Spin" },
-                { link: "../games/learntofly3.html", img: "../images/learntofly.webp", title: "Learn To Fly" },
-                { link: "../games/houseofhazards.html", img: "../images/houseofhazards.webp", title: "House Of Hazards" },
-                { link: "../games/cut-the-rope.html", img: "../images/cuttherope.webp", title: "Cut The Rope" },
-                { link: "../games/tanktrouble.html", img: "../images/tanktrouble.webp", title: "Tank Trouble" },
-                { link: "../games/drifthunters.html", img: "../images/drifthunters.webp", title: "Drift Hunters" },
-                { link: "../games/templerun2.html", img: "https://play-lh.googleusercontent.com/go4XqS4mYs-G2tZymiVLF4wJYXIi5QrvwixNRzssk4G_vRBHrAdg4E1ddNwy9c2cZA", title: "Temple Run 2" },
-                { link: "../games/subwaysurfer.html", img: "../images/subwaysurfers.webp", title: "Subway Surfers" },
-                { link: "../games/agario.html", img: "../images/agario.webp", title: "Agar.io" },
-                { link: "../games/slitherio.html", img: "../images/slitherio.webp", title: "Slither.io" },
-                { link: "../games/2048.html", img: "../images/2048.webp", title: "2048" },
-                { link: "../games/pacman.html", img: "../images/pacman.webp", title: "Pac-Man" },
-                { link: "../games/pvz.html", img: "../images/pvz.webp", title: "Plants vs. Zombies" },
-                { link: "../games/tetris.html", img: "../images/tetris.webp", title: "Tetris" },
-                { link: "../games/flappybird.html", img: "../images/flappybird.webp", title: "Flappy Bird" },
-                { link: "../games/snake.html", img: "../images/googlesnake.webp", title: "Snake" }
-            ];
-            
-            const shuffledGames = games.sort(() => 0.5 - Math.random()).slice(0, 10);
-            const container = document.getElementById("recommendations");
-            
-            shuffledGames.forEach(game => {
-                const gameDiv = document.createElement("div");
-                gameDiv.classList.add("recommendation");
-                gameDiv.innerHTML = `
-                    <a href="${game.link}">
-                        <img src="${game.img}" alt="${game.title}">
-                        <h3>${game.title}</h3>
-                    </a>
-                `;
-                container.appendChild(gameDiv);
-            });
-        });
-    </script>
-    <br>
-    <!-- Footer -->
-<footer>
-  <div class="footer-container">
-    <div class="footer-links">
-      <a href="/privacy-policy">Privacy Policy</a> |
-      <a href="/terms-of-service">Terms of Service</a> |
-      <a href="/contact">Contact Us</a> |
-      <a href="/about">About Us</a>
-    </div>
-    <p>&copy; <span id="year"></span> Retro621. All rights reserved.</p>
-  </div>
-</footer>
+  <header id="site-header" role="banner">
+    <div id="navbar-placeholder"></div>
+  </header>
+
+  <main class="container" role="main">
+    <section class="hero hero-with-ad" aria-labelledby="spelunky-hero-title">
+      <div class="hero-grid">
+        <div class="hero-content">
+          <h1 id="spelunky-hero-title">Play Spelunky Online</h1>
+          <p>Spelunky is a classic adventure game where you explore caves, collect treasures, and avoid traps. Use your skills to navigate through challenging levels and uncover hidden secrets!</p>
+          <div class="hero-actions">
+            <a class="hero-primary" href="../allgames.html">Browse all games</a>
+            <a class="hero-secondary" href="#how-to-play">View tips &amp; controls</a>
+          </div>
+        </div>
+        <div class="hero-ad" aria-label="Sponsored">
+          <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5690564842575659" crossorigin="anonymous"></script>
+          <ins class="adsbygoogle"
+               style="display:block"
+               data-ad-client="ca-pub-5690564842575659"
+               data-ad-slot="9885096122"
+               data-ad-format="auto"
+               data-full-width-responsive="true"></ins>
+          <script>
+            (adsbygoogle = window.adsbygoogle || []).push({});
+          </script>
+        </div>
+      </div>
+    </section>
+
+    <section class="game-player-section">
+      <div class="game-player-card" role="region" aria-label="Spelunky gameplay">
+        <div class="game-player-header">
+          <button class="game-fullscreen-toggle" type="button" aria-controls="spelunky-iframe" aria-label="Toggle fullscreen">
+            <i class="fas fa-expand" aria-hidden="true"></i>
+            <span>Fullscreen</span>
+          </button>
+        </div>
+        <iframe id="spelunky-iframe" src="Spelunky/src/index.html" title="Play Spelunky" allowfullscreen loading="lazy"></iframe>
+      </div>
+      <aside class="game-meta-card" id="how-to-play">
+        <div class="game-ad-slot" aria-label="Advertisement">
+          <p>Ads keep Schplay free for everyone.</p>
+          <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5690564842575659" crossorigin="anonymous"></script>
+          <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-5690564842575659" data-ad-slot="5102033888" data-ad-format="auto" data-full-width-responsive="true"></ins>
+          <script>
+            (adsbygoogle = window.adsbygoogle || []).push({});
+          </script>
+        </div>
+        <div class="meta-callout" role="note">
+          <span class="meta-callout-icon" aria-hidden="true">
+            <i class="fas fa-shield-check"></i>
+          </span>
+          <div class="meta-callout-content">
+            <p class="meta-callout-eyebrow">Game content reviewed by <strong>Schplay Editors</strong></p>
+            <a href="../about.html">Learn about our game review guidelines</a>
+          </div>
+        </div>
+        <dl class="meta-details">
+          <div>
+            <dt>Genre</dt>
+            <dd>Roguelike · Platformer</dd>
+          </div>
+          <div>
+            <dt>Rating</dt>
+            <dd>⭐ 4.1 / 5 (36,016 votes)</dd>
+          </div>
+          <div>
+            <dt>Updated</dt>
+            <dd>Oct 24, 2025</dd>
+          </div>
+          <div>
+            <dt>Release</dt>
+            <dd>Dec 21, 2008</dd>
+          </div>
+          <div>
+            <dt>Platforms</dt>
+            <dd>Browser, PC</dd>
+          </div>
+        </dl>
+        <hr class="meta-divider">
+        <h2>Instructions</h2>
+        <p>Spelunky is a classic adventure game where you explore caves, collect treasures, and avoid traps. Use your skills to navigate through challenging levels and uncover hidden secrets!</p>
+        <h2>Controls</h2>
+        <ul>
+          <li><strong>Arrow keys</strong> &mdash; run and climb</li>
+          <li><strong>Z / X / C</strong> &mdash; jump, whip, and use items</li>
+          <li><strong>Space</strong> &mdash; throw ropes or bombs</li>
+        </ul>
+        <h2>Tips to Master Spelunky</h2>
+        <p>Spelunky is a classic adventure game where you explore caves, collect treasures, and avoid traps. Use your skills to navigate through challenging levels and uncover hidden secrets!</p>
+        <h3 class="meta-subheading">Play Spelunky</h3>
+        <p>Spelunky is a classic adventure game where you explore caves, collect treasures, and avoid traps. Use your skills to navigate through challenging levels and uncover hidden secrets!</p>
+        <h3 class="meta-subheading">How to Play Spelunky?</h3>
+        <p>Explore caves, collect treasures, and avoid traps to score points. Use power-ups and strategies to complete levels and achieve high scores!</p>
+        <h3 class="meta-subheading">Who Created Spelunky?</h3>
+        <p>Spelunky was developed by a team of passionate game designers dedicated to creating fun and engaging adventure games.</p>
+        <h3 class="meta-subheading">Is Spelunky Free and Unblocked?</h3>
+        <p>Yes, Spelunky is free to play and unblocked. Enjoy this classic adventure game anytime, anywhere.</p>
+      </aside>
+    </section>
+
+    <section class="games-grid-section" aria-labelledby="spelunky-recommendations-title">
+      <div class="section-header">
+        <h2 id="spelunky-recommendations-title">Players Also Enjoy</h2>
+        <span id="spelunky-recommendations-count" class="games-count" aria-live="polite"></span>
+      </div>
+      <div class="games-grid" id="spelunky-recommendations" aria-live="polite"></div>
+    </section>
+  </main>
+
+  <footer id="site-footer" role="contentinfo">
+    <div id="footer-placeholder"></div>
+  </footer>
 
   <script>
-    // Add event listeners to category links
-    const categoryLinks = document.querySelectorAll('.navbar-menu li a');
+    const GAME_SPELUNKY_RECOMMENDATION_COUNT = 12;
+    const CURRENT_GAME_NAME = "Spelunky";
 
-    categoryLinks.forEach(link => {
-      link.addEventListener('click', (e) => {
-        e.preventDefault(); // Prevent default link behavior
+    const resolvePath = (path) => {
+      if (!path) return path;
 
-        // Remove active class from all links
-        categoryLinks.forEach(link => link.classList.remove('active'));
+      if (/^(?:https?:)?\/\//.test(path) || path.startsWith('/')) {
+        return path;
+      }
 
-        // Add active class to the clicked link
-        link.classList.add('active');
+      if (path.startsWith('../')) {
+        return path;
+      }
 
-        // Get the selected category
-        const selectedCategory = link.getAttribute('data-category');
+      const resolver = window.SCHPLAY_RESOLVE_ASSET_PATH;
+      if (typeof resolver === 'function') {
+        return resolver(path);
+      }
 
-        // Log the selected category (you can replace this with your filtering logic)
-        console.log(`Selected Category: ${selectedCategory}`);
+      return '../' + path;
+    };
 
-        // Add your logic here to filter or display games based on the selected category
+    const pickRandomGames = (games, limit) => {
+      const sample = games.slice();
+      for (let i = sample.length - 1; i > 0; i -= 1) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [sample[i], sample[j]] = [sample[j], sample[i]];
+      }
+      return sample.slice(0, limit);
+    };
+
+
+    let hasRenderedRecommendations = false;
+
+    const renderRecommendations = () => {
+      if (hasRenderedRecommendations) {
+        return;
+      }
+
+      const grid = document.getElementById('spelunky-recommendations');
+      const count = document.getElementById('spelunky-recommendations-count');
+      if (!grid) {
+        return;
+      }
+
+      const catalog = (window.SCHPLAY_GAMES && window.SCHPLAY_GAMES.list) || [];
+      if (!Array.isArray(catalog) || !catalog.length) {
+        return;
+      }
+
+      const eligibleGames = catalog.filter(({ name, href, img }) => {
+        return name && href && img && name !== CURRENT_GAME_NAME;
       });
-    });
-  </script>
-  
-  <script>
-    // Function to include HTML templates
-    function includeHTML() {
-        var z, i, elmnt, file, xhttp;
-        z = document.getElementsByTagName("*");
-        for (i = 0; i < z.length; i++) {
-            elmnt = z[i];
-            file = elmnt.getAttribute("data-include");
-            if (file) {
-                xhttp = new XMLHttpRequest();
-                xhttp.onreadystatechange = function() {
-                    if (this.readyState == 4) {
-                        if (this.status == 200) {elmnt.innerHTML = this.responseText;}
-                        if (this.status == 404) {elmnt.innerHTML = "Page not found.";}
-                        elmnt.removeAttribute("data-include");
-                        includeHTML();
-                    }
-                }
-                xhttp.open("GET", file, true);
-                xhttp.send();
-                return;
-            }
-        }
+
+      const selection = eligibleGames.length
+        ? pickRandomGames(eligibleGames, Math.min(GAME_SPELUNKY_RECOMMENDATION_COUNT, eligibleGames.length))
+        : [];
+
+      grid.innerHTML = '';
+      selection.forEach(({ name, href, img }) => {
+        const card = document.createElement('a');
+        card.className = 'game-card';
+        card.href = resolvePath(href);
+        card.innerHTML = '<img src="' + resolvePath(img) + '" alt="' + name + '" loading="lazy" decoding="async"><h3>' + name + '</h3>';
+        grid.appendChild(card);
+      });
+
+      if (count) {
+        count.textContent = selection.length ? selection.length + ' games' : '';
+      }
+
+      if (!selection.length) {
+        const placeholder = document.createElement('p');
+        placeholder.textContent = 'Check back soon for more featured games.';
+        placeholder.style.color = 'var(--text-muted)';
+        placeholder.style.margin = '0';
+        placeholder.style.padding = '0.6rem 0';
+        grid.appendChild(placeholder);
+      }
+
+      hasRenderedRecommendations = true;
+    };
+
+    const ensureRecommendations = () => {
+      if (window.SCHPLAY_GAMES && Array.isArray(window.SCHPLAY_GAMES.list) && window.SCHPLAY_GAMES.list.length) {
+        renderRecommendations();
+      }
+    };
+
+    if (window.SCHPLAY_GAMES && window.SCHPLAY_GAMES.list) {
+      renderRecommendations();
+    } else {
+      document.addEventListener('schplay:games-ready', renderRecommendations);
     }
 
-    // Include the navbar HTML
-    document.addEventListener('DOMContentLoaded', function() {
-        document.getElementById('navbar-placeholder').setAttribute('data-include', '../navbar.html');
-        includeHTML();
-    });
+    document.addEventListener('schplay:navigation-ready', ensureRecommendations);
+    window.addEventListener('load', ensureRecommendations);
+    setTimeout(ensureRecommendations, 1200);
 
-    // Prevent iframe from scrolling the page when keys are pressed
-    document.getElementById('game-frame').addEventListener('load', function() {
-      this.contentWindow.addEventListener('keydown', function(event) {
-        event.preventDefault();
+    const iframe = document.getElementById('spelunky-iframe');
+    const fullscreenButton = document.querySelector('.game-player-card .game-fullscreen-toggle');
+
+    if (iframe && fullscreenButton) {
+      const updateFullscreenIcon = () => {
+        const icon = fullscreenButton.querySelector('i');
+        if (!icon) {
+          return;
+        }
+        if (!document.fullscreenElement && !document.webkitFullscreenElement && !document.mozFullScreenElement && !document.msFullscreenElement) {
+          icon.classList.remove('fa-compress');
+          icon.classList.add('fa-expand');
+          const label = fullscreenButton.querySelector('span');
+          if (label) {
+            label.textContent = 'Fullscreen';
+          }
+        } else {
+          icon.classList.remove('fa-expand');
+          icon.classList.add('fa-compress');
+          const label = fullscreenButton.querySelector('span');
+          if (label) {
+            label.textContent = 'Exit Fullscreen';
+          }
+        }
+      };
+
+      const requestIframeFullscreen = () => {
+        const fsElement = iframe;
+        if (fsElement.requestFullscreen) {
+          fsElement.requestFullscreen({ navigationUI: 'hide' }).catch(() => fsElement.requestFullscreen());
+        } else if (fsElement.webkitRequestFullscreen) {
+          fsElement.webkitRequestFullscreen();
+        } else if (fsElement.mozRequestFullScreen) {
+          fsElement.mozRequestFullScreen();
+        } else if (fsElement.msRequestFullscreen) {
+          fsElement.msRequestFullscreen();
+        }
+      };
+
+      const exitFullscreen = () => {
+        if (document.exitFullscreen) {
+          document.exitFullscreen();
+        } else if (document.webkitExitFullscreen) {
+          document.webkitExitFullscreen();
+        } else if (document.mozCancelFullScreen) {
+          document.mozCancelFullScreen();
+        } else if (document.msExitFullscreen) {
+          document.msExitFullscreen();
+        }
+      };
+
+      fullscreenButton.addEventListener('click', () => {
+        if (!document.fullscreenElement && !document.webkitFullscreenElement && !document.mozFullScreenElement && !document.msFullscreenElement) {
+          requestIframeFullscreen();
+        } else {
+          exitFullscreen();
+        }
       });
-    });
+
+      document.addEventListener('fullscreenchange', updateFullscreenIcon);
+      document.addEventListener('webkitfullscreenchange', updateFullscreenIcon);
+      document.addEventListener('mozfullscreenchange', updateFullscreenIcon);
+      document.addEventListener('MSFullscreenChange', updateFullscreenIcon);
+    }
+
   </script>
+  <script src="../js/load-components.js" defer data-component-root="../"></script>
 </body>
 </html>

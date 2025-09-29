@@ -1,0 +1,62 @@
+{
+  "boxingrandom": {
+    "name": "Boxing Random",
+    "href": "games/boxingrandom.html",
+    "image": "images/boxingrandom.webp",
+    "title": "Boxing Random - Play Free Online",
+    "metaDescription": "Play Boxing Random online and slug it out in hilarious ragdoll boxing matches. Trade punches, time wild kicks, and topple your opponent before they drop you.",
+    "metaKeywords": "Boxing Random, ragdoll boxing, physics boxer game, two player boxing, goofy sports game, schplay boxing",
+    "heroParagraph": "Boxing Random drops you into a wobbly boxing ring where one clean hit can flip the match. Time your lunges, watch the weather twists, and swing smarter than your rival.",
+    "instructions": [
+      "Every round in Boxing Random throws a new arena twist at you—from icy floors to gravity-flipping rings—so stay light on your feet and watch your opponent’s balance before committing to a punch.",
+      "Feint with small hops to bait a swing, then unleash a straight punch or the infamous surprise kick when the distance is perfect. Remember: flying wildly often leaves you wide open for a counter.",
+      "Use the first seconds of each bout to read the round’s gimmick, then lean into short combos instead of button mashing. Precision beats chaos when the bell rings for overtime." 
+    ],
+    "sections": [
+      {
+        "heading": "Control the stumble",
+        "body": "Mini hops reset your balance. Tap forward to close distance, then stop tapping before you swing so your fighter doesn’t tumble over its own gloves."
+      },
+      {
+        "heading": "Capitalize on arena quirks",
+        "body": "Snowy stages reward patient taps while windy rounds push punches farther. Adjust your rhythm to whatever wacky modifier the RNG dial spins up."
+      },
+      {
+        "heading": "Bring a friend",
+        "body": "Boxing Random shines in couch co-op. Trade controllers between rounds or pass a keyboard and see who adapts fastest to the next absurd arena rule." 
+      }
+    ],
+    "plainText": "Boxing Random - Play Free Online\nBoxing Random drops you into a wobbly boxing ring where one clean hit can flip the match. Every round throws a new arena twist at you—from icy floors to gravity-flipping rings—so stay light on your feet and watch your opponent’s balance before committing to a punch. Feint with small hops to bait a swing, then unleash a straight punch or the infamous surprise kick when the distance is perfect. Precision beats chaos in this ragdoll boxing showdown.",
+    "iframeSrc": "boxingrandom/index.html"
+  },
+  "basketballstars": {
+    "name": "Basketball Stars",
+    "href": "games/basketballstars.html",
+    "image": "images/basketballstars.webp",
+    "title": "Basketball Stars - Play Free Online",
+    "metaDescription": "Play Basketball Stars unblocked and take on fast-paced streetball duels. Cross defenders, sink clutch jumpers, and unlock signature moves from legendary players.",
+    "metaKeywords": "Basketball Stars, streetball game, two player basketball, online hoops, long range three pointers, schplay basketball",
+    "heroParagraph": "Basketball Stars lets you lace up against AI or friends in highlight-reel duels. Break ankles with crossovers, pick your power-ups, and drain shots before the buzzer sounds.",
+    "instructions": [
+      "Choose from classic duos or custom avatars, then learn your player’s special. Some dominate the rim while others rain threes—lean into their strengths as soon as the tip-off lands.",
+      "On offense, use hesitations to freeze defenders before pulling up or cutting baseline. On defense, time the steal button carefully; misfires set up wide-open threes.",
+      "Collect cash mid-match to upgrade stats between tournaments. A balanced build with stamina and shooting keeps you deadly deep into championship play." 
+    ],
+    "sections": [
+      {
+        "heading": "Master power-ups",
+        "body": "Turbo boosts help you beat defenders down the court, while the megadunk shatters any attempt at a block. Trigger them when the shot clock dips under eight seconds."
+      },
+      {
+        "heading": "Guard the arc",
+        "body": "A well-timed jump can stuff even the tallest shooter. Watch the opponent’s release animation and contest at its peak to force bricks."
+      },
+      {
+        "heading": "Challenge friends",
+        "body": "Split the keyboard or plug in controllers for instant couch rivalries. Winner-stays-on rules keep the energy high across a whole lunch break." 
+      }
+    ],
+    "plainText": "Basketball Stars - Play Free Online\nBasketball Stars lets you lace up against AI or friends in highlight-reel duels. Choose from classic duos or custom avatars, chain crossovers, and throw down poster-worthy dunks while you chase tournament trophies.",
+    "iframeSrc": "basketball-stars/index.html"
+  }
+}

@@ -336,6 +336,32 @@ html {
     flex-wrap: wrap;
 }
 
+.hero-grid {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 320px);
+    gap: 24px;
+    align-items: center;
+}
+
+.hero-grid .hero-content {
+    max-width: 680px;
+}
+
+.hero-grid .hero-ad {
+    background-color: #101d33;
+    border-radius: 16px;
+    padding: 16px;
+    min-height: 160px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 8px 24px rgba(5, 15, 32, 0.35);
+}
+
+.hero-grid .hero-ad > * {
+    width: 100%;
+}
+
 .hero-actions a {
     padding: 0.72rem 1.65rem;
     border-radius: 999px;
@@ -529,6 +555,15 @@ html {
         padding: 2.9rem 1.7rem;
     }
 
+    .hero-grid {
+        grid-template-columns: 1fr;
+        gap: 18px;
+    }
+
+    .hero-grid .hero-ad {
+        order: 2;
+    }
+
     .hero-content h1 {
         font-size: 2.45rem;
     }
@@ -557,6 +592,15 @@ html {
         padding: 2.5rem 1.4rem;
     }
 
+    .hero-grid {
+        gap: 16px;
+    }
+
+    .hero-grid .hero-ad {
+        padding: 14px;
+        min-height: 140px;
+    }
+
     .hero-content h1 {
         font-size: 2.15rem;
     }
@@ -565,9 +609,16 @@ html {
         font-size: 1.03rem;
     }
 
+    .hero-actions {
+        width: 100%;
+        flex-direction: column;
+        align-items: stretch;
+    }
+
     .hero-actions a {
         display: block;
-        margin: 0.5rem 0;
+        margin: 0.4rem 0;
+        text-align: center;
     }
 
     .main-grid {
@@ -582,6 +633,36 @@ html {
 
     .games-grid {
         grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    }
+}
+
+@media (max-width: 640px) {
+    .section-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.6rem;
+    }
+
+    .games-list a {
+        gap: 0.7rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero {
+        padding: 2.2rem 1.1rem;
+    }
+
+    .hero-content h1 {
+        font-size: 1.92rem;
+    }
+
+    .hero-content p {
+        font-size: 0.98rem;
+    }
+
+    .hero-grid .hero-ad {
+        padding: 12px;
     }
 }
 
