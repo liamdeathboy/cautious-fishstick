@@ -13,6 +13,18 @@ const resolveAssetPath = (path) => {
     return componentRoot + path;
 };
 
+const resolveWithRoot = (path) => {
+    if (!path) {
+        return path;
+    }
+    if (path.startsWith('/')) {
+        return path;
+    }
+    return resolveAssetPath(path);
+};
+
+window.SCHPLAY_RESOLVE_ASSET_PATH = resolveWithRoot;
+
 document.addEventListener("DOMContentLoaded", function() {
     const loadScriptOnce = (id, src, onLoad) => {
         let script = document.getElementById(id);
@@ -66,11 +78,41 @@ document.addEventListener("DOMContentLoaded", function() {
         document.dispatchEvent(new CustomEvent('schplay:navigation-ready'));
     };
 
+    const applyRootPaths = (container) => {
+        if (!container) return;
+
+        container.querySelectorAll('[data-root-src]').forEach((node) => {
+            const path = node.getAttribute('data-root-src');
+            const resolved = resolveWithRoot(path);
+            if (resolved) {
+                node.setAttribute('src', resolved);
+            }
+        });
+
+        container.querySelectorAll('[data-root-href]').forEach((node) => {
+            const path = node.getAttribute('data-root-href');
+            const resolved = resolveWithRoot(path);
+            if (resolved) {
+                node.setAttribute('href', resolved);
+            }
+        });
+
+        container.querySelectorAll('[data-view-all]').forEach((node) => {
+            const path = node.getAttribute('data-view-all');
+            const resolved = resolveWithRoot(path);
+            if (resolved) {
+                node.setAttribute('data-view-all', resolved);
+            }
+        });
+    };
+
     // Load navbar
     fetch(resolveAssetPath('navbar.html'))
         .then(response => response.text())
         .then(data => {
             document.getElementById("navbar-placeholder").innerHTML = data;
+
+            applyRootPaths(document.getElementById('navbar-placeholder'));
 
             ensureGameData();
             ensureIncognito();
@@ -94,6 +136,8 @@ document.addEventListener("DOMContentLoaded", function() {
     fetch(resolveAssetPath('footer.html'))
         .then(response => response.text())
         .then(data => {
-            document.getElementById("footer-placeholder").innerHTML = data;
+            const footerContainer = document.getElementById("footer-placeholder");
+            footerContainer.innerHTML = data;
+            applyRootPaths(footerContainer);
         });
 });

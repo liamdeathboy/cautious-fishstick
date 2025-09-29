@@ -1,249 +1,539 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Idle Breakout - Play Free Online</title>
-  <meta name="description" content="Play Idle Breakout, a fun and addictive idle game. Break bricks, upgrade balls, and strategize to maximize your progress. Free and unblocked!">
-  <meta name="keywords" content="Idle Breakout, idle game, brick breaker, free online game, unblocked games, strategy game, incremental game">
-  <link rel="stylesheet" type="text/css" href="../style.css">
-  <link rel="stylesheet" href="../css/footer.css">
-  <link rel="stylesheet" type="text/css" href="../navbar.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-  <style>
-    /* Basic Reset */
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
-    body {
-      font-family: Arial, sans-serif;
-      line-height: 1.6;
-      background-color: #f4f1de;
-      color: #3d405b;
-    }
-
-    /* Game Container */
-    .game-container {
-      display: flex;
-      max-width: 1400px;
-      max-height: 1100px;
-      margin: 20px auto;
-      gap: 20px;
-    }
-
-    .game-area {
-      flex: 3;
-      background-color: #f2cc8f;
-      padding: 15px;
-      border-radius: 8px;
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    }
-
-    .game-window {
-      text-align: center;
-      padding: 20px;
-      background-color: #f4f1de;
-      border-radius: 8px;
-    }
-
-    /* Sidebar */
-    .sidebar {
-      flex: 1;
-      background-color: #B0E57C;
-      padding: 20px;
-      border-radius: 8px;
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-      overflow-y: auto; /* Enable vertical scrolling */
-      max-height: 500px; /* Set a maximum height for the sidebar */
-    }
-
-    .instructions, .ads {
-      margin-bottom: 20px;
-    }
-
-    .instructions h3, .ads h3 {
-      margin-bottom: 10px;
-      color: white;
-    }
-
-    .instructions p, .ads p {
-      color: #3d405b;
-    }
-
-    /* Footer */
-    footer {
-      padding: 20px;
-      background-color: #81b29a;
-      color: white;
-      text-align: center;
-    }
-
-    .footer-links a {
-      color: white;
-      text-decoration: none;
-      margin: 0 10px;
-    }
-
-    .footer-links a:hover {
-      text-decoration: underline;
-    }
-
-    /* Recommendations */
-    .recommendations-container {
-      display: flex;
-      justify-content: center;
-      margin-top: 20px;
-    }
-
-    .recommendations {
-      display: grid;
-      grid-template-columns: repeat(5, 1fr);
-      gap: 30px;
-      justify-content: center;
-      text-align: center;
-    }
-
-    .recommendation {
-      background-color: #B0E57C;
-      padding: 15px;
-      border-radius: 8px;
-      text-align: center;
-      width: 256px;
-      height: 256px;
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    }
-
-    .recommendation img {
-      max-width: 100%;
-      border-radius: 8px;
-      width: 200px;
-      height: 200px;
-      object-fit: cover;
-    }
-
-    .recommendation h3 {
-      color: white;
-      text-decoration: none;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="index, follow">
+    <meta name="description" content="Play Idle Breakout, a fun and addictive idle game. Break bricks, upgrade balls, and strategize to maximize your progress. Free and unblocked! Updated Oct 06, 2025 on Schplay.">
+    <meta name="keywords" content="Idle Breakout, idle game, brick breaker, free online game, unblocked games, strategy game, incremental game, schplay, online play, unblocked">
+    <meta name="theme-color" content="#0f1a2a">
+    <title>Play Idle Breakout Online | Schplay</title>
+    <link rel="canonical" href="https://schplay.com/games/idle-breakout.html">
+    <link rel="icon" type="image/webp" href="/images/favicon.ico">
+    <link rel="apple-touch-icon" href="../images/favicon-32x32.png">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Schplay">
+    <meta property="og:title" content="Play Idle Breakout Online | Schplay">
+    <meta property="og:description" content="Play Idle Breakout, a fun and addictive idle game. Break bricks, upgrade balls, and strategize to maximize your progress. Free and unblocked! Updated Oct 06, 2025 on Schplay.">
+    <meta property="og:url" content="https://schplay.com/games/idle-breakout.html">
+    <meta property="og:image" content="https://schplay.com/images/idlebreakout.webp">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Play Idle Breakout Online | Schplay">
+    <meta name="twitter:description" content="Play Idle Breakout, a fun and addictive idle game. Break bricks, upgrade balls, and strategize to maximize your progress. Free and unblocked! Updated Oct 06, 2025 on Schplay.">
+    <meta name="twitter:image" content="https://schplay.com/images/idlebreakout.webp">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/new-style.css">
+    <link rel="stylesheet" href="../css/restyle.css">
+    <link rel="stylesheet" href="../css/user-choice.css">
+    <script type="application/ld+json">
+        {
+                  "@context": "https://schema.org",
+                  "@type": "VideoGame",
+                  "name": "Idle Breakout",
+                  "description": "Play Idle Breakout, a fun and addictive idle game. Break bricks, upgrade balls, and strategize to maximize your progress. Free and unblocked!",
+                  "genre": [
+                            "Idle",
+                            "Brick Breaker"
+                  ],
+                  "url": "https://schplay.com/games/idle-breakout.html",
+                  "image": "https://schplay.com/images/idlebreakout.webp",
+                  "publisher": {
+                            "@type": "Organization",
+                            "name": "Schplay"
+                  }
+        }
+    </script>
+    <style>
+        
+                .game-player-section {
+                    display: grid;
+                    grid-template-columns: minmax(0, 1fr);
+                    gap: 20px;
+                    margin-bottom: 32px;
+                }
+        
+                .game-player-card, .game-meta-card {
+                    background-color: #1c2a3e;
+                    border-radius: 16px;
+                    padding: 20px;
+                    box-shadow: 0 8px 24px rgba(5, 15, 32, 0.35);
+                }
+        
+                .game-player-header {
+                    display: flex;
+                    justify-content: flex-end;
+                    margin-bottom: 12px;
+                }
+        
+                .game-fullscreen-toggle {
+                    display: inline-flex;
+                    align-items: center;
+                    gap: 8px;
+                    background: rgba(15, 32, 58, 0.75);
+                    border: 1px solid rgba(86, 143, 215, 0.65);
+                    color: var(--text-color);
+                    padding: 8px 14px;
+                    border-radius: 12px;
+                    cursor: pointer;
+                    font-weight: 600;
+                    transition: transform 0.2s ease, background-color 0.2s ease;
+                }
+        
+                .game-fullscreen-toggle i {
+                    color: var(--secondary-color);
+                }
+        
+                .game-fullscreen-toggle:hover,
+                .game-fullscreen-toggle:focus-visible {
+                    transform: translateY(-1px);
+                    background: rgba(24, 46, 78, 0.9);
+                    outline: none;
+                }
+        
+                .game-player-card iframe {
+                    width: 100%;
+                    height: 640px;
+                    border: none;
+                    border-radius: 12px;
+                    background-color: #000;
+                }
+        
+                .game-player-card iframe:fullscreen,
+                .game-player-card iframe:-webkit-full-screen,
+                .game-player-card iframe:-moz-full-screen,
+                .game-player-card iframe:-ms-fullscreen {
+                    width: 100vw;
+                    height: 100vh;
+                    border-radius: 0;
+                }
+        
+                .game-meta-card h2 {
+                    font-size: 1.35rem;
+                    margin-bottom: 12px;
+                }
+        
+                .game-meta-card p {
+                    color: var(--text-muted);
+                    line-height: 1.6;
+                    margin-bottom: 16px;
+                }
+        
+                .game-meta-card ul {
+                    padding-left: 20px;
+                    color: var(--text-muted);
+                }
+        
+                .game-meta-card li {
+                    margin-bottom: 10px;
+                }
+        
+                .game-meta-card .game-ad-slot {
+                    margin: 0 0 20px;
+                }
+        
+                .meta-callout {
+                    display: flex;
+                    align-items: flex-start;
+                    gap: 14px;
+                    background: rgba(12, 24, 42, 0.85);
+                    border: 1px solid rgba(86, 143, 215, 0.35);
+                    border-radius: 12px;
+                    padding: 16px;
+                    margin-bottom: 24px;
+                }
+        
+                .meta-callout-icon {
+                    display: inline-flex;
+                    align-items: center;
+                    justify-content: center;
+                    width: 44px;
+                    height: 44px;
+                    border-radius: 12px;
+                    background: rgba(188, 165, 73, 0.15);
+                    color: var(--secondary-color);
+                    font-size: 1.4rem;
+                    flex-shrink: 0;
+                }
+        
+                .meta-callout-content {
+                    flex: 1;
+                }
+        
+                .meta-callout-eyebrow {
+                    font-size: 0.95rem;
+                    color: var(--text-muted);
+                    margin-bottom: 4px;
+                }
+        
+                .meta-callout a {
+                    color: var(--primary-color);
+                    font-weight: 600;
+                    font-size: 0.95rem;
+                }
+        
+                .meta-details {
+                    display: grid;
+                    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+                    gap: 18px;
+                    margin-bottom: 24px;
+                    list-style: none;
+                    padding: 0;
+                }
+        
+                .meta-details dt {
+                    font-size: 0.85rem;
+                    letter-spacing: 0.05em;
+                    text-transform: uppercase;
+                    color: var(--text-muted);
+                    margin-bottom: 6px;
+                }
+        
+                .meta-details dd {
+                    margin: 0;
+                    font-weight: 600;
+                }
+        
+                .meta-divider {
+                    height: 1px;
+                    border: none;
+                    background: rgba(255, 255, 255, 0.08);
+                    margin: 26px 0;
+                }
+        
+                .meta-subheading {
+                    font-size: 1.1rem;
+                    margin-top: 26px;
+                    margin-bottom: 12px;
+                }
+        
+                .meta-code-list {
+                    list-style: none;
+                    padding: 0;
+                    margin: 18px 0;
+                    font-family: "Courier New", Courier, monospace;
+                    font-size: 0.95rem;
+                    color: var(--text-muted);
+                }
+        
+                .meta-code-list li {
+                    margin-bottom: 6px;
+                }
+        
+                .meta-hint {
+                    font-size: 0.95rem;
+                    color: var(--text-muted);
+                    margin-top: 16px;
+                }
+        
+                .game-ad-slot {
+                    margin-top: 20px;
+                    background: rgba(12, 24, 42, 0.65);
+                    border-radius: 12px;
+                    padding: 12px;
+                    text-align: center;
+                }
+        
+                .game-ad-slot p {
+                    font-size: 0.85rem;
+                    margin-bottom: 12px;
+                    color: var(--text-muted);
+                }
+        
+                @media (max-width: 1100px) {
+                    .game-player-section {
+                        grid-template-columns: 1fr;
+                    }
+                    .game-player-card iframe {
+                        height: 520px;
+                    }
+                    .game-player-header {
+                        justify-content: center;
+                    }
+                }
+            
+    </style>
 </head>
 <body>
-  <header>
+  <header id="site-header" role="banner">
     <div id="navbar-placeholder"></div>
   </header>
-  <div class="game-container">
-    <!-- Game Area -->
-    <div class="game-area">
-      <div class="game-window">
-        <iframe id="game-frame" src="../games/idle-breakout/index.html" width="120%" height="800px" style="border:none;"></iframe>
-      </div>
-    </div>
 
-    <!-- Sidebar -->
-    <div class="sidebar">
-      <div class="instructions">
-        <h3>Idle Breakout</h3>
-        <p>Idle Breakout is an addictive idle game where players break bricks, upgrade balls, and strategize to maximize their progress. Test your skills and aim for the highest score!</p>
-        <h3>Game History and Impact</h3>
-        <p>Idle Breakout has become a favorite among idle game enthusiasts for its engaging mechanics and endless progression. It has inspired players to strategize and optimize their gameplay.</p>
-        <h3>Gameplay Strategies</h3>
-        <p>Focus on upgrading your balls and unlocking new abilities to break bricks faster. Use resources wisely to expand your progress and achieve higher scores.</p>
+  <main class="container" role="main">
+    <section class="hero hero-with-ad" aria-labelledby="idle-breakout-hero-title">
+      <div class="hero-grid">
+        <div class="hero-content">
+          <h1 id="idle-breakout-hero-title">Play Idle Breakout Online</h1>
+          <p>Idle Breakout is an addictive idle game where players break bricks, upgrade balls, and strategize to maximize their progress. Test your skills and aim for the highest score!</p>
+          <div class="hero-actions">
+            <a class="hero-primary" href="../allgames.html">Browse all games</a>
+            <a class="hero-secondary" href="#how-to-play">View tips &amp; controls</a>
+          </div>
+        </div>
+        <div class="hero-ad" aria-label="Sponsored">
+          <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5690564842575659" crossorigin="anonymous"></script>
+          <ins class="adsbygoogle"
+               style="display:block"
+               data-ad-client="ca-pub-5690564842575659"
+               data-ad-slot="9885096122"
+               data-ad-format="auto"
+               data-full-width-responsive="true"></ins>
+          <script>
+            (adsbygoogle = window.adsbygoogle || []).push({});
+          </script>
+        </div>
       </div>
-      <div class="ads">
-        <h3>Advertisement (keeps website free!)</h3>
-        <p>
+    </section>
+
+    <section class="game-player-section">
+      <div class="game-player-card" role="region" aria-label="Idle Breakout gameplay">
+        <div class="game-player-header">
+          <button class="game-fullscreen-toggle" type="button" aria-controls="idle-breakout-iframe" aria-label="Toggle fullscreen">
+            <i class="fas fa-expand" aria-hidden="true"></i>
+            <span>Fullscreen</span>
+          </button>
+        </div>
+        <iframe id="idle-breakout-iframe" src="idle-breakout/index.html" title="Play Idle Breakout" allowfullscreen loading="lazy"></iframe>
+      </div>
+      <aside class="game-meta-card" id="how-to-play">
+        <div class="game-ad-slot" aria-label="Advertisement">
+          <p>Ads keep Schplay free for everyone.</p>
           <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5690564842575659" crossorigin="anonymous"></script>
           <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-5690564842575659" data-ad-slot="5102033888" data-ad-format="auto" data-full-width-responsive="true"></ins>
           <script>
             (adsbygoogle = window.adsbygoogle || []).push({});
           </script>
-        </p>
-      </div>
-    </div>
-  </div>
+        </div>
+        <div class="meta-callout" role="note">
+          <span class="meta-callout-icon" aria-hidden="true">
+            <i class="fas fa-shield-check"></i>
+          </span>
+          <div class="meta-callout-content">
+            <p class="meta-callout-eyebrow">Game content reviewed by <strong>Schplay Editors</strong></p>
+            <a href="../about.html">Learn about our game review guidelines</a>
+          </div>
+        </div>
+        <dl class="meta-details">
+          <div>
+            <dt>Genre</dt>
+            <dd>Idle · Brick Breaker</dd>
+          </div>
+          <div>
+            <dt>Rating</dt>
+            <dd>⭐ 4.1 / 5 (80,809 votes)</dd>
+          </div>
+          <div>
+            <dt>Updated</dt>
+            <dd>Oct 06, 2025</dd>
+          </div>
+          <div>
+            <dt>Release</dt>
+            <dd>Jun 22, 2019</dd>
+          </div>
+          <div>
+            <dt>Platforms</dt>
+            <dd>Browser</dd>
+          </div>
+        </dl>
+        <hr class="meta-divider">
+        <h2>Instructions</h2>
+        <p>Idle Breakout is an addictive idle game where players break bricks, upgrade balls, and strategize to maximize their progress. Test your skills and aim for the highest score!</p>
+        <p>Idle Breakout has become a favorite among idle game enthusiasts for its engaging mechanics and endless progression. It has inspired players to strategize and optimize their gameplay.</p>
+        <p>Focus on upgrading your balls and unlocking new abilities to break bricks faster. Use resources wisely to expand your progress and achieve higher scores.</p>
+        <h2>Controls</h2>
+        <ul>
+          <li><strong>Mouse</strong> &mdash; buy upgrades and trigger power-ups</li>
+          <li><strong>Space</strong> &mdash; toggle auto-launch</li>
+          <li><strong>P</strong> &mdash; pause or resume the run</li>
+        </ul>
+        <h2>Tips to Master Idle Breakout</h2>
+        <p>Idle Breakout is an addictive idle game where players break bricks, upgrade balls, and strategize to maximize their progress. Test your skills and aim for the highest score!</p>
+        <h3 class="meta-subheading">Game History and Impact</h3>
+        <p>Idle Breakout has become a favorite among idle game enthusiasts for its engaging mechanics and endless progression. It has inspired players to strategize and optimize their gameplay.</p>
+        <h3 class="meta-subheading">Gameplay Strategies</h3>
+        <p>Focus on upgrading your balls and unlocking new abilities to break bricks faster. Use resources wisely to expand your progress and achieve higher scores.</p>
+      </aside>
+    </section>
 
-  <!-- Recommendations -->
-  <div class="recommendations-container">
-    <div class="recommendations" id="recommendations"></div>
-  </div>
-
-  <!-- Footer -->
-  <footer>
-    <div class="footer-container">
-      <div class="footer-links">
-        <a href="/privacy-policy">Privacy Policy</a> |
-        <a href="/terms-of-service">Terms of Service</a> |
-        <a href="/contact">Contact Us</a> |
-        <a href="/about">About Us</a>
+    <section class="games-grid-section" aria-labelledby="idle-breakout-recommendations-title">
+      <div class="section-header">
+        <h2 id="idle-breakout-recommendations-title">Players Also Enjoy</h2>
+        <span id="idle-breakout-recommendations-count" class="games-count" aria-live="polite"></span>
       </div>
-      <p>&copy; <span id="year"></span> Retro621. All rights reserved.</p>
-    </div>
+      <div class="games-grid" id="idle-breakout-recommendations" aria-live="polite"></div>
+    </section>
+  </main>
+
+  <footer id="site-footer" role="contentinfo">
+    <div id="footer-placeholder"></div>
   </footer>
 
   <script>
-    // Include the navbar HTML
-    document.addEventListener('DOMContentLoaded', function() {
-      document.getElementById('navbar-placeholder').setAttribute('data-include', '../navbar.html');
-      includeHTML();
-    });
+    const GAME_IDLE_BREAKOUT_RECOMMENDATION_COUNT = 12;
+    const CURRENT_GAME_NAME = "Idle Breakout";
 
-    // Lazy load recommendations
-    document.addEventListener("DOMContentLoaded", function() {
-      const games = [
-        { link: "../games/slope.html", img: "../images/slope.webp", title: "Slope" },
-        { link: "../games/retrobowl.html", img: "../images/retrobowl.webp", title: "Retro Bowl" },
-        { link: "../games/blockblast.html", img: "../images/blockblast.webp", title: "Block Blast" },
-        { link: "../games/idlebreakout.html", img: "../images/idlebreakout.webp", title: "Idle Breakout" },
-        { link: "../games/gunspin.html", img: "../images/gunspin.webp", title: "Gun Spin" },
-        { link: "../games/learntofly3.html", img: "../images/learntofly.webp", title: "Learn To Fly" },
-        { link: "../games/houseofhazards.html", img: "../images/houseofhazards.webp", title: "House Of Hazards" },
-        { link: "../games/cut-the-rope.html", img: "../images/cuttherope.webp", title: "Cut The Rope" },
-        { link: "../games/tanktrouble.html", img: "../images/tanktrouble.webp", title: "Tank Trouble" },
-        { link: "../games/drifthunters.html", img: "../images/drifthunters.webp", title: "Drift Hunters" }
-      ];
+    const resolvePath = (path) => {
+      if (!path) return path;
 
-      const shuffledGames = games.sort(() => 0.5 - Math.random()).slice(0, 10);
-      const container = document.getElementById("recommendations");
+      if (/^(?:https?:)?\/\//.test(path) || path.startsWith('/')) {
+        return path;
+      }
 
-      shuffledGames.forEach(game => {
-        const gameDiv = document.createElement("div");
-        gameDiv.classList.add("recommendation");
-        gameDiv.innerHTML = `
-          <a href="${game.link}">
-            <img src="${game.img}" alt="${game.title} - Play Now">
-            <h3>${game.title}</h3>
-          </a>
-        `;
-        container.appendChild(gameDiv);
+      if (path.startsWith('../')) {
+        return path;
+      }
+
+      const resolver = window.SCHPLAY_RESOLVE_ASSET_PATH;
+      if (typeof resolver === 'function') {
+        return resolver(path);
+      }
+
+      return '../' + path;
+    };
+
+    const pickRandomGames = (games, limit) => {
+      const sample = games.slice();
+      for (let i = sample.length - 1; i > 0; i -= 1) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [sample[i], sample[j]] = [sample[j], sample[i]];
+      }
+      return sample.slice(0, limit);
+    };
+
+
+    let hasRenderedRecommendations = false;
+
+    const renderRecommendations = () => {
+      if (hasRenderedRecommendations) {
+        return;
+      }
+
+      const grid = document.getElementById('idle-breakout-recommendations');
+      const count = document.getElementById('idle-breakout-recommendations-count');
+      if (!grid) {
+        return;
+      }
+
+      const catalog = (window.SCHPLAY_GAMES && window.SCHPLAY_GAMES.list) || [];
+      if (!Array.isArray(catalog) || !catalog.length) {
+        return;
+      }
+
+      const eligibleGames = catalog.filter(({ name, href, img }) => {
+        return name && href && img && name !== CURRENT_GAME_NAME;
       });
-    });
 
-    // Include HTML templates
-    function includeHTML() {
-      var z, i, elmnt, file, xhttp;
-      z = document.getElementsByTagName("*");
-      for (i = 0; i < z.length; i++) {
-        elmnt = z[i];
-        file = elmnt.getAttribute("data-include");
-        if (file) {
-          xhttp = new XMLHttpRequest();
-          xhttp.onreadystatechange = function() {
-            if (this.readyState == 4) {
-              if (this.status == 200) { elmnt.innerHTML = this.responseText; }
-              if (this.status == 404) { elmnt.innerHTML = "Page not found."; }
-              elmnt.removeAttribute("data-include");
-              includeHTML();
-            }
-          }
-          xhttp.open("GET", file, true);
-          xhttp.send();
+      const selection = eligibleGames.length
+        ? pickRandomGames(eligibleGames, Math.min(GAME_IDLE_BREAKOUT_RECOMMENDATION_COUNT, eligibleGames.length))
+        : [];
+
+      grid.innerHTML = '';
+      selection.forEach(({ name, href, img }) => {
+        const card = document.createElement('a');
+        card.className = 'game-card';
+        card.href = resolvePath(href);
+        card.innerHTML = '<img src="' + resolvePath(img) + '" alt="' + name + '" loading="lazy" decoding="async"><h3>' + name + '</h3>';
+        grid.appendChild(card);
+      });
+
+      if (count) {
+        count.textContent = selection.length ? selection.length + ' games' : '';
+      }
+
+      if (!selection.length) {
+        const placeholder = document.createElement('p');
+        placeholder.textContent = 'Check back soon for more featured games.';
+        placeholder.style.color = 'var(--text-muted)';
+        placeholder.style.margin = '0';
+        placeholder.style.padding = '0.6rem 0';
+        grid.appendChild(placeholder);
+      }
+
+      hasRenderedRecommendations = true;
+    };
+
+    const ensureRecommendations = () => {
+      if (window.SCHPLAY_GAMES && Array.isArray(window.SCHPLAY_GAMES.list) && window.SCHPLAY_GAMES.list.length) {
+        renderRecommendations();
+      }
+    };
+
+    if (window.SCHPLAY_GAMES && window.SCHPLAY_GAMES.list) {
+      renderRecommendations();
+    } else {
+      document.addEventListener('schplay:games-ready', renderRecommendations);
+    }
+
+    document.addEventListener('schplay:navigation-ready', ensureRecommendations);
+    window.addEventListener('load', ensureRecommendations);
+    setTimeout(ensureRecommendations, 1200);
+
+    const iframe = document.getElementById('idle-breakout-iframe');
+    const fullscreenButton = document.querySelector('.game-player-card .game-fullscreen-toggle');
+
+    if (iframe && fullscreenButton) {
+      const updateFullscreenIcon = () => {
+        const icon = fullscreenButton.querySelector('i');
+        if (!icon) {
           return;
         }
-      }
+        if (!document.fullscreenElement && !document.webkitFullscreenElement && !document.mozFullScreenElement && !document.msFullscreenElement) {
+          icon.classList.remove('fa-compress');
+          icon.classList.add('fa-expand');
+          const label = fullscreenButton.querySelector('span');
+          if (label) {
+            label.textContent = 'Fullscreen';
+          }
+        } else {
+          icon.classList.remove('fa-expand');
+          icon.classList.add('fa-compress');
+          const label = fullscreenButton.querySelector('span');
+          if (label) {
+            label.textContent = 'Exit Fullscreen';
+          }
+        }
+      };
+
+      const requestIframeFullscreen = () => {
+        const fsElement = iframe;
+        if (fsElement.requestFullscreen) {
+          fsElement.requestFullscreen({ navigationUI: 'hide' }).catch(() => fsElement.requestFullscreen());
+        } else if (fsElement.webkitRequestFullscreen) {
+          fsElement.webkitRequestFullscreen();
+        } else if (fsElement.mozRequestFullScreen) {
+          fsElement.mozRequestFullScreen();
+        } else if (fsElement.msRequestFullscreen) {
+          fsElement.msRequestFullscreen();
+        }
+      };
+
+      const exitFullscreen = () => {
+        if (document.exitFullscreen) {
+          document.exitFullscreen();
+        } else if (document.webkitExitFullscreen) {
+          document.webkitExitFullscreen();
+        } else if (document.mozCancelFullScreen) {
+          document.mozCancelFullScreen();
+        } else if (document.msExitFullscreen) {
+          document.msExitFullscreen();
+        }
+      };
+
+      fullscreenButton.addEventListener('click', () => {
+        if (!document.fullscreenElement && !document.webkitFullscreenElement && !document.mozFullScreenElement && !document.msFullscreenElement) {
+          requestIframeFullscreen();
+        } else {
+          exitFullscreen();
+        }
+      });
+
+      document.addEventListener('fullscreenchange', updateFullscreenIcon);
+      document.addEventListener('webkitfullscreenchange', updateFullscreenIcon);
+      document.addEventListener('mozfullscreenchange', updateFullscreenIcon);
+      document.addEventListener('MSFullscreenChange', updateFullscreenIcon);
     }
+
   </script>
+  <script src="../js/load-components.js" defer data-component-root="../"></script>
 </body>
 </html>

@@ -1,4 +1,12 @@
 (function() {
+    const resolvePath = (path) => {
+        const resolver = window.SCHPLAY_RESOLVE_ASSET_PATH;
+        if (typeof resolver === 'function') {
+            return resolver(path);
+        }
+        return path;
+    };
+
     const navData = {
         strategy: [
             { name: 'Antbuster', href: 'games/antbuster.html', imgSrc: 'images/antbuster.webp' },
@@ -85,15 +93,16 @@
 
             games.slice(0, 5).forEach(game => {
                 const gameLink = document.createElement('a');
-                gameLink.href = game.href;
+                gameLink.href = resolvePath(game.href);
                 gameLink.classList.add('nav-dropdown-item');
                 gameLink.setAttribute('role', 'menuitem');
-                gameLink.innerHTML = `<img src="${game.imgSrc}" alt="${game.name}"><span>${game.name}</span>`;
+                gameLink.innerHTML = `<img src="${resolvePath(game.imgSrc)}" alt="${game.name}"><span>${game.name}</span>`;
                 dropdown.appendChild(gameLink);
             });
 
             const viewAll = document.createElement('a');
-            viewAll.href = navElement.dataset.viewAll || navElement.getAttribute('href');
+            const viewAllPath = navElement.dataset.viewAll || navElement.getAttribute('href');
+            viewAll.href = resolvePath(viewAllPath);
             viewAll.classList.add('view-all-button', 'nav-view-all');
             viewAll.textContent = `View all ${navElement.querySelector('span').textContent.trim()}`;
             viewAll.setAttribute('role', 'menuitem');

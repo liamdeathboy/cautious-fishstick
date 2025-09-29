@@ -3,113 +3,226 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            margin: 20px;
-            padding: 20px;
-            max-width: 800px;
-            margin: auto;
+    <meta name="robots" content="index, follow">
+    <meta name="description" content="Learn how Schplay curates safe, unblocked games, supports classrooms, and powers code hunts for players everywhere.">
+    <meta name="keywords" content="about Schplay, Schplay team, unblocked games platform, classroom gaming">
+    <meta name="theme-color" content="#0f1a2a">
+    <title>About Schplay</title>
+    <link rel="canonical" href="https://schplay.com/about.html">
+    <link rel="icon" type="image/webp" href="images/favicon.ico">
+    <link rel="apple-touch-icon" href="images/favicon-32x32.png">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Schplay">
+    <meta property="og:title" content="About Schplay">
+    <meta property="og:description" content="Get the story behind Schplay, the unblocked game hub trusted by students, teachers, and speedrunners worldwide.">
+    <meta property="og:url" content="https://schplay.com/about.html">
+    <meta property="og:image" content="https://schplay.com/images/logo.webp">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="About Schplay">
+    <meta name="twitter:description" content="See how Schplay curates safe game libraries, runs weekly giveaways, and supports educators with ad-light embeds.">
+    <meta name="twitter:image" content="https://schplay.com/images/logo.webp">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/new-style.css">
+    <link rel="stylesheet" href="css/restyle.css">
+    <link rel="stylesheet" href="css/user-choice.css">
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "AboutPage",
+            "name": "About Schplay",
+            "url": "https://schplay.com/about.html",
+            "description": "Background on Schplay, the team curating unblocked games, giveaways, and classroom-friendly tools.",
+            "publisher": {
+                "@type": "Organization",
+                "name": "Schplay",
+                "url": "https://schplay.com"
+            }
         }
-        h1, h2 {
-            color: #333;
+    </script>
+    <style>
+        .about-grid {
+            display: grid;
+            gap: 24px;
+            margin-bottom: 36px;
+        }
+
+        .about-card {
+            background: var(--card-background);
+            border-radius: 18px;
+            padding: 26px;
+            box-shadow: 0 16px 36px rgba(7, 19, 35, 0.4);
+        }
+
+        .about-card h2 {
+            font-size: 1.45rem;
+            margin-bottom: 18px;
+        }
+
+        .about-card p {
+            color: var(--text-muted);
+            margin-bottom: 16px;
+        }
+
+        .about-pill-row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            margin-top: 16px;
+        }
+
+        .about-pill {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 10px 16px;
+            border-radius: 999px;
+            background: rgba(77, 157, 224, 0.18);
+            color: var(--primary-color);
+            font-weight: 600;
+        }
+
+        .about-highlights {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 18px;
+        }
+
+        .about-highlight {
+            background: rgba(12, 24, 42, 0.85);
+            border-radius: 16px;
+            padding: 20px;
+            box-shadow: inset 0 0 0 1px rgba(86, 143, 215, 0.25);
+        }
+
+        .about-highlight h3 {
+            font-size: 1.05rem;
+            margin-bottom: 8px;
+        }
+
+        .about-values {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: grid;
+            gap: 14px;
+        }
+
+        .about-values li {
+            background: rgba(12, 24, 42, 0.85);
+            border-radius: 14px;
+            padding: 18px;
+            box-shadow: inset 0 0 0 1px rgba(86, 143, 215, 0.25);
+            color: var(--text-muted);
+        }
+
+        .about-values strong {
+            color: var(--text-color);
+            display: block;
+            margin-bottom: 6px;
+        }
+
+        @media (max-width: 768px) {
+            .about-card {
+                padding: 22px;
+            }
         }
     </style>
 </head>
 <body>
+  <header id="site-header" role="banner">
+    <div id="navbar-placeholder"></div>
+  </header>
 
-    <h1>About Us</h1>
-    <p>Welcome to <strong>Retro621 LLC </strong>. We are dedicated to providing [describe your website’s purpose, e.g., high-quality content, products, or services].</p>
+  <main class="container" role="main">
+    <section class="hero hero-with-ad" aria-labelledby="about-hero-title">
+      <div class="hero-grid">
+        <div class="hero-content">
+          <h1 id="about-hero-title">Built for Curious Players</h1>
+          <p>Schplay started as a single classroom workaround and grew into a game hub trusted by students, teachers, and code hunters worldwide.</p>
+          <div class="hero-actions">
+            <a class="hero-primary" href="allgames.html">Explore the library</a>
+            <a class="hero-secondary" href="contact.html">Meet the team</a>
+          </div>
+        </div>
+        <div class="hero-ad" aria-label="Sponsored">
+          <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5690564842575659" crossorigin="anonymous"></script>
+          <!-- ad space -->
+          <ins class="adsbygoogle"
+               style="display:block"
+               data-ad-client="ca-pub-5690564842575659"
+               data-ad-slot="9885096122"
+               data-ad-format="auto"
+               data-full-width-responsive="true"></ins>
+          <script>
+            (adsbygoogle = window.adsbygoogle || []).push({});
+          </script>
+        </div>
+      </div>
+    </section>
 
-    <h2>Our Mission</h2>
-    <p>Our mission is to [briefly describe your website's mission, such as providing reliable information, offering unique products, or connecting people].</p>
+    <section class="about-grid">
+      <div class="about-card">
+        <h2>Schplay in a snapshot</h2>
+        <div class="about-highlights">
+          <div class="about-highlight">
+            <h3>800+ curated titles</h3>
+            <p>Every game is tested for performance, classroom safety, and controller quirks before it lands in the library.</p>
+          </div>
+          <div class="about-highlight">
+            <h3>Millions of monthly plays</h3>
+            <p>Students explore strategy, skill, and puzzle playlists without VPNs or shady mirrors.</p>
+          </div>
+          <div class="about-highlight">
+            <h3>Weekly giveaway hunts</h3>
+            <p>Hidden codes inside our how-to-play guides keep the community scanning, sharing, and celebrating wins together.</p>
+          </div>
+        </div>
+      </div>
 
-    <h2>Why Choose Us?</h2>
-    <ul>
-        <li>High-quality and informative content</li>
-        <li>User-friendly experience</li>
-        <li>Commitment to privacy and security</li>
-    </ul>
+      <div class="about-card">
+        <h2>What we build</h2>
+        <p>Schplay is a safe waypoint for finding classroom-friendly games, alternate mirrors, and incognito-ready experiences. We maintain fast global hosting, filter submissions, and collaborate with studios so more people can enjoy their creations.</p>
+        <p>We also publish updated how-to-play guides, document keyboard controls, and spotlight accessibility notes so players can jump in faster.</p>
+        <div class="about-pill-row">
+          <span class="about-pill"><i class="fas fa-graduation-cap" aria-hidden="true"></i>Classroom mode</span>
+          <span class="about-pill"><i class="fas fa-shield-alt" aria-hidden="true"></i>Safe mirrors</span>
+          <span class="about-pill"><i class="fas fa-gift" aria-hidden="true"></i>Giveaway drops</span>
+          <span class="about-pill"><i class="fas fa-rocket" aria-hidden="true"></i>Early betas</span>
+        </div>
+      </div>
 
-    <h2>Contact Us</h2>
-    <p>If you have any questions, feel free to reach out at <strong>contactus@retro621.com</strong>.</p>
-    
-    <h3>Motivation Statement</h3>
-    <p>Since COVID, a lot has changed. The world isn't the same as it used to be, but not exactly in a good way. Everything became gray and pretty much colorless, but so did we. Somewhere along the way, we collectively lost a bit of spark, and if you're honest with yourself, you probably feel it too.
+      <div class="about-card">
+        <h2>How we got here</h2>
+        <p>In 2021 we bundled a few unblockable favorites for classmates. That list kept growing. By 2023, Schplay moved to dedicated hosting, added moderation, and began working with developers to keep classics alive.</p>
+        <p>Today the catalog spans retro flash ports, modern webGL builds, teacher-approved brain breaks, and spotlighted indie projects. The mission stays the same: give curious players a reliable, no-fuss place to explore.</p>
+      </div>
 
-Every New Year rolls around, and we always hear the same thing: "Next year will be my year, for real." Except it wasn’t. Not in 2023. Not in 2024. And it won't be in 2025 either—unless you force it to be. So spare me a bit of your time, and I'll force you to lock in for 2025.
+      <div class="about-card">
+        <h2>What guides us</h2>
+        <ul class="about-values">
+          <li><strong>Access first.</strong> Games should work on school Wi-Fi, locked-down Chromebooks, and home networks alike.</li>
+          <li><strong>Transparency.</strong> We tell you when a game is mirrored, when an ad supports a giveaway, and when a feature is in beta.</li>
+          <li><strong>Community over clicks.</strong> Moderated chatrooms, code hints, and Discord office hours keep the vibe fun and collaborative.</li>
+          <li><strong>Respect the creators.</strong> We link back, share original credits, and remove titles the moment a studio asks.</li>
+        </ul>
+      </div>
 
-But just a quick disclaimer: I'm not here to motivate you. Motivation is a sugar rush, and I'm obviously not selling candy. I'm here to give you the tools, perspective, and kick in the teeth you need to make this your actual year—like, for real.
+      <div class="about-card">
+        <h2>Want to collaborate?</h2>
+        <p>We partner with educators, studios, and brands who care about playful learning. Reach out if you want to feature a launch, sponsor a giveaway, or provide safer mirrors for your game.</p>
+        <div class="hero-actions">
+          <a class="hero-primary" href="mailto:partnerships@schplay.com">Pitch a partnership</a>
+          <a class="hero-secondary" href="contact.html">Contact support</a>
+        </div>
+      </div>
+    </section>
+  </main>
 
-Now, I'm not going to be too hard on you. I know you've been trying, or at least you think you have. Maybe you started a bulking plan but quit after two weeks because life got busy. Or you set goals, but they were vague enough to be ignored. Like, "I want to be better." Better at what? Breathing? You’ve been doing that since birth.
+  <footer id="site-footer" role="contentinfo">
+    <div id="footer-placeholder"></div>
+  </footer>
 
-See, trying isn't enough. If you're half-assing it, you're not failing because life is unfair (even though, yeah, it is). You're failing because you're waiting for life to miraculously align itself around your vibes. But it won't. You're the one who’s got to align yourself with your goals. And to align yourself, you'll need to start where it matters most: your time.
-
-You're probably used to saying, "I don’t have time." That’s funny because you had time to scroll TikTok for three hours yesterday. You had time to rewatch the same show for the fourth time because it’s "absolute cinema." You had time to stare at the ceiling, thinking about how you have no time.
-
-Did you see it? You have time. You're just bad at using it.
-
-If we do the math, you have 24 hours in a day. Let’s say you sleep for eight hours (if you're lucky), work or attend college for up to eight as well, and spend two hours eating and existing. That leaves six hours. Now ask yourself: "What am I doing with them?" If you can’t answer that without stuttering, you found your problem.
-
-Look, we live in an era where you can learn literally anything for free or close to it. Feel like starting a business? There are tutorials, templates, and even AI tools that'll practically walk you through the process. Getting fit or shredded? There are apps, YouTube channels, and communities that will keep you accountable. Learning a new skill? Platforms like Coursera, Skillshare, or even TikTok (if you're following the right creators) have you covered.
-
-So why are you using your phone to scroll aimlessly instead of using it to level up? Or clicking that subscribe button like an NPC?
-
-Here’s the thing: your phone is a tool. But if you treat it like a toy, it'll treat you like a joke.
-
-But even then, tools are just tools. They're still pretty useless without a plan. Which brings us to my next point: systems.
-
-Saying "I want to save money" is cute, but what’s your plan? Are you tracking expenses? Automating savings? Or are you just hoping your bank account will surprise you like a physics exam on Monday? The same goes for fitness, learning, relationships—everything. Goals are basically useless without systems.
-
-Systems are what make you show up on the days you don’t feel like it. They're the boring routines that actually get results. They’re the meal preps, the study schedules, the workout plans. They’re what separate the people who achieve from the people who talk about achieving.
-
-And while we're at it, let’s quickly address the ugly grind and why you should embrace it.
-
-Most of what will make you successful is not exciting. It’s boring. It’s repetitive. It’s waking up early to work out when you’d rather sleep. It’s saying no to plans so you can study. It’s putting in effort when no one’s clapping for you.
-
-The grind isn’t supposed to feel good. It’s supposed to feel necessary. And the sooner you stop expecting every step to be fun, the sooner you'll start seeing results.
-
-Of course, the grind doesn’t have to be the old-fashioned way. Times have changed. You need to be aware and recognize the massive potential and opportunities sitting right in front of you.
-
-But you know what else is massive? We are now living in the most resource-rich era of all time. There’s no excuse for being ignorant or stagnant.
-
-Want to make more money? Lots of money-making opportunities are everywhere. Want to learn coding, public speaking, singing, dancing, drawing, editing, animating, writing, talking to girls, touching grass? Free tutorials exist. Want to get better at anything? Google it. Even if it’s not always accurate, you’ll still learn something.
-
-Do you see it now? You’re not struggling because there’s a lack of opportunities. You’re struggling because you’re not grabbing them. And no, scrolling through success content isn’t the same as actually taking action.
-
-You might be watching this video and listening to my advice, but are you actually putting in the work? Stop being a boring, passive consumer of inspiration and start being an active participant in your own life.
-
-That being said, there’s still one problem.
-
-You see, people avoid taking real action because of this one particular idea: balance. You’ve been sold this idea that you can balance everything perfectly—work, life, growth, rest. Actually, it’s not that easy, and it’s kind of overrated too.
-
-If you want something badly enough, you have to let other things slide, collapse, descend, plummet. That doesn’t mean burning out, but it does mean prioritizing like your life depends on it—because it kind of does.
-
-You're not going to achieve your goals by squeezing them into the cracks of your schedule. They need to be front and center, not an afterthought. And in order to do that, you need to answer one big question:
-
-Am I really trying?
-
-Because it’s easy to say you’re trying. But are you really? Or are you just dabbling? There’s a difference between effort and consistent effort. One gets you short-term results—if that. The other transforms your life.
-
-Be honest with yourself. If you are not where you want to be, is it because the world is against you? Or is it because you are not fully in that mentality? Are you you because you’re the lamest? Or are you the lamest because you’re you?
-
-You can’t half-commit and then expect full results. I’m not saying this as someone perfect—because I’m not. But I can confidently say I’m the best version of myself that I’ve ever been. And a big part of that is because I stopped waiting for life to hand me success and started forcing it.
-
-Anyway, my point is: if I could do that, what’s the reason you can’t? I mean, I’m pretty sure you and I are not so different.
-
-Look, this is just a wake-up call—a reminder. I’m not going to end this by saying something cheesy like, "You’ve got this." You might not have this. That’s up to you.
-
-But what I can say is that if you decide to lock in—like, really lock in—2025 can be the year you stop saying, "Next year will be my year, for real," and start saying, "This year is mine."
-
-The world isn’t going to fix itself for you. It’s gray and colorless, and that sucks. But you—you’re smart, you’re strong, you’re adaptable. And most of all, you’re a CutiePie.
-
-You can fix yourself. And maybe that’ll bring a little color back to everything else too.
-
-So, are you in? Or are we having the same conversation next year?
-
-I mean, you tell me.
-
+  <script src="js/load-components.js" defer data-component-root="./"></script>
 </body>
 </html>
