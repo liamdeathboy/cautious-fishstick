@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="robots" content="index, follow">
-    <meta name="description" content="Play 1v1.LOL, the ultimate multiplayer building and shooting game. Build, fight, and dominate. Free and unblocked! Updated Aug 20, 2025 on Schplay.">
+    <meta name="description" content="Play 1v1.LOL, working as of OCT 2025, the ultimate multiplayer building and shooting game. Build, fight, and dominate. Free and unblocked! Updated Aug 20, 2025 on Schplay.">
     <meta name="keywords" content="1v1.LOL, multiplayer game, building game, shooting game, free online game, unblocked games, battle royale, strategy game, fun games, schplay, online play, unblocked">
     <meta name="theme-color" content="#0f1a2a">
     <title>Play 1v1.lol Online | Schplay</title>
@@ -13,7 +13,7 @@
     <link rel="apple-touch-icon" href="../images/favicon-32x32.png">
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="Schplay">
-    <meta property="og:title" content="Play 1v1.lol Online | Schplay">
+    <meta property="og:title" content="Play 1v1.lol Online WORKING 2025 | Schplay">
     <meta property="og:description" content="Play 1v1.LOL, the ultimate multiplayer building and shooting game. Build, fight, and dominate. Free and unblocked! Updated Aug 20, 2025 on Schplay.">
     <meta property="og:url" content="https://schplay.com/games/1v1lol.html">
     <meta property="og:image" content="https://play-lh.googleusercontent.com/QYGRIDJbyVO7L7jH8CwiKJ4NumTGgcTVqU3ITooLWxro-eeNns1RZ0uwGGFe-r8M4co">
@@ -293,7 +293,8 @@
             <span>Fullscreen</span>
           </button>
         </div>
-        <iframe id="1v1lol-iframe" src="1v1lol/index.html" title="Play 1v1.lol" allowfullscreen loading="lazy"></iframe>
+
+        <iframe id="1v1lol-iframe" src="1v1lol/1v1Lol-main/index.html" title="Play 1v1.lol" allowfullscreen loading="lazy"></iframe>
       </div>
       <aside class="game-meta-card" id="how-to-play">
         <div class="game-ad-slot" aria-label="Advertisement">
@@ -468,10 +469,10 @@
     window.addEventListener('load', ensureRecommendations);
     setTimeout(ensureRecommendations, 1200);
 
-    const iframe = document.getElementById('1v1lol-iframe');
+    const gameViewport = document.getElementById('1v1lol-iframe');
     const fullscreenButton = document.querySelector('.game-player-card .game-fullscreen-toggle');
 
-    if (iframe && fullscreenButton) {
+    if (gameViewport && fullscreenButton) {
       const updateFullscreenIcon = () => {
         const icon = fullscreenButton.querySelector('i');
         if (!icon) {
@@ -494,8 +495,8 @@
         }
       };
 
-      const requestIframeFullscreen = () => {
-        const fsElement = iframe;
+      const requestViewportFullscreen = () => {
+        const fsElement = gameViewport;
         if (fsElement.requestFullscreen) {
           fsElement.requestFullscreen({ navigationUI: 'hide' }).catch(() => fsElement.requestFullscreen());
         } else if (fsElement.webkitRequestFullscreen) {
@@ -521,7 +522,7 @@
 
       fullscreenButton.addEventListener('click', () => {
         if (!document.fullscreenElement && !document.webkitFullscreenElement && !document.mozFullScreenElement && !document.msFullscreenElement) {
-          requestIframeFullscreen();
+          requestViewportFullscreen();
         } else {
           exitFullscreen();
         }

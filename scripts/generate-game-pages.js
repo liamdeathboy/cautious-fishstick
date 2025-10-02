@@ -5,6 +5,7 @@ const vm = require('node:vm');
 
 const ROOT = path.resolve(__dirname, '..');
 const GAMES_DIR = path.join(ROOT, 'games');
+const FLASH_DIR = path.join(GAMES_DIR, 'flash');
 const RAW_CONTENT_PATH = path.join(ROOT, 'data', 'game-content-raw.json');
 const MANUAL_CONTENT_PATH = path.join(ROOT, 'data', 'game-content-manual.json');
 const OVERRIDES_PATH = path.join(ROOT, 'data', 'game-overrides.json');
@@ -22,6 +23,112 @@ const slopeStyle = (() => {
 })();
 
 const requestedSlugs = process.argv.slice(2).map((arg) => arg.replace(/\.html$/i, '').toLowerCase());
+
+const FLASH_PATH_OVERRIDES = {
+  'gunmayhem': 'flash/gun-mayham.swf',
+  'the-binding-of-isaac': 'flash/iboi.swf'
+};
+
+let flashEntriesCache = null;
+
+function sanitizeKey(input = '') {
+  return input
+    .toLowerCase()
+    .replace(/\.swf$/i, '')
+    .replace(/[^a-z0-9]+/g, '');
+}
+
+function loadFlashEntries() {
+  if (!fs.existsSync(FLASH_DIR)) {
+    return [];
+  }
+
+  const entries = fs.readdirSync(FLASH_DIR, { withFileTypes: true })
+    .filter((entry) => entry.isFile() && entry.name.toLowerCase().endsWith('.swf'))
+    .map((entry) => ({ name: entry.name, key: sanitizeKey(entry.name) }));
+
+  return entries;
+}
+
+function getFlashEntries() {
+  if (!flashEntriesCache) {
+    flashEntriesCache = loadFlashEntries();
+  }
+  return flashEntriesCache;
+}
+
+function normalizeFlashPath(value = '') {
+  const normalized = value.replace(/\\/g, '/').replace(/^\.\//, '').replace(/^\//, '');
+  if (!normalized || normalized.includes('..') || !normalized.toLowerCase().endsWith('.swf')) {
+    return '';
+  }
+  return normalized;
+}
+
+function findFlashSwf(slug, override = {}) {
+  if (override && override.flashSwf) {
+    const normalized = normalizeFlashPath(override.flashSwf);
+    if (normalized) {
+      return normalized;
+    }
+  }
+
+  const overridePath = FLASH_PATH_OVERRIDES[slug];
+  if (overridePath) {
+    return overridePath;
+  }
+
+  const entries = getFlashEntries();
+  if (!entries.length) {
+    return '';
+  }
+
+  const slugKey = sanitizeKey(slug);
+  if (!slugKey) {
+    return '';
+  }
+
+  const exact = entries.find((entry) => entry.key === slugKey);
+  if (exact) {
+    return `flash/${exact.name}`;
+  }
+
+  const partial = entries.find((entry) => entry.key.includes(slugKey) || slugKey.includes(entry.key));
+  if (partial) {
+    return `flash/${partial.name}`;
+  }
+
+  return '';
+}
+
+function resolveGameEmbed(slug, dataIframeSrc, override = {}) {
+  const overrideSrc = override.iframeSrc ? normalizeIframeSrc(override.iframeSrc, slug) : '';
+  if (overrideSrc) {
+    return { type: 'iframe', src: overrideSrc };
+  }
+
+  const candidate = normalizeIframeSrc(dataIframeSrc, slug);
+  if (candidate) {
+    if (/^https?:/i.test(candidate) || candidate.startsWith('//')) {
+      return { type: 'iframe', src: candidate };
+    }
+    const candidatePath = path.join(GAMES_DIR, candidate);
+    if (fs.existsSync(candidatePath)) {
+      return { type: 'iframe', src: candidate };
+    }
+  }
+
+  const flashSwf = findFlashSwf(slug, override);
+  if (flashSwf) {
+    return { type: 'flash', swf: flashSwf };
+  }
+
+  if (candidate) {
+    return { type: 'iframe', src: candidate };
+  }
+
+  return { type: 'iframe', src: `${slug}/index.html` };
+}
 
 function loadJson(filePath) {
   if (!fs.existsSync(filePath)) {
@@ -393,7 +500,79 @@ function renderPage(slug, data, override = {}) {
   const sections = ensureSections({ ...data, slug, name }, override).slice(0, 4);
   const controls = inferControls(slug, data, override).slice(0, 5);
   const details = formatMetaDetails(slug, { ...data, slug, name }, override);
-  const iframeSrc = override.iframeSrc || normalizeIframeSrc(data.iframeSrc, slug);
+  const embedConfig = resolveGameEmbed(slug, data.iframeSrc, override);
+  const embedElementId = embedConfig.type === 'flash' ? `${id}-flash-player` : `${id}-iframe`;
+  let embedHtml;
+  let embedExtraStyles = '';
+  if (embedConfig.type === 'flash') {
+    embedExtraStyles = `
+        .game-player-card .flash-container {
+            width: 100%;
+            height: 640px;
+            border: none;
+            border-radius: 12px;
+            background-color: #000;
+            overflow: hidden;
+        }
+
+        .game-player-card .flash-container:fullscreen,
+        .game-player-card .flash-container:-webkit-full-screen,
+        .game-player-card .flash-container:-moz-full-screen,
+        .game-player-card .flash-container:-ms-fullscreen {
+            width: 100vw;
+            height: 100vh;
+            border-radius: 0;
+        }
+
+        @media (max-width: 1100px) {
+            .game-player-card .flash-container {
+                height: 520px;
+            }
+        }`;
+
+    embedHtml = `
+        <div id="${escapeHtml(embedElementId)}" class="flash-container" role="presentation"></div>
+        <script src="https://unpkg.com/@ruffle-rs/ruffle"></script>
+        <script>
+          window.RufflePlayer = window.RufflePlayer || {};
+          window.addEventListener('load', function () {
+            var mount = document.getElementById('${escapeHtml(embedElementId)}');
+            if (!mount || mount.dataset.ruffleLoaded === 'true') {
+              return;
+            }
+            if (!window.RufflePlayer || typeof window.RufflePlayer.newest !== 'function') {
+              return;
+            }
+            var ruffle = window.RufflePlayer.newest();
+            if (!ruffle) {
+              return;
+            }
+            var player = ruffle.createPlayer();
+            player.style.width = '100%';
+            player.style.height = '100%';
+            mount.innerHTML = '';
+            mount.appendChild(player);
+            mount.dataset.ruffleLoaded = 'true';
+            var loadResult;
+            try {
+              loadResult = player.load(${JSON.stringify(embedConfig.swf)});
+            } catch (err) {
+              mount.dataset.ruffleLoaded = 'false';
+              console.error('Failed to load Flash game:', err);
+              return;
+            }
+            if (loadResult && typeof loadResult.catch === 'function') {
+              loadResult.catch(function (error) {
+                mount.dataset.ruffleLoaded = 'false';
+                console.error('Failed to load Flash game:', error);
+              });
+            }
+          });
+        </script>`;
+  } else {
+    embedHtml = `
+        <iframe id="${escapeHtml(embedElementId)}" src="${escapeHtml(embedConfig.src)}" title="Play ${escapeHtml(name)}" allowfullscreen loading="lazy"></iframe>`;
+  }
   const keywords = buildKeywords({ ...data, slug, name }, override);
   const metaDescription = buildMetaDescription({ ...data, slug, name }, override);
   const seoTitle = buildSeoTitle({ ...data, slug, name }, override);
@@ -438,7 +617,7 @@ function renderPage(slug, data, override = {}) {
 ${JSON.stringify(schema, null, 12).replace(/^/gm, '        ')}
     </script>
     <style>
-${slopeStyle}
+${slopeStyle}${embedExtraStyles}
     </style>
 </head>
 <body>
@@ -475,12 +654,12 @@ ${slopeStyle}
     <section class="game-player-section">
       <div class="game-player-card" role="region" aria-label="${escapeHtml(name)} gameplay">
         <div class="game-player-header">
-          <button class="game-fullscreen-toggle" type="button" aria-controls="${escapeHtml(id)}-iframe" aria-label="Toggle fullscreen">
+          <button class="game-fullscreen-toggle" type="button" aria-controls="${escapeHtml(embedElementId)}" aria-label="Toggle fullscreen">
             <i class="fas fa-expand" aria-hidden="true"></i>
             <span>Fullscreen</span>
           </button>
         </div>
-        <iframe id="${escapeHtml(id)}-iframe" src="${escapeHtml(iframeSrc)}" title="Play ${escapeHtml(name)}" allowfullscreen loading="lazy"></iframe>
+${embedHtml}
       </div>
       <aside class="game-meta-card" id="how-to-play">
         <div class="game-ad-slot" aria-label="Advertisement">
@@ -647,10 +826,10 @@ ${slopeStyle}
     window.addEventListener('load', ensureRecommendations);
     setTimeout(ensureRecommendations, 1200);
 
-    const iframe = document.getElementById('${escapeHtml(id)}-iframe');
+    const gameViewport = document.getElementById('${escapeHtml(embedElementId)}');
     const fullscreenButton = document.querySelector('.game-player-card .game-fullscreen-toggle');
 
-    if (iframe && fullscreenButton) {
+    if (gameViewport && fullscreenButton) {
       const updateFullscreenIcon = () => {
         const icon = fullscreenButton.querySelector('i');
         if (!icon) {
@@ -673,8 +852,8 @@ ${slopeStyle}
         }
       };
 
-      const requestIframeFullscreen = () => {
-        const fsElement = iframe;
+      const requestViewportFullscreen = () => {
+        const fsElement = gameViewport;
         if (fsElement.requestFullscreen) {
           fsElement.requestFullscreen({ navigationUI: 'hide' }).catch(() => fsElement.requestFullscreen());
         } else if (fsElement.webkitRequestFullscreen) {
@@ -700,7 +879,7 @@ ${slopeStyle}
 
       fullscreenButton.addEventListener('click', () => {
         if (!document.fullscreenElement && !document.webkitFullscreenElement && !document.mozFullScreenElement && !document.msFullscreenElement) {
-          requestIframeFullscreen();
+          requestViewportFullscreen();
         } else {
           exitFullscreen();
         }

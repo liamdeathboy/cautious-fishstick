@@ -256,16 +256,6 @@ const updates = {
       { input: 'Arrow keys', action: 'play mini-games like sled racing' }
     ]
   },
-  cookieclicker: {
-    release: 'Aug 08, 2013',
-    genre: 'Idle · Clicker',
-    platforms: 'Browser, Mobile',
-    controls: [
-      { input: 'Mouse', action: 'click the cookie and buy upgrades' },
-      { input: 'Space', action: 'switch golden cookie notifications' },
-      { input: 'Numbers', action: 'buy items in bulk increments' }
-    ]
-  },
   crossyroad: {
     release: 'Nov 20, 2014',
     genre: 'Arcade · Endless Hopper',
@@ -1194,16 +1184,6 @@ const updates = {
       { input: 'Arrow keys / WASD', action: 'run, jump, and slide' },
       { input: 'Space', action: 'restart at the last checkpoint' },
       { input: 'M', action: 'mute the soundtrack' }
-    ]
-  },
-  volleyrandom: {
-    release: 'Jul 30, 2020',
-    genre: 'Sports · Physics',
-    platforms: 'Browser',
-    controls: [
-      { input: 'W', action: 'jump for player one' },
-      { input: 'Up Arrow', action: 'jump for player two' },
-      { input: 'Space', action: 'randomize game conditions' }
     ]
   },
   worldshardestgame: {

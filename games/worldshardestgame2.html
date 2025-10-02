@@ -91,21 +91,28 @@
                     outline: none;
                 }
         
-                .game-player-card iframe {
+                .game-player-card .flash-container {
                     width: 100%;
                     height: 640px;
                     border: none;
                     border-radius: 12px;
                     background-color: #000;
+                    overflow: hidden;
                 }
-        
-                .game-player-card iframe:fullscreen,
-                .game-player-card iframe:-webkit-full-screen,
-                .game-player-card iframe:-moz-full-screen,
-                .game-player-card iframe:-ms-fullscreen {
+
+                .game-player-card .flash-container:fullscreen,
+                .game-player-card .flash-container:-webkit-full-screen,
+                .game-player-card .flash-container:-moz-full-screen,
+                .game-player-card .flash-container:-ms-fullscreen {
                     width: 100vw;
                     height: 100vh;
                     border-radius: 0;
+                }
+
+                @media (max-width: 1100px) {
+                    .game-player-card .flash-container {
+                        height: 520px;
+                    }
                 }
         
                 .game-meta-card h2 {
@@ -288,12 +295,50 @@
     <section class="game-player-section">
       <div class="game-player-card" role="region" aria-label="World&#39;s Hardest Game 2 gameplay">
         <div class="game-player-header">
-          <button class="game-fullscreen-toggle" type="button" aria-controls="worldshardestgame2-iframe" aria-label="Toggle fullscreen">
+          <button class="game-fullscreen-toggle" type="button" aria-controls="worldshardestgame2-flash-player" aria-label="Toggle fullscreen">
             <i class="fas fa-expand" aria-hidden="true"></i>
             <span>Fullscreen</span>
           </button>
         </div>
-        <iframe id="worldshardestgame2-iframe" src="worlds-hardest-game-2/index.html" title="Play World&#39;s Hardest Game 2" allowfullscreen loading="lazy"></iframe>
+
+        <div id="worldshardestgame2-flash-player" class="flash-container" role="presentation"></div>
+        <script src="https://unpkg.com/@ruffle-rs/ruffle"></script>
+        <script>
+          window.RufflePlayer = window.RufflePlayer || {};
+          window.addEventListener('load', function () {
+            var mount = document.getElementById('worldshardestgame2-flash-player');
+            if (!mount || mount.dataset.ruffleLoaded === 'true') {
+              return;
+            }
+            if (!window.RufflePlayer || typeof window.RufflePlayer.newest !== 'function') {
+              return;
+            }
+            var ruffle = window.RufflePlayer.newest();
+            if (!ruffle) {
+              return;
+            }
+            var player = ruffle.createPlayer();
+            player.style.width = '100%';
+            player.style.height = '100%';
+            mount.innerHTML = '';
+            mount.appendChild(player);
+            mount.dataset.ruffleLoaded = 'true';
+            var loadResult;
+            try {
+              loadResult = player.load('flash/theworldshardestgame2.swf');
+            } catch (err) {
+              mount.dataset.ruffleLoaded = 'false';
+              console.error('Failed to load Flash game:', err);
+              return;
+            }
+            if (loadResult && typeof loadResult.catch === 'function') {
+              loadResult.catch(function (error) {
+                mount.dataset.ruffleLoaded = 'false';
+                console.error('Failed to load Flash game:', error);
+              });
+            }
+          });
+        </script>
       </div>
       <aside class="game-meta-card" id="how-to-play">
         <div class="game-ad-slot" aria-label="Advertisement">
@@ -470,11 +515,12 @@
     window.addEventListener('load', ensureRecommendations);
     setTimeout(ensureRecommendations, 1200);
 
-    const iframe = document.getElementById('worldshardestgame2-iframe');
+    const gameContainer = document.getElementById('worldshardestgame2-flash-player');
     const fullscreenButton = document.querySelector('.game-player-card .game-fullscreen-toggle');
+    let updateFullscreenIcon;
 
-    if (iframe && fullscreenButton) {
-      const updateFullscreenIcon = () => {
+    if (gameContainer && fullscreenButton) {
+      updateFullscreenIcon = () => {
         const icon = fullscreenButton.querySelector('i');
         if (!icon) {
           return;
@@ -496,8 +542,8 @@
         }
       };
 
-      const requestIframeFullscreen = () => {
-        const fsElement = iframe;
+      const requestViewportFullscreen = () => {
+        const fsElement = gameContainer;
         if (fsElement.requestFullscreen) {
           fsElement.requestFullscreen({ navigationUI: 'hide' }).catch(() => fsElement.requestFullscreen());
         } else if (fsElement.webkitRequestFullscreen) {
@@ -523,7 +569,7 @@
 
       fullscreenButton.addEventListener('click', () => {
         if (!document.fullscreenElement && !document.webkitFullscreenElement && !document.mozFullScreenElement && !document.msFullscreenElement) {
-          requestIframeFullscreen();
+          requestViewportFullscreen();
         } else {
           exitFullscreen();
         }
@@ -533,6 +579,7 @@
       document.addEventListener('webkitfullscreenchange', updateFullscreenIcon);
       document.addEventListener('mozfullscreenchange', updateFullscreenIcon);
       document.addEventListener('MSFullscreenChange', updateFullscreenIcon);
+      updateFullscreenIcon();
     }
 
   </script>
