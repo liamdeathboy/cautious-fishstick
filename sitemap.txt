@@ -18,7 +18,6 @@ https://schplay.com/games/bloonstd5.html *****
 https://schplay.com/games/bloxors.html
 https://schplay.com/games/catmario.html
 https://schplay.com/games/clubpenguin.html
-https://schplay.com/games/cookieclicker.html
 https://schplay.com/games/crossyroad.html
 https://schplay.com/games/csgo-clicker.html
 https://schplay.com/games/cupcake2048.html
@@ -116,7 +115,6 @@ https://schplay.com/games/the-binding-of-isaac.html
 https://schplay.com/games/towerblaster.html
 https://schplay.com/games/towermaster.html
 https://schplay.com/games/vex.html
-https://schplay.com/games/volleyrandom.html
 https://schplay.com/games/worldshardestgame.html
 https://schplay.com/games/worldshardestgame2.html
 https://schplay.com/2player.html

@@ -252,6 +252,29 @@
                     }
                 }
             
+        .game-player-card .flash-container {
+            width: 100%;
+            height: 640px;
+            border: none;
+            border-radius: 12px;
+            background-color: #000;
+            overflow: hidden;
+        }
+
+        .game-player-card .flash-container:fullscreen,
+        .game-player-card .flash-container:-webkit-full-screen,
+        .game-player-card .flash-container:-moz-full-screen,
+        .game-player-card .flash-container:-ms-fullscreen {
+            width: 100vw;
+            height: 100vh;
+            border-radius: 0;
+        }
+
+        @media (max-width: 1100px) {
+            .game-player-card .flash-container {
+                height: 520px;
+            }
+        }
     </style>
 </head>
 <body>
@@ -288,12 +311,50 @@
     <section class="game-player-section">
       <div class="game-player-card" role="region" aria-label="Gyroball gameplay">
         <div class="game-player-header">
-          <button class="game-fullscreen-toggle" type="button" aria-controls="gyroball-iframe" aria-label="Toggle fullscreen">
+          <button class="game-fullscreen-toggle" type="button" aria-controls="gyroball-flash-player" aria-label="Toggle fullscreen">
             <i class="fas fa-expand" aria-hidden="true"></i>
             <span>Fullscreen</span>
           </button>
         </div>
-        <iframe id="gyroball-iframe" src="gyroball/index.html" title="Play Gyroball" allowfullscreen loading="lazy"></iframe>
+
+        <div id="gyroball-flash-player" class="flash-container" role="presentation"></div>
+        <script src="https://unpkg.com/@ruffle-rs/ruffle"></script>
+        <script>
+          window.RufflePlayer = window.RufflePlayer || {};
+          window.addEventListener('load', function () {
+            var mount = document.getElementById('gyroball-flash-player');
+            if (!mount || mount.dataset.ruffleLoaded === 'true') {
+              return;
+            }
+            if (!window.RufflePlayer || typeof window.RufflePlayer.newest !== 'function') {
+              return;
+            }
+            var ruffle = window.RufflePlayer.newest();
+            if (!ruffle) {
+              return;
+            }
+            var player = ruffle.createPlayer();
+            player.style.width = '100%';
+            player.style.height = '100%';
+            mount.innerHTML = '';
+            mount.appendChild(player);
+            mount.dataset.ruffleLoaded = 'true';
+            var loadResult;
+            try {
+              loadResult = player.load("flash/Gyroball.swf");
+            } catch (err) {
+              mount.dataset.ruffleLoaded = 'false';
+              console.error('Failed to load Flash game:', err);
+              return;
+            }
+            if (loadResult && typeof loadResult.catch === 'function') {
+              loadResult.catch(function (error) {
+                mount.dataset.ruffleLoaded = 'false';
+                console.error('Failed to load Flash game:', error);
+              });
+            }
+          });
+        </script>
       </div>
       <aside class="game-meta-card" id="how-to-play">
         <div class="game-ad-slot" aria-label="Advertisement">
@@ -470,10 +531,10 @@
     window.addEventListener('load', ensureRecommendations);
     setTimeout(ensureRecommendations, 1200);
 
-    const iframe = document.getElementById('gyroball-iframe');
+    const gameViewport = document.getElementById('gyroball-flash-player');
     const fullscreenButton = document.querySelector('.game-player-card .game-fullscreen-toggle');
 
-    if (iframe && fullscreenButton) {
+    if (gameViewport && fullscreenButton) {
       const updateFullscreenIcon = () => {
         const icon = fullscreenButton.querySelector('i');
         if (!icon) {
@@ -496,8 +557,8 @@
         }
       };
 
-      const requestIframeFullscreen = () => {
-        const fsElement = iframe;
+      const requestViewportFullscreen = () => {
+        const fsElement = gameViewport;
         if (fsElement.requestFullscreen) {
           fsElement.requestFullscreen({ navigationUI: 'hide' }).catch(() => fsElement.requestFullscreen());
         } else if (fsElement.webkitRequestFullscreen) {
@@ -523,7 +584,7 @@
 
       fullscreenButton.addEventListener('click', () => {
         if (!document.fullscreenElement && !document.webkitFullscreenElement && !document.mozFullScreenElement && !document.msFullscreenElement) {
-          requestIframeFullscreen();
+          requestViewportFullscreen();
         } else {
           exitFullscreen();
         }

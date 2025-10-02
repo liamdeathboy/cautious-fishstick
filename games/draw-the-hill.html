@@ -293,6 +293,7 @@
             <span>Fullscreen</span>
           </button>
         </div>
+
         <iframe id="draw-the-hill-iframe" src="draw-the-hill/index.html" title="Play Draw The Hill" allowfullscreen loading="lazy"></iframe>
       </div>
       <aside class="game-meta-card" id="how-to-play">
@@ -468,10 +469,10 @@
     window.addEventListener('load', ensureRecommendations);
     setTimeout(ensureRecommendations, 1200);
 
-    const iframe = document.getElementById('draw-the-hill-iframe');
+    const gameViewport = document.getElementById('draw-the-hill-iframe');
     const fullscreenButton = document.querySelector('.game-player-card .game-fullscreen-toggle');
 
-    if (iframe && fullscreenButton) {
+    if (gameViewport && fullscreenButton) {
       const updateFullscreenIcon = () => {
         const icon = fullscreenButton.querySelector('i');
         if (!icon) {
@@ -494,8 +495,8 @@
         }
       };
 
-      const requestIframeFullscreen = () => {
-        const fsElement = iframe;
+      const requestViewportFullscreen = () => {
+        const fsElement = gameViewport;
         if (fsElement.requestFullscreen) {
           fsElement.requestFullscreen({ navigationUI: 'hide' }).catch(() => fsElement.requestFullscreen());
         } else if (fsElement.webkitRequestFullscreen) {
@@ -521,7 +522,7 @@
 
       fullscreenButton.addEventListener('click', () => {
         if (!document.fullscreenElement && !document.webkitFullscreenElement && !document.mozFullScreenElement && !document.msFullscreenElement) {
-          requestIframeFullscreen();
+          requestViewportFullscreen();
         } else {
           exitFullscreen();
         }
