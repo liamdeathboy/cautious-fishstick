@@ -82,6 +82,8 @@
             `<button class="button"><a style="text-decoration:none" href='../games/2048.html'><img src="images/2048_logo.svg.png" width="200" height="200"> <br>1</a></button>`,
             `<button class="button"><a style="text-decoration:none" href='../games/subwaysurfer.html'><img src="https://img.poki.com/cdn-cgi/image/quality=78,width=314,height=314,fit=cover,f=auto/81a0a3f18cf0ee129e56edb50fc52c3b.png" width="200" height="200"> <br>Subway Surfers</a></button>`,
             `<button class="button"><a style="text-decoration:none" href='../games/soccer-random.html'><img src="https://play-lh.googleusercontent.com/G1PIlb6HWKSaDre0XpUcmKGps9T4iamsSlwrogB3EJzYv4bz0M2am4D17MtGzndaOOU" width="200" height="200" alt=""> <br>Soccer Random</a></button>`,
+            `<button class="button"><a style="text-decoration:none" href='../games/pizzatower.html'><img src="images/pizzatower.webp" alt="Pizza Tower"> <span>Pizza Tower</span></a></button>`,
+
             `<button class="button"><a style="text-decoration:none" href='../games/motox3m.html'><img src="images/motocross.webp" width="200" height="200" alt=""><br>MotoX3M Games</a></button>`,
             `<button class="button"><a style="text-decoration:none" href='../games/csgo-clicker.html'><img src="images/csgoclicker.webp" alt=""> <br>CSGO Case Opener</a></button>`,
             `<button class="button"><a style="text-decoration:none" href='../games/crossyroad.html'><img src="https://upload.wikimedia.org/wikipedia/en/7/71/Crossy_Road_icon.jpeg" width="200" height="200" alt=""> <br>Crossy Road</a></button>`,
@@ -110,7 +112,8 @@
             `<button class="button"><a style="text-decoration:none" href='../games/pacman.html'><img src="images/pacman.webp" alt="Pacman"> <span>Pacman</span></a></button>`,
             `<button class="button"><a style="text-decoration:none" href='../games/pacxon.html'><img src="images/pacxon.webp" alt="Pacxon"> <span>Pacxon</span></a></button>`,
             `<button class="button"><a style="text-decoration:none" href='../games/pandemic2.html'><img src="images/pandemic2.webp" alt="Pandemic 2"> <span>Pandemic 2</span></a></button>`,
-            `<button class="button"><a style="text-decoration:none" href='../games/pool.html'><img src="images/pool.webp" alt="Pool"> <span>Pool</span></a></button>`,
+            `<button class="button"><a style="text-decoration:none" href=            `<button class="button"><a style="text-decoration:none" href='../games/quake3.html'><img src="images/quake3.webp" alt='Quake 3'> <span>Quake III Arena</span></a></button>`,
+'../games/pool.html'><img src="images/pool.webp" alt="Pool"> <span>Pool</span></a></button>`,
             `<button class="button"><a style="text-decoration:none" href='../games/pregnancy-test.html'><img src="images/pregnancytest.webp" alt="Pregnancy Test"> <span>Pregnancy Test</span></a></button>`,
             `<button class="button"><a style="text-decoration:none" href='../games/shuffle.html'><img src="images/shuffle.webp" alt="Shuffle"> <span>Shuffle</span></a></button>`,
             `<button class="button"><a style="text-decoration:none" href='../games/slitherio.html'><img src="images/slitherio.webp" alt="Slither.io"> <span>Slither.io</span></a></button>`,
