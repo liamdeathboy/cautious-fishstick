@@ -2,7 +2,7 @@
   "2048": {
     "name": "2048",
     "release": "Mar 09, 2014",
-    "genre": "Puzzle · Number Merge",
+    "genre": "Puzzle \u00b7 Number Merge",
     "platforms": "Browser, Mobile",
     "controls": [
       {
@@ -22,7 +22,7 @@
   "10-minutes-till-dawn": {
     "name": "10 Minutes Till Dawn",
     "release": "May 24, 2022",
-    "genre": "Action · Roguelite Shooter",
+    "genre": "Action \u00b7 Roguelite Shooter",
     "platforms": "Browser, PC",
     "controls": [
       {
@@ -42,7 +42,7 @@
   "1v1lol": {
     "name": "1v1.lol",
     "release": "Dec 05, 2019",
-    "genre": "Shooter · Build Arena",
+    "genre": "Shooter \u00b7 Build Arena",
     "platforms": "Browser, Mobile",
     "controls": [
       {
@@ -62,7 +62,7 @@
   "LastBreathTrio": {
     "name": "Last Breath Trio Mod",
     "release": "Mar 15, 2021",
-    "genre": "Action · Bullet Hell Mod",
+    "genre": "Action \u00b7 Bullet Hell Mod",
     "platforms": "Browser, PC",
     "controls": [
       {
@@ -82,7 +82,7 @@
   "Rejuvenation": {
     "name": "Undertale: Rejuvenation Mod",
     "release": "Oct 09, 2022",
-    "genre": "Action · Undertale Fan Game",
+    "genre": "Action \u00b7 Undertale Fan Game",
     "platforms": "Browser, PC",
     "controls": [
       {
@@ -102,7 +102,7 @@
   "TheFinalExperiment": {
     "name": "The Final Experiment Mod",
     "release": "Jan 18, 2024",
-    "genre": "Action · Undertale Mod",
+    "genre": "Action \u00b7 Undertale Mod",
     "platforms": "Browser, PC",
     "controls": [
       {
@@ -122,7 +122,7 @@
   "acegangster": {
     "name": "Ace Gangster",
     "release": "Apr 14, 2008",
-    "genre": "Action · Crime Sim",
+    "genre": "Action \u00b7 Crime Sim",
     "platforms": "Browser",
     "controls": [
       {
@@ -142,7 +142,7 @@
   "adventurecapitalist": {
     "name": "Adventure Capitalist",
     "release": "Feb 20, 2014",
-    "genre": "Idle · Tycoon",
+    "genre": "Idle \u00b7 Tycoon",
     "platforms": "Browser, Mobile",
     "controls": [
       {
@@ -162,7 +162,7 @@
   "agario": {
     "name": "Agar.io",
     "release": "Apr 28, 2015",
-    "genre": "Arcade · Multiplayer Arena",
+    "genre": "Arcade \u00b7 Multiplayer Arena",
     "platforms": "Browser, Mobile",
     "controls": [
       {
@@ -182,7 +182,7 @@
   "angrybirdshalloween": {
     "name": "Angry Birds Halloween",
     "release": "Oct 21, 2010",
-    "genre": "Puzzle · Physics",
+    "genre": "Puzzle \u00b7 Physics",
     "platforms": "Browser, Mobile",
     "controls": [
       {
@@ -202,7 +202,7 @@
   "antbuster": {
     "name": "Antbuster",
     "release": "Jun 18, 2007",
-    "genre": "Tower Defense · Strategy",
+    "genre": "Tower Defense \u00b7 Strategy",
     "platforms": "Browser",
     "controls": [
       {
@@ -222,7 +222,7 @@
   "arcade-wizard": {
     "name": "Arcade Wizard",
     "release": "May 12, 2023",
-    "genre": "Action · Roguelite",
+    "genre": "Action \u00b7 Roguelite",
     "platforms": "Browser",
     "controls": [
       {
@@ -242,7 +242,7 @@
   "bad-icecream-1": {
     "name": "Bad Ice Cream 1",
     "release": "Dec 05, 2010",
-    "genre": "Action · Maze Co-op",
+    "genre": "Action \u00b7 Maze Co-op",
     "platforms": "Browser",
     "controls": [
       {
@@ -262,7 +262,7 @@
   "bad-icecream-2": {
     "name": "Bad Ice Cream 2",
     "release": "Dec 09, 2012",
-    "genre": "Action · Maze",
+    "genre": "Action \u00b7 Maze",
     "platforms": "Browser",
     "controls": [
       {
@@ -282,7 +282,7 @@
   "bad-icecream-3": {
     "name": "Bad Ice Cream 3",
     "release": "Dec 11, 2013",
-    "genre": "Action · Arcade Maze",
+    "genre": "Action \u00b7 Arcade Maze",
     "platforms": "Browser",
     "controls": [
       {
@@ -302,7 +302,7 @@
   "bad-time-simulator": {
     "name": "Bad Time Simulator",
     "release": "Jun 06, 2016",
-    "genre": "Action · Boss Rush",
+    "genre": "Action \u00b7 Boss Rush",
     "platforms": "Browser, PC",
     "controls": [
       {
@@ -322,7 +322,7 @@
   "basketballstars": {
     "name": "Basketball Stars",
     "release": "Feb 11, 2016",
-    "genre": "Sports · Basketball",
+    "genre": "Sports \u00b7 Basketball",
     "platforms": "Browser, Mobile",
     "controls": [
       {
@@ -342,7 +342,7 @@
   "bejeweled2": {
     "name": "Bejeweled 2",
     "release": "Nov 05, 2004",
-    "genre": "Puzzle · Match-3",
+    "genre": "Puzzle \u00b7 Match-3",
     "platforms": "Browser, Mobile",
     "controls": [
       {
@@ -362,7 +362,7 @@
   "blockblast": {
     "name": "Block Blast",
     "release": "Sep 12, 2022",
-    "genre": "Puzzle · Block Fit",
+    "genre": "Puzzle \u00b7 Block Fit",
     "platforms": "Browser, Mobile",
     "controls": [
       {
@@ -382,7 +382,7 @@
   "bloonstd5": {
     "name": "Bloons TD5",
     "release": "Nov 15, 2011",
-    "genre": "Tower Defense · Strategy",
+    "genre": "Tower Defense \u00b7 Strategy",
     "platforms": "Browser, Mobile",
     "controls": [
       {
@@ -402,7 +402,7 @@
   "bloxors": {
     "name": "Bloxors",
     "release": "Jan 30, 2007",
-    "genre": "Puzzle · Spatial Logic",
+    "genre": "Puzzle \u00b7 Spatial Logic",
     "platforms": "Browser",
     "controls": [
       {
@@ -422,7 +422,7 @@
   "boxingrandom": {
     "name": "Boxing Random",
     "release": "Jun 17, 2020",
-    "genre": "Sports · Party Fighter",
+    "genre": "Sports \u00b7 Party Fighter",
     "platforms": "Browser, Mobile",
     "controls": [
       {
@@ -442,7 +442,7 @@
   "catmario": {
     "name": "Cat Mario",
     "release": "Feb 13, 2007",
-    "genre": "Platformer · Troll",
+    "genre": "Platformer \u00b7 Troll",
     "platforms": "Browser, PC",
     "controls": [
       {
@@ -462,7 +462,7 @@
   "clubpenguin": {
     "name": "Club Penguin",
     "release": "Oct 24, 2005",
-    "genre": "Virtual World · Social",
+    "genre": "Virtual World \u00b7 Social",
     "platforms": "Browser",
     "controls": [
       {
@@ -482,7 +482,7 @@
   "crossyroad": {
     "name": "Crossy Road",
     "release": "Nov 20, 2014",
-    "genre": "Arcade · Endless Hopper",
+    "genre": "Arcade \u00b7 Endless Hopper",
     "platforms": "Browser, Mobile",
     "controls": [
       {
@@ -502,7 +502,7 @@
   "csgo-clicker": {
     "name": "CSGO Case Opener",
     "release": "Aug 22, 2015",
-    "genre": "Idle · Case Opener",
+    "genre": "Idle \u00b7 Case Opener",
     "platforms": "Browser",
     "controls": [
       {
@@ -522,7 +522,7 @@
   "cupcake2048": {
     "name": "Cupcake 2048",
     "release": "Apr 01, 2014",
-    "genre": "Puzzle · Number Merge",
+    "genre": "Puzzle \u00b7 Number Merge",
     "platforms": "Browser",
     "controls": [
       {
@@ -542,7 +542,7 @@
   "curveball": {
     "name": "Curveball",
     "release": "Aug 19, 2006",
-    "genre": "Arcade · 3D Pong",
+    "genre": "Arcade \u00b7 3D Pong",
     "platforms": "Browser",
     "controls": [
       {
@@ -562,7 +562,7 @@
   "cut-the-rope": {
     "name": "Cut The Rope",
     "release": "Oct 04, 2010",
-    "genre": "Puzzle · Physics",
+    "genre": "Puzzle \u00b7 Physics",
     "platforms": "Browser, Mobile",
     "controls": [
       {
@@ -582,7 +582,7 @@
   "dbz": {
     "name": "DBZ Devolution",
     "release": "Nov 05, 2007",
-    "genre": "Action · Fighting",
+    "genre": "Action \u00b7 Fighting",
     "platforms": "Browser",
     "controls": [
       {
@@ -602,7 +602,7 @@
   "deep-freeze": {
     "name": "Deep Freeze",
     "release": "Dec 12, 2006",
-    "genre": "Action · Platform Shooter",
+    "genre": "Action \u00b7 Platform Shooter",
     "platforms": "Browser",
     "controls": [
       {
@@ -622,7 +622,7 @@
   "doodlejump": {
     "name": "Doodle Jump",
     "release": "Apr 06, 2009",
-    "genre": "Arcade · Vertical Jumper",
+    "genre": "Arcade \u00b7 Vertical Jumper",
     "platforms": "Browser, Mobile",
     "controls": [
       {
@@ -642,7 +642,7 @@
   "draw-the-hill": {
     "name": "Draw The Hill",
     "release": "Jul 18, 2021",
-    "genre": "Puzzle · Line Rider",
+    "genre": "Puzzle \u00b7 Line Rider",
     "platforms": "Browser, Mobile",
     "controls": [
       {
@@ -662,7 +662,7 @@
   "drifthunters": {
     "name": "Drift Hunters",
     "release": "Sep 22, 2017",
-    "genre": "Racing · Drifting",
+    "genre": "Racing \u00b7 Drifting",
     "platforms": "Browser",
     "controls": [
       {
@@ -682,7 +682,7 @@
   "drivemad": {
     "name": "Drive Mad",
     "release": "Nov 03, 2022",
-    "genre": "Driving · Physics",
+    "genre": "Driving \u00b7 Physics",
     "platforms": "Browser, Mobile",
     "controls": [
       {
@@ -702,7 +702,7 @@
   "duck-life-3": {
     "name": "Duck Life 3",
     "release": "Apr 19, 2011",
-    "genre": "Simulation · Racing",
+    "genre": "Simulation \u00b7 Racing",
     "platforms": "Browser",
     "controls": [
       {
@@ -722,7 +722,7 @@
   "duck-life-5": {
     "name": "Duck Life 5",
     "release": "Sep 18, 2014",
-    "genre": "Endless Runner · Adventure",
+    "genre": "Endless Runner \u00b7 Adventure",
     "platforms": "Browser",
     "controls": [
       {
@@ -742,7 +742,7 @@
   "duckhunt": {
     "name": "Duck Hunt",
     "release": "Oct 18, 1984",
-    "genre": "Arcade · Light Gun",
+    "genre": "Arcade \u00b7 Light Gun",
     "platforms": "Browser, Arcade",
     "controls": [
       {
@@ -762,7 +762,7 @@
   "ducklife1": {
     "name": "Duck Life 1",
     "release": "Apr 29, 2009",
-    "genre": "Simulation · Racing",
+    "genre": "Simulation \u00b7 Racing",
     "platforms": "Browser",
     "controls": [
       {
@@ -782,7 +782,7 @@
   "ducklife2": {
     "name": "Duck Life 2",
     "release": "Jun 15, 2010",
-    "genre": "Simulation · Racing",
+    "genre": "Simulation \u00b7 Racing",
     "platforms": "Browser",
     "controls": [
       {
@@ -802,7 +802,7 @@
   "dunebuggy": {
     "name": "Dune Buggy",
     "release": "Mar 12, 2007",
-    "genre": "Racing · Stunt",
+    "genre": "Racing \u00b7 Stunt",
     "platforms": "Browser",
     "controls": [
       {
@@ -822,7 +822,7 @@
   "electric-man-2": {
     "name": "Electric Man 2",
     "release": "Aug 10, 2007",
-    "genre": "Action · Stick Fighting",
+    "genre": "Action \u00b7 Stick Fighting",
     "platforms": "Browser",
     "controls": [
       {
@@ -842,7 +842,7 @@
   "fireboy-and-watergirl-firetemple": {
     "name": "Fireboy and Watergirl Fire Temple",
     "release": "Mar 15, 2013",
-    "genre": "Puzzle · Co-op Platformer",
+    "genre": "Puzzle \u00b7 Co-op Platformer",
     "platforms": "Browser",
     "controls": [
       {
@@ -862,7 +862,7 @@
   "flappy-2048": {
     "name": "Flappy 2048",
     "release": "Mar 20, 2014",
-    "genre": "Arcade · Mashup",
+    "genre": "Arcade \u00b7 Mashup",
     "platforms": "Browser",
     "controls": [
       {
@@ -882,7 +882,7 @@
   "flappy-bird": {
     "name": "Flappy Bird",
     "release": "May 24, 2013",
-    "genre": "Arcade · Endless Flyer",
+    "genre": "Arcade \u00b7 Endless Flyer",
     "platforms": "Browser, Mobile",
     "controls": [
       {
@@ -902,7 +902,7 @@
   "fnaf": {
     "name": "FNAF",
     "release": "Aug 08, 2014",
-    "genre": "Horror · Survival",
+    "genre": "Horror \u00b7 Survival",
     "platforms": "Browser, PC",
     "controls": [
       {
@@ -922,7 +922,7 @@
   "friday-night-funkin": {
     "name": "Friday Night Funkin",
     "release": "Nov 01, 2020",
-    "genre": "Rhythm · Battle",
+    "genre": "Rhythm \u00b7 Battle",
     "platforms": "Browser, PC",
     "controls": [
       {
@@ -942,7 +942,7 @@
   "galaga": {
     "name": "Galaga",
     "release": "Sep 24, 1981",
-    "genre": "Arcade · Shooter",
+    "genre": "Arcade \u00b7 Shooter",
     "platforms": "Browser, Arcade",
     "controls": [
       {
@@ -962,7 +962,7 @@
   "geodash": {
     "name": "Geometry Dash",
     "release": "Aug 13, 2013",
-    "genre": "Platformer · Rhythm",
+    "genre": "Platformer \u00b7 Rhythm",
     "platforms": "Browser, Mobile",
     "controls": [
       {
@@ -982,7 +982,7 @@
   "getaway-shootout": {
     "name": "Getaway Shootout",
     "release": "Aug 27, 2018",
-    "genre": "Action · Party Platformer",
+    "genre": "Action \u00b7 Party Platformer",
     "platforms": "Browser",
     "controls": [
       {
@@ -1002,7 +1002,7 @@
   "googlesnake": {
     "name": "Google Snake",
     "release": "Sep 01, 2013",
-    "genre": "Arcade · Classic",
+    "genre": "Arcade \u00b7 Classic",
     "platforms": "Browser, Mobile",
     "controls": [
       {
@@ -1022,7 +1022,7 @@
   "gravityguy": {
     "name": "Gravity Guy",
     "release": "Nov 10, 2010",
-    "genre": "Runner · Gravity Flip",
+    "genre": "Runner \u00b7 Gravity Flip",
     "platforms": "Browser, Mobile",
     "controls": [
       {
@@ -1042,7 +1042,7 @@
   "gunmayhem": {
     "name": "Gun Mayhem",
     "release": "Nov 11, 2011",
-    "genre": "Action · Arena Brawler",
+    "genre": "Action \u00b7 Arena Brawler",
     "platforms": "Browser",
     "controls": [
       {
@@ -1062,7 +1062,7 @@
   "gunspin": {
     "name": "Gunspin",
     "release": "May 05, 2020",
-    "genre": "Arcade · Physics Shooter",
+    "genre": "Arcade \u00b7 Physics Shooter",
     "platforms": "Browser, Mobile",
     "controls": [
       {
@@ -1082,7 +1082,7 @@
   "gyroball": {
     "name": "Gyroball",
     "release": "Jul 14, 2006",
-    "genre": "Puzzle · Balance",
+    "genre": "Puzzle \u00b7 Balance",
     "platforms": "Browser",
     "controls": [
       {
@@ -1102,7 +1102,7 @@
   "happy-wheels": {
     "name": "Happy Wheels",
     "release": "Jun 24, 2010",
-    "genre": "Action · Physics",
+    "genre": "Action \u00b7 Physics",
     "platforms": "Browser",
     "controls": [
       {
@@ -1122,7 +1122,7 @@
   "henry-stickman": {
     "name": "Stickman Games",
     "release": "Jan 15, 2009",
-    "genre": "Adventure · Interactive Story",
+    "genre": "Adventure \u00b7 Interactive Story",
     "platforms": "Browser",
     "controls": [
       {
@@ -1142,7 +1142,7 @@
   "hideandsmash": {
     "name": "Hide & Smash",
     "release": "Apr 02, 2023",
-    "genre": "Action · Party Brawler",
+    "genre": "Action \u00b7 Party Brawler",
     "platforms": "Browser",
     "controls": [
       {
@@ -1162,7 +1162,7 @@
   "holeio": {
     "name": "Hole.io",
     "release": "Jun 24, 2018",
-    "genre": "Arcade · Battle Royale",
+    "genre": "Arcade \u00b7 Battle Royale",
     "platforms": "Browser, Mobile",
     "controls": [
       {
@@ -1182,7 +1182,7 @@
   "houseofhazards": {
     "name": "House Of Hazards",
     "release": "Sep 18, 2020",
-    "genre": "Party · Trap Runner",
+    "genre": "Party \u00b7 Trap Runner",
     "platforms": "Browser",
     "controls": [
       {
@@ -1202,7 +1202,7 @@
   "idle-breakout": {
     "name": "Idle Breakout",
     "release": "Jun 22, 2019",
-    "genre": "Idle · Brick Breaker",
+    "genre": "Idle \u00b7 Brick Breaker",
     "platforms": "Browser",
     "controls": [
       {
@@ -1222,7 +1222,7 @@
   "idle-shark": {
     "name": "Idle Shark",
     "release": "Jul 07, 2022",
-    "genre": "Idle · Tycoon",
+    "genre": "Idle \u00b7 Tycoon",
     "platforms": "Browser",
     "controls": [
       {
@@ -1242,7 +1242,7 @@
   "jetpack-joyride": {
     "name": "Jetpack Joyride",
     "release": "Sep 01, 2011",
-    "genre": "Arcade · Endless Runner",
+    "genre": "Arcade \u00b7 Endless Runner",
     "platforms": "Browser, Mobile",
     "controls": [
       {
@@ -1262,7 +1262,7 @@
   "learntofly": {
     "name": "Learn To Fly",
     "release": "May 16, 2009",
-    "genre": "Arcade · Launch",
+    "genre": "Arcade \u00b7 Launch",
     "platforms": "Browser",
     "controls": [
       {
@@ -1282,7 +1282,7 @@
   "learntofly2": {
     "name": "Learn To Fly 2",
     "release": "Jun 16, 2011",
-    "genre": "Arcade · Launch Sequel",
+    "genre": "Arcade \u00b7 Launch Sequel",
     "platforms": "Browser",
     "controls": [
       {
@@ -1302,7 +1302,7 @@
   "learntofly3": {
     "name": "Learn To Fly 3",
     "release": "Feb 19, 2016",
-    "genre": "Arcade · Rocket Builder",
+    "genre": "Arcade \u00b7 Rocket Builder",
     "platforms": "Browser",
     "controls": [
       {
@@ -1322,7 +1322,7 @@
   "marippy": {
     "name": "Marippy",
     "release": "Jan 12, 2015",
-    "genre": "Arcade · Crossover",
+    "genre": "Arcade \u00b7 Crossover",
     "platforms": "Browser",
     "controls": [
       {
@@ -1342,7 +1342,7 @@
   "minecraft": {
     "name": "Minecraft (Eagler)",
     "release": "May 10, 2021",
-    "genre": "Sandbox · Survival",
+    "genre": "Sandbox \u00b7 Survival",
     "platforms": "Browser, PC",
     "controls": [
       {
@@ -1362,7 +1362,7 @@
   "minecraft-tower-defence": {
     "name": "Minecraft Tower Defense",
     "release": "Oct 03, 2011",
-    "genre": "Tower Defense · Strategy",
+    "genre": "Tower Defense \u00b7 Strategy",
     "platforms": "Browser",
     "controls": [
       {
@@ -1382,7 +1382,7 @@
   "minecraft-tower-defence-2": {
     "name": "Minecraft Tower Defense 2",
     "release": "Dec 15, 2012",
-    "genre": "Tower Defense · Sandbox",
+    "genre": "Tower Defense \u00b7 Sandbox",
     "platforms": "Browser",
     "controls": [
       {
@@ -1402,7 +1402,7 @@
   "minesweeper": {
     "name": "Mine Sweeper",
     "release": "Nov 08, 1990",
-    "genre": "Puzzle · Logic",
+    "genre": "Puzzle \u00b7 Logic",
     "platforms": "Browser, PC",
     "controls": [
       {
@@ -1422,7 +1422,7 @@
   "monkey-mart": {
     "name": "MonkeyMart",
     "release": "Nov 11, 2022",
-    "genre": "Management · Idle",
+    "genre": "Management \u00b7 Idle",
     "platforms": "Browser, Mobile",
     "controls": [
       {
@@ -1442,7 +1442,7 @@
   "motherload": {
     "name": "Motherload",
     "release": "Nov 04, 2004",
-    "genre": "Adventure · Mining",
+    "genre": "Adventure \u00b7 Mining",
     "platforms": "Browser",
     "controls": [
       {
@@ -1462,7 +1462,7 @@
   "motox3m": {
     "name": "MotoX3M Games",
     "release": "May 04, 2015",
-    "genre": "Racing · Stunt",
+    "genre": "Racing \u00b7 Stunt",
     "platforms": "Browser, Mobile",
     "controls": [
       {
@@ -1482,7 +1482,7 @@
   "mrmine": {
     "name": "Mr Mine",
     "release": "Oct 30, 2020",
-    "genre": "Idle · Mining",
+    "genre": "Idle \u00b7 Mining",
     "platforms": "Browser, PC",
     "controls": [
       {
@@ -1502,7 +1502,7 @@
   "ngon": {
     "name": "N Gon",
     "release": "Jul 15, 2020",
-    "genre": "Shooter · Sandbox",
+    "genre": "Shooter \u00b7 Sandbox",
     "platforms": "Browser, PC",
     "controls": [
       {
@@ -1522,7 +1522,7 @@
   "oiligarchy": {
     "name": "Oiligarchy",
     "release": "May 15, 2008",
-    "genre": "Strategy · Simulation",
+    "genre": "Strategy \u00b7 Simulation",
     "platforms": "Browser",
     "controls": [
       {
@@ -1542,7 +1542,7 @@
   "ovo": {
     "name": "OVO",
     "release": "Feb 18, 2021",
-    "genre": "Platformer · Parkour",
+    "genre": "Platformer \u00b7 Parkour",
     "platforms": "Browser, Mobile",
     "controls": [
       {
@@ -1562,7 +1562,7 @@
   "pacman": {
     "name": "Pacman",
     "release": "May 22, 1980",
-    "genre": "Arcade · Maze Chase",
+    "genre": "Arcade \u00b7 Maze Chase",
     "platforms": "Browser, Arcade",
     "controls": [
       {
@@ -1582,7 +1582,7 @@
   "pacxon": {
     "name": "Pacxon",
     "release": "Dec 17, 2007",
-    "genre": "Arcade · Territory Capture",
+    "genre": "Arcade \u00b7 Territory Capture",
     "platforms": "Browser",
     "controls": [
       {
@@ -1602,7 +1602,7 @@
   "pandemic2": {
     "name": "Pandemic 2",
     "release": "Jul 17, 2008",
-    "genre": "Strategy · Simulation",
+    "genre": "Strategy \u00b7 Simulation",
     "platforms": "Browser",
     "controls": [
       {
@@ -1622,7 +1622,7 @@
   "papas-games": {
     "name": "Papa's Games",
     "release": "Aug 07, 2007",
-    "genre": "Simulation · Cooking",
+    "genre": "Simulation \u00b7 Cooking",
     "platforms": "Browser",
     "controls": [
       {
@@ -1642,7 +1642,7 @@
   "paperio2": {
     "name": "Paper.io 2",
     "release": "Sep 12, 2018",
-    "genre": "Arcade · Territory",
+    "genre": "Arcade \u00b7 Territory",
     "platforms": "Browser, Mobile",
     "controls": [
       {
@@ -1662,7 +1662,7 @@
   "pixelgun": {
     "name": "Pixel Gun",
     "release": "May 02, 2013",
-    "genre": "Shooter · Sandbox",
+    "genre": "Shooter \u00b7 Sandbox",
     "platforms": "Browser, Mobile",
     "controls": [
       {
@@ -1682,7 +1682,7 @@
   "pool": {
     "name": "Pool",
     "release": "Jan 10, 2008",
-    "genre": "Sports · Billiards",
+    "genre": "Sports \u00b7 Billiards",
     "platforms": "Browser",
     "controls": [
       {
@@ -1702,7 +1702,7 @@
   "pregnancy-test": {
     "name": "Pregnancy Test",
     "release": "Mar 08, 2021",
-    "genre": "Novelty · Simulation",
+    "genre": "Novelty \u00b7 Simulation",
     "platforms": "Browser, Mobile",
     "controls": [
       {
@@ -1722,7 +1722,7 @@
   "pvz": {
     "name": "Plants V Zombies (Full)",
     "release": "May 05, 2009",
-    "genre": "Strategy · Tower Defense",
+    "genre": "Strategy \u00b7 Tower Defense",
     "platforms": "Browser, PC",
     "controls": [
       {
@@ -1742,7 +1742,7 @@
   "rb-college": {
     "name": "Retro Bowl College FIXED!",
     "release": "Aug 21, 2023",
-    "genre": "Sports · Football Sim",
+    "genre": "Sports \u00b7 Football Sim",
     "platforms": "Browser, Mobile",
     "controls": [
       {
@@ -1762,7 +1762,7 @@
   "retrobowl": {
     "name": "Retro Bowl [New Verison]",
     "release": "Jan 17, 2020",
-    "genre": "Sports · Football Sim",
+    "genre": "Sports \u00b7 Football Sim",
     "platforms": "Browser, Mobile",
     "controls": [
       {
@@ -1782,7 +1782,7 @@
   "riddleschool-all-games": {
     "name": "Riddle School Games",
     "release": "Mar 01, 2016",
-    "genre": "Adventure · Point & Click",
+    "genre": "Adventure \u00b7 Point & Click",
     "platforms": "Browser",
     "controls": [
       {
@@ -1802,7 +1802,7 @@
   "rooftopsnipers": {
     "name": "Rooftop Sniper",
     "release": "Jan 17, 2017",
-    "genre": "Action · Duel",
+    "genre": "Action \u00b7 Duel",
     "platforms": "Browser",
     "controls": [
       {
@@ -1822,7 +1822,7 @@
   "run2": {
     "name": "Run 2",
     "release": "Dec 12, 2011",
-    "genre": "Runner · Platform",
+    "genre": "Runner \u00b7 Platform",
     "platforms": "Browser",
     "controls": [
       {
@@ -1842,7 +1842,7 @@
   "run3": {
     "name": "Run 3",
     "release": "Jun 05, 2014",
-    "genre": "Runner · Sci-Fi",
+    "genre": "Runner \u00b7 Sci-Fi",
     "platforms": "Browser",
     "controls": [
       {
@@ -1862,7 +1862,7 @@
   "shuffle": {
     "name": "Shuffle",
     "release": "May 11, 2007",
-    "genre": "Arcade · Physics",
+    "genre": "Arcade \u00b7 Physics",
     "platforms": "Browser",
     "controls": [
       {
@@ -1882,7 +1882,7 @@
   "slitherio": {
     "name": "Slither.io",
     "release": "Mar 30, 2016",
-    "genre": "Arcade · Multiplayer Snake",
+    "genre": "Arcade \u00b7 Multiplayer Snake",
     "platforms": "Browser, Mobile",
     "controls": [
       {
@@ -1902,7 +1902,7 @@
   "snailiad": {
     "name": "Snailiad",
     "release": "Jul 18, 2011",
-    "genre": "Metroidvania · Adventure",
+    "genre": "Metroidvania \u00b7 Adventure",
     "platforms": "Browser",
     "controls": [
       {
@@ -1922,7 +1922,7 @@
   "snake": {
     "name": "Snake",
     "release": "Dec 01, 1997",
-    "genre": "Arcade · Classic",
+    "genre": "Arcade \u00b7 Classic",
     "platforms": "Browser, Mobile",
     "controls": [
       {
@@ -1942,7 +1942,7 @@
   "snowline": {
     "name": "Snowline",
     "release": "Dec 18, 2006",
-    "genre": "Puzzle · Drawing",
+    "genre": "Puzzle \u00b7 Drawing",
     "platforms": "Browser",
     "controls": [
       {
@@ -1962,7 +1962,7 @@
   "soccer-random": {
     "name": "Soccer Random",
     "release": "Aug 25, 2020",
-    "genre": "Sports · Physics",
+    "genre": "Sports \u00b7 Physics",
     "platforms": "Browser",
     "controls": [
       {
@@ -1982,7 +1982,7 @@
   "sort-the-court": {
     "name": "Sort the Court",
     "release": "Nov 22, 2016",
-    "genre": "Simulation · Decision",
+    "genre": "Simulation \u00b7 Decision",
     "platforms": "Browser, PC",
     "controls": [
       {
@@ -2002,7 +2002,7 @@
   "spelunky": {
     "name": "Spelunky",
     "release": "Dec 21, 2008",
-    "genre": "Roguelike · Platformer",
+    "genre": "Roguelike \u00b7 Platformer",
     "platforms": "Browser, PC",
     "controls": [
       {
@@ -2022,7 +2022,7 @@
   "spending-elonmusk-money": {
     "name": "Spend Elon's Money",
     "release": "Jun 25, 2020",
-    "genre": "Simulation · Clicker",
+    "genre": "Simulation \u00b7 Clicker",
     "platforms": "Browser",
     "controls": [
       {
@@ -2042,7 +2042,7 @@
   "stacktris": {
     "name": "Stacktris",
     "release": "Oct 14, 2019",
-    "genre": "Arcade · Stacking",
+    "genre": "Arcade \u00b7 Stacking",
     "platforms": "Browser, Mobile",
     "controls": [
       {
@@ -2062,7 +2062,7 @@
   "stealthiselection": {
     "name": "Steal This Election",
     "release": "Oct 20, 2020",
-    "genre": "Simulation · Parody",
+    "genre": "Simulation \u00b7 Parody",
     "platforms": "Browser",
     "controls": [
       {
@@ -2082,7 +2082,7 @@
   "stickmangolf": {
     "name": "Stickman Golf",
     "release": "Sep 30, 2010",
-    "genre": "Sports · Golf",
+    "genre": "Sports \u00b7 Golf",
     "platforms": "Browser, Mobile",
     "controls": [
       {
@@ -2102,7 +2102,7 @@
   "subwaysurfer": {
     "name": "Subway Surfers",
     "release": "May 24, 2012",
-    "genre": "Arcade · Endless Runner",
+    "genre": "Arcade \u00b7 Endless Runner",
     "platforms": "Browser, Mobile",
     "controls": [
       {
@@ -2122,7 +2122,7 @@
   "super-sonic": {
     "name": "Supersonic",
     "release": "Aug 03, 2008",
-    "genre": "Action · Platformer",
+    "genre": "Action \u00b7 Platformer",
     "platforms": "Browser",
     "controls": [
       {
@@ -2142,7 +2142,7 @@
   "supermario63": {
     "name": "Super Mario 63",
     "release": "Jun 10, 2009",
-    "genre": "Platformer · Fan Game",
+    "genre": "Platformer \u00b7 Fan Game",
     "platforms": "Browser",
     "controls": [
       {
@@ -2162,7 +2162,7 @@
   "swords-and-sandals-2": {
     "name": "Swords and Sandals 2",
     "release": "Mar 12, 2008",
-    "genre": "RPG · Gladiator",
+    "genre": "RPG \u00b7 Gladiator",
     "platforms": "Browser",
     "controls": [
       {
@@ -2182,7 +2182,7 @@
   "tanktrouble": {
     "name": "Tank Trouble",
     "release": "Apr 14, 2009",
-    "genre": "Action · Tank Duel",
+    "genre": "Action \u00b7 Tank Duel",
     "platforms": "Browser",
     "controls": [
       {
@@ -2202,7 +2202,7 @@
   "templerun2": {
     "name": "Temple Run 2",
     "release": "Jan 17, 2013",
-    "genre": "Arcade · Endless Runner",
+    "genre": "Arcade \u00b7 Endless Runner",
     "platforms": "Browser, Mobile",
     "controls": [
       {
@@ -2222,7 +2222,7 @@
   "tetris": {
     "name": "Tetris",
     "release": "Jun 06, 1984",
-    "genre": "Puzzle · Falling Blocks",
+    "genre": "Puzzle \u00b7 Falling Blocks",
     "platforms": "Browser, Console",
     "controls": [
       {
@@ -2242,7 +2242,7 @@
   "the-big-adventure-of-owatas-life": {
     "name": "The Big Adventure of Owata's Life",
     "release": "May 29, 2008",
-    "genre": "Platformer · Comedy",
+    "genre": "Platformer \u00b7 Comedy",
     "platforms": "Browser",
     "controls": [
       {
@@ -2262,7 +2262,7 @@
   "the-binding-of-isaac": {
     "name": "The Binding of Isaac",
     "release": "Sep 28, 2011",
-    "genre": "Roguelike · Shooter",
+    "genre": "Roguelike \u00b7 Shooter",
     "platforms": "Browser, PC",
     "controls": [
       {
@@ -2282,7 +2282,7 @@
   "towerblaster": {
     "name": "Tower Blaster",
     "release": "Aug 04, 2003",
-    "genre": "Puzzle · Tower Building",
+    "genre": "Puzzle \u00b7 Tower Building",
     "platforms": "Browser",
     "controls": [
       {
@@ -2302,7 +2302,7 @@
   "towermaster": {
     "name": "Tower Master",
     "release": "Feb 11, 2018",
-    "genre": "Puzzle · Stack",
+    "genre": "Puzzle \u00b7 Stack",
     "platforms": "Browser, Mobile",
     "controls": [
       {
@@ -2322,7 +2322,7 @@
   "undertale(demo)": {
     "name": "Undertale (Demo)",
     "release": "Oct 31, 2013",
-    "genre": "RPG · Bullet Hell",
+    "genre": "RPG \u00b7 Bullet Hell",
     "platforms": "Browser, PC",
     "controls": [
       {
@@ -2342,7 +2342,7 @@
   "vex": {
     "name": "Vex's Games",
     "release": "Sep 15, 2013",
-    "genre": "Platformer · Precision",
+    "genre": "Platformer \u00b7 Precision",
     "platforms": "Browser, Mobile",
     "controls": [
       {
@@ -2362,7 +2362,7 @@
   "worldshardestgame": {
     "name": "World's Hardest Game",
     "release": "Mar 10, 2008",
-    "genre": "Puzzle · Precision",
+    "genre": "Puzzle \u00b7 Precision",
     "platforms": "Browser",
     "controls": [
       {
@@ -2382,7 +2382,7 @@
   "worldshardestgame2": {
     "name": "World's Hardest Game 2",
     "release": "Oct 09, 2008",
-    "genre": "Puzzle · Precision",
+    "genre": "Puzzle \u00b7 Precision",
     "platforms": "Browser",
     "controls": [
       {
@@ -2398,5 +2398,41 @@
         "action": "retry from checkpoint"
       }
     ]
+  },
+  "pizzatower": {
+    "name": "Pizza Tower",
+    "genre": "Platformer \u00b7 Action",
+    "platforms": "Browser",
+    "rating": "\u2b50 4.7 / 5 (58,204 votes)",
+    "release": "Jan 26, 2023",
+    "heroParagraph": "Pizza Tower is a high-octane platformer where you race through eclectic stages, smashing foes and searching for secrets as Peppino the pizza chef.",
+    "metaDescription": "Play Pizza Tower online. Sprint as Peppino the pizza chef, combo through wild stages, and chase high scores in this fast-paced platformer. Free and unblocked!",
+    "metaKeywords": "Pizza Tower, Peppino, fast platformer, speedrun game, retro inspired, play Pizza Tower online, unblocked",
+    "controls": [
+      {
+        "input": "Arrow keys",
+        "action": "move, crouch, and aim jumps"
+      },
+      {
+        "input": "Z",
+        "action": "jump and wall climb"
+      },
+      {
+        "input": "X",
+        "action": "dash, shoulder bash, and break blocks"
+      },
+      {
+        "input": "C",
+        "action": "grab enemies and interact"
+      }
+    ]
+  },
+  "quake3": {
+    "name": "Quake III Arena",
+    "genre": "Shooter \u00b7 Arena",
+    "platforms": "Browser, PC",
+    "release": "Dec 02, 1999",
+    "rating": "\u2b50 4.6 / 5 (92,411 votes)",
+    "heroParagraph": "Quake III Arena is the definitive arena shooter\u2014tight movement, deadly weapons, and nonstop competitive action."
   }
 }
