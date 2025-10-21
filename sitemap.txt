@@ -11,6 +11,7 @@ https://schplay.com/games/bad-icecream-1.html
 https://schplay.com/games/bad-icecream-2.html
 https://schplay.com/games/bad-icecream-3.html
 https://schplay.com/games/bad-time-simulator.html
+https://schplay.com/games/baldi-plus.html
 https://schplay.com/games/basketballstars.html
 https://schplay.com/games/bejeweled2.html
 https://schplay.com/games/blockblast.html
@@ -89,6 +90,7 @@ https://schplay.com/games/pizzatower.html
 https://schplay.com/games/pool.html
 https://schplay.com/games/pregnancy-test.html
 https://schplay.com/games/pvz.html
+https://schplay.com/games/quake3.html
 https://schplay.com/games/rb-college.html
 https://schplay.com/games/Rejuvenation.html
 https://schplay.com/games/retrobowl.html
@@ -99,6 +101,7 @@ https://schplay.com/games/run3.html
 https://schplay.com/games/shuffle.html
 https://schplay.com/games/slitherio.html
 https://schplay.com/games/slope.html
+https://schplay.com/games/slope2.html
 https://schplay.com/games/snailiad.html
 https://schplay.com/games/snake.html
 https://schplay.com/games/snowline.html

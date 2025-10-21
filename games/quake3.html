@@ -294,7 +294,7 @@
           </button>
         </div>
 
-        <iframe id="quake3-iframe" src="quake3/index.html" title="Play Quake III Arena" allowfullscreen loading="lazy"></iframe>
+        <iframe id="quake3-iframe" src="quake3/index.html" title="Play Quake III Arena" allowfullscreen loading="lazy" allow="fullscreen *; pointer-lock *; gamepad *; keyboard-lock *" tabindex="0"></iframe>
       </div>
       <aside class="game-meta-card" id="how-to-play">
         <div class="game-ad-slot" aria-label="Advertisement">
@@ -459,7 +459,7 @@
       }
     };
 
-    if (window.SCHPLAY_GAMES && window.SCHPLAY_GAMES.list) {
+  if (window.SCHPLAY_GAMES && window.SCHPLAY_GAMES.list) {
       renderRecommendations();
     } else {
       document.addEventListener('schplay:games-ready', renderRecommendations);
@@ -532,6 +532,25 @@
       document.addEventListener('webkitfullscreenchange', updateFullscreenIcon);
       document.addEventListener('mozfullscreenchange', updateFullscreenIcon);
       document.addEventListener('MSFullscreenChange', updateFullscreenIcon);
+    }
+
+    if (gameViewport) {
+      const focusFrame = () => {
+        try {
+          gameViewport.focus({ preventScroll: true });
+        } catch (err) {
+          gameViewport.focus();
+        }
+        try {
+          if (gameViewport.contentWindow && typeof gameViewport.contentWindow.focus === 'function') {
+            gameViewport.contentWindow.focus();
+          }
+        } catch (err) {}
+      };
+
+      gameViewport.addEventListener('load', focusFrame);
+      gameViewport.addEventListener('mouseenter', focusFrame);
+      gameViewport.addEventListener('mousedown', focusFrame);
     }
 
   </script>

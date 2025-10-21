@@ -58,5 +58,35 @@
     ],
     "plainText": "Basketball Stars - Play Free Online\nBasketball Stars lets you lace up against AI or friends in highlight-reel duels. Choose from classic duos or custom avatars, chain crossovers, and throw down poster-worthy dunks while you chase tournament trophies.",
     "iframeSrc": "basketball-stars/index.html"
+  },
+  "baldi-plus": {
+    "name": "Baldi's Basics Plus",
+    "href": "games/baldi-plus.html",
+    "image": "images/baldiplus.webp",
+    "title": "Baldi's Basics Plus - Play Free Online",
+    "metaDescription": "Explore Baldi's Basics Plus in your browser. Outwit Baldi, solve randomized math challenges, and uncover every procedurally generated floor in this unpredictable horror-edutainment mashup.",
+    "metaKeywords": "Baldi's Basics Plus, baldi plus, baldi basics new version, baldi horror school game, baldi unblocked, schplay baldi",
+    "heroParagraph": "Baldi's Basics Plus cranks the cult-classic schoolhouse escape into a sprawling roguelike. New layouts, smarter faculty, and surprise events keep every run tense, hilarious, and absolutely unpredictable.",
+    "instructions": [
+      "Listen for Baldi's ruler and plan your routes before you sprint. Each floor is generated on the fly, so mark safe corridors mentally and grab items that counter every teacher.",
+      "Answer notebooks carefully—wrong answers speed Baldi up—but don’t waste time. Prioritize keys and sodas that open shortcuts or push pursuers out of the way.",
+      "Pay attention to random events. Flooded hallways, power outages, or surprise assemblies can change your strategy instantly, so always keep an emergency item in reserve." 
+    ],
+    "sections": [
+      {
+        "heading": "Decode every faculty member",
+        "body": "Baldi isn't alone. Principal of the Thing nabs you for running, Mrs. Pomp eats time with pop quizzes, and Beans blocks halls with gum. Learn their audio cues and keep counters like safety scissors handy."
+      },
+      {
+        "heading": "Master the random events",
+        "body": "Plus Mode introduces daily modifiers—darkness, slippery floors, or surprise guests. Check the chalkboard before each run so you're not caught off guard when Baldi changes the rules mid-lesson."
+      },
+      {
+        "heading": "Speedrun the elevators",
+        "body": "You only escape by banking enough notebooks to unlock the elevator. Route efficiently, save stamina for the final chase, and stash a B-Soda to knock Baldi back just before the doors close." 
+      }
+    ],
+    "plainText": "Baldi's Basics Plus - Play Free Online\nBaldi's Basics Plus turns the retro-styled horror classroom into a giant roguelike maze packed with remixed faculty, unpredictable events, and new gear. Memorize audio cues, stock your inventory, and improvise your escape on every wildly generated floor.",
+    "iframeSrc": "baldi-plus/index.html"
   }
 }

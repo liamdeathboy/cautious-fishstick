@@ -2434,5 +2434,37 @@
     "release": "Dec 02, 1999",
     "rating": "\u2b50 4.6 / 5 (92,411 votes)",
     "heroParagraph": "Quake III Arena is the definitive arena shooter\u2014tight movement, deadly weapons, and nonstop competitive action."
+  },
+  "baldi-plus": {
+    "name": "Baldi's Basics Plus",
+    "release": "Jun 12, 2020",
+    "genre": "Horror \u00b7 Roguelike",
+    "platforms": "Browser, PC",
+    "controls": [
+      {
+        "input": "W / A / S / D",
+        "action": "move through the schoolhouse"
+      },
+      {
+        "input": "Shift",
+        "action": "sprint when the coast is clear"
+      },
+      {
+        "input": "Space",
+        "action": "use the equipped item"
+      },
+      {
+        "input": "Mouse",
+        "action": "look around and navigate menus"
+      }
+    ]
+  },
+  "slope2": {
+    "name": "Slope Two Player",
+    "genre": "Arcade \u00b7 Reflex",
+    "platforms": "Browser",
+    "rating": "\u2b50 4.6 / 5 (71,840 votes)",
+    "release": "Apr 12, 2024",
+    "heroParagraph": "Slope 2 keeps the endless downhill rush alive with faster tracks, tougher hazards, and a pulse-pounding soundtrack."
   }
 }

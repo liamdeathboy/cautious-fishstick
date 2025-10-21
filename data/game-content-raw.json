@@ -4669,5 +4669,34 @@
       }
     ],
     "heroParagraph": "Quake III Arena drops you into lightning-fast arena battles. Strafe jump, rocket jump, and rail your way to victory in the classic FPS."
+  },
+  "slope2": {
+    "name": "Slope Two Player",
+    "href": "games/slope2.html",
+    "image": "images/slope2.webp",
+    "title": "Slope 2 - Play Free Online",
+    "metaDescription": "Play Slope 2 online. Carve down neon tunnels, dodge sudden obstacles, and keep your momentum alive in this hyper-speed sequel. Free and unblocked!",
+    "metaKeywords": "Slope 2, endless runner, reflex game, neon slope, play Slope 2 online, unblocked games",
+    "iframeSrc": "slope2/index.html",
+    "instructions": [
+      "Slope 2 stacks even faster downhill runs on top of the original. Tilt the ball, react to quick turns, and survive as long as possible.",
+      "Procedurally generated tracks and glowing hazards mean every run is different\u2014stay focused and memorize patterns on the fly.",
+      "Keep your momentum centered, anticipate color shifts that signal new traps, and tap the brakes sparingly to line up tricky gaps."
+    ],
+    "sections": [
+      {
+        "heading": "Why You'll Love Slope 2",
+        "body": "The sequel cranks up the speed with sharper corners, new barrier types, and pulsing synth visuals that keep you on edge."
+      },
+      {
+        "heading": "Movement Tips",
+        "body": "Feather the A/D or arrow keys\u2014micro-adjustments keep the ball balanced so you can handle back-to-back ramps and chicanes."
+      },
+      {
+        "heading": "Chasing High Scores",
+        "body": "Grab bonus pickups when it's safe, but prioritize survival. The deeper you go, the faster the score multiplier climbs."
+      }
+    ],
+    "heroParagraph": "Slope 2 hurtles you through neon tunnels at breakneck speed. React fast, hug the rails, and chase new distance records in this sequel."
   }
 }
