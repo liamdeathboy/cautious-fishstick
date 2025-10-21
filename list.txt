@@ -36,6 +36,7 @@
             `<button class="button"><a style="text-decoration:none" href='../games/10-minutes-till-dawn.html'><img src="images/10mintilldawn.webp" alt="10 Minutes Till Dawn"> <span>10 Minutes Till Dawn</span></a></button>`,
             `<button class="button"><a style="text-decoration:none" href='../games/1v1lol.html'><img src="https://play-lh.googleusercontent.com/QYGRIDJbyVO7L7jH8CwiKJ4NumTGgcTVqU3ITooLWxro-eeNns1RZ0uwGGFe-r8M4co" alt="1v1.lol"> <span>1v1.lol</span></a>`,
             `<button class="button"><a style="text-decoration:none" href='../games/slope.html'><img src="images/slope.webp" alt="Slope"> <span>Slope</span></a></button>`,
+            `<button class="button"><a style="text-decoration:none" href='../games/slope2.html'><img src="images/slope2.webp" alt="Slope 2"> <span>Slope 2</span></a></button>`,
             `<button class="button"><a style="text-decoration:none" href='../games/retrobowl.html'><img src="images/retrobowl.webp" alt="Retro Bowl"> <span>Retro Bowl [New Verison]</span></a></button>`,
             `<button class="button"><a style="text-decoration:none" href='../games/blockblast.html'><img src="images/blockblast.webp" alt=""> <span>Block Blast</span></a></button>`,
             `<button class="button"><a style="text-decoration:none" href='../games/idle-breakout.html'><img src="images/idlebreakout.webp" alt=""> <span>Idle Breakout</span></a></button>`,

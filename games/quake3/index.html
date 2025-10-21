@@ -10,6 +10,7 @@
 
 <body>
 	<div id="loading-text" style="color: black; font-family: cursive; font-size: 48px; text-align: center; margin-top: 20px;">LOADING...</div>
+    <div id="pointerlock-hint" style="position:absolute;top:18px;left:18px;padding:8px 12px;background:rgba(0,0,0,0.6);color:#fff;font-family:Arial,sans-serif;font-size:14px;border-radius:6px;pointer-events:none;z-index:2;">Click inside the game to capture the mouse.</div>
     <div id="viewport-frame"></div>
     <script src="alertCustom.js"></script>
     <script>
@@ -75,6 +76,7 @@
                             location.reload();
                         }
                         ioq3.callMain();
+                        setTimeout(setupPointerLockListeners, 400);
                     }
                     quakeLoader.src = quake3jsmerged;
                     document.body.appendChild(quakeLoader);
@@ -181,19 +183,14 @@
             } catch (err) {}
         }
         window.addEventListener("load", function () {
-            // CHECKING IF THE GAME IS NOT RUNNING WITHIN AN IFRAME
-            if (window.top == window.self) {
-                // CLEARING THE SELECTED FILE VALUE
-                runQuake3()
-                // HANDLING THE MOUSE BEHAVIOR
-                setInterval(goBackButtonTimerIncrement, 1000);
-                document.addEventListener("click", mouseChecker, false);
-                document.addEventListener("dblclick", mouseChecker, false);
-                document.addEventListener("mousemove", mouseChecker, false);
-                document.addEventListener("pointerlockchange", mouseChecker, false);
-                document.addEventListener("mozpointerlockchange", mouseChecker, false);
-                document.addEventListener("webkitpointerlockchange", mouseChecker, false);
-            }
+            runQuake3()
+            setInterval(goBackButtonTimerIncrement, 1000);
+            document.addEventListener("click", mouseChecker, false);
+            document.addEventListener("dblclick", mouseChecker, false);
+            document.addEventListener("mousemove", mouseChecker, false);
+            document.addEventListener("pointerlockchange", mouseChecker, false);
+            document.addEventListener("mozpointerlockchange", mouseChecker, false);
+            document.addEventListener("webkitpointerlockchange", mouseChecker, false);
         });
         window.addEventListener("resize", function () {
             try {
@@ -206,6 +203,88 @@
                 ioq3.setCanvasSize(ioq3.viewport.offsetWidth, ioq3.viewport.offsetHeight);
             } catch (err) {}
         });
+
+        function requestPointerLockIfAvailable() {
+            try {
+                if (!ioq3) {
+                    return;
+                }
+                var target = ioq3.canvas || ioq3.viewport;
+                if (!target) {
+                    return;
+                }
+                if (document.pointerLockElement === target) {
+                    return;
+                }
+                var request = target.requestPointerLock || target.mozRequestPointerLock || target.webkitRequestPointerLock;
+                if (typeof request === 'function') {
+                    if (typeof target.focus === 'function') {
+                        target.focus({ preventScroll: true });
+                    }
+                    console.log('requestPointerLock on', target);
+                    request.call(target);
+                }
+            } catch (err) {}
+        }
+
+        document.addEventListener('pointerlockchange', function () {
+            try {
+                console.log('pointerlockchange', document.pointerLockElement);
+                if (document.pointerLockElement) {
+                    hidePointerHint();
+                }
+            } catch (err) {}
+        }, false);
+
+        document.addEventListener('pointerlockerror', function (event) {
+            try {
+                console.error('pointerlockerror', event);
+                showPointerHint('Click in the game window to allow mouse control.');
+            } catch (err) {}
+        }, false);
+
+        function setupPointerLockListeners() {
+            try {
+                if (!ioq3) {
+                    setTimeout(setupPointerLockListeners, 400);
+                    return;
+                }
+                var canvas = ioq3.canvas;
+                var viewport = ioq3.viewport;
+                if (!canvas && !viewport) {
+                    setTimeout(setupPointerLockListeners, 400);
+                    return;
+                }
+                if (canvas) {
+                    canvas.addEventListener('pointerdown', requestPointerLockIfAvailable, { passive: true });
+                }
+                if (viewport) {
+                    viewport.addEventListener('pointerdown', requestPointerLockIfAvailable, { passive: true });
+                }
+            } catch (err) {
+                setTimeout(setupPointerLockListeners, 400);
+            }
+        }
+
+        function showPointerHint(message) {
+            try {
+                var hint = document.getElementById('pointerlock-hint');
+                if (!hint) {
+                    return;
+                }
+                hint.textContent = message;
+                hint.style.display = 'block';
+            } catch (err) {}
+        }
+
+        function hidePointerHint() {
+            try {
+                var hint = document.getElementById('pointerlock-hint');
+                if (hint) {
+                    hint.style.display = 'none';
+                }
+            } catch (err) {}
+        }
     </script>
 </body>
 

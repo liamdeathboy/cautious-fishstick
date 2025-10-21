@@ -32,6 +32,261 @@
     <link rel="stylesheet" href="css/new-style.css">
     <link rel="stylesheet" href="css/restyle.css">
     <link rel="stylesheet" href="css/user-choice.css">
+    <style>
+      body {
+        background-color: #4f56ca;
+        margin: 0;
+      }
+
+      header,
+      main,
+      footer {
+        position: relative;
+        z-index: 1;
+      }
+
+      #site-header {
+        z-index: 4000;
+      }
+
+      #site-header .site-header {
+        z-index: inherit;
+      }
+
+      #site-header .nav-dropdown,
+      #site-header #searchResults {
+        z-index: 4100;
+      }
+
+      #particles-js {
+        position: fixed;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #0E1A2A;
+        background-repeat: repeat;
+        background-size: cover;
+        background-position: 50% 50%;
+        z-index: 0;
+        pointer-events: none;
+      }
+
+      #particles-js canvas {
+        display: block;
+        vertical-align: bottom;
+      }
+
+      .promo-slider {
+        position: relative;
+        margin: clamp(1.5rem, 5vw, 3.5rem) calc(50% - 50vw) clamp(2.5rem, 7vw, 5rem);
+        width: 100vw;
+        max-width: none;
+        height: clamp(340px, 60vw, 500px);
+        border-radius: clamp(16px, 3vw, 30px);
+        overflow: hidden;
+        box-shadow: 0 28px 60px rgba(12, 13, 34, 0.45);
+        background: linear-gradient(135deg, rgba(86, 117, 255, 0.6), rgba(226, 231, 255, 0.35));
+      }
+
+      .promo-slider::after {
+        content: '';
+        position: absolute;
+        inset: 0;
+        background: linear-gradient(180deg, rgba(255, 255, 255, 0.25) 0%, rgba(255, 255, 255, 0.05) 50%, rgba(86, 117, 255, 0.18) 100%);
+        pointer-events: none;
+        mix-blend-mode: screen;
+      }
+
+      .promo-slider .slide-track {
+        display: flex;
+        height: 100%;
+        transform: translateX(0);
+        transition: transform 0.8s cubic-bezier(0.22, 0.61, 0.36, 1);
+      }
+
+      .promo-slider .slide-viewport {
+        overflow: hidden;
+        position: relative;
+        height: 100%;
+      }
+
+      .promo-slide {
+        min-width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        position: relative;
+        padding: clamp(1.75rem, 5.5vw, 4rem);
+        color: #fff;
+        background-size: cover;
+        background-position: center;
+        isolation: isolate;
+      }
+
+      .promo-slide::after {
+        content: '';
+        position: absolute;
+        inset: 0;
+        background: linear-gradient(100deg, rgba(22, 35, 102, 0.72) 0%, rgba(22, 35, 102, 0.55) 40%, rgba(22, 35, 102, 0.18) 70%, rgba(22, 35, 102, 0.04) 100%);
+        z-index: -1;
+      }
+
+      .promo-content {
+        position: relative;
+        max-width: clamp(340px, 32vw, 520px);
+        text-align: left;
+        margin-left: auto;
+      }
+
+      .promo-content h2 {
+        margin: 0;
+        font-size: clamp(2.5rem, 5vw, 4.2rem);
+        font-weight: 700;
+        letter-spacing: -0.02em;
+      }
+
+      .promo-content p {
+        margin: clamp(0.9rem, 1.8vw, 1.4rem) 0 clamp(1rem, 2.1vw, 1.8rem);
+        font-size: clamp(1rem, 1.8vw, 1.2rem);
+        line-height: 1.7;
+        color: rgba(255, 255, 255, 0.85);
+      }
+
+      .promo-content p::after {
+        content: '';
+        display: block;
+        width: clamp(140px, 18vw, 220px);
+        height: 3px;
+        margin-top: clamp(0.9rem, 1.8vw, 1.3rem);
+        border-radius: 999px;
+        background: linear-gradient(90deg, rgba(93, 117, 255, 0) 0%, rgba(93, 117, 255, 0.9) 40%, rgba(154, 93, 252, 0.95) 100%);
+      }
+
+      .promo-meta {
+        display: inline-block;
+        margin-bottom: clamp(0.8rem, 1.8vw, 1.2rem);
+        font-size: clamp(1.05rem, 2.2vw, 1.5rem);
+        font-weight: 600;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        color: #d5daff;
+        opacity: 0.85;
+      }
+
+      .promo-primary {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.75rem;
+        padding: clamp(0.95rem, 2.4vw, 1.25rem) clamp(2.5rem, 6vw, 3.6rem);
+        border-radius: 999px;
+        border: none;
+        background: linear-gradient(135deg, #7694ff, #b07bff);
+        color: #fff;
+        font-weight: 600;
+        font-size: clamp(1.05rem, 1.8vw, 1.2rem);
+        text-decoration: none;
+        box-shadow: 0 18px 36px rgba(92, 108, 245, 0.45);
+        transition: transform 0.25s ease, box-shadow 0.25s ease;
+      }
+
+      .promo-primary:hover,
+      .promo-primary:focus {
+        transform: translateY(-3px);
+        box-shadow: 0 26px 44px rgba(92, 108, 245, 0.55);
+      }
+
+      .slider-arrow {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        width: clamp(48px, 8vw, 64px);
+        height: clamp(48px, 8vw, 64px);
+        border-radius: 50%;
+        border: 1px solid rgba(255, 255, 255, 0.25);
+        background: rgba(118, 148, 255, 0.4);
+        color: #fff;
+        display: grid;
+        place-items: center;
+        font-size: clamp(1.3rem, 2vw, 1.6rem);
+        cursor: pointer;
+        transition: background 0.2s ease, transform 0.2s ease;
+        z-index: 4;
+        backdrop-filter: blur(6px);
+      }
+
+      .slider-arrow:hover,
+      .slider-arrow:focus {
+        background: rgba(118, 148, 255, 0.8);
+        transform: translateY(-50%) scale(1.05);
+      }
+
+      .slider-arrow.prev {
+        left: clamp(0.75rem, 2vw, 1.5rem);
+      }
+
+      .slider-arrow.next {
+        right: clamp(0.75rem, 2vw, 1.5rem);
+      }
+
+      .promo-dots {
+        position: absolute;
+        bottom: 1.4rem;
+        left: 50%;
+        transform: translateX(-50%);
+        display: flex;
+        gap: 0.85rem;
+        z-index: 3;
+      }
+
+      .promo-dots button {
+        width: 14px;
+        height: 14px;
+        border-radius: 50%;
+        border: none;
+        background: rgba(255, 255, 255, 0.5);
+        cursor: pointer;
+        transition: background 0.25s ease, transform 0.25s ease;
+        box-shadow: 0 6px 16px rgba(120, 140, 255, 0.35);
+      }
+
+      .promo-dots button.active {
+        background: linear-gradient(135deg, #7fa3ff, #c697ff);
+        transform: scale(1.35);
+      }
+
+      @media (max-width: 768px) {
+        .promo-slider {
+          margin-left: 1rem;
+          margin-right: 1rem;
+          width: auto;
+        }
+
+        .promo-slide {
+          justify-content: center;
+          padding: 2.2rem 1.6rem;
+          text-align: center;
+        }
+
+        .promo-slide::after {
+        background: linear-gradient(180deg, rgba(158, 190, 255, 0.75) 0%, rgba(158, 190, 255, 0.35) 60%, rgba(158, 190, 255, 0.08) 100%);
+        }
+
+        .promo-content {
+          margin: 0;
+        }
+
+        .promo-content p::after {
+          margin-left: auto;
+          margin-right: auto;
+        }
+
+        .slider-arrow {
+          display: none;
+        }
+      }
+    </style>
     <script type="application/ld+json">
         {
             "@context": "https://schema.org",
@@ -43,6 +298,7 @@
     </script>
 </head>
 <body>
+  <div id="particles-js" aria-hidden="true"></div>
   <header id="site-header" role="banner">
     <div id="navbar-placeholder"></div>
   </header>
@@ -52,27 +308,59 @@
   </noscript>
 
   <main class="container" role="main">
-    <section class="hero" aria-labelledby="hero-title">
-      <div class="hero-content">
-        <h1 id="hero-title">Play Safe Learning Games Anywhere</h1>
-        <p>Explore hundreds of hand-selected titles that nurture problem solving, creativity, and curiosity without compromising privacy.</p>
-        <div class="hero-actions">
-          <a class="hero-primary" href="allgames.html">Browse all games</a>
-          <a class="hero-secondary" href="#schplay-promise">Learn about our promise</a>
+    <section class="promo-slider" aria-label="Featured spotlight games">
+      <button class="slider-arrow prev" type="button" aria-label="Show previous featured game" data-slider-prev>&lsaquo;</button>
+      <div class="slide-viewport">
+        <div class="slide-track" data-slider-track>
+          <article class="promo-slide" style="background-image: url('images/minecraft.png');" aria-label="Minecraft spotlight">
+            <div class="promo-content">
+              <span class="promo-meta">Sandbox</span>
+              <h2>Minecraft</h2>
+              <p>Craft tools, build sprawling bases, and explore infinite worlds teeming with adventure. Survive the night or collaborate with friends to create something extraordinary.</p>
+              <a class="promo-primary" href="games/minecraft.html">Play Game</a>
+            </div>
+          </article>
+          <article class="promo-slide" style="background-image: url('images/slope.jpeg');" aria-label="Slope spotlight">
+            <div class="promo-content">
+              <h2>Slope <b>2-Player</b></h2>
+              <p>Feel the rush as you guide a glowing ball through a futuristic tunnel. Two-Player, React fast, dodge obstacles, and chase the perfect run in this endless downhill sprint.</p>
+              <a class="promo-primary" href="games/slope2.html">Play Game</a>
+            </div>
+          </article>
+          <article class="promo-slide" style="background-image: url('images/retrobowl.webp');" aria-label="Retro Bowl spotlight">
+            <div class="promo-content">
+              <span class="promo-meta">Sports</span>
+              <h2>Retro Bowl</h2>
+              <p>Call the shots from the sideline, draft your dream roster, and march to the championship in this throwback football management challenge.</p>
+              <a class="promo-primary" href="games/retrobowl.html">Play Game</a>
+            </div>
+          </article>
+          <article class="promo-slide" style="background-image: url('images/geodash_1.webp');" aria-label="Geometry Dash spotlight">
+            <div class="promo-content">
+              <span class="promo-meta">Rhythm</span>
+              <h2>Geometry Dash</h2>
+              <p>Leap and fly your way through pulse-pounding levels synced perfectly to the beat. Precision timing is the only path to unlocking every stage.</p>
+              <a class="promo-primary" href="games/geodash.html">Play Game</a>
+            </div>
+          </article>
+          <article class="promo-slide" style="background-image: url('images/vex7.gif');" aria-label="Vex 7 spotlight">
+            <div class="promo-content">
+              <span class="promo-meta">Platformer</span>
+              <h2>Vex 7</h2>
+              <p>Dash, wall-jump, and swing through hazard-filled gauntlets. Master every trap room and chase speed-run glory in the latest Vex adventure.</p>
+              <a class="promo-primary" href="games/vex7.html">Play Game</a>
+            </div>
+          </article>
         </div>
       </div>
-      <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5690564842575659"
-     crossorigin="anonymous"></script>
-<!-- ad space -->
-<ins class="adsbygoogle"
-     style="display:block"
-     data-ad-client="ca-pub-5690564842575659"
-     data-ad-slot="9885096122"
-     data-ad-format="auto"
-     data-full-width-responsive="true"></ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
+      <button class="slider-arrow next" type="button" aria-label="Show next featured game" data-slider-next>&rsaquo;</button>
+      <div class="promo-dots" role="tablist" aria-label="Select featured game">
+        <button type="button" aria-label="Show Minecraft" data-slider-dot="0" class="active"></button>
+        <button type="button" aria-label="Show Slope" data-slider-dot="1"></button>
+        <button type="button" aria-label="Show Retro Bowl" data-slider-dot="2"></button>
+        <button type="button" aria-label="Show Geometry Dash" data-slider-dot="3"></button>
+        <button type="button" aria-label="Show Vex 7" data-slider-dot="4"></button>
+      </div>
     </section>
 
     <div class="main-grid">
@@ -99,8 +387,8 @@
             <div><h3>The Binding Of Issac</h3><p>Strategy</p></div>
           </a>
             <a href="games/the-big-adventure-of-owatas-life.html" class="game-card-small">
-            <img src="images/thebigadventureofowataslife.webp" alt="The Big Adventure of Owatas Life" loading="lazy" decoding="async">
-            <div><h3>The Binding Of Issac</h3><p>Strategy</p></div>
+            <img src="images/thebigadventureofowataslife.webp" alt="The Big Adventure Of Owata's Life" loading="lazy" decoding="async">
+            <div><h3>The Big Adventure Of Owata's Life</h3><p>Strategy</p></div>
           </a>
         </div>
       </section>
@@ -269,6 +557,174 @@
     <div id="footer-placeholder"></div>
   </footer>
 
+  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+  <script>
+    (function () {
+      var particleContainerId = 'particles-js';
+      var particleConfig = {
+        particles: {
+          number: { value: 400, density: { enable: true, value_area: 800 } },
+          color: { value: '#ffffff' },
+          shape: {
+            type: 'circle',
+            stroke: { width: 0, color: '#000000' },
+            polygon: { nb_sides: 5 },
+            image: { src: 'img/github.svg', width: 100, height: 100 }
+          },
+          opacity: {
+            value: 0.5,
+            random: true,
+            anim: { enable: false, speed: 1, opacity_min: 0.1, sync: false }
+          },
+          size: {
+            value: 10,
+            random: true,
+            anim: { enable: false, speed: 40, size_min: 0.1, sync: false }
+          },
+          line_linked: {
+            enable: false,
+            distance: 500,
+            color: '#ffffff',
+            opacity: 0.4,
+            width: 2
+          },
+          move: {
+            enable: true,
+            speed: 6,
+            direction: 'bottom',
+            random: true,
+            straight: false,
+            out_mode: 'out',
+            bounce: false,
+            attract: { enable: false, rotateX: 600, rotateY: 1200 }
+          }
+        },
+        interactivity: {
+          detect_on: 'canvas',
+          events: {
+            onhover: { enable: true, mode: 'repulse' },
+            onclick: { enable: true, mode: 'repulse' },
+            resize: true
+          },
+          modes: {
+            grab: { distance: 400, line_linked: { opacity: 0.5 } },
+            bubble: { distance: 400, size: 4, duration: 0.3, opacity: 1, speed: 3 },
+            repulse: { distance: 200, duration: 0.4 },
+            push: { particles_nb: 4 },
+            remove: { particles_nb: 2 }
+          }
+        },
+        retina_detect: true
+      };
+
+      function initParticles() {
+        if (typeof particlesJS !== 'function') {
+          return;
+        }
+
+        particlesJS(particleContainerId, particleConfig);
+      }
+
+      if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', initParticles);
+      } else {
+        initParticles();
+      }
+    })();
+  </script>
+  <script>
+    (function () {
+      var slider = document.querySelector('.promo-slider');
+      if (!slider) {
+        return;
+      }
+
+      var track = slider.querySelector('[data-slider-track]');
+      var slides = Array.from(track ? track.children : []);
+      if (!track || slides.length === 0) {
+        return;
+      }
+
+      var prevButton = slider.querySelector('[data-slider-prev]');
+      var nextButton = slider.querySelector('[data-slider-next]');
+      var dotButtons = Array.from(slider.querySelectorAll('[data-slider-dot]'));
+      var currentIndex = 0;
+      var autoTimer = null;
+      var autoDelay = 7000;
+      var prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+      function updateSlides(targetIndex) {
+        currentIndex = (targetIndex + slides.length) % slides.length;
+        track.style.transform = 'translateX(-' + currentIndex * 100 + '%)';
+
+        slides.forEach(function (slide, index) {
+          slide.setAttribute('aria-hidden', index === currentIndex ? 'false' : 'true');
+        });
+
+        dotButtons.forEach(function (dot, index) {
+          if (index === currentIndex) {
+            dot.classList.add('active');
+          } else {
+            dot.classList.remove('active');
+          }
+        });
+      }
+
+      function goToNext() {
+        updateSlides(currentIndex + 1);
+      }
+
+      function goToPrevious() {
+        updateSlides(currentIndex - 1);
+      }
+
+      function stopAuto() {
+        if (autoTimer) {
+          clearInterval(autoTimer);
+          autoTimer = null;
+        }
+      }
+
+      function startAuto() {
+        if (prefersReducedMotion) {
+          return;
+        }
+
+        stopAuto();
+        autoTimer = setInterval(goToNext, autoDelay);
+      }
+
+      if (prevButton) {
+        prevButton.addEventListener('click', function () {
+          goToPrevious();
+          startAuto();
+        });
+      }
+
+      if (nextButton) {
+        nextButton.addEventListener('click', function () {
+          goToNext();
+          startAuto();
+        });
+      }
+
+      dotButtons.forEach(function (dot) {
+        dot.addEventListener('click', function (event) {
+          var target = Number(event.currentTarget.getAttribute('data-slider-dot'));
+          if (!Number.isNaN(target)) {
+            updateSlides(target);
+            startAuto();
+          }
+        });
+      });
+
+      slider.addEventListener('mouseenter', stopAuto);
+      slider.addEventListener('mouseleave', startAuto);
+
+      updateSlides(0);
+      startAuto();
+    })();
+  </script>
   <script src="js/script.js" defer></script>
   <script src="js/random-games.js" defer></script>
   <script src="js/incognito-mode.js" defer></script>

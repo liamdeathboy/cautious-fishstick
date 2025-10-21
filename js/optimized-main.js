@@ -34,6 +34,7 @@ const gameData = {
     { name: "10 Minutes Till Dawn", image: "images/10mintilldawn.webp", url: "../games/10-minutes-till-dawn.html" },
     { name: "1v1.lol", image: "https://play-lh.googleusercontent.com/QYGRIDJbyVO7L7jH8CwiKJ4NumTGgcTVqU3ITooLWxro-eeNns1RZ0uwGGFe-r8M4co", url: "../games/1v1lol.html" },
     { name: "Slope", image: "images/slope.webp", url: "../games/slope.html" },
+    { name: "Slope 2", image: "images/slope2.webp", url: "../games/slope2.html" },
     { name: "Retro Bowl", image: "images/retrobowl.webp", url: "../games/retrobowl.html" },
     { name: "Block Blast", image: "images/blockblast.webp", url: "../games/blockblast.html" },
     { name: "Idle Breakout", image: "images/idlebreakout.webp", url: "../games/idle-breakout.html" },
