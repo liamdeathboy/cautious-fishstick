@@ -23,6 +23,7 @@ const gameData = {
     { name: "Cat Mario", image: "images/catmario.webp", url: "../games/catmario.html" },
     { name: "Club Penguin", image: "images/clubpenguin.webp", url: "../games/clubpenguin.html" },
     { name: "Curveball", image: "images/curveball.webp", url: "../games/curveball.html" },
+    { name: "Adastra", image: "images/adastra.webp", url: "../games/adastra.html" },
     { name: "Antbuster", image: "images/antbuster.webp", url: "../games/antbuster.html" },
     { name: "Arcade Wizard", image: "images/arcadewizard.webp", url: "../games/arcadewizard.html" },
     { name: "Bad Ice Cream 1", image: "images/badicecream1.webp", url: "../games/bad-icecream-1.html" },

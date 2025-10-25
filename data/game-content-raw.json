@@ -4698,5 +4698,34 @@
       }
     ],
     "heroParagraph": "Slope 2 hurtles you through neon tunnels at breakneck speed. React fast, hug the rails, and chase new distance records in this sequel."
+  },
+  "adastra": {
+    "name": "Adastra",
+    "href": "games/adastra.html",
+    "image": "images/adastra.webp",
+    "title": "Adastra - Play Free Online",
+    "metaDescription": "Play Adastra online, a story-driven sci-fi adventure packed with political intrigue, romance, and tough branching decisions. Free and unblocked!",
+    "metaKeywords": "Adastra, sci-fi visual novel, story game, choice based game, play Adastra online, unblocked",
+    "iframeSrc": "adastra/index.html",
+    "instructions": [
+      "Adastra is a richly written visual novel set on a distant moon empire. Read carefully, make choices, and shape the fate of the interstellar alliance.",
+      "Every conversation matters: your responses influence alliances, romances, and which endings you uncover.",
+      "Save often so you can revisit branching scenes, explore alternate paths, and unlock hidden epilogues."
+    ],
+    "sections": [
+      {
+        "heading": "A Cinematic Space Drama",
+        "body": "Immerse yourself in a fully voiced sci-fi court drama where diplomacy, trust, and secrets determine the destiny of Adastra."
+      },
+      {
+        "heading": "Branching Choices",
+        "body": "Dialogue decisions and optional investigations open unique scenes\u2014pay attention to keep allies on your side."
+      },
+      {
+        "heading": "Replay Value",
+        "body": "Multiple endings encourage replaying chapters to dig deeper into the lore and character relationships."
+      }
+    ],
+    "heroParagraph": "Adastra is a narrative-rich sci-fi visual novel where your choices decide the future of an alien empire."
   }
 }

@@ -55,6 +55,7 @@
             `<button class="button"><a style="text-decoration:none" href='../games/rooftopsnipers.html'><img src="images/rooftopsnipers.webp" alt=""> <span>Rooftop Sniper</span></a></button>`,
             `<button class="button"><a style="text-decoration:none" href='../games/boxingrandom'><img src="images/boxingrandom.webp" alt=""> <span>Boxing Random</span></a></button>`,
             `<button class="button"><a style="text-decoration:none" href='../games/adventurecapitalist.html'><img src="images/adventurecapitalist.webp" alt=""> <span>Adventure Capitalist</span></a></button>`,
+            `<button class="button"><a style="text-decoration:none" href='../games/adastra.html'><img src="images/adastra.webp" alt="Adastra"> <span>Adastra</span></a></button>`,
             `<button class="button"><a style="text-decoration:none" href='../games/hideandsmash.html'><img src="images/hideandsmash.webp" alt=""> <span>Hide & Smash</span></a></button>`,
             `<button class="button"><a style="text-decoration:none" href='../games/monkey-mart.html'><img src="images/monkeymart.webp" alt=""> <span>MonkeyMart</span></a></button>`,
             `<button class="button"><a style="text-decoration:none" href='../games/rb-college.html'><img src="images/retrobowlcollege.webp" alt="Retro Bowl"> <span>Retro Bowl College FIXED!</span></a></button>`,

@@ -18,6 +18,7 @@ window.SCHPLAY_GAMES.list = [
     { name: "Cat Mario", href: "games/catmario.html", img: "images/catmario.webp" },
     { name: "Club Penguin", href: "games/clubpenguin.html", img: "images/clubpenguin.webp" },
     { name: "Curveball", href: "games/curveball.html", img: "images/curveball.webp" },
+    { name: "Adastra", href: "games/adastra.html", img: "images/adastra.webp" },
     { name: "Antbuster", href: "games/antbuster.html", img: "images/antbuster.webp" },
     { name: "Arcade Wizard", href: "games/arcade-wizard.html", img: "images/arcadewizard.webp" },
     { name: "Bad Ice Cream 1", href: "games/bad-icecream-1.html", img: "images/badicecream1.webp" },
