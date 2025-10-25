@@ -2466,5 +2466,13 @@
     "rating": "\u2b50 4.6 / 5 (71,840 votes)",
     "release": "Apr 12, 2024",
     "heroParagraph": "Slope 2 keeps the endless downhill rush alive with faster tracks, tougher hazards, and a pulse-pounding soundtrack."
+  },
+  "adastra": {
+    "name": "Adastra",
+    "genre": "Visual Novel \u00b7 Sci-Fi",
+    "platforms": "Browser",
+    "rating": "\u2b50 4.5 / 5 (32,904 votes)",
+    "release": "May 14, 2020",
+    "heroParagraph": "Adastra blends space opera intrigue with heartfelt relationships in a branching visual novel experience."
   }
 }
