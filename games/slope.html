@@ -41,6 +41,40 @@
             }
         }
     </script>
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "url": "https://schplay.com/games/slope.html",
+            "name": "Slope Classroom FAQ",
+            "mainEntity": [
+                {
+                    "@type": "Question",
+                    "name": "How does Slope support instruction?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Use Slope to model momentum, friction, and focus. Students explain how tiny steering inputs keep the neon ball safe, which mirrors science and SEL discussions."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "How can families engage with Slope?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Share a one-minute ghost run for families to beat at home, then ask caregivers to talk about the calm breathing or timing strategies they used."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "Is Slope safe for student privacy?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Slope loads locally in the browser and never asks for logins. Remind students to share only score screenshots and to close other tabs before grabbing a photo."
+                    }
+                }
+            ]
+        }
+    </script>
     <style>
         .game-player-section {
             display: grid;
@@ -236,6 +270,83 @@
             color: var(--text-muted);
         }
 
+        .game-learning {
+            background-color: #1c2a3e;
+            border-radius: 16px;
+            padding: 24px;
+            margin: 32px 0;
+            box-shadow: 0 12px 30px rgba(5, 15, 32, 0.35);
+        }
+
+        .learning-header {
+            margin-bottom: 18px;
+        }
+
+        .learning-eyebrow {
+            text-transform: uppercase;
+            letter-spacing: 0.06em;
+            font-size: 0.85rem;
+            color: var(--secondary-color);
+            margin: 0 0 6px;
+        }
+
+        .learning-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 16px;
+        }
+
+        .learning-card {
+            background: rgba(12, 24, 42, 0.85);
+            border: 1px solid rgba(86, 143, 215, 0.35);
+            border-radius: 14px;
+            padding: 18px;
+        }
+
+        .learning-card h3 {
+            margin: 0 0 8px;
+            font-size: 1.05rem;
+        }
+
+        .learning-card p {
+            margin: 0;
+            color: var(--text-muted);
+            line-height: 1.6;
+        }
+
+        .learning-standard {
+            display: inline-block;
+            font-size: 0.75rem;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            color: var(--secondary-color);
+            margin-bottom: 8px;
+        }
+
+        .learning-faq-list details {
+            background: rgba(12, 24, 42, 0.85);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            border-radius: 12px;
+            padding: 14px 18px;
+            margin-bottom: 12px;
+        }
+
+        .learning-faq-list summary {
+            cursor: pointer;
+            font-weight: 600;
+            color: var(--text-color);
+        }
+
+        .learning-faq-list summary::marker {
+            color: var(--secondary-color);
+        }
+
+        .learning-faq-list p {
+            margin: 12px 0 0;
+            color: var(--text-muted);
+            line-height: 1.6;
+        }
+
         @media (max-width: 1100px) {
             .game-player-section {
                 grid-template-columns: 1fr;
@@ -245,6 +356,12 @@
             }
             .game-player-header {
                 justify-content: center;
+            }
+        }
+
+        @media (max-width: 720px) {
+            .game-learning {
+                padding: 20px;
             }
         }
     </style>
@@ -364,6 +481,75 @@
         <h3 class="meta-subheading">Is Slope a tough game?</h3>
         <p>Absolutely—the speed curve ramps up fast. Treat the first 30 seconds like a warm-up and focus on staying composed when the tunnel tightens.</p>
       </aside>
+    </section>
+
+    <section class="game-learning teacher-toolkit" aria-labelledby="slope-teacher-title">
+      <div class="learning-header">
+        <p class="learning-eyebrow">Teacher Toolkit</p>
+        <h2 id="slope-teacher-title">Teacher Toolkit for Slope</h2>
+        <p>Slope turns quick runs into reaction-time labs, so you can highlight STEM ideas, invite family participation, and reinforce privacy-friendly play in minutes.</p>
+      </div>
+      <div class="learning-grid" role="list">
+        <article class="learning-card" role="listitem">
+          <h3>Projected run review</h3>
+          <p>Replay a 30-second Slope attempt and have students mark the tiles where tiny steering tweaks prevented a crash.</p>
+        </article>
+        <article class="learning-card" role="listitem">
+          <h3>Family calm challenge</h3>
+          <p>Share a “beat our ghost run” prompt so families can try a one-minute round at home and talk about focus strategies together.</p>
+        </article>
+        <article class="learning-card" role="listitem">
+          <h3>Privacy-first reminders</h3>
+          <p>Slope never asks for logins. Encourage learners to share only score screenshots and to close any unrelated tabs before grabbing a photo.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="game-learning curriculum-grid" aria-labelledby="slope-curriculum-title">
+      <div class="learning-header">
+        <p class="learning-eyebrow">Curriculum Alignment</p>
+        <h2 id="slope-curriculum-title">Curriculum Alignment &amp; Family Bridges</h2>
+        <p>Use every Slope session to connect motion science, SEL check-ins, and digital citizenship.</p>
+      </div>
+      <div class="learning-grid" role="list">
+        <article class="learning-card" role="listitem">
+          <span class="learning-standard">NGSS MS-PS2-2</span>
+          <h3>STEM &amp; Motion</h3>
+          <p>Discuss how balanced and unbalanced forces in Slope change the ball’s acceleration and trajectory.</p>
+        </article>
+        <article class="learning-card" role="listitem">
+          <span class="learning-standard">PTA National Standard 2</span>
+          <h3>Family drive-time prompt</h3>
+          <p>Send home a quick talking point so families can compare real braking distances to what they observed in Slope.</p>
+        </article>
+        <article class="learning-card" role="listitem">
+          <span class="learning-standard">ISTE 1.1c</span>
+          <h3>Digital well-being</h3>
+          <p>Model timer routines and screen breaks so intense Slope runs remain healthy and privacy-friendly.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="game-learning learning-faq" aria-labelledby="slope-faq-title">
+      <div class="learning-header">
+        <p class="learning-eyebrow">Family &amp; Classroom FAQ</p>
+        <h2 id="slope-faq-title">Slope Classroom FAQ</h2>
+        <p>Share quick answers about learning benefits, at-home play, and privacy expectations.</p>
+      </div>
+      <div class="learning-faq-list" role="list">
+        <details>
+          <summary>How does Slope support instruction?</summary>
+          <p>Use Slope to model momentum, friction, and focus. Students explain how tiny steering inputs keep the neon ball safe, which mirrors science and SEL conversations.</p>
+        </details>
+        <details>
+          <summary>How can families engage with Slope?</summary>
+          <p>Share a one-minute ghost run for families to beat at home, then ask caregivers to talk about the calm breathing or timing strategies they used.</p>
+        </details>
+        <details>
+          <summary>Is Slope safe for student privacy?</summary>
+          <p>Slope loads locally in the browser and never asks for logins. Remind students to capture only score screenshots and to close other tabs before sharing.</p>
+        </details>
+      </div>
     </section>
 
     <section class="games-grid-section" aria-labelledby="slope-recommendations-title">

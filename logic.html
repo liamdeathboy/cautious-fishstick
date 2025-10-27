@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="robots" content="index, follow">
-    <meta name="description" content="Challenge your brain with logic games from Schplay. Solve puzzles, plan ahead, and think critically in unblocked experiences built for curious minds.">
-    <meta name="keywords" content="logic games, puzzle games, brain games, strategy puzzles, unblocked games, schplay">
+    <meta name="description" content="Challenge your brain with logic games from Schplay. Solve puzzles, plan ahead, and think critically in classroom-friendly experiences built for curious minds.">
+    <meta name="keywords" content="schplay, cool, math, maths, game, games, puzzle, puzzles, free, online, strategy, skill, shapes, colors, logic, memory, board, read, reading, spell, spelling, geography, science, learning fun, fun activities for kids, learning games, education games">
     <meta name="theme-color" content="#0f1a2a">
     <title>Logic Games | Schplay</title>
     <link rel="canonical" href="https://schplay.com/logic.html">
@@ -14,24 +14,76 @@
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="Schplay">
     <meta property="og:title" content="Logic Games | Schplay">
-    <meta property="og:description" content="Challenge your brain with logic games from Schplay. Solve puzzles, plan ahead, and think critically in unblocked experiences built for curious minds.">
+    <meta property="og:description" content="Challenge your brain with logic games from Schplay. Solve puzzles, plan ahead, and think critically in classroom-friendly experiences built for curious minds.">
     <meta property="og:url" content="https://schplay.com/logic.html">
     <meta property="og:image" content="https://schplay.com/images/logo.webp">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Logic Games | Schplay">
-    <meta name="twitter:description" content="Challenge your brain with logic games from Schplay. Solve puzzles, plan ahead, and think critically in unblocked experiences built for curious minds.">
+    <meta name="twitter:description" content="Challenge your brain with logic games from Schplay. Solve puzzles, plan ahead, and think critically in classroom-friendly experiences built for curious minds.">
     <meta name="twitter:image" content="https://schplay.com/images/logo.webp">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/new-style.css">
     <link rel="stylesheet" href="css/restyle.css">
     <link rel="stylesheet" href="css/user-choice.css">
+    <style>
+      .teacher-resource,
+      .curriculum-grid,
+      .classroom-faq {
+        background: rgba(12, 24, 42, 0.85);
+        border-radius: 24px;
+        padding: clamp(1.4rem, 4vw, 2.6rem);
+        box-shadow: 0 24px 60px rgba(5, 8, 30, 0.35);
+        margin-bottom: clamp(2rem, 5vw, 3.5rem);
+        border: 1px solid rgba(255, 255, 255, 0.08);
+      }
+
+      .teacher-resource ul {
+        list-style: none;
+        padding-left: 0;
+      }
+
+      .teacher-resource li {
+        display: flex;
+        gap: 0.5rem;
+        margin-bottom: 0.85rem;
+        color: var(--text-muted);
+      }
+
+      .teacher-resource li::before {
+        content: '\2713';
+        color: #8be1ff;
+      }
+
+      .curriculum-grid .grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        gap: clamp(1rem, 3vw, 1.8rem);
+      }
+
+      .curriculum-card {
+        background: rgba(255, 255, 255, 0.05);
+        border-radius: 18px;
+        padding: 1.2rem;
+        border: 1px solid rgba(255, 255, 255, 0.08);
+      }
+
+      .classroom-faq details {
+        border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+        padding: 1rem 0;
+      }
+
+      .classroom-faq summary {
+        cursor: pointer;
+        font-weight: 600;
+      }
+    </style>
     <script type="application/ld+json">
         {
             "@context": "https://schema.org",
             "@type": "CollectionPage",
             "name": "Logic Games",
-            "description": "Play unblocked logic and brain teaser games on Schplay to develop critical thinking and problem-solving skills."
+            "description": "Play classroom-friendly logic and brain teaser games on Schplay to develop critical thinking and problem-solving skills."
         }
     </script>
 </head>
@@ -78,6 +130,46 @@
     <section class="publish-game" aria-labelledby="logic-request-title">
       <h2 id="logic-request-title">Know a puzzle solver's dream?</h2>
       <a href="contact.html" class="btn-submit-game">Nominate a Logic Game</a>
+    </section>
+
+    <section class="teacher-resource" aria-labelledby="logic-teacher-title">
+      <h2 id="logic-teacher-title">Teacher Tips &amp; Extensions</h2>
+      <ul>
+        <li>Have students sketch flowcharts or comic strips that document each decision they tried while solving a puzzle.</li>
+        <li>Use logic games as stations: one center for riddles, one for memory boards, and one for collaborative maze planning.</li>
+        <li>Encourage learners to narrate their strategies aloud. This builds academic vocabulary and strengthens reading comprehension.</li>
+        <li>Link logic activities to math objectives by labeling shapes, angles, symmetry, and patterns encountered in each level.</li>
+      </ul>
+    </section>
+
+    <section class="curriculum-grid" aria-labelledby="logic-curriculum-title">
+      <h2 id="logic-curriculum-title">Curriculum Connections</h2>
+      <div class="grid">
+        <article class="curriculum-card">
+          <h3>Problem Solving</h3>
+          <p>Games like Bloxors or Tower Blaster reinforce multi-step reasoning, prediction, and regrouping.</p>
+        </article>
+        <article class="curriculum-card">
+          <h3>Language Arts</h3>
+          <p>Ask students to write alternate endings for narrative puzzles or summarize each attempt using sequence words.</p>
+        </article>
+        <article class="curriculum-card">
+          <h3>STEM Exploration</h3>
+          <p>Logic mazes highlight algorithms, debugging, and conditional thinking—perfect for beginner coding lessons.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="classroom-faq" aria-labelledby="logic-faq-title">
+      <h2 id="logic-faq-title">Logic Games FAQ</h2>
+      <details>
+        <summary>How long should a session last?</summary>
+        <p>Five to ten minutes is ideal for warm-ups. Save longer logic adventures for project-based Fridays or enrichment blocks.</p>
+      </details>
+      <details>
+        <summary>Can I assign these for homework?</summary>
+        <p>Yes. Share direct links through your LMS and ask students to submit screenshots, reflections, or short paragraphs describing their approach.</p>
+      </details>
     </section>
   </main>
 

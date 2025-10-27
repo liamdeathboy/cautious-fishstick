@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="robots" content="index, follow">
-    <meta name="description" content="Discover classroom-friendly games for kids curated by Schplay. Safe, fun, and unblocked titles that mix creativity with learning.">
-    <meta name="keywords" content="games for kids, kids games, learning games, safe games, unblocked games, schplay">
+    <meta name="description" content="Discover classroom-friendly games for kids curated by Schplay. Safe, fun, and classroom-friendly titles that mix creativity with learning.">
+    <meta name="keywords" content="schplay, cool, math, maths, game, games, puzzle, puzzles, free, online, strategy, skill, shapes, colors, logic, memory, board, read, reading, spell, spelling, geography, science, learning fun, fun activities for kids, learning games, education games">
     <meta name="theme-color" content="#0f1a2a">
     <title>Games for Kids | Schplay</title>
     <link rel="canonical" href="https://schplay.com/gamesforkids/">
@@ -14,18 +14,37 @@
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="Schplay">
     <meta property="og:title" content="Games for Kids | Schplay">
-    <meta property="og:description" content="Discover classroom-friendly games for kids curated by Schplay. Safe, fun, and unblocked titles that mix creativity with learning.">
+    <meta property="og:description" content="Discover classroom-friendly games for kids curated by Schplay. Safe, fun, and classroom-friendly titles that mix creativity with learning.">
     <meta property="og:url" content="https://schplay.com/gamesforkids/">
     <meta property="og:image" content="https://schplay.com/images/logo.webp">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Games for Kids | Schplay">
-    <meta name="twitter:description" content="Discover classroom-friendly games for kids curated by Schplay. Safe, fun, and unblocked titles that mix creativity with learning.">
+    <meta name="twitter:description" content="Discover classroom-friendly games for kids curated by Schplay. Safe, fun, and classroom-friendly titles that mix creativity with learning.">
     <meta name="twitter:image" content="https://schplay.com/images/logo.webp">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/new-style.css">
     <link rel="stylesheet" href="../css/restyle.css">
     <link rel="stylesheet" href="../css/user-choice.css">
+    <style>
+      .teacher-resource,
+      .curriculum-grid,
+      .classroom-faq {
+        background: rgba(12, 24, 42, 0.85);
+        border-radius: 24px;
+        padding: clamp(1.4rem, 4vw, 2.6rem);
+        margin-bottom: clamp(2rem, 5vw, 3.5rem);
+        border: 1px solid rgba(255, 255, 255, 0.08);
+        box-shadow: 0 24px 60px rgba(5, 8, 30, 0.35);
+      }
+      .teacher-resource ul { list-style: none; padding-left: 0; }
+      .teacher-resource li { display: flex; gap: 0.5rem; margin-bottom: 0.85rem; color: var(--text-muted); }
+      .teacher-resource li::before { content: '\2713'; color: #34d399; }
+      .curriculum-grid .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: clamp(1rem, 3vw, 1.8rem); }
+      .curriculum-card { background: rgba(255, 255, 255, 0.05); border-radius: 18px; padding: 1.2rem; border: 1px solid rgba(255,255,255,0.08); }
+      .classroom-faq details { border-bottom: 1px solid rgba(255,255,255,0.08); padding: 1rem 0; }
+      .classroom-faq summary { cursor: pointer; font-weight: 600; }
+    </style>
     <script type="application/ld+json">
         {
             "@context": "https://schema.org",
@@ -78,6 +97,46 @@
     <section class="publish-game" aria-labelledby="kids-request-title">
       <h2 id="kids-request-title">Know a classroom-friendly hit?</h2>
       <a href="https://forms.gle/ZeuNVtUf23EN5Ri27" class="btn-submit-game">Send a Kids Game Idea</a>
+    </section>
+
+    <section class="teacher-resource" aria-labelledby="kids-teacher-title">
+      <h2 id="kids-teacher-title">Teacher &amp; Family Resources</h2>
+      <ul>
+        <li>Pair younger learners with “reading buddies” to read instructions aloud and practice comprehension.</li>
+        <li>Use number and shape games as stations for fine-motor practice, counting, and color recognition.</li>
+        <li>Encourage families to play together at home and report one new vocabulary word or fact they learned.</li>
+        <li>Set timers and model self-regulation by reflecting on how breaks improve focus when returning to lessons.</li>
+      </ul>
+    </section>
+
+    <section class="curriculum-grid" aria-labelledby="kids-curriculum-title">
+      <h2 id="kids-curriculum-title">Learning Benefits</h2>
+      <div class="grid">
+        <article class="curriculum-card">
+          <h3>Math &amp; Shapes</h3>
+          <p>Sorting, stacking, and number puzzles strengthen early numeracy and pattern spotting.</p>
+        </article>
+        <article class="curriculum-card">
+          <h3>Literacy &amp; Vocabulary</h3>
+          <p>Story-driven adventures prompt learners to retell events, practice spelling, and build descriptive language.</p>
+        </article>
+        <article class="curriculum-card">
+          <h3>Social-Emotional Skills</h3>
+          <p>Co-op titles teach sharing, turn taking, and collaborative problem solving.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="classroom-faq" aria-labelledby="kids-faq-title">
+      <h2 id="kids-faq-title">Kids Games FAQ</h2>
+      <details>
+        <summary>Are these games COPPA-friendly?</summary>
+        <p>Yes. We avoid chat features, limit data collection, and review titles for age-appropriate content.</p>
+      </details>
+      <details>
+        <summary>How can I share with families?</summary>
+        <p>Use QR codes or LMS announcements linking directly to curated playlists so caregivers can supervise meaningful play.</p>
+      </details>
     </section>
   </main>
 

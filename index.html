@@ -5,8 +5,8 @@
      crossorigin="anonymous"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Schplay | Safe Learning Games Unblocked Games &amp; Activities</title>
-    <meta name="description" content="Discover Schplay's curated catalog of safe, unblocked games that you can play, featured with incognito style games.">
+    <title>Schplay | Safe Learning Games classroom-friendly Games &amp; Activities</title>
+    <meta name="description" content="Discover Schplay's curated catalog of safe, classroom-friendly games that you can play, featured with incognito style games.">
     <meta name="robots" content="index, follow">
     <meta name="theme-color" content="#0f1a2a">
     <meta name="author" content="Schplay">
@@ -195,6 +195,81 @@
       .promo-primary:focus {
         transform: translateY(-3px);
         box-shadow: 0 26px 44px rgba(92, 108, 245, 0.55);
+      }
+
+      .teacher-resource,
+      .curriculum-grid,
+      .classroom-faq {
+        background: rgba(8, 13, 40, 0.75);
+        border: 1px solid rgba(255, 255, 255, 0.08);
+        border-radius: 24px;
+        padding: clamp(1.5rem, 4vw, 3rem);
+        margin-bottom: clamp(2rem, 5vw, 4rem);
+        box-shadow: 0 20px 60px rgba(5, 8, 30, 0.45);
+      }
+
+      .teacher-resource h2,
+      .curriculum-grid h2,
+      .classroom-faq h2 {
+        margin-top: 0;
+        font-size: clamp(1.9rem, 4vw, 2.6rem);
+      }
+
+      .teacher-resource p,
+      .classroom-faq p,
+      .teacher-resource li {
+        color: rgba(255, 255, 255, 0.85);
+      }
+
+      .teacher-resource ul {
+        list-style: none;
+        padding-left: 0;
+        display: grid;
+        gap: 0.65rem;
+      }
+
+      .teacher-resource li {
+        display: flex;
+        gap: 0.5rem;
+        align-items: flex-start;
+      }
+
+      .teacher-resource li::before {
+        content: '\2713';
+        color: #8be1ff;
+        font-weight: 700;
+      }
+
+      .curriculum-grid .grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        gap: clamp(1rem, 3vw, 1.8rem);
+      }
+
+      .curriculum-card {
+        background: rgba(255, 255, 255, 0.05);
+        border-radius: 18px;
+        padding: 1.4rem;
+        border: 1px solid rgba(255, 255, 255, 0.08);
+      }
+
+      .curriculum-card h3 {
+        margin-top: 0;
+        margin-bottom: 0.5rem;
+      }
+
+      .classroom-faq details {
+        border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+        padding: 1rem 0;
+      }
+
+      .classroom-faq summary {
+        font-weight: 600;
+        cursor: pointer;
+      }
+
+      .classroom-faq details[open] summary {
+        color: #8be1ff;
       }
 
       .slider-arrow {
@@ -523,6 +598,56 @@
         <a class="promise-cta" href="about.html">Learn more about how we keep players safe</a>
     </section>
 
+    <section class="teacher-resource" id="teacher-toolkit" aria-labelledby="teacher-toolkit-title">
+      <h2 id="teacher-toolkit-title">Teacher Toolkit &amp; Learning Benefits</h2>
+      <p>Schplay curates every activity for classrooms. Each title blends skill practice, logic, or literacy so you can reinforce standards without extra prep. Use these prompts to transform quick game breaks into purposeful learning fun.</p>
+      <ul>
+        <li><strong>Math &amp; numeracy boosts:</strong> Slope Two Player, Run 3, and geometry puzzles encourage estimating angles, comparing rates, and spotting repeating shapes.</li>
+        <li><strong>Literacy warm-ups:</strong> Story adventures such as Adastra or Papa's Games double as reading-comprehension checks when students summarize outcomes or predict what happens next.</li>
+        <li><strong>Creative prompts:</strong> After Minecraft or Plants vs. Zombies, ask learners to storyboard strategies, label science vocabulary, or craft persuasive writing about their plan.</li>
+        <li><strong>SEL &amp; teamwork:</strong> Co-op favorites (Fireboy &amp; Watergirl, coding puzzles) promote turn taking, reflective listening, and respectful communication.</li>
+      </ul>
+      <p>Need printable versions for families? <a href="contact.html">Send us a note</a> and we can share parent letters, vocabulary banks, and offline board-game variations.</p>
+    </section>
+
+    <section class="curriculum-grid" id="curriculum-connections" aria-labelledby="curriculum-connections-title">
+      <h2 id="curriculum-connections-title">Curriculum Connections</h2>
+      <div class="grid">
+        <article class="curriculum-card">
+          <h3>Math &amp; Shapes</h3>
+          <p>Geometry Dash, puzzle mazes, and endless runners can anchor mini-lessons about angles, symmetry, proportional reasoning, and analyzing slope in coordinate planes.</p>
+        </article>
+        <article class="curriculum-card">
+          <h3>Reading &amp; Vocabulary</h3>
+          <p>Visual novels and narrative quests prompt summarizing, character analysis, spelling, and contextual vocabulary—great for bell work or literacy stations.</p>
+        </article>
+        <article class="curriculum-card">
+          <h3>Science &amp; Logic</h3>
+          <p>Plants vs. Zombies or Fireboy &amp; Watergirl highlight cause and effect, energy transfer, and logic gates. Tie gameplay reflections to STEM journals.</p>
+        </article>
+        <article class="curriculum-card">
+          <h3>Strategy &amp; Memory</h3>
+          <p>Board-style and time-management games build working memory, planning, and reflection skills. Have students explain the strategy that produced the highest score.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="classroom-faq" id="classroom-faq" aria-labelledby="classroom-faq-title">
+      <h2 id="classroom-faq-title">Classroom FAQ</h2>
+      <details>
+        <summary>How can teachers introduce Schplay during lessons?</summary>
+        <p>Use games as five-minute warm-ups, exit tickets, or Friday review centers. Encourage pairs or triads so students verbalize reasoning while navigating puzzles or reading prompts.</p>
+      </details>
+      <details>
+        <summary>Are these activities safe for younger learners?</summary>
+        <p>Yes. We vet each title for appropriate language and themes, minimize data collection, and explain our practices in the <a href="privacy-policy.html">privacy policy</a>. The catalog focuses on strategy, math, science, and literacy—not chat rooms.</p>
+      </details>
+      <details>
+        <summary>Can families extend the learning at home?</summary>
+        <p>Absolutely. Share your favorite playlists via LMS announcements, classroom newsletters, or QR codes. Families can practice geography, spelling, or logic games at their own pace.</p>
+      </details>
+    </section>
+
     <section class="games-grid-section" aria-labelledby="popular-games-title">
         <h2 id="popular-games-title">Popular Games</h2>
         <div class="games-grid">
@@ -729,5 +854,37 @@
   <script src="js/random-games.js" defer></script>
   <script src="js/incognito-mode.js" defer></script>
   <script src="js/load-components.js" defer></script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "How can teachers introduce Schplay lessons?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Teachers can launch a Schplay game as a warm-up, exit ticket, or Friday review center. Encourage students to explain their reasoning so every puzzle supports math, reading, spelling, science, or logic goals."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Are Schplay activities safe for younger learners?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. The catalog focuses on classroom-friendly strategy, logic, and literacy titles. We minimize data collection, respect privacy, and document practices in the public privacy policy so labs and families can trust the content."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can families use the same learning games at home?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Families can access Schplay through the same links teachers share via newsletters or learning-management systems, ensuring students practice geography, spelling, and memory skills outside the classroom."
+        }
+      }
+    ]
+  }
+  </script>
 </body>
 </html>

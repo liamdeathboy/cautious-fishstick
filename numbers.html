@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="robots" content="index, follow">
-    <meta name="description" content="Stretch your brain with number and puzzle games from Schplay. Practice logic, pattern matching, and quick calculations in unblocked favorites.">
-    <meta name="keywords" content="number games, math games, puzzle games, logic games, unblocked games, schplay">
+    <meta name="description" content="Stretch your brain with number and puzzle games from Schplay. Practice logic, pattern matching, and quick calculations in classroom-friendly favorites.">
+    <meta name="keywords" content="schplay, cool, math, maths, game, games, puzzle, puzzles, free, online, strategy, skill, shapes, colors, logic, memory, board, read, reading, spell, spelling, geography, science, learning fun, fun activities for kids, learning games, education games">
     <meta name="theme-color" content="#0f1a2a">
     <title>Number &amp; Puzzle Games | Schplay</title>
     <link rel="canonical" href="https://schplay.com/numbers.html">
@@ -14,24 +14,69 @@
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="Schplay">
     <meta property="og:title" content="Number &amp; Puzzle Games | Schplay">
-    <meta property="og:description" content="Stretch your brain with number and puzzle games from Schplay. Practice logic, pattern matching, and quick calculations in unblocked favorites.">
+    <meta property="og:description" content="Stretch your brain with number and puzzle games from Schplay. Practice logic, pattern matching, and quick calculations in classroom-friendly favorites.">
     <meta property="og:url" content="https://schplay.com/numbers.html">
     <meta property="og:image" content="https://schplay.com/images/logo.webp">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Number &amp; Puzzle Games | Schplay">
-    <meta name="twitter:description" content="Stretch your brain with number and puzzle games from Schplay. Practice logic, pattern matching, and quick calculations in unblocked favorites.">
+    <meta name="twitter:description" content="Stretch your brain with number and puzzle games from Schplay. Practice logic, pattern matching, and quick calculations in classroom-friendly favorites.">
     <meta name="twitter:image" content="https://schplay.com/images/logo.webp">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/new-style.css">
     <link rel="stylesheet" href="css/restyle.css">
     <link rel="stylesheet" href="css/user-choice.css">
+    <style>
+      .teacher-resource,
+      .curriculum-grid,
+      .classroom-faq {
+        background: rgba(12, 24, 42, 0.85);
+        border-radius: 24px;
+        padding: clamp(1.4rem, 4vw, 2.6rem);
+        margin-bottom: clamp(2rem, 5vw, 3.5rem);
+        border: 1px solid rgba(255, 255, 255, 0.08);
+        box-shadow: 0 24px 60px rgba(5, 8, 30, 0.35);
+      }
+      .teacher-resource ul {
+        list-style: none;
+        padding-left: 0;
+      }
+      .teacher-resource li {
+        display: flex;
+        gap: 0.5rem;
+        margin-bottom: 0.85rem;
+        color: var(--text-muted);
+      }
+      .teacher-resource li::before {
+        content: '\2713';
+        color: #8be1ff;
+      }
+      .curriculum-grid .grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        gap: clamp(1rem, 3vw, 1.8rem);
+      }
+      .curriculum-card {
+        background: rgba(255, 255, 255, 0.05);
+        border-radius: 18px;
+        padding: 1.2rem;
+        border: 1px solid rgba(255, 255, 255, 0.08);
+      }
+      .classroom-faq details {
+        border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+        padding: 1rem 0;
+      }
+      .classroom-faq summary {
+        cursor: pointer;
+        font-weight: 600;
+      }
+    </style>
     <script type="application/ld+json">
         {
             "@context": "https://schema.org",
             "@type": "CollectionPage",
             "name": "Number and Puzzle Games",
-            "description": "Play unblocked math, number, and puzzle games on Schplay. Practice logic, pattern spotting, and strategic thinking with classroom-friendly titles."
+            "description": "Play classroom-friendly math, number, and puzzle games on Schplay. Practice logic, pattern spotting, and strategic thinking with classroom-friendly titles."
         }
     </script>
 </head>
@@ -78,6 +123,46 @@
     <section class="publish-game" aria-labelledby="numbers-request-title">
       <h2 id="numbers-request-title">Have a puzzle we should feature?</h2>
       <a href="contact.html" class="btn-submit-game">Share a Number Game</a>
+    </section>
+
+    <section class="teacher-resource" aria-labelledby="numbers-teacher-title">
+      <h2 id="numbers-teacher-title">Teacher Tips &amp; Math Extensions</h2>
+      <ul>
+        <li>Kick off math workshop with five-minute number puzzles and have students explain their strategy using math vocabulary.</li>
+        <li>Use scoreboard-based games (2048, Idle Breakout) to collect data sets for graphing, mean/median, and probability lessons.</li>
+        <li>Connect pattern games to geometry by identifying shapes, symmetry, and transformations hidden in each challenge.</li>
+        <li>Challenge students to design their own puzzle rules, then swap with classmates for peer feedback.</li>
+      </ul>
+    </section>
+
+    <section class="curriculum-grid" aria-labelledby="numbers-curriculum-title">
+      <h2 id="numbers-curriculum-title">Curriculum Connections</h2>
+      <div class="grid">
+        <article class="curriculum-card">
+          <h3>Operations &amp; Algebraic Thinking</h3>
+          <p>2048, Cupcake 2048, and stacking puzzles reinforce powers, combining like terms, and mental math.</p>
+        </article>
+        <article class="curriculum-card">
+          <h3>Fractions &amp; Ratios</h3>
+          <p>Resource-based games inspire questions about percentages, rate of change, and proportional reasoning.</p>
+        </article>
+        <article class="curriculum-card">
+          <h3>Data Literacy</h3>
+          <p>Track attempts, time to solve, or best scores to practice line plots, bar graphs, and analyzing variability.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="classroom-faq" aria-labelledby="numbers-faq-title">
+      <h2 id="numbers-faq-title">Number Games FAQ</h2>
+      <details>
+        <summary>What grade levels work best?</summary>
+        <p>Most number titles suit grades 3–12. Use scaffolds like manipulatives or sentence stems for younger students.</p>
+      </details>
+      <details>
+        <summary>How do I document learning?</summary>
+        <p>Ask for exit tickets describing one strategy, one pattern spotted, and one question they still have—perfect for formative assessment.</p>
+      </details>
     </section>
   </main>
 
