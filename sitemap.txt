@@ -51,7 +51,6 @@ https://schplay.com/games/giveaway.html
 https://schplay.com/games/googlesnake.html
 https://schplay.com/games/gravityguy.html
 https://schplay.com/games/gun-mayhem.html
-https://schplay.com/games/gunmayhem.html
 https://schplay.com/games/gunspin.html
 https://schplay.com/games/gyroball.html
 https://schplay.com/games/happy-wheels.html
@@ -61,7 +60,6 @@ https://schplay.com/games/holeio.html
 https://schplay.com/games/houseofhazards.html
 https://schplay.com/games/idle-breakout.html
 https://schplay.com/games/idle-shark.html
-https://schplay.com/games/idlebreakout.html
 https://schplay.com/games/jetpack-joyride.html
 https://schplay.com/games/LastBreathTrio.html
 https://schplay.com/games/learntofly.html
