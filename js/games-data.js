@@ -6,6 +6,8 @@ window.SCHPLAY_GAMES.list = [
     { name: "Dadish 2", href: "games/dadish-2.html", img: "images/logo.webp" },
     { name: "Dadish 3", href: "games/dadish-3.html", img: "images/logo.webp" },
     { name: "Doge Miner", href: "games/doge-miner.html", img: "images/logo.webp" },
+    { name: "EvoWars", href: "games/evowars.html", img: "images/logo.webp" },
+    { name: "There Is No Game", href: "games/there-is-no-game.html", img: "images/logo.webp" },
     { name: "Duck Life 3", href: "games/duck-life-3.html", img: "images/ducklife3.webp" },
     { name: "Duck Life 5", href: "games/duck-life-5.html", img: "images/ducklife5.webp" },
     { name: "Duck Hunt", href: "games/duckhunt.html", img: "images/duckhunt.webp" },
