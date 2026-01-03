@@ -1,0 +1,730 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="index, follow">
+    <meta name="description" content="Play Dadish 3, the latest radish platformer with bigger levels and new surprises. Dodge fresh hazards and rescue the kids across new zones. This classroom-friendly activity is perfect for teachers and learning fun. Updated Oct 07, 2025 on Schplay.">
+    <meta name="keywords" content="dadish 3, dadish sequel, platformer, adventure game, precision jumps, schplay, cool, math, maths, game, games, puzzle, puzzles, free, online, strategy, skill, shapes, colors, logic, memory, board, read, reading, spell, spelling, geography, science, learning fun, fun activities for kids, learning games, education games">
+    <meta name="theme-color" content="#0f1a2a">
+    <title>Play Dadish 3 Online | Schplay</title>
+    <link rel="canonical" href="https://schplay.com/games/dadish-3.html">
+    <link rel="icon" type="image/webp" href="/images/favicon.ico">
+    <link rel="apple-touch-icon" href="../images/favicon-32x32.png">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Schplay">
+    <meta property="og:title" content="Play Dadish 3 Online | Schplay">
+    <meta property="og:description" content="Play Dadish 3, the latest radish platformer with bigger levels and new surprises. Dodge fresh hazards and rescue the kids across new zones. This classroom-friendly activity is perfect for teachers and learning fun. Updated Oct 07, 2025 on Schplay.">
+    <meta property="og:url" content="https://schplay.com/games/dadish-3.html">
+    <meta property="og:image" content="https://schplay.com/images/logo.webp">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Play Dadish 3 Online | Schplay">
+    <meta name="twitter:description" content="Play Dadish 3, the latest radish platformer with bigger levels and new surprises. Dodge fresh hazards and rescue the kids across new zones. This classroom-friendly activity is perfect for teachers and learning fun. Updated Oct 07, 2025 on Schplay.">
+    <meta name="twitter:image" content="https://schplay.com/images/logo.webp">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/new-style.css">
+    <link rel="stylesheet" href="../css/restyle.css">
+    <link rel="stylesheet" href="../css/user-choice.css">
+    <script type="application/ld+json">
+        [
+                  {
+                            "@context": "https://schema.org",
+                            "@type": "VideoGame",
+                            "name": "Dadish 3",
+                            "description": "Play Dadish 3, the latest platformer with bigger levels, new hazards, and fresh challenges.",
+                            "genre": [
+                                      "Platformer",
+                                      "Adventure"
+                            ],
+                            "url": "https://schplay.com/games/dadish-3.html",
+                            "image": "https://schplay.com/images/logo.webp",
+                            "publisher": {
+                                      "@type": "Organization",
+                                      "name": "Schplay"
+                            }
+                  },
+                  {
+                            "@context": "https://schema.org",
+                            "@type": "FAQPage",
+                            "url": "https://schplay.com/games/dadish-3.html",
+                            "name": "Dadish 3 Classroom FAQ",
+                            "mainEntity": [
+                                      {
+                                                "@type": "Question",
+                                                "name": "How can Dadish 3 support resilience lessons?",
+                                                "acceptedAnswer": {
+                                                          "@type": "Answer",
+                                                          "text": "Have learners track retries and reflect on how practice improved their timing."
+                                                }
+                                      },
+                                      {
+                                                "@type": "Question",
+                                                "name": "What family prompt works with Dadish 3?",
+                                                "acceptedAnswer": {
+                                                          "@type": "Answer",
+                                                          "text": "Ask which level felt trickiest and how many attempts it took to clear it."
+                                                }
+                                      },
+                                      {
+                                                "@type": "Question",
+                                                "name": "Is Dadish 3 safe for classroom devices?",
+                                                "acceptedAnswer": {
+                                                          "@type": "Answer",
+                                                          "text": "Dadish 3 runs in-browser with no accounts. Remind students to close the tab when finished and avoid sharing personal info."
+                                                }
+                                      }
+                            ]
+                  }
+        ]
+    </script>
+    <style>
+        
+                .game-player-section {
+                    display: grid;
+                    grid-template-columns: minmax(0, 1fr);
+                    gap: 20px;
+                    margin-bottom: 32px;
+                }
+        
+                .game-player-card, .game-meta-card {
+                    background-color: #1c2a3e;
+                    border-radius: 16px;
+                    padding: 20px;
+                    box-shadow: 0 8px 24px rgba(5, 15, 32, 0.35);
+                }
+        
+                .game-player-header {
+                    display: flex;
+                    justify-content: flex-end;
+                    margin-bottom: 12px;
+                }
+        
+                .game-fullscreen-toggle {
+                    display: inline-flex;
+                    align-items: center;
+                    gap: 8px;
+                    background: rgba(15, 32, 58, 0.75);
+                    border: 1px solid rgba(86, 143, 215, 0.65);
+                    color: var(--text-color);
+                    padding: 8px 14px;
+                    border-radius: 12px;
+                    cursor: pointer;
+                    font-weight: 600;
+                    transition: transform 0.2s ease, background-color 0.2s ease;
+                }
+        
+                .game-fullscreen-toggle i {
+                    color: var(--secondary-color);
+                }
+        
+                .game-fullscreen-toggle:hover,
+                .game-fullscreen-toggle:focus-visible {
+                    transform: translateY(-1px);
+                    background: rgba(24, 46, 78, 0.9);
+                    outline: none;
+                }
+        
+                .game-player-card iframe {
+                    width: 100%;
+                    height: 640px;
+                    border: none;
+                    border-radius: 12px;
+                    background-color: #000;
+                }
+        
+                .game-player-card iframe:fullscreen,
+                .game-player-card iframe:-webkit-full-screen,
+                .game-player-card iframe:-moz-full-screen,
+                .game-player-card iframe:-ms-fullscreen {
+                    width: 100vw;
+                    height: 100vh;
+                    border-radius: 0;
+                }
+        
+                .game-meta-card h2 {
+                    font-size: 1.35rem;
+                    margin-bottom: 12px;
+                }
+        
+                .game-meta-card p {
+                    color: var(--text-muted);
+                    line-height: 1.6;
+                    margin-bottom: 16px;
+                }
+        
+                .game-meta-card ul {
+                    padding-left: 20px;
+                    color: var(--text-muted);
+                }
+        
+                .game-meta-card li {
+                    margin-bottom: 10px;
+                }
+        
+                .game-meta-card .game-ad-slot {
+                    margin: 0 0 20px;
+                }
+        
+                .meta-callout {
+                    display: flex;
+                    align-items: flex-start;
+                    gap: 14px;
+                    background: rgba(12, 24, 42, 0.85);
+                    border: 1px solid rgba(86, 143, 215, 0.35);
+                    border-radius: 12px;
+                    padding: 16px;
+                    margin-bottom: 24px;
+                }
+        
+                .meta-callout-icon {
+                    display: inline-flex;
+                    align-items: center;
+                    justify-content: center;
+                    width: 44px;
+                    height: 44px;
+                    border-radius: 12px;
+                    background: rgba(188, 165, 73, 0.15);
+                    color: var(--secondary-color);
+                    font-size: 1.4rem;
+                    flex-shrink: 0;
+                }
+        
+                .meta-callout-content {
+                    flex: 1;
+                }
+        
+                .meta-callout-eyebrow {
+                    font-size: 0.95rem;
+                    color: var(--text-muted);
+                    margin-bottom: 4px;
+                }
+        
+                .meta-callout a {
+                    color: var(--primary-color);
+                    font-weight: 600;
+                    font-size: 0.95rem;
+                }
+        
+                .meta-details {
+                    display: grid;
+                    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+                    gap: 18px;
+                    margin-bottom: 24px;
+                    list-style: none;
+                    padding: 0;
+                }
+        
+                .meta-details dt {
+                    font-size: 0.85rem;
+                    letter-spacing: 0.05em;
+                    text-transform: uppercase;
+                    color: var(--text-muted);
+                    margin-bottom: 6px;
+                }
+        
+                .meta-details dd {
+                    margin: 0;
+                    font-weight: 600;
+                }
+        
+                .meta-divider {
+                    height: 1px;
+                    border: none;
+                    background: rgba(255, 255, 255, 0.08);
+                    margin: 26px 0;
+                }
+        
+                .meta-subheading {
+                    font-size: 1.1rem;
+                    margin-top: 26px;
+                    margin-bottom: 12px;
+                }
+        
+                .meta-code-list {
+                    list-style: none;
+                    padding: 0;
+                    margin: 18px 0;
+                    font-family: "Courier New", Courier, monospace;
+                    font-size: 0.95rem;
+                    color: var(--text-muted);
+                }
+        
+                .meta-code-list li {
+                    margin-bottom: 6px;
+                }
+        
+                .meta-hint {
+                    font-size: 0.95rem;
+                    color: var(--text-muted);
+                    margin-top: 16px;
+                }
+        
+                .game-ad-slot {
+                    margin-top: 20px;
+                    background: rgba(12, 24, 42, 0.65);
+                    border-radius: 12px;
+                    padding: 12px;
+                    text-align: center;
+                }
+        
+                .game-ad-slot p {
+                    font-size: 0.85rem;
+                    margin-bottom: 12px;
+                    color: var(--text-muted);
+                }
+        
+                .game-learning {
+                    background-color: #1c2a3e;
+                    border-radius: 16px;
+                    padding: 24px;
+                    margin: 32px 0;
+                    box-shadow: 0 12px 30px rgba(5, 15, 32, 0.35);
+                }
+        
+                .learning-header {
+                    margin-bottom: 18px;
+                }
+        
+                .learning-eyebrow {
+                    text-transform: uppercase;
+                    letter-spacing: 0.06em;
+                    font-size: 0.85rem;
+                    color: var(--secondary-color);
+                    margin: 0 0 6px;
+                }
+        
+                .learning-grid {
+                    display: grid;
+                    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+                    gap: 16px;
+                }
+        
+                .learning-card {
+                    background: rgba(12, 24, 42, 0.85);
+                    border: 1px solid rgba(86, 143, 215, 0.35);
+                    border-radius: 14px;
+                    padding: 18px;
+                }
+        
+                .learning-card h3 {
+                    margin: 0 0 8px;
+                    font-size: 1.05rem;
+                }
+        
+                .learning-card p {
+                    margin: 0;
+                    color: var(--text-muted);
+                    line-height: 1.6;
+                }
+        
+                .learning-standard {
+                    display: inline-block;
+                    font-size: 0.75rem;
+                    letter-spacing: 0.08em;
+                    text-transform: uppercase;
+                    color: var(--secondary-color);
+                    margin-bottom: 8px;
+                }
+        
+                .learning-faq-list details {
+                    background: rgba(12, 24, 42, 0.85);
+                    border: 1px solid rgba(255, 255, 255, 0.08);
+                    border-radius: 12px;
+                    padding: 14px 18px;
+                    margin-bottom: 12px;
+                }
+        
+                .learning-faq-list summary {
+                    cursor: pointer;
+                    font-weight: 600;
+                    color: var(--text-color);
+                }
+        
+                .learning-faq-list summary::marker {
+                    color: var(--secondary-color);
+                }
+        
+                .learning-faq-list p {
+                    margin: 12px 0 0;
+                    color: var(--text-muted);
+                    line-height: 1.6;
+                }
+        
+                @media (max-width: 1100px) {
+                    .game-player-section {
+                        grid-template-columns: 1fr;
+                    }
+                    .game-player-card iframe {
+                        height: 520px;
+                    }
+                    .game-player-header {
+                        justify-content: center;
+                    }
+                }
+        
+                @media (max-width: 720px) {
+                    .game-learning {
+                        padding: 20px;
+                    }
+                }
+            
+    </style>
+</head>
+<body>
+  <header id="site-header" role="banner">
+    <div id="navbar-placeholder"></div>
+  </header>
+
+  <main class="container" role="main">
+    <section class="hero hero-with-ad" aria-labelledby="dadish-3-hero-title">
+      <div class="hero-grid">
+        <div class="hero-content">
+          <h1 id="dadish-3-hero-title">Play Dadish 3 Online</h1>
+          <p>Dadish 3 expands the adventure with bigger stages and new surprises. Guide the radish dad through fresh zones and rescue the kids once again.</p>
+          <div class="hero-actions">
+            <a class="hero-primary" href="../allgames.html">Browse all games</a>
+            <a class="hero-secondary" href="#how-to-play">View tips &amp; controls</a>
+          </div>
+        </div>
+        <div class="hero-ad" aria-label="Sponsored">
+          <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5690564842575659" crossorigin="anonymous"></script>
+          <ins class="adsbygoogle"
+               style="display:block"
+               data-ad-client="ca-pub-5690564842575659"
+               data-ad-slot="9885096122"
+               data-ad-format="auto"
+               data-full-width-responsive="true"></ins>
+          <script>
+            (adsbygoogle = window.adsbygoogle || []).push({});
+          </script>
+        </div>
+      </div>
+    </section>
+
+    <section class="game-player-section">
+      <div class="game-player-card" role="region" aria-label="Dadish 3 gameplay">
+        <div class="game-player-header">
+          <button class="game-fullscreen-toggle" type="button" aria-controls="dadish-3-iframe" aria-label="Toggle fullscreen">
+            <i class="fas fa-expand" aria-hidden="true"></i>
+            <span>Fullscreen</span>
+          </button>
+        </div>
+
+        <iframe id="dadish-3-iframe" src="dadish-3/index.html" title="Play Dadish 3" allowfullscreen loading="lazy"></iframe>
+      </div>
+      <aside class="game-meta-card" id="how-to-play">
+        <div class="game-ad-slot" aria-label="Advertisement">
+          <p>Ads keep Schplay free for everyone.</p>
+          <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5690564842575659" crossorigin="anonymous"></script>
+          <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-5690564842575659" data-ad-slot="5102033888" data-ad-format="auto" data-full-width-responsive="true"></ins>
+          <script>
+            (adsbygoogle = window.adsbygoogle || []).push({});
+          </script>
+        </div>
+        <div class="meta-callout" role="note">
+          <span class="meta-callout-icon" aria-hidden="true">
+            <i class="fas fa-shield-check"></i>
+          </span>
+          <div class="meta-callout-content">
+            <p class="meta-callout-eyebrow">Game content reviewed by <strong>Schplay Editors</strong></p>
+            <a href="../about.html">Learn about our game review guidelines</a>
+          </div>
+        </div>
+        <dl class="meta-details">
+          <div>
+            <dt>Genre</dt>
+            <dd>Platformer - Adventure</dd>
+          </div>
+          <div>
+            <dt>Rating</dt>
+            <dd>4.8 / 5 (19,740 votes)</dd>
+          </div>
+          <div>
+            <dt>Updated</dt>
+            <dd>Oct 07, 2025</dd>
+          </div>
+          <div>
+            <dt>Release</dt>
+            <dd>Sep 14, 2022</dd>
+          </div>
+          <div>
+            <dt>Platforms</dt>
+            <dd>Browser, Mobile</dd>
+          </div>
+        </dl>
+        <hr class="meta-divider">
+        <h2>Instructions</h2>
+        <p>Dadish 3 brings fresh zones and trickier hazards to the series. Reach the end flag on each stage to rescue the kids.</p>
+        <p>Expect longer routes, tighter jumps, and more moving threats. Slow down, observe patterns, and take clean jumps.</p>
+        <p>Use retries to learn the layout and spot the safest landing path.</p>
+        <h2>Controls</h2>
+        <ul>
+          <li><strong>Arrow Keys / A-D</strong> &mdash; move left and right</li>
+          <li><strong>Up Arrow / Space</strong> &mdash; jump</li>
+          <li><strong>R</strong> &mdash; restart the level</li>
+        </ul>
+        <h2>Tips to Master Dadish 3</h2>
+        <p>Take a quick scan of the whole level before moving so you know where to pause.</p>
+        <h3 class="meta-subheading">Long Routes</h3>
+        <p>Split long paths into checkpoints so you can reset your timing after each safe landing.</p>
+        <h3 class="meta-subheading">Hazard Timing</h3>
+        <p>Move right after a hazard resets to give yourself the widest timing window.</p>
+      </aside>
+    </section>
+
+
+    <section class="game-learning teacher-toolkit" aria-labelledby="dadish-3-teacher-title">
+      <div class="learning-header">
+        <p class="learning-eyebrow">Teacher Toolkit</p>
+        <h2 id="dadish-3-teacher-title">Teacher Toolkit for Dadish 3</h2>
+        <p>Dadish 3 turns longer levels into lessons on focus, resilience, and planning ahead.</p>
+      </div>
+      <div class="learning-grid" role="list">
+        
+        <article class="learning-card" role="listitem">
+          <h3>Route planning</h3>
+          <p>Students map a longer level and mark where they will pause for safety.</p>
+        </article>
+        <article class="learning-card" role="listitem">
+          <h3>Retry reflection</h3>
+          <p>After a fall, students note the exact moment they will adjust next time.</p>
+        </article>
+        <article class="learning-card" role="listitem">
+          <h3>Peer coaching</h3>
+          <p>Pairs share one tip for clearing a long sequence without rushing.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="game-learning curriculum-grid" aria-labelledby="dadish-3-curriculum-title">
+      <div class="learning-header">
+        <p class="learning-eyebrow">Curriculum Alignment</p>
+        <h2 id="dadish-3-curriculum-title">Curriculum Alignment &amp; Family Bridges</h2>
+        <p>Use Dadish 3 to connect spatial reasoning, sequencing, and resilience.</p>
+      </div>
+      <div class="learning-grid" role="list">
+        
+        <article class="learning-card" role="listitem">
+          <span class="learning-standard">CCSS.MATH.CONTENT.5.G.B.3</span>
+          <h3>Spatial Reasoning</h3>
+          <p>Describe the path through the level using coordinates and directional language.</p>
+        </article>
+        <article class="learning-card" role="listitem">
+          <span class="learning-standard">CCSS.ELA-LITERACY.RL.4.3</span>
+          <h3>Sequence of Events</h3>
+          <p>Retell the level sequence and explain how each move affected the outcome.</p>
+        </article>
+        <article class="learning-card" role="listitem">
+          <span class="learning-standard">CASEL Self-Management</span>
+          <h3>Perseverance</h3>
+          <p>Reflect on how retries and calm focus improved success.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="game-learning learning-faq" aria-labelledby="dadish-3-faq-title">
+      <div class="learning-header">
+        <p class="learning-eyebrow">Family & Classroom FAQ</p>
+        <h2 id="dadish-3-faq-title">Dadish 3 Classroom FAQ</h2>
+        <p>Answer the top questions families and admins raise about using Dadish 3 during instruction.</p>
+      </div>
+      <div class="learning-faq-list" role="list">
+        
+        <details>
+          <summary>How can Dadish 3 support resilience lessons?</summary>
+          <p>Have learners track retries and reflect on how practice improved their timing.</p>
+        </details>
+        <details>
+          <summary>What family prompt works with Dadish 3?</summary>
+          <p>Ask which level felt trickiest and how many attempts it took to clear it.</p>
+        </details>
+        <details>
+          <summary>Is Dadish 3 safe for classroom devices?</summary>
+          <p>Dadish 3 runs in-browser with no accounts. Remind students to close the tab when finished and avoid sharing personal info.</p>
+        </details>
+      </div>
+    </section>
+
+    <section class="games-grid-section" aria-labelledby="dadish-3-recommendations-title">
+      <div class="section-header">
+        <h2 id="dadish-3-recommendations-title">Players Also Enjoy</h2>
+        <span id="dadish-3-recommendations-count" class="games-count" aria-live="polite"></span>
+      </div>
+      <div class="games-grid" id="dadish-3-recommendations" aria-live="polite"></div>
+    </section>
+  </main>
+
+  <footer id="site-footer" role="contentinfo">
+    <div id="footer-placeholder"></div>
+  </footer>
+
+  <script>
+    const GAME_DADISH_3_RECOMMENDATION_COUNT = 12;
+    const CURRENT_GAME_NAME = "Dadish 3";
+
+    const resolvePath = (path) => {
+      if (!path) return path;
+
+      if (/^(?:https?:)?\/\//.test(path) || path.startsWith('/')) {
+        return path;
+      }
+
+      if (path.startsWith('../')) {
+        return path;
+      }
+
+      const resolver = window.SCHPLAY_RESOLVE_ASSET_PATH;
+      if (typeof resolver === 'function') {
+        return resolver(path);
+      }
+
+      return '../' + path;
+    };
+
+    const pickRandomGames = (games, limit) => {
+      const sample = games.slice();
+      for (let i = sample.length - 1; i > 0; i -= 1) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [sample[i], sample[j]] = [sample[j], sample[i]];
+      }
+      return sample.slice(0, limit);
+    };
+
+
+    let hasRenderedRecommendations = false;
+
+    const renderRecommendations = () => {
+      if (hasRenderedRecommendations) {
+        return;
+      }
+
+      const grid = document.getElementById('dadish-3-recommendations');
+      const count = document.getElementById('dadish-3-recommendations-count');
+      if (!grid) {
+        return;
+      }
+
+      const catalog = (window.SCHPLAY_GAMES && window.SCHPLAY_GAMES.list) || [];
+      if (!Array.isArray(catalog) || !catalog.length) {
+        return;
+      }
+
+      const eligibleGames = catalog.filter(({ name, href, img }) => {
+        return name && href && img && name !== CURRENT_GAME_NAME;
+      });
+
+      const selection = eligibleGames.length
+        ? pickRandomGames(eligibleGames, Math.min(GAME_DADISH_3_RECOMMENDATION_COUNT, eligibleGames.length))
+        : [];
+
+      grid.innerHTML = '';
+      selection.forEach(({ name, href, img }) => {
+        const card = document.createElement('a');
+        card.className = 'game-card';
+        card.href = resolvePath(href);
+        card.innerHTML = '<img src="' + resolvePath(img) + '" alt="' + name + '" loading="lazy" decoding="async"><h3>' + name + '</h3>';
+        grid.appendChild(card);
+      });
+
+      if (count) {
+        count.textContent = selection.length ? selection.length + ' games' : '';
+      }
+
+      if (!selection.length) {
+        const placeholder = document.createElement('p');
+        placeholder.textContent = 'Check back soon for more featured games.';
+        placeholder.style.color = 'var(--text-muted)';
+        placeholder.style.margin = '0';
+        placeholder.style.padding = '0.6rem 0';
+        grid.appendChild(placeholder);
+      }
+
+      hasRenderedRecommendations = true;
+    };
+
+    const ensureRecommendations = () => {
+      if (window.SCHPLAY_GAMES && Array.isArray(window.SCHPLAY_GAMES.list) && window.SCHPLAY_GAMES.list.length) {
+        renderRecommendations();
+      }
+    };
+
+    if (window.SCHPLAY_GAMES && window.SCHPLAY_GAMES.list) {
+      renderRecommendations();
+    } else {
+      document.addEventListener('schplay:games-ready', renderRecommendations);
+    }
+
+    document.addEventListener('schplay:navigation-ready', ensureRecommendations);
+    window.addEventListener('load', ensureRecommendations);
+    setTimeout(ensureRecommendations, 1200);
+
+    const gameViewport = document.getElementById('dadish-3-iframe');
+    const fullscreenButton = document.querySelector('.game-player-card .game-fullscreen-toggle');
+
+    if (gameViewport && fullscreenButton) {
+      const updateFullscreenIcon = () => {
+        const icon = fullscreenButton.querySelector('i');
+        if (!icon) {
+          return;
+        }
+        if (!document.fullscreenElement && !document.webkitFullscreenElement && !document.mozFullScreenElement && !document.msFullscreenElement) {
+          icon.classList.remove('fa-compress');
+          icon.classList.add('fa-expand');
+          const label = fullscreenButton.querySelector('span');
+          if (label) {
+            label.textContent = 'Fullscreen';
+          }
+        } else {
+          icon.classList.remove('fa-expand');
+          icon.classList.add('fa-compress');
+          const label = fullscreenButton.querySelector('span');
+          if (label) {
+            label.textContent = 'Exit Fullscreen';
+          }
+        }
+      };
+
+      const requestViewportFullscreen = () => {
+        const fsElement = gameViewport;
+        if (fsElement.requestFullscreen) {
+          fsElement.requestFullscreen({ navigationUI: 'hide' }).catch(() => fsElement.requestFullscreen());
+        } else if (fsElement.webkitRequestFullscreen) {
+          fsElement.webkitRequestFullscreen();
+        } else if (fsElement.mozRequestFullScreen) {
+          fsElement.mozRequestFullScreen();
+        } else if (fsElement.msRequestFullscreen) {
+          fsElement.msRequestFullscreen();
+        }
+      };
+
+      const exitFullscreen = () => {
+        if (document.exitFullscreen) {
+          document.exitFullscreen();
+        } else if (document.webkitExitFullscreen) {
+          document.webkitExitFullscreen();
+        } else if (document.mozCancelFullScreen) {
+          document.mozCancelFullScreen();
+        } else if (document.msExitFullscreen) {
+          document.msExitFullscreen();
+        }
+      };
+
+      fullscreenButton.addEventListener('click', () => {
+        if (!document.fullscreenElement && !document.webkitFullscreenElement && !document.mozFullScreenElement && !document.msFullscreenElement) {
+          requestViewportFullscreen();
+        } else {
+          exitFullscreen();
+        }
+      });
+
+      document.addEventListener('fullscreenchange', updateFullscreenIcon);
+      document.addEventListener('webkitfullscreenchange', updateFullscreenIcon);
+      document.addEventListener('mozfullscreenchange', updateFullscreenIcon);
+      document.addEventListener('MSFullscreenChange', updateFullscreenIcon);
+    }
+
+  </script>
+  <script src="../js/load-components.js" defer data-component-root="../"></script>
+</body>
+</html>
