@@ -207,6 +207,37 @@
         box-shadow: 0 26px 44px rgba(92, 108, 245, 0.55);
       }
 
+      .promo-cta {
+        display: flex;
+        justify-content: center;
+        margin: clamp(-1rem, -0.5vw, -0.25rem) 0 clamp(2.5rem, 6vw, 4.5rem);
+      }
+
+      .promo-cta-button {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        padding: clamp(1.2rem, 2.6vw, 1.6rem) clamp(3.6rem, 7vw, 6rem);
+        border-radius: 999px;
+        text-transform: uppercase;
+        letter-spacing: 0.2em;
+        font-size: clamp(1.2rem, 2.8vw, 1.75rem);
+        font-weight: 700;
+        color: #0d0b1d;
+        text-decoration: none;
+        background: linear-gradient(120deg, #ffe178 0%, #ff8f5f 50%, #ff5a8a 100%);
+        box-shadow: 0 22px 50px rgba(255, 122, 106, 0.45);
+        border: 1px solid rgba(255, 255, 255, 0.5);
+        transition: transform 0.25s ease, box-shadow 0.25s ease, filter 0.25s ease;
+      }
+
+      .promo-cta-button:hover,
+      .promo-cta-button:focus {
+        transform: translateY(-4px) scale(1.02);
+        box-shadow: 0 30px 60px rgba(255, 122, 106, 0.6);
+        filter: brightness(1.05);
+      }
+
       .teacher-resource,
       .curriculum-grid,
       .classroom-faq {
@@ -447,6 +478,10 @@
         <button type="button" aria-label="Show Fireboy and Watergirl" data-slider-dot="4"></button>
       </div>
     </section>
+
+    <div class="promo-cta" aria-label="Browse all games">
+      <a class="promo-cta-button" href="allgames.html">ALL GAMES</a>
+    </div>
 
     <div class="main-grid">
       <section class="games-grid-section new-this-week" aria-labelledby="new-this-week-title">
