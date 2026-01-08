@@ -38,54 +38,70 @@
     <link rel="stylesheet" href="../css/user-choice.css">
     <script type="application/ld+json">
         [
-                  {
-                            "@context": "https://schema.org",
-                            "@type": "VideoGame",
-                            "name": "Find the Alien",
-                            "description": "Play Find the Alien, a hidden-object puzzle where you uncover aliens in disguise.",
-                            "genre": [
-                                      "Puzzle",
-                                      "Hidden Object"
-                            ],
-                            "url": "https://schplay.com/games/find-the-alien.html",
-                            "image": "https://schplay.com/images/logo.webp",
-                            "publisher": {
-                                      "@type": "Organization",
-                                      "name": "Schplay"
-                            }
-                  },
-                  {
-                            "@context": "https://schema.org",
-                            "@type": "FAQPage",
-                            "url": "https://schplay.com/games/find-the-alien.html",
-                            "name": "Find the Alien Classroom FAQ",
-                            "mainEntity": [
-                                      {
-                                                "@type": "Question",
-                                                "name": "How can Find the Alien support observation lessons?",
-                                                "acceptedAnswer": {
-                                                          "@type": "Answer",
-                                                          "text": "Have learners list the clues they noticed and explain which evidence confirmed the alien."
-                                                }
-                                      },
-                                      {
-                                                "@type": "Question",
-                                                "name": "What family prompt works with Find the Alien?",
-                                                "acceptedAnswer": {
-                                                          "@type": "Answer",
-                                                          "text": "Ask which clue was most helpful and why it stood out."
-                                                }
-                                      },
-                                      {
-                                                "@type": "Question",
-                                                "name": "Is Find the Alien safe for classroom devices?",
-                                                "acceptedAnswer": {
-                                                          "@type": "Answer",
-                                                          "text": "Find the Alien runs in-browser with no accounts. Remind students to close the tab when finished and avoid sharing personal info."
-                                                }
-                                      }
-                            ]
-                  }
+            {
+                "@context": "https://schema.org",
+                "@type": "VideoGame",
+                "name": "Find the Alien",
+                "description": "Play Find the Alien, a hidden-object puzzle where you uncover aliens in disguise.",
+                "genre": [
+                    "Puzzle",
+                    "Hidden Object"
+                ],
+                "keywords": [
+                    "Find the Alien unblocked no flash",
+                    "Find the Alien unblocked 66",
+                    "Find the Alien unblocked github",
+                    "Find the Alien full screen",
+                    "Find the Alien google chrome",
+                    "Find the Alien game at school"
+                ],
+                "url": "https://schplay.com/games/find-the-alien.html",
+                "image": "https://schplay.com/images/logo.webp",
+                "playMode": "SinglePlayer",
+                "applicationCategory": "Game",
+                "operatingSystem": "Any",
+                "offers": {
+                    "@type": "Offer",
+                    "price": "0",
+                    "priceCurrency": "USD"
+                },
+                "publisher": {
+                    "@type": "Organization",
+                    "name": "Schplay"
+                }
+            },
+            {
+                "@context": "https://schema.org",
+                "@type": "FAQPage",
+                "url": "https://schplay.com/games/find-the-alien.html",
+                "name": "Find the Alien Classroom FAQ",
+                "mainEntity": [
+                    {
+                        "@type": "Question",
+                        "name": "How can Find the Alien support observation lessons?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Have learners list the clues they noticed and explain which evidence confirmed the alien."
+                        }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "What family prompt works with Find the Alien?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Ask which clue was most helpful and why it stood out."
+                        }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "Is Find the Alien safe for classroom devices?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Find the Alien runs in-browser with no accounts. Remind students to close the tab when finished and avoid sharing personal info."
+                        }
+                    }
+                ]
+            }
         ]
     </script>
     <style>
@@ -421,7 +437,7 @@
           </button>
         </div>
 
-        <iframe id="find-the-alien-iframe" src="find-the-alien/index.html" title="Play Find the Alien" allowfullscreen loading="lazy"></iframe>
+        <iframe id="find-the-alien-iframe" data-game-src="find-the-alien/index.html" title="Play Find the Alien" allowfullscreen loading="lazy"></iframe>
       </div>
       <aside class="game-meta-card" id="how-to-play">
         <div class="game-ad-slot" aria-label="Advertisement">

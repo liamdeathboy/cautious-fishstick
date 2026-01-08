@@ -38,54 +38,70 @@
     <link rel="stylesheet" href="../css/user-choice.css">
     <script type="application/ld+json">
         [
-                  {
-                            "@context": "https://schema.org",
-                            "@type": "VideoGame",
-                            "name": "Idle Breakout",
-                            "description": "Play Idle Breakout, a fun and addictive idle game. Break bricks, upgrade balls, and strategize to maximize your progress. !",
-                            "genre": [
-                                      "Idle",
-                                      "Brick Breaker"
-                            ],
-                            "url": "https://schplay.com/games/idle-breakout.html",
-                            "image": "https://schplay.com/images/idlebreakout.webp",
-                            "publisher": {
-                                      "@type": "Organization",
-                                      "name": "Schplay"
-                            }
-                  },
-                  {
-                            "@context": "https://schema.org",
-                            "@type": "FAQPage",
-                            "url": "https://schplay.com/games/idle-breakout.html",
-                            "name": "Idle Breakout Classroom FAQ",
-                            "mainEntity": [
-                                      {
-                                                "@type": "Question",
-                                                "name": "How can Idle Breakout support literacy lessons?",
-                                                "acceptedAnswer": {
-                                                          "@type": "Answer",
-                                                          "text": "Treat every branch in Idle Breakout as a text-dependent question. Students must cite dialogue or codex entries before the class votes on the next move."
-                                                }
-                                      },
-                                      {
-                                                "@type": "Question",
-                                                "name": "What family prompt works with Idle Breakout?",
-                                                "acceptedAnswer": {
-                                                          "@type": "Answer",
-                                                          "text": "Send home a \"What would we choose?\" scenario so caregivers can discuss empathy, stakes, and character motivation together."
-                                                }
-                                      },
-                                      {
-                                                "@type": "Question",
-                                                "name": "Is Idle Breakout safe for classroom devices?",
-                                                "acceptedAnswer": {
-                                                          "@type": "Answer",
-                                                          "text": "Idle Breakout plays entirely in-browser with no accounts. Remind students not to share screenshots that include classmates’ names and to close the tab when done."
-                                                }
-                                      }
-                            ]
-                  }
+            {
+                "@context": "https://schema.org",
+                "@type": "VideoGame",
+                "name": "Idle Breakout",
+                "description": "Play Idle Breakout, a fun and addictive idle game. Break bricks, upgrade balls, and strategize to maximize your progress. !",
+                "genre": [
+                    "Idle",
+                    "Brick Breaker"
+                ],
+                "keywords": [
+                    "Idle Breakout unblocked no flash",
+                    "Idle Breakout unblocked 66",
+                    "Idle Breakout unblocked github",
+                    "Idle Breakout full screen",
+                    "Idle Breakout google chrome",
+                    "Idle Breakout game at school"
+                ],
+                "url": "https://schplay.com/games/idle-breakout.html",
+                "image": "https://schplay.com/images/idlebreakout.webp",
+                "playMode": "SinglePlayer",
+                "applicationCategory": "Game",
+                "operatingSystem": "Any",
+                "offers": {
+                    "@type": "Offer",
+                    "price": "0",
+                    "priceCurrency": "USD"
+                },
+                "publisher": {
+                    "@type": "Organization",
+                    "name": "Schplay"
+                }
+            },
+            {
+                "@context": "https://schema.org",
+                "@type": "FAQPage",
+                "url": "https://schplay.com/games/idle-breakout.html",
+                "name": "Idle Breakout Classroom FAQ",
+                "mainEntity": [
+                    {
+                        "@type": "Question",
+                        "name": "How can Idle Breakout support literacy lessons?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Treat every branch in Idle Breakout as a text-dependent question. Students must cite dialogue or codex entries before the class votes on the next move."
+                        }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "What family prompt works with Idle Breakout?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Send home a \"What would we choose?\" scenario so caregivers can discuss empathy, stakes, and character motivation together."
+                        }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "Is Idle Breakout safe for classroom devices?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Idle Breakout plays entirely in-browser with no accounts. Remind students not to share screenshots that include classmates’ names and to close the tab when done."
+                        }
+                    }
+                ]
+            }
         ]
     </script>
     <style>
@@ -421,7 +437,7 @@
           </button>
         </div>
 
-        <iframe id="idle-breakout-iframe" src="idle-breakout/index.html" title="Play Idle Breakout" allowfullscreen loading="lazy"></iframe>
+        <iframe id="idle-breakout-iframe" data-game-src="idle-breakout/index.html" title="Play Idle Breakout" allowfullscreen loading="lazy"></iframe>
       </div>
       <aside class="game-meta-card" id="how-to-play">
         <div class="game-ad-slot" aria-label="Advertisement">

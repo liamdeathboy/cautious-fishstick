@@ -38,54 +38,70 @@
     <link rel="stylesheet" href="../css/user-choice.css">
     <script type="application/ld+json">
         [
-                  {
-                            "@context": "https://schema.org",
-                            "@type": "VideoGame",
-                            "name": "EvoWars",
-                            "description": "Play EvoWars, a multiplayer arena game where you collect orbs to evolve your weapon and outplay rivals.",
-                            "genre": [
-                                      "Arena",
-                                      "Multiplayer"
-                            ],
-                            "url": "https://schplay.com/games/evowars.html",
-                            "image": "https://schplay.com/images/logo.webp",
-                            "publisher": {
-                                      "@type": "Organization",
-                                      "name": "Schplay"
-                            }
-                  },
-                  {
-                            "@context": "https://schema.org",
-                            "@type": "FAQPage",
-                            "url": "https://schplay.com/games/evowars.html",
-                            "name": "EvoWars Classroom FAQ",
-                            "mainEntity": [
-                                      {
-                                                "@type": "Question",
-                                                "name": "How can EvoWars support strategy lessons?",
-                                                "acceptedAnswer": {
-                                                          "@type": "Answer",
-                                                          "text": "Have learners compare risk vs. reward when choosing fights and explain how positioning affected their survival."
-                                                }
-                                      },
-                                      {
-                                                "@type": "Question",
-                                                "name": "What family prompt works with EvoWars?",
-                                                "acceptedAnswer": {
-                                                          "@type": "Answer",
-                                                          "text": "Ask which evolution stage felt strongest and why it changed the match."
-                                                }
-                                      },
-                                      {
-                                                "@type": "Question",
-                                                "name": "Is EvoWars safe for classroom devices?",
-                                                "acceptedAnswer": {
-                                                          "@type": "Answer",
-                                                          "text": "EvoWars runs in-browser with no accounts. Remind students to close the tab when finished and avoid sharing personal info."
-                                                }
-                                      }
-                            ]
-                  }
+            {
+                "@context": "https://schema.org",
+                "@type": "VideoGame",
+                "name": "EvoWars",
+                "description": "Play EvoWars, a multiplayer arena game where you collect orbs to evolve your weapon and outplay rivals.",
+                "genre": [
+                    "Arena",
+                    "Multiplayer"
+                ],
+                "keywords": [
+                    "EvoWars unblocked no flash",
+                    "EvoWars unblocked 66",
+                    "EvoWars unblocked github",
+                    "EvoWars full screen",
+                    "EvoWars google chrome",
+                    "EvoWars game at school"
+                ],
+                "url": "https://schplay.com/games/evowars.html",
+                "image": "https://schplay.com/images/logo.webp",
+                "playMode": "MultiPlayer",
+                "applicationCategory": "Game",
+                "operatingSystem": "Any",
+                "offers": {
+                    "@type": "Offer",
+                    "price": "0",
+                    "priceCurrency": "USD"
+                },
+                "publisher": {
+                    "@type": "Organization",
+                    "name": "Schplay"
+                }
+            },
+            {
+                "@context": "https://schema.org",
+                "@type": "FAQPage",
+                "url": "https://schplay.com/games/evowars.html",
+                "name": "EvoWars Classroom FAQ",
+                "mainEntity": [
+                    {
+                        "@type": "Question",
+                        "name": "How can EvoWars support strategy lessons?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Have learners compare risk vs. reward when choosing fights and explain how positioning affected their survival."
+                        }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "What family prompt works with EvoWars?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Ask which evolution stage felt strongest and why it changed the match."
+                        }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "Is EvoWars safe for classroom devices?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "EvoWars runs in-browser with no accounts. Remind students to close the tab when finished and avoid sharing personal info."
+                        }
+                    }
+                ]
+            }
         ]
     </script>
     <style>
@@ -421,7 +437,7 @@
           </button>
         </div>
 
-        <iframe id="evowars-iframe" src="evowars/index.html" title="Play EvoWars" allowfullscreen loading="lazy"></iframe>
+        <iframe id="evowars-iframe" data-game-src="evowars/index.html" title="Play EvoWars" allowfullscreen loading="lazy"></iframe>
       </div>
       <aside class="game-meta-card" id="how-to-play">
         <div class="game-ad-slot" aria-label="Advertisement">

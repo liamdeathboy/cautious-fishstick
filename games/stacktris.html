@@ -38,54 +38,70 @@
     <link rel="stylesheet" href="../css/user-choice.css">
     <script type="application/ld+json">
         [
-                  {
-                            "@context": "https://schema.org",
-                            "@type": "VideoGame",
-                            "name": "Stacktris",
-                            "description": "Play Stacktris, the ultimate Tetris game. Stack blocks, clear lines, and achieve high scores.",
-                            "genre": [
-                                      "Arcade",
-                                      "Stacking"
-                            ],
-                            "url": "https://schplay.com/games/stacktris.html",
-                            "image": "https://schplay.com/images/stacktris.webp",
-                            "publisher": {
-                                      "@type": "Organization",
-                                      "name": "Schplay"
-                            }
-                  },
-                  {
-                            "@context": "https://schema.org",
-                            "@type": "FAQPage",
-                            "url": "https://schplay.com/games/stacktris.html",
-                            "name": "Stacktris Classroom FAQ",
-                            "mainEntity": [
-                                      {
-                                                "@type": "Question",
-                                                "name": "Why use Stacktris in class?",
-                                                "acceptedAnswer": {
-                                                          "@type": "Answer",
-                                                          "text": "Students plan, prototype, and reflect on builds in Stacktris, mirroring the engineering design cycle."
-                                                }
-                                      },
-                                      {
-                                                "@type": "Question",
-                                                "name": "How do families stay connected?",
-                                                "acceptedAnswer": {
-                                                          "@type": "Answer",
-                                                          "text": "Send an invitation for families to tour the latest Stacktris creation through photos or narrated slides."
-                                                }
-                                      },
-                                      {
-                                                "@type": "Question",
-                                                "name": "Does Stacktris respect privacy?",
-                                                "acceptedAnswer": {
-                                                          "@type": "Answer",
-                                                          "text": "Yes—no logins or uploads are required. Screenshots can be cropped to show only the build."
-                                                }
-                                      }
-                            ]
-                  }
+            {
+                "@context": "https://schema.org",
+                "@type": "VideoGame",
+                "name": "Stacktris",
+                "description": "Play Stacktris, the ultimate Tetris game. Stack blocks, clear lines, and achieve high scores.",
+                "genre": [
+                    "Arcade",
+                    "Stacking"
+                ],
+                "keywords": [
+                    "Stacktris unblocked no flash",
+                    "Stacktris unblocked 66",
+                    "Stacktris unblocked github",
+                    "Stacktris full screen",
+                    "Stacktris google chrome",
+                    "Stacktris game at school"
+                ],
+                "url": "https://schplay.com/games/stacktris.html",
+                "image": "https://schplay.com/images/stacktris.webp",
+                "playMode": "SinglePlayer",
+                "applicationCategory": "Game",
+                "operatingSystem": "Any",
+                "offers": {
+                    "@type": "Offer",
+                    "price": "0",
+                    "priceCurrency": "USD"
+                },
+                "publisher": {
+                    "@type": "Organization",
+                    "name": "Schplay"
+                }
+            },
+            {
+                "@context": "https://schema.org",
+                "@type": "FAQPage",
+                "url": "https://schplay.com/games/stacktris.html",
+                "name": "Stacktris Classroom FAQ",
+                "mainEntity": [
+                    {
+                        "@type": "Question",
+                        "name": "Why use Stacktris in class?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Students plan, prototype, and reflect on builds in Stacktris, mirroring the engineering design cycle."
+                        }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "How do families stay connected?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Send an invitation for families to tour the latest Stacktris creation through photos or narrated slides."
+                        }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "Does Stacktris respect privacy?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Yes—no logins or uploads are required. Screenshots can be cropped to show only the build."
+                        }
+                    }
+                ]
+            }
         ]
     </script>
     <style>
@@ -421,7 +437,7 @@
           </button>
         </div>
 
-        <iframe id="stacktris-iframe" src="stacktris/index.html" title="Play Stacktris" allowfullscreen loading="lazy"></iframe>
+        <iframe id="stacktris-iframe" data-game-src="stacktris/index.html" title="Play Stacktris" allowfullscreen loading="lazy"></iframe>
       </div>
       <aside class="game-meta-card" id="how-to-play">
         <div class="game-ad-slot" aria-label="Advertisement">

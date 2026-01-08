@@ -38,54 +38,70 @@
     <link rel="stylesheet" href="../css/user-choice.css">
     <script type="application/ld+json">
         [
-                  {
-                            "@context": "https://schema.org",
-                            "@type": "VideoGame",
-                            "name": "Mine Sweeper",
-                            "description": "Play Minesweeper, the classic puzzle game. Use logic to uncover safe squares while avoiding mines. !",
-                            "genre": [
-                                      "Puzzle",
-                                      "Logic"
-                            ],
-                            "url": "https://schplay.com/games/minesweeper.html",
-                            "image": "https://schplay.com/images/minesweeper.webp",
-                            "publisher": {
-                                      "@type": "Organization",
-                                      "name": "Schplay"
-                            }
-                  },
-                  {
-                            "@context": "https://schema.org",
-                            "@type": "FAQPage",
-                            "url": "https://schplay.com/games/minesweeper.html",
-                            "name": "Mine Sweeper Classroom FAQ",
-                            "mainEntity": [
-                                      {
-                                                "@type": "Question",
-                                                "name": "How can Mine Sweeper support literacy lessons?",
-                                                "acceptedAnswer": {
-                                                          "@type": "Answer",
-                                                          "text": "Treat every branch in Mine Sweeper as a text-dependent question. Students must cite dialogue or codex entries before the class votes on the next move."
-                                                }
-                                      },
-                                      {
-                                                "@type": "Question",
-                                                "name": "What family prompt works with Mine Sweeper?",
-                                                "acceptedAnswer": {
-                                                          "@type": "Answer",
-                                                          "text": "Send home a \"What would we choose?\" scenario so caregivers can discuss empathy, stakes, and character motivation together."
-                                                }
-                                      },
-                                      {
-                                                "@type": "Question",
-                                                "name": "Is Mine Sweeper safe for classroom devices?",
-                                                "acceptedAnswer": {
-                                                          "@type": "Answer",
-                                                          "text": "Mine Sweeper plays entirely in-browser with no accounts. Remind students not to share screenshots that include classmates’ names and to close the tab when done."
-                                                }
-                                      }
-                            ]
-                  }
+            {
+                "@context": "https://schema.org",
+                "@type": "VideoGame",
+                "name": "Mine Sweeper",
+                "description": "Play Minesweeper, the classic puzzle game. Use logic to uncover safe squares while avoiding mines. !",
+                "genre": [
+                    "Puzzle",
+                    "Logic"
+                ],
+                "keywords": [
+                    "Mine Sweeper unblocked no flash",
+                    "Mine Sweeper unblocked 66",
+                    "Mine Sweeper unblocked github",
+                    "Mine Sweeper full screen",
+                    "Mine Sweeper google chrome",
+                    "Mine Sweeper game at school"
+                ],
+                "url": "https://schplay.com/games/minesweeper.html",
+                "image": "https://schplay.com/images/minesweeper.webp",
+                "playMode": "SinglePlayer",
+                "applicationCategory": "Game",
+                "operatingSystem": "Any",
+                "offers": {
+                    "@type": "Offer",
+                    "price": "0",
+                    "priceCurrency": "USD"
+                },
+                "publisher": {
+                    "@type": "Organization",
+                    "name": "Schplay"
+                }
+            },
+            {
+                "@context": "https://schema.org",
+                "@type": "FAQPage",
+                "url": "https://schplay.com/games/minesweeper.html",
+                "name": "Mine Sweeper Classroom FAQ",
+                "mainEntity": [
+                    {
+                        "@type": "Question",
+                        "name": "How can Mine Sweeper support literacy lessons?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Treat every branch in Mine Sweeper as a text-dependent question. Students must cite dialogue or codex entries before the class votes on the next move."
+                        }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "What family prompt works with Mine Sweeper?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Send home a \"What would we choose?\" scenario so caregivers can discuss empathy, stakes, and character motivation together."
+                        }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "Is Mine Sweeper safe for classroom devices?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Mine Sweeper plays entirely in-browser with no accounts. Remind students not to share screenshots that include classmates’ names and to close the tab when done."
+                        }
+                    }
+                ]
+            }
         ]
     </script>
     <style>
@@ -421,7 +437,7 @@
           </button>
         </div>
 
-        <iframe id="minesweeper-iframe" src="minesweeper/index.html" title="Play Mine Sweeper" allowfullscreen loading="lazy"></iframe>
+        <iframe id="minesweeper-iframe" data-game-src="minesweeper/index.html" title="Play Mine Sweeper" allowfullscreen loading="lazy"></iframe>
       </div>
       <aside class="game-meta-card" id="how-to-play">
         <div class="game-ad-slot" aria-label="Advertisement">

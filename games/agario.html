@@ -38,54 +38,70 @@
     <link rel="stylesheet" href="../css/user-choice.css">
     <script type="application/ld+json">
         [
-                  {
-                            "@context": "https://schema.org",
-                            "@type": "VideoGame",
-                            "name": "Agar.io",
-                            "description": "Play Agar.io, the addictive multiplayer game. Grow your cell, eat others, and dominate the leaderboard. !",
-                            "genre": [
-                                      "Arcade",
-                                      "Multiplayer Arena"
-                            ],
-                            "url": "https://schplay.com/games/agario.html",
-                            "image": "https://schplay.com/images/agario.webp",
-                            "publisher": {
-                                      "@type": "Organization",
-                                      "name": "Schplay"
-                            }
-                  },
-                  {
-                            "@context": "https://schema.org",
-                            "@type": "FAQPage",
-                            "url": "https://schplay.com/games/agario.html",
-                            "name": "Agar.io Classroom FAQ",
-                            "mainEntity": [
-                                      {
-                                                "@type": "Question",
-                                                "name": "How can Agar.io support literacy lessons?",
-                                                "acceptedAnswer": {
-                                                          "@type": "Answer",
-                                                          "text": "Treat every branch in Agar.io as a text-dependent question. Students must cite dialogue or codex entries before the class votes on the next move."
-                                                }
-                                      },
-                                      {
-                                                "@type": "Question",
-                                                "name": "What family prompt works with Agar.io?",
-                                                "acceptedAnswer": {
-                                                          "@type": "Answer",
-                                                          "text": "Send home a \"What would we choose?\" scenario so caregivers can discuss empathy, stakes, and character motivation together."
-                                                }
-                                      },
-                                      {
-                                                "@type": "Question",
-                                                "name": "Is Agar.io safe for classroom devices?",
-                                                "acceptedAnswer": {
-                                                          "@type": "Answer",
-                                                          "text": "Agar.io plays entirely in-browser with no accounts. Remind students not to share screenshots that include classmates’ names and to close the tab when done."
-                                                }
-                                      }
-                            ]
-                  }
+            {
+                "@context": "https://schema.org",
+                "@type": "VideoGame",
+                "name": "Agar.io",
+                "description": "Play Agar.io, the addictive multiplayer game. Grow your cell, eat others, and dominate the leaderboard. !",
+                "genre": [
+                    "Arcade",
+                    "Multiplayer Arena"
+                ],
+                "keywords": [
+                    "Agar.io unblocked no flash",
+                    "Agar.io unblocked 66",
+                    "Agar.io unblocked github",
+                    "Agar.io full screen",
+                    "Agar.io google chrome",
+                    "Agar.io game at school"
+                ],
+                "url": "https://schplay.com/games/agario.html",
+                "image": "https://schplay.com/images/agario.webp",
+                "playMode": "MultiPlayer",
+                "applicationCategory": "Game",
+                "operatingSystem": "Any",
+                "offers": {
+                    "@type": "Offer",
+                    "price": "0",
+                    "priceCurrency": "USD"
+                },
+                "publisher": {
+                    "@type": "Organization",
+                    "name": "Schplay"
+                }
+            },
+            {
+                "@context": "https://schema.org",
+                "@type": "FAQPage",
+                "url": "https://schplay.com/games/agario.html",
+                "name": "Agar.io Classroom FAQ",
+                "mainEntity": [
+                    {
+                        "@type": "Question",
+                        "name": "How can Agar.io support literacy lessons?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Treat every branch in Agar.io as a text-dependent question. Students must cite dialogue or codex entries before the class votes on the next move."
+                        }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "What family prompt works with Agar.io?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Send home a \"What would we choose?\" scenario so caregivers can discuss empathy, stakes, and character motivation together."
+                        }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "Is Agar.io safe for classroom devices?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Agar.io plays entirely in-browser with no accounts. Remind students not to share screenshots that include classmates’ names and to close the tab when done."
+                        }
+                    }
+                ]
+            }
         ]
     </script>
     <style>
@@ -421,7 +437,7 @@
           </button>
         </div>
 
-        <iframe id="agario-iframe" src="agario/index.html" title="Play Agar.io" allowfullscreen loading="lazy"></iframe>
+        <iframe id="agario-iframe" data-game-src="agario/index.html" title="Play Agar.io" allowfullscreen loading="lazy"></iframe>
       </div>
       <aside class="game-meta-card" id="how-to-play">
         <div class="game-ad-slot" aria-label="Advertisement">

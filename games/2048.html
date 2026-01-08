@@ -38,54 +38,70 @@
     <link rel="stylesheet" href="../css/user-choice.css">
     <script type="application/ld+json">
         [
-                  {
-                            "@context": "https://schema.org",
-                            "@type": "VideoGame",
-                            "name": "2048",
-                            "description": "Play 2048, the addictive puzzle game. Merge tiles, reach 2048, and test your strategy. !",
-                            "genre": [
-                                      "Puzzle",
-                                      "Number Merge"
-                            ],
-                            "url": "https://schplay.com/games/2048.html",
-                            "image": "https://schplay.com/images/2048.webp",
-                            "publisher": {
-                                      "@type": "Organization",
-                                      "name": "Schplay"
-                            }
-                  },
-                  {
-                            "@context": "https://schema.org",
-                            "@type": "FAQPage",
-                            "url": "https://schplay.com/games/2048.html",
-                            "name": "2048 Classroom FAQ",
-                            "mainEntity": [
-                                      {
-                                                "@type": "Question",
-                                                "name": "How can 2048 support literacy lessons?",
-                                                "acceptedAnswer": {
-                                                          "@type": "Answer",
-                                                          "text": "Treat every branch in 2048 as a text-dependent question. Students must cite dialogue or codex entries before the class votes on the next move."
-                                                }
-                                      },
-                                      {
-                                                "@type": "Question",
-                                                "name": "What family prompt works with 2048?",
-                                                "acceptedAnswer": {
-                                                          "@type": "Answer",
-                                                          "text": "Send home a \"What would we choose?\" scenario so caregivers can discuss empathy, stakes, and character motivation together."
-                                                }
-                                      },
-                                      {
-                                                "@type": "Question",
-                                                "name": "Is 2048 safe for classroom devices?",
-                                                "acceptedAnswer": {
-                                                          "@type": "Answer",
-                                                          "text": "2048 plays entirely in-browser with no accounts. Remind students not to share screenshots that include classmates’ names and to close the tab when done."
-                                                }
-                                      }
-                            ]
-                  }
+            {
+                "@context": "https://schema.org",
+                "@type": "VideoGame",
+                "name": "2048",
+                "description": "Play 2048, the addictive puzzle game. Merge tiles, reach 2048, and test your strategy. !",
+                "genre": [
+                    "Puzzle",
+                    "Number Merge"
+                ],
+                "keywords": [
+                    "2048 unblocked no flash",
+                    "2048 unblocked 66",
+                    "2048 unblocked github",
+                    "2048 full screen",
+                    "2048 google chrome",
+                    "2048 game at school"
+                ],
+                "url": "https://schplay.com/games/2048.html",
+                "image": "https://schplay.com/images/2048.webp",
+                "playMode": "SinglePlayer",
+                "applicationCategory": "Game",
+                "operatingSystem": "Any",
+                "offers": {
+                    "@type": "Offer",
+                    "price": "0",
+                    "priceCurrency": "USD"
+                },
+                "publisher": {
+                    "@type": "Organization",
+                    "name": "Schplay"
+                }
+            },
+            {
+                "@context": "https://schema.org",
+                "@type": "FAQPage",
+                "url": "https://schplay.com/games/2048.html",
+                "name": "2048 Classroom FAQ",
+                "mainEntity": [
+                    {
+                        "@type": "Question",
+                        "name": "How can 2048 support literacy lessons?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Treat every branch in 2048 as a text-dependent question. Students must cite dialogue or codex entries before the class votes on the next move."
+                        }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "What family prompt works with 2048?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Send home a \"What would we choose?\" scenario so caregivers can discuss empathy, stakes, and character motivation together."
+                        }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "Is 2048 safe for classroom devices?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "2048 plays entirely in-browser with no accounts. Remind students not to share screenshots that include classmates’ names and to close the tab when done."
+                        }
+                    }
+                ]
+            }
         ]
     </script>
     <style>
@@ -421,7 +437,7 @@
           </button>
         </div>
 
-        <iframe id="2048-iframe" src="2048/index.html" title="Play 2048" allowfullscreen loading="lazy"></iframe>
+        <iframe id="2048-iframe" data-game-src="2048/index.html" title="Play 2048" allowfullscreen loading="lazy"></iframe>
       </div>
       <aside class="game-meta-card" id="how-to-play">
         <div class="game-ad-slot" aria-label="Advertisement">

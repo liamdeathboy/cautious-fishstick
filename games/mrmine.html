@@ -38,54 +38,70 @@
     <link rel="stylesheet" href="../css/user-choice.css">
     <script type="application/ld+json">
         [
-                  {
-                            "@context": "https://schema.org",
-                            "@type": "VideoGame",
-                            "name": "Mr Mine",
-                            "description": "Play Mr. Mine, an addictive idle mining game. Dig deep, discover treasures, and expand your mining empire. !",
-                            "genre": [
-                                      "Idle",
-                                      "Mining"
-                            ],
-                            "url": "https://schplay.com/games/mrmine.html",
-                            "image": "https://schplay.com/images/mrmine.webp",
-                            "publisher": {
-                                      "@type": "Organization",
-                                      "name": "Schplay"
-                            }
-                  },
-                  {
-                            "@context": "https://schema.org",
-                            "@type": "FAQPage",
-                            "url": "https://schplay.com/games/mrmine.html",
-                            "name": "Mr Mine Classroom FAQ",
-                            "mainEntity": [
-                                      {
-                                                "@type": "Question",
-                                                "name": "How can Mr Mine support literacy lessons?",
-                                                "acceptedAnswer": {
-                                                          "@type": "Answer",
-                                                          "text": "Treat every branch in Mr Mine as a text-dependent question. Students must cite dialogue or codex entries before the class votes on the next move."
-                                                }
-                                      },
-                                      {
-                                                "@type": "Question",
-                                                "name": "What family prompt works with Mr Mine?",
-                                                "acceptedAnswer": {
-                                                          "@type": "Answer",
-                                                          "text": "Send home a \"What would we choose?\" scenario so caregivers can discuss empathy, stakes, and character motivation together."
-                                                }
-                                      },
-                                      {
-                                                "@type": "Question",
-                                                "name": "Is Mr Mine safe for classroom devices?",
-                                                "acceptedAnswer": {
-                                                          "@type": "Answer",
-                                                          "text": "Mr Mine plays entirely in-browser with no accounts. Remind students not to share screenshots that include classmates’ names and to close the tab when done."
-                                                }
-                                      }
-                            ]
-                  }
+            {
+                "@context": "https://schema.org",
+                "@type": "VideoGame",
+                "name": "Mr Mine",
+                "description": "Play Mr. Mine, an addictive idle mining game. Dig deep, discover treasures, and expand your mining empire. !",
+                "genre": [
+                    "Idle",
+                    "Mining"
+                ],
+                "keywords": [
+                    "Mr Mine unblocked no flash",
+                    "Mr Mine unblocked 66",
+                    "Mr Mine unblocked github",
+                    "Mr Mine full screen",
+                    "Mr Mine google chrome",
+                    "Mr Mine game at school"
+                ],
+                "url": "https://schplay.com/games/mrmine.html",
+                "image": "https://schplay.com/images/mrmine.webp",
+                "playMode": "SinglePlayer",
+                "applicationCategory": "Game",
+                "operatingSystem": "Any",
+                "offers": {
+                    "@type": "Offer",
+                    "price": "0",
+                    "priceCurrency": "USD"
+                },
+                "publisher": {
+                    "@type": "Organization",
+                    "name": "Schplay"
+                }
+            },
+            {
+                "@context": "https://schema.org",
+                "@type": "FAQPage",
+                "url": "https://schplay.com/games/mrmine.html",
+                "name": "Mr Mine Classroom FAQ",
+                "mainEntity": [
+                    {
+                        "@type": "Question",
+                        "name": "How can Mr Mine support literacy lessons?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Treat every branch in Mr Mine as a text-dependent question. Students must cite dialogue or codex entries before the class votes on the next move."
+                        }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "What family prompt works with Mr Mine?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Send home a \"What would we choose?\" scenario so caregivers can discuss empathy, stakes, and character motivation together."
+                        }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "Is Mr Mine safe for classroom devices?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Mr Mine plays entirely in-browser with no accounts. Remind students not to share screenshots that include classmates’ names and to close the tab when done."
+                        }
+                    }
+                ]
+            }
         ]
     </script>
     <style>
@@ -421,7 +437,7 @@
           </button>
         </div>
 
-        <iframe id="mrmine-iframe" src="mrmine/index.html" title="Play Mr Mine" allowfullscreen loading="lazy"></iframe>
+        <iframe id="mrmine-iframe" data-game-src="mrmine/index.html" title="Play Mr Mine" allowfullscreen loading="lazy"></iframe>
       </div>
       <aside class="game-meta-card" id="how-to-play">
         <div class="game-ad-slot" aria-label="Advertisement">
