@@ -242,7 +242,7 @@
       const listItem = document.createElement("li");
       listItem.classList.add("leaderboard-item");
       listItem.innerHTML = `
-        <div class="user-icon"><img src="${data.userIcon}" alt="${data.username}" /></div>
+        <div class="user-icon"><img  src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==" data-src="${data.userIcon}" loading="lazy" alt="${data.username}" /></div>
         <div class="player-info">
           <p class="game-title"><i class="fas fa-gamepad"></i>${data.gameTitle}</p>
           <h3 class="username"><i class="fas fa-user"></i>${data.username}</h3>
@@ -255,5 +255,6 @@
 
     leaderboardData.forEach(item => createLeaderboardItem(item));
   </script>
+<script src="/js/lazy-media.js" defer></script>
 </body>
 </html>

@@ -162,8 +162,8 @@
 <!-- center and anchor to bottom of page -->
 <div id="progress-bar-root" style="position: absolute; bottom: 16%; left: 50%; visibility: hidden; z-index: 4;">
 <!-- <div id="progress-bar-text"> -->
-<img id="progress-bar-bg" src="load_bar_bg.png"/>
-<img id="progress-bar-fg" src="load_bar_fg.png" style="position:absolute; clip: rect(0px,0px,0px,0px);"/>
+<img id="progress-bar-bg"  src="load_bar_bg.png" loading="lazy"/>
+<img id="progress-bar-fg"  src="load_bar_fg.png" loading="lazy" style="position:absolute; clip: rect(0px,0px,0px,0px);"/>
 </div>
 </div>
 <!-- -->
@@ -393,5 +393,6 @@
             ;
         </script>
 <script src="GameAnalytics.js" type="text/javascript"></script>
+<script src="/js/lazy-media.js" defer></script>
 </body>
 </html>

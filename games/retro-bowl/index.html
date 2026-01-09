@@ -85,7 +85,7 @@
 
     <body>
         <div class="gm4html5_div_class" id="gm4html5_div_id">
-        <img src="html5game/splash.png" id="GM4HTML5_loadingscreen" alt="GameMaker:HTML5 loading screen" style="display:none;"/>
+        <img  src="html5game/splash.png" loading="lazy" id="GM4HTML5_loadingscreen" alt="GameMaker:HTML5 loading screen" style="display:none;"/>
             <!-- Create the canvas element the game draws to -->
 	    <canvas id="canvas" width="853" height="480">
                      <p>Your browser doesn't support HTML5 canvas.</p>
@@ -120,5 +120,6 @@
 </script>
 <!-- Poki end -->      
 
-    </body>
+    <script src="/js/lazy-media.js" defer></script>
+</body>
 </html>

@@ -156,7 +156,7 @@
         card.target = '_blank';
         card.rel = 'noopener';
         card.innerHTML = `
-          <img src="${image}" alt="${name}" loading="lazy" decoding="async" style="height:200px;object-fit:cover;">
+          <img  src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==" data-src="${image}" alt="${name}" loading="lazy" decoding="async" style="height:200px;object-fit:cover;">
           <h3>${name}</h3>
           <p style="padding:0 12px 16px;color:var(--text-muted);font-size:0.9rem;line-height:1.4;">${description}</p>
         `;
@@ -171,5 +171,6 @@
     renderAmazonProducts();
   </script>
   <script src="js/load-components.js" defer></script>
+<script src="/js/lazy-media.js" defer></script>
 </body>
 </html>

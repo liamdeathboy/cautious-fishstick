@@ -375,7 +375,7 @@
 <div class="content">
     <div class="loading">
         <div class="main"><img
-                src="./assets/main-loading.gif">
+                 src="./assets/main-loading.gif" loading="lazy">
             <div class="progress">
                 <div class="title font-wenxue">0%</div>
                 <div class="bar">
@@ -391,11 +391,11 @@
     <div class="landing hide">
         <div class="action-1">
             <img
-                    src="./assets/main-index-title.png"
+                     src="./assets/main-index-title.png" loading="lazy"
                     class="title swing">
         </div>
         <div class="action-2"><img id="start"
-                                   src="./assets/main-index-start.png"
+                                    src="./assets/main-index-start.png" loading="lazy"
                                    class="start"></div>
     </div>
     <div id="modal" class="modal hide">
@@ -403,19 +403,19 @@
         <div class="js-modal-content modal-content">
             <div class="main">
                 <div class="container"><img
-                        src="./assets/main-modal-bg.png"
+                         src="./assets/main-modal-bg.png" loading="lazy"
                         class="bg">
                     <div class="modal-main">
                         <div id="over-modal" class="hide js-modal-card"><img
-                                src="./assets/main-modal-over.png"
+                                 src="./assets/main-modal-over.png" loading="lazy"
                                 class="over-img">
                             <div id="score" class="over-score font-wenxue"></div>
                             <div id="over-zero" class="hide">
                                 <div class="tip"><p>再来一次吧！</p>
                                     <img
-                                            src="./assets/main-modal-again-b.png"
+                                             src="./assets/main-modal-again-b.png" loading="lazy"
                                             class="over-button-b js-reload"><img
-                                            src="./assets/main-modal-invite-b.png"
+                                             src="./assets/main-modal-invite-b.png" loading="lazy"
                                             class="over-button-b js-invite"></div>
                             </div>
                         </div>
@@ -425,7 +425,7 @@
         </div>
     </div>
     <div class="wxShare hide">
-        <img src="./assets/main-share-icon.png">
+        <img  src="./assets/main-share-icon.png" loading="lazy">
     </div>
 </div>
 <script src="./dist/main.js"></script>
@@ -577,5 +577,6 @@
     s.parentNode.insertBefore(hm, s);
   })();
 </script>
+<script src="/js/lazy-media.js" defer></script>
 </body>
 </html>

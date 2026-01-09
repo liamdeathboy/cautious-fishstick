@@ -626,26 +626,26 @@
 <body>
   <!-- New Navigation Bar -->
   <nav class="top-nav">
-    <img src="/images/logo.webp" alt="Site Logo" class="nav-logo">
+    <img  src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==" data-src="/images/logo.webp" loading="lazy" alt="Site Logo" class="nav-logo">
     <!-- Search container with fixed styling -->
     <div class="search-container">
       <input type="text" id="searchInput" placeholder="Search for games..." aria-label="Search for games">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/5/59/Google_Classroom_Logo.png" 
+      <img  src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==" data-src="https://upload.wikimedia.org/wikipedia/commons/5/59/Google_Classroom_Logo.png" loading="lazy" 
            alt="Share to Google Classroom" 
            class="classroom-icon"
            title="Share to Google Classroom"
            onclick="window.open('https://classroom.google.com/share?url=' + encodeURIComponent(window.location.href), '_blank')">
-      <img src="../images/X_logo.webp" 
+      <img  src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==" data-src="../images/X_logo.webp" loading="lazy" 
            alt="Share to X/Twitter" 
            class="classroom-icon"
            title="Share to X/Twitter"
            onclick="window.open('https://twitter.com/intent/tweet?url=' + encodeURIComponent(window.location.href), '_blank')">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/4/42/YouTube_icon_%282013-2017%29.png" 
+      <img  src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==" data-src="https://upload.wikimedia.org/wikipedia/commons/4/42/YouTube_icon_%282013-2017%29.png" loading="lazy" 
            alt="Visit YouTube Channel" 
            class="classroom-icon"
            title="Visit YouTube Channel"
            onclick="window.open('https://www.youtube.com/@schplay-1/')">
-      <img src="../images/discord.webp" 
+      <img  src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==" data-src="../images/discord.webp" loading="lazy" 
            alt="Join Discord Server" 
            class="classroom-icon"
            title="Join Discord Server"
@@ -860,7 +860,7 @@
         <p class="random-game-subtitle">Discover something new to play from our collection!</p>
         
         <div id="randomGameCard" class="random-game-card">
-          <img id="randomGameImage" src="images/loading.gif" alt="Random Game">
+          <img id="randomGameImage"  src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==" data-src="images/loading.gif" loading="lazy" alt="Random Game">
           <div class="random-game-info">
             <h2 id="randomGameName" class="random-game-name">Loading Game...</h2>
             <span id="randomGameCategory" class="random-game-category">Please Wait</span>
@@ -1055,5 +1055,6 @@
       document.getElementById('year').textContent = new Date().getFullYear();
     });
   </script>
+<script src="/js/lazy-media.js" defer></script>
 </body>
 </html>

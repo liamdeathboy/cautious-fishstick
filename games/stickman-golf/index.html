@@ -24,8 +24,9 @@
   <body onload="setTimeout(function(){window.scrollTo(0,1)},1);">
     <div id="ajaxbar">
       <div id="game"><canvas id="canvas"></canvas></div>
-      <div id="orientate"><img src="media/landscape.jpg" /></div>
-      <div id="play" class="play" onclick=""><img src="media/cover-start.jpg" /></div>
+      <div id="orientate"><img  src="media/landscape.jpg" loading="lazy" /></div>
+      <div id="play" class="play" onclick=""><img  src="media/cover-start.jpg" loading="lazy" /></div>
     </div>
-  </body>
+  <script src="/js/lazy-media.js" defer></script>
+</body>
 </html>

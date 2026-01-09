@@ -4,7 +4,8 @@ document.addEventListener('DOMContentLoaded', function() {
 
     gameCards.forEach(card => {
         const img = card.querySelector('img');
-        const originalSrc = img.src;
+        if (!img) return;
+        const originalSrc = img.dataset.src || img.src;
         const gifSrc = card.dataset.gif;
 
         card.addEventListener('mouseenter', () => {

@@ -205,6 +205,56 @@ document.addEventListener("DOMContentLoaded", function() {
 
     initLazyGameEmbeds();
 
+    const lazyLoadOptions = { rootMargin: '200px 0px', threshold: 0.01 };
+    let lazyMediaObserver = null;
+
+    const loadLazyImage = (img) => {
+        const src = img.getAttribute('data-src');
+        if (src) {
+            img.src = src;
+            img.removeAttribute('data-src');
+        }
+    };
+
+    const loadLazyBackground = (node) => {
+        const bg = node.getAttribute('data-bg');
+        if (bg) {
+            node.style.backgroundImage = 'url(' + bg + ')';
+            node.removeAttribute('data-bg');
+        }
+    };
+
+    const handleLazyEntries = (entries) => {
+        entries.forEach((entry) => {
+            if (entry.isIntersecting || entry.intersectionRatio > 0) {
+                if (entry.target.tagName === 'IMG') {
+                    loadLazyImage(entry.target);
+                } else {
+                    loadLazyBackground(entry.target);
+                }
+                lazyMediaObserver && lazyMediaObserver.unobserve(entry.target);
+            }
+        });
+    };
+
+    if ('IntersectionObserver' in window) {
+        lazyMediaObserver = new IntersectionObserver(handleLazyEntries, lazyLoadOptions);
+    }
+
+    const registerLazyMedia = (root) => {
+        const scope = root || document;
+        const images = scope.querySelectorAll('img[data-src]');
+        const backgrounds = scope.querySelectorAll('[data-bg]');
+
+        if (lazyMediaObserver) {
+            images.forEach((img) => lazyMediaObserver.observe(img));
+            backgrounds.forEach((node) => lazyMediaObserver.observe(node));
+        } else {
+            images.forEach(loadLazyImage);
+            backgrounds.forEach(loadLazyBackground);
+        }
+    };
+
     // Load navbar
     fetch(resolveAssetPath('navbar.html'))
         .then(response => response.text())
@@ -212,6 +262,7 @@ document.addEventListener("DOMContentLoaded", function() {
             document.getElementById("navbar-placeholder").innerHTML = data;
 
             applyRootPaths(document.getElementById('navbar-placeholder'));
+            registerLazyMedia(document.getElementById('navbar-placeholder'));
 
             ensureGameData();
             ensureIncognito();
@@ -238,5 +289,9 @@ document.addEventListener("DOMContentLoaded", function() {
             const footerContainer = document.getElementById("footer-placeholder");
             footerContainer.innerHTML = data;
             applyRootPaths(footerContainer);
+            registerLazyMedia(footerContainer);
         });
+
+    // Run lazy registration on initial content
+    registerLazyMedia(document);
 });

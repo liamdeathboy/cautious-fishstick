@@ -274,7 +274,7 @@
                 gameDiv.classList.add("recommendation");
                 gameDiv.innerHTML = `
                     <a href="${game.link}">
-                        <img src="${game.img}" alt="${game.title}">
+                        <img  src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==" data-src="${game.img}" loading="lazy" alt="${game.title}">
                         <h3>${game.title}</h3>
                     </a>
                 `;
@@ -336,5 +336,6 @@
         includeHTML();
     });
   </script>
+<script src="/js/lazy-media.js" defer></script>
 </body>
 </html>

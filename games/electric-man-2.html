@@ -711,7 +711,7 @@
         const card = document.createElement('a');
         card.className = 'game-card';
         card.href = resolvePath(href);
-        card.innerHTML = '<img src="' + resolvePath(img) + '" alt="' + name + '" loading="lazy" decoding="async"><h3>' + name + '</h3>';
+        card.innerHTML = '<img  src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==" data-src="' + resolvePath(img) + '" alt="' + name + '" loading="lazy" decoding="async"><h3>' + name + '</h3>';
         grid.appendChild(card);
       });
 
@@ -814,5 +814,6 @@
 
   </script>
   <script src="../js/load-components.js" defer data-component-root="../"></script>
+<script src="/js/lazy-media.js" defer></script>
 </body>
 </html>

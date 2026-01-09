@@ -14,7 +14,7 @@
   <header class="site-header">
     <div class="header-container">
       <a href="/" class="logo">
-        <img src="images/logo.webp" alt="schplay Logo">
+        <img  src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==" data-src="images/logo.webp" loading="lazy" alt="schplay Logo">
       </a>
       <nav class="header-nav">
         <ul>
@@ -102,7 +102,7 @@
         gameCard.href = game.href;
         gameCard.classList.add('game-card');
         gameCard.innerHTML = `
-            <img src="${game.imgSrc}" alt="${game.name}">
+            <img  src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==" data-src="${game.imgSrc}" loading="lazy" alt="${game.name}">
             <h3>${game.name}</h3>
         `;
         gamesGrid.appendChild(gameCard);
@@ -110,5 +110,6 @@
   </script>
   <script src="js/games-data.js"></script>
   <script src="js/search.js"></script>
+<script src="/js/lazy-media.js" defer></script>
 </body>
 </html>
