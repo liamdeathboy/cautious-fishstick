@@ -86,6 +86,9 @@ document.addEventListener("DOMContentLoaded", function() {
             const resolved = resolveWithRoot(path);
             if (resolved) {
                 node.setAttribute('src', resolved);
+                if (node.hasAttribute('data-src')) {
+                    node.setAttribute('data-src', resolved);
+                }
             }
         });
 
@@ -142,6 +145,22 @@ document.addEventListener("DOMContentLoaded", function() {
             overlay.className = 'game-lazy-overlay';
             overlay.innerHTML = '<div class="game-lazy-cta"><p>Click play to load the game. We hold it back to keep pages fast.</p><button type="button" class="game-play-button">Play Now</button></div><div class="game-lazy-loading" role="status" aria-live="polite"><div class="game-lazy-spinner"></div><span>Loading game...</span></div>';
             wrapper.appendChild(overlay);
+
+            const thumbFromMeta = () => {
+                const og = document.querySelector('meta[property="og:image"]');
+                if (og && og.content) return og.content;
+                const twitter = document.querySelector('meta[name="twitter:image"]');
+                if (twitter && twitter.content) return twitter.content;
+                return null;
+            };
+
+            const thumb = iframe.getAttribute('data-game-thumb') || iframe.dataset.gameThumb || thumbFromMeta();
+            if (thumb) {
+                const resolvedThumb = resolveWithRoot(thumb);
+                overlay.style.backgroundImage = 'linear-gradient(140deg, rgba(6, 12, 26, 0.8), rgba(10, 18, 32, 0.82)), url(' + resolvedThumb + ')';
+                overlay.style.backgroundSize = 'cover';
+                overlay.style.backgroundPosition = 'center';
+            }
 
             const playButton = overlay.querySelector('.game-play-button');
             if (iframe.id && playButton) {

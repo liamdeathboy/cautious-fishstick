@@ -187,6 +187,8 @@ html {
     border-radius: 12px;
     overflow: hidden;
     background: #0d192c;
+    background-position: center;
+    background-size: cover;
     isolation: isolate;
 }
 
@@ -198,9 +200,10 @@ html {
     align-items: center;
     justify-content: center;
     text-align: center;
-    gap: 12px;
+    gap: 16px;
     padding: 22px;
-    background: linear-gradient(140deg, rgba(14, 26, 45, 0.94), rgba(11, 19, 34, 0.92));
+    background: linear-gradient(140deg, rgba(14, 26, 45, 0.92), rgba(11, 19, 34, 0.9));
+    background-blend-mode: multiply;
     color: #e8eeff;
     z-index: 2;
 }
@@ -211,23 +214,25 @@ html {
     gap: 12px;
     align-items: center;
     max-width: 520px;
+    font-size: 1.05rem;
 }
 
 .game-lazy-cta p {
     margin: 0;
-    color: var(--text-muted);
+    color: #d8e2ff;
+    line-height: 1.6;
 }
 
 .game-play-button {
     border: none;
     border-radius: 999px;
-    padding: 12px 28px;
-    background: linear-gradient(120deg, #7c90ff, #9c7eff);
+    padding: 20px 54px;
+    background: linear-gradient(120deg, #7c90ff, #ff8ec7);
     color: #fff;
     font-weight: 700;
-    font-size: 1rem;
+    font-size: 1.3rem;
     letter-spacing: 0.01em;
-    box-shadow: 0 16px 30px rgba(84, 117, 255, 0.35);
+    box-shadow: 0 18px 36px rgba(84, 117, 255, 0.4);
     cursor: pointer;
     transition: transform 0.2s ease, box-shadow 0.2s ease, opacity 0.2s ease;
 }
@@ -287,12 +292,14 @@ html {
 @media (max-width: 720px) {
     .game-lazy-overlay {
         padding: 18px;
-        gap: 10px;
+        gap: 12px;
     }
 
     .game-play-button {
         width: 100%;
         max-width: 320px;
+        padding: 18px 22px;
+        font-size: 1.15rem;
     }
 }
 
