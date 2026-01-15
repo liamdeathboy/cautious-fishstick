@@ -3,4 +3,5 @@ Allow: /
 Disallow: /wp-admin/
 Disallow: /search/
 Disallow: /login/
+
 Sitemap: https://schplay.com/sitemap.xml
