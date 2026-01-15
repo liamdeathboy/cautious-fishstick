@@ -37,7 +37,7 @@
     <meta name="twitter:title" content="Schplay | Safe Learning Games &amp; Activities">
     <meta name="twitter:description" content="Discover Schplay's curated catalog of safe, classroom-friendly online games that build strategy, numeracy, and creativity for learners of every age.">
     <meta name="twitter:image" content="https://schplay.com/images/logo.webp">
-    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&amp;display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&amp;display=optional" as="style" onload="this.onload=null;this.rel='stylesheet'">
     <link rel="preload" href="images/minecraft.webp" as="image" fetchpriority="high" type="image/webp">
     <link rel="preload" href="css/new-style.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
     <link rel="preload" href="css/restyle.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
@@ -79,11 +79,13 @@
         margin: clamp(1.5rem, 5vw, 3.5rem) calc(50% - 50vw) clamp(2.5rem, 7vw, 5rem);
         width: 100vw;
         max-width: none;
-        height: clamp(340px, 60vw, 500px);
+        height: clamp(340px, 60vw, 520px);
+        min-height: 320px;
         border-radius: clamp(16px, 3vw, 30px);
         overflow: hidden;
         box-shadow: 0 28px 60px rgba(12, 13, 34, 0.45);
         background: linear-gradient(135deg, rgba(86, 117, 255, 0.6), rgba(226, 231, 255, 0.35));
+        aspect-ratio: 16 / 9;
       }
 
       .promo-slider::after {
@@ -377,11 +379,15 @@
           margin-left: 1rem;
           margin-right: 1rem;
           width: auto;
+          aspect-ratio: 4 / 5;
+          min-height: 320px;
+          max-height: 420px;
+          height: auto;
         }
 
         .promo-slide {
           justify-content: center;
-          padding: 2.2rem 1.6rem;
+          padding: 1.8rem 1.4rem;
           text-align: center;
         }
 
@@ -391,11 +397,26 @@
 
         .promo-content {
           margin: 0;
+          max-width: 100%;
         }
 
         .promo-content p::after {
           margin-left: auto;
           margin-right: auto;
+        }
+
+        .promo-content h2 {
+          font-size: clamp(2rem, 7vw, 3rem);
+        }
+
+        .promo-content p {
+          font-size: 0.98rem;
+          line-height: 1.55;
+        }
+
+        .promo-primary {
+          padding: 0.9rem 1.6rem;
+          font-size: 1rem;
         }
 
         .slider-arrow {

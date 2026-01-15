@@ -110,14 +110,14 @@
     margin-top: 20px;
     padding: 10px 24px;
     border-radius: 24px;
-    background-color: rgba(0, 160, 233, 0.18);
-    color: var(--primary-color);
+    background-color: #0b2b45;
+    color: #e8f7ff;
     font-weight: 700;
 }
 
 .promise-cta:hover,
 .promise-cta:focus-visible {
-    background-color: rgba(0, 160, 233, 0.28);
+    background-color: #0f3657;
 }
 
 .site-footer {

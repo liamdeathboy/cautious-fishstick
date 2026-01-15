@@ -25,11 +25,13 @@
         }
 
         searchContainer.setAttribute('aria-expanded', 'false');
+        searchInput.setAttribute('aria-expanded', 'false');
 
         const hideResults = () => {
             searchResultsContainer.innerHTML = '';
             searchResultsContainer.hidden = true;
             searchContainer.setAttribute('aria-expanded', 'false');
+            searchInput.setAttribute('aria-expanded', 'false');
         };
 
         const renderResults = (matches) => {
@@ -61,6 +63,7 @@
 
             searchResultsContainer.hidden = false;
             searchContainer.setAttribute('aria-expanded', 'true');
+            searchInput.setAttribute('aria-expanded', 'true');
         };
 
         const handleInput = (event) => {

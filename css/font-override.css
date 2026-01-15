@@ -1,0 +1,8 @@
+/* Use font-display optional to reduce CLS on slow font loads */
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-display: optional;
+  src: local('Poppins'), local('Poppins-Regular');
+}

@@ -41,7 +41,7 @@
             { name: 'Gun Mayhem', href: 'games/gun-mayhem.html', imgSrc: 'images/gunmayhem.webp' },
             { name: 'House of Hazards', href: 'games/houseofhazards.html', imgSrc: 'images/houseofhazards.webp' },
             { name: 'Rooftop Snipers', href: 'games/rooftopsnipers.html', imgSrc: 'images/rooftopsnipers.webp' },
-            { name: 'Fireboy and Watergirl', href: 'games/fireboy-and-watergirl-firetemple.html', imgSrc: 'images/fireboyandwatergirl.webp' }
+            { name: 'Fireboy and Watergirl', href: 'games/fireboy-and-watergirl-firetemple.html', imgSrc: 'images/fireboywatergirlfiretemple.webp' }
         ],
         sports: [
             { name: 'Drive Mad', href: 'games/drivemad.html', imgSrc: 'images/drivemad.webp' },
@@ -55,7 +55,7 @@
             { name: 'Bloxors', href: 'games/bloxors.html', imgSrc: 'images/bloxors.webp' },
             { name: 'Minesweeper', href: 'games/minesweeper.html', imgSrc: 'images/minesweeper.webp' },
             { name: 'Pandemic 2', href: 'games/pandemic2.html', imgSrc: 'images/pandemic2.webp' },
-            { name: 'Riddle School', href: 'games/riddleschool-all-games.html', imgSrc: 'images/riddleschool.webp' }
+            { name: 'Riddle School', href: 'games/riddleschool-all-games.html', imgSrc: 'https://i.ytimg.com/vi/Ls5rT-7_4d4/sddefault.jpg' }
         ],
         multiplayer: [
             { name: 'Slither.io', href: 'games/slitherio.html', imgSrc: 'images/slitherio.webp' },
@@ -96,7 +96,7 @@
                 gameLink.href = resolvePath(game.href);
                 gameLink.classList.add('nav-dropdown-item');
                 gameLink.setAttribute('role', 'menuitem');
-                gameLink.innerHTML = `<img src="${resolvePath(game.imgSrc)}" alt="${game.name}"><span>${game.name}</span>`;
+                gameLink.innerHTML = `<img src="${resolvePath(game.imgSrc)}" alt=""><span>${game.name}</span>`;
                 dropdown.appendChild(gameLink);
             });
 
