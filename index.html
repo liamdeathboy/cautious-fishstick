@@ -1,6 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
+  <!-- Event snippet for Page view conversion page
+In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
+<script>
+function gtag_report_conversion(url) {
+  var callback = function () {
+    if (typeof(url) != 'undefined') {
+      window.location = url;
+    }
+  };
+  gtag('event', 'conversion', {
+      'send_to': 'AW-16453971962/eqVQCOms248ZEPrf7qU9',
+      'event_callback': callback
+  });
+  return false;
+}
+</script>
+
   <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-WT144T942K"></script>
 <script>
@@ -42,6 +60,7 @@
     <link rel="preload" href="css/new-style.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
     <link rel="preload" href="css/restyle.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
     <link rel="preload" href="css/user-choice.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="stylesheet" href="css/monocraft.css">
     <noscript>
       <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&amp;display=swap">
       <link rel="stylesheet" href="css/new-style.css">
