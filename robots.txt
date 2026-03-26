@@ -1,7 +1,15 @@
 User-agent: *
 Allow: /
-Disallow: /wp-admin/
-Disallow: /search/
-Disallow: /login/
+Disallow: /error/
+Disallow: /save/
+Disallow: /server/
+Disallow: /scripts/
+Disallow: /data/
+Disallow: /games/ovo/media/
+Disallow: /games/blumgi-rocket-main/
+Disallow: /games/retro-bowl/
+Disallow: /games/gunspin/
+Disallow: /games/hideandsmash/
+Disallow: /games/holeio/
 
 Sitemap: https://schplay.com/sitemap.xml

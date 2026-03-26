@@ -1,8 +1,15 @@
-/* Use font-display optional to reduce CLS on slow font loads */
-@font-face {
-  font-family: 'Poppins';
-  font-style: normal;
-  font-weight: 400;
-  font-display: optional;
-  src: local('Poppins'), local('Poppins-Regular');
+/* Global font override — ensures Apple system font across all pages */
+body, input, button, select, textarea {
+    font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'SF Pro Text', 'Helvetica Neue', Helvetica, Arial, sans-serif !important;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* Reserve space for navbar before JS loads it */
+#site-header {
+    min-height: 48px;
+    background: rgba(0, 0, 0, 0.8);
+    position: sticky;
+    top: 0;
+    z-index: 4000;
 }

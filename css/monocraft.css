@@ -1,8 +1,47 @@
-@font-face {
-    font-family: 'Monocraft';
-    src: url('/css/Monocraft.ttc');
+/* Schplay — Global overrides (loaded on every page via monocraft.css) */
+
+/* Apple system font stack — consistent across all pages */
+body, input, button, select, textarea {
+    font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'SF Pro Text', 'Helvetica Neue', Helvetica, Arial, sans-serif !important;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
-* {
-    font-family: 'Monocraft', monospace !important;
+/* Base dark mode for pages that don't load new-style.css */
+body {
+    background-color: #000 !important;
+    color: #f5f5f7;
+    margin: 0;
+}
+
+/* Reserve space for navbar before JS loads it */
+#site-header {
+    min-height: 48px;
+    background: rgba(0, 0, 0, 0.8);
+    position: sticky;
+    top: 0;
+    z-index: 4000;
+}
+
+/* Ensure links are Apple blue across all pages */
+a {
+    color: #2997ff;
+}
+
+/* Remove old neon/cyberpunk text shadows */
+h1, h2, h3, h4, h5, h6 {
+    text-shadow: none !important;
+    color: #f5f5f7;
+    letter-spacing: -0.025em;
+}
+
+/* Enforce consistent aspect ratio on all game card images */
+.game-card img,
+.button img,
+.button-container .button img {
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    width: 100%;
+    display: block;
+    border-radius: 14px;
 }
