@@ -1569,30 +1569,6 @@ ${slopeStyle}${embedExtraStyles}
   </header>
 
   <main class="container" role="main">
-    <section class="hero hero-with-ad" aria-labelledby="${escapeHtml(id)}-hero-title">
-      <div class="hero-grid">
-        <div class="hero-content">
-          <h1 id="${escapeHtml(id)}-hero-title">Play ${escapeHtml(name)} Online</h1>
-          <p>${escapeHtml(heroParagraph)}</p>
-          <div class="hero-actions">
-            <a class="hero-primary" href="../allgames.html">Browse all games</a>
-            <a class="hero-secondary" href="#how-to-play">View tips &amp; controls</a>
-          </div>
-        </div>
-        <div class="hero-ad" aria-label="Sponsored">
-          <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5690564842575659" crossorigin="anonymous"></script>
-          <ins class="adsbygoogle"
-               style="display:block"
-               data-ad-client="ca-pub-5690564842575659"
-               data-ad-slot="9885096122"
-               data-ad-format="auto"
-               data-full-width-responsive="true"></ins>
-          <script>
-            (adsbygoogle = window.adsbygoogle || []).push({});
-          </script>
-        </div>
-      </div>
-    </section>
 
     <section class="game-player-section">
       <div class="game-player-card" role="region" aria-label="${escapeHtml(name)} gameplay">
