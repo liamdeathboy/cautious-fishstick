@@ -38,6 +38,7 @@ https://schplay.com/games/dadish-2.html
 https://schplay.com/games/dadish-3.html
 https://schplay.com/games/dbz.html
 https://schplay.com/games/deep-freeze.html
+https://schplay.com/games/deltarune.html
 https://schplay.com/games/doge-miner.html
 https://schplay.com/games/doodlejump.html
 https://schplay.com/games/draw-the-hill.html
@@ -119,6 +120,7 @@ https://schplay.com/games/slope2.html
 https://schplay.com/games/snailiad.html
 https://schplay.com/games/snake.html
 https://schplay.com/games/snowline.html
+https://schplay.com/games/soundboard.html
 https://schplay.com/games/soccer-random.html
 https://schplay.com/games/sort-the-court.html
 https://schplay.com/games/spelunky.html
