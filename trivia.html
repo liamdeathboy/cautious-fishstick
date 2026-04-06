@@ -12,28 +12,8 @@
     
 </head>
 <body>
-  <header class="site-header">
-    <div class="header-container">
-      <a href="/" class="logo">
-        <img  src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==" data-src="images/logo.webp" loading="lazy" alt="schplay Logo">
-      </a>
-      <nav class="header-nav">
-        <ul>
-          <li><a href="strategy.html">Strategy <i class="fas fa-chevron-down"></i></a></li>
-          <li><a href="skill.html">Skill <i class="fas fa-chevron-down"></i></a></li>
-          <li><a href="numbers.html">Numbers <i class="fas fa-chevron-down"></i></a></li>
-          <li><a href="classic.html">Classic <i class="fas fa-chevron-down"></i></a></li>
-          <li><a href="trivia.html">Trivia <i class="fas fa-chevron-down"></i></a></li>
-          <li><a href="allgames.html">All Games</a></li>
-        </ul>
-      </nav>
-      <div class="header-right">
-        <div class="search-container">
-          <i class="fas fa-search"></i>
-          <input type="text" id="searchInput" placeholder="Search">
-        </div>
-      </div>
-    </div>
+  <header id="site-header" role="banner">
+    <div id="navbar-placeholder"></div>
   </header>
 
   <main class="container">
@@ -109,8 +89,7 @@
         gamesGrid.appendChild(gameCard);
     });
   </script>
-  <script src="js/games-data.js"></script>
-  <script src="js/search.js"></script>
+  <script src="js/load-components.js?v=2026-04-01-mobile-1" defer></script>
 <script src="/js/lazy-media.js" defer></script>
 </body>
 </html>

@@ -10,7 +10,7 @@
     "instructions": [
       "Every round in Boxing Random throws a new arena twist at you—from icy floors to gravity-flipping rings—so stay light on your feet and watch your opponent’s balance before committing to a punch.",
       "Feint with small hops to bait a swing, then unleash a straight punch or the infamous surprise kick when the distance is perfect. Remember: flying wildly often leaves you wide open for a counter.",
-      "Use the first seconds of each bout to read the round’s gimmick, then lean into short combos instead of button mashing. Precision beats chaos when the bell rings for overtime." 
+      "Use the first seconds of each bout to read the round’s gimmick, then lean into short combos instead of button mashing. Precision beats chaos when the bell rings for overtime."
     ],
     "sections": [
       {
@@ -23,7 +23,7 @@
       },
       {
         "heading": "Bring a friend",
-        "body": "Boxing Random shines in couch co-op. Trade controllers between rounds or pass a keyboard and see who adapts fastest to the next absurd arena rule." 
+        "body": "Boxing Random shines in couch co-op. Trade controllers between rounds or pass a keyboard and see who adapts fastest to the next absurd arena rule."
       }
     ],
     "plainText": "Boxing Random - Play Free Online\nBoxing Random drops you into a wobbly boxing ring where one clean hit can flip the match. Every round throws a new arena twist at you—from icy floors to gravity-flipping rings—so stay light on your feet and watch your opponent’s balance before committing to a punch. Feint with small hops to bait a swing, then unleash a straight punch or the infamous surprise kick when the distance is perfect. Precision beats chaos in this ragdoll boxing showdown.",
@@ -40,7 +40,7 @@
     "instructions": [
       "Choose from classic duos or custom avatars, then learn your player’s special. Some dominate the rim while others rain threes—lean into their strengths as soon as the tip-off lands.",
       "On offense, use hesitations to freeze defenders before pulling up or cutting baseline. On defense, time the steal button carefully; misfires set up wide-open threes.",
-      "Collect cash mid-match to upgrade stats between tournaments. A balanced build with stamina and shooting keeps you deadly deep into championship play." 
+      "Collect cash mid-match to upgrade stats between tournaments. A balanced build with stamina and shooting keeps you deadly deep into championship play."
     ],
     "sections": [
       {
@@ -53,7 +53,7 @@
       },
       {
         "heading": "Challenge friends",
-        "body": "Split the keyboard or plug in controllers for instant couch rivalries. Winner-stays-on rules keep the energy high across a whole lunch break." 
+        "body": "Split the keyboard or plug in controllers for instant couch rivalries. Winner-stays-on rules keep the energy high across a whole lunch break."
       }
     ],
     "plainText": "Basketball Stars - Play Free Online\nBasketball Stars lets you lace up against AI or friends in highlight-reel duels. Choose from classic duos or custom avatars, chain crossovers, and throw down poster-worthy dunks while you chase tournament trophies.",
@@ -70,7 +70,7 @@
     "instructions": [
       "Listen for Baldi's ruler and plan your routes before you sprint. Each floor is generated on the fly, so mark safe corridors mentally and grab items that counter every teacher.",
       "Answer notebooks carefully—wrong answers speed Baldi up—but don’t waste time. Prioritize keys and sodas that open shortcuts or push pursuers out of the way.",
-      "Pay attention to random events. Flooded hallways, power outages, or surprise assemblies can change your strategy instantly, so always keep an emergency item in reserve." 
+      "Pay attention to random events. Flooded hallways, power outages, or surprise assemblies can change your strategy instantly, so always keep an emergency item in reserve."
     ],
     "sections": [
       {
@@ -83,10 +83,1480 @@
       },
       {
         "heading": "Speedrun the elevators",
-        "body": "You only escape by banking enough notebooks to unlock the elevator. Route efficiently, save stamina for the final chase, and stash a B-Soda to knock Baldi back just before the doors close." 
+        "body": "You only escape by banking enough notebooks to unlock the elevator. Route efficiently, save stamina for the final chase, and stash a B-Soda to knock Baldi back just before the doors close."
       }
     ],
     "plainText": "Baldi's Basics Plus - Play Free Online\nBaldi's Basics Plus turns the retro-styled horror classroom into a giant roguelike maze packed with remixed faculty, unpredictable events, and new gear. Memorize audio cues, stock your inventory, and improvise your escape on every wildly generated floor.",
     "iframeSrc": "baldi-plus/index.html"
+  },
+  "2048-merge-run": {
+    "name": "2048 Merge Run",
+    "href": "games/2048-merge-run.html",
+    "image": "games/2048-merge-run/logo.png",
+    "title": "2048 Merge Run - Play Free Online",
+    "metaDescription": "Play 2048 Merge Run, a fast runner where lane control, reaction timing, and upgrade routes determine your finish.",
+    "metaKeywords": "2048 merge run, 2048-merge-run, racing game, browser game, chromebook game, schplay",
+    "heroParagraph": "2048 Merge Run is built around momentum and clean pathing. Read incoming gates early, avoid greedy turns, and chain safe boosts to keep speed through the finish.",
+    "instructions": [
+      "In 2048 Merge Run, look one obstacle ahead instead of reacting at the last second. Early positioning gives you better choices and fewer risky corrections.",
+      "Use boosts and jump actions only when they open a clear route. In 2048 Merge Run, wasting movement tools usually costs more than a short slowdown.",
+      "Replay difficult sections to learn the obstacle rhythm. Most 2048 Merge Run levels become predictable once you map the safe lane transitions."
+    ],
+    "sections": [
+      {
+        "heading": "Control your line",
+        "body": "Smooth movement in 2048 Merge Run is faster than sharp zig-zags. Keep your character centered until a clear opening appears."
+      },
+      {
+        "heading": "Choose high-value gates",
+        "body": "When options split, pick the route that strengthens your next ten seconds in 2048 Merge Run, not just the immediate pickup."
+      },
+      {
+        "heading": "Finish strong",
+        "body": "Save one recovery option for the final stretch in 2048 Merge Run. A late correction often decides whether a good run becomes a best run."
+      }
+    ],
+    "plainText": "2048 Merge Run - Play Free Online\n2048 Merge Run is built around momentum and clean pathing. Read incoming gates early, avoid greedy turns, and chain safe boosts to keep speed through the finish.",
+    "iframeSrc": "2048-merge-run/index.html"
+  },
+  "build-a-big-army": {
+    "name": "Build a Big Army",
+    "href": "games/build-a-big-army.html",
+    "image": "games/build-a-big-army/logo.png",
+    "title": "Build a Big Army - Play Free Online",
+    "metaDescription": "Play Build a Big Army, a browser strategy challenge where smart upgrades, timing, and planning decide each round.",
+    "metaKeywords": "build a big army, build-a-big-army, strategy game, browser game, chromebook game, schplay",
+    "heroParagraph": "Build a Big Army rewards careful decisions over random tapping. Build your setup, read the map state, and adapt your plan as each stage changes pace.",
+    "instructions": [
+      "Start each run in Build a Big Army by checking available upgrades and picking one short-term goal. A clear first objective makes the rest of the run easier to control.",
+      "Track your resources before every major choice. In Build a Big Army, spending too early can stall progress, while saving for one key unlock can swing the whole match.",
+      "If a strategy fails, reset quickly and test one change at a time. Small adjustments in Build a Big Army usually outperform full random rebuilds."
+    ],
+    "sections": [
+      {
+        "heading": "Build order matters",
+        "body": "Early decisions in Build a Big Army shape the whole session. Prioritize stability first, then branch into higher-risk upgrades once your base loop is reliable."
+      },
+      {
+        "heading": "Use checkpoints to evaluate",
+        "body": "After each major wave or objective in Build a Big Army, pause and ask what gave the biggest return. Keep the strong choices and cut the weak ones."
+      },
+      {
+        "heading": "Win with consistency",
+        "body": "The best Build a Big Army runs are repeatable. Focus on patterns you can execute every attempt instead of depending on lucky outcomes."
+      }
+    ],
+    "plainText": "Build a Big Army - Play Free Online\nBuild a Big Army rewards careful decisions over random tapping. Build your setup, read the map state, and adapt your plan as each stage changes pace.",
+    "iframeSrc": "build-a-big-army/index.html"
+  },
+  "build-a-plane": {
+    "name": "Build a Plane",
+    "href": "games/build-a-plane.html",
+    "image": "games/build-a-plane/logo.png",
+    "title": "Build a Plane - Play Free Online",
+    "metaDescription": "Play Build a Plane online in your browser on Schplay.",
+    "metaKeywords": "build a plane, build-a-plane, default game, browser game, chromebook game, schplay",
+    "heroParagraph": "Build a Plane runs directly in-browser and is ready to play instantly.",
+    "instructions": [
+      "Launch Build a Plane and follow the on-screen prompts for your first round.",
+      "Use short attempts to learn the level flow and controls in Build a Plane.",
+      "Refine one decision at a time to improve consistency in Build a Plane."
+    ],
+    "sections": [
+      {
+        "heading": "Read the level flow",
+        "body": "Understanding pace and timing in Build a Plane creates cleaner runs and fewer mistakes."
+      },
+      {
+        "heading": "Keep sessions focused",
+        "body": "Short review cycles help you improve faster in Build a Plane than long unfocused attempts."
+      },
+      {
+        "heading": "Lock in repeatable wins",
+        "body": "Use simple, reliable habits in Build a Plane so results remain stable across different rounds."
+      }
+    ],
+    "plainText": "Build a Plane - Play Free Online\nBuild a Plane runs directly in-browser and is ready to play instantly.",
+    "iframeSrc": "build-a-plane/index.html"
+  },
+  "camouflage-and-sniper": {
+    "name": "Camouflage and Sniper",
+    "href": "games/camouflage-and-sniper.html",
+    "image": "games/camouflage-and-sniper/logo.png",
+    "title": "Camouflage and Sniper - Play Free Online",
+    "metaDescription": "Play Camouflage and Sniper, an action-focused browser game with quick rounds, sharp reactions, and high-pressure encounters.",
+    "metaKeywords": "camouflage and sniper, camouflage-and-sniper, action game, browser game, chromebook game, schplay",
+    "heroParagraph": "Camouflage and Sniper rewards fast decisions and clean execution. Keep moving, commit to clear targets, and avoid overextending when the screen gets crowded.",
+    "instructions": [
+      "Treat the first seconds of each round in Camouflage and Sniper as scouting time. Identify the biggest threat first, then clear space before chasing bonus targets.",
+      "Use movement defensively. In Camouflage and Sniper, staying mobile reduces incoming pressure and creates safer windows to attack.",
+      "After each attempt, note one recurring mistake and fix it in the next run. Consistent cleanup is the fastest way to improve in Camouflage and Sniper."
+    ],
+    "sections": [
+      {
+        "heading": "Prioritize threats",
+        "body": "In Camouflage and Sniper, eliminate enemies or hazards that limit your movement first. Control of space is more valuable than quick points."
+      },
+      {
+        "heading": "Play short, focused rounds",
+        "body": "Use concise sessions in Camouflage and Sniper to stay sharp. Two clean attempts with review beat long autopilot grinding."
+      },
+      {
+        "heading": "Build reliable habits",
+        "body": "Anchor your Camouflage and Sniper gameplay around repeatable openers and safe fallbacks so difficult moments stay manageable."
+      }
+    ],
+    "plainText": "Camouflage and Sniper - Play Free Online\nCamouflage and Sniper rewards fast decisions and clean execution. Keep moving, commit to clear targets, and avoid overextending when the screen gets crowded.",
+    "iframeSrc": "camouflage-and-sniper/index.html"
+  },
+  "car-survival-3d": {
+    "name": "Car Survival 3D",
+    "href": "games/car-survival-3d.html",
+    "image": "games/car-survival-3d/logo.png",
+    "title": "Car Survival 3D - Play Free Online",
+    "metaDescription": "Play Car Survival 3D, a fast runner where lane control, reaction timing, and upgrade routes determine your finish.",
+    "metaKeywords": "car survival 3d, car-survival-3d, racing game, browser game, chromebook game, schplay",
+    "heroParagraph": "Car Survival 3D is built around momentum and clean pathing. Read incoming gates early, avoid greedy turns, and chain safe boosts to keep speed through the finish.",
+    "instructions": [
+      "In Car Survival 3D, look one obstacle ahead instead of reacting at the last second. Early positioning gives you better choices and fewer risky corrections.",
+      "Use boosts and jump actions only when they open a clear route. In Car Survival 3D, wasting movement tools usually costs more than a short slowdown.",
+      "Replay difficult sections to learn the obstacle rhythm. Most Car Survival 3D levels become predictable once you map the safe lane transitions."
+    ],
+    "sections": [
+      {
+        "heading": "Control your line",
+        "body": "Smooth movement in Car Survival 3D is faster than sharp zig-zags. Keep your character centered until a clear opening appears."
+      },
+      {
+        "heading": "Choose high-value gates",
+        "body": "When options split, pick the route that strengthens your next ten seconds in Car Survival 3D, not just the immediate pickup."
+      },
+      {
+        "heading": "Finish strong",
+        "body": "Save one recovery option for the final stretch in Car Survival 3D. A late correction often decides whether a good run becomes a best run."
+      }
+    ],
+    "plainText": "Car Survival 3D - Play Free Online\nCar Survival 3D is built around momentum and clean pathing. Read incoming gates early, avoid greedy turns, and chain safe boosts to keep speed through the finish.",
+    "iframeSrc": "car-survival-3d/index.html"
+  },
+  "city-defense": {
+    "name": "City Defense",
+    "href": "games/city-defense.html",
+    "image": "games/city-defense/logo.png",
+    "title": "City Defense - Play Free Online",
+    "metaDescription": "Play City Defense, a browser strategy challenge where smart upgrades, timing, and planning decide each round.",
+    "metaKeywords": "city defense, city-defense, strategy game, browser game, chromebook game, schplay",
+    "heroParagraph": "City Defense rewards careful decisions over random tapping. Build your setup, read the map state, and adapt your plan as each stage changes pace.",
+    "instructions": [
+      "Start each run in City Defense by checking available upgrades and picking one short-term goal. A clear first objective makes the rest of the run easier to control.",
+      "Track your resources before every major choice. In City Defense, spending too early can stall progress, while saving for one key unlock can swing the whole match.",
+      "If a strategy fails, reset quickly and test one change at a time. Small adjustments in City Defense usually outperform full random rebuilds."
+    ],
+    "sections": [
+      {
+        "heading": "Build order matters",
+        "body": "Early decisions in City Defense shape the whole session. Prioritize stability first, then branch into higher-risk upgrades once your base loop is reliable."
+      },
+      {
+        "heading": "Use checkpoints to evaluate",
+        "body": "After each major wave or objective in City Defense, pause and ask what gave the biggest return. Keep the strong choices and cut the weak ones."
+      },
+      {
+        "heading": "Win with consistency",
+        "body": "The best City Defense runs are repeatable. Focus on patterns you can execute every attempt instead of depending on lucky outcomes."
+      }
+    ],
+    "plainText": "City Defense - Play Free Online\nCity Defense rewards careful decisions over random tapping. Build your setup, read the map state, and adapt your plan as each stage changes pace.",
+    "iframeSrc": "city-defense/index.html"
+  },
+  "clothing-shop-3d": {
+    "name": "Clothing Shop 3D",
+    "href": "games/clothing-shop-3d.html",
+    "image": "games/clothing-shop-3d/logo.png",
+    "title": "Clothing Shop 3D - Play Free Online",
+    "metaDescription": "Play Clothing Shop 3D, a browser strategy challenge where smart upgrades, timing, and planning decide each round.",
+    "metaKeywords": "clothing shop 3d, clothing-shop-3d, strategy game, browser game, chromebook game, schplay",
+    "heroParagraph": "Clothing Shop 3D rewards careful decisions over random tapping. Build your setup, read the map state, and adapt your plan as each stage changes pace.",
+    "instructions": [
+      "Start each run in Clothing Shop 3D by checking available upgrades and picking one short-term goal. A clear first objective makes the rest of the run easier to control.",
+      "Track your resources before every major choice. In Clothing Shop 3D, spending too early can stall progress, while saving for one key unlock can swing the whole match.",
+      "If a strategy fails, reset quickly and test one change at a time. Small adjustments in Clothing Shop 3D usually outperform full random rebuilds."
+    ],
+    "sections": [
+      {
+        "heading": "Build order matters",
+        "body": "Early decisions in Clothing Shop 3D shape the whole session. Prioritize stability first, then branch into higher-risk upgrades once your base loop is reliable."
+      },
+      {
+        "heading": "Use checkpoints to evaluate",
+        "body": "After each major wave or objective in Clothing Shop 3D, pause and ask what gave the biggest return. Keep the strong choices and cut the weak ones."
+      },
+      {
+        "heading": "Win with consistency",
+        "body": "The best Clothing Shop 3D runs are repeatable. Focus on patterns you can execute every attempt instead of depending on lucky outcomes."
+      }
+    ],
+    "plainText": "Clothing Shop 3D - Play Free Online\nClothing Shop 3D rewards careful decisions over random tapping. Build your setup, read the map state, and adapt your plan as each stage changes pace.",
+    "iframeSrc": "clothing-shop-3d/index.html"
+  },
+  "cool-cars-run-3d": {
+    "name": "Cool Cars Run 3D",
+    "href": "games/cool-cars-run-3d.html",
+    "image": "games/cool-cars-run-3d/logo.png",
+    "title": "Cool Cars Run 3D - Play Free Online",
+    "metaDescription": "Play Cool Cars Run 3D, a fast runner where lane control, reaction timing, and upgrade routes determine your finish.",
+    "metaKeywords": "cool cars run 3d, cool-cars-run-3d, racing game, browser game, chromebook game, schplay",
+    "heroParagraph": "Cool Cars Run 3D is built around momentum and clean pathing. Read incoming gates early, avoid greedy turns, and chain safe boosts to keep speed through the finish.",
+    "instructions": [
+      "In Cool Cars Run 3D, look one obstacle ahead instead of reacting at the last second. Early positioning gives you better choices and fewer risky corrections.",
+      "Use boosts and jump actions only when they open a clear route. In Cool Cars Run 3D, wasting movement tools usually costs more than a short slowdown.",
+      "Replay difficult sections to learn the obstacle rhythm. Most Cool Cars Run 3D levels become predictable once you map the safe lane transitions."
+    ],
+    "sections": [
+      {
+        "heading": "Control your line",
+        "body": "Smooth movement in Cool Cars Run 3D is faster than sharp zig-zags. Keep your character centered until a clear opening appears."
+      },
+      {
+        "heading": "Choose high-value gates",
+        "body": "When options split, pick the route that strengthens your next ten seconds in Cool Cars Run 3D, not just the immediate pickup."
+      },
+      {
+        "heading": "Finish strong",
+        "body": "Save one recovery option for the final stretch in Cool Cars Run 3D. A late correction often decides whether a good run becomes a best run."
+      }
+    ],
+    "plainText": "Cool Cars Run 3D - Play Free Online\nCool Cars Run 3D is built around momentum and clean pathing. Read incoming gates early, avoid greedy turns, and chain safe boosts to keep speed through the finish.",
+    "iframeSrc": "cool-cars-run-3d/index.html"
+  },
+  "crush-cars-3d": {
+    "name": "Crush Cars 3D",
+    "href": "games/crush-cars-3d.html",
+    "image": "games/crush-cars-3d/logo.png",
+    "title": "Crush Cars 3D - Play Free Online",
+    "metaDescription": "Play Crush Cars 3D, a fast runner where lane control, reaction timing, and upgrade routes determine your finish.",
+    "metaKeywords": "crush cars 3d, crush-cars-3d, racing game, browser game, chromebook game, schplay",
+    "heroParagraph": "Crush Cars 3D is built around momentum and clean pathing. Read incoming gates early, avoid greedy turns, and chain safe boosts to keep speed through the finish.",
+    "instructions": [
+      "In Crush Cars 3D, look one obstacle ahead instead of reacting at the last second. Early positioning gives you better choices and fewer risky corrections.",
+      "Use boosts and jump actions only when they open a clear route. In Crush Cars 3D, wasting movement tools usually costs more than a short slowdown.",
+      "Replay difficult sections to learn the obstacle rhythm. Most Crush Cars 3D levels become predictable once you map the safe lane transitions."
+    ],
+    "sections": [
+      {
+        "heading": "Control your line",
+        "body": "Smooth movement in Crush Cars 3D is faster than sharp zig-zags. Keep your character centered until a clear opening appears."
+      },
+      {
+        "heading": "Choose high-value gates",
+        "body": "When options split, pick the route that strengthens your next ten seconds in Crush Cars 3D, not just the immediate pickup."
+      },
+      {
+        "heading": "Finish strong",
+        "body": "Save one recovery option for the final stretch in Crush Cars 3D. A late correction often decides whether a good run becomes a best run."
+      }
+    ],
+    "plainText": "Crush Cars 3D - Play Free Online\nCrush Cars 3D is built around momentum and clean pathing. Read incoming gates early, avoid greedy turns, and chain safe boosts to keep speed through the finish.",
+    "iframeSrc": "crush-cars-3d/index.html"
+  },
+  "destiny-run-3d": {
+    "name": "Destiny Run 3D",
+    "href": "games/destiny-run-3d.html",
+    "image": "games/destiny-run-3d/logo.png",
+    "title": "Destiny Run 3D - Play Free Online",
+    "metaDescription": "Play Destiny Run 3D, a fast runner where lane control, reaction timing, and upgrade routes determine your finish.",
+    "metaKeywords": "destiny run 3d, destiny-run-3d, racing game, browser game, chromebook game, schplay",
+    "heroParagraph": "Destiny Run 3D is built around momentum and clean pathing. Read incoming gates early, avoid greedy turns, and chain safe boosts to keep speed through the finish.",
+    "instructions": [
+      "In Destiny Run 3D, look one obstacle ahead instead of reacting at the last second. Early positioning gives you better choices and fewer risky corrections.",
+      "Use boosts and jump actions only when they open a clear route. In Destiny Run 3D, wasting movement tools usually costs more than a short slowdown.",
+      "Replay difficult sections to learn the obstacle rhythm. Most Destiny Run 3D levels become predictable once you map the safe lane transitions."
+    ],
+    "sections": [
+      {
+        "heading": "Control your line",
+        "body": "Smooth movement in Destiny Run 3D is faster than sharp zig-zags. Keep your character centered until a clear opening appears."
+      },
+      {
+        "heading": "Choose high-value gates",
+        "body": "When options split, pick the route that strengthens your next ten seconds in Destiny Run 3D, not just the immediate pickup."
+      },
+      {
+        "heading": "Finish strong",
+        "body": "Save one recovery option for the final stretch in Destiny Run 3D. A late correction often decides whether a good run becomes a best run."
+      }
+    ],
+    "plainText": "Destiny Run 3D - Play Free Online\nDestiny Run 3D is built around momentum and clean pathing. Read incoming gates early, avoid greedy turns, and chain safe boosts to keep speed through the finish.",
+    "iframeSrc": "destiny-run-3d/index.html"
+  },
+  "destroy-the-car-3d": {
+    "name": "Destroy the Car 3D",
+    "href": "games/destroy-the-car-3d.html",
+    "image": "games/destroy-the-car-3d/logo.png",
+    "title": "Destroy the Car 3D - Play Free Online",
+    "metaDescription": "Play Destroy the Car 3D, a fast runner where lane control, reaction timing, and upgrade routes determine your finish.",
+    "metaKeywords": "destroy the car 3d, destroy-the-car-3d, racing game, browser game, chromebook game, schplay",
+    "heroParagraph": "Destroy the Car 3D is built around momentum and clean pathing. Read incoming gates early, avoid greedy turns, and chain safe boosts to keep speed through the finish.",
+    "instructions": [
+      "In Destroy the Car 3D, look one obstacle ahead instead of reacting at the last second. Early positioning gives you better choices and fewer risky corrections.",
+      "Use boosts and jump actions only when they open a clear route. In Destroy the Car 3D, wasting movement tools usually costs more than a short slowdown.",
+      "Replay difficult sections to learn the obstacle rhythm. Most Destroy the Car 3D levels become predictable once you map the safe lane transitions."
+    ],
+    "sections": [
+      {
+        "heading": "Control your line",
+        "body": "Smooth movement in Destroy the Car 3D is faster than sharp zig-zags. Keep your character centered until a clear opening appears."
+      },
+      {
+        "heading": "Choose high-value gates",
+        "body": "When options split, pick the route that strengthens your next ten seconds in Destroy the Car 3D, not just the immediate pickup."
+      },
+      {
+        "heading": "Finish strong",
+        "body": "Save one recovery option for the final stretch in Destroy the Car 3D. A late correction often decides whether a good run becomes a best run."
+      }
+    ],
+    "plainText": "Destroy the Car 3D - Play Free Online\nDestroy the Car 3D is built around momentum and clean pathing. Read incoming gates early, avoid greedy turns, and chain safe boosts to keep speed through the finish.",
+    "iframeSrc": "destroy-the-car-3d/index.html"
+  },
+  "diamond-seeker": {
+    "name": "Diamond Seeker",
+    "href": "games/diamond-seeker.html",
+    "image": "games/diamond-seeker/logo.png",
+    "title": "Diamond Seeker - Play Free Online",
+    "metaDescription": "Play Diamond Seeker, a puzzle-style browser game where sequencing, pattern recognition, and efficient moves lead to high scores.",
+    "metaKeywords": "diamond seeker, diamond-seeker, puzzle game, browser game, chromebook game, schplay",
+    "heroParagraph": "Diamond Seeker is about reading patterns quickly and making high-value moves. Plan a few steps ahead and keep the board state clean for better chains.",
+    "instructions": [
+      "Before committing a move in Diamond Seeker, check how it changes your next two turns. Good planning prevents dead-end board states.",
+      "When the board gets crowded, reset the center and open movement space. In Diamond Seeker, board control usually matters more than one flashy combo.",
+      "Repeat difficult puzzles with one new rule each run, like minimizing moves or preserving key tiles. This builds consistent performance in Diamond Seeker."
+    ],
+    "sections": [
+      {
+        "heading": "Think in sequences",
+        "body": "Strong Diamond Seeker runs come from move chains, not isolated clicks. Track how each action sets up the next solution."
+      },
+      {
+        "heading": "Protect flexible spaces",
+        "body": "Leave room to pivot in Diamond Seeker. Open lanes and free tiles let you recover when the puzzle presents a bad draw."
+      },
+      {
+        "heading": "Optimize, then accelerate",
+        "body": "Start slow to stabilize the board in Diamond Seeker, then increase speed once your pattern is locked in."
+      }
+    ],
+    "plainText": "Diamond Seeker - Play Free Online\nDiamond Seeker is about reading patterns quickly and making high-value moves. Plan a few steps ahead and keep the board state clean for better chains.",
+    "iframeSrc": "diamond-seeker/index.html"
+  },
+  "draw-joust": {
+    "name": "Draw Joust",
+    "href": "games/draw-joust.html",
+    "image": "games/draw-joust/logo.png",
+    "title": "Draw Joust - Play Free Online",
+    "metaDescription": "Play Draw Joust, a puzzle-style browser game where sequencing, pattern recognition, and efficient moves lead to high scores.",
+    "metaKeywords": "draw joust, draw-joust, puzzle game, browser game, chromebook game, schplay",
+    "heroParagraph": "Draw Joust is about reading patterns quickly and making high-value moves. Plan a few steps ahead and keep the board state clean for better chains.",
+    "instructions": [
+      "Before committing a move in Draw Joust, check how it changes your next two turns. Good planning prevents dead-end board states.",
+      "When the board gets crowded, reset the center and open movement space. In Draw Joust, board control usually matters more than one flashy combo.",
+      "Repeat difficult puzzles with one new rule each run, like minimizing moves or preserving key tiles. This builds consistent performance in Draw Joust."
+    ],
+    "sections": [
+      {
+        "heading": "Think in sequences",
+        "body": "Strong Draw Joust runs come from move chains, not isolated clicks. Track how each action sets up the next solution."
+      },
+      {
+        "heading": "Protect flexible spaces",
+        "body": "Leave room to pivot in Draw Joust. Open lanes and free tiles let you recover when the puzzle presents a bad draw."
+      },
+      {
+        "heading": "Optimize, then accelerate",
+        "body": "Start slow to stabilize the board in Draw Joust, then increase speed once your pattern is locked in."
+      }
+    ],
+    "plainText": "Draw Joust - Play Free Online\nDraw Joust is about reading patterns quickly and making high-value moves. Plan a few steps ahead and keep the board state clean for better chains.",
+    "iframeSrc": "draw-joust/index.html"
+  },
+  "evolving-bombs-3d": {
+    "name": "Evolving Bombs 3D",
+    "href": "games/evolving-bombs-3d.html",
+    "image": "games/evolving-bombs-3d/logo.png",
+    "title": "Evolving Bombs 3D - Play Free Online",
+    "metaDescription": "Play Evolving Bombs 3D, an action-focused browser game with quick rounds, sharp reactions, and high-pressure encounters.",
+    "metaKeywords": "evolving bombs 3d, evolving-bombs-3d, action game, browser game, chromebook game, schplay",
+    "heroParagraph": "Evolving Bombs 3D rewards fast decisions and clean execution. Keep moving, commit to clear targets, and avoid overextending when the screen gets crowded.",
+    "instructions": [
+      "Treat the first seconds of each round in Evolving Bombs 3D as scouting time. Identify the biggest threat first, then clear space before chasing bonus targets.",
+      "Use movement defensively. In Evolving Bombs 3D, staying mobile reduces incoming pressure and creates safer windows to attack.",
+      "After each attempt, note one recurring mistake and fix it in the next run. Consistent cleanup is the fastest way to improve in Evolving Bombs 3D."
+    ],
+    "sections": [
+      {
+        "heading": "Prioritize threats",
+        "body": "In Evolving Bombs 3D, eliminate enemies or hazards that limit your movement first. Control of space is more valuable than quick points."
+      },
+      {
+        "heading": "Play short, focused rounds",
+        "body": "Use concise sessions in Evolving Bombs 3D to stay sharp. Two clean attempts with review beat long autopilot grinding."
+      },
+      {
+        "heading": "Build reliable habits",
+        "body": "Anchor your Evolving Bombs 3D gameplay around repeatable openers and safe fallbacks so difficult moments stay manageable."
+      }
+    ],
+    "plainText": "Evolving Bombs 3D - Play Free Online\nEvolving Bombs 3D rewards fast decisions and clean execution. Keep moving, commit to clear targets, and avoid overextending when the screen gets crowded.",
+    "iframeSrc": "evolving-bombs-3d/index.html"
+  },
+  "fire-and-frost-master": {
+    "name": "Fire and Frost Master",
+    "href": "games/fire-and-frost-master.html",
+    "image": "games/fire-and-frost-master/logo.png",
+    "title": "Fire and Frost Master - Play Free Online",
+    "metaDescription": "Play Fire and Frost Master online in your browser on Schplay.",
+    "metaKeywords": "fire and frost master, fire-and-frost-master, default game, browser game, chromebook game, schplay",
+    "heroParagraph": "Fire and Frost Master runs directly in-browser and is ready to play instantly.",
+    "instructions": [
+      "Launch Fire and Frost Master and follow the on-screen prompts for your first round.",
+      "Use short attempts to learn the level flow and controls in Fire and Frost Master.",
+      "Refine one decision at a time to improve consistency in Fire and Frost Master."
+    ],
+    "sections": [
+      {
+        "heading": "Read the level flow",
+        "body": "Understanding pace and timing in Fire and Frost Master creates cleaner runs and fewer mistakes."
+      },
+      {
+        "heading": "Keep sessions focused",
+        "body": "Short review cycles help you improve faster in Fire and Frost Master than long unfocused attempts."
+      },
+      {
+        "heading": "Lock in repeatable wins",
+        "body": "Use simple, reliable habits in Fire and Frost Master so results remain stable across different rounds."
+      }
+    ],
+    "plainText": "Fire and Frost Master - Play Free Online\nFire and Frost Master runs directly in-browser and is ready to play instantly.",
+    "iframeSrc": "fire-and-frost-master/index.html"
+  },
+  "fitness-empire": {
+    "name": "Fitness Empire",
+    "href": "games/fitness-empire.html",
+    "image": "games/fitness-empire/logo.png",
+    "title": "Fitness Empire - Play Free Online",
+    "metaDescription": "Play Fitness Empire, a browser strategy challenge where smart upgrades, timing, and planning decide each round.",
+    "metaKeywords": "fitness empire, fitness-empire, strategy game, browser game, chromebook game, schplay",
+    "heroParagraph": "Fitness Empire rewards careful decisions over random tapping. Build your setup, read the map state, and adapt your plan as each stage changes pace.",
+    "instructions": [
+      "Start each run in Fitness Empire by checking available upgrades and picking one short-term goal. A clear first objective makes the rest of the run easier to control.",
+      "Track your resources before every major choice. In Fitness Empire, spending too early can stall progress, while saving for one key unlock can swing the whole match.",
+      "If a strategy fails, reset quickly and test one change at a time. Small adjustments in Fitness Empire usually outperform full random rebuilds."
+    ],
+    "sections": [
+      {
+        "heading": "Build order matters",
+        "body": "Early decisions in Fitness Empire shape the whole session. Prioritize stability first, then branch into higher-risk upgrades once your base loop is reliable."
+      },
+      {
+        "heading": "Use checkpoints to evaluate",
+        "body": "After each major wave or objective in Fitness Empire, pause and ask what gave the biggest return. Keep the strong choices and cut the weak ones."
+      },
+      {
+        "heading": "Win with consistency",
+        "body": "The best Fitness Empire runs are repeatable. Focus on patterns you can execute every attempt instead of depending on lucky outcomes."
+      }
+    ],
+    "plainText": "Fitness Empire - Play Free Online\nFitness Empire rewards careful decisions over random tapping. Build your setup, read the map state, and adapt your plan as each stage changes pace.",
+    "iframeSrc": "fitness-empire/index.html"
+  },
+  "flick-goal": {
+    "name": "Flick Goal",
+    "href": "games/flick-goal.html",
+    "image": "games/flick-goal/logo.png",
+    "title": "Flick Goal - Play Free Online",
+    "metaDescription": "Play Flick Goal, a puzzle-style browser game where sequencing, pattern recognition, and efficient moves lead to high scores.",
+    "metaKeywords": "flick goal, flick-goal, puzzle game, browser game, chromebook game, schplay",
+    "heroParagraph": "Flick Goal is about reading patterns quickly and making high-value moves. Plan a few steps ahead and keep the board state clean for better chains.",
+    "instructions": [
+      "Before committing a move in Flick Goal, check how it changes your next two turns. Good planning prevents dead-end board states.",
+      "When the board gets crowded, reset the center and open movement space. In Flick Goal, board control usually matters more than one flashy combo.",
+      "Repeat difficult puzzles with one new rule each run, like minimizing moves or preserving key tiles. This builds consistent performance in Flick Goal."
+    ],
+    "sections": [
+      {
+        "heading": "Think in sequences",
+        "body": "Strong Flick Goal runs come from move chains, not isolated clicks. Track how each action sets up the next solution."
+      },
+      {
+        "heading": "Protect flexible spaces",
+        "body": "Leave room to pivot in Flick Goal. Open lanes and free tiles let you recover when the puzzle presents a bad draw."
+      },
+      {
+        "heading": "Optimize, then accelerate",
+        "body": "Start slow to stabilize the board in Flick Goal, then increase speed once your pattern is locked in."
+      }
+    ],
+    "plainText": "Flick Goal - Play Free Online\nFlick Goal is about reading patterns quickly and making high-value moves. Plan a few steps ahead and keep the board state clean for better chains.",
+    "iframeSrc": "flick-goal/index.html"
+  },
+  "flip-master": {
+    "name": "Flip Master",
+    "href": "games/flip-master.html",
+    "image": "games/flip-master/logo.png",
+    "title": "Flip Master - Play Free Online",
+    "metaDescription": "Play Flip Master, a puzzle-style browser game where sequencing, pattern recognition, and efficient moves lead to high scores.",
+    "metaKeywords": "flip master, flip-master, puzzle game, browser game, chromebook game, schplay",
+    "heroParagraph": "Flip Master is about reading patterns quickly and making high-value moves. Plan a few steps ahead and keep the board state clean for better chains.",
+    "instructions": [
+      "Before committing a move in Flip Master, check how it changes your next two turns. Good planning prevents dead-end board states.",
+      "When the board gets crowded, reset the center and open movement space. In Flip Master, board control usually matters more than one flashy combo.",
+      "Repeat difficult puzzles with one new rule each run, like minimizing moves or preserving key tiles. This builds consistent performance in Flip Master."
+    ],
+    "sections": [
+      {
+        "heading": "Think in sequences",
+        "body": "Strong Flip Master runs come from move chains, not isolated clicks. Track how each action sets up the next solution."
+      },
+      {
+        "heading": "Protect flexible spaces",
+        "body": "Leave room to pivot in Flip Master. Open lanes and free tiles let you recover when the puzzle presents a bad draw."
+      },
+      {
+        "heading": "Optimize, then accelerate",
+        "body": "Start slow to stabilize the board in Flip Master, then increase speed once your pattern is locked in."
+      }
+    ],
+    "plainText": "Flip Master - Play Free Online\nFlip Master is about reading patterns quickly and making high-value moves. Plan a few steps ahead and keep the board state clean for better chains.",
+    "iframeSrc": "flip-master/index.html"
+  },
+  "giant-wanted": {
+    "name": "Giant Wanted",
+    "href": "games/giant-wanted.html",
+    "image": "games/giant-wanted/logo.png",
+    "title": "Giant Wanted - Play Free Online",
+    "metaDescription": "Play Giant Wanted, an action-focused browser game with quick rounds, sharp reactions, and high-pressure encounters.",
+    "metaKeywords": "giant wanted, giant-wanted, action game, browser game, chromebook game, schplay",
+    "heroParagraph": "Giant Wanted rewards fast decisions and clean execution. Keep moving, commit to clear targets, and avoid overextending when the screen gets crowded.",
+    "instructions": [
+      "Treat the first seconds of each round in Giant Wanted as scouting time. Identify the biggest threat first, then clear space before chasing bonus targets.",
+      "Use movement defensively. In Giant Wanted, staying mobile reduces incoming pressure and creates safer windows to attack.",
+      "After each attempt, note one recurring mistake and fix it in the next run. Consistent cleanup is the fastest way to improve in Giant Wanted."
+    ],
+    "sections": [
+      {
+        "heading": "Prioritize threats",
+        "body": "In Giant Wanted, eliminate enemies or hazards that limit your movement first. Control of space is more valuable than quick points."
+      },
+      {
+        "heading": "Play short, focused rounds",
+        "body": "Use concise sessions in Giant Wanted to stay sharp. Two clean attempts with review beat long autopilot grinding."
+      },
+      {
+        "heading": "Build reliable habits",
+        "body": "Anchor your Giant Wanted gameplay around repeatable openers and safe fallbacks so difficult moments stay manageable."
+      }
+    ],
+    "plainText": "Giant Wanted - Play Free Online\nGiant Wanted rewards fast decisions and clean execution. Keep moving, commit to clear targets, and avoid overextending when the screen gets crowded.",
+    "iframeSrc": "giant-wanted/index.html"
+  },
+  "gun-clone": {
+    "name": "Gun Clone",
+    "href": "games/gun-clone.html",
+    "image": "games/gun-clone/logo.png",
+    "title": "Gun Clone - Play Free Online",
+    "metaDescription": "Play Gun Clone, an action-focused browser game with quick rounds, sharp reactions, and high-pressure encounters.",
+    "metaKeywords": "gun clone, gun-clone, action game, browser game, chromebook game, schplay",
+    "heroParagraph": "Gun Clone rewards fast decisions and clean execution. Keep moving, commit to clear targets, and avoid overextending when the screen gets crowded.",
+    "instructions": [
+      "Treat the first seconds of each round in Gun Clone as scouting time. Identify the biggest threat first, then clear space before chasing bonus targets.",
+      "Use movement defensively. In Gun Clone, staying mobile reduces incoming pressure and creates safer windows to attack.",
+      "After each attempt, note one recurring mistake and fix it in the next run. Consistent cleanup is the fastest way to improve in Gun Clone."
+    ],
+    "sections": [
+      {
+        "heading": "Prioritize threats",
+        "body": "In Gun Clone, eliminate enemies or hazards that limit your movement first. Control of space is more valuable than quick points."
+      },
+      {
+        "heading": "Play short, focused rounds",
+        "body": "Use concise sessions in Gun Clone to stay sharp. Two clean attempts with review beat long autopilot grinding."
+      },
+      {
+        "heading": "Build reliable habits",
+        "body": "Anchor your Gun Clone gameplay around repeatable openers and safe fallbacks so difficult moments stay manageable."
+      }
+    ],
+    "plainText": "Gun Clone - Play Free Online\nGun Clone rewards fast decisions and clean execution. Keep moving, commit to clear targets, and avoid overextending when the screen gets crowded.",
+    "iframeSrc": "gun-clone/index.html"
+  },
+  "gun-runner": {
+    "name": "Gun Runner",
+    "href": "games/gun-runner.html",
+    "image": "games/gun-runner/logo.png",
+    "title": "Gun Runner - Play Free Online",
+    "metaDescription": "Play Gun Runner, a fast runner where lane control, reaction timing, and upgrade routes determine your finish.",
+    "metaKeywords": "gun runner, gun-runner, racing game, browser game, chromebook game, schplay",
+    "heroParagraph": "Gun Runner is built around momentum and clean pathing. Read incoming gates early, avoid greedy turns, and chain safe boosts to keep speed through the finish.",
+    "instructions": [
+      "In Gun Runner, look one obstacle ahead instead of reacting at the last second. Early positioning gives you better choices and fewer risky corrections.",
+      "Use boosts and jump actions only when they open a clear route. In Gun Runner, wasting movement tools usually costs more than a short slowdown.",
+      "Replay difficult sections to learn the obstacle rhythm. Most Gun Runner levels become predictable once you map the safe lane transitions."
+    ],
+    "sections": [
+      {
+        "heading": "Control your line",
+        "body": "Smooth movement in Gun Runner is faster than sharp zig-zags. Keep your character centered until a clear opening appears."
+      },
+      {
+        "heading": "Choose high-value gates",
+        "body": "When options split, pick the route that strengthens your next ten seconds in Gun Runner, not just the immediate pickup."
+      },
+      {
+        "heading": "Finish strong",
+        "body": "Save one recovery option for the final stretch in Gun Runner. A late correction often decides whether a good run becomes a best run."
+      }
+    ],
+    "plainText": "Gun Runner - Play Free Online\nGun Runner is built around momentum and clean pathing. Read incoming gates early, avoid greedy turns, and chain safe boosts to keep speed through the finish.",
+    "iframeSrc": "gun-runner/index.html"
+  },
+  "high-heels": {
+    "name": "High Heels",
+    "href": "games/high-heels.html",
+    "image": "games/high-heels/logo.png",
+    "title": "High Heels - Play Free Online",
+    "metaDescription": "Play High Heels, a fast runner where lane control, reaction timing, and upgrade routes determine your finish.",
+    "metaKeywords": "high heels, high-heels, racing game, browser game, chromebook game, schplay",
+    "heroParagraph": "High Heels is built around momentum and clean pathing. Read incoming gates early, avoid greedy turns, and chain safe boosts to keep speed through the finish.",
+    "instructions": [
+      "In High Heels, look one obstacle ahead instead of reacting at the last second. Early positioning gives you better choices and fewer risky corrections.",
+      "Use boosts and jump actions only when they open a clear route. In High Heels, wasting movement tools usually costs more than a short slowdown.",
+      "Replay difficult sections to learn the obstacle rhythm. Most High Heels levels become predictable once you map the safe lane transitions."
+    ],
+    "sections": [
+      {
+        "heading": "Control your line",
+        "body": "Smooth movement in High Heels is faster than sharp zig-zags. Keep your character centered until a clear opening appears."
+      },
+      {
+        "heading": "Choose high-value gates",
+        "body": "When options split, pick the route that strengthens your next ten seconds in High Heels, not just the immediate pickup."
+      },
+      {
+        "heading": "Finish strong",
+        "body": "Save one recovery option for the final stretch in High Heels. A late correction often decides whether a good run becomes a best run."
+      }
+    ],
+    "plainText": "High Heels - Play Free Online\nHigh Heels is built around momentum and clean pathing. Read incoming gates early, avoid greedy turns, and chain safe boosts to keep speed through the finish.",
+    "iframeSrc": "high-heels/index.html"
+  },
+  "kaji-run": {
+    "name": "Kaji Run",
+    "href": "games/kaji-run.html",
+    "image": "games/kaji-run/logo.png",
+    "title": "Kaji Run - Play Free Online",
+    "metaDescription": "Play Kaji Run, a fast runner where lane control, reaction timing, and upgrade routes determine your finish.",
+    "metaKeywords": "kaji run, kaji-run, racing game, browser game, chromebook game, schplay",
+    "heroParagraph": "Kaji Run is built around momentum and clean pathing. Read incoming gates early, avoid greedy turns, and chain safe boosts to keep speed through the finish.",
+    "instructions": [
+      "In Kaji Run, look one obstacle ahead instead of reacting at the last second. Early positioning gives you better choices and fewer risky corrections.",
+      "Use boosts and jump actions only when they open a clear route. In Kaji Run, wasting movement tools usually costs more than a short slowdown.",
+      "Replay difficult sections to learn the obstacle rhythm. Most Kaji Run levels become predictable once you map the safe lane transitions."
+    ],
+    "sections": [
+      {
+        "heading": "Control your line",
+        "body": "Smooth movement in Kaji Run is faster than sharp zig-zags. Keep your character centered until a clear opening appears."
+      },
+      {
+        "heading": "Choose high-value gates",
+        "body": "When options split, pick the route that strengthens your next ten seconds in Kaji Run, not just the immediate pickup."
+      },
+      {
+        "heading": "Finish strong",
+        "body": "Save one recovery option for the final stretch in Kaji Run. A late correction often decides whether a good run becomes a best run."
+      }
+    ],
+    "plainText": "Kaji Run - Play Free Online\nKaji Run is built around momentum and clean pathing. Read incoming gates early, avoid greedy turns, and chain safe boosts to keep speed through the finish.",
+    "iframeSrc": "kaji-run/index.html"
+  },
+  "make-a-superboat": {
+    "name": "Make a Superboat",
+    "href": "games/make-a-superboat.html",
+    "image": "games/make-a-superboat/logo.png",
+    "title": "Make a Superboat - Play Free Online",
+    "metaDescription": "Play Make a Superboat, a fast runner where lane control, reaction timing, and upgrade routes determine your finish.",
+    "metaKeywords": "make a superboat, make-a-superboat, racing game, browser game, chromebook game, schplay",
+    "heroParagraph": "Make a Superboat is built around momentum and clean pathing. Read incoming gates early, avoid greedy turns, and chain safe boosts to keep speed through the finish.",
+    "instructions": [
+      "In Make a Superboat, look one obstacle ahead instead of reacting at the last second. Early positioning gives you better choices and fewer risky corrections.",
+      "Use boosts and jump actions only when they open a clear route. In Make a Superboat, wasting movement tools usually costs more than a short slowdown.",
+      "Replay difficult sections to learn the obstacle rhythm. Most Make a Superboat levels become predictable once you map the safe lane transitions."
+    ],
+    "sections": [
+      {
+        "heading": "Control your line",
+        "body": "Smooth movement in Make a Superboat is faster than sharp zig-zags. Keep your character centered until a clear opening appears."
+      },
+      {
+        "heading": "Choose high-value gates",
+        "body": "When options split, pick the route that strengthens your next ten seconds in Make a Superboat, not just the immediate pickup."
+      },
+      {
+        "heading": "Finish strong",
+        "body": "Save one recovery option for the final stretch in Make a Superboat. A late correction often decides whether a good run becomes a best run."
+      }
+    ],
+    "plainText": "Make a Superboat - Play Free Online\nMake a Superboat is built around momentum and clean pathing. Read incoming gates early, avoid greedy turns, and chain safe boosts to keep speed through the finish.",
+    "iframeSrc": "make-a-superboat/index.html"
+  },
+  "makeover-run": {
+    "name": "Makeover Run",
+    "href": "games/makeover-run.html",
+    "image": "games/makeover-run/logo.png",
+    "title": "Makeover Run - Play Free Online",
+    "metaDescription": "Play Makeover Run, a fast runner where lane control, reaction timing, and upgrade routes determine your finish.",
+    "metaKeywords": "makeover run, makeover-run, racing game, browser game, chromebook game, schplay",
+    "heroParagraph": "Makeover Run is built around momentum and clean pathing. Read incoming gates early, avoid greedy turns, and chain safe boosts to keep speed through the finish.",
+    "instructions": [
+      "In Makeover Run, look one obstacle ahead instead of reacting at the last second. Early positioning gives you better choices and fewer risky corrections.",
+      "Use boosts and jump actions only when they open a clear route. In Makeover Run, wasting movement tools usually costs more than a short slowdown.",
+      "Replay difficult sections to learn the obstacle rhythm. Most Makeover Run levels become predictable once you map the safe lane transitions."
+    ],
+    "sections": [
+      {
+        "heading": "Control your line",
+        "body": "Smooth movement in Makeover Run is faster than sharp zig-zags. Keep your character centered until a clear opening appears."
+      },
+      {
+        "heading": "Choose high-value gates",
+        "body": "When options split, pick the route that strengthens your next ten seconds in Makeover Run, not just the immediate pickup."
+      },
+      {
+        "heading": "Finish strong",
+        "body": "Save one recovery option for the final stretch in Makeover Run. A late correction often decides whether a good run becomes a best run."
+      }
+    ],
+    "plainText": "Makeover Run - Play Free Online\nMakeover Run is built around momentum and clean pathing. Read incoming gates early, avoid greedy turns, and chain safe boosts to keep speed through the finish.",
+    "iframeSrc": "makeover-run/index.html"
+  },
+  "mega-car-jumps": {
+    "name": "Mega Car Jumps",
+    "href": "games/mega-car-jumps.html",
+    "image": "games/mega-car-jumps/logo.png",
+    "title": "Mega Car Jumps - Play Free Online",
+    "metaDescription": "Play Mega Car Jumps, a fast runner where lane control, reaction timing, and upgrade routes determine your finish.",
+    "metaKeywords": "mega car jumps, mega-car-jumps, racing game, browser game, chromebook game, schplay",
+    "heroParagraph": "Mega Car Jumps is built around momentum and clean pathing. Read incoming gates early, avoid greedy turns, and chain safe boosts to keep speed through the finish.",
+    "instructions": [
+      "In Mega Car Jumps, look one obstacle ahead instead of reacting at the last second. Early positioning gives you better choices and fewer risky corrections.",
+      "Use boosts and jump actions only when they open a clear route. In Mega Car Jumps, wasting movement tools usually costs more than a short slowdown.",
+      "Replay difficult sections to learn the obstacle rhythm. Most Mega Car Jumps levels become predictable once you map the safe lane transitions."
+    ],
+    "sections": [
+      {
+        "heading": "Control your line",
+        "body": "Smooth movement in Mega Car Jumps is faster than sharp zig-zags. Keep your character centered until a clear opening appears."
+      },
+      {
+        "heading": "Choose high-value gates",
+        "body": "When options split, pick the route that strengthens your next ten seconds in Mega Car Jumps, not just the immediate pickup."
+      },
+      {
+        "heading": "Finish strong",
+        "body": "Save one recovery option for the final stretch in Mega Car Jumps. A late correction often decides whether a good run becomes a best run."
+      }
+    ],
+    "plainText": "Mega Car Jumps - Play Free Online\nMega Car Jumps is built around momentum and clean pathing. Read incoming gates early, avoid greedy turns, and chain safe boosts to keep speed through the finish.",
+    "iframeSrc": "mega-car-jumps/index.html"
+  },
+  "money-rush": {
+    "name": "Money Rush",
+    "href": "games/money-rush.html",
+    "image": "games/money-rush/logo.png",
+    "title": "Money Rush - Play Free Online",
+    "metaDescription": "Play Money Rush, a fast runner where lane control, reaction timing, and upgrade routes determine your finish.",
+    "metaKeywords": "money rush, money-rush, racing game, browser game, chromebook game, schplay",
+    "heroParagraph": "Money Rush is built around momentum and clean pathing. Read incoming gates early, avoid greedy turns, and chain safe boosts to keep speed through the finish.",
+    "instructions": [
+      "In Money Rush, look one obstacle ahead instead of reacting at the last second. Early positioning gives you better choices and fewer risky corrections.",
+      "Use boosts and jump actions only when they open a clear route. In Money Rush, wasting movement tools usually costs more than a short slowdown.",
+      "Replay difficult sections to learn the obstacle rhythm. Most Money Rush levels become predictable once you map the safe lane transitions."
+    ],
+    "sections": [
+      {
+        "heading": "Control your line",
+        "body": "Smooth movement in Money Rush is faster than sharp zig-zags. Keep your character centered until a clear opening appears."
+      },
+      {
+        "heading": "Choose high-value gates",
+        "body": "When options split, pick the route that strengthens your next ten seconds in Money Rush, not just the immediate pickup."
+      },
+      {
+        "heading": "Finish strong",
+        "body": "Save one recovery option for the final stretch in Money Rush. A late correction often decides whether a good run becomes a best run."
+      }
+    ],
+    "plainText": "Money Rush - Play Free Online\nMoney Rush is built around momentum and clean pathing. Read incoming gates early, avoid greedy turns, and chain safe boosts to keep speed through the finish.",
+    "iframeSrc": "money-rush/index.html"
+  },
+  "monster-box-3d": {
+    "name": "Monster Box 3D",
+    "href": "games/monster-box-3d.html",
+    "image": "games/monster-box-3d/logo.png",
+    "title": "Monster Box 3D - Play Free Online",
+    "metaDescription": "Play Monster Box 3D, a puzzle-style browser game where sequencing, pattern recognition, and efficient moves lead to high scores.",
+    "metaKeywords": "monster box 3d, monster-box-3d, puzzle game, browser game, chromebook game, schplay",
+    "heroParagraph": "Monster Box 3D is about reading patterns quickly and making high-value moves. Plan a few steps ahead and keep the board state clean for better chains.",
+    "instructions": [
+      "Before committing a move in Monster Box 3D, check how it changes your next two turns. Good planning prevents dead-end board states.",
+      "When the board gets crowded, reset the center and open movement space. In Monster Box 3D, board control usually matters more than one flashy combo.",
+      "Repeat difficult puzzles with one new rule each run, like minimizing moves or preserving key tiles. This builds consistent performance in Monster Box 3D."
+    ],
+    "sections": [
+      {
+        "heading": "Think in sequences",
+        "body": "Strong Monster Box 3D runs come from move chains, not isolated clicks. Track how each action sets up the next solution."
+      },
+      {
+        "heading": "Protect flexible spaces",
+        "body": "Leave room to pivot in Monster Box 3D. Open lanes and free tiles let you recover when the puzzle presents a bad draw."
+      },
+      {
+        "heading": "Optimize, then accelerate",
+        "body": "Start slow to stabilize the board in Monster Box 3D, then increase speed once your pattern is locked in."
+      }
+    ],
+    "plainText": "Monster Box 3D - Play Free Online\nMonster Box 3D is about reading patterns quickly and making high-value moves. Plan a few steps ahead and keep the board state clean for better chains.",
+    "iframeSrc": "monster-box-3d/index.html"
+  },
+  "office-fight": {
+    "name": "Office Fight",
+    "href": "games/office-fight.html",
+    "image": "games/office-fight/logo.png",
+    "title": "Office Fight - Play Free Online",
+    "metaDescription": "Play Office Fight, an action-focused browser game with quick rounds, sharp reactions, and high-pressure encounters.",
+    "metaKeywords": "office fight, office-fight, action game, browser game, chromebook game, schplay",
+    "heroParagraph": "Office Fight rewards fast decisions and clean execution. Keep moving, commit to clear targets, and avoid overextending when the screen gets crowded.",
+    "instructions": [
+      "Treat the first seconds of each round in Office Fight as scouting time. Identify the biggest threat first, then clear space before chasing bonus targets.",
+      "Use movement defensively. In Office Fight, staying mobile reduces incoming pressure and creates safer windows to attack.",
+      "After each attempt, note one recurring mistake and fix it in the next run. Consistent cleanup is the fastest way to improve in Office Fight."
+    ],
+    "sections": [
+      {
+        "heading": "Prioritize threats",
+        "body": "In Office Fight, eliminate enemies or hazards that limit your movement first. Control of space is more valuable than quick points."
+      },
+      {
+        "heading": "Play short, focused rounds",
+        "body": "Use concise sessions in Office Fight to stay sharp. Two clean attempts with review beat long autopilot grinding."
+      },
+      {
+        "heading": "Build reliable habits",
+        "body": "Anchor your Office Fight gameplay around repeatable openers and safe fallbacks so difficult moments stay manageable."
+      }
+    ],
+    "plainText": "Office Fight - Play Free Online\nOffice Fight rewards fast decisions and clean execution. Keep moving, commit to clear targets, and avoid overextending when the screen gets crowded.",
+    "iframeSrc": "office-fight/index.html"
+  },
+  "robot-invasion": {
+    "name": "Robot Invasion",
+    "href": "games/robot-invasion.html",
+    "image": "games/robot-invasion/logo.png",
+    "title": "Robot Invasion - Play Free Online",
+    "metaDescription": "Play Robot Invasion, a browser strategy challenge where smart upgrades, timing, and planning decide each round.",
+    "metaKeywords": "robot invasion, robot-invasion, strategy game, browser game, chromebook game, schplay",
+    "heroParagraph": "Robot Invasion rewards careful decisions over random tapping. Build your setup, read the map state, and adapt your plan as each stage changes pace.",
+    "instructions": [
+      "Start each run in Robot Invasion by checking available upgrades and picking one short-term goal. A clear first objective makes the rest of the run easier to control.",
+      "Track your resources before every major choice. In Robot Invasion, spending too early can stall progress, while saving for one key unlock can swing the whole match.",
+      "If a strategy fails, reset quickly and test one change at a time. Small adjustments in Robot Invasion usually outperform full random rebuilds."
+    ],
+    "sections": [
+      {
+        "heading": "Build order matters",
+        "body": "Early decisions in Robot Invasion shape the whole session. Prioritize stability first, then branch into higher-risk upgrades once your base loop is reliable."
+      },
+      {
+        "heading": "Use checkpoints to evaluate",
+        "body": "After each major wave or objective in Robot Invasion, pause and ask what gave the biggest return. Keep the strong choices and cut the weak ones."
+      },
+      {
+        "heading": "Win with consistency",
+        "body": "The best Robot Invasion runs are repeatable. Focus on patterns you can execute every attempt instead of depending on lucky outcomes."
+      }
+    ],
+    "plainText": "Robot Invasion - Play Free Online\nRobot Invasion rewards careful decisions over random tapping. Build your setup, read the map state, and adapt your plan as each stage changes pace.",
+    "iframeSrc": "robot-invasion/index.html"
+  },
+  "run-rich-3d": {
+    "name": "Run Rich 3D",
+    "href": "games/run-rich-3d.html",
+    "image": "games/run-rich-3d/logo.png",
+    "title": "Run Rich 3D - Play Free Online",
+    "metaDescription": "Play Run Rich 3D, a fast runner where lane control, reaction timing, and upgrade routes determine your finish.",
+    "metaKeywords": "run rich 3d, run-rich-3d, racing game, browser game, chromebook game, schplay",
+    "heroParagraph": "Run Rich 3D is built around momentum and clean pathing. Read incoming gates early, avoid greedy turns, and chain safe boosts to keep speed through the finish.",
+    "instructions": [
+      "In Run Rich 3D, look one obstacle ahead instead of reacting at the last second. Early positioning gives you better choices and fewer risky corrections.",
+      "Use boosts and jump actions only when they open a clear route. In Run Rich 3D, wasting movement tools usually costs more than a short slowdown.",
+      "Replay difficult sections to learn the obstacle rhythm. Most Run Rich 3D levels become predictable once you map the safe lane transitions."
+    ],
+    "sections": [
+      {
+        "heading": "Control your line",
+        "body": "Smooth movement in Run Rich 3D is faster than sharp zig-zags. Keep your character centered until a clear opening appears."
+      },
+      {
+        "heading": "Choose high-value gates",
+        "body": "When options split, pick the route that strengthens your next ten seconds in Run Rich 3D, not just the immediate pickup."
+      },
+      {
+        "heading": "Finish strong",
+        "body": "Save one recovery option for the final stretch in Run Rich 3D. A late correction often decides whether a good run becomes a best run."
+      }
+    ],
+    "plainText": "Run Rich 3D - Play Free Online\nRun Rich 3D is built around momentum and clean pathing. Read incoming gates early, avoid greedy turns, and chain safe boosts to keep speed through the finish.",
+    "iframeSrc": "run-rich-3d/index.html"
+  },
+  "save-p-diddy-from-prison": {
+    "name": "Save P Diddy from Prison",
+    "href": "games/save-p-diddy-from-prison.html",
+    "image": "games/save-p-diddy-from-prison/logo.png",
+    "title": "Save P Diddy from Prison - Play Free Online",
+    "metaDescription": "Play Save P Diddy from Prison online in your browser on Schplay.",
+    "metaKeywords": "save p diddy from prison, save-p-diddy-from-prison, default game, browser game, chromebook game, schplay",
+    "heroParagraph": "Save P Diddy from Prison runs directly in-browser and is ready to play instantly.",
+    "instructions": [
+      "Launch Save P Diddy from Prison and follow the on-screen prompts for your first round.",
+      "Use short attempts to learn the level flow and controls in Save P Diddy from Prison.",
+      "Refine one decision at a time to improve consistency in Save P Diddy from Prison."
+    ],
+    "sections": [
+      {
+        "heading": "Read the level flow",
+        "body": "Understanding pace and timing in Save P Diddy from Prison creates cleaner runs and fewer mistakes."
+      },
+      {
+        "heading": "Keep sessions focused",
+        "body": "Short review cycles help you improve faster in Save P Diddy from Prison than long unfocused attempts."
+      },
+      {
+        "heading": "Lock in repeatable wins",
+        "body": "Use simple, reliable habits in Save P Diddy from Prison so results remain stable across different rounds."
+      }
+    ],
+    "plainText": "Save P Diddy from Prison - Play Free Online\nSave P Diddy from Prison runs directly in-browser and is ready to play instantly.",
+    "iframeSrc": "save-p-diddy-from-prison/index.html"
+  },
+  "seat-jam-3d": {
+    "name": "Seat Jam 3D",
+    "href": "games/seat-jam-3d.html",
+    "image": "games/seat-jam-3d/logo.png",
+    "title": "Seat Jam 3D - Play Free Online",
+    "metaDescription": "Play Seat Jam 3D, a puzzle-style browser game where sequencing, pattern recognition, and efficient moves lead to high scores.",
+    "metaKeywords": "seat jam 3d, seat-jam-3d, puzzle game, browser game, chromebook game, schplay",
+    "heroParagraph": "Seat Jam 3D is about reading patterns quickly and making high-value moves. Plan a few steps ahead and keep the board state clean for better chains.",
+    "instructions": [
+      "Before committing a move in Seat Jam 3D, check how it changes your next two turns. Good planning prevents dead-end board states.",
+      "When the board gets crowded, reset the center and open movement space. In Seat Jam 3D, board control usually matters more than one flashy combo.",
+      "Repeat difficult puzzles with one new rule each run, like minimizing moves or preserving key tiles. This builds consistent performance in Seat Jam 3D."
+    ],
+    "sections": [
+      {
+        "heading": "Think in sequences",
+        "body": "Strong Seat Jam 3D runs come from move chains, not isolated clicks. Track how each action sets up the next solution."
+      },
+      {
+        "heading": "Protect flexible spaces",
+        "body": "Leave room to pivot in Seat Jam 3D. Open lanes and free tiles let you recover when the puzzle presents a bad draw."
+      },
+      {
+        "heading": "Optimize, then accelerate",
+        "body": "Start slow to stabilize the board in Seat Jam 3D, then increase speed once your pattern is locked in."
+      }
+    ],
+    "plainText": "Seat Jam 3D - Play Free Online\nSeat Jam 3D is about reading patterns quickly and making high-value moves. Plan a few steps ahead and keep the board state clean for better chains.",
+    "iframeSrc": "seat-jam-3d/index.html"
+  },
+  "shooting-master": {
+    "name": "Shooting Master",
+    "href": "games/shooting-master.html",
+    "image": "games/shooting-master/logo.png",
+    "title": "Shooting Master - Play Free Online",
+    "metaDescription": "Play Shooting Master, an action-focused browser game with quick rounds, sharp reactions, and high-pressure encounters.",
+    "metaKeywords": "shooting master, shooting-master, action game, browser game, chromebook game, schplay",
+    "heroParagraph": "Shooting Master rewards fast decisions and clean execution. Keep moving, commit to clear targets, and avoid overextending when the screen gets crowded.",
+    "instructions": [
+      "Treat the first seconds of each round in Shooting Master as scouting time. Identify the biggest threat first, then clear space before chasing bonus targets.",
+      "Use movement defensively. In Shooting Master, staying mobile reduces incoming pressure and creates safer windows to attack.",
+      "After each attempt, note one recurring mistake and fix it in the next run. Consistent cleanup is the fastest way to improve in Shooting Master."
+    ],
+    "sections": [
+      {
+        "heading": "Prioritize threats",
+        "body": "In Shooting Master, eliminate enemies or hazards that limit your movement first. Control of space is more valuable than quick points."
+      },
+      {
+        "heading": "Play short, focused rounds",
+        "body": "Use concise sessions in Shooting Master to stay sharp. Two clean attempts with review beat long autopilot grinding."
+      },
+      {
+        "heading": "Build reliable habits",
+        "body": "Anchor your Shooting Master gameplay around repeatable openers and safe fallbacks so difficult moments stay manageable."
+      }
+    ],
+    "plainText": "Shooting Master - Play Free Online\nShooting Master rewards fast decisions and clean execution. Keep moving, commit to clear targets, and avoid overextending when the screen gets crowded.",
+    "iframeSrc": "shooting-master/index.html"
+  },
+  "supermarket-3d": {
+    "name": "Supermarket 3D",
+    "href": "games/supermarket-3d.html",
+    "image": "games/supermarket-3d/logo.png",
+    "title": "Supermarket 3D - Play Free Online",
+    "metaDescription": "Play Supermarket 3D, a browser strategy challenge where smart upgrades, timing, and planning decide each round.",
+    "metaKeywords": "supermarket 3d, supermarket-3d, strategy game, browser game, chromebook game, schplay",
+    "heroParagraph": "Supermarket 3D rewards careful decisions over random tapping. Build your setup, read the map state, and adapt your plan as each stage changes pace.",
+    "instructions": [
+      "Start each run in Supermarket 3D by checking available upgrades and picking one short-term goal. A clear first objective makes the rest of the run easier to control.",
+      "Track your resources before every major choice. In Supermarket 3D, spending too early can stall progress, while saving for one key unlock can swing the whole match.",
+      "If a strategy fails, reset quickly and test one change at a time. Small adjustments in Supermarket 3D usually outperform full random rebuilds."
+    ],
+    "sections": [
+      {
+        "heading": "Build order matters",
+        "body": "Early decisions in Supermarket 3D shape the whole session. Prioritize stability first, then branch into higher-risk upgrades once your base loop is reliable."
+      },
+      {
+        "heading": "Use checkpoints to evaluate",
+        "body": "After each major wave or objective in Supermarket 3D, pause and ask what gave the biggest return. Keep the strong choices and cut the weak ones."
+      },
+      {
+        "heading": "Win with consistency",
+        "body": "The best Supermarket 3D runs are repeatable. Focus on patterns you can execute every attempt instead of depending on lucky outcomes."
+      }
+    ],
+    "plainText": "Supermarket 3D - Play Free Online\nSupermarket 3D rewards careful decisions over random tapping. Build your setup, read the map state, and adapt your plan as each stage changes pace.",
+    "iframeSrc": "supermarket-3d/index.html"
+  },
+  "survive-to-victory": {
+    "name": "Survive to Victory",
+    "href": "games/survive-to-victory.html",
+    "image": "games/survive-to-victory/logo.png",
+    "title": "Survive to Victory - Play Free Online",
+    "metaDescription": "Play Survive to Victory, a browser strategy challenge where smart upgrades, timing, and planning decide each round.",
+    "metaKeywords": "survive to victory, survive-to-victory, strategy game, browser game, chromebook game, schplay",
+    "heroParagraph": "Survive to Victory rewards careful decisions over random tapping. Build your setup, read the map state, and adapt your plan as each stage changes pace.",
+    "instructions": [
+      "Start each run in Survive to Victory by checking available upgrades and picking one short-term goal. A clear first objective makes the rest of the run easier to control.",
+      "Track your resources before every major choice. In Survive to Victory, spending too early can stall progress, while saving for one key unlock can swing the whole match.",
+      "If a strategy fails, reset quickly and test one change at a time. Small adjustments in Survive to Victory usually outperform full random rebuilds."
+    ],
+    "sections": [
+      {
+        "heading": "Build order matters",
+        "body": "Early decisions in Survive to Victory shape the whole session. Prioritize stability first, then branch into higher-risk upgrades once your base loop is reliable."
+      },
+      {
+        "heading": "Use checkpoints to evaluate",
+        "body": "After each major wave or objective in Survive to Victory, pause and ask what gave the biggest return. Keep the strong choices and cut the weak ones."
+      },
+      {
+        "heading": "Win with consistency",
+        "body": "The best Survive to Victory runs are repeatable. Focus on patterns you can execute every attempt instead of depending on lucky outcomes."
+      }
+    ],
+    "plainText": "Survive to Victory - Play Free Online\nSurvive to Victory rewards careful decisions over random tapping. Build your setup, read the map state, and adapt your plan as each stage changes pace.",
+    "iframeSrc": "survive-to-victory/index.html"
+  },
+  "telekinesis-attack": {
+    "name": "Telekinesis Attack",
+    "href": "games/telekinesis-attack.html",
+    "image": "games/telekinesis-attack/logo.png",
+    "title": "Telekinesis Attack - Play Free Online",
+    "metaDescription": "Play Telekinesis Attack, an action-focused browser game with quick rounds, sharp reactions, and high-pressure encounters.",
+    "metaKeywords": "telekinesis attack, telekinesis-attack, action game, browser game, chromebook game, schplay",
+    "heroParagraph": "Telekinesis Attack rewards fast decisions and clean execution. Keep moving, commit to clear targets, and avoid overextending when the screen gets crowded.",
+    "instructions": [
+      "Treat the first seconds of each round in Telekinesis Attack as scouting time. Identify the biggest threat first, then clear space before chasing bonus targets.",
+      "Use movement defensively. In Telekinesis Attack, staying mobile reduces incoming pressure and creates safer windows to attack.",
+      "After each attempt, note one recurring mistake and fix it in the next run. Consistent cleanup is the fastest way to improve in Telekinesis Attack."
+    ],
+    "sections": [
+      {
+        "heading": "Prioritize threats",
+        "body": "In Telekinesis Attack, eliminate enemies or hazards that limit your movement first. Control of space is more valuable than quick points."
+      },
+      {
+        "heading": "Play short, focused rounds",
+        "body": "Use concise sessions in Telekinesis Attack to stay sharp. Two clean attempts with review beat long autopilot grinding."
+      },
+      {
+        "heading": "Build reliable habits",
+        "body": "Anchor your Telekinesis Attack gameplay around repeatable openers and safe fallbacks so difficult moments stay manageable."
+      }
+    ],
+    "plainText": "Telekinesis Attack - Play Free Online\nTelekinesis Attack rewards fast decisions and clean execution. Keep moving, commit to clear targets, and avoid overextending when the screen gets crowded.",
+    "iframeSrc": "telekinesis-attack/index.html"
+  },
+  "telekinesis-car": {
+    "name": "Telekinesis Car",
+    "href": "games/telekinesis-car.html",
+    "image": "games/telekinesis-car/logo.png",
+    "title": "Telekinesis Car - Play Free Online",
+    "metaDescription": "Play Telekinesis Car, a fast runner where lane control, reaction timing, and upgrade routes determine your finish.",
+    "metaKeywords": "telekinesis car, telekinesis-car, racing game, browser game, chromebook game, schplay",
+    "heroParagraph": "Telekinesis Car is built around momentum and clean pathing. Read incoming gates early, avoid greedy turns, and chain safe boosts to keep speed through the finish.",
+    "instructions": [
+      "In Telekinesis Car, look one obstacle ahead instead of reacting at the last second. Early positioning gives you better choices and fewer risky corrections.",
+      "Use boosts and jump actions only when they open a clear route. In Telekinesis Car, wasting movement tools usually costs more than a short slowdown.",
+      "Replay difficult sections to learn the obstacle rhythm. Most Telekinesis Car levels become predictable once you map the safe lane transitions."
+    ],
+    "sections": [
+      {
+        "heading": "Control your line",
+        "body": "Smooth movement in Telekinesis Car is faster than sharp zig-zags. Keep your character centered until a clear opening appears."
+      },
+      {
+        "heading": "Choose high-value gates",
+        "body": "When options split, pick the route that strengthens your next ten seconds in Telekinesis Car, not just the immediate pickup."
+      },
+      {
+        "heading": "Finish strong",
+        "body": "Save one recovery option for the final stretch in Telekinesis Car. A late correction often decides whether a good run becomes a best run."
+      }
+    ],
+    "plainText": "Telekinesis Car - Play Free Online\nTelekinesis Car is built around momentum and clean pathing. Read incoming gates early, avoid greedy turns, and chain safe boosts to keep speed through the finish.",
+    "iframeSrc": "telekinesis-car/index.html"
+  },
+  "telekinesis-drive": {
+    "name": "Telekinesis Drive",
+    "href": "games/telekinesis-drive.html",
+    "image": "games/telekinesis-drive/logo.png",
+    "title": "Telekinesis Drive - Play Free Online",
+    "metaDescription": "Play Telekinesis Drive, a fast runner where lane control, reaction timing, and upgrade routes determine your finish.",
+    "metaKeywords": "telekinesis drive, telekinesis-drive, racing game, browser game, chromebook game, schplay",
+    "heroParagraph": "Telekinesis Drive is built around momentum and clean pathing. Read incoming gates early, avoid greedy turns, and chain safe boosts to keep speed through the finish.",
+    "instructions": [
+      "In Telekinesis Drive, look one obstacle ahead instead of reacting at the last second. Early positioning gives you better choices and fewer risky corrections.",
+      "Use boosts and jump actions only when they open a clear route. In Telekinesis Drive, wasting movement tools usually costs more than a short slowdown.",
+      "Replay difficult sections to learn the obstacle rhythm. Most Telekinesis Drive levels become predictable once you map the safe lane transitions."
+    ],
+    "sections": [
+      {
+        "heading": "Control your line",
+        "body": "Smooth movement in Telekinesis Drive is faster than sharp zig-zags. Keep your character centered until a clear opening appears."
+      },
+      {
+        "heading": "Choose high-value gates",
+        "body": "When options split, pick the route that strengthens your next ten seconds in Telekinesis Drive, not just the immediate pickup."
+      },
+      {
+        "heading": "Finish strong",
+        "body": "Save one recovery option for the final stretch in Telekinesis Drive. A late correction often decides whether a good run becomes a best run."
+      }
+    ],
+    "plainText": "Telekinesis Drive - Play Free Online\nTelekinesis Drive is built around momentum and clean pathing. Read incoming gates early, avoid greedy turns, and chain safe boosts to keep speed through the finish.",
+    "iframeSrc": "telekinesis-drive/index.html"
+  },
+  "telekinesis": {
+    "name": "Telekinesis",
+    "href": "games/telekinesis.html",
+    "image": "games/telekinesis/logo.png",
+    "title": "Telekinesis - Play Free Online",
+    "metaDescription": "Play Telekinesis, an action-focused browser game with quick rounds, sharp reactions, and high-pressure encounters.",
+    "metaKeywords": "telekinesis, telekinesis, action game, browser game, chromebook game, schplay",
+    "heroParagraph": "Telekinesis rewards fast decisions and clean execution. Keep moving, commit to clear targets, and avoid overextending when the screen gets crowded.",
+    "instructions": [
+      "Treat the first seconds of each round in Telekinesis as scouting time. Identify the biggest threat first, then clear space before chasing bonus targets.",
+      "Use movement defensively. In Telekinesis, staying mobile reduces incoming pressure and creates safer windows to attack.",
+      "After each attempt, note one recurring mistake and fix it in the next run. Consistent cleanup is the fastest way to improve in Telekinesis."
+    ],
+    "sections": [
+      {
+        "heading": "Prioritize threats",
+        "body": "In Telekinesis, eliminate enemies or hazards that limit your movement first. Control of space is more valuable than quick points."
+      },
+      {
+        "heading": "Play short, focused rounds",
+        "body": "Use concise sessions in Telekinesis to stay sharp. Two clean attempts with review beat long autopilot grinding."
+      },
+      {
+        "heading": "Build reliable habits",
+        "body": "Anchor your Telekinesis gameplay around repeatable openers and safe fallbacks so difficult moments stay manageable."
+      }
+    ],
+    "plainText": "Telekinesis - Play Free Online\nTelekinesis rewards fast decisions and clean execution. Keep moving, commit to clear targets, and avoid overextending when the screen gets crowded.",
+    "iframeSrc": "telekinesis/index.html"
+  },
+  "triple-match-3d": {
+    "name": "Triple Match 3D",
+    "href": "games/triple-match-3d.html",
+    "image": "games/triple-match-3d/logo.png",
+    "title": "Triple Match 3D - Play Free Online",
+    "metaDescription": "Play Triple Match 3D, a puzzle-style browser game where sequencing, pattern recognition, and efficient moves lead to high scores.",
+    "metaKeywords": "triple match 3d, triple-match-3d, puzzle game, browser game, chromebook game, schplay",
+    "heroParagraph": "Triple Match 3D is about reading patterns quickly and making high-value moves. Plan a few steps ahead and keep the board state clean for better chains.",
+    "instructions": [
+      "Before committing a move in Triple Match 3D, check how it changes your next two turns. Good planning prevents dead-end board states.",
+      "When the board gets crowded, reset the center and open movement space. In Triple Match 3D, board control usually matters more than one flashy combo.",
+      "Repeat difficult puzzles with one new rule each run, like minimizing moves or preserving key tiles. This builds consistent performance in Triple Match 3D."
+    ],
+    "sections": [
+      {
+        "heading": "Think in sequences",
+        "body": "Strong Triple Match 3D runs come from move chains, not isolated clicks. Track how each action sets up the next solution."
+      },
+      {
+        "heading": "Protect flexible spaces",
+        "body": "Leave room to pivot in Triple Match 3D. Open lanes and free tiles let you recover when the puzzle presents a bad draw."
+      },
+      {
+        "heading": "Optimize, then accelerate",
+        "body": "Start slow to stabilize the board in Triple Match 3D, then increase speed once your pattern is locked in."
+      }
+    ],
+    "plainText": "Triple Match 3D - Play Free Online\nTriple Match 3D is about reading patterns quickly and making high-value moves. Plan a few steps ahead and keep the board state clean for better chains.",
+    "iframeSrc": "triple-match-3d/index.html"
+  },
+  "tug-of-war-with-cars": {
+    "name": "Tug of War with Cars",
+    "href": "games/tug-of-war-with-cars.html",
+    "image": "games/tug-of-war-with-cars/logo.png",
+    "title": "Tug of War with Cars - Play Free Online",
+    "metaDescription": "Play Tug of War with Cars, a browser strategy challenge where smart upgrades, timing, and planning decide each round.",
+    "metaKeywords": "tug of war with cars, tug-of-war-with-cars, strategy game, browser game, chromebook game, schplay",
+    "heroParagraph": "Tug of War with Cars rewards careful decisions over random tapping. Build your setup, read the map state, and adapt your plan as each stage changes pace.",
+    "instructions": [
+      "Start each run in Tug of War with Cars by checking available upgrades and picking one short-term goal. A clear first objective makes the rest of the run easier to control.",
+      "Track your resources before every major choice. In Tug of War with Cars, spending too early can stall progress, while saving for one key unlock can swing the whole match.",
+      "If a strategy fails, reset quickly and test one change at a time. Small adjustments in Tug of War with Cars usually outperform full random rebuilds."
+    ],
+    "sections": [
+      {
+        "heading": "Build order matters",
+        "body": "Early decisions in Tug of War with Cars shape the whole session. Prioritize stability first, then branch into higher-risk upgrades once your base loop is reliable."
+      },
+      {
+        "heading": "Use checkpoints to evaluate",
+        "body": "After each major wave or objective in Tug of War with Cars, pause and ask what gave the biggest return. Keep the strong choices and cut the weak ones."
+      },
+      {
+        "heading": "Win with consistency",
+        "body": "The best Tug of War with Cars runs are repeatable. Focus on patterns you can execute every attempt instead of depending on lucky outcomes."
+      }
+    ],
+    "plainText": "Tug of War with Cars - Play Free Online\nTug of War with Cars rewards careful decisions over random tapping. Build your setup, read the map state, and adapt your plan as each stage changes pace.",
+    "iframeSrc": "tug-of-war-with-cars/index.html"
+  },
+  "twerk-race-3d": {
+    "name": "Twerk Race 3D",
+    "href": "games/twerk-race-3d.html",
+    "image": "games/twerk-race-3d/logo.png",
+    "title": "Twerk Race 3D - Play Free Online",
+    "metaDescription": "Play Twerk Race 3D, a fast runner where lane control, reaction timing, and upgrade routes determine your finish.",
+    "metaKeywords": "twerk race 3d, twerk-race-3d, racing game, browser game, chromebook game, schplay",
+    "heroParagraph": "Twerk Race 3D is built around momentum and clean pathing. Read incoming gates early, avoid greedy turns, and chain safe boosts to keep speed through the finish.",
+    "instructions": [
+      "In Twerk Race 3D, look one obstacle ahead instead of reacting at the last second. Early positioning gives you better choices and fewer risky corrections.",
+      "Use boosts and jump actions only when they open a clear route. In Twerk Race 3D, wasting movement tools usually costs more than a short slowdown.",
+      "Replay difficult sections to learn the obstacle rhythm. Most Twerk Race 3D levels become predictable once you map the safe lane transitions."
+    ],
+    "sections": [
+      {
+        "heading": "Control your line",
+        "body": "Smooth movement in Twerk Race 3D is faster than sharp zig-zags. Keep your character centered until a clear opening appears."
+      },
+      {
+        "heading": "Choose high-value gates",
+        "body": "When options split, pick the route that strengthens your next ten seconds in Twerk Race 3D, not just the immediate pickup."
+      },
+      {
+        "heading": "Finish strong",
+        "body": "Save one recovery option for the final stretch in Twerk Race 3D. A late correction often decides whether a good run becomes a best run."
+      }
+    ],
+    "plainText": "Twerk Race 3D - Play Free Online\nTwerk Race 3D is built around momentum and clean pathing. Read incoming gates early, avoid greedy turns, and chain safe boosts to keep speed through the finish.",
+    "iframeSrc": "twerk-race-3d/index.html"
+  },
+  "twisted-rope-3d": {
+    "name": "Twisted Rope 3D",
+    "href": "games/twisted-rope-3d.html",
+    "image": "games/twisted-rope-3d/logo.png",
+    "title": "Twisted Rope 3D - Play Free Online",
+    "metaDescription": "Play Twisted Rope 3D, a puzzle-style browser game where sequencing, pattern recognition, and efficient moves lead to high scores.",
+    "metaKeywords": "twisted rope 3d, twisted-rope-3d, puzzle game, browser game, chromebook game, schplay",
+    "heroParagraph": "Twisted Rope 3D is about reading patterns quickly and making high-value moves. Plan a few steps ahead and keep the board state clean for better chains.",
+    "instructions": [
+      "Before committing a move in Twisted Rope 3D, check how it changes your next two turns. Good planning prevents dead-end board states.",
+      "When the board gets crowded, reset the center and open movement space. In Twisted Rope 3D, board control usually matters more than one flashy combo.",
+      "Repeat difficult puzzles with one new rule each run, like minimizing moves or preserving key tiles. This builds consistent performance in Twisted Rope 3D."
+    ],
+    "sections": [
+      {
+        "heading": "Think in sequences",
+        "body": "Strong Twisted Rope 3D runs come from move chains, not isolated clicks. Track how each action sets up the next solution."
+      },
+      {
+        "heading": "Protect flexible spaces",
+        "body": "Leave room to pivot in Twisted Rope 3D. Open lanes and free tiles let you recover when the puzzle presents a bad draw."
+      },
+      {
+        "heading": "Optimize, then accelerate",
+        "body": "Start slow to stabilize the board in Twisted Rope 3D, then increase speed once your pattern is locked in."
+      }
+    ],
+    "plainText": "Twisted Rope 3D - Play Free Online\nTwisted Rope 3D is about reading patterns quickly and making high-value moves. Plan a few steps ahead and keep the board state clean for better chains.",
+    "iframeSrc": "twisted-rope-3d/index.html"
+  },
+  "wall-crawler": {
+    "name": "Wall Crawler",
+    "href": "games/wall-crawler.html",
+    "image": "games/wall-crawler/logo.png",
+    "title": "Wall Crawler - Play Free Online",
+    "metaDescription": "Play Wall Crawler, a puzzle-style browser game where sequencing, pattern recognition, and efficient moves lead to high scores.",
+    "metaKeywords": "wall crawler, wall-crawler, puzzle game, browser game, chromebook game, schplay",
+    "heroParagraph": "Wall Crawler is about reading patterns quickly and making high-value moves. Plan a few steps ahead and keep the board state clean for better chains.",
+    "instructions": [
+      "Before committing a move in Wall Crawler, check how it changes your next two turns. Good planning prevents dead-end board states.",
+      "When the board gets crowded, reset the center and open movement space. In Wall Crawler, board control usually matters more than one flashy combo.",
+      "Repeat difficult puzzles with one new rule each run, like minimizing moves or preserving key tiles. This builds consistent performance in Wall Crawler."
+    ],
+    "sections": [
+      {
+        "heading": "Think in sequences",
+        "body": "Strong Wall Crawler runs come from move chains, not isolated clicks. Track how each action sets up the next solution."
+      },
+      {
+        "heading": "Protect flexible spaces",
+        "body": "Leave room to pivot in Wall Crawler. Open lanes and free tiles let you recover when the puzzle presents a bad draw."
+      },
+      {
+        "heading": "Optimize, then accelerate",
+        "body": "Start slow to stabilize the board in Wall Crawler, then increase speed once your pattern is locked in."
+      }
+    ],
+    "plainText": "Wall Crawler - Play Free Online\nWall Crawler is about reading patterns quickly and making high-value moves. Plan a few steps ahead and keep the board state clean for better chains.",
+    "iframeSrc": "wall-crawler/index.html"
+  },
+  "war-regions": {
+    "name": "War Regions",
+    "href": "games/war-regions.html",
+    "image": "games/war-regions/logo.png",
+    "title": "War Regions - Play Free Online",
+    "metaDescription": "Play War Regions, a browser strategy challenge where smart upgrades, timing, and planning decide each round.",
+    "metaKeywords": "war regions, war-regions, strategy game, browser game, chromebook game, schplay",
+    "heroParagraph": "War Regions rewards careful decisions over random tapping. Build your setup, read the map state, and adapt your plan as each stage changes pace.",
+    "instructions": [
+      "Start each run in War Regions by checking available upgrades and picking one short-term goal. A clear first objective makes the rest of the run easier to control.",
+      "Track your resources before every major choice. In War Regions, spending too early can stall progress, while saving for one key unlock can swing the whole match.",
+      "If a strategy fails, reset quickly and test one change at a time. Small adjustments in War Regions usually outperform full random rebuilds."
+    ],
+    "sections": [
+      {
+        "heading": "Build order matters",
+        "body": "Early decisions in War Regions shape the whole session. Prioritize stability first, then branch into higher-risk upgrades once your base loop is reliable."
+      },
+      {
+        "heading": "Use checkpoints to evaluate",
+        "body": "After each major wave or objective in War Regions, pause and ask what gave the biggest return. Keep the strong choices and cut the weak ones."
+      },
+      {
+        "heading": "Win with consistency",
+        "body": "The best War Regions runs are repeatable. Focus on patterns you can execute every attempt instead of depending on lucky outcomes."
+      }
+    ],
+    "plainText": "War Regions - Play Free Online\nWar Regions rewards careful decisions over random tapping. Build your setup, read the map state, and adapt your plan as each stage changes pace.",
+    "iframeSrc": "war-regions/index.html"
+  },
+  "weapon-craft-run": {
+    "name": "Weapon Craft Run",
+    "href": "games/weapon-craft-run.html",
+    "image": "games/weapon-craft-run/logo.png",
+    "title": "Weapon Craft Run - Play Free Online",
+    "metaDescription": "Play Weapon Craft Run, a fast runner where lane control, reaction timing, and upgrade routes determine your finish.",
+    "metaKeywords": "weapon craft run, weapon-craft-run, racing game, browser game, chromebook game, schplay",
+    "heroParagraph": "Weapon Craft Run is built around momentum and clean pathing. Read incoming gates early, avoid greedy turns, and chain safe boosts to keep speed through the finish.",
+    "instructions": [
+      "In Weapon Craft Run, look one obstacle ahead instead of reacting at the last second. Early positioning gives you better choices and fewer risky corrections.",
+      "Use boosts and jump actions only when they open a clear route. In Weapon Craft Run, wasting movement tools usually costs more than a short slowdown.",
+      "Replay difficult sections to learn the obstacle rhythm. Most Weapon Craft Run levels become predictable once you map the safe lane transitions."
+    ],
+    "sections": [
+      {
+        "heading": "Control your line",
+        "body": "Smooth movement in Weapon Craft Run is faster than sharp zig-zags. Keep your character centered until a clear opening appears."
+      },
+      {
+        "heading": "Choose high-value gates",
+        "body": "When options split, pick the route that strengthens your next ten seconds in Weapon Craft Run, not just the immediate pickup."
+      },
+      {
+        "heading": "Finish strong",
+        "body": "Save one recovery option for the final stretch in Weapon Craft Run. A late correction often decides whether a good run becomes a best run."
+      }
+    ],
+    "plainText": "Weapon Craft Run - Play Free Online\nWeapon Craft Run is built around momentum and clean pathing. Read incoming gates early, avoid greedy turns, and chain safe boosts to keep speed through the finish.",
+    "iframeSrc": "weapon-craft-run/index.html"
+  },
+  "weapon-upgrade-rush": {
+    "name": "Weapon Upgrade Rush",
+    "href": "games/weapon-upgrade-rush.html",
+    "image": "games/weapon-upgrade-rush/logo.png",
+    "title": "Weapon Upgrade Rush - Play Free Online",
+    "metaDescription": "Play Weapon Upgrade Rush, a fast runner where lane control, reaction timing, and upgrade routes determine your finish.",
+    "metaKeywords": "weapon upgrade rush, weapon-upgrade-rush, racing game, browser game, chromebook game, schplay",
+    "heroParagraph": "Weapon Upgrade Rush is built around momentum and clean pathing. Read incoming gates early, avoid greedy turns, and chain safe boosts to keep speed through the finish.",
+    "instructions": [
+      "In Weapon Upgrade Rush, look one obstacle ahead instead of reacting at the last second. Early positioning gives you better choices and fewer risky corrections.",
+      "Use boosts and jump actions only when they open a clear route. In Weapon Upgrade Rush, wasting movement tools usually costs more than a short slowdown.",
+      "Replay difficult sections to learn the obstacle rhythm. Most Weapon Upgrade Rush levels become predictable once you map the safe lane transitions."
+    ],
+    "sections": [
+      {
+        "heading": "Control your line",
+        "body": "Smooth movement in Weapon Upgrade Rush is faster than sharp zig-zags. Keep your character centered until a clear opening appears."
+      },
+      {
+        "heading": "Choose high-value gates",
+        "body": "When options split, pick the route that strengthens your next ten seconds in Weapon Upgrade Rush, not just the immediate pickup."
+      },
+      {
+        "heading": "Finish strong",
+        "body": "Save one recovery option for the final stretch in Weapon Upgrade Rush. A late correction often decides whether a good run becomes a best run."
+      }
+    ],
+    "plainText": "Weapon Upgrade Rush - Play Free Online\nWeapon Upgrade Rush is built around momentum and clean pathing. Read incoming gates early, avoid greedy turns, and chain safe boosts to keep speed through the finish.",
+    "iframeSrc": "weapon-upgrade-rush/index.html"
+  },
+  "wheel-scale": {
+    "name": "Wheel Scale",
+    "href": "games/wheel-scale.html",
+    "image": "games/wheel-scale/logo.png",
+    "title": "Wheel Scale - Play Free Online",
+    "metaDescription": "Play Wheel Scale, a fast runner where lane control, reaction timing, and upgrade routes determine your finish.",
+    "metaKeywords": "wheel scale, wheel-scale, racing game, browser game, chromebook game, schplay",
+    "heroParagraph": "Wheel Scale is built around momentum and clean pathing. Read incoming gates early, avoid greedy turns, and chain safe boosts to keep speed through the finish.",
+    "instructions": [
+      "In Wheel Scale, look one obstacle ahead instead of reacting at the last second. Early positioning gives you better choices and fewer risky corrections.",
+      "Use boosts and jump actions only when they open a clear route. In Wheel Scale, wasting movement tools usually costs more than a short slowdown.",
+      "Replay difficult sections to learn the obstacle rhythm. Most Wheel Scale levels become predictable once you map the safe lane transitions."
+    ],
+    "sections": [
+      {
+        "heading": "Control your line",
+        "body": "Smooth movement in Wheel Scale is faster than sharp zig-zags. Keep your character centered until a clear opening appears."
+      },
+      {
+        "heading": "Choose high-value gates",
+        "body": "When options split, pick the route that strengthens your next ten seconds in Wheel Scale, not just the immediate pickup."
+      },
+      {
+        "heading": "Finish strong",
+        "body": "Save one recovery option for the final stretch in Wheel Scale. A late correction often decides whether a good run becomes a best run."
+      }
+    ],
+    "plainText": "Wheel Scale - Play Free Online\nWheel Scale is built around momentum and clean pathing. Read incoming gates early, avoid greedy turns, and chain safe boosts to keep speed through the finish.",
+    "iframeSrc": "wheel-scale/index.html"
   }
 }

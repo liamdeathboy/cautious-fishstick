@@ -26,8 +26,16 @@ const requestedSlugs = process.argv.slice(2).map((arg) => arg.replace(/\.html$/i
 const SITE_KEYWORDS = 'schplay, cool, math, maths, game, games, puzzle, puzzles, free, online, strategy, skill, shapes, colors, logic, memory, board, read, reading, spell, spelling, geography, science, learning fun, fun activities for kids, learning games, education games';
 const TEACHER_TAGLINE = 'This classroom-friendly activity is perfect for teachers and learning fun.';
 
-function buildKeywords() {
-  return SITE_KEYWORDS;
+function buildKeywords(data = {}, override = {}) {
+  const parts = [];
+  if (override && override.metaKeywords) {
+    parts.push(override.metaKeywords);
+  }
+  if (data && data.metaKeywords) {
+    parts.push(data.metaKeywords);
+  }
+  parts.push(SITE_KEYWORDS);
+  return normalizeKeywords(parts.join(', '));
 }
 
 const FLASH_PATH_OVERRIDES = {
@@ -368,8 +376,22 @@ function inferControls(slug, data, override) {
   return controls;
 }
 
-function normalizeKeywords() {
-  return SITE_KEYWORDS;
+function normalizeKeywords(value = '') {
+  const raw = value || SITE_KEYWORDS;
+  const seen = new Set();
+  const items = raw
+    .split(',')
+    .map((keyword) => keyword.trim())
+    .filter(Boolean)
+    .filter((keyword) => {
+      const key = keyword.toLowerCase();
+      if (seen.has(key)) {
+        return false;
+      }
+      seen.add(key);
+      return true;
+    });
+  return items.join(', ');
 }
 
 function sanitizeCopy(value = '') {
@@ -1535,7 +1557,7 @@ function renderPage(slug, data, override = {}) {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="robots" content="index, follow">
     <meta name="description" content="${escapeHtml(metaDescription)}">
-    <meta name="keywords" content="${escapeHtml(normalizeKeywords())}">
+    <meta name="keywords" content="${escapeHtml(keywords)}">
     <meta name="theme-color" content="#0f1a2a">
     <title>${escapeHtml(seoTitle)}</title>
     <link rel="canonical" href="${escapeHtml(canonical)}">

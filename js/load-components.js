@@ -1,5 +1,6 @@
 const loadComponentsScript = document.currentScript || document.querySelector('script[src*="load-components.js"]');
 const componentRoot = loadComponentsScript && loadComponentsScript.dataset.componentRoot ? loadComponentsScript.dataset.componentRoot : '';
+const COMPONENT_VERSION = '2026-04-01-mobile-1';
 
 const resolveAssetPath = (path) => {
     if (!path) {
@@ -26,6 +27,49 @@ const resolveWithRoot = (path) => {
 window.SCHPLAY_RESOLVE_ASSET_PATH = resolveWithRoot;
 
 document.addEventListener("DOMContentLoaded", function() {
+    const buildNavbarFallback = () => `
+<header class="site-header">
+  <div class="header-container">
+    <a class="logo" data-root-href="/">
+      <img data-root-src="images/logo.webp" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==" data-src="images/logo.webp" loading="lazy" decoding="async" alt="schplay Logo">
+    </a>
+    <button class="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="false">
+      <span class="sr-only">Menu</span>
+    </button>
+    <nav class="header-nav" id="primary-navigation">
+      <ul class="nav-list">
+        <li class="nav-item"><a class="nav-link" data-root-href="strategy.html" data-category="strategy" data-view-all="strategy.html" aria-expanded="false" aria-haspopup="true"><span>Strategy</span><svg class="nav-caret" viewBox="0 0 12 12" aria-hidden="true" focusable="false"><path d="M2.25 4.5L6 8.25L9.75 4.5" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg></a></li>
+        <li class="nav-item"><a class="nav-link" data-root-href="skill.html" data-category="skill" data-view-all="skill.html" aria-expanded="false" aria-haspopup="true"><span>Skill</span><svg class="nav-caret" viewBox="0 0 12 12" aria-hidden="true" focusable="false"><path d="M2.25 4.5L6 8.25L9.75 4.5" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg></a></li>
+        <li class="nav-item"><a class="nav-link" data-root-href="numbers.html" data-category="numbers" data-view-all="numbers.html" aria-expanded="false" aria-haspopup="true"><span>Numbers</span><svg class="nav-caret" viewBox="0 0 12 12" aria-hidden="true" focusable="false"><path d="M2.25 4.5L6 8.25L9.75 4.5" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg></a></li>
+        <li class="nav-item"><a class="nav-link" data-root-href="classic.html" data-category="classic" data-view-all="classic.html" aria-expanded="false" aria-haspopup="true"><span>Classic</span><svg class="nav-caret" viewBox="0 0 12 12" aria-hidden="true" focusable="false"><path d="M2.25 4.5L6 8.25L9.75 4.5" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg></a></li>
+        <li class="nav-item"><a class="nav-link" data-root-href="2player.html" data-category="twoPlayer" data-view-all="2player.html" aria-expanded="false" aria-haspopup="true"><span>2Player</span><svg class="nav-caret" viewBox="0 0 12 12" aria-hidden="true" focusable="false"><path d="M2.25 4.5L6 8.25L9.75 4.5" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg></a></li>
+        <li class="nav-item"><a class="nav-link" data-root-href="sports.html" data-category="sports" data-view-all="sports.html" aria-expanded="false" aria-haspopup="true"><span>Sports</span><svg class="nav-caret" viewBox="0 0 12 12" aria-hidden="true" focusable="false"><path d="M2.25 4.5L6 8.25L9.75 4.5" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg></a></li>
+        <li class="nav-item"><a class="nav-link" data-root-href="logic.html" data-category="logic" data-view-all="logic.html" aria-expanded="false" aria-haspopup="true"><span>Logic</span><svg class="nav-caret" viewBox="0 0 12 12" aria-hidden="true" focusable="false"><path d="M2.25 4.5L6 8.25L9.75 4.5" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg></a></li>
+        <li class="nav-item"><a class="nav-link" data-root-href="multiplayer.html" data-category="multiplayer" data-view-all="multiplayer.html" aria-expanded="false" aria-haspopup="true"><span>Multiplayer</span><svg class="nav-caret" viewBox="0 0 12 12" aria-hidden="true" focusable="false"><path d="M2.25 4.5L6 8.25L9.75 4.5" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg></a></li>
+        <li class="nav-item"><a class="nav-link" data-root-href="allgames.html"><span>All Games</span></a></li>
+        <li class="nav-item"><a class="nav-link" data-root-href="https://blog.schplay.com"><span>Blog</span></a></li>
+      </ul>
+    </nav>
+    <div class="header-right">
+      <div class="search-container" role="search">
+        <svg class="search-icon" viewBox="0 0 20 20" aria-hidden="true" focusable="false"><circle cx="8.5" cy="8.5" r="5.5" fill="none" stroke="currentColor" stroke-width="1.8"></circle><path d="M12.5 12.5L17 17" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"></path></svg>
+        <input type="search" id="searchInput" placeholder="Search games" aria-label="Search games" aria-expanded="false" aria-haspopup="listbox">
+      </div>
+    </div>
+  </div>
+</header>`;
+
+    const ensureNavbarMarkup = (markup) => {
+        const probe = document.createElement('div');
+        probe.innerHTML = markup;
+        const navItems = probe.querySelectorAll('.nav-list .nav-item').length;
+        const hasSearch = !!probe.querySelector('#searchInput');
+        if (navItems < 10 || !hasSearch) {
+            return buildNavbarFallback();
+        }
+        return markup;
+    };
+
     const loadScriptOnce = (id, src, onLoad) => {
         let script = document.getElementById(id);
         if (script) {
@@ -274,42 +318,90 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     };
 
-    // Load navbar
-    fetch(resolveAssetPath('navbar.html'))
-        .then(response => response.text())
-        .then(data => {
-            document.getElementById("navbar-placeholder").innerHTML = data;
+    const navbarContainer = document.getElementById("navbar-placeholder");
+    if (navbarContainer) {
+        // Load navbar
+        fetch(resolveAssetPath('navbar.html') + '?v=' + encodeURIComponent(COMPONENT_VERSION), { cache: 'no-store' })
+            .then(response => response.text())
+            .then(data => {
+                navbarContainer.innerHTML = ensureNavbarMarkup(data);
 
-            applyRootPaths(document.getElementById('navbar-placeholder'));
-            registerLazyMedia(document.getElementById('navbar-placeholder'));
+                applyRootPaths(navbarContainer);
+                registerLazyMedia(navbarContainer);
 
-            ensureGameData();
-            ensureIncognito();
-            loadScriptOnce('nav-games-script', 'js/nav-games.js');
+                ensureGameData();
+                ensureIncognito();
+                loadScriptOnce('nav-games-script', 'js/nav-games.js');
 
-            const mobileNavToggle = document.querySelector(".mobile-nav-toggle");
-            const primaryNav = document.getElementById("primary-navigation");
+                const mobileNavToggle = document.querySelector(".mobile-nav-toggle");
+                const primaryNav = document.getElementById("primary-navigation");
 
-            if (mobileNavToggle && primaryNav) {
-                mobileNavToggle.addEventListener("click", () => {
-                    primaryNav.classList.toggle("active");
-                    const isExpanded = primaryNav.classList.contains("active");
-                    mobileNavToggle.setAttribute("aria-expanded", isExpanded);
-                });
-            }
+                if (mobileNavToggle && primaryNav) {
+                    const closeMobileNav = () => {
+                        primaryNav.classList.remove("active");
+                        mobileNavToggle.setAttribute("aria-expanded", "false");
+                    };
 
-            notifyNavigationReady();
-        });
+                    mobileNavToggle.addEventListener("click", () => {
+                        primaryNav.classList.toggle("active");
+                        const isExpanded = primaryNav.classList.contains("active");
+                        mobileNavToggle.setAttribute("aria-expanded", isExpanded);
+                    });
 
-    // Load footer
-    fetch(resolveAssetPath('footer.html'))
-        .then(response => response.text())
-        .then(data => {
-            const footerContainer = document.getElementById("footer-placeholder");
-            footerContainer.innerHTML = data;
-            applyRootPaths(footerContainer);
-            registerLazyMedia(footerContainer);
-        });
+                    primaryNav.querySelectorAll("a").forEach((link) => {
+                        link.addEventListener("click", () => {
+                            if (window.matchMedia("(max-width: 960px)").matches) {
+                                closeMobileNav();
+                            }
+                        });
+                    });
+
+                    document.addEventListener("click", (event) => {
+                        if (!window.matchMedia("(max-width: 960px)").matches) {
+                            return;
+                        }
+                        if (!primaryNav.classList.contains("active")) {
+                            return;
+                        }
+                        if (primaryNav.contains(event.target) || mobileNavToggle.contains(event.target)) {
+                            return;
+                        }
+                        closeMobileNav();
+                    });
+
+                    document.addEventListener("keydown", (event) => {
+                        if (event.key === "Escape") {
+                            closeMobileNav();
+                        }
+                    });
+                }
+
+                notifyNavigationReady();
+            })
+            .catch(() => {
+                navbarContainer.innerHTML = buildNavbarFallback();
+                applyRootPaths(navbarContainer);
+                registerLazyMedia(navbarContainer);
+                ensureGameData();
+                ensureIncognito();
+                loadScriptOnce('nav-games-script', 'js/nav-games.js');
+                notifyNavigationReady();
+            });
+    } else {
+        notifyNavigationReady();
+    }
+
+    const footerContainer = document.getElementById("footer-placeholder");
+    if (footerContainer) {
+        // Load footer
+        fetch(resolveAssetPath('footer.html'))
+            .then(response => response.text())
+            .then(data => {
+                footerContainer.innerHTML = data;
+                applyRootPaths(footerContainer);
+                registerLazyMedia(footerContainer);
+            });
+    }
 
     // Run lazy registration on initial content
     registerLazyMedia(document);

@@ -408,6 +408,78 @@ function gtag_report_conversion(url) {
         flex-shrink: 0;
       }
 
+      /* Compact top dashboard cards on homepage */
+      .compact-home-grid {
+        gap: 10px;
+        margin-bottom: 2rem;
+      }
+
+      .compact-home-grid .games-grid-section,
+      .compact-home-grid .promo-card,
+      .compact-home-grid .large-card {
+        padding: 0.8rem;
+        border-radius: 14px;
+      }
+
+      .compact-home-grid .section-header {
+        margin-bottom: 0.55rem;
+      }
+
+      .compact-home-grid h2 {
+        font-size: 1.05rem;
+        margin-bottom: 0.55rem;
+      }
+
+      .compact-home-grid .games-list a {
+        gap: 0.65rem;
+        margin-bottom: 0.28rem;
+        padding: 0.2rem;
+      }
+
+      .compact-home-grid .games-list img {
+        width: 56px;
+        height: 56px;
+        border-radius: 10px;
+      }
+
+      .compact-home-grid .games-list h3 {
+        font-size: 0.8rem;
+        line-height: 1.2;
+      }
+
+      .compact-home-grid .games-list p {
+        font-size: 0.72rem;
+      }
+
+      .compact-home-grid .promo-card .promo-content h2 {
+        font-size: 1.05rem;
+        margin-bottom: 0.45rem;
+      }
+
+      .compact-home-grid .promo-card .promo-content p {
+        font-size: 0.85rem;
+        line-height: 1.35;
+        margin-bottom: 0.7rem;
+      }
+
+      .compact-home-grid .btn-learn-more {
+        font-size: 0.88rem;
+      }
+
+      .compact-home-grid .large-card img {
+        margin-bottom: 0.55rem;
+      }
+
+      .compact-home-grid .large-card h3 {
+        font-size: 0.98rem;
+        margin-bottom: 0.2rem;
+      }
+
+      .compact-home-grid .large-card p {
+        font-size: 0.82rem;
+        line-height: 1.3;
+      }
+
       .promise-point .inline-icon {
         width: 32px;
         height: 32px;
@@ -453,6 +525,80 @@ function gtag_report_conversion(url) {
         }
 
         .slider-arrow { display: none; }
+
+        .compact-home-grid {
+          gap: 8px;
+          margin-bottom: 1.5rem;
+        }
+
+        .compact-home-grid .games-grid-section,
+        .compact-home-grid .promo-card,
+        .compact-home-grid .large-card {
+          padding: 0.7rem;
+        }
+
+        .compact-home-grid .games-list a {
+          padding: 0.15rem;
+          margin-bottom: 0.2rem;
+          gap: 0.55rem;
+        }
+
+        .compact-home-grid .games-list img {
+          width: 50px;
+          height: 50px;
+        }
+
+        .compact-home-grid .games-list h3 {
+          font-size: 0.78rem;
+        }
+
+        .compact-home-grid .games-list p {
+          font-size: 0.7rem;
+        }
+
+        .user-choice-card {
+          align-items: flex-start;
+        }
+
+        .user-choice-card .promo-image {
+          padding: 0;
+        }
+
+        .user-choice-card .promo-image .inline-icon {
+          width: 36px;
+          height: 36px;
+        }
+      }
+
+      @media (max-width: 520px) {
+        .compact-home-grid .games-grid-section,
+        .compact-home-grid .promo-card,
+        .compact-home-grid .large-card {
+          padding: 0.65rem;
+          border-radius: 12px;
+        }
+
+        .compact-home-grid h2 {
+          font-size: 0.98rem;
+          margin-bottom: 0.45rem;
+        }
+
+        .compact-home-grid .games-list img {
+          width: 46px;
+          height: 46px;
+          border-radius: 9px;
+        }
+
+        .compact-home-grid .promo-card .promo-content h2 {
+          font-size: 0.98rem;
+        }
+
+        .promo-cta-button {
+          width: 100%;
+          max-width: 320px;
+          font-size: 0.95rem;
+          padding: 0.75rem 1.25rem;
+        }
       }
     </style>
     <script type="application/ld+json">
@@ -539,7 +685,7 @@ function gtag_report_conversion(url) {
       <a class="promo-cta-button" href="allgames.html">ALL GAMES</a>
     </div>
 
-    <div class="main-grid">
+    <div class="main-grid compact-home-grid">
       <section class="games-grid-section new-this-week" aria-labelledby="new-this-week-title">
         <div class="section-header">
           <h2 id="new-this-week-title">New This Week</h2>
@@ -590,7 +736,7 @@ function gtag_report_conversion(url) {
             <div><h3>10 Minutes Till Dawn</h3><p>Classic</p></div>
           </a>
             </a>
-            <a href="games/worldshardestgame3.html" class="game-card-small">
+            <a href="games/worldshardestgame2.html" class="game-card-small">
             <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==" data-src="images/worldshardestgame.webp" alt="Play Worlds Hardest Game unblocked" loading="lazy" decoding="async">
             <div><h3>Worlds Hardest Game 3</h3><p>Skill</p></div>
           </a>
@@ -599,7 +745,7 @@ function gtag_report_conversion(url) {
 
       <section class="games-grid-section large-cards" aria-label="Highlighted games">
         <div class="large-card">
-            <a href="games/vex7.html">
+            <a href="games/vex.html">
                 <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==" data-src="images/vex7.gif" alt="Play Vex 7 unblocked platform game" loading="lazy" decoding="async">
                 <h3>Vex 7</h3>
                 <p>Another chapter in the Vex series!</p>
@@ -949,7 +1095,7 @@ function gtag_report_conversion(url) {
   <script src="js/script.js" defer></script>
   <script src="js/random-games.js" defer></script>
   <script src="js/incognito-mode.js" defer></script>
-  <script src="js/load-components.js" defer></script>
+  <script src="js/load-components.js?v=2026-04-01-mobile-1" defer></script>
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",

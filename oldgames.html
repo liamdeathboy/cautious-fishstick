@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="/css/footer.css">
   <link rel="stylesheet" type="text/css" href="navbar.css">
   <link rel="stylesheet" href="/css/monocraft.css">
+  <link rel="stylesheet" href="css/new-style.css">
   <style>
     /* Basic Reset */
     * {
@@ -158,40 +159,7 @@
   document.getElementById("year").textContent = new Date().getFullYear();
 </script>
 
-  <script>
-    // Update the year in the footer
-    document.getElementById("year").textContent = new Date().getFullYear();
-
-    // Function to include HTML templates
-    function includeHTML() {
-      var z, i, elmnt, file, xhttp;
-      z = document.getElementsByTagName("*");
-      for (i = 0; i < z.length; i++) {
-        elmnt = z[i];
-        file = elmnt.getAttribute("data-include");
-        if (file) {
-          xhttp = new XMLHttpRequest();
-          xhttp.onreadystatechange = function() {
-            if (this.readyState == 4) {
-              if (this.status == 200) {elmnt.innerHTML = this.responseText;}
-              if (this.status == 404) {elmnt.innerHTML = "Page not found.";}
-              elmnt.removeAttribute("data-include");
-              includeHTML();
-            }
-          }
-          xhttp.open("GET", file, true);
-          xhttp.send();
-          return;
-        }
-      }
-    }
-
-    // Include the navbar HTML
-    document.addEventListener('DOMContentLoaded', function() {
-      document.getElementById('navbar-placeholder').setAttribute('data-include', 'navbar.html');
-      includeHTML();
-    });
-  </script>
+  <script src="js/load-components.js?v=2026-04-01-mobile-1" defer></script>
 <script src="/js/lazy-media.js" defer></script>
 </body>
 </html>
