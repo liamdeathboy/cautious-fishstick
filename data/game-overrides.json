@@ -459,6 +459,22 @@
       }
     ]
   },
+  "civiballs1": {
+    "name": "Civiballs 1",
+    "release": "Jan 01, 2009",
+    "genre": "Logic · Physics Puzzle",
+    "platforms": "Browser",
+    "controls": [
+      {
+        "input": "Mouse",
+        "action": "click to cut chains and interact with level objects"
+      },
+      {
+        "input": "R",
+        "action": "restart the level to try a new cut order"
+      }
+    ]
+  },
   "clubpenguin": {
     "name": "Club Penguin",
     "release": "Oct 24, 2005",
@@ -2481,7 +2497,7 @@
     "genre": "Runner · Arcade",
     "platforms": "Browser, Mobile",
     "learningProfile": "racing",
-    "image": "games/2048-merge-run/logo.png",
+    "image": "images/2048-merge-run.webp",
     "controls": [
       {
         "input": "Arrow keys / A-D",
@@ -2503,7 +2519,7 @@
     "genre": "Strategy · Tactics",
     "platforms": "Browser, Mobile",
     "learningProfile": "strategy",
-    "image": "games/build-a-big-army/logo.png",
+    "image": "images/build-a-big-army.jpeg",
     "controls": [
       {
         "input": "Mouse / Touch",
@@ -2525,7 +2541,7 @@
     "genre": "Arcade · Skill",
     "platforms": "Browser",
     "learningProfile": "default",
-    "image": "games/build-a-plane/logo.png",
+    "image": "images/build-a-plane.webp",
     "controls": [
       {
         "input": "Mouse / Keyboard",
@@ -2539,7 +2555,7 @@
     "genre": "Action · Combat",
     "platforms": "Browser",
     "learningProfile": "action",
-    "image": "games/camouflage-and-sniper/logo.png",
+    "image": "images/camouflag-and-sniper.png",
     "controls": [
       {
         "input": "W / A / S / D",
@@ -2561,7 +2577,7 @@
     "genre": "Runner · Arcade",
     "platforms": "Browser, Mobile",
     "learningProfile": "racing",
-    "image": "games/car-survival-3d/logo.png",
+    "image": "images/car-survival-3d.jpeg",
     "controls": [
       {
         "input": "Arrow keys / A-D",
@@ -2583,7 +2599,7 @@
     "genre": "Strategy · Tactics",
     "platforms": "Browser, Mobile",
     "learningProfile": "strategy",
-    "image": "games/city-defense/logo.png",
+    "image": "images/city-defence.jpeg",
     "controls": [
       {
         "input": "Mouse / Touch",
@@ -2627,7 +2643,7 @@
     "genre": "Runner · Arcade",
     "platforms": "Browser, Mobile",
     "learningProfile": "racing",
-    "image": "games/cool-cars-run-3d/logo.png",
+    "image": "images/cool-cars-run-3d.jpeg",
     "controls": [
       {
         "input": "Arrow keys / A-D",
@@ -2649,7 +2665,7 @@
     "genre": "Runner · Arcade",
     "platforms": "Browser, Mobile",
     "learningProfile": "racing",
-    "image": "games/crush-cars-3d/logo.png",
+    "image": "images/crush-cars-3d.jpeg",
     "controls": [
       {
         "input": "Arrow keys / A-D",
@@ -2715,7 +2731,7 @@
     "genre": "Puzzle · Logic",
     "platforms": "Browser, Mobile",
     "learningProfile": "puzzle",
-    "image": "games/diamond-seeker/logo.png",
+    "image": "images/diamond-seeker.jpeg",
     "controls": [
       {
         "input": "Mouse / Touch",
@@ -2737,7 +2753,7 @@
     "genre": "Puzzle · Logic",
     "platforms": "Browser, Mobile",
     "learningProfile": "puzzle",
-    "image": "games/draw-joust/logo.png",
+    "image": "images/draw-joust.avif",
     "controls": [
       {
         "input": "Mouse / Touch",
@@ -2759,7 +2775,7 @@
     "genre": "Action · Combat",
     "platforms": "Browser",
     "learningProfile": "action",
-    "image": "games/evolving-bombs-3d/logo.png",
+    "image": "images/evolving-bomb-3d.jpeg",
     "controls": [
       {
         "input": "W / A / S / D",
@@ -2795,7 +2811,7 @@
     "genre": "Strategy · Tactics",
     "platforms": "Browser, Mobile",
     "learningProfile": "strategy",
-    "image": "games/fitness-empire/logo.png",
+    "image": "images/fitness-empire.jpeg",
     "controls": [
       {
         "input": "Mouse / Touch",
@@ -2817,7 +2833,7 @@
     "genre": "Puzzle · Logic",
     "platforms": "Browser, Mobile",
     "learningProfile": "puzzle",
-    "image": "games/flick-goal/logo.png",
+    "image": "images/flick-goal.jpeg",
     "controls": [
       {
         "input": "Mouse / Touch",
@@ -2839,7 +2855,7 @@
     "genre": "Puzzle · Logic",
     "platforms": "Browser, Mobile",
     "learningProfile": "puzzle",
-    "image": "games/flip-master/logo.png",
+    "image": "images/flip-master.jpg",
     "controls": [
       {
         "input": "Mouse / Touch",
@@ -2861,7 +2877,7 @@
     "genre": "Action · Combat",
     "platforms": "Browser",
     "learningProfile": "action",
-    "image": "games/giant-wanted/logo.png",
+    "image": "images/giant-wanted.jpeg",
     "controls": [
       {
         "input": "W / A / S / D",
@@ -2883,7 +2899,7 @@
     "genre": "Action · Combat",
     "platforms": "Browser",
     "learningProfile": "action",
-    "image": "games/gun-clone/logo.png",
+    "image": "images/gun-clone.jpeg",
     "controls": [
       {
         "input": "W / A / S / D",
@@ -2905,7 +2921,7 @@
     "genre": "Runner · Arcade",
     "platforms": "Browser, Mobile",
     "learningProfile": "racing",
-    "image": "games/gun-runner/logo.png",
+    "image": "images/gun-runner.png",
     "controls": [
       {
         "input": "Arrow keys / A-D",
@@ -2927,7 +2943,7 @@
     "genre": "Runner · Arcade",
     "platforms": "Browser, Mobile",
     "learningProfile": "racing",
-    "image": "games/high-heels/logo.png",
+    "image": "images/high-heels.png",
     "controls": [
       {
         "input": "Arrow keys / A-D",
@@ -2949,7 +2965,7 @@
     "genre": "Runner · Arcade",
     "platforms": "Browser, Mobile",
     "learningProfile": "racing",
-    "image": "games/kaji-run/logo.png",
+    "image": "images/kaji-run.avif",
     "controls": [
       {
         "input": "Arrow keys / A-D",
@@ -2971,7 +2987,7 @@
     "genre": "Runner · Arcade",
     "platforms": "Browser, Mobile",
     "learningProfile": "racing",
-    "image": "games/make-a-superboat/logo.png",
+    "image": "images/make-a-superboat.jpeg",
     "controls": [
       {
         "input": "Arrow keys / A-D",
@@ -2993,7 +3009,7 @@
     "genre": "Runner · Arcade",
     "platforms": "Browser, Mobile",
     "learningProfile": "racing",
-    "image": "games/makeover-run/logo.png",
+    "image": "images/makeover-run.jpeg",
     "controls": [
       {
         "input": "Arrow keys / A-D",
@@ -3015,7 +3031,7 @@
     "genre": "Runner · Arcade",
     "platforms": "Browser, Mobile",
     "learningProfile": "racing",
-    "image": "games/mega-car-jumps/logo.png",
+    "image": "images/mega-car-iumps.jpeg",
     "controls": [
       {
         "input": "Arrow keys / A-D",
@@ -3037,7 +3053,7 @@
     "genre": "Runner · Arcade",
     "platforms": "Browser, Mobile",
     "learningProfile": "racing",
-    "image": "games/money-rush/logo.png",
+    "image": "images/money-rush.jpeg",
     "controls": [
       {
         "input": "Arrow keys / A-D",
@@ -3059,7 +3075,7 @@
     "genre": "Puzzle · Logic",
     "platforms": "Browser, Mobile",
     "learningProfile": "puzzle",
-    "image": "games/monster-box-3d/logo.png",
+    "image": "images/monster-box-3d.jpeg",
     "controls": [
       {
         "input": "Mouse / Touch",
@@ -3081,7 +3097,7 @@
     "genre": "Action · Combat",
     "platforms": "Browser",
     "learningProfile": "action",
-    "image": "games/office-fight/logo.png",
+    "image": "images/office-fight.jpeg",
     "controls": [
       {
         "input": "W / A / S / D",
@@ -3103,7 +3119,7 @@
     "genre": "Strategy · Tactics",
     "platforms": "Browser, Mobile",
     "learningProfile": "strategy",
-    "image": "games/robot-invasion/logo.png",
+    "image": "images/robot-invasion.jpg",
     "controls": [
       {
         "input": "Mouse / Touch",
@@ -3125,7 +3141,7 @@
     "genre": "Runner · Arcade",
     "platforms": "Browser, Mobile",
     "learningProfile": "racing",
-    "image": "games/run-rich-3d/logo.png",
+    "image": "images/run-rich-3d.jpeg",
     "controls": [
       {
         "input": "Arrow keys / A-D",
@@ -3147,7 +3163,7 @@
     "genre": "Arcade · Skill",
     "platforms": "Browser",
     "learningProfile": "default",
-    "image": "games/save-p-diddy-from-prison/logo.png",
+    "image": "images/save-p-diddy-from-prision.avif",
     "controls": [
       {
         "input": "Mouse / Keyboard",
@@ -3161,7 +3177,7 @@
     "genre": "Puzzle · Logic",
     "platforms": "Browser, Mobile",
     "learningProfile": "puzzle",
-    "image": "games/seat-jam-3d/logo.png",
+    "image": "images/seat-jam-3d.png",
     "controls": [
       {
         "input": "Mouse / Touch",
@@ -3183,7 +3199,7 @@
     "genre": "Action · Combat",
     "platforms": "Browser",
     "learningProfile": "action",
-    "image": "games/shooting-master/logo.png",
+    "image": "images/shooting-master.jpeg",
     "controls": [
       {
         "input": "W / A / S / D",
@@ -3205,7 +3221,7 @@
     "genre": "Strategy · Tactics",
     "platforms": "Browser, Mobile",
     "learningProfile": "strategy",
-    "image": "games/supermarket-3d/logo.png",
+    "image": "images/supermarket-game.jpg",
     "controls": [
       {
         "input": "Mouse / Touch",
@@ -3227,7 +3243,7 @@
     "genre": "Strategy · Tactics",
     "platforms": "Browser, Mobile",
     "learningProfile": "strategy",
-    "image": "games/survive-to-victory/logo.png",
+    "image": "images/survive-to-victory-game.jpeg",
     "controls": [
       {
         "input": "Mouse / Touch",
@@ -3249,7 +3265,7 @@
     "genre": "Action · Combat",
     "platforms": "Browser",
     "learningProfile": "action",
-    "image": "games/telekinesis-attack/logo.png",
+    "image": "images/telekinesis-attack.jpeg",
     "controls": [
       {
         "input": "W / A / S / D",
@@ -3271,7 +3287,7 @@
     "genre": "Runner · Arcade",
     "platforms": "Browser, Mobile",
     "learningProfile": "racing",
-    "image": "games/telekinesis-car/logo.png",
+    "image": "images/telekinesis-car.jpeg",
     "controls": [
       {
         "input": "Arrow keys / A-D",
@@ -3293,7 +3309,7 @@
     "genre": "Runner · Arcade",
     "platforms": "Browser, Mobile",
     "learningProfile": "racing",
-    "image": "games/telekinesis-drive/logo.png",
+    "image": "images/telekiesis-drive.avif",
     "controls": [
       {
         "input": "Arrow keys / A-D",
@@ -3337,7 +3353,7 @@
     "genre": "Puzzle · Logic",
     "platforms": "Browser, Mobile",
     "learningProfile": "puzzle",
-    "image": "games/triple-match-3d/logo.png",
+    "image": "images/triple-match-3d.jpeg",
     "controls": [
       {
         "input": "Mouse / Touch",
@@ -3359,7 +3375,7 @@
     "genre": "Strategy · Tactics",
     "platforms": "Browser, Mobile",
     "learningProfile": "strategy",
-    "image": "games/tug-of-war-with-cars/logo.png",
+    "image": "images/tug-of-wars-with-cars.jpeg",
     "controls": [
       {
         "input": "Mouse / Touch",
@@ -3381,7 +3397,7 @@
     "genre": "Runner · Arcade",
     "platforms": "Browser, Mobile",
     "learningProfile": "racing",
-    "image": "games/twerk-race-3d/logo.png",
+    "image": "images/twerk-race-game.png",
     "controls": [
       {
         "input": "Arrow keys / A-D",
@@ -3403,7 +3419,7 @@
     "genre": "Puzzle · Logic",
     "platforms": "Browser, Mobile",
     "learningProfile": "puzzle",
-    "image": "games/twisted-rope-3d/logo.png",
+    "image": "images/twisted-rope-3d.jpeg",
     "controls": [
       {
         "input": "Mouse / Touch",
@@ -3425,7 +3441,7 @@
     "genre": "Puzzle · Logic",
     "platforms": "Browser, Mobile",
     "learningProfile": "puzzle",
-    "image": "games/wall-crawler/logo.png",
+    "image": "images/wall-crawler.jpeg",
     "controls": [
       {
         "input": "Mouse / Touch",
@@ -3447,7 +3463,7 @@
     "genre": "Strategy · Tactics",
     "platforms": "Browser, Mobile",
     "learningProfile": "strategy",
-    "image": "games/war-regions/logo.png",
+    "image": "images/war-regions.png",
     "controls": [
       {
         "input": "Mouse / Touch",
@@ -3469,7 +3485,7 @@
     "genre": "Runner · Arcade",
     "platforms": "Browser, Mobile",
     "learningProfile": "racing",
-    "image": "games/weapon-craft-run/logo.png",
+    "image": "images/weapon-craft-run.jpeg",
     "controls": [
       {
         "input": "Arrow keys / A-D",
@@ -3491,7 +3507,7 @@
     "genre": "Runner · Arcade",
     "platforms": "Browser, Mobile",
     "learningProfile": "racing",
-    "image": "games/weapon-upgrade-rush/logo.png",
+    "image": "images/weapon-upgrade-rush.jpeg",
     "controls": [
       {
         "input": "Arrow keys / A-D",
@@ -3526,6 +3542,995 @@
       {
         "input": "Space",
         "action": "jump, boost, or trigger context actions"
+      }
+    ]
+  },
+  "starpoly": {
+    "name": "Starpoly",
+    "genre": "Strategy · Board Game",
+    "platforms": "Browser",
+    "learningProfile": "strategy",
+    "controls": [
+      {
+        "input": "Mouse",
+        "action": "roll, buy properties, and confirm trades"
+      },
+      {
+        "input": "Click / Tap",
+        "action": "navigate menus and manage deals"
+      }
+    ]
+  },
+  "bus-school-park-driver": {
+    "name": "Bus School Park Driver",
+    "genre": "Driving · Simulation",
+    "platforms": "Browser, Mobile",
+    "learningProfile": "racing",
+    "controls": [
+      {
+        "input": "Mouse / Touch",
+        "action": "steer and interact with the driving controls"
+      },
+      {
+        "input": "On-screen pedals",
+        "action": "accelerate and brake into parking zones"
+      }
+    ]
+  },
+  "real-driving-simulator": {
+    "name": "Real Driving Simulator",
+    "genre": "Driving · Simulation",
+    "platforms": "Browser",
+    "learningProfile": "racing",
+    "controls": [
+      {
+        "input": "Mouse / Touch",
+        "action": "control steering, throttle, and braking"
+      },
+      {
+        "input": "On-screen controls",
+        "action": "switch actions while driving different vehicles"
+      }
+    ]
+  },
+  "air-slip": {
+    "name": "Air Slip",
+    "genre": "Arcade · Reflex",
+    "platforms": "Browser, Mobile",
+    "learningProfile": "action",
+    "controls": [
+      {
+        "input": "Tap / Click",
+        "action": "reverse the beam rotation"
+      }
+    ]
+  },
+  "the-last-shot": {
+    "name": "The Last Shot",
+    "genre": "Puzzle · Precision",
+    "platforms": "Browser, Mobile",
+    "learningProfile": "puzzle",
+    "controls": [
+      {
+        "input": "Drag",
+        "action": "aim the orb"
+      },
+      {
+        "input": "Release",
+        "action": "launch the shot"
+      }
+    ]
+  },
+  "mouse-raider": {
+    "name": "Mouse Raider",
+    "genre": "Action · Shooter",
+    "platforms": "Browser",
+    "learningProfile": "action",
+    "controls": [
+      {
+        "input": "Mouse",
+        "action": "aim at incoming mice"
+      },
+      {
+        "input": "Click",
+        "action": "shoot and defend the food"
+      }
+    ]
+  },
+  "pixelcraft-animal-school": {
+    "name": "PixelCraft Animal School",
+    "genre": "Platformer · Adventure",
+    "platforms": "Browser, Mobile",
+    "learningProfile": "platformer",
+    "controls": [
+      {
+        "input": "W / A / S / D",
+        "action": "move and jump as Alex"
+      },
+      {
+        "input": "Arrow keys",
+        "action": "move and jump as Steve"
+      },
+      {
+        "input": "Touch controls",
+        "action": "play on mobile devices"
+      }
+    ]
+  },
+  "arrow-fest-3d-online": {
+    "name": "Arrow Fest 3D Online",
+    "genre": "Arcade · Runner",
+    "platforms": "Browser, Mobile",
+    "learningProfile": "racing",
+    "controls": [
+      {
+        "input": "Mouse / Touch",
+        "action": "steer the arrow stream between gates"
+      }
+    ],
+    "metaTitle": "Arrow Fest 3D Online | Schplay"
+  },
+  "we-bare-bears-difference": {
+    "name": "We Bare Bears Difference",
+    "genre": "Puzzle · Spot the Difference",
+    "platforms": "Browser, Mobile",
+    "learningProfile": "puzzle",
+    "controls": [
+      {
+        "input": "Mouse / Tap",
+        "action": "select each hidden difference"
+      }
+    ]
+  },
+  "little-princess-jigsaw": {
+    "name": "Little Princess Jigsaw",
+    "genre": "Puzzle · Jigsaw",
+    "platforms": "Browser, Mobile",
+    "learningProfile": "puzzle",
+    "controls": [
+      {
+        "input": "Drag and drop",
+        "action": "move puzzle pieces into place"
+      },
+      {
+        "input": "Click / Tap",
+        "action": "use the magic help button when needed"
+      }
+    ]
+  },
+  "hotel-transylvania-coloring-book": {
+    "name": "Hotel Transylvania Coloring Book",
+    "genre": "Creative · Coloring",
+    "platforms": "Browser, Mobile",
+    "learningProfile": "default",
+    "controls": [
+      {
+        "input": "Drag",
+        "action": "aim, place, or move important game elements"
+      },
+      {
+        "input": "Mouse / Touch",
+        "action": "pick colors and fill different parts of the page"
+      }
+    ]
+  },
+  "escape-mystic-castle-mobile-version": {
+    "name": "Escape Mystic Castle Mobile version",
+    "genre": "Racing · Skill",
+    "platforms": "Browser, Mobile",
+    "learningProfile": "racing",
+    "controls": [
+      {
+        "input": "Tap / Touch",
+        "action": "play on mobile and trigger actions"
+      },
+      {
+        "input": "Mouse / Touch",
+        "action": "control steering, braking, or parking inputs"
+      },
+      {
+        "input": "On-screen controls",
+        "action": "accelerate, brake, and line up each route"
+      }
+    ]
+  },
+  "jump-over-alphabets": {
+    "name": "Jump Over Alphabets",
+    "genre": "Educational · Word",
+    "platforms": "Browser",
+    "learningProfile": "default",
+    "controls": [
+      {
+        "input": "Drag",
+        "action": "aim, place, or move important game elements"
+      }
+    ]
+  },
+  "jelly-matches": {
+    "name": "Jelly Matches",
+    "genre": "Educational · Math",
+    "platforms": "Browser, Mobile",
+    "learningProfile": "math",
+    "controls": [
+      {
+        "input": "Drag",
+        "action": "aim, place, or move important game elements"
+      },
+      {
+        "input": "Tap / Touch",
+        "action": "play on mobile and trigger actions"
+      }
+    ]
+  },
+  "paperly-paper-plane-adventure": {
+    "name": "Paperly: Paper Plane Adventure",
+    "genre": "Racing · Skill",
+    "platforms": "Browser, Mobile",
+    "learningProfile": "racing",
+    "controls": [
+      {
+        "input": "W / A / S / D",
+        "action": "move, jump, or steer through each stage"
+      },
+      {
+        "input": "Mouse / Touch",
+        "action": "control steering, braking, or parking inputs"
+      },
+      {
+        "input": "On-screen controls",
+        "action": "accelerate, brake, and line up each route"
+      }
+    ]
+  },
+  "bridge-wars": {
+    "name": "Bridge Wars",
+    "genre": "Action · Combat",
+    "platforms": "Browser, Mobile",
+    "learningProfile": "action",
+    "controls": [
+      {
+        "input": "Mouse / Touch",
+        "action": "play with the default controls for this title"
+      }
+    ]
+  },
+  "super-tank-hero": {
+    "name": "Super Tank Hero",
+    "genre": "Action · Shooter",
+    "platforms": "Browser, Mobile",
+    "learningProfile": "action",
+    "controls": [
+      {
+        "input": "Click",
+        "action": "confirm actions or fire at the right moment"
+      },
+      {
+        "input": "Tap / Touch",
+        "action": "play on mobile and trigger actions"
+      }
+    ]
+  },
+  "hide-and-seek-blue-monster": {
+    "name": "Hide And Seek Blue Monster",
+    "genre": "Puzzle · Brain",
+    "platforms": "Browser, Mobile",
+    "learningProfile": "puzzle",
+    "controls": [
+      {
+        "input": "Click",
+        "action": "confirm actions or fire at the right moment"
+      },
+      {
+        "input": "Tap / Touch",
+        "action": "play on mobile and trigger actions"
+      }
+    ]
+  },
+  "math-games-for-dummies": {
+    "name": "Math games for Dummies",
+    "genre": "Racing · Skill",
+    "platforms": "Browser, Mobile",
+    "learningProfile": "racing",
+    "controls": [
+      {
+        "input": "Tap / Touch",
+        "action": "play on mobile and trigger actions"
+      },
+      {
+        "input": "Mouse / Touch",
+        "action": "control steering, braking, or parking inputs"
+      },
+      {
+        "input": "On-screen controls",
+        "action": "accelerate, brake, and line up each route"
+      }
+    ]
+  },
+  "fall-guy-2024": {
+    "name": "Fall Guy 2024",
+    "genre": "Sandbox · Creative",
+    "platforms": "Browser, Mobile",
+    "learningProfile": "creative",
+    "controls": [
+      {
+        "input": "Click",
+        "action": "confirm actions or fire at the right moment"
+      },
+      {
+        "input": "Tap / Touch",
+        "action": "play on mobile and trigger actions"
+      }
+    ]
+  },
+  "2d-car-driving-drive-safe": {
+    "name": "2D Car Driving: Drive Safe",
+    "genre": "Puzzle · Spot the Difference",
+    "platforms": "Browser, Mobile",
+    "learningProfile": "puzzle",
+    "controls": [
+      {
+        "input": "Click",
+        "action": "confirm actions or fire at the right moment"
+      },
+      {
+        "input": "Tap / Touch",
+        "action": "play on mobile and trigger actions"
+      },
+      {
+        "input": "Click / Tap",
+        "action": "mark each hidden difference"
+      }
+    ]
+  },
+  "circle-of-heroes": {
+    "name": "Circle Of Heroes",
+    "genre": "Action · Combat",
+    "platforms": "Browser, Mobile",
+    "learningProfile": "action",
+    "controls": [
+      {
+        "input": "Tap / Touch",
+        "action": "play on mobile and trigger actions"
+      }
+    ]
+  },
+  "domino-adventure": {
+    "name": "Domino Adventure",
+    "genre": "Board · Domino",
+    "platforms": "Browser, Mobile",
+    "learningProfile": "strategy",
+    "controls": [
+      {
+        "input": "Mouse / Touch",
+        "action": "play with the default controls for this title"
+      }
+    ]
+  },
+  "purrfect-clicker": {
+    "name": "Purrfect Clicker",
+    "genre": "Idle · Clicker",
+    "platforms": "Browser, Mobile",
+    "learningProfile": "strategy",
+    "controls": [
+      {
+        "input": "Click",
+        "action": "confirm actions or fire at the right moment"
+      },
+      {
+        "input": "Tap / Touch",
+        "action": "play on mobile and trigger actions"
+      },
+      {
+        "input": "Click / Tap",
+        "action": "collect value and buy upgrades"
+      }
+    ]
+  },
+  "juicy-tic-tac-toe-battle": {
+    "name": "Juicy Tic Tac Toe Battle",
+    "genre": "Board · Tic-Tac-Toe",
+    "platforms": "Browser, Mobile",
+    "learningProfile": "strategy",
+    "controls": [
+      {
+        "input": "Mouse / Touch",
+        "action": "play with the default controls for this title"
+      }
+    ]
+  },
+  "hookcube": {
+    "name": "HookCube",
+    "genre": "Racing · Skill",
+    "platforms": "Browser, Mobile",
+    "learningProfile": "racing",
+    "controls": [
+      {
+        "input": "Click",
+        "action": "confirm actions or fire at the right moment"
+      },
+      {
+        "input": "Mouse / Touch",
+        "action": "control steering, braking, or parking inputs"
+      },
+      {
+        "input": "On-screen controls",
+        "action": "accelerate, brake, and line up each route"
+      }
+    ]
+  },
+  "pull-the-pin-much-money": {
+    "name": "Pull The Pin Much Money",
+    "genre": "Racing · Skill",
+    "platforms": "Browser, Mobile",
+    "learningProfile": "racing",
+    "controls": [
+      {
+        "input": "Click",
+        "action": "confirm actions or fire at the right moment"
+      },
+      {
+        "input": "Tap / Touch",
+        "action": "play on mobile and trigger actions"
+      },
+      {
+        "input": "Mouse / Touch",
+        "action": "control steering, braking, or parking inputs"
+      }
+    ]
+  },
+  "noodle-stack-runner": {
+    "name": "Noodle Stack Runner",
+    "genre": "Driving · Simulation",
+    "platforms": "Browser, Mobile",
+    "learningProfile": "racing",
+    "controls": [
+      {
+        "input": "Click",
+        "action": "confirm actions or fire at the right moment"
+      },
+      {
+        "input": "Tap / Touch",
+        "action": "play on mobile and trigger actions"
+      },
+      {
+        "input": "Mouse / Touch",
+        "action": "control steering, braking, or parking inputs"
+      }
+    ]
+  },
+  "big-hand": {
+    "name": "Big hand",
+    "genre": "Puzzle · Merge",
+    "platforms": "Browser, Mobile",
+    "learningProfile": "puzzle",
+    "controls": [
+      {
+        "input": "Click",
+        "action": "confirm actions or fire at the right moment"
+      },
+      {
+        "input": "Tap / Touch",
+        "action": "play on mobile and trigger actions"
+      }
+    ]
+  },
+  "flappy-ship-classic": {
+    "name": "Flappy Ship Classic",
+    "genre": "Sandbox · Creative",
+    "platforms": "Browser, Mobile",
+    "learningProfile": "creative",
+    "controls": [
+      {
+        "input": "Mouse / Touch",
+        "action": "play with the default controls for this title"
+      }
+    ]
+  },
+  "practice-on-me": {
+    "name": "Practice On Me",
+    "genre": "Driving · Simulation",
+    "platforms": "Browser, Mobile",
+    "learningProfile": "racing",
+    "controls": [
+      {
+        "input": "Tap / Touch",
+        "action": "play on mobile and trigger actions"
+      },
+      {
+        "input": "Mouse / Touch",
+        "action": "control steering, braking, or parking inputs"
+      },
+      {
+        "input": "On-screen controls",
+        "action": "accelerate, brake, and line up each route"
+      }
+    ]
+  },
+  "redpool-legend-2-player": {
+    "name": "RedPool Legend 2 Player",
+    "genre": "Educational · Math",
+    "platforms": "Browser, Mobile",
+    "learningProfile": "math",
+    "controls": [
+      {
+        "input": "W / A / S / D",
+        "action": "move, jump, or steer through each stage"
+      },
+      {
+        "input": "Arrow keys",
+        "action": "move, jump, or guide your character"
+      },
+      {
+        "input": "Tap / Touch",
+        "action": "play on mobile and trigger actions"
+      }
+    ]
+  },
+  "noob-the-builder": {
+    "name": "Noob the builder",
+    "genre": "Idle · Clicker",
+    "platforms": "Browser, Mobile",
+    "learningProfile": "strategy",
+    "controls": [
+      {
+        "input": "Click",
+        "action": "confirm actions or fire at the right moment"
+      },
+      {
+        "input": "Click / Tap",
+        "action": "collect value and buy upgrades"
+      }
+    ]
+  },
+  "balloons-park": {
+    "name": "Balloons Park",
+    "genre": "Driving · Simulation",
+    "platforms": "Browser, Mobile",
+    "learningProfile": "racing",
+    "controls": [
+      {
+        "input": "Tap / Touch",
+        "action": "play on mobile and trigger actions"
+      },
+      {
+        "input": "Mouse / Touch",
+        "action": "control steering, braking, or parking inputs"
+      },
+      {
+        "input": "On-screen controls",
+        "action": "accelerate, brake, and line up each route"
+      }
+    ]
+  },
+  "stunt-maps": {
+    "name": "Stunt Maps",
+    "genre": "Racing · Skill",
+    "platforms": "Browser",
+    "learningProfile": "racing",
+    "controls": [
+      {
+        "input": "Arrow keys",
+        "action": "move, jump, or guide your character"
+      },
+      {
+        "input": "Mouse / Touch",
+        "action": "control steering, braking, or parking inputs"
+      },
+      {
+        "input": "On-screen controls",
+        "action": "accelerate, brake, and line up each route"
+      }
+    ]
+  },
+  "shape-transform-blob-racing": {
+    "name": "Shape Transform Blob Racing",
+    "genre": "Racing · Skill",
+    "platforms": "Browser, Mobile",
+    "learningProfile": "racing",
+    "controls": [
+      {
+        "input": "Click",
+        "action": "confirm actions or fire at the right moment"
+      },
+      {
+        "input": "Tap / Touch",
+        "action": "play on mobile and trigger actions"
+      },
+      {
+        "input": "Mouse / Touch",
+        "action": "control steering, braking, or parking inputs"
+      }
+    ]
+  },
+  "addition-bird-image-uncover": {
+    "name": "Addition: Bird Image Uncover",
+    "genre": "Educational · Math",
+    "platforms": "Browser, Mobile",
+    "learningProfile": "math",
+    "controls": [
+      {
+        "input": "Drag",
+        "action": "aim, place, or move important game elements"
+      },
+      {
+        "input": "Tap / Touch",
+        "action": "play on mobile and trigger actions"
+      }
+    ]
+  },
+  "animalcraft-friends": {
+    "name": "AnimalCraft Friends",
+    "genre": "Sandbox · Creative",
+    "platforms": "Browser, Mobile",
+    "learningProfile": "creative",
+    "controls": [
+      {
+        "input": "W / A / S / D",
+        "action": "move, jump, or steer through each stage"
+      },
+      {
+        "input": "Arrow keys",
+        "action": "move, jump, or guide your character"
+      },
+      {
+        "input": "Tap / Touch",
+        "action": "play on mobile and trigger actions"
+      }
+    ]
+  },
+  "bitcoin-millionaire": {
+    "name": "Bitcoin Millionaire",
+    "genre": "Idle · Clicker",
+    "platforms": "Browser, Mobile",
+    "learningProfile": "strategy",
+    "controls": [
+      {
+        "input": "Click",
+        "action": "confirm actions or fire at the right moment"
+      },
+      {
+        "input": "Click / Tap",
+        "action": "collect value and buy upgrades"
+      }
+    ]
+  },
+  "jungle-jump": {
+    "name": "Jungle Jump",
+    "genre": "Platformer · Adventure",
+    "platforms": "Browser, Mobile",
+    "learningProfile": "platformer",
+    "controls": [
+      {
+        "input": "Mouse / Touch",
+        "action": "play with the default controls for this title"
+      }
+    ]
+  },
+  "real-savior": {
+    "name": "Real Savior",
+    "genre": "Action · Shooter",
+    "platforms": "Browser",
+    "learningProfile": "action",
+    "controls": [
+      {
+        "input": "Mouse / Touch",
+        "action": "play with the default controls for this title"
+      }
+    ]
+  },
+  "watermelon-merge-3": {
+    "name": "Watermelon Merge 3",
+    "genre": "Puzzle · Merge",
+    "platforms": "Browser, Mobile",
+    "learningProfile": "puzzle",
+    "controls": [
+      {
+        "input": "Click",
+        "action": "confirm actions or fire at the right moment"
+      },
+      {
+        "input": "Tap / Touch",
+        "action": "play on mobile and trigger actions"
+      }
+    ]
+  },
+  "ghost-town-escape-4-mirrored-dimension": {
+    "name": "Ghost Town Escape 4 - Mirrored Dimension",
+    "genre": "Platformer · Adventure",
+    "platforms": "Browser, Mobile",
+    "learningProfile": "platformer",
+    "controls": [
+      {
+        "input": "Tap / Touch",
+        "action": "play on mobile and trigger actions"
+      }
+    ]
+  },
+  "the-rabbit-adventure": {
+    "name": "The Rabbit Adventure",
+    "genre": "Driving · Simulation",
+    "platforms": "Browser, Mobile",
+    "learningProfile": "racing",
+    "controls": [
+      {
+        "input": "Arrow keys",
+        "action": "move, jump, or guide your character"
+      },
+      {
+        "input": "Tap / Touch",
+        "action": "play on mobile and trigger actions"
+      },
+      {
+        "input": "Mouse / Touch",
+        "action": "control steering, braking, or parking inputs"
+      }
+    ]
+  },
+  "mini-games-puzzle-collection": {
+    "name": "Mini Games Puzzle Collection",
+    "genre": "Educational · Math",
+    "platforms": "Browser, Mobile",
+    "learningProfile": "math",
+    "controls": [
+      {
+        "input": "Click",
+        "action": "confirm actions or fire at the right moment"
+      },
+      {
+        "input": "Tap / Touch",
+        "action": "play on mobile and trigger actions"
+      }
+    ]
+  },
+  "cat-pet-doctor-dentist": {
+    "name": "Cat Pet Doctor Dentist",
+    "genre": "Simulation · Care",
+    "platforms": "Browser, Mobile",
+    "learningProfile": "default",
+    "controls": [
+      {
+        "input": "Click",
+        "action": "confirm actions or fire at the right moment"
+      },
+      {
+        "input": "Tap / Touch",
+        "action": "play on mobile and trigger actions"
+      }
+    ]
+  },
+  "super-doctor-body-examination": {
+    "name": "Super Doctor Body Examination",
+    "genre": "Simulation · Care",
+    "platforms": "Browser, Mobile",
+    "learningProfile": "default",
+    "controls": [
+      {
+        "input": "Click",
+        "action": "confirm actions or fire at the right moment"
+      },
+      {
+        "input": "Tap / Touch",
+        "action": "play on mobile and trigger actions"
+      }
+    ]
+  },
+  "perfect-piano-magic": {
+    "name": "Perfect Piano Magic",
+    "genre": "Rhythm · Music",
+    "platforms": "Browser, Mobile",
+    "learningProfile": "music",
+    "controls": [
+      {
+        "input": "Click",
+        "action": "confirm actions or fire at the right moment"
+      },
+      {
+        "input": "Tap / Touch",
+        "action": "play on mobile and trigger actions"
+      },
+      {
+        "input": "Tap / Click",
+        "action": "hit notes in time with the rhythm"
+      }
+    ]
+  },
+  "minescraftter-two-player": {
+    "name": "Minescraftter Two Player",
+    "genre": "Sandbox · Creative",
+    "platforms": "Browser, Mobile",
+    "learningProfile": "creative",
+    "controls": [
+      {
+        "input": "W / A / S / D",
+        "action": "move, jump, or steer through each stage"
+      },
+      {
+        "input": "Arrow keys",
+        "action": "move, jump, or guide your character"
+      },
+      {
+        "input": "Tap / Touch",
+        "action": "play on mobile and trigger actions"
+      }
+    ]
+  },
+  "candy-cat-shot": {
+    "name": "Candy Cat Shot",
+    "genre": "Action · Shooter",
+    "platforms": "Browser, Mobile",
+    "learningProfile": "action",
+    "controls": [
+      {
+        "input": "Tap / Touch",
+        "action": "play on mobile and trigger actions"
+      }
+    ]
+  },
+  "connect-pipe-color-puzzle-game": {
+    "name": "Connect Pipe! Color Puzzle Game",
+    "genre": "Puzzle · Logic",
+    "platforms": "Browser, Mobile",
+    "learningProfile": "puzzle",
+    "controls": [
+      {
+        "input": "Drag",
+        "action": "aim, place, or move important game elements"
+      },
+      {
+        "input": "Click",
+        "action": "confirm actions or fire at the right moment"
+      },
+      {
+        "input": "Tap / Touch",
+        "action": "play on mobile and trigger actions"
+      }
+    ]
+  },
+  "imposter-assassin-3d": {
+    "name": "Imposter Assassin 3D",
+    "genre": "Action · Shooter",
+    "platforms": "Browser, Mobile",
+    "learningProfile": "action",
+    "controls": [
+      {
+        "input": "Drag",
+        "action": "aim, place, or move important game elements"
+      },
+      {
+        "input": "Tap / Touch",
+        "action": "play on mobile and trigger actions"
+      }
+    ]
+  },
+  "brick-hit": {
+    "name": "Brick Hit",
+    "genre": "Action · Combat",
+    "platforms": "Browser, Mobile",
+    "learningProfile": "action",
+    "controls": [
+      {
+        "input": "Tap / Touch",
+        "action": "play on mobile and trigger actions"
+      }
+    ]
+  },
+  "block-craft-3d-school": {
+    "name": "Block Craft 3D School",
+    "genre": "Sandbox · Creative",
+    "platforms": "Browser, Mobile",
+    "learningProfile": "creative",
+    "controls": [
+      {
+        "input": "Click",
+        "action": "confirm actions or fire at the right moment"
+      },
+      {
+        "input": "Tap / Touch",
+        "action": "play on mobile and trigger actions"
+      }
+    ]
+  },
+  "gold-miner-tower-defense": {
+    "name": "Gold Miner Tower Defense",
+    "genre": "Tower Defense · Strategy",
+    "platforms": "Browser, Mobile",
+    "learningProfile": "strategy",
+    "controls": [
+      {
+        "input": "Click",
+        "action": "confirm actions or fire at the right moment"
+      },
+      {
+        "input": "Tap / Touch",
+        "action": "play on mobile and trigger actions"
+      },
+      {
+        "input": "Drag and drop",
+        "action": "place towers or cards on the board"
+      }
+    ]
+  },
+  "z-machine": {
+    "name": "Z Machine",
+    "genre": "Action · Shooter",
+    "platforms": "Browser, Mobile",
+    "learningProfile": "action",
+    "controls": [
+      {
+        "input": "Click",
+        "action": "confirm actions or fire at the right moment"
+      },
+      {
+        "input": "Tap / Touch",
+        "action": "play on mobile and trigger actions"
+      }
+    ]
+  },
+  "cake-maker-kids-cooking": {
+    "name": "Cake Maker Kids Cooking",
+    "genre": "Cooking · Creative",
+    "platforms": "Browser, Mobile",
+    "learningProfile": "default",
+    "controls": [
+      {
+        "input": "Click",
+        "action": "confirm actions or fire at the right moment"
+      },
+      {
+        "input": "Tap / Touch",
+        "action": "play on mobile and trigger actions"
+      }
+    ]
+  },
+  "nightmare-float": {
+    "name": "Nightmare Float",
+    "genre": "Racing · Skill",
+    "platforms": "Browser, Mobile",
+    "learningProfile": "racing",
+    "controls": [
+      {
+        "input": "Click",
+        "action": "confirm actions or fire at the right moment"
+      },
+      {
+        "input": "Tap / Touch",
+        "action": "play on mobile and trigger actions"
+      },
+      {
+        "input": "Mouse / Touch",
+        "action": "control steering, braking, or parking inputs"
+      }
+    ]
+  },
+  "bottle-battle": {
+    "name": "Bottle Battle",
+    "genre": "Puzzle · Logic",
+    "platforms": "Browser, Mobile",
+    "learningProfile": "puzzle",
+    "controls": [
+      {
+        "input": "Click",
+        "action": "confirm actions or fire at the right moment"
+      },
+      {
+        "input": "Click / Tap",
+        "action": "pour from one bottle or container into another"
+      }
+    ]
+  },
+  "memory-exclusive": {
+    "name": "Memory Exclusive",
+    "genre": "Puzzle · Memory",
+    "platforms": "Browser, Mobile",
+    "learningProfile": "puzzle",
+    "controls": [
+      {
+        "input": "Tap / Touch",
+        "action": "play on mobile and trigger actions"
+      },
+      {
+        "input": "Click / Tap",
+        "action": "flip cards and match each pair"
       }
     ]
   }

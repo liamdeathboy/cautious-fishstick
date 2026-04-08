@@ -92,7 +92,7 @@
   "2048-merge-run": {
     "name": "2048 Merge Run",
     "href": "games/2048-merge-run.html",
-    "image": "games/2048-merge-run/logo.png",
+    "image": "images/2048-merge-run.webp",
     "title": "2048 Merge Run - Play Free Online",
     "metaDescription": "Play 2048 Merge Run, a fast runner where lane control, reaction timing, and upgrade routes determine your finish.",
     "metaKeywords": "2048 merge run, 2048-merge-run, racing game, browser game, chromebook game, schplay",
@@ -122,7 +122,7 @@
   "build-a-big-army": {
     "name": "Build a Big Army",
     "href": "games/build-a-big-army.html",
-    "image": "games/build-a-big-army/logo.png",
+    "image": "images/build-a-big-army.jpeg",
     "title": "Build a Big Army - Play Free Online",
     "metaDescription": "Play Build a Big Army, a browser strategy challenge where smart upgrades, timing, and planning decide each round.",
     "metaKeywords": "build a big army, build-a-big-army, strategy game, browser game, chromebook game, schplay",
@@ -152,7 +152,7 @@
   "build-a-plane": {
     "name": "Build a Plane",
     "href": "games/build-a-plane.html",
-    "image": "games/build-a-plane/logo.png",
+    "image": "images/build-a-plane.webp",
     "title": "Build a Plane - Play Free Online",
     "metaDescription": "Play Build a Plane online in your browser on Schplay.",
     "metaKeywords": "build a plane, build-a-plane, default game, browser game, chromebook game, schplay",
@@ -182,7 +182,7 @@
   "camouflage-and-sniper": {
     "name": "Camouflage and Sniper",
     "href": "games/camouflage-and-sniper.html",
-    "image": "games/camouflage-and-sniper/logo.png",
+    "image": "images/camouflag-and-sniper.png",
     "title": "Camouflage and Sniper - Play Free Online",
     "metaDescription": "Play Camouflage and Sniper, an action-focused browser game with quick rounds, sharp reactions, and high-pressure encounters.",
     "metaKeywords": "camouflage and sniper, camouflage-and-sniper, action game, browser game, chromebook game, schplay",
@@ -212,7 +212,7 @@
   "car-survival-3d": {
     "name": "Car Survival 3D",
     "href": "games/car-survival-3d.html",
-    "image": "games/car-survival-3d/logo.png",
+    "image": "images/car-survival-3d.jpeg",
     "title": "Car Survival 3D - Play Free Online",
     "metaDescription": "Play Car Survival 3D, a fast runner where lane control, reaction timing, and upgrade routes determine your finish.",
     "metaKeywords": "car survival 3d, car-survival-3d, racing game, browser game, chromebook game, schplay",
@@ -242,7 +242,7 @@
   "city-defense": {
     "name": "City Defense",
     "href": "games/city-defense.html",
-    "image": "games/city-defense/logo.png",
+    "image": "images/city-defence.jpeg",
     "title": "City Defense - Play Free Online",
     "metaDescription": "Play City Defense, a browser strategy challenge where smart upgrades, timing, and planning decide each round.",
     "metaKeywords": "city defense, city-defense, strategy game, browser game, chromebook game, schplay",
@@ -302,7 +302,7 @@
   "cool-cars-run-3d": {
     "name": "Cool Cars Run 3D",
     "href": "games/cool-cars-run-3d.html",
-    "image": "games/cool-cars-run-3d/logo.png",
+    "image": "images/cool-cars-run-3d.jpeg",
     "title": "Cool Cars Run 3D - Play Free Online",
     "metaDescription": "Play Cool Cars Run 3D, a fast runner where lane control, reaction timing, and upgrade routes determine your finish.",
     "metaKeywords": "cool cars run 3d, cool-cars-run-3d, racing game, browser game, chromebook game, schplay",
@@ -332,7 +332,7 @@
   "crush-cars-3d": {
     "name": "Crush Cars 3D",
     "href": "games/crush-cars-3d.html",
-    "image": "games/crush-cars-3d/logo.png",
+    "image": "images/crush-cars-3d.jpeg",
     "title": "Crush Cars 3D - Play Free Online",
     "metaDescription": "Play Crush Cars 3D, a fast runner where lane control, reaction timing, and upgrade routes determine your finish.",
     "metaKeywords": "crush cars 3d, crush-cars-3d, racing game, browser game, chromebook game, schplay",
@@ -422,7 +422,7 @@
   "diamond-seeker": {
     "name": "Diamond Seeker",
     "href": "games/diamond-seeker.html",
-    "image": "games/diamond-seeker/logo.png",
+    "image": "images/diamond-seeker.jpeg",
     "title": "Diamond Seeker - Play Free Online",
     "metaDescription": "Play Diamond Seeker, a puzzle-style browser game where sequencing, pattern recognition, and efficient moves lead to high scores.",
     "metaKeywords": "diamond seeker, diamond-seeker, puzzle game, browser game, chromebook game, schplay",
@@ -452,7 +452,7 @@
   "draw-joust": {
     "name": "Draw Joust",
     "href": "games/draw-joust.html",
-    "image": "games/draw-joust/logo.png",
+    "image": "images/draw-joust.avif",
     "title": "Draw Joust - Play Free Online",
     "metaDescription": "Play Draw Joust, a puzzle-style browser game where sequencing, pattern recognition, and efficient moves lead to high scores.",
     "metaKeywords": "draw joust, draw-joust, puzzle game, browser game, chromebook game, schplay",
@@ -482,7 +482,7 @@
   "evolving-bombs-3d": {
     "name": "Evolving Bombs 3D",
     "href": "games/evolving-bombs-3d.html",
-    "image": "games/evolving-bombs-3d/logo.png",
+    "image": "images/evolving-bomb-3d.jpeg",
     "title": "Evolving Bombs 3D - Play Free Online",
     "metaDescription": "Play Evolving Bombs 3D, an action-focused browser game with quick rounds, sharp reactions, and high-pressure encounters.",
     "metaKeywords": "evolving bombs 3d, evolving-bombs-3d, action game, browser game, chromebook game, schplay",
@@ -542,7 +542,7 @@
   "fitness-empire": {
     "name": "Fitness Empire",
     "href": "games/fitness-empire.html",
-    "image": "games/fitness-empire/logo.png",
+    "image": "images/fitness-empire.jpeg",
     "title": "Fitness Empire - Play Free Online",
     "metaDescription": "Play Fitness Empire, a browser strategy challenge where smart upgrades, timing, and planning decide each round.",
     "metaKeywords": "fitness empire, fitness-empire, strategy game, browser game, chromebook game, schplay",
@@ -572,7 +572,7 @@
   "flick-goal": {
     "name": "Flick Goal",
     "href": "games/flick-goal.html",
-    "image": "games/flick-goal/logo.png",
+    "image": "images/flick-goal.jpeg",
     "title": "Flick Goal - Play Free Online",
     "metaDescription": "Play Flick Goal, a puzzle-style browser game where sequencing, pattern recognition, and efficient moves lead to high scores.",
     "metaKeywords": "flick goal, flick-goal, puzzle game, browser game, chromebook game, schplay",
@@ -602,7 +602,7 @@
   "flip-master": {
     "name": "Flip Master",
     "href": "games/flip-master.html",
-    "image": "games/flip-master/logo.png",
+    "image": "images/flip-master.jpg",
     "title": "Flip Master - Play Free Online",
     "metaDescription": "Play Flip Master, a puzzle-style browser game where sequencing, pattern recognition, and efficient moves lead to high scores.",
     "metaKeywords": "flip master, flip-master, puzzle game, browser game, chromebook game, schplay",
@@ -632,7 +632,7 @@
   "giant-wanted": {
     "name": "Giant Wanted",
     "href": "games/giant-wanted.html",
-    "image": "games/giant-wanted/logo.png",
+    "image": "images/giant-wanted.jpeg",
     "title": "Giant Wanted - Play Free Online",
     "metaDescription": "Play Giant Wanted, an action-focused browser game with quick rounds, sharp reactions, and high-pressure encounters.",
     "metaKeywords": "giant wanted, giant-wanted, action game, browser game, chromebook game, schplay",
@@ -662,7 +662,7 @@
   "gun-clone": {
     "name": "Gun Clone",
     "href": "games/gun-clone.html",
-    "image": "games/gun-clone/logo.png",
+    "image": "images/gun-clone.jpeg",
     "title": "Gun Clone - Play Free Online",
     "metaDescription": "Play Gun Clone, an action-focused browser game with quick rounds, sharp reactions, and high-pressure encounters.",
     "metaKeywords": "gun clone, gun-clone, action game, browser game, chromebook game, schplay",
@@ -692,7 +692,7 @@
   "gun-runner": {
     "name": "Gun Runner",
     "href": "games/gun-runner.html",
-    "image": "games/gun-runner/logo.png",
+    "image": "images/gun-runner.png",
     "title": "Gun Runner - Play Free Online",
     "metaDescription": "Play Gun Runner, a fast runner where lane control, reaction timing, and upgrade routes determine your finish.",
     "metaKeywords": "gun runner, gun-runner, racing game, browser game, chromebook game, schplay",
@@ -722,7 +722,7 @@
   "high-heels": {
     "name": "High Heels",
     "href": "games/high-heels.html",
-    "image": "games/high-heels/logo.png",
+    "image": "images/high-heels.png",
     "title": "High Heels - Play Free Online",
     "metaDescription": "Play High Heels, a fast runner where lane control, reaction timing, and upgrade routes determine your finish.",
     "metaKeywords": "high heels, high-heels, racing game, browser game, chromebook game, schplay",
@@ -752,7 +752,7 @@
   "kaji-run": {
     "name": "Kaji Run",
     "href": "games/kaji-run.html",
-    "image": "games/kaji-run/logo.png",
+    "image": "images/kaji-run.avif",
     "title": "Kaji Run - Play Free Online",
     "metaDescription": "Play Kaji Run, a fast runner where lane control, reaction timing, and upgrade routes determine your finish.",
     "metaKeywords": "kaji run, kaji-run, racing game, browser game, chromebook game, schplay",
@@ -782,7 +782,7 @@
   "make-a-superboat": {
     "name": "Make a Superboat",
     "href": "games/make-a-superboat.html",
-    "image": "games/make-a-superboat/logo.png",
+    "image": "images/make-a-superboat.jpeg",
     "title": "Make a Superboat - Play Free Online",
     "metaDescription": "Play Make a Superboat, a fast runner where lane control, reaction timing, and upgrade routes determine your finish.",
     "metaKeywords": "make a superboat, make-a-superboat, racing game, browser game, chromebook game, schplay",
@@ -812,7 +812,7 @@
   "makeover-run": {
     "name": "Makeover Run",
     "href": "games/makeover-run.html",
-    "image": "games/makeover-run/logo.png",
+    "image": "images/makeover-run.jpeg",
     "title": "Makeover Run - Play Free Online",
     "metaDescription": "Play Makeover Run, a fast runner where lane control, reaction timing, and upgrade routes determine your finish.",
     "metaKeywords": "makeover run, makeover-run, racing game, browser game, chromebook game, schplay",
@@ -842,7 +842,7 @@
   "mega-car-jumps": {
     "name": "Mega Car Jumps",
     "href": "games/mega-car-jumps.html",
-    "image": "games/mega-car-jumps/logo.png",
+    "image": "images/mega-car-iumps.jpeg",
     "title": "Mega Car Jumps - Play Free Online",
     "metaDescription": "Play Mega Car Jumps, a fast runner where lane control, reaction timing, and upgrade routes determine your finish.",
     "metaKeywords": "mega car jumps, mega-car-jumps, racing game, browser game, chromebook game, schplay",
@@ -872,7 +872,7 @@
   "money-rush": {
     "name": "Money Rush",
     "href": "games/money-rush.html",
-    "image": "games/money-rush/logo.png",
+    "image": "images/money-rush.jpeg",
     "title": "Money Rush - Play Free Online",
     "metaDescription": "Play Money Rush, a fast runner where lane control, reaction timing, and upgrade routes determine your finish.",
     "metaKeywords": "money rush, money-rush, racing game, browser game, chromebook game, schplay",
@@ -902,7 +902,7 @@
   "monster-box-3d": {
     "name": "Monster Box 3D",
     "href": "games/monster-box-3d.html",
-    "image": "games/monster-box-3d/logo.png",
+    "image": "images/monster-box-3d.jpeg",
     "title": "Monster Box 3D - Play Free Online",
     "metaDescription": "Play Monster Box 3D, a puzzle-style browser game where sequencing, pattern recognition, and efficient moves lead to high scores.",
     "metaKeywords": "monster box 3d, monster-box-3d, puzzle game, browser game, chromebook game, schplay",
@@ -932,7 +932,7 @@
   "office-fight": {
     "name": "Office Fight",
     "href": "games/office-fight.html",
-    "image": "games/office-fight/logo.png",
+    "image": "images/office-fight.jpeg",
     "title": "Office Fight - Play Free Online",
     "metaDescription": "Play Office Fight, an action-focused browser game with quick rounds, sharp reactions, and high-pressure encounters.",
     "metaKeywords": "office fight, office-fight, action game, browser game, chromebook game, schplay",
@@ -962,7 +962,7 @@
   "robot-invasion": {
     "name": "Robot Invasion",
     "href": "games/robot-invasion.html",
-    "image": "games/robot-invasion/logo.png",
+    "image": "images/robot-invasion.jpg",
     "title": "Robot Invasion - Play Free Online",
     "metaDescription": "Play Robot Invasion, a browser strategy challenge where smart upgrades, timing, and planning decide each round.",
     "metaKeywords": "robot invasion, robot-invasion, strategy game, browser game, chromebook game, schplay",
@@ -992,7 +992,7 @@
   "run-rich-3d": {
     "name": "Run Rich 3D",
     "href": "games/run-rich-3d.html",
-    "image": "games/run-rich-3d/logo.png",
+    "image": "images/run-rich-3d.jpeg",
     "title": "Run Rich 3D - Play Free Online",
     "metaDescription": "Play Run Rich 3D, a fast runner where lane control, reaction timing, and upgrade routes determine your finish.",
     "metaKeywords": "run rich 3d, run-rich-3d, racing game, browser game, chromebook game, schplay",
@@ -1022,7 +1022,7 @@
   "save-p-diddy-from-prison": {
     "name": "Save P Diddy from Prison",
     "href": "games/save-p-diddy-from-prison.html",
-    "image": "games/save-p-diddy-from-prison/logo.png",
+    "image": "images/save-p-diddy-from-prision.avif",
     "title": "Save P Diddy from Prison - Play Free Online",
     "metaDescription": "Play Save P Diddy from Prison online in your browser on Schplay.",
     "metaKeywords": "save p diddy from prison, save-p-diddy-from-prison, default game, browser game, chromebook game, schplay",
@@ -1052,7 +1052,7 @@
   "seat-jam-3d": {
     "name": "Seat Jam 3D",
     "href": "games/seat-jam-3d.html",
-    "image": "games/seat-jam-3d/logo.png",
+    "image": "images/seat-jam-3d.png",
     "title": "Seat Jam 3D - Play Free Online",
     "metaDescription": "Play Seat Jam 3D, a puzzle-style browser game where sequencing, pattern recognition, and efficient moves lead to high scores.",
     "metaKeywords": "seat jam 3d, seat-jam-3d, puzzle game, browser game, chromebook game, schplay",
@@ -1082,7 +1082,7 @@
   "shooting-master": {
     "name": "Shooting Master",
     "href": "games/shooting-master.html",
-    "image": "games/shooting-master/logo.png",
+    "image": "images/shooting-master.jpeg",
     "title": "Shooting Master - Play Free Online",
     "metaDescription": "Play Shooting Master, an action-focused browser game with quick rounds, sharp reactions, and high-pressure encounters.",
     "metaKeywords": "shooting master, shooting-master, action game, browser game, chromebook game, schplay",
@@ -1112,7 +1112,7 @@
   "supermarket-3d": {
     "name": "Supermarket 3D",
     "href": "games/supermarket-3d.html",
-    "image": "games/supermarket-3d/logo.png",
+    "image": "images/supermarket-game.jpg",
     "title": "Supermarket 3D - Play Free Online",
     "metaDescription": "Play Supermarket 3D, a browser strategy challenge where smart upgrades, timing, and planning decide each round.",
     "metaKeywords": "supermarket 3d, supermarket-3d, strategy game, browser game, chromebook game, schplay",
@@ -1142,7 +1142,7 @@
   "survive-to-victory": {
     "name": "Survive to Victory",
     "href": "games/survive-to-victory.html",
-    "image": "games/survive-to-victory/logo.png",
+    "image": "images/survive-to-victory-game.jpeg",
     "title": "Survive to Victory - Play Free Online",
     "metaDescription": "Play Survive to Victory, a browser strategy challenge where smart upgrades, timing, and planning decide each round.",
     "metaKeywords": "survive to victory, survive-to-victory, strategy game, browser game, chromebook game, schplay",
@@ -1172,7 +1172,7 @@
   "telekinesis-attack": {
     "name": "Telekinesis Attack",
     "href": "games/telekinesis-attack.html",
-    "image": "games/telekinesis-attack/logo.png",
+    "image": "images/telekinesis-attack.jpeg",
     "title": "Telekinesis Attack - Play Free Online",
     "metaDescription": "Play Telekinesis Attack, an action-focused browser game with quick rounds, sharp reactions, and high-pressure encounters.",
     "metaKeywords": "telekinesis attack, telekinesis-attack, action game, browser game, chromebook game, schplay",
@@ -1202,7 +1202,7 @@
   "telekinesis-car": {
     "name": "Telekinesis Car",
     "href": "games/telekinesis-car.html",
-    "image": "games/telekinesis-car/logo.png",
+    "image": "images/telekinesis-car.jpeg",
     "title": "Telekinesis Car - Play Free Online",
     "metaDescription": "Play Telekinesis Car, a fast runner where lane control, reaction timing, and upgrade routes determine your finish.",
     "metaKeywords": "telekinesis car, telekinesis-car, racing game, browser game, chromebook game, schplay",
@@ -1232,7 +1232,7 @@
   "telekinesis-drive": {
     "name": "Telekinesis Drive",
     "href": "games/telekinesis-drive.html",
-    "image": "games/telekinesis-drive/logo.png",
+    "image": "images/telekiesis-drive.avif",
     "title": "Telekinesis Drive - Play Free Online",
     "metaDescription": "Play Telekinesis Drive, a fast runner where lane control, reaction timing, and upgrade routes determine your finish.",
     "metaKeywords": "telekinesis drive, telekinesis-drive, racing game, browser game, chromebook game, schplay",
@@ -1292,7 +1292,7 @@
   "triple-match-3d": {
     "name": "Triple Match 3D",
     "href": "games/triple-match-3d.html",
-    "image": "games/triple-match-3d/logo.png",
+    "image": "images/triple-match-3d.jpeg",
     "title": "Triple Match 3D - Play Free Online",
     "metaDescription": "Play Triple Match 3D, a puzzle-style browser game where sequencing, pattern recognition, and efficient moves lead to high scores.",
     "metaKeywords": "triple match 3d, triple-match-3d, puzzle game, browser game, chromebook game, schplay",
@@ -1322,7 +1322,7 @@
   "tug-of-war-with-cars": {
     "name": "Tug of War with Cars",
     "href": "games/tug-of-war-with-cars.html",
-    "image": "games/tug-of-war-with-cars/logo.png",
+    "image": "images/tug-of-wars-with-cars.jpeg",
     "title": "Tug of War with Cars - Play Free Online",
     "metaDescription": "Play Tug of War with Cars, a browser strategy challenge where smart upgrades, timing, and planning decide each round.",
     "metaKeywords": "tug of war with cars, tug-of-war-with-cars, strategy game, browser game, chromebook game, schplay",
@@ -1352,7 +1352,7 @@
   "twerk-race-3d": {
     "name": "Twerk Race 3D",
     "href": "games/twerk-race-3d.html",
-    "image": "games/twerk-race-3d/logo.png",
+    "image": "images/twerk-race-game.png",
     "title": "Twerk Race 3D - Play Free Online",
     "metaDescription": "Play Twerk Race 3D, a fast runner where lane control, reaction timing, and upgrade routes determine your finish.",
     "metaKeywords": "twerk race 3d, twerk-race-3d, racing game, browser game, chromebook game, schplay",
@@ -1382,7 +1382,7 @@
   "twisted-rope-3d": {
     "name": "Twisted Rope 3D",
     "href": "games/twisted-rope-3d.html",
-    "image": "games/twisted-rope-3d/logo.png",
+    "image": "images/twisted-rope-3d.jpeg",
     "title": "Twisted Rope 3D - Play Free Online",
     "metaDescription": "Play Twisted Rope 3D, a puzzle-style browser game where sequencing, pattern recognition, and efficient moves lead to high scores.",
     "metaKeywords": "twisted rope 3d, twisted-rope-3d, puzzle game, browser game, chromebook game, schplay",
@@ -1412,7 +1412,7 @@
   "wall-crawler": {
     "name": "Wall Crawler",
     "href": "games/wall-crawler.html",
-    "image": "games/wall-crawler/logo.png",
+    "image": "images/wall-crawler.jpeg",
     "title": "Wall Crawler - Play Free Online",
     "metaDescription": "Play Wall Crawler, a puzzle-style browser game where sequencing, pattern recognition, and efficient moves lead to high scores.",
     "metaKeywords": "wall crawler, wall-crawler, puzzle game, browser game, chromebook game, schplay",
@@ -1442,7 +1442,7 @@
   "war-regions": {
     "name": "War Regions",
     "href": "games/war-regions.html",
-    "image": "games/war-regions/logo.png",
+    "image": "images/war-regions.png",
     "title": "War Regions - Play Free Online",
     "metaDescription": "Play War Regions, a browser strategy challenge where smart upgrades, timing, and planning decide each round.",
     "metaKeywords": "war regions, war-regions, strategy game, browser game, chromebook game, schplay",
@@ -1472,7 +1472,7 @@
   "weapon-craft-run": {
     "name": "Weapon Craft Run",
     "href": "games/weapon-craft-run.html",
-    "image": "games/weapon-craft-run/logo.png",
+    "image": "images/weapon-craft-run.jpeg",
     "title": "Weapon Craft Run - Play Free Online",
     "metaDescription": "Play Weapon Craft Run, a fast runner where lane control, reaction timing, and upgrade routes determine your finish.",
     "metaKeywords": "weapon craft run, weapon-craft-run, racing game, browser game, chromebook game, schplay",
@@ -1502,7 +1502,7 @@
   "weapon-upgrade-rush": {
     "name": "Weapon Upgrade Rush",
     "href": "games/weapon-upgrade-rush.html",
-    "image": "games/weapon-upgrade-rush/logo.png",
+    "image": "images/weapon-upgrade-rush.jpeg",
     "title": "Weapon Upgrade Rush - Play Free Online",
     "metaDescription": "Play Weapon Upgrade Rush, a fast runner where lane control, reaction timing, and upgrade routes determine your finish.",
     "metaKeywords": "weapon upgrade rush, weapon-upgrade-rush, racing game, browser game, chromebook game, schplay",
@@ -1558,5 +1558,1025 @@
     ],
     "plainText": "Wheel Scale - Play Free Online\nWheel Scale is built around momentum and clean pathing. Read incoming gates early, avoid greedy turns, and chain safe boosts to keep speed through the finish.",
     "iframeSrc": "wheel-scale/index.html"
+  },
+  "starpoly": {
+    "name": "Starpoly",
+    "href": "games/starpoly.html",
+    "image": "https://img.gamemonetize.com/stp68cw05n283o49a9n8qym64knqpbmz/512x384.jpg",
+    "title": "Starpoly - Play Free Online",
+    "metaDescription": "Play Starpoly online and outtrade rival players in a fast property board game packed with deals, auctions, and risky loan decisions.",
+    "metaKeywords": "starpoly, starpoly, browser game, online game, schplay, gamemonetize",
+    "heroParagraph": "Starpoly turns browser board-game strategy into a contest of timing, negotiation, and property control.",
+    "instructions": [
+      "Use the mouse to move through turns, buy properties, and confirm trades as new openings appear.",
+      "Watch your cash flow before taking on loans because one greedy purchase can leave you exposed later in the match.",
+      "Trade actively instead of waiting for perfect rolls. Smart deals usually create a bigger advantage than passive play."
+    ],
+    "sections": [],
+    "plainText": "Starpoly - Play Free Online\nStarpoly turns browser board-game strategy into a contest of timing, negotiation, and property control.\nUse the mouse to move through turns, buy properties, and confirm trades as new openings appear. Watch your cash flow before taking on loans because one greedy purchase can leave you exposed later in the match. Trade actively instead of waiting for perfect rolls. Smart deals usually create a bigger advantage than passive play.",
+    "iframeSrc": "https://html5.gamemonetize.com/stp68cw05n283o49a9n8qym64knqpbmz/"
+  },
+  "bus-school-park-driver": {
+    "name": "Bus School Park Driver",
+    "href": "games/bus-school-park-driver.html",
+    "image": "https://img.gamemonetize.com/i429yunzarak64517ysvdeki741nrdoc/512x384.jpg",
+    "title": "Bus School Park Driver - Play Free Online",
+    "metaDescription": "Play Bus School Park Driver online and work through tight school-bus parking challenges with careful turns, steady braking, and clean drop-offs.",
+    "metaKeywords": "bus school park driver, bus-school-park-driver, browser game, online game, schplay, gamemonetize",
+    "heroParagraph": "Bus School Park Driver is all about slow control, clean angles, and staying calm in narrow parking zones.",
+    "instructions": [
+      "Start each route by lining up your turn early. Late corrections make long buses much harder to park cleanly.",
+      "Brake before the tight space, not inside it. Controlled entry gives you more room to adjust the final position.",
+      "Use small steering inputs and keep an eye on corners so you do not clip barriers or miss the target zone."
+    ],
+    "sections": [],
+    "plainText": "Bus School Park Driver - Play Free Online\nBus School Park Driver is all about slow control, clean angles, and staying calm in narrow parking zones.\nStart each route by lining up your turn early. Late corrections make long buses much harder to park cleanly. Brake before the tight space, not inside it. Controlled entry gives you more room to adjust the final position. Use small steering inputs and keep an eye on corners so you do not clip barriers or miss the target zone.",
+    "iframeSrc": "https://html5.gamemonetize.com/i429yunzarak64517ysvdeki741nrdoc/"
+  },
+  "real-driving-simulator": {
+    "name": "Real Driving Simulator",
+    "href": "games/real-driving-simulator.html",
+    "image": "https://img.gamemonetize.com/86nvuq9kpejinx49fv27relwo1b8ulrz/512x384.jpg",
+    "title": "Real Driving Simulator - Play Free Online",
+    "metaDescription": "Play Real Driving Simulator online and test your handling across city roads and open courses with realistic steering, braking, and car control.",
+    "metaKeywords": "real driving simulator, real-driving-simulator, browser game, online game, schplay, gamemonetize",
+    "heroParagraph": "Real Driving Simulator rewards smooth driving lines, measured braking, and steady control instead of wild speed.",
+    "instructions": [
+      "Drive with short, deliberate steering adjustments so the car stays stable through traffic and corners.",
+      "Brake before the turn and accelerate after the apex. That simple rhythm will clean up most runs.",
+      "Try different vehicles and routes because each one changes how much grip, speed, and recovery room you have."
+    ],
+    "sections": [],
+    "plainText": "Real Driving Simulator - Play Free Online\nReal Driving Simulator rewards smooth driving lines, measured braking, and steady control instead of wild speed.\nDrive with short, deliberate steering adjustments so the car stays stable through traffic and corners. Brake before the turn and accelerate after the apex. That simple rhythm will clean up most runs. Try different vehicles and routes because each one changes how much grip, speed, and recovery room you have.",
+    "iframeSrc": "https://html5.gamemonetize.com/86nvuq9kpejinx49fv27relwo1b8ulrz/"
+  },
+  "air-slip": {
+    "name": "Air Slip",
+    "href": "games/air-slip.html",
+    "image": "https://img.gamemonetize.com/v6hvw1trmapk48hnc7e9z9fannd7ouuz/512x384.jpg",
+    "title": "Air Slip - Play Free Online",
+    "metaDescription": "Play Air Slip online and guide the green ball along a rotating beam while grabbing safe cubes and dodging deadly ones.",
+    "metaKeywords": "air slip, air-slip, browser game, online game, schplay, gamemonetize",
+    "heroParagraph": "Air Slip is a reflex game built on timing, beam control, and quick recovery when the pattern speeds up.",
+    "instructions": [
+      "Tap to reverse the beam rotation at the moment that opens the safest path to the next green cube.",
+      "Do not chase every target immediately. Waiting half a beat is often safer than overcorrecting into danger.",
+      "Protect your lives first. A stable run with fewer mistakes will outscore a reckless one over time."
+    ],
+    "sections": [],
+    "plainText": "Air Slip - Play Free Online\nAir Slip is a reflex game built on timing, beam control, and quick recovery when the pattern speeds up.\nTap to reverse the beam rotation at the moment that opens the safest path to the next green cube. Do not chase every target immediately. Waiting half a beat is often safer than overcorrecting into danger. Protect your lives first. A stable run with fewer mistakes will outscore a reckless one over time.",
+    "iframeSrc": "https://html5.gamemonetize.com/v6hvw1trmapk48hnc7e9z9fannd7ouuz/"
+  },
+  "the-last-shot": {
+    "name": "The Last Shot",
+    "href": "games/the-last-shot.html",
+    "image": "https://img.gamemonetize.com/jx55tyrf879uilkgs7zqes0u7muesrfr/512x384.jpg",
+    "title": "The Last Shot - Play Free Online",
+    "metaDescription": "Play The Last Shot online and launch a glowing orb across obstacle-filled stages where accuracy, angle control, and timing decide every clear.",
+    "metaKeywords": "the last shot, the-last-shot, browser game, online game, schplay, gamemonetize",
+    "heroParagraph": "The Last Shot is built around precision planning, smart rebounds, and calm aim under pressure.",
+    "instructions": [
+      "Drag to set a clean angle before releasing the orb. Small aim changes can completely change the next bounce.",
+      "Study blue platforms and obstacle spacing before you shoot so each attempt has a real plan behind it.",
+      "Reset quickly after a bad angle and focus on consistency. Clean repeats beat desperate trick shots."
+    ],
+    "sections": [],
+    "plainText": "The Last Shot - Play Free Online\nThe Last Shot is built around precision planning, smart rebounds, and calm aim under pressure.\nDrag to set a clean angle before releasing the orb. Small aim changes can completely change the next bounce. Study blue platforms and obstacle spacing before you shoot so each attempt has a real plan behind it. Reset quickly after a bad angle and focus on consistency. Clean repeats beat desperate trick shots.",
+    "iframeSrc": "https://html5.gamemonetize.com/jx55tyrf879uilkgs7zqes0u7muesrfr/"
+  },
+  "mouse-raider": {
+    "name": "Mouse Raider",
+    "href": "games/mouse-raider.html",
+    "image": "https://img.gamemonetize.com/1qfjio3168bf56q7j4nvtmbsecmg8tm9/512x384.jpg",
+    "title": "Mouse Raider - Play Free Online",
+    "metaDescription": "Play Mouse Raider online and defend your desserts by aiming fast, clicking cleanly, and stopping the mouse swarm before it overwhelms the kitchen.",
+    "metaKeywords": "mouse raider, mouse-raider, browser game, online game, schplay, gamemonetize",
+    "heroParagraph": "Mouse Raider is an arcade shooter that rewards fast target priority and steady aim as the screen gets crowded.",
+    "instructions": [
+      "Keep the cursor near the highest-traffic area so you spend less time sweeping across the whole screen.",
+      "Clear the closest threats first because they reach the food fastest and force rushed follow-up shots.",
+      "Stay accurate when the pace rises. Misses matter more than raw speed once multiple mice overlap."
+    ],
+    "sections": [],
+    "plainText": "Mouse Raider - Play Free Online\nMouse Raider is an arcade shooter that rewards fast target priority and steady aim as the screen gets crowded.\nKeep the cursor near the highest-traffic area so you spend less time sweeping across the whole screen. Clear the closest threats first because they reach the food fastest and force rushed follow-up shots. Stay accurate when the pace rises. Misses matter more than raw speed once multiple mice overlap.",
+    "iframeSrc": "https://html5.gamemonetize.com/1qfjio3168bf56q7j4nvtmbsecmg8tm9/"
+  },
+  "pixelcraft-animal-school": {
+    "name": "PixelCraft Animal School",
+    "href": "games/pixelcraft-animal-school.html",
+    "image": "https://img.gamemonetize.com/26ep0w2hgpmy22lsygextvvxv4as2kl0/512x384.jpg",
+    "title": "PixelCraft Animal School - Play Free Online",
+    "metaDescription": "Play PixelCraft Animal School online and race through a snowy pixel world while collecting gold, dodging predators, and reaching the portal safely.",
+    "metaKeywords": "pixelcraft animal school, pixelcraft-animal-school, browser game, online game, schplay, gamemonetize",
+    "heroParagraph": "PixelCraft Animal School mixes co-op platforming, survival pressure, and fast route choices across icy stages.",
+    "instructions": [
+      "Use WASD or Arrow Keys to move and jump while keeping enough space between you and chasing animals.",
+      "Grab easy gold on the safe route first instead of risking a long detour that slows your escape.",
+      "If you play with two characters, move as a team so neither player gets trapped away from the portal."
+    ],
+    "sections": [],
+    "plainText": "PixelCraft Animal School - Play Free Online\nPixelCraft Animal School mixes co-op platforming, survival pressure, and fast route choices across icy stages.\nUse WASD or Arrow Keys to move and jump while keeping enough space between you and chasing animals. Grab easy gold on the safe route first instead of risking a long detour that slows your escape. If you play with two characters, move as a team so neither player gets trapped away from the portal.",
+    "iframeSrc": "https://html5.gamemonetize.com/26ep0w2hgpmy22lsygextvvxv4as2kl0/"
+  },
+  "arrow-fest-3d-online": {
+    "name": "Arrow Fest 3D Online",
+    "href": "games/arrow-fest-3d-online.html",
+    "image": "https://img.gamemonetize.com/1stwld5rfunzortwdpg0b7zu2wygon4p/512x384.jpg",
+    "title": "Arrow Fest 3D Online - Play Free Online",
+    "metaDescription": "Play Arrow Fest 3D Online and steer your arrow stream through the best multipliers to build huge volleys and smash the final targets.",
+    "metaKeywords": "arrow fest 3d online, arrow-fest-3d-online, browser game, online game, schplay, gamemonetize",
+    "heroParagraph": "Arrow Fest 3D Online is about lane choice, multiplier reading, and preserving as many arrows as possible for the finish.",
+    "instructions": [
+      "Use the mouse or touch controls to line up with high-value gates as early as possible.",
+      "Think two gates ahead so you do not take a small bonus that blocks a much better route right after it.",
+      "Protect your arrow count through the middle section because the final target burst depends on what survives."
+    ],
+    "sections": [],
+    "plainText": "Arrow Fest 3D Online - Play Free Online\nArrow Fest 3D Online is about lane choice, multiplier reading, and preserving as many arrows as possible for the finish.\nUse the mouse or touch controls to line up with high-value gates as early as possible. Think two gates ahead so you do not take a small bonus that blocks a much better route right after it. Protect your arrow count through the middle section because the final target burst depends on what survives.",
+    "iframeSrc": "https://html5.gamemonetize.com/1stwld5rfunzortwdpg0b7zu2wygon4p/"
+  },
+  "we-bare-bears-difference": {
+    "name": "We Bare Bears Difference",
+    "href": "games/we-bare-bears-difference.html",
+    "image": "https://img.gamemonetize.com/zdri7sr13ti3ygexwlcjbwln0ycjcupb/512x384.jpg",
+    "title": "We Bare Bears Difference - Play Free Online",
+    "metaDescription": "Play We Bare Bears Difference online and find all seven hidden changes across cartoon scenes before the timer runs out.",
+    "metaKeywords": "we bare bears difference, we-bare-bears-difference, browser game, online game, schplay, gamemonetize",
+    "heroParagraph": "We Bare Bears Difference turns close observation into a fast puzzle challenge with short rounds and hidden details.",
+    "instructions": [
+      "Scan the whole image once before clicking so you build a quick mental map of the biggest changes.",
+      "Work from one side to the other instead of bouncing randomly between details and losing track.",
+      "Use hints sparingly and save them for the last one or two differences when the timer gets tight."
+    ],
+    "sections": [],
+    "plainText": "We Bare Bears Difference - Play Free Online\nWe Bare Bears Difference turns close observation into a fast puzzle challenge with short rounds and hidden details.\nScan the whole image once before clicking so you build a quick mental map of the biggest changes. Work from one side to the other instead of bouncing randomly between details and losing track. Use hints sparingly and save them for the last one or two differences when the timer gets tight.",
+    "iframeSrc": "https://html5.gamemonetize.com/zdri7sr13ti3ygexwlcjbwln0ycjcupb/"
+  },
+  "little-princess-jigsaw": {
+    "name": "Little Princess Jigsaw",
+    "href": "games/little-princess-jigsaw.html",
+    "image": "https://img.gamemonetize.com/cjufvc54qijk666gaqk2efizy6b4565i/512x384.jpg",
+    "title": "Little Princess Jigsaw - Play Free Online",
+    "metaDescription": "Play Little Princess Jigsaw online and assemble colorful royal portraits with drag-and-drop puzzle pieces and a helpful magic assist option.",
+    "metaKeywords": "little princess jigsaw, little-princess-jigsaw, browser game, online game, schplay, gamemonetize",
+    "heroParagraph": "Little Princess Jigsaw is a relaxed picture puzzle built around sorting edges, matching colors, and finishing each portrait cleanly.",
+    "instructions": [
+      "Start by grouping obvious edge and corner pieces so the puzzle frame gives you a stable base.",
+      "Match color blocks and dress details before tiny decorations because the larger shapes lock in faster.",
+      "Use the magic help button only when needed so you still learn the picture layout as you solve it."
+    ],
+    "sections": [],
+    "plainText": "Little Princess Jigsaw - Play Free Online\nLittle Princess Jigsaw is a relaxed picture puzzle built around sorting edges, matching colors, and finishing each portrait cleanly.\nStart by grouping obvious edge and corner pieces so the puzzle frame gives you a stable base. Match color blocks and dress details before tiny decorations because the larger shapes lock in faster. Use the magic help button only when needed so you still learn the picture layout as you solve it.",
+    "iframeSrc": "https://html5.gamemonetize.com/cjufvc54qijk666gaqk2efizy6b4565i/"
+  },
+  "hotel-transylvania-coloring-book": {
+    "name": "Hotel Transylvania Coloring Book",
+    "href": "games/hotel-transylvania-coloring-book.html",
+    "image": "https://img.gamemonetize.com/hr3170u73fw7f1yr3pe1yjvplqjo3kfw/512x384.jpg",
+    "title": "Hotel Transylvania Coloring Book - Play Free Online",
+    "metaDescription": "Play Hotel Transylvania Coloring Book online and fill themed scenes with bright colors, easy tools, and relaxed creative play.",
+    "metaKeywords": "hotel transylvania coloring book, hotel-transylvania-coloring-book, browser game, online game, schplay, gamemonetize",
+    "heroParagraph": "Hotel Transylvania Coloring Book is a relaxed coloring game built around palette choice, brush control, and finishing each page your way.",
+    "instructions": [
+      "Drag with short, controlled motions so your aim or placement stays precise.",
+      "Use the eraser or brush-size tools when small details need more control.",
+      "Try a full pass on the big shapes before you start shading tiny sections."
+    ],
+    "sections": [],
+    "plainText": "Hotel Transylvania Coloring Book - Play Free Online\nHotel Transylvania Coloring Book is a relaxed coloring game built around palette choice, brush control, and finishing each page your way.\nDrag with short, controlled motions so your aim or placement stays precise. Use the eraser or brush-size tools when small details need more control. Try a full pass on the big shapes before you start shading tiny sections.",
+    "iframeSrc": "https://html5.gamemonetize.com/hr3170u73fw7f1yr3pe1yjvplqjo3kfw/"
+  },
+  "escape-mystic-castle-mobile-version": {
+    "name": "Escape Mystic Castle Mobile version",
+    "href": "games/escape-mystic-castle-mobile-version.html",
+    "image": "https://img.gamemonetize.com/dpei1y1bfdd6vsgthkjwfnk7u7g0xu4s/512x384.jpg",
+    "title": "Escape Mystic Castle Mobile version - Play Free Online",
+    "metaDescription": "Play Escape Mystic Castle Mobile version online and handle each route with smoother turns, better braking, and cleaner finishes.",
+    "metaKeywords": "escape mystic castle mobile version, escape-mystic-castle-mobile-version, browser game, online game, schplay, gamemonetize",
+    "heroParagraph": "Escape Mystic Castle Mobile version rewards clean steering, measured speed, and reading the route before you commit.",
+    "instructions": [
+      "Use short taps or touch movements so each input stays controlled instead of overcorrected.",
+      "Brake before tight spaces and accelerate only when the exit line is clear.",
+      "Use small steering inputs because smooth control beats panic movement every time."
+    ],
+    "sections": [],
+    "plainText": "Escape Mystic Castle Mobile version - Play Free Online\nEscape Mystic Castle Mobile version rewards clean steering, measured speed, and reading the route before you commit.\nUse short taps or touch movements so each input stays controlled instead of overcorrected. Brake before tight spaces and accelerate only when the exit line is clear. Use small steering inputs because smooth control beats panic movement every time.",
+    "iframeSrc": "https://html5.gamemonetize.com/dpei1y1bfdd6vsgthkjwfnk7u7g0xu4s/"
+  },
+  "jump-over-alphabets": {
+    "name": "Jump Over Alphabets",
+    "href": "games/jump-over-alphabets.html",
+    "image": "https://img.gamemonetize.com/mqktfq5t3bu14251v5tjrnedhdjrhytl/512x384.jpg",
+    "title": "Jump Over Alphabets - Play Free Online",
+    "metaDescription": "Play Jump Over Alphabets online and improve recognition skills with fast prompts, clean movement, and short rounds.",
+    "metaKeywords": "jump over alphabets, jump-over-alphabets, browser game, online game, schplay, gamemonetize",
+    "heroParagraph": "Jump Over Alphabets blends quick movement with educational prompts so timing and recognition both matter.",
+    "instructions": [
+      "Drag with short, controlled motions so your aim or placement stays precise.",
+      "Use repeated short runs to learn the pattern behind each educational challenge.",
+      "Clean recognition is more valuable than panic speed once the pace rises."
+    ],
+    "sections": [],
+    "plainText": "Jump Over Alphabets - Play Free Online\nJump Over Alphabets blends quick movement with educational prompts so timing and recognition both matter.\nDrag with short, controlled motions so your aim or placement stays precise. Use repeated short runs to learn the pattern behind each educational challenge. Clean recognition is more valuable than panic speed once the pace rises.",
+    "iframeSrc": "https://html5.gamemonetize.com/mqktfq5t3bu14251v5tjrnedhdjrhytl/"
+  },
+  "jelly-matches": {
+    "name": "Jelly Matches",
+    "href": "games/jelly-matches.html",
+    "image": "https://img.gamemonetize.com/45k2hkp92lx338zqlj5m2xr3puexfduw/512x384.jpg",
+    "title": "Jelly Matches - Play Free Online",
+    "metaDescription": "Play Jelly Matches online and sharpen math skills with quick answers, clear prompts, and repeatable practice.",
+    "metaKeywords": "jelly matches, jelly-matches, browser game, online game, schplay, gamemonetize",
+    "heroParagraph": "Jelly Matches turns quick thinking into a fast math challenge where accuracy matters as much as speed.",
+    "instructions": [
+      "Drag with short, controlled motions so your aim or placement stays precise.",
+      "Build a steady rhythm instead of rushing one hard question and losing the whole streak.",
+      "Replay short sets and track which question types slow you down the most."
+    ],
+    "sections": [],
+    "plainText": "Jelly Matches - Play Free Online\nJelly Matches turns quick thinking into a fast math challenge where accuracy matters as much as speed.\nDrag with short, controlled motions so your aim or placement stays precise. Build a steady rhythm instead of rushing one hard question and losing the whole streak. Replay short sets and track which question types slow you down the most.",
+    "iframeSrc": "https://html5.gamemonetize.com/45k2hkp92lx338zqlj5m2xr3puexfduw/"
+  },
+  "paperly-paper-plane-adventure": {
+    "name": "Paperly: Paper Plane Adventure",
+    "href": "games/paperly-paper-plane-adventure.html",
+    "image": "https://img.gamemonetize.com/ga0hdulxnef9p1hkw72ci2pk44lbcdar/512x384.jpg",
+    "title": "Paperly: Paper Plane Adventure - Play Free Online",
+    "metaDescription": "Play Paperly: Paper Plane Adventure online and handle each route with smoother turns, better braking, and cleaner finishes.",
+    "metaKeywords": "paperly: paper plane adventure, paperly-paper-plane-adventure, browser game, online game, schplay, gamemonetize",
+    "heroParagraph": "Paperly: Paper Plane Adventure rewards clean steering, measured speed, and reading the route before you commit.",
+    "instructions": [
+      "Use W / A / S / D to move with purpose and avoid wasting position on unnecessary corrections.",
+      "Brake before tight spaces and accelerate only when the exit line is clear.",
+      "Use small steering inputs because smooth control beats panic movement every time."
+    ],
+    "sections": [],
+    "plainText": "Paperly: Paper Plane Adventure - Play Free Online\nPaperly: Paper Plane Adventure rewards clean steering, measured speed, and reading the route before you commit.\nUse W / A / S / D to move with purpose and avoid wasting position on unnecessary corrections. Brake before tight spaces and accelerate only when the exit line is clear. Use small steering inputs because smooth control beats panic movement every time.",
+    "iframeSrc": "https://html5.gamemonetize.com/ga0hdulxnef9p1hkw72ci2pk44lbcdar/"
+  },
+  "bridge-wars": {
+    "name": "Bridge Wars",
+    "href": "games/bridge-wars.html",
+    "image": "https://img.gamemonetize.com/wf6qo75w4eyuvylmnpezdk3ord3ajdlr/512x384.jpg",
+    "title": "Bridge Wars - Play Free Online",
+    "metaDescription": "Play Bridge Wars online and clear threats with quick aim, fast reactions, and smart target control.",
+    "metaKeywords": "bridge wars, bridge-wars, browser game, online game, schplay, gamemonetize",
+    "heroParagraph": "Bridge Wars is built around target priority, quick reactions, and staying in control when the pressure rises.",
+    "instructions": [
+      "Identify the biggest threat first so the screen gets easier to control right away.",
+      "Keep your movement clean and avoid wasting attacks on low-value targets.",
+      "When a round gets hectic, accuracy and timing matter more than raw speed."
+    ],
+    "sections": [],
+    "plainText": "Bridge Wars - Play Free Online\nBridge Wars is built around target priority, quick reactions, and staying in control when the pressure rises.\nIdentify the biggest threat first so the screen gets easier to control right away. Keep your movement clean and avoid wasting attacks on low-value targets. When a round gets hectic, accuracy and timing matter more than raw speed.",
+    "iframeSrc": "https://html5.gamemonetize.com/wf6qo75w4eyuvylmnpezdk3ord3ajdlr/"
+  },
+  "super-tank-hero": {
+    "name": "Super Tank Hero",
+    "href": "games/super-tank-hero.html",
+    "image": "https://img.gamemonetize.com/0uxm1wr0oe3hjhotghpwp2w8n0tfdnkl/512x384.jpg",
+    "title": "Super Tank Hero - Play Free Online",
+    "metaDescription": "Play Super Tank Hero online and clear threats with quick aim, fast reactions, and smart target control.",
+    "metaKeywords": "super tank hero, super-tank-hero, browser game, online game, schplay, gamemonetize",
+    "heroParagraph": "Super Tank Hero is built around target priority, quick reactions, and staying in control when the pressure rises.",
+    "instructions": [
+      "Use short taps or touch movements so each input stays controlled instead of overcorrected.",
+      "Keep your movement clean and avoid wasting attacks on low-value targets.",
+      "When a round gets hectic, accuracy and timing matter more than raw speed."
+    ],
+    "sections": [],
+    "plainText": "Super Tank Hero - Play Free Online\nSuper Tank Hero is built around target priority, quick reactions, and staying in control when the pressure rises.\nUse short taps or touch movements so each input stays controlled instead of overcorrected. Keep your movement clean and avoid wasting attacks on low-value targets. When a round gets hectic, accuracy and timing matter more than raw speed.",
+    "iframeSrc": "https://html5.gamemonetize.com/0uxm1wr0oe3hjhotghpwp2w8n0tfdnkl/"
+  },
+  "hide-and-seek-blue-monster": {
+    "name": "Hide And Seek Blue Monster",
+    "href": "games/hide-and-seek-blue-monster.html",
+    "image": "https://img.gamemonetize.com/digi5xwq9xlsyolubtfl4ofqyxnc7a02/512x384.jpg",
+    "title": "Hide And Seek Blue Monster - Play Free Online",
+    "metaDescription": "Play Hide And Seek Blue Monster online and solve each board with smarter moves, cleaner setups, and better pattern reading.",
+    "metaKeywords": "hide and seek blue monster, hide-and-seek-blue-monster, browser game, online game, schplay, gamemonetize",
+    "heroParagraph": "Hide And Seek Blue Monster rewards board reading, efficient moves, and calm resets when a layout starts to collapse.",
+    "instructions": [
+      "Use short taps or touch movements so each input stays controlled instead of overcorrected.",
+      "Solve the most restrictive part of the puzzle first because it shapes the rest of the board.",
+      "Reset quickly after weak openings and test one cleaner route at a time."
+    ],
+    "sections": [],
+    "plainText": "Hide And Seek Blue Monster - Play Free Online\nHide And Seek Blue Monster rewards board reading, efficient moves, and calm resets when a layout starts to collapse.\nUse short taps or touch movements so each input stays controlled instead of overcorrected. Solve the most restrictive part of the puzzle first because it shapes the rest of the board. Reset quickly after weak openings and test one cleaner route at a time.",
+    "iframeSrc": "https://html5.gamemonetize.com/digi5xwq9xlsyolubtfl4ofqyxnc7a02/"
+  },
+  "math-games-for-dummies": {
+    "name": "Math games for Dummies",
+    "href": "games/math-games-for-dummies.html",
+    "image": "https://img.gamemonetize.com/43k8qhlegc44xa78lh8v6cdkqddqedqc/512x384.jpg",
+    "title": "Math games for Dummies - Play Free Online",
+    "metaDescription": "Play Math games for Dummies online and handle each route with smoother turns, better braking, and cleaner finishes.",
+    "metaKeywords": "math games for dummies, math-games-for-dummies, browser game, online game, schplay, gamemonetize",
+    "heroParagraph": "Math games for Dummies rewards clean steering, measured speed, and reading the route before you commit.",
+    "instructions": [
+      "Use short taps or touch movements so each input stays controlled instead of overcorrected.",
+      "Brake before tight spaces and accelerate only when the exit line is clear.",
+      "Use small steering inputs because smooth control beats panic movement every time."
+    ],
+    "sections": [],
+    "plainText": "Math games for Dummies - Play Free Online\nMath games for Dummies rewards clean steering, measured speed, and reading the route before you commit.\nUse short taps or touch movements so each input stays controlled instead of overcorrected. Brake before tight spaces and accelerate only when the exit line is clear. Use small steering inputs because smooth control beats panic movement every time.",
+    "iframeSrc": "https://html5.gamemonetize.com/43k8qhlegc44xa78lh8v6cdkqddqedqc/"
+  },
+  "fall-guy-2024": {
+    "name": "Fall Guy 2024",
+    "href": "games/fall-guy-2024.html",
+    "image": "https://img.gamemonetize.com/v3yu7w2xefhhjb1aqdv7xb41t990o291/512x384.jpg",
+    "title": "Fall Guy 2024 - Play Free Online",
+    "metaDescription": "Play Fall Guy 2024 online and build, protect, and expand a block world with creative placement and survival pressure.",
+    "metaKeywords": "fall guy 2024, fall-guy-2024, browser game, online game, schplay, gamemonetize",
+    "heroParagraph": "Fall Guy 2024 mixes block building, resource use, and defense into a creative sandbox loop.",
+    "instructions": [
+      "Use short taps or touch movements so each input stays controlled instead of overcorrected.",
+      "Gather easy resources early and avoid overextending when the map opens up.",
+      "Keep your strongest defenses near the most exposed parts of the build."
+    ],
+    "sections": [],
+    "plainText": "Fall Guy 2024 - Play Free Online\nFall Guy 2024 mixes block building, resource use, and defense into a creative sandbox loop.\nUse short taps or touch movements so each input stays controlled instead of overcorrected. Gather easy resources early and avoid overextending when the map opens up. Keep your strongest defenses near the most exposed parts of the build.",
+    "iframeSrc": "https://html5.gamemonetize.com/v3yu7w2xefhhjb1aqdv7xb41t990o291/"
+  },
+  "2d-car-driving-drive-safe": {
+    "name": "2D Car Driving: Drive Safe",
+    "href": "games/2d-car-driving-drive-safe.html",
+    "image": "https://img.gamemonetize.com/vrvldrihwffzn2t7r0c6e5qzmz90d2xl/512x384.jpg",
+    "title": "2D Car Driving: Drive Safe - Play Free Online",
+    "metaDescription": "Play 2D Car Driving: Drive Safe online and spot every hidden change before the timer runs out across cartoon-style scenes.",
+    "metaKeywords": "2d car driving: drive safe, 2d-car-driving-drive-safe, browser game, online game, schplay, gamemonetize",
+    "heroParagraph": "2D Car Driving: Drive Safe rewards quick observation, clean scanning, and calm clicking as hidden changes get harder to spot.",
+    "instructions": [
+      "Use short taps or touch movements so each input stays controlled instead of overcorrected.",
+      "Work from one side to the other instead of bouncing between details and losing track.",
+      "Save hints for the final differences when the timer gets tight."
+    ],
+    "sections": [],
+    "plainText": "2D Car Driving: Drive Safe - Play Free Online\n2D Car Driving: Drive Safe rewards quick observation, clean scanning, and calm clicking as hidden changes get harder to spot.\nUse short taps or touch movements so each input stays controlled instead of overcorrected. Work from one side to the other instead of bouncing between details and losing track. Save hints for the final differences when the timer gets tight.",
+    "iframeSrc": "https://html5.gamemonetize.com/vrvldrihwffzn2t7r0c6e5qzmz90d2xl/"
+  },
+  "circle-of-heroes": {
+    "name": "Circle Of Heroes",
+    "href": "games/circle-of-heroes.html",
+    "image": "https://img.gamemonetize.com/fr5m0kur9spb79mo9mnhi9mbp4ncus2a/512x384.jpg",
+    "title": "Circle Of Heroes - Play Free Online",
+    "metaDescription": "Play Circle Of Heroes online and clear threats with quick aim, fast reactions, and smart target control.",
+    "metaKeywords": "circle of heroes, circle-of-heroes, browser game, online game, schplay, gamemonetize",
+    "heroParagraph": "Circle Of Heroes is built around target priority, quick reactions, and staying in control when the pressure rises.",
+    "instructions": [
+      "Use short taps or touch movements so each input stays controlled instead of overcorrected.",
+      "Keep your movement clean and avoid wasting attacks on low-value targets.",
+      "When a round gets hectic, accuracy and timing matter more than raw speed."
+    ],
+    "sections": [],
+    "plainText": "Circle Of Heroes - Play Free Online\nCircle Of Heroes is built around target priority, quick reactions, and staying in control when the pressure rises.\nUse short taps or touch movements so each input stays controlled instead of overcorrected. Keep your movement clean and avoid wasting attacks on low-value targets. When a round gets hectic, accuracy and timing matter more than raw speed.",
+    "iframeSrc": "https://html5.gamemonetize.com/fr5m0kur9spb79mo9mnhi9mbp4ncus2a/"
+  },
+  "domino-adventure": {
+    "name": "Domino Adventure",
+    "href": "games/domino-adventure.html",
+    "image": "https://img.gamemonetize.com/xissi6tuoy9rwj54203f971u47olh4rx/512x384.jpg",
+    "title": "Domino Adventure - Play Free Online",
+    "metaDescription": "Play Domino Adventure online and outplay the board with smart placements, clean chains, and better endgame control.",
+    "metaKeywords": "domino adventure, domino-adventure, browser game, online game, schplay, gamemonetize",
+    "heroParagraph": "Domino Adventure rewards planning ahead, keeping the board open, and turning small placements into stronger follow-up turns.",
+    "instructions": [
+      "Think one turn ahead before placing a tile so you do not close off your best options.",
+      "Protect flexible numbers early because they keep your later turns easier.",
+      "If the board starts to lock up, play for position instead of chasing flashy chains."
+    ],
+    "sections": [],
+    "plainText": "Domino Adventure - Play Free Online\nDomino Adventure rewards planning ahead, keeping the board open, and turning small placements into stronger follow-up turns.\nThink one turn ahead before placing a tile so you do not close off your best options. Protect flexible numbers early because they keep your later turns easier. If the board starts to lock up, play for position instead of chasing flashy chains.",
+    "iframeSrc": "https://html5.gamemonetize.com/xissi6tuoy9rwj54203f971u47olh4rx/"
+  },
+  "purrfect-clicker": {
+    "name": "Purrfect Clicker",
+    "href": "games/purrfect-clicker.html",
+    "image": "https://img.gamemonetize.com/3f3q387pm95ba4tedpgs9vyokc50m5g2/512x384.jpg",
+    "title": "Purrfect Clicker - Play Free Online",
+    "metaDescription": "Play Purrfect Clicker online and build bigger numbers through fast taps, better upgrades, and tighter resource loops.",
+    "metaKeywords": "purrfect clicker, purrfect-clicker, browser game, online game, schplay, gamemonetize",
+    "heroParagraph": "Purrfect Clicker is an upgrade loop built around quick taps, efficient spending, and steady score growth.",
+    "instructions": [
+      "Use short taps or touch movements so each input stays controlled instead of overcorrected.",
+      "Watch which action gives the biggest return and build your loop around that.",
+      "Short upgrade cycles usually scale better than waiting too long for one huge buy."
+    ],
+    "sections": [],
+    "plainText": "Purrfect Clicker - Play Free Online\nPurrfect Clicker is an upgrade loop built around quick taps, efficient spending, and steady score growth.\nUse short taps or touch movements so each input stays controlled instead of overcorrected. Watch which action gives the biggest return and build your loop around that. Short upgrade cycles usually scale better than waiting too long for one huge buy.",
+    "iframeSrc": "https://html5.gamemonetize.com/3f3q387pm95ba4tedpgs9vyokc50m5g2/"
+  },
+  "juicy-tic-tac-toe-battle": {
+    "name": "Juicy Tic Tac Toe Battle",
+    "href": "games/juicy-tic-tac-toe-battle.html",
+    "image": "https://img.gamemonetize.com/qld3sjsry030ic8jxwjoo08v46ceugul/512x384.jpg",
+    "title": "Juicy Tic Tac Toe Battle - Play Free Online",
+    "metaDescription": "Play Juicy Tic Tac Toe Battle online and win more rounds through setup plays, clean blocks, and faster reads.",
+    "metaKeywords": "juicy tic tac toe battle, juicy-tic-tac-toe-battle, browser game, online game, schplay, gamemonetize",
+    "heroParagraph": "Juicy Tic Tac Toe Battle keeps every round focused on setup, blocking lines, and forcing the final winning move.",
+    "instructions": [
+      "Open with a move that creates future pressure instead of reacting too late.",
+      "Block forks early because one missed line can lose the round instantly.",
+      "Treat draws as useful resets and look for cleaner setups in the next board."
+    ],
+    "sections": [],
+    "plainText": "Juicy Tic Tac Toe Battle - Play Free Online\nJuicy Tic Tac Toe Battle keeps every round focused on setup, blocking lines, and forcing the final winning move.\nOpen with a move that creates future pressure instead of reacting too late. Block forks early because one missed line can lose the round instantly. Treat draws as useful resets and look for cleaner setups in the next board.",
+    "iframeSrc": "https://html5.gamemonetize.com/qld3sjsry030ic8jxwjoo08v46ceugul/"
+  },
+  "hookcube": {
+    "name": "HookCube",
+    "href": "games/hookcube.html",
+    "image": "https://img.gamemonetize.com/gulhsbobq6o3avyywv4k41qgxkw36pvl/512x384.jpg",
+    "title": "HookCube - Play Free Online",
+    "metaDescription": "Play HookCube online and handle each route with smoother turns, better braking, and cleaner finishes.",
+    "metaKeywords": "hookcube, hookcube, browser game, online game, schplay, gamemonetize",
+    "heroParagraph": "HookCube rewards clean steering, measured speed, and reading the route before you commit.",
+    "instructions": [
+      "Set up your turn early so you do not need a heavy correction in the middle of the route.",
+      "Brake before tight spaces and accelerate only when the exit line is clear.",
+      "Use small steering inputs because smooth control beats panic movement every time."
+    ],
+    "sections": [],
+    "plainText": "HookCube - Play Free Online\nHookCube rewards clean steering, measured speed, and reading the route before you commit.\nSet up your turn early so you do not need a heavy correction in the middle of the route. Brake before tight spaces and accelerate only when the exit line is clear. Use small steering inputs because smooth control beats panic movement every time.",
+    "iframeSrc": "https://html5.gamemonetize.com/gulhsbobq6o3avyywv4k41qgxkw36pvl/"
+  },
+  "pull-the-pin-much-money": {
+    "name": "Pull The Pin Much Money",
+    "href": "games/pull-the-pin-much-money.html",
+    "image": "https://img.gamemonetize.com/u6y73ibps2wn7w3o4z135ppn4rsrx588/512x384.jpg",
+    "title": "Pull The Pin Much Money - Play Free Online",
+    "metaDescription": "Play Pull The Pin Much Money online and handle each route with smoother turns, better braking, and cleaner finishes.",
+    "metaKeywords": "pull the pin much money, pull-the-pin-much-money, browser game, online game, schplay, gamemonetize",
+    "heroParagraph": "Pull The Pin Much Money rewards clean steering, measured speed, and reading the route before you commit.",
+    "instructions": [
+      "Use short taps or touch movements so each input stays controlled instead of overcorrected.",
+      "Brake before tight spaces and accelerate only when the exit line is clear.",
+      "Use small steering inputs because smooth control beats panic movement every time."
+    ],
+    "sections": [],
+    "plainText": "Pull The Pin Much Money - Play Free Online\nPull The Pin Much Money rewards clean steering, measured speed, and reading the route before you commit.\nUse short taps or touch movements so each input stays controlled instead of overcorrected. Brake before tight spaces and accelerate only when the exit line is clear. Use small steering inputs because smooth control beats panic movement every time.",
+    "iframeSrc": "https://html5.gamemonetize.com/u6y73ibps2wn7w3o4z135ppn4rsrx588/"
+  },
+  "noodle-stack-runner": {
+    "name": "Noodle Stack Runner",
+    "href": "games/noodle-stack-runner.html",
+    "image": "https://img.gamemonetize.com/me10twl3ggmhi220yxqtnxgocpqdjhun/512x384.jpg",
+    "title": "Noodle Stack Runner - Play Free Online",
+    "metaDescription": "Play Noodle Stack Runner online and handle each route with smoother turns, better braking, and cleaner finishes.",
+    "metaKeywords": "noodle stack runner, noodle-stack-runner, browser game, online game, schplay, gamemonetize",
+    "heroParagraph": "Noodle Stack Runner rewards clean steering, measured speed, and reading the route before you commit.",
+    "instructions": [
+      "Use short taps or touch movements so each input stays controlled instead of overcorrected.",
+      "Brake before tight spaces and accelerate only when the exit line is clear.",
+      "Use small steering inputs because smooth control beats panic movement every time."
+    ],
+    "sections": [],
+    "plainText": "Noodle Stack Runner - Play Free Online\nNoodle Stack Runner rewards clean steering, measured speed, and reading the route before you commit.\nUse short taps or touch movements so each input stays controlled instead of overcorrected. Brake before tight spaces and accelerate only when the exit line is clear. Use small steering inputs because smooth control beats panic movement every time.",
+    "iframeSrc": "https://html5.gamemonetize.com/me10twl3ggmhi220yxqtnxgocpqdjhun/"
+  },
+  "big-hand": {
+    "name": "Big hand",
+    "href": "games/big-hand.html",
+    "image": "https://img.gamemonetize.com/eavzi2yfqn19pwk41njc6rtfwv3z97h6/512x384.jpg",
+    "title": "Big hand - Play Free Online",
+    "metaDescription": "Play Big hand online and combine matching pieces into bigger clears with smart spacing and efficient merges.",
+    "metaKeywords": "big hand, big-hand, browser game, online game, schplay, gamemonetize",
+    "heroParagraph": "Big hand is a satisfying merge puzzle where space control and smart combinations matter more than rushed moves.",
+    "instructions": [
+      "Use short taps or touch movements so each input stays controlled instead of overcorrected.",
+      "Protect open space because crowded boards remove your best combination options.",
+      "Plan the next merge, not just the current one, when scores start climbing."
+    ],
+    "sections": [],
+    "plainText": "Big hand - Play Free Online\nBig hand is a satisfying merge puzzle where space control and smart combinations matter more than rushed moves.\nUse short taps or touch movements so each input stays controlled instead of overcorrected. Protect open space because crowded boards remove your best combination options. Plan the next merge, not just the current one, when scores start climbing.",
+    "iframeSrc": "https://html5.gamemonetize.com/eavzi2yfqn19pwk41njc6rtfwv3z97h6/"
+  },
+  "flappy-ship-classic": {
+    "name": "Flappy Ship Classic",
+    "href": "games/flappy-ship-classic.html",
+    "image": "https://img.gamemonetize.com/1gmiifl3myqa1vce5h60q01x45l6oinb/512x384.jpg",
+    "title": "Flappy Ship Classic - Play Free Online",
+    "metaDescription": "Play Flappy Ship Classic online and build, protect, and expand a block world with creative placement and survival pressure.",
+    "metaKeywords": "flappy ship classic, flappy-ship-classic, browser game, online game, schplay, gamemonetize",
+    "heroParagraph": "Flappy Ship Classic mixes block building, resource use, and defense into a creative sandbox loop.",
+    "instructions": [
+      "Build the basic structure first so you have a safe layout before enemies show up.",
+      "Gather easy resources early and avoid overextending when the map opens up.",
+      "Keep your strongest defenses near the most exposed parts of the build."
+    ],
+    "sections": [],
+    "plainText": "Flappy Ship Classic - Play Free Online\nFlappy Ship Classic mixes block building, resource use, and defense into a creative sandbox loop.\nBuild the basic structure first so you have a safe layout before enemies show up. Gather easy resources early and avoid overextending when the map opens up. Keep your strongest defenses near the most exposed parts of the build.",
+    "iframeSrc": "https://html5.gamemonetize.com/1gmiifl3myqa1vce5h60q01x45l6oinb/"
+  },
+  "practice-on-me": {
+    "name": "Practice On Me",
+    "href": "games/practice-on-me.html",
+    "image": "https://img.gamemonetize.com/opcw3n645043j5d1v13a7effq93p4no0/512x384.jpg",
+    "title": "Practice On Me - Play Free Online",
+    "metaDescription": "Play Practice On Me online and handle each route with smoother turns, better braking, and cleaner finishes.",
+    "metaKeywords": "practice on me, practice-on-me, browser game, online game, schplay, gamemonetize",
+    "heroParagraph": "Practice On Me rewards clean steering, measured speed, and reading the route before you commit.",
+    "instructions": [
+      "Use short taps or touch movements so each input stays controlled instead of overcorrected.",
+      "Brake before tight spaces and accelerate only when the exit line is clear.",
+      "Use small steering inputs because smooth control beats panic movement every time."
+    ],
+    "sections": [],
+    "plainText": "Practice On Me - Play Free Online\nPractice On Me rewards clean steering, measured speed, and reading the route before you commit.\nUse short taps or touch movements so each input stays controlled instead of overcorrected. Brake before tight spaces and accelerate only when the exit line is clear. Use small steering inputs because smooth control beats panic movement every time.",
+    "iframeSrc": "https://html5.gamemonetize.com/opcw3n645043j5d1v13a7effq93p4no0/"
+  },
+  "redpool-legend-2-player": {
+    "name": "RedPool Legend 2 Player",
+    "href": "games/redpool-legend-2-player.html",
+    "image": "https://img.gamemonetize.com/sjzwvzpgyoj0vj3vogehwpgxfyf3dq2i/512x384.jpg",
+    "title": "RedPool Legend 2 Player - Play Free Online",
+    "metaDescription": "Play RedPool Legend 2 Player online and sharpen math skills with quick answers, clear prompts, and repeatable practice.",
+    "metaKeywords": "redpool legend 2 player, redpool-legend-2-player, browser game, online game, schplay, gamemonetize",
+    "heroParagraph": "RedPool Legend 2 Player turns quick thinking into a fast math challenge where accuracy matters as much as speed.",
+    "instructions": [
+      "Use W / A / S / D to move with purpose and avoid wasting position on unnecessary corrections.",
+      "Build a steady rhythm instead of rushing one hard question and losing the whole streak.",
+      "Replay short sets and track which question types slow you down the most."
+    ],
+    "sections": [],
+    "plainText": "RedPool Legend 2 Player - Play Free Online\nRedPool Legend 2 Player turns quick thinking into a fast math challenge where accuracy matters as much as speed.\nUse W / A / S / D to move with purpose and avoid wasting position on unnecessary corrections. Build a steady rhythm instead of rushing one hard question and losing the whole streak. Replay short sets and track which question types slow you down the most.",
+    "iframeSrc": "https://html5.gamemonetize.com/sjzwvzpgyoj0vj3vogehwpgxfyf3dq2i/"
+  },
+  "noob-the-builder": {
+    "name": "Noob the builder",
+    "href": "games/noob-the-builder.html",
+    "image": "https://img.gamemonetize.com/a3v2dofspzlvni2lpl9omcz6r0w0tpmh/512x384.jpg",
+    "title": "Noob the builder - Play Free Online",
+    "metaDescription": "Play Noob the builder online and build bigger numbers through fast taps, better upgrades, and tighter resource loops.",
+    "metaKeywords": "noob the builder, noob-the-builder, browser game, online game, schplay, gamemonetize",
+    "heroParagraph": "Noob the builder is an upgrade loop built around quick taps, efficient spending, and steady score growth.",
+    "instructions": [
+      "Spend early upgrades on the strongest multiplier instead of spreading coins everywhere.",
+      "Watch which action gives the biggest return and build your loop around that.",
+      "Short upgrade cycles usually scale better than waiting too long for one huge buy."
+    ],
+    "sections": [],
+    "plainText": "Noob the builder - Play Free Online\nNoob the builder is an upgrade loop built around quick taps, efficient spending, and steady score growth.\nSpend early upgrades on the strongest multiplier instead of spreading coins everywhere. Watch which action gives the biggest return and build your loop around that. Short upgrade cycles usually scale better than waiting too long for one huge buy.",
+    "iframeSrc": "https://html5.gamemonetize.com/a3v2dofspzlvni2lpl9omcz6r0w0tpmh/"
+  },
+  "balloons-park": {
+    "name": "Balloons Park",
+    "href": "games/balloons-park.html",
+    "image": "https://img.gamemonetize.com/806sjmyu8bjoiqhqzlwh3l3ikfyjhfg9/512x384.jpg",
+    "title": "Balloons Park - Play Free Online",
+    "metaDescription": "Play Balloons Park online and handle each route with smoother turns, better braking, and cleaner finishes.",
+    "metaKeywords": "balloons park, balloons-park, browser game, online game, schplay, gamemonetize",
+    "heroParagraph": "Balloons Park rewards clean steering, measured speed, and reading the route before you commit.",
+    "instructions": [
+      "Use short taps or touch movements so each input stays controlled instead of overcorrected.",
+      "Brake before tight spaces and accelerate only when the exit line is clear.",
+      "Use small steering inputs because smooth control beats panic movement every time."
+    ],
+    "sections": [],
+    "plainText": "Balloons Park - Play Free Online\nBalloons Park rewards clean steering, measured speed, and reading the route before you commit.\nUse short taps or touch movements so each input stays controlled instead of overcorrected. Brake before tight spaces and accelerate only when the exit line is clear. Use small steering inputs because smooth control beats panic movement every time.",
+    "iframeSrc": "https://html5.gamemonetize.com/806sjmyu8bjoiqhqzlwh3l3ikfyjhfg9/"
+  },
+  "stunt-maps": {
+    "name": "Stunt Maps",
+    "href": "games/stunt-maps.html",
+    "image": "https://img.gamemonetize.com/we3v62yymmy7l2m9yuvuxdewrro4tloo/512x384.jpg",
+    "title": "Stunt Maps - Play Free Online",
+    "metaDescription": "Play Stunt Maps online and handle each route with smoother turns, better braking, and cleaner finishes.",
+    "metaKeywords": "stunt maps, stunt-maps, browser game, online game, schplay, gamemonetize",
+    "heroParagraph": "Stunt Maps rewards clean steering, measured speed, and reading the route before you commit.",
+    "instructions": [
+      "Use the Arrow Keys with small inputs so your movement stays clean and predictable.",
+      "Brake before tight spaces and accelerate only when the exit line is clear.",
+      "Use small steering inputs because smooth control beats panic movement every time."
+    ],
+    "sections": [],
+    "plainText": "Stunt Maps - Play Free Online\nStunt Maps rewards clean steering, measured speed, and reading the route before you commit.\nUse the Arrow Keys with small inputs so your movement stays clean and predictable. Brake before tight spaces and accelerate only when the exit line is clear. Use small steering inputs because smooth control beats panic movement every time.",
+    "iframeSrc": "https://html5.gamemonetize.com/we3v62yymmy7l2m9yuvuxdewrro4tloo/"
+  },
+  "shape-transform-blob-racing": {
+    "name": "Shape Transform Blob Racing",
+    "href": "games/shape-transform-blob-racing.html",
+    "image": "https://img.gamemonetize.com/6oqz5gzl1kboj8qfz83uy2dt8tcdutkt/512x384.jpg",
+    "title": "Shape Transform Blob Racing - Play Free Online",
+    "metaDescription": "Play Shape Transform Blob Racing online and handle each route with smoother turns, better braking, and cleaner finishes.",
+    "metaKeywords": "shape transform blob racing, shape-transform-blob-racing, browser game, online game, schplay, gamemonetize",
+    "heroParagraph": "Shape Transform Blob Racing rewards clean steering, measured speed, and reading the route before you commit.",
+    "instructions": [
+      "Use short taps or touch movements so each input stays controlled instead of overcorrected.",
+      "Brake before tight spaces and accelerate only when the exit line is clear.",
+      "Use small steering inputs because smooth control beats panic movement every time."
+    ],
+    "sections": [],
+    "plainText": "Shape Transform Blob Racing - Play Free Online\nShape Transform Blob Racing rewards clean steering, measured speed, and reading the route before you commit.\nUse short taps or touch movements so each input stays controlled instead of overcorrected. Brake before tight spaces and accelerate only when the exit line is clear. Use small steering inputs because smooth control beats panic movement every time.",
+    "iframeSrc": "https://html5.gamemonetize.com/6oqz5gzl1kboj8qfz83uy2dt8tcdutkt/"
+  },
+  "addition-bird-image-uncover": {
+    "name": "Addition: Bird Image Uncover",
+    "href": "games/addition-bird-image-uncover.html",
+    "image": "https://img.gamemonetize.com/0svpruoyftz3vzv7kkaqlfhp02y647k8/512x384.jpg",
+    "title": "Addition: Bird Image Uncover - Play Free Online",
+    "metaDescription": "Play Addition: Bird Image Uncover online and sharpen math skills with quick answers, clear prompts, and repeatable practice.",
+    "metaKeywords": "addition: bird image uncover, addition-bird-image-uncover, browser game, online game, schplay, gamemonetize",
+    "heroParagraph": "Addition: Bird Image Uncover turns quick thinking into a fast math challenge where accuracy matters as much as speed.",
+    "instructions": [
+      "Drag with short, controlled motions so your aim or placement stays precise.",
+      "Build a steady rhythm instead of rushing one hard question and losing the whole streak.",
+      "Replay short sets and track which question types slow you down the most."
+    ],
+    "sections": [],
+    "plainText": "Addition: Bird Image Uncover - Play Free Online\nAddition: Bird Image Uncover turns quick thinking into a fast math challenge where accuracy matters as much as speed.\nDrag with short, controlled motions so your aim or placement stays precise. Build a steady rhythm instead of rushing one hard question and losing the whole streak. Replay short sets and track which question types slow you down the most.",
+    "iframeSrc": "https://html5.gamemonetize.com/0svpruoyftz3vzv7kkaqlfhp02y647k8/"
+  },
+  "animalcraft-friends": {
+    "name": "AnimalCraft Friends",
+    "href": "games/animalcraft-friends.html",
+    "image": "https://img.gamemonetize.com/sz81v16rr1h6jp61pk95gf62e7sx822u/512x384.jpg",
+    "title": "AnimalCraft Friends - Play Free Online",
+    "metaDescription": "Play AnimalCraft Friends online and build, protect, and expand a block world with creative placement and survival pressure.",
+    "metaKeywords": "animalcraft friends, animalcraft-friends, browser game, online game, schplay, gamemonetize",
+    "heroParagraph": "AnimalCraft Friends mixes block building, resource use, and defense into a creative sandbox loop.",
+    "instructions": [
+      "Use W / A / S / D to move with purpose and avoid wasting position on unnecessary corrections.",
+      "Gather easy resources early and avoid overextending when the map opens up.",
+      "Keep your strongest defenses near the most exposed parts of the build."
+    ],
+    "sections": [],
+    "plainText": "AnimalCraft Friends - Play Free Online\nAnimalCraft Friends mixes block building, resource use, and defense into a creative sandbox loop.\nUse W / A / S / D to move with purpose and avoid wasting position on unnecessary corrections. Gather easy resources early and avoid overextending when the map opens up. Keep your strongest defenses near the most exposed parts of the build.",
+    "iframeSrc": "https://html5.gamemonetize.com/sz81v16rr1h6jp61pk95gf62e7sx822u/"
+  },
+  "bitcoin-millionaire": {
+    "name": "Bitcoin Millionaire",
+    "href": "games/bitcoin-millionaire.html",
+    "image": "https://img.gamemonetize.com/has0kqw18z3lb5zu4jd1v0wvvuwzzbwn/512x384.jpg",
+    "title": "Bitcoin Millionaire - Play Free Online",
+    "metaDescription": "Play Bitcoin Millionaire online and build bigger numbers through fast taps, better upgrades, and tighter resource loops.",
+    "metaKeywords": "bitcoin millionaire, bitcoin-millionaire, browser game, online game, schplay, gamemonetize",
+    "heroParagraph": "Bitcoin Millionaire is an upgrade loop built around quick taps, efficient spending, and steady score growth.",
+    "instructions": [
+      "Spend early upgrades on the strongest multiplier instead of spreading coins everywhere.",
+      "Watch which action gives the biggest return and build your loop around that.",
+      "Short upgrade cycles usually scale better than waiting too long for one huge buy."
+    ],
+    "sections": [],
+    "plainText": "Bitcoin Millionaire - Play Free Online\nBitcoin Millionaire is an upgrade loop built around quick taps, efficient spending, and steady score growth.\nSpend early upgrades on the strongest multiplier instead of spreading coins everywhere. Watch which action gives the biggest return and build your loop around that. Short upgrade cycles usually scale better than waiting too long for one huge buy.",
+    "iframeSrc": "https://html5.gamemonetize.com/has0kqw18z3lb5zu4jd1v0wvvuwzzbwn/"
+  },
+  "jungle-jump": {
+    "name": "Jungle Jump",
+    "href": "games/jungle-jump.html",
+    "image": "https://img.gamemonetize.com/hfjjrl9wlbbh1rbnudt1xhy6v8y91umy/512x384.jpg",
+    "title": "Jungle Jump - Play Free Online",
+    "metaDescription": "Play Jungle Jump online and push through each stage with better timing, cleaner jumps, and smarter routes.",
+    "metaKeywords": "jungle jump, jungle-jump, browser game, online game, schplay, gamemonetize",
+    "heroParagraph": "Jungle Jump is all about timing jumps, reading hazards early, and keeping momentum through each stage.",
+    "instructions": [
+      "Read the next obstacle before you jump so your landing stays under control.",
+      "Protect momentum on safe stretches and slow down only when the route demands it.",
+      "Use repeated runs to learn the level rhythm instead of improvising every section."
+    ],
+    "sections": [],
+    "plainText": "Jungle Jump - Play Free Online\nJungle Jump is all about timing jumps, reading hazards early, and keeping momentum through each stage.\nRead the next obstacle before you jump so your landing stays under control. Protect momentum on safe stretches and slow down only when the route demands it. Use repeated runs to learn the level rhythm instead of improvising every section.",
+    "iframeSrc": "https://html5.gamemonetize.com/hfjjrl9wlbbh1rbnudt1xhy6v8y91umy/"
+  },
+  "real-savior": {
+    "name": "Real Savior",
+    "href": "games/real-savior.html",
+    "image": "https://img.gamemonetize.com/61tmgj7nz1u1741bc5k5csy3t92jyue6/512x384.jpg",
+    "title": "Real Savior - Play Free Online",
+    "metaDescription": "Play Real Savior online and clear threats with quick aim, fast reactions, and smart target control.",
+    "metaKeywords": "real savior, real-savior, browser game, online game, schplay, gamemonetize",
+    "heroParagraph": "Real Savior is built around target priority, quick reactions, and staying in control when the pressure rises.",
+    "instructions": [
+      "Identify the biggest threat first so the screen gets easier to control right away.",
+      "Keep your movement clean and avoid wasting attacks on low-value targets.",
+      "When a round gets hectic, accuracy and timing matter more than raw speed."
+    ],
+    "sections": [],
+    "plainText": "Real Savior - Play Free Online\nReal Savior is built around target priority, quick reactions, and staying in control when the pressure rises.\nIdentify the biggest threat first so the screen gets easier to control right away. Keep your movement clean and avoid wasting attacks on low-value targets. When a round gets hectic, accuracy and timing matter more than raw speed.",
+    "iframeSrc": "https://html5.gamemonetize.com/61tmgj7nz1u1741bc5k5csy3t92jyue6/"
+  },
+  "watermelon-merge-3": {
+    "name": "Watermelon Merge 3",
+    "href": "games/watermelon-merge-3.html",
+    "image": "https://img.gamemonetize.com/bc9vvvp7hi25zebwo942m98sfeot8v98/512x384.jpg",
+    "title": "Watermelon Merge 3 - Play Free Online",
+    "metaDescription": "Play Watermelon Merge 3 online and combine matching pieces into bigger clears with smart spacing and efficient merges.",
+    "metaKeywords": "watermelon merge 3, watermelon-merge-3, browser game, online game, schplay, gamemonetize",
+    "heroParagraph": "Watermelon Merge 3 is a satisfying merge puzzle where space control and smart combinations matter more than rushed moves.",
+    "instructions": [
+      "Use short taps or touch movements so each input stays controlled instead of overcorrected.",
+      "Protect open space because crowded boards remove your best combination options.",
+      "Plan the next merge, not just the current one, when scores start climbing."
+    ],
+    "sections": [],
+    "plainText": "Watermelon Merge 3 - Play Free Online\nWatermelon Merge 3 is a satisfying merge puzzle where space control and smart combinations matter more than rushed moves.\nUse short taps or touch movements so each input stays controlled instead of overcorrected. Protect open space because crowded boards remove your best combination options. Plan the next merge, not just the current one, when scores start climbing.",
+    "iframeSrc": "https://html5.gamemonetize.com/bc9vvvp7hi25zebwo942m98sfeot8v98/"
+  },
+  "ghost-town-escape-4-mirrored-dimension": {
+    "name": "Ghost Town Escape 4 - Mirrored Dimension",
+    "href": "games/ghost-town-escape-4-mirrored-dimension.html",
+    "image": "https://img.gamemonetize.com/83alolumjc1uxkn0vz2nx7oflexgnw04/512x384.jpg",
+    "title": "Ghost Town Escape 4 - Mirrored Dimension - Play Free Online",
+    "metaDescription": "Play Ghost Town Escape 4 - Mirrored Dimension online and push through each stage with better timing, cleaner jumps, and smarter routes.",
+    "metaKeywords": "ghost town escape 4 - mirrored dimension, ghost-town-escape-4-mirrored-dimension, browser game, online game, schplay, gamemonetize",
+    "heroParagraph": "Ghost Town Escape 4 - Mirrored Dimension is all about timing jumps, reading hazards early, and keeping momentum through each stage.",
+    "instructions": [
+      "Use short taps or touch movements so each input stays controlled instead of overcorrected.",
+      "Protect momentum on safe stretches and slow down only when the route demands it.",
+      "Use repeated runs to learn the level rhythm instead of improvising every section."
+    ],
+    "sections": [],
+    "plainText": "Ghost Town Escape 4 - Mirrored Dimension - Play Free Online\nGhost Town Escape 4 - Mirrored Dimension is all about timing jumps, reading hazards early, and keeping momentum through each stage.\nUse short taps or touch movements so each input stays controlled instead of overcorrected. Protect momentum on safe stretches and slow down only when the route demands it. Use repeated runs to learn the level rhythm instead of improvising every section.",
+    "iframeSrc": "https://html5.gamemonetize.com/83alolumjc1uxkn0vz2nx7oflexgnw04/"
+  },
+  "the-rabbit-adventure": {
+    "name": "The Rabbit Adventure",
+    "href": "games/the-rabbit-adventure.html",
+    "image": "https://img.gamemonetize.com/safgugvb6mzict1et21wz0ztqmwr8e90/512x384.jpg",
+    "title": "The Rabbit Adventure - Play Free Online",
+    "metaDescription": "Play The Rabbit Adventure online and handle each route with smoother turns, better braking, and cleaner finishes.",
+    "metaKeywords": "the rabbit adventure, the-rabbit-adventure, browser game, online game, schplay, gamemonetize",
+    "heroParagraph": "The Rabbit Adventure rewards clean steering, measured speed, and reading the route before you commit.",
+    "instructions": [
+      "Use the Arrow Keys with small inputs so your movement stays clean and predictable.",
+      "Brake before tight spaces and accelerate only when the exit line is clear.",
+      "Use small steering inputs because smooth control beats panic movement every time."
+    ],
+    "sections": [],
+    "plainText": "The Rabbit Adventure - Play Free Online\nThe Rabbit Adventure rewards clean steering, measured speed, and reading the route before you commit.\nUse the Arrow Keys with small inputs so your movement stays clean and predictable. Brake before tight spaces and accelerate only when the exit line is clear. Use small steering inputs because smooth control beats panic movement every time.",
+    "iframeSrc": "https://html5.gamemonetize.com/safgugvb6mzict1et21wz0ztqmwr8e90/"
+  },
+  "mini-games-puzzle-collection": {
+    "name": "Mini Games Puzzle Collection",
+    "href": "games/mini-games-puzzle-collection.html",
+    "image": "https://img.gamemonetize.com/q5rwkipcspvikwz788k56863zxabdjlg/512x384.jpg",
+    "title": "Mini Games Puzzle Collection - Play Free Online",
+    "metaDescription": "Play Mini Games Puzzle Collection online and sharpen math skills with quick answers, clear prompts, and repeatable practice.",
+    "metaKeywords": "mini games puzzle collection, mini-games-puzzle-collection, browser game, online game, schplay, gamemonetize",
+    "heroParagraph": "Mini Games Puzzle Collection turns quick thinking into a fast math challenge where accuracy matters as much as speed.",
+    "instructions": [
+      "Use short taps or touch movements so each input stays controlled instead of overcorrected.",
+      "Build a steady rhythm instead of rushing one hard question and losing the whole streak.",
+      "Replay short sets and track which question types slow you down the most."
+    ],
+    "sections": [],
+    "plainText": "Mini Games Puzzle Collection - Play Free Online\nMini Games Puzzle Collection turns quick thinking into a fast math challenge where accuracy matters as much as speed.\nUse short taps or touch movements so each input stays controlled instead of overcorrected. Build a steady rhythm instead of rushing one hard question and losing the whole streak. Replay short sets and track which question types slow you down the most.",
+    "iframeSrc": "https://html5.gamemonetize.com/q5rwkipcspvikwz788k56863zxabdjlg/"
+  },
+  "cat-pet-doctor-dentist": {
+    "name": "Cat Pet Doctor Dentist",
+    "href": "games/cat-pet-doctor-dentist.html",
+    "image": "https://img.gamemonetize.com/2k0wbrioi2gllnf2nns4d33n8gt6fmio/512x384.jpg",
+    "title": "Cat Pet Doctor Dentist - Play Free Online",
+    "metaDescription": "Play Cat Pet Doctor Dentist online and work through each care step with simple controls and light simulation tasks.",
+    "metaKeywords": "cat pet doctor dentist, cat-pet-doctor-dentist, browser game, online game, schplay, gamemonetize",
+    "heroParagraph": "Cat Pet Doctor Dentist plays like a light care sim where clean steps and steady interactions move each task forward.",
+    "instructions": [
+      "Use short taps or touch movements so each input stays controlled instead of overcorrected.",
+      "Use deliberate clicks or taps when the game asks for precision on small targets.",
+      "Finish one task cleanly before jumping ahead to the next patient action."
+    ],
+    "sections": [],
+    "plainText": "Cat Pet Doctor Dentist - Play Free Online\nCat Pet Doctor Dentist plays like a light care sim where clean steps and steady interactions move each task forward.\nUse short taps or touch movements so each input stays controlled instead of overcorrected. Use deliberate clicks or taps when the game asks for precision on small targets. Finish one task cleanly before jumping ahead to the next patient action.",
+    "iframeSrc": "https://html5.gamemonetize.com/2k0wbrioi2gllnf2nns4d33n8gt6fmio/"
+  },
+  "super-doctor-body-examination": {
+    "name": "Super Doctor Body Examination",
+    "href": "games/super-doctor-body-examination.html",
+    "image": "https://img.gamemonetize.com/2iwba0rqln0grbzu8wxt3pphl1yrbe9e/512x384.jpg",
+    "title": "Super Doctor Body Examination - Play Free Online",
+    "metaDescription": "Play Super Doctor Body Examination online and work through each care step with simple controls and light simulation tasks.",
+    "metaKeywords": "super doctor body examination, super-doctor-body-examination, browser game, online game, schplay, gamemonetize",
+    "heroParagraph": "Super Doctor Body Examination plays like a light care sim where clean steps and steady interactions move each task forward.",
+    "instructions": [
+      "Use short taps or touch movements so each input stays controlled instead of overcorrected.",
+      "Use deliberate clicks or taps when the game asks for precision on small targets.",
+      "Finish one task cleanly before jumping ahead to the next patient action."
+    ],
+    "sections": [],
+    "plainText": "Super Doctor Body Examination - Play Free Online\nSuper Doctor Body Examination plays like a light care sim where clean steps and steady interactions move each task forward.\nUse short taps or touch movements so each input stays controlled instead of overcorrected. Use deliberate clicks or taps when the game asks for precision on small targets. Finish one task cleanly before jumping ahead to the next patient action.",
+    "iframeSrc": "https://html5.gamemonetize.com/2iwba0rqln0grbzu8wxt3pphl1yrbe9e/"
+  },
+  "perfect-piano-magic": {
+    "name": "Perfect Piano Magic",
+    "href": "games/perfect-piano-magic.html",
+    "image": "https://img.gamemonetize.com/yxvf7gwdccvrfkoykfngpnmhkjox49gr/512x384.jpg",
+    "title": "Perfect Piano Magic - Play Free Online",
+    "metaDescription": "Play Perfect Piano Magic online and follow the rhythm with steady timing, clean inputs, and stronger streaks.",
+    "metaKeywords": "perfect piano magic, perfect-piano-magic, browser game, online game, schplay, gamemonetize",
+    "heroParagraph": "Perfect Piano Magic is a rhythm challenge built on timing, pattern recognition, and keeping your streak alive.",
+    "instructions": [
+      "Use short taps or touch movements so each input stays controlled instead of overcorrected.",
+      "Short clean streaks are better than forcing extra notes and breaking rhythm.",
+      "Replay tricky patterns until the timing feels automatic instead of rushed."
+    ],
+    "sections": [],
+    "plainText": "Perfect Piano Magic - Play Free Online\nPerfect Piano Magic is a rhythm challenge built on timing, pattern recognition, and keeping your streak alive.\nUse short taps or touch movements so each input stays controlled instead of overcorrected. Short clean streaks are better than forcing extra notes and breaking rhythm. Replay tricky patterns until the timing feels automatic instead of rushed.",
+    "iframeSrc": "https://html5.gamemonetize.com/yxvf7gwdccvrfkoykfngpnmhkjox49gr/"
+  },
+  "minescraftter-two-player": {
+    "name": "Minescraftter Two Player",
+    "href": "games/minescraftter-two-player.html",
+    "image": "https://img.gamemonetize.com/eueexa64q431mmoj8kd6wh6fxfgax0uu/512x384.jpg",
+    "title": "Minescraftter Two Player - Play Free Online",
+    "metaDescription": "Play Minescraftter Two Player online and build, protect, and expand a block world with creative placement and survival pressure.",
+    "metaKeywords": "minescraftter two player, minescraftter-two-player, browser game, online game, schplay, gamemonetize",
+    "heroParagraph": "Minescraftter Two Player mixes block building, resource use, and defense into a creative sandbox loop.",
+    "instructions": [
+      "Use W / A / S / D to move with purpose and avoid wasting position on unnecessary corrections.",
+      "Gather easy resources early and avoid overextending when the map opens up.",
+      "Keep your strongest defenses near the most exposed parts of the build."
+    ],
+    "sections": [],
+    "plainText": "Minescraftter Two Player - Play Free Online\nMinescraftter Two Player mixes block building, resource use, and defense into a creative sandbox loop.\nUse W / A / S / D to move with purpose and avoid wasting position on unnecessary corrections. Gather easy resources early and avoid overextending when the map opens up. Keep your strongest defenses near the most exposed parts of the build.",
+    "iframeSrc": "https://html5.gamemonetize.com/eueexa64q431mmoj8kd6wh6fxfgax0uu/"
+  },
+  "candy-cat-shot": {
+    "name": "Candy Cat Shot",
+    "href": "games/candy-cat-shot.html",
+    "image": "https://img.gamemonetize.com/g9piog0gw7q75u64j5lo9vrdpke10tsi/512x384.jpg",
+    "title": "Candy Cat Shot - Play Free Online",
+    "metaDescription": "Play Candy Cat Shot online and clear threats with quick aim, fast reactions, and smart target control.",
+    "metaKeywords": "candy cat shot, candy-cat-shot, browser game, online game, schplay, gamemonetize",
+    "heroParagraph": "Candy Cat Shot is built around target priority, quick reactions, and staying in control when the pressure rises.",
+    "instructions": [
+      "Use short taps or touch movements so each input stays controlled instead of overcorrected.",
+      "Keep your movement clean and avoid wasting attacks on low-value targets.",
+      "When a round gets hectic, accuracy and timing matter more than raw speed."
+    ],
+    "sections": [],
+    "plainText": "Candy Cat Shot - Play Free Online\nCandy Cat Shot is built around target priority, quick reactions, and staying in control when the pressure rises.\nUse short taps or touch movements so each input stays controlled instead of overcorrected. Keep your movement clean and avoid wasting attacks on low-value targets. When a round gets hectic, accuracy and timing matter more than raw speed.",
+    "iframeSrc": "https://html5.gamemonetize.com/g9piog0gw7q75u64j5lo9vrdpke10tsi/"
+  },
+  "connect-pipe-color-puzzle-game": {
+    "name": "Connect Pipe! Color Puzzle Game",
+    "href": "games/connect-pipe-color-puzzle-game.html",
+    "image": "https://img.gamemonetize.com/nszriut9whcdc3w98wh18ls3u0qhmf7v/512x384.jpg",
+    "title": "Connect Pipe! Color Puzzle Game - Play Free Online",
+    "metaDescription": "Play Connect Pipe! Color Puzzle Game online and connect every route cleanly with color matching, path planning, and no crossed lines.",
+    "metaKeywords": "connect pipe! color puzzle game, connect-pipe-color-puzzle-game, browser game, online game, schplay, gamemonetize",
+    "heroParagraph": "Connect Pipe! Color Puzzle Game is a clean logic challenge built around route planning, color matching, and keeping paths from crossing.",
+    "instructions": [
+      "Drag with short, controlled motions so your aim or placement stays precise.",
+      "Connect the most crowded paths first because they limit the rest of the puzzle.",
+      "Reset quickly when lines start crossing instead of patching a weak layout."
+    ],
+    "sections": [],
+    "plainText": "Connect Pipe! Color Puzzle Game - Play Free Online\nConnect Pipe! Color Puzzle Game is a clean logic challenge built around route planning, color matching, and keeping paths from crossing.\nDrag with short, controlled motions so your aim or placement stays precise. Connect the most crowded paths first because they limit the rest of the puzzle. Reset quickly when lines start crossing instead of patching a weak layout.",
+    "iframeSrc": "https://html5.gamemonetize.com/nszriut9whcdc3w98wh18ls3u0qhmf7v/"
+  },
+  "imposter-assassin-3d": {
+    "name": "Imposter Assassin 3D",
+    "href": "games/imposter-assassin-3d.html",
+    "image": "https://img.gamemonetize.com/kjixdc9mw89s3k1rdka4eotbmrgggvkn/512x384.jpg",
+    "title": "Imposter Assassin 3D - Play Free Online",
+    "metaDescription": "Play Imposter Assassin 3D online and clear threats with quick aim, fast reactions, and smart target control.",
+    "metaKeywords": "imposter assassin 3d, imposter-assassin-3d, browser game, online game, schplay, gamemonetize",
+    "heroParagraph": "Imposter Assassin 3D is built around target priority, quick reactions, and staying in control when the pressure rises.",
+    "instructions": [
+      "Drag with short, controlled motions so your aim or placement stays precise.",
+      "Keep your movement clean and avoid wasting attacks on low-value targets.",
+      "When a round gets hectic, accuracy and timing matter more than raw speed."
+    ],
+    "sections": [],
+    "plainText": "Imposter Assassin 3D - Play Free Online\nImposter Assassin 3D is built around target priority, quick reactions, and staying in control when the pressure rises.\nDrag with short, controlled motions so your aim or placement stays precise. Keep your movement clean and avoid wasting attacks on low-value targets. When a round gets hectic, accuracy and timing matter more than raw speed.",
+    "iframeSrc": "https://html5.gamemonetize.com/kjixdc9mw89s3k1rdka4eotbmrgggvkn/"
+  },
+  "brick-hit": {
+    "name": "Brick Hit",
+    "href": "games/brick-hit.html",
+    "image": "https://img.gamemonetize.com/usdmhsnhviloqv61pmchec4hbx4p36i7/512x384.jpg",
+    "title": "Brick Hit - Play Free Online",
+    "metaDescription": "Play Brick Hit online and clear threats with quick aim, fast reactions, and smart target control.",
+    "metaKeywords": "brick hit, brick-hit, browser game, online game, schplay, gamemonetize",
+    "heroParagraph": "Brick Hit is built around target priority, quick reactions, and staying in control when the pressure rises.",
+    "instructions": [
+      "Use short taps or touch movements so each input stays controlled instead of overcorrected.",
+      "Keep your movement clean and avoid wasting attacks on low-value targets.",
+      "When a round gets hectic, accuracy and timing matter more than raw speed."
+    ],
+    "sections": [],
+    "plainText": "Brick Hit - Play Free Online\nBrick Hit is built around target priority, quick reactions, and staying in control when the pressure rises.\nUse short taps or touch movements so each input stays controlled instead of overcorrected. Keep your movement clean and avoid wasting attacks on low-value targets. When a round gets hectic, accuracy and timing matter more than raw speed.",
+    "iframeSrc": "https://html5.gamemonetize.com/usdmhsnhviloqv61pmchec4hbx4p36i7/"
+  },
+  "block-craft-3d-school": {
+    "name": "Block Craft 3D School",
+    "href": "games/block-craft-3d-school.html",
+    "image": "https://img.gamemonetize.com/cfju14fi5zca7zzt1gyefjvvi2crlbst/512x384.jpg",
+    "title": "Block Craft 3D School - Play Free Online",
+    "metaDescription": "Play Block Craft 3D School online and build, protect, and expand a block world with creative placement and survival pressure.",
+    "metaKeywords": "block craft 3d school, block-craft-3d-school, browser game, online game, schplay, gamemonetize",
+    "heroParagraph": "Block Craft 3D School mixes block building, resource use, and defense into a creative sandbox loop.",
+    "instructions": [
+      "Use short taps or touch movements so each input stays controlled instead of overcorrected.",
+      "Gather easy resources early and avoid overextending when the map opens up.",
+      "Keep your strongest defenses near the most exposed parts of the build."
+    ],
+    "sections": [],
+    "plainText": "Block Craft 3D School - Play Free Online\nBlock Craft 3D School mixes block building, resource use, and defense into a creative sandbox loop.\nUse short taps or touch movements so each input stays controlled instead of overcorrected. Gather easy resources early and avoid overextending when the map opens up. Keep your strongest defenses near the most exposed parts of the build.",
+    "iframeSrc": "https://html5.gamemonetize.com/cfju14fi5zca7zzt1gyefjvvi2crlbst/"
+  },
+  "gold-miner-tower-defense": {
+    "name": "Gold Miner Tower Defense",
+    "href": "games/gold-miner-tower-defense.html",
+    "image": "https://img.gamemonetize.com/ukcyc9vpff2jus19qjkt6gbxxoyo84qw/512x384.jpg",
+    "title": "Gold Miner Tower Defense - Play Free Online",
+    "metaDescription": "Play Gold Miner Tower Defense online and defend your route with smarter tower placement, upgrades, and wave management.",
+    "metaKeywords": "gold miner tower defense, gold-miner-tower-defense, browser game, online game, schplay, gamemonetize",
+    "heroParagraph": "Gold Miner Tower Defense is about smart placement, upgrade timing, and defending your route before waves get out of control.",
+    "instructions": [
+      "Use short taps or touch movements so each input stays controlled instead of overcorrected.",
+      "Upgrade the towers doing the most work before you spread resources too thin.",
+      "Save one answer for stronger waves so the late-game push does not break your setup."
+    ],
+    "sections": [],
+    "plainText": "Gold Miner Tower Defense - Play Free Online\nGold Miner Tower Defense is about smart placement, upgrade timing, and defending your route before waves get out of control.\nUse short taps or touch movements so each input stays controlled instead of overcorrected. Upgrade the towers doing the most work before you spread resources too thin. Save one answer for stronger waves so the late-game push does not break your setup.",
+    "iframeSrc": "https://html5.gamemonetize.com/ukcyc9vpff2jus19qjkt6gbxxoyo84qw/"
+  },
+  "z-machine": {
+    "name": "Z Machine",
+    "href": "games/z-machine.html",
+    "image": "https://img.gamemonetize.com/6pb58yxizvrukc8x8wvbf3tqnaoffbtq/512x384.jpg",
+    "title": "Z Machine - Play Free Online",
+    "metaDescription": "Play Z Machine online and clear threats with quick aim, fast reactions, and smart target control.",
+    "metaKeywords": "z machine, z-machine, browser game, online game, schplay, gamemonetize",
+    "heroParagraph": "Z Machine is built around target priority, quick reactions, and staying in control when the pressure rises.",
+    "instructions": [
+      "Use short taps or touch movements so each input stays controlled instead of overcorrected.",
+      "Keep your movement clean and avoid wasting attacks on low-value targets.",
+      "When a round gets hectic, accuracy and timing matter more than raw speed."
+    ],
+    "sections": [],
+    "plainText": "Z Machine - Play Free Online\nZ Machine is built around target priority, quick reactions, and staying in control when the pressure rises.\nUse short taps or touch movements so each input stays controlled instead of overcorrected. Keep your movement clean and avoid wasting attacks on low-value targets. When a round gets hectic, accuracy and timing matter more than raw speed.",
+    "iframeSrc": "https://html5.gamemonetize.com/6pb58yxizvrukc8x8wvbf3tqnaoffbtq/"
+  },
+  "cake-maker-kids-cooking": {
+    "name": "Cake Maker Kids Cooking",
+    "href": "games/cake-maker-kids-cooking.html",
+    "image": "https://img.gamemonetize.com/2xy063qgy3crylipep1qpyvw3gxbjzc5/512x384.jpg",
+    "title": "Cake Maker Kids Cooking - Play Free Online",
+    "metaDescription": "Play Cake Maker Kids Cooking online and move through playful sim tasks with easy controls, bright visuals, and casual pacing.",
+    "metaKeywords": "cake maker kids cooking, cake-maker-kids-cooking, browser game, online game, schplay, gamemonetize",
+    "heroParagraph": "Cake Maker Kids Cooking is a casual sim focused on simple steps, playful choices, and finishing each task cleanly.",
+    "instructions": [
+      "Use short taps or touch movements so each input stays controlled instead of overcorrected.",
+      "Use short, clean inputs when decorating or preparing items so details stay under control.",
+      "Treat each round like a checklist and complete the big steps before the finishing touches."
+    ],
+    "sections": [],
+    "plainText": "Cake Maker Kids Cooking - Play Free Online\nCake Maker Kids Cooking is a casual sim focused on simple steps, playful choices, and finishing each task cleanly.\nUse short taps or touch movements so each input stays controlled instead of overcorrected. Use short, clean inputs when decorating or preparing items so details stay under control. Treat each round like a checklist and complete the big steps before the finishing touches.",
+    "iframeSrc": "https://html5.gamemonetize.com/2xy063qgy3crylipep1qpyvw3gxbjzc5/"
+  },
+  "nightmare-float": {
+    "name": "Nightmare Float",
+    "href": "games/nightmare-float.html",
+    "image": "https://img.gamemonetize.com/bvp3ndb3kmg2w1kky9wd4nr39105kcnr/512x384.jpg",
+    "title": "Nightmare Float - Play Free Online",
+    "metaDescription": "Play Nightmare Float online and handle each route with smoother turns, better braking, and cleaner finishes.",
+    "metaKeywords": "nightmare float, nightmare-float, browser game, online game, schplay, gamemonetize",
+    "heroParagraph": "Nightmare Float rewards clean steering, measured speed, and reading the route before you commit.",
+    "instructions": [
+      "Use short taps or touch movements so each input stays controlled instead of overcorrected.",
+      "Brake before tight spaces and accelerate only when the exit line is clear.",
+      "Use small steering inputs because smooth control beats panic movement every time."
+    ],
+    "sections": [],
+    "plainText": "Nightmare Float - Play Free Online\nNightmare Float rewards clean steering, measured speed, and reading the route before you commit.\nUse short taps or touch movements so each input stays controlled instead of overcorrected. Brake before tight spaces and accelerate only when the exit line is clear. Use small steering inputs because smooth control beats panic movement every time.",
+    "iframeSrc": "https://html5.gamemonetize.com/bvp3ndb3kmg2w1kky9wd4nr39105kcnr/"
+  },
+  "bottle-battle": {
+    "name": "Bottle Battle",
+    "href": "games/bottle-battle.html",
+    "image": "https://img.gamemonetize.com/a7fognb5ezg1z5x7x1b23f4t6z5tk1gc/512x384.jpg",
+    "title": "Bottle Battle - Play Free Online",
+    "metaDescription": "Play Bottle Battle online and solve bottle-and-volume puzzles with careful pours, planning, and clean resets.",
+    "metaKeywords": "bottle battle, bottle-battle, browser game, online game, schplay, gamemonetize",
+    "heroParagraph": "Bottle Battle turns measuring and pouring into a logic puzzle where every move changes the whole board.",
+    "instructions": [
+      "Picture the target volume before every pour so you do not waste a useful container.",
+      "Use the largest bottle to create space, then clean up the exact measurements afterward.",
+      "When a level stalls, undo early and try a simpler sequence instead of forcing the last step."
+    ],
+    "sections": [],
+    "plainText": "Bottle Battle - Play Free Online\nBottle Battle turns measuring and pouring into a logic puzzle where every move changes the whole board.\nPicture the target volume before every pour so you do not waste a useful container. Use the largest bottle to create space, then clean up the exact measurements afterward. When a level stalls, undo early and try a simpler sequence instead of forcing the last step.",
+    "iframeSrc": "https://html5.gamemonetize.com/a7fognb5ezg1z5x7x1b23f4t6z5tk1gc/"
+  },
+  "memory-exclusive": {
+    "name": "Memory Exclusive",
+    "href": "games/memory-exclusive.html",
+    "image": "https://img.gamemonetize.com/s6kp2cgj3m6vuqf9o8dp2bmmrnh6ptzn/512x384.jpg",
+    "title": "Memory Exclusive - Play Free Online",
+    "metaDescription": "Play Memory Exclusive online and train your recall with fast card matching, sharper focus, and increasingly tricky rounds.",
+    "metaKeywords": "memory exclusive, memory-exclusive, browser game, online game, schplay, gamemonetize",
+    "heroParagraph": "Memory Exclusive keeps the pressure on with fast pair matching, pattern recall, and sharper focus each round.",
+    "instructions": [
+      "Use short taps or touch movements so each input stays controlled instead of overcorrected.",
+      "Focus on one cluster of cards at a time instead of guessing across the full board.",
+      "Speed matters, but clean recall beats random clicks once the layouts get harder."
+    ],
+    "sections": [],
+    "plainText": "Memory Exclusive - Play Free Online\nMemory Exclusive keeps the pressure on with fast pair matching, pattern recall, and sharper focus each round.\nUse short taps or touch movements so each input stays controlled instead of overcorrected. Focus on one cluster of cards at a time instead of guessing across the full board. Speed matters, but clean recall beats random clicks once the layouts get harder.",
+    "iframeSrc": "https://html5.gamemonetize.com/s6kp2cgj3m6vuqf9o8dp2bmmrnh6ptzn/"
   }
 }

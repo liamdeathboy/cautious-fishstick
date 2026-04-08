@@ -1,22 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="/css/monocraft.css">
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-WT144T942K"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-
-      gtag('config', 'G-WT144T942K');
-    </script>
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="robots" content="index, follow">
     <meta name="description" content="Play Tetris, the classic puzzle game. Arrange falling blocks to clear lines and score points. This classroom-friendly activity is perfect for teachers and learning fun. Updated Oct 11, 2025 on Schplay.">
-    <meta name="keywords" content="schplay, cool, math, maths, game, games, puzzle, puzzles, free, online, strategy, skill, shapes, colors, logic, memory, board, read, reading, spell, spelling, geography, science, learning fun, fun activities for kids, learning games, education games">
+    <meta name="keywords" content="Tetris, puzzle game, classic game, play Tetris, Tetris game online, schplay, cool, math, maths, game, games, puzzle, puzzles, free, online, strategy, skill, shapes, colors, logic, memory, board, read, reading, spell, spelling, geography, science, learning fun, fun activities for kids, learning games, education games">
     <meta name="theme-color" content="#0f1a2a">
     <title>Play Tetris Online | Schplay</title>
     <link rel="canonical" href="https://schplay.com/games/tetris.html">
@@ -39,70 +28,54 @@
     <link rel="stylesheet" href="../css/user-choice.css">
     <script type="application/ld+json">
         [
-            {
-                "@context": "https://schema.org",
-                "@type": "VideoGame",
-                "name": "Tetris",
-                "description": "Play Tetris, the classic puzzle game. Arrange falling blocks to clear lines and score points.",
-                "genre": [
-                    "Puzzle",
-                    "Falling Blocks"
-                ],
-                "keywords": [
-                    "Tetris unblocked no flash",
-                    "Tetris unblocked 66",
-                    "Tetris unblocked github",
-                    "Tetris full screen",
-                    "Tetris google chrome",
-                    "Tetris game at school"
-                ],
-                "url": "https://schplay.com/games/tetris.html",
-                "image": "https://schplay.com/images/tetris.webp",
-                "playMode": "SinglePlayer",
-                "applicationCategory": "Game",
-                "operatingSystem": "Any",
-                "offers": {
-                    "@type": "Offer",
-                    "price": "0",
-                    "priceCurrency": "USD"
-                },
-                "publisher": {
-                    "@type": "Organization",
-                    "name": "Schplay"
-                }
-            },
-            {
-                "@context": "https://schema.org",
-                "@type": "FAQPage",
-                "url": "https://schplay.com/games/tetris.html",
-                "name": "Tetris Classroom FAQ",
-                "mainEntity": [
-                    {
-                        "@type": "Question",
-                        "name": "What classroom benefit does Tetris provide?",
-                        "acceptedAnswer": {
-                            "@type": "Answer",
-                            "text": "Tetris lets students test hypotheses quickly—perfect for math talk routines and error analysis."
-                        }
-                    },
-                    {
-                        "@type": "Question",
-                        "name": "How can families engage with Tetris?",
-                        "acceptedAnswer": {
-                            "@type": "Answer",
-                            "text": "Send home a weekly screenshot and ask families to jot the first two moves they would try, then compare notes in class."
-                        }
-                    },
-                    {
-                        "@type": "Question",
-                        "name": "Does Tetris keep student information private?",
-                        "acceptedAnswer": {
-                            "@type": "Answer",
-                            "text": "Yes. Tetris runs offline-friendly in the browser with no accounts or tracking beyond basic analytics."
-                        }
-                    }
-                ]
-            }
+                  {
+                            "@context": "https://schema.org",
+                            "@type": "VideoGame",
+                            "name": "Tetris",
+                            "description": "Play Tetris, the classic puzzle game. Arrange falling blocks to clear lines and score points.",
+                            "genre": [
+                                      "Puzzle",
+                                      "Falling Blocks"
+                            ],
+                            "url": "https://schplay.com/games/tetris.html",
+                            "image": "https://schplay.com/images/tetris.webp",
+                            "publisher": {
+                                      "@type": "Organization",
+                                      "name": "Schplay"
+                            }
+                  },
+                  {
+                            "@context": "https://schema.org",
+                            "@type": "FAQPage",
+                            "url": "https://schplay.com/games/tetris.html",
+                            "name": "Tetris Classroom FAQ",
+                            "mainEntity": [
+                                      {
+                                                "@type": "Question",
+                                                "name": "What classroom benefit does Tetris provide?",
+                                                "acceptedAnswer": {
+                                                          "@type": "Answer",
+                                                          "text": "Tetris lets students test hypotheses quickly—perfect for math talk routines and error analysis."
+                                                }
+                                      },
+                                      {
+                                                "@type": "Question",
+                                                "name": "How can families engage with Tetris?",
+                                                "acceptedAnswer": {
+                                                          "@type": "Answer",
+                                                          "text": "Send home a weekly screenshot and ask families to jot the first two moves they would try, then compare notes in class."
+                                                }
+                                      },
+                                      {
+                                                "@type": "Question",
+                                                "name": "Does Tetris keep student information private?",
+                                                "acceptedAnswer": {
+                                                          "@type": "Answer",
+                                                          "text": "Yes. Tetris runs offline-friendly in the browser with no accounts or tracking beyond basic analytics."
+                                                }
+                                      }
+                            ]
+                  }
         ]
     </script>
     <style>
@@ -404,6 +377,7 @@
   </header>
 
   <main class="container" role="main">
+
     <section class="game-player-section">
       <div class="game-player-card" role="region" aria-label="Tetris gameplay">
         <div class="game-player-header">
@@ -413,7 +387,7 @@
           </button>
         </div>
 
-        <iframe id="tetris-iframe" data-game-src="tetris/index.html" title="Play Tetris" allowfullscreen loading="lazy"></iframe>
+        <iframe id="tetris-iframe" src="tetris/index.html" title="Play Tetris" allowfullscreen loading="lazy"></iframe>
       </div>
       <aside class="game-meta-card" id="how-to-play">
         <div class="game-ad-slot" aria-label="Advertisement">
@@ -627,7 +601,7 @@
         const card = document.createElement('a');
         card.className = 'game-card';
         card.href = resolvePath(href);
-        card.innerHTML = '<img  src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==" data-src="' + resolvePath(img) + '" alt="' + name + '" loading="lazy" decoding="async"><h3>' + name + '</h3>';
+        card.innerHTML = '<img src="' + resolvePath(img) + '" alt="' + name + '" loading="lazy" decoding="async"><h3>' + name + '</h3>';
         grid.appendChild(card);
       });
 
@@ -729,7 +703,6 @@
     }
 
   </script>
-  <script src="../js/load-components.js?v=2026-04-01-mobile-1" defer data-component-root="../"></script>
-<script src="/js/lazy-media.js" defer></script>
+  <script src="../js/load-components.js" defer data-component-root="../"></script>
 </body>
 </html>

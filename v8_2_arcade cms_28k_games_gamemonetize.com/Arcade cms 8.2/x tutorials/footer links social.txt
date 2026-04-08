@@ -1,0 +1,3 @@
+templates/poki-like/content/footer/footer_bar.php
+templates/y8-like/content/footer/footer_bar.php
+templates/kizi/content/footer/footer_bar.php

@@ -1,0 +1,2 @@
+- change logo in static/logo/   for all template in .webp optimized
+- change favicon favicon_y8.ico
