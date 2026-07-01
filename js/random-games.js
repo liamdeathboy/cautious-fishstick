@@ -23,18 +23,24 @@
         selected.forEach(game => {
             const gameCard = document.createElement('a');
             gameCard.href = game.href;
-            gameCard.classList.add('game-card');
-            gameCard.dataset.gif = game.gif || '';
+            gameCard.className = 'bento-card';
+            if (game.gif) gameCard.dataset.gif = game.gif;
 
             const img = document.createElement('img');
-            img.src = game.img;
-            img.alt = game.name;
+            img.src = 'data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==';
+            img.dataset.src = game.img;
+            img.alt = game.name + ' unblocked';
+            img.loading = 'lazy';
+            img.decoding = 'async';
 
+            const label = document.createElement('div');
+            label.className = 'bento-label';
             const h3 = document.createElement('h3');
             h3.textContent = game.name;
+            label.appendChild(h3);
 
             gameCard.appendChild(img);
-            gameCard.appendChild(h3);
+            gameCard.appendChild(label);
 
             fragment.appendChild(gameCard);
         });

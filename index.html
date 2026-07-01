@@ -66,6 +66,7 @@ function gtag_report_conversion(url) {
     <link rel="preload" href="css/new-style.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
     <link rel="preload" href="css/restyle.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
     <link rel="preload" href="css/user-choice.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="stylesheet" href="css/bento.css">
     <noscript>
       <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&amp;display=swap">
       <link rel="stylesheet" href="css/new-style.css">
@@ -73,535 +74,101 @@ function gtag_report_conversion(url) {
       <link rel="stylesheet" href="css/user-choice.css">
     </noscript>
     <style>
-      body {
-        background-color: var(--body-background, #000);
-        margin: 0;
-      }
-
-      header, main, footer {
-        position: relative;
-        z-index: 1;
-      }
-
+      /* ── Base ── */
+      body { background-color: var(--body-background, #000); margin: 0; }
+      header, main, footer { position: relative; z-index: 1; }
       #site-header { z-index: 4000; }
       #site-header .site-header { z-index: inherit; }
       #site-header .nav-dropdown, #site-header #searchResults { z-index: 4100; }
 
-      .promo-slider {
-        position: relative;
-        margin: 2rem 0 3rem;
-        width: 100%;
-        height: clamp(340px, 55vw, 500px);
-        min-height: 300px;
-        border-radius: 20px;
-        overflow: hidden;
-        background: #1d1d1f;
-        aspect-ratio: 16 / 9;
+      /* ── Browse button ── */
+      .home-browse { padding: 1.75rem 0 1.75rem; text-align: center; }
+      .btn-browse-all {
+        display: inline-flex; align-items: center; justify-content: center;
+        padding: 1.05rem 3.2rem; border-radius: 980px; background: #2997ff; color: #fff;
+        font-size: 1.15rem; font-weight: 700; text-decoration: none; letter-spacing: -0.01em;
+        box-shadow: 0 4px 28px rgba(41,151,255,0.38);
+        transition: background 0.2s, box-shadow 0.2s, transform 0.15s;
       }
-
-      .promo-slider .slide-track {
-        display: flex;
-        height: 100%;
-        transform: translateX(0);
-        transition: transform 0.6s cubic-bezier(0.25, 0.1, 0.25, 1);
-      }
-
-      .promo-slider .slide-viewport {
-        overflow: hidden;
-        position: relative;
-        height: 100%;
-      }
-
-      .promo-slide {
-        min-width: 100%;
-        height: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: flex-end;
-        position: relative;
-        padding: clamp(2rem, 5vw, 4rem);
-        color: #f5f5f7;
-        background-size: cover;
-        background-position: center;
-        isolation: isolate;
-      }
-
-      .promo-slide::after {
-        content: '';
-        position: absolute;
-        inset: 0;
-        background: linear-gradient(100deg, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.5) 35%, rgba(0,0,0,0.15) 65%, rgba(0,0,0,0) 100%);
-        z-index: -1;
-      }
-
-      .promo-content {
-        position: relative;
-        max-width: clamp(320px, 30vw, 480px);
-        text-align: left;
-        margin-left: auto;
-      }
-
-      .promo-content h2 {
-        margin: 0;
-        font-size: clamp(2.5rem, 5vw, 4rem);
-        font-weight: 700;
-        letter-spacing: -0.03em;
-        color: #f5f5f7;
-        line-height: 1.05;
-      }
-
-      .promo-content p {
-        margin: 1rem 0 1.5rem;
-        font-size: clamp(0.9rem, 1.6vw, 1.05rem);
-        line-height: 1.5;
-        color: rgba(255, 255, 255, 0.65);
-      }
-
-      .promo-content p::after {
-        display: none;
-      }
-
-      .promo-meta {
-        display: inline-block;
-        margin-bottom: 0.75rem;
-        font-size: 0.75rem;
-        font-weight: 500;
-        letter-spacing: 0.06em;
-        text-transform: uppercase;
-        color: #86868b;
-      }
-
-      .promo-primary {
-        display: inline-flex;
-        align-items: center;
-        justify-content: center;
-        padding: 0.7rem 1.8rem;
-        border-radius: 980px;
-        border: none;
-        background: #2997ff;
-        color: #fff;
-        font-weight: 400;
-        font-size: clamp(0.9rem, 1.5vw, 1rem);
-        text-decoration: none;
-        transition: background 0.2s ease;
-      }
-
-      .promo-primary:hover,
-      .promo-primary:focus {
+      .btn-browse-all:hover {
         background: #0077ed;
+        box-shadow: 0 6px 36px rgba(41,151,255,0.55);
+        transform: translateY(-2px);
       }
+      .btn-browse-all:active { transform: translateY(0); }
 
-      .promo-cta {
-        display: flex;
-        justify-content: center;
-        margin: 0 0 3.5rem;
+      /* ── Collapsible section toggle ── */
+      .section-toggle-btn {
+        display: flex; align-items: center; gap: 0.6rem; width: 100%;
+        padding: 1.25rem 0; background: none; border: none;
+        border-top: 1px solid rgba(255,255,255,0.08);
+        font-family: inherit; cursor: pointer; transition: color 0.15s ease;
       }
-
-      .promo-cta-button {
-        display: inline-flex;
-        align-items: center;
-        justify-content: center;
-        padding: 0.85rem 2.5rem;
-        border-radius: 980px;
-        font-size: 1.05rem;
-        font-weight: 400;
-        color: #fff;
-        text-decoration: none;
-        background: #2997ff;
-        border: none;
-        transition: background 0.2s ease;
+      .section-toggle-btn .toggle-label {
+        font-size: 1rem; font-weight: 600; color: #f5f5f7; flex: 1; text-align: left;
       }
-
-      .promo-cta-button:hover,
-      .promo-cta-button:focus {
-        background: #0077ed;
+      .section-toggle-btn .toggle-state {
+        font-size: 0.82rem; color: #86868b;
       }
+      .section-toggle-btn svg { color: #86868b; transition: transform 0.2s ease; flex-shrink: 0; }
+      .section-toggle-btn[aria-expanded="true"] svg { transform: rotate(180deg); }
 
-      .teacher-resource,
-      .curriculum-grid,
-      .classroom-faq {
-        border-top: 1px solid rgba(255, 255, 255, 0.08);
-        padding: clamp(2rem, 5vw, 4rem) 0;
-        margin-bottom: 0;
+      /* ── Educator & SEO sections (kept) ── */
+      .teacher-resource, .curriculum-grid, .classroom-faq {
+        border-top: 1px solid rgba(255,255,255,0.08);
+        padding: clamp(2rem,5vw,4rem) 0; margin-bottom: 0;
       }
-
-      .teacher-resource h2,
-      .curriculum-grid h2,
-      .classroom-faq h2 {
-        margin-top: 0;
-        font-size: clamp(1.75rem, 3.5vw, 2.5rem);
-        font-weight: 700;
-        letter-spacing: -0.025em;
-        color: #f5f5f7;
-        margin-bottom: 1rem;
+      .teacher-resource h2, .curriculum-grid h2, .classroom-faq h2 {
+        margin-top: 0; font-size: clamp(1.75rem,3.5vw,2.5rem); font-weight: 700;
+        letter-spacing: -0.025em; color: #f5f5f7; margin-bottom: 1rem;
       }
-
-      .teacher-resource p,
-      .classroom-faq p,
+      .teacher-resource p, .classroom-faq p, .teacher-resource li {
+        color: var(--text-muted,#86868b); line-height: 1.6; font-size: 0.95rem;
+      }
+      .teacher-resource a { color: #2997ff; }
+      .teacher-resource a:hover { text-decoration: underline; }
+      .teacher-resource ul { list-style: none; padding-left: 0; display: grid; gap: 0.5rem; margin-top: 1rem; }
       .teacher-resource li {
-        color: var(--text-muted, #86868b);
-        line-height: 1.6;
-        font-size: 0.95rem;
+        display: flex; gap: 0.5rem; align-items: flex-start;
+        padding: 0.6rem 0; border-bottom: 1px solid rgba(255,255,255,0.04);
       }
-
-      .teacher-resource a {
-        color: #2997ff;
-      }
-
-      .teacher-resource a:hover {
-        text-decoration: underline;
-      }
-
-      .teacher-resource ul {
-        list-style: none;
-        padding-left: 0;
-        display: grid;
-        gap: 0.5rem;
-        margin-top: 1rem;
-      }
-
-      .teacher-resource li {
-        display: flex;
-        gap: 0.5rem;
-        align-items: flex-start;
-        padding: 0.6rem 0;
-        border-bottom: 1px solid rgba(255, 255, 255, 0.04);
-      }
-
-      .teacher-resource li:last-child {
-        border-bottom: none;
-      }
-
-      .teacher-resource li::before {
-        content: '\2713';
-        color: #30d158;
-        font-weight: 600;
-        flex-shrink: 0;
-      }
-
+      .teacher-resource li:last-child { border-bottom: none; }
+      .teacher-resource li::before { content: '\2713'; color: #30d158; font-weight: 600; flex-shrink: 0; }
       .curriculum-grid .grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-        gap: clamp(0.75rem, 2vw, 1.25rem);
+        display: grid; grid-template-columns: repeat(auto-fit,minmax(220px,1fr));
+        gap: clamp(0.75rem,2vw,1.25rem);
       }
+      .curriculum-card { background: #1d1d1f; border-radius: 14px; padding: 1.5rem; }
+      .curriculum-card:hover { background: #2d2d2f; }
+      .curriculum-card h3 { margin-top: 0; margin-bottom: 0.4rem; color: #f5f5f7; font-size: 1rem; font-weight: 600; }
+      .curriculum-card p { color: var(--text-muted,#86868b); font-size: 0.88rem; line-height: 1.5; margin: 0; }
+      .classroom-faq details { border-bottom: 1px solid rgba(255,255,255,0.08); padding: 1rem 0; }
+      .classroom-faq details[open] { padding-bottom: 1rem; }
+      .classroom-faq summary { font-weight: 600; cursor: pointer; color: #f5f5f7; font-size: 1rem; }
+      .classroom-faq summary:hover { color: #2997ff; }
+      .classroom-faq details[open] summary { color: #2997ff; margin-bottom: 0.5rem; }
+      .classroom-faq details p { color: var(--text-muted,#86868b); line-height: 1.6; }
+      .classroom-faq a { color: #2997ff; }
+      .classroom-faq a:hover { text-decoration: underline; }
+      .inline-icon { width: 32px; height: 32px; color: #2997ff; flex-shrink: 0; }
+      .promise-point .inline-icon { width: 32px; height: 32px; }
 
-      .curriculum-card {
-        background: #1d1d1f;
-        border-radius: 14px;
-        padding: 1.5rem;
+      /* ── Responsive ── */
+      @media (max-width: 1100px) {
+        .bento-grid { grid-template-columns: repeat(4,1fr); grid-auto-rows: 172px; }
       }
-
-      .curriculum-card:hover {
-        background: #2d2d2f;
+      @media (max-width: 780px) {
+        .bento-grid { grid-template-columns: repeat(3,1fr); grid-auto-rows: 145px; gap: 8px; }
+        .btn-browse-all { font-size: 1rem; padding: 0.9rem 2.4rem; }
       }
-
-      .curriculum-card h3 {
-        margin-top: 0;
-        margin-bottom: 0.4rem;
-        color: #f5f5f7;
-        font-size: 1rem;
-        font-weight: 600;
-      }
-
-      .curriculum-card p {
-        color: var(--text-muted, #86868b);
-        font-size: 0.88rem;
-        line-height: 1.5;
-        margin: 0;
-      }
-
-      .classroom-faq details {
-        border-bottom: 1px solid rgba(255, 255, 255, 0.08);
-        padding: 1rem 0;
-      }
-
-      .classroom-faq details[open] {
-        padding-bottom: 1rem;
-      }
-
-      .classroom-faq summary {
-        font-weight: 600;
-        cursor: pointer;
-        color: #f5f5f7;
-        font-size: 1rem;
-      }
-
-      .classroom-faq summary:hover {
-        color: #2997ff;
-      }
-
-      .classroom-faq details[open] summary {
-        color: #2997ff;
-        margin-bottom: 0.5rem;
-      }
-
-      .classroom-faq details p {
-        color: var(--text-muted, #86868b);
-        line-height: 1.6;
-      }
-
-      .classroom-faq a {
-        color: #2997ff;
-      }
-
-      .classroom-faq a:hover {
-        text-decoration: underline;
-      }
-
-      .slider-arrow {
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
-        width: 44px;
-        height: 44px;
-        border-radius: 50%;
-        border: none;
-        background: rgba(255, 255, 255, 0.12);
-        color: #fff;
-        display: grid;
-        place-items: center;
-        font-size: 1.2rem;
-        cursor: pointer;
-        transition: background 0.15s ease;
-        z-index: 4;
-        backdrop-filter: blur(10px);
-        -webkit-backdrop-filter: blur(10px);
-      }
-
-      .slider-arrow:hover,
-      .slider-arrow:focus {
-        background: rgba(255, 255, 255, 0.22);
-      }
-
-      .slider-arrow.prev { left: 1rem; }
-      .slider-arrow.next { right: 1rem; }
-
-      .promo-dots {
-        position: absolute;
-        bottom: 1.25rem;
-        left: 50%;
-        transform: translateX(-50%);
-        display: flex;
-        gap: 0.6rem;
-        z-index: 3;
-      }
-
-      .promo-dots button {
-        width: 8px;
-        height: 8px;
-        border-radius: 50%;
-        border: none;
-        background: rgba(255, 255, 255, 0.3);
-        cursor: pointer;
-        transition: all 0.2s ease;
-      }
-
-      .promo-dots button.active {
-        background: #fff;
-        transform: scale(1.25);
-      }
-
-      .inline-icon {
-        width: 32px;
-        height: 32px;
-        color: #2997ff;
-        flex-shrink: 0;
-      }
-
-      /* Compact top dashboard cards on homepage */
-      .compact-home-grid {
-        gap: 10px;
-        margin-bottom: 2rem;
-      }
-
-      .compact-home-grid .games-grid-section,
-      .compact-home-grid .promo-card,
-      .compact-home-grid .large-card {
-        padding: 0.8rem;
-        border-radius: 14px;
-      }
-
-      .compact-home-grid .section-header {
-        margin-bottom: 0.55rem;
-      }
-
-      .compact-home-grid h2 {
-        font-size: 1.05rem;
-        margin-bottom: 0.55rem;
-      }
-
-      .compact-home-grid .games-list a {
-        gap: 0.65rem;
-        margin-bottom: 0.28rem;
-        padding: 0.2rem;
-      }
-
-      .compact-home-grid .games-list img {
-        width: 56px;
-        height: 56px;
-        border-radius: 10px;
-      }
-
-      .compact-home-grid .games-list h3 {
-        font-size: 0.8rem;
-        line-height: 1.2;
-      }
-
-      .compact-home-grid .games-list p {
-        font-size: 0.72rem;
-      }
-
-      .compact-home-grid .promo-card .promo-content h2 {
-        font-size: 1.05rem;
-        margin-bottom: 0.45rem;
-      }
-
-      .compact-home-grid .promo-card .promo-content p {
-        font-size: 0.85rem;
-        line-height: 1.35;
-        margin-bottom: 0.7rem;
-      }
-
-      .compact-home-grid .btn-learn-more {
-        font-size: 0.88rem;
-      }
-
-      .compact-home-grid .large-card img {
-        margin-bottom: 0.55rem;
-      }
-
-      .compact-home-grid .large-card h3 {
-        font-size: 0.98rem;
-        margin-bottom: 0.2rem;
-      }
-
-      .compact-home-grid .large-card p {
-        font-size: 0.82rem;
-        line-height: 1.3;
-      }
-
-      .promise-point .inline-icon {
-        width: 32px;
-        height: 32px;
-      }
-
-      @media (max-width: 768px) {
-        .promo-slider {
-          margin: 1rem 0 2rem;
-          border-radius: 16px;
-          aspect-ratio: 4 / 5;
-          min-height: 300px;
-          max-height: 420px;
-          height: auto;
-        }
-
-        .promo-slide {
-          justify-content: center;
-          padding: 1.5rem 1.25rem;
-          text-align: center;
-        }
-
-        .promo-slide::after {
-          background: linear-gradient(180deg, rgba(0,0,0,0.75) 0%, rgba(0,0,0,0.4) 60%, rgba(0,0,0,0.15) 100%);
-        }
-
-        .promo-content {
-          margin: 0;
-          max-width: 100%;
-        }
-
-        .promo-content h2 {
-          font-size: clamp(1.75rem, 7vw, 2.5rem);
-        }
-
-        .promo-content p {
-          font-size: 0.9rem;
-          line-height: 1.45;
-        }
-
-        .promo-primary {
-          padding: 0.65rem 1.4rem;
-          font-size: 0.9rem;
-        }
-
-        .slider-arrow { display: none; }
-
-        .compact-home-grid {
-          gap: 8px;
-          margin-bottom: 1.5rem;
-        }
-
-        .compact-home-grid .games-grid-section,
-        .compact-home-grid .promo-card,
-        .compact-home-grid .large-card {
-          padding: 0.7rem;
-        }
-
-        .compact-home-grid .games-list a {
-          padding: 0.15rem;
-          margin-bottom: 0.2rem;
-          gap: 0.55rem;
-        }
-
-        .compact-home-grid .games-list img {
-          width: 50px;
-          height: 50px;
-        }
-
-        .compact-home-grid .games-list h3 {
-          font-size: 0.78rem;
-        }
-
-        .compact-home-grid .games-list p {
-          font-size: 0.7rem;
-        }
-
-        .user-choice-card {
-          align-items: flex-start;
-        }
-
-        .user-choice-card .promo-image {
-          padding: 0;
-        }
-
-        .user-choice-card .promo-image .inline-icon {
-          width: 36px;
-          height: 36px;
-        }
-      }
-
       @media (max-width: 520px) {
-        .compact-home-grid .games-grid-section,
-        .compact-home-grid .promo-card,
-        .compact-home-grid .large-card {
-          padding: 0.65rem;
-          border-radius: 12px;
-        }
-
-        .compact-home-grid h2 {
-          font-size: 0.98rem;
-          margin-bottom: 0.45rem;
-        }
-
-        .compact-home-grid .games-list img {
-          width: 46px;
-          height: 46px;
-          border-radius: 9px;
-        }
-
-        .compact-home-grid .promo-card .promo-content h2 {
-          font-size: 0.98rem;
-        }
-
-        .promo-cta-button {
-          width: 100%;
-          max-width: 320px;
-          font-size: 0.95rem;
-          padding: 0.75rem 1.25rem;
-        }
+        .bento-grid { grid-template-columns: repeat(2,1fr); grid-auto-rows: 130px; gap: 7px; }
+        .bento-wide { grid-column: span 2; }
+        .btn-browse-all { width: 100%; font-size: 0.95rem; }
       }
     </style>
     <script type="application/ld+json">
+    [
         {
             "@context": "https://schema.org",
             "@type": "WebSite",
@@ -613,7 +180,17 @@ function gtag_report_conversion(url) {
                 "target": "https://schplay.com/allgames.html?q={search_term_string}",
                 "query-input": "required name=search_term_string"
             }
+        },
+        {
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            "name": "Schplay",
+            "url": "https://schplay.com/",
+            "logo": "https://schplay.com/images/logo.webp",
+            "description": "Schplay is a free unblocked games platform with 2,500+ browser games for students and classrooms on Chromebook.",
+            "sameAs": []
         }
+    ]
     </script>
 </head>
 <body>
@@ -626,203 +203,147 @@ function gtag_report_conversion(url) {
   </noscript>
 
   <main class="container" role="main">
-    <section class="promo-slider" aria-label="Featured spotlight games">
-      <button class="slider-arrow prev" type="button" aria-label="Show previous featured game" data-slider-prev>&lsaquo;</button>
-      <div class="slide-viewport">
-        <div class="slide-track" data-slider-track>
-          <article class="promo-slide" id="slide-0" role="tabpanel" data-bg="images/minecraft.webp" aria-label="Minecraft spotlight" aria-hidden="false">
-            <div class="promo-content">
-              <span class="promo-meta">Sandbox</span>
-              <h2>Minecraft</h2>
-              <p>Craft tools, build sprawling bases, and explore infinite worlds teeming with adventure. Survive the night or collaborate with friends to create something extraordinary.</p>
-              <a class="promo-primary" href="games/minecraft.html">Play Game</a>
-            </div>
-          </article>
-          <article class="promo-slide" id="slide-1" role="tabpanel" data-bg="images/slope.jpeg" aria-label="Slope spotlight" aria-hidden="true">
-            <div class="promo-content">
-              <h2>Slope <b>2-Player</b></h2>
-              <p>Feel the rush as you guide a glowing ball through a futuristic tunnel. Two-Player, React fast, dodge obstacles, and chase the perfect run in this endless downhill sprint.</p>
-              <a class="promo-primary" href="games/slope2.html">Play Game</a>
-            </div>
-          </article>
-          <article class="promo-slide" id="slide-2" role="tabpanel" data-bg="images/pvz.gif" aria-label="Plants vs. Zombies spotlight" aria-hidden="true">
-            <div class="promo-content">
-              <span class="promo-meta">Strategy</span>
-              <h2>Plants vs. Zombies</h2>
-              <p>Plant the perfect defense and fend off quirky undead waves using a garden full of clever abilities. Balance sun production with firepower to survive each night raid.</p>
-              <a class="promo-primary" href="games/pvz.html">Play Game</a>
-            </div>
-          </article>
-          <article class="promo-slide" id="slide-3" role="tabpanel" data-bg="images/papasgame.gif" aria-label="Papa's Games spotlight" aria-hidden="true">
-            <div class="promo-content">
-              <span class="promo-meta">Time Management</span>
-              <h2>Papa's Games</h2>
-              <p>Take orders, craft perfect dishes, and keep impatient customers smiling across the Papa Louie restaurant universe. Upgrade your shop and master each tasty station.</p>
-              <a class="promo-primary" href="games/papas-games.html">Play Game</a>
-            </div>
-          </article>
-          <article class="promo-slide" id="slide-4" role="tabpanel" data-bg="images/fireboywatergirlfiretemple.webp" aria-label="Fireboy and Watergirl spotlight" aria-hidden="true">
-            <div class="promo-content">
-              <span class="promo-meta">Co-op Puzzle</span>
-              <h2>Fireboy &amp; Watergirl</h2>
-              <p>Guide each elemental hero through mirrored temples, flipping switches and timing jumps to reach the exit together. Coordinate every move or risk starting over.</p>
-              <a class="promo-primary" href="games/fireboy-and-watergirl-firetemple.html">Play Game</a>
-            </div>
-          </article>
-        </div>
-      </div>
-      <button class="slider-arrow next" type="button" aria-label="Show next featured game" data-slider-next>&rsaquo;</button>
-      <div class="promo-dots" role="tablist" aria-label="Select featured game">
-        <button type="button" role="tab" aria-selected="true" aria-controls="slide-0" aria-label="Show Minecraft" data-slider-dot="0" class="active"></button>
-        <button type="button" role="tab" aria-selected="false" aria-controls="slide-1" aria-label="Show Slope" data-slider-dot="1"></button>
-        <button type="button" role="tab" aria-selected="false" aria-controls="slide-2" aria-label="Show Plants vs. Zombies" data-slider-dot="2"></button>
-        <button type="button" role="tab" aria-selected="false" aria-controls="slide-3" aria-label="Show Papa's Games" data-slider-dot="3"></button>
-        <button type="button" role="tab" aria-selected="false" aria-controls="slide-4" aria-label="Show Fireboy and Watergirl" data-slider-dot="4"></button>
-      </div>
-    </section>
 
-    <div class="promo-cta" aria-label="Browse all games">
-      <a class="promo-cta-button" href="allgames.html">ALL GAMES</a>
+    <!-- Browse all games -->
+    <div class="home-browse">
+      <a href="allgames.html" class="btn-browse-all">Browse All Games</a>
     </div>
 
-    <div class="main-grid compact-home-grid">
-      <section class="games-grid-section new-this-week" aria-labelledby="new-this-week-title">
-        <div class="section-header">
-          <h2 id="new-this-week-title">New This Week</h2>
-          <a href="#featured-games" class="see-all" aria-label="See all featured games">See All</a>
-        </div>
-        <div class="games-list" id="new-this-week-grid">
-          <a href="games/slope2.html" class="game-card-small" data-gif="images/slope.gif">
-            <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==" data-src="images/slope.webp" alt="Play Slope unblocked free online" loading="lazy" decoding="async">
-            <div><h3>Slope (TWO-PLAYER!)</h3><p>Skill</p></div>
-          </a>
-          <a href="games/retrobowl.html" class="game-card-small">
-            <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==" data-src="images/retrobowl.webp" alt="Play Retro Bowl unblocked free online" loading="lazy" decoding="async">
-            <div><h3>Retro Bowl</h3><p>Sports</p></div>
-          </a>
-          <a href="games/monkey-mart.html" class="game-card-small">
-            <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==" data-src="images/monkeymart.webp" alt="Play Monkey Mart unblocked free online" loading="lazy" decoding="async">
-            <div><h3>Monkey Mart</h3><p>Strategy</p></div>
-          </a>
-          <a href="games/the-binding-of-isaac.html" class="game-card-small">
-            <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==" data-src="images/thebindingofisaac.webp" alt="Play Binding of Isaac unblocked" loading="lazy" decoding="async">
-            <div><h3>The Binding Of Issac</h3><p>Strategy</p></div>
-          </a>
-            <a href="games/the-big-adventure-of-owatas-life.html" class="game-card-small">
-            <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==" data-src="images/thebigadventureofowataslife.webp" alt="Play Owatas Life adventure unblocked" loading="lazy" decoding="async">
-            <div><h3>The Big Adventure Of Owata's Life</h3><p>Strategy</p></div>
-          </a>
-        </div>
-      </section>
+    <!-- Bento mosaic grid -->
+    <section class="bento-section" aria-labelledby="bento-title">
+      <span class="section-label" id="bento-title">Featured Games</span>
+      <div class="bento-grid" aria-label="Game tiles — hover 3 s to see a gameplay preview">
 
-      <section class="games-grid-section featured-playing" aria-labelledby="featured-playing-title">
-        <h2 id="featured-playing-title">What We're Playing: Featured</h2>
-        <div class="games-list" id="what-were-playing-grid">
-          <a href="games/minecraft.html" class="game-card-small" data-gif="images/minecraft.gif">
-            <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==" data-src="images/mc.webp" alt="Play Minecraft online unblocked Chromebook" loading="lazy" decoding="async">
-            <div><h3>Minecraft</h3><p>Sandbox</p></div>
-          </a>
-          <a href="games/run3.html" class="game-card-small">
-            <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==" data-src="images/run3.webp" alt="Play Run 3 unblocked free online" loading="lazy" decoding="async">
-            <div><h3>Run 3</h3><p>Skill</p></div>
-          </a>
-            <a href="games/bad-icecream-1.html" class="game-card-small">
-            <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==" data-src="images/badicecream1.webp" alt="Play Bad Ice Cream unblocked 2 player" loading="lazy" decoding="async">
-            <div><h3>Bad Ice Cream 3</h3><p>2 Player</p></div>
-          </a>
-            </a>
-            <a href="games/10-minutes-till-dawn.html" class="game-card-small">
-            <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==" data-src="images/10mintilldawn.webp" alt="Play 10 Minutes Till Dawn unblocked" loading="lazy" decoding="async">
-            <div><h3>10 Minutes Till Dawn</h3><p>Classic</p></div>
-          </a>
-            </a>
-            <a href="games/worldshardestgame2.html" class="game-card-small">
-            <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==" data-src="images/worldshardestgame.webp" alt="Play Worlds Hardest Game unblocked" loading="lazy" decoding="async">
-            <div><h3>Worlds Hardest Game 3</h3><p>Skill</p></div>
-          </a>
-        </div>
-      </section>
+        <!-- 2×2 hero -->
+        <a href="games/minecraft.html" class="bento-card bento-featured" data-gif="images/minecraft.gif" title="Play Minecraft unblocked" aria-label="Minecraft">
+          <img src="images/mc.webp" alt="Minecraft unblocked online — build explore survive" loading="eager" fetchpriority="high" decoding="sync">
+          <div class="bento-label"><span class="bento-tag">Sandbox</span><h3>Minecraft</h3></div>
+        <div class="gif-ring" aria-hidden="true"><svg viewBox="0 0 22 22"><circle cx="11" cy="11" r="9"/><circle class="progress" cx="11" cy="11" r="9"/></svg></div><span class="gif-text" aria-hidden="true">GIF</span>
+        </a>
 
-      <section class="games-grid-section large-cards" aria-label="Highlighted games">
-        <div class="large-card">
-            <a href="games/vex.html">
-                <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==" data-src="images/vex7.gif" alt="Play Vex 7 unblocked platform game" loading="lazy" decoding="async">
-                <h3>Vex 7</h3>
-                <p>Another chapter in the Vex series!</p>
-            </a>
-        </div>
-         <div class="large-card">
-            <a href="games/duck-life-5.html">
-                <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==" data-src="images/ducklife5.gif" alt="Play Duck Life 5 unblocked free" loading="lazy" decoding="async">
-                <h3>Duck Life 5</h3>
-                <p>Train Your Duck to fly, swim and fight!</p>
-            </a>
-        </div>
-      </section>
+        <!-- row 1, cols 3-5 -->
+        <a href="games/slope.html" class="bento-card" data-gif="images/slope.gif" title="Play Slope unblocked" aria-label="Slope">
+          <img src="images/slope.webp" alt="Slope — guide the ball unblocked" loading="eager" fetchpriority="high" decoding="sync">
+          <div class="bento-label"><span class="bento-tag">Skill</span><h3>Slope</h3></div>
+        <div class="gif-ring" aria-hidden="true"><svg viewBox="0 0 22 22"><circle cx="11" cy="11" r="9"/><circle class="progress" cx="11" cy="11" r="9"/></svg></div><span class="gif-text" aria-hidden="true">GIF</span>
+        </a>
+        <a href="games/run3.html" class="bento-card" data-gif="images/run3.gif" title="Play Run 3 unblocked" aria-label="Run 3">
+          <img src="images/run3.webp" alt="Run 3 unblocked space tunnel runner" loading="eager" fetchpriority="high" decoding="sync">
+          <div class="bento-label"><span class="bento-tag">Skill</span><h3>Run 3</h3></div>
+        <div class="gif-ring" aria-hidden="true"><svg viewBox="0 0 22 22"><circle cx="11" cy="11" r="9"/><circle class="progress" cx="11" cy="11" r="9"/></svg></div><span class="gif-text" aria-hidden="true">GIF</span>
+        </a>
+        <a href="games/geodash.html" class="bento-card" data-gif="images/geodash.gif" title="Play Geometry Dash unblocked" aria-label="Geometry Dash">
+          <img src="images/geodash_1.webp" alt="Geometry Dash unblocked rhythm platformer" loading="eager" fetchpriority="high" decoding="sync">
+          <div class="bento-label"><span class="bento-tag">Rhythm</span><h3>Geometry Dash</h3></div>
+        <div class="gif-ring" aria-hidden="true"><svg viewBox="0 0 22 22"><circle cx="11" cy="11" r="9"/><circle class="progress" cx="11" cy="11" r="9"/></svg></div><span class="gif-text" aria-hidden="true">GIF</span>
+        </a>
 
-      <section class="promo-card" aria-labelledby="about-us-title">
-        <div class="promo-content">
-          <h3 id="about-us-title">About Us</h3>
-          <h2>Safe by Design</h2>
-          <p>From games we feature to data we collect, we're committed to your trust &amp; privacy.</p>
-          <a href="about.html" class="btn-learn-more">Learn more about Schplay</a>
-        </div>
-        <div class="large-card" style="margin:1.5rem auto 0; background:transparent; padding:0; box-shadow:none;">
-          <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5690564842575659"
-              crossorigin="anonymous"></script>
-          <!-- ad space -->
-          <ins class="adsbygoogle"
-              style="display:block"
-              data-ad-client="ca-pub-5690564842575659"
-              data-ad-slot="9885096122"
-              data-ad-format="auto"
-              data-full-width-responsive="true"></ins>
-          <script>
-              (adsbygoogle = window.adsbygoogle || []).push({});
-          </script>
-        </div>
-      </section>
+        <!-- row 2, cols 3-5 (cols 1-2 still Minecraft) -->
+        <a href="games/retrobowl.html" class="bento-card" data-gif="images/retrobowl.gif" title="Play Retro Bowl unblocked" aria-label="Retro Bowl">
+          <img src="images/retrobowl.webp" alt="Retro Bowl unblocked football game" loading="lazy" decoding="async">
+          <div class="bento-label"><span class="bento-tag">Sports</span><h3>Retro Bowl</h3></div>
+        <div class="gif-ring" aria-hidden="true"><svg viewBox="0 0 22 22"><circle cx="11" cy="11" r="9"/><circle class="progress" cx="11" cy="11" r="9"/></svg></div><span class="gif-text" aria-hidden="true">GIF</span>
+        </a>
+        <a href="games/1v1lol.html" class="bento-card" data-gif="images/1v1lol.gif" title="Play 1v1.lol unblocked" aria-label="1v1.lol">
+          <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==" data-src="https://play-lh.googleusercontent.com/QYGRIDJbyVO7L7jH8CwiKJ4NumTGgcTVqU3ITooLWxro-eeNns1RZ0uwGGFe-r8M4co" alt="1v1.lol unblocked shooter builder" loading="lazy" decoding="async">
+          <div class="bento-label"><span class="bento-tag">Shooter</span><h3>1v1.lol</h3></div>
+        <div class="gif-ring" aria-hidden="true"><svg viewBox="0 0 22 22"><circle cx="11" cy="11" r="9"/><circle class="progress" cx="11" cy="11" r="9"/></svg></div><span class="gif-text" aria-hidden="true">GIF</span>
+        </a>
+        <a href="games/pvz.html" class="bento-card" data-gif="images/pvz.gif" title="Play Plants vs. Zombies unblocked" aria-label="Plants vs. Zombies">
+          <img src="images/pvz.webp" alt="Plants vs Zombies unblocked strategy" loading="lazy" decoding="async">
+          <div class="bento-label"><span class="bento-tag">Strategy</span><h3>Plants vs. Zombies</h3></div>
+        <div class="gif-ring" aria-hidden="true"><svg viewBox="0 0 22 22"><circle cx="11" cy="11" r="9"/><circle class="progress" cx="11" cy="11" r="9"/></svg></div><span class="gif-text" aria-hidden="true">GIF</span>
+        </a>
 
-      <section class="promo-card user-choice-card" aria-labelledby="user-choice-title">
-        <div class="promo-content">
-          <h3 id="user-choice-title">User Choice Settings</h3>
-          <div class="user-choice-buttons">
-            <a href="comments.html" class="btn-learn-more">Comments</a>
-            <a href="#incognito-mode" class="btn-learn-more" data-incognito-toggle="true" role="button">Incognito Mode</a>
-            <a href="https://forms.gle/wW6PmheV4PCEJkfg6" class="btn-learn-more">Game Request</a>
-            <a href="amazon.html" class="btn-learn-more">Shop on Amazon</a>
-          </div>
-        </div>
-        <div class="promo-image">
-            <svg class="inline-icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M11.49 3.05a.9.9 0 011.02 0l.97.88c.23.21.55.28.85.19l1.25-.38c.47-.14.95.12 1.1.59l.4 1.25c.09.3.32.54.62.63l1.25.4c.47.15.73.63.59 1.1l-.38 1.25a.9.9 0 00.19.85l.88.97c.31.34.31.87 0 1.21l-.88.97a.9.9 0 00-.19.85l.38 1.25c.14.47-.12.95-.59 1.1l-1.25.4a.9.9 0 00-.62.63l-.4 1.25c-.15.47-.63.73-1.1.59l-1.25-.38a.9.9 0 00-.85.19l-.97.88a.9.9 0 01-1.02 0l-.97-.88a.9.9 0 00-.85-.19l-1.25.38c-.47.14-.95-.12-1.1-.59l-.4-1.25a.9.9 0 00-.62-.63l-1.25-.4a.9.9 0 01-.59-1.1l.38-1.25a.9.9 0 00-.19-.85l-.88-.97a.9.9 0 010-1.21l.88-.97a.9.9 0 00.19-.85l-.38-1.25c-.14-.47.12-.95.59-1.1l1.25-.4c.3-.09.53-.33.62-.63l.4-1.25c.15-.47.63-.73 1.1-.59l1.25.38c.3.09.62.02.85-.19l.97-.88z" />
-              <path d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
-            </svg>
-        </div>
-      </section>
+        <!-- row 3 — wide cards -->
+        <a href="games/papas-games.html" class="bento-card bento-wide" data-gif="images/papasgame.gif" title="Play Papa's Games unblocked" aria-label="Papa's Games">
+          <img src="images/papasgame.webp" alt="Papa's Games unblocked cooking restaurant series" loading="lazy" decoding="async">
+          <div class="bento-label"><span class="bento-tag">Cooking</span><h3>Papa's Games</h3></div>
+        <div class="gif-ring" aria-hidden="true"><svg viewBox="0 0 22 22"><circle cx="11" cy="11" r="9"/><circle class="progress" cx="11" cy="11" r="9"/></svg></div><span class="gif-text" aria-hidden="true">GIF</span>
+        </a>
+        <a href="games/subwaysurfer.html" class="bento-card bento-wide" data-gif="images/subwaysurfers.gif" title="Play Subway Surfers unblocked" aria-label="Subway Surfers">
+          <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==" data-src="https://img.poki.com/cdn-cgi/image/quality=78,width=314,height=314,fit=cover,f=auto/81a0a3f18cf0ee129e56edb50fc52c3b.png" alt="Subway Surfers unblocked endless runner" loading="lazy" decoding="async">
+          <div class="bento-label"><span class="bento-tag">Runner</span><h3>Subway Surfers</h3></div>
+        <div class="gif-ring" aria-hidden="true"><svg viewBox="0 0 22 22"><circle cx="11" cy="11" r="9"/><circle class="progress" cx="11" cy="11" r="9"/></svg></div><span class="gif-text" aria-hidden="true">GIF</span>
+        </a>
+        <a href="games/fnaf.html" class="bento-card" title="Play FNAF unblocked" aria-label="FNAF">
+          <img src="images/fnaf.webp" alt="FNAF Five Nights at Freddy's unblocked horror" loading="lazy" decoding="async">
+          <div class="bento-label"><span class="bento-tag">Horror</span><h3>FNAF</h3></div>
+        </a>
 
-    </div>
+        <!-- row 4 -->
+        <a href="games/motox3m.html" class="bento-card" data-gif="images/motox3m.gif" title="Play MotoX3M unblocked" aria-label="MotoX3M">
+          <img src="images/motocross.webp" alt="MotoX3M unblocked motorcycle stunt racing" loading="lazy" decoding="async">
+          <div class="bento-label"><span class="bento-tag">Racing</span><h3>MotoX3M</h3></div>
+        <div class="gif-ring" aria-hidden="true"><svg viewBox="0 0 22 22"><circle cx="11" cy="11" r="9"/><circle class="progress" cx="11" cy="11" r="9"/></svg></div><span class="gif-text" aria-hidden="true">GIF</span>
+        </a>
+        <a href="games/pizzatower.html" class="bento-card" data-gif="images/pizzatower.gif" title="Play Pizza Tower unblocked" aria-label="Pizza Tower">
+          <img src="images/pizzatower.webp" alt="Pizza Tower unblocked fast platformer" loading="lazy" decoding="async">
+          <div class="bento-label"><span class="bento-tag">Platformer</span><h3>Pizza Tower</h3></div>
+        <div class="gif-ring" aria-hidden="true"><svg viewBox="0 0 22 22"><circle cx="11" cy="11" r="9"/><circle class="progress" cx="11" cy="11" r="9"/></svg></div><span class="gif-text" aria-hidden="true">GIF</span>
+        </a>
+        <a href="games/paperio2.html" class="bento-card" data-gif="images/paperio2.gif" title="Play Paper.io 2 unblocked" aria-label="Paper.io 2">
+          <img src="images/paperio2.webp" alt="Paper.io 2 unblocked territory multiplayer" loading="lazy" decoding="async">
+          <div class="bento-label"><span class="bento-tag">Multiplayer</span><h3>Paper.io 2</h3></div>
+        <div class="gif-ring" aria-hidden="true"><svg viewBox="0 0 22 22"><circle cx="11" cy="11" r="9"/><circle class="progress" cx="11" cy="11" r="9"/></svg></div><span class="gif-text" aria-hidden="true">GIF</span>
+        </a>
+        <a href="games/duck-life-5.html" class="bento-card" data-gif="images/ducklife5.gif" title="Play Duck Life 5 unblocked" aria-label="Duck Life 5">
+          <img src="images/ducklife5.webp" alt="Duck Life 5 unblocked train your duck" loading="lazy" decoding="async">
+          <div class="bento-label"><span class="bento-tag">Adventure</span><h3>Duck Life 5</h3></div>
+        <div class="gif-ring" aria-hidden="true"><svg viewBox="0 0 22 22"><circle cx="11" cy="11" r="9"/><circle class="progress" cx="11" cy="11" r="9"/></svg></div><span class="gif-text" aria-hidden="true">GIF</span>
+        </a>
+        <a href="games/vex.html" class="bento-card" data-gif="images/vex7.gif" title="Play Vex 7 unblocked" aria-label="Vex 7">
+          <img src="images/vex7.gif" alt="Vex 7 unblocked parkour platformer" loading="lazy" decoding="async">
+          <div class="bento-label"><span class="bento-tag">Platformer</span><h3>Vex 7</h3></div>
+        <div class="gif-ring" aria-hidden="true"><svg viewBox="0 0 22 22"><circle cx="11" cy="11" r="9"/><circle class="progress" cx="11" cy="11" r="9"/></svg></div><span class="gif-text" aria-hidden="true">GIF</span>
+        </a>
 
-    <section class="games-grid-section" id="featured-games" aria-labelledby="featured-games-title">
-      <h2 id="featured-games-title">Featured Games</h2>
-      <div class="games-grid" id="top-10-grid">
-        <a href="games/minecraft.html" class="game-card" data-gif="images/minecraft.gif"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==" data-src="images/mc.webp" alt="Play Minecraft online unblocked Chromebook" loading="lazy" decoding="async"><h3>Minecraft</h3></a>
-        <a href="games/slope.html" class="game-card" data-gif="images/slope.gif"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==" data-src="images/slope.webp" alt="Play Slope unblocked free online" loading="lazy" decoding="async"><h3>Slope</h3></a>
-        <a href="games/retrobowl.html" class="game-card" data-gif="images/retrobowl.gif"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==" data-src="images/retrobowl.webp" alt="Play Retro Bowl unblocked free online" loading="lazy" decoding="async"><h3>Retro Bowl</h3></a>
-        <a href="games/1v1lol.html" class="game-card" data-gif="images/1v1lol.gif"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==" data-src="https://play-lh.googleusercontent.com/QYGRIDJbyVO7L7jH8CwiKJ4NumTGgcTVqU3ITooLWxro-eeNns1RZ0uwGGFe-r8M4co" alt="Play 1v1.lol unblocked shooter" loading="lazy" decoding="async"><h3>1v1.lol</h3></a>
-        <a href="games/run3.html" class="game-card" data-gif="images/run3.gif"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==" data-src="images/run3.webp" alt="Play Run 3 unblocked free online" loading="lazy" decoding="async"><h3>Run 3</h3></a>
-        <a href="games/quake3.html" class="game-card" data-gif="images/quake3.gif"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==" data-src="images/quake3.webp" alt="Play Quake 3 unblocked multiplayer FPS" loading="lazy" decoding="async"><h3>Quake 3 (Multiplayer)</h3></a>
-        <a href="games/geodash.html" class="game-card" data-gif="images/geodash.gif"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==" data-src="images/geodash_1.webp" alt="Play Geometry Dash unblocked Chromebook" loading="lazy" decoding="async"><h3>Geometry Dash</h3></a>
-        <a href="games/subwaysurfer.html" class="game-card" data-gif="images/subwaysurfers.gif"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==" data-src="https://img.poki.com/cdn-cgi/image/quality=78,width=314,height=314,fit=cover,f=auto/81a0a3f18cf0ee129e56edb50fc52c3b.png" alt="Play Subway Surfers unblocked runner" loading="lazy" decoding="async"><h3>Subway Surfers</h3></a>
-        <a href="games/motox3m.html" class="game-card" data-gif="images/motox3m.gif"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==" data-src="images/motocross.webp" alt="Play MotoX3M unblocked racing game" loading="lazy" decoding="async"><h3>MotoX3M</h3></a>
-        <a href="games/vex.html" class="game-card" data-gif="images/vex7.gif"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==" data-src="images/vex7.gif" alt="Play Vex 7 unblocked platform game" loading="lazy" decoding="async"><h3>Vex 7</h3></a>
-        <a href="games/paperio2.html" class="game-card" data-gif="images/paperio2.gif"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==" data-src="images/paperio2.webp" alt="Play Paper.io 2 unblocked multiplayer" loading="lazy" decoding="async"><h3>Paper.io 2</h3></a>
-        <a href="games/pizzatower.html" class="game-card" data-gif="images/pizzatower.gif"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==" data-src="images/pizzatower.webp" alt="Play Pizza Tower unblocked platformer" loading="lazy" decoding="async"><h3>Pizza Tower (Full 2025)</h3></a>
-      </div>
+        <!-- row 5 -->
+        <a href="games/quake3.html" class="bento-card" data-gif="images/quake3.gif" title="Play Quake 3 unblocked" aria-label="Quake 3">
+          <img src="images/quake3.webp" alt="Quake 3 unblocked multiplayer FPS" loading="lazy" decoding="async">
+          <div class="bento-label"><span class="bento-tag">FPS</span><h3>Quake 3</h3></div>
+        <div class="gif-ring" aria-hidden="true"><svg viewBox="0 0 22 22"><circle cx="11" cy="11" r="9"/><circle class="progress" cx="11" cy="11" r="9"/></svg></div><span class="gif-text" aria-hidden="true">GIF</span>
+        </a>
+        <a href="games/happy-wheels.html" class="bento-card" data-gif="images/happywheels.gif" title="Play Happy Wheels unblocked" aria-label="Happy Wheels">
+          <img src="images/happywheels.gif" alt="Happy Wheels unblocked physics ragdoll" loading="lazy" decoding="async">
+          <div class="bento-label"><span class="bento-tag">Physics</span><h3>Happy Wheels</h3></div>
+        <div class="gif-ring" aria-hidden="true"><svg viewBox="0 0 22 22"><circle cx="11" cy="11" r="9"/><circle class="progress" cx="11" cy="11" r="9"/></svg></div><span class="gif-text" aria-hidden="true">GIF</span>
+        </a>
+        <a href="games/slitherio.html" class="bento-card" title="Play Slither.io unblocked" aria-label="Slither.io">
+          <img src="images/slitherio.webp" alt="Slither.io unblocked multiplayer snake" loading="lazy" decoding="async">
+          <div class="bento-label"><span class="bento-tag">Multiplayer</span><h3>Slither.io</h3></div>
+        </a>
+        <a href="games/agario.html" class="bento-card" title="Play Agar.io unblocked" aria-label="Agar.io">
+          <img src="images/agario.webp" alt="Agario unblocked browser multiplayer" loading="lazy" decoding="async">
+          <div class="bento-label"><span class="bento-tag">IO Game</span><h3>Agar.io</h3></div>
+        </a>
+        <a href="games/basketballstars.html" class="bento-card" title="Play Basketball Stars unblocked" aria-label="Basketball Stars">
+          <img src="images/basketballstars.webp" alt="Basketball Stars unblocked sports game" loading="lazy" decoding="async">
+          <div class="bento-label"><span class="bento-tag">Sports</span><h3>Basketball Stars</h3></div>
+        </a>
+
+      </div><!-- /.bento-grid -->
     </section>
 
-    <section class="schplay-promise" id="schplay-promise" aria-labelledby="schplay-promise-title">
-        <h2 id="schplay-promise-title">The Schplay Promise</h2>
+    <!-- Ad -->
+    <div style="margin:0 0 2rem;text-align:center;">
+      <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5690564842575659" crossorigin="anonymous"></script>
+      <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-5690564842575659" data-ad-slot="9885096122" data-ad-format="auto" data-full-width-responsive="true"></ins>
+      <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+    </div>
+
+
+    <div id="promise-section">
+      <button class="section-toggle-btn" id="promise-toggle" type="button"
+        onclick="var c=document.getElementById('promise-content');var b=this;if(c.hidden){c.hidden=false;b.querySelector('.toggle-state').textContent='Hide';b.setAttribute('aria-expanded','true')}else{c.hidden=true;b.querySelector('.toggle-state').textContent='Show';b.setAttribute('aria-expanded','false')}"
+        aria-expanded="false" aria-controls="promise-content">
+        <span class="toggle-label">The Schplay Promise</span>
+        <span class="toggle-state">Show</span>
+        <svg width="13" height="13" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M3 4.5L6 7.5L9 4.5"/></svg>
+      </button>
+      <div id="promise-content" hidden>
+    <section class="schplay-promise" id="schplay-promise" aria-labelledby="schplay-promise-title" style="border-top:none;">
+        <h2 id="schplay-promise-title" style="display:none;">The Schplay Promise</h2>
         <div class="promise-points">
             <div class="promise-point">
                 <svg class="inline-icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
@@ -865,6 +386,8 @@ function gtag_report_conversion(url) {
         </div>
         <a class="promise-cta" href="about.html">Learn more about how we keep players safe</a>
     </section>
+      </div><!-- /promise-content -->
+    </div><!-- /promise-section -->
 
     <div id="educator-section" style="border-top:1px solid rgba(255,255,255,0.08); margin-top:1rem;">
       <button id="educator-toggle" type="button" onclick="var s=document.getElementById('educator-content');var b=this;if(s.hidden){s.hidden=false;b.querySelector('span').textContent='Hide';b.setAttribute('aria-expanded','true')}else{s.hidden=true;b.querySelector('span').textContent='Show';b.setAttribute('aria-expanded','false')}" aria-expanded="false" aria-controls="educator-content" style="display:flex;align-items:center;gap:0.5rem;width:100%;padding:1.25rem 0;background:none;border:none;color:#86868b;font-size:0.95rem;font-family:inherit;cursor:pointer;transition:color 0.15s ease;">
@@ -926,21 +449,21 @@ function gtag_report_conversion(url) {
       </div><!-- end educator-content -->
     </div><!-- end educator-section -->
 
-    <section class="games-grid-section" aria-labelledby="popular-games-title">
-        <h2 id="popular-games-title">Popular Games</h2>
-        <div class="games-grid">
-            <a href="games/pvz.html" class="game-card"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==" data-src="images/pvz.webp" alt="Play Plants vs Zombies unblocked free" loading="lazy" decoding="async"><h3>Plants V Zombies</h3></a>
-            <a href="games/fnaf.html" class="game-card"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==" data-src="images/fnaf.webp" alt="Play FNAF unblocked Five Nights at Freddys" loading="lazy" decoding="async"><h3>FNAF</h3></a>
-            <a href="games/drifthunters.html" class="game-card"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==" data-src="images/drifthunters.webp" alt="Play Drift Hunters unblocked driving" loading="lazy" decoding="async"><h3>Drift Hunters</h3></a>
-            <a href="games/getaway-shootout.html" class="game-card"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==" data-src="images/getawayshootout.webp" alt="Play Getaway Shootout unblocked 2 player" loading="lazy" decoding="async"><h3>Getaway Shootout</h3></a>
-            <a href="games/basketballstars.html" class="game-card"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==" data-src="images/basketballstars.webp" alt="Play Basketball Stars unblocked sports" loading="lazy" decoding="async"><h3>Basketball Stars</h3></a>
-            <a href="games/paperio2.html" class="game-card"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==" data-src="images/paperio2.webp" alt="Play Paper.io 2 unblocked multiplayer" loading="lazy" decoding="async"><h3>Paper.io 2</h3></a>
-            <a href="games/templerun2.html" class="game-card"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==" data-src="https://play-lh.googleusercontent.com/go4XqS4mYs-G2tZymiVLF4wJYXIi5QrvwixNRzssk4G_vRBHrAdg4E1ddNwy9c2cZA" alt="Play Temple Run 2 unblocked running" loading="lazy" decoding="async"><h3>Temple Run 2</h3></a>
-            <a href="games/slitherio.html" class="game-card"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==" data-src="images/slitherio.webp" alt="Play Slither.io unblocked multiplayer" loading="lazy" decoding="async"><h3>Slither.io</h3></a>
-            <a href="games/agario.html" class="game-card"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==" data-src="images/agario.webp" alt="Play Agar.io unblocked multiplayer game" loading="lazy" decoding="async"><h3>Agar.io</h3></a>
-            <a href="games/henry-stickman.html" class="game-card"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==" data-src="https://cdn2.steamgriddb.com/icon/9f61408e3afb633e50cdf1b20de6f466.png" alt="Play Henry Stickman unblocked adventure" loading="lazy" decoding="async"><h3>Henry Stickman</h3></a>
-            <a href="games/cut-the-rope.html" class="game-card"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==" data-src="images/cuttherope.webp" alt="Play Cut the Rope unblocked puzzle" loading="lazy" decoding="async"><h3>Cut the Rope</h3></a>
-            <a href="games/spelunky.html" class="game-card"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==" data-src="images/spelunky.webp" alt="Play Spelunky unblocked adventure game" loading="lazy" decoding="async"><h3>Spelunky</h3></a>
+    <section class="bento-section" aria-labelledby="popular-games-title">
+        <span class="section-label" id="popular-games-title">Popular Games</span>
+        <div class="bento-grid">
+            <a href="games/pvz.html" class="bento-card" title="Play Plants vs Zombies unblocked" aria-label="Plants vs. Zombies"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==" data-src="images/pvz.webp" alt="Play Plants vs Zombies unblocked free" loading="lazy" decoding="async"><div class="bento-label"><h3>Plants V Zombies</h3></div></a>
+            <a href="games/fnaf.html" class="bento-card" title="Play FNAF unblocked" aria-label="FNAF"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==" data-src="images/fnaf.webp" alt="Play FNAF unblocked Five Nights at Freddys" loading="lazy" decoding="async"><div class="bento-label"><h3>FNAF</h3></div></a>
+            <a href="games/drifthunters.html" class="bento-card" title="Play Drift Hunters unblocked" aria-label="Drift Hunters"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==" data-src="images/drifthunters.webp" alt="Play Drift Hunters unblocked driving" loading="lazy" decoding="async"><div class="bento-label"><h3>Drift Hunters</h3></div></a>
+            <a href="games/getaway-shootout.html" class="bento-card" title="Play Getaway Shootout unblocked" aria-label="Getaway Shootout"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==" data-src="images/getawayshootout.webp" alt="Play Getaway Shootout unblocked 2 player" loading="lazy" decoding="async"><div class="bento-label"><h3>Getaway Shootout</h3></div></a>
+            <a href="games/basketballstars.html" class="bento-card" title="Play Basketball Stars unblocked" aria-label="Basketball Stars"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==" data-src="images/basketballstars.webp" alt="Play Basketball Stars unblocked sports" loading="lazy" decoding="async"><div class="bento-label"><h3>Basketball Stars</h3></div></a>
+            <a href="games/paperio2.html" class="bento-card" title="Play Paper.io 2 unblocked" aria-label="Paper.io 2"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==" data-src="images/paperio2.webp" alt="Play Paper.io 2 unblocked multiplayer" loading="lazy" decoding="async"><div class="bento-label"><h3>Paper.io 2</h3></div></a>
+            <a href="games/templerun2.html" class="bento-card" title="Play Temple Run 2 unblocked" aria-label="Temple Run 2"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==" data-src="https://play-lh.googleusercontent.com/go4XqS4mYs-G2tZymiVLF4wJYXIi5QrvwixNRzssk4G_vRBHrAdg4E1ddNwy9c2cZA" alt="Play Temple Run 2 unblocked running" loading="lazy" decoding="async"><div class="bento-label"><h3>Temple Run 2</h3></div></a>
+            <a href="games/slitherio.html" class="bento-card" title="Play Slither.io unblocked" aria-label="Slither.io"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==" data-src="images/slitherio.webp" alt="Play Slither.io unblocked multiplayer" loading="lazy" decoding="async"><div class="bento-label"><h3>Slither.io</h3></div></a>
+            <a href="games/agario.html" class="bento-card" title="Play Agar.io unblocked" aria-label="Agar.io"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==" data-src="images/agario.webp" alt="Play Agar.io unblocked multiplayer game" loading="lazy" decoding="async"><div class="bento-label"><h3>Agar.io</h3></div></a>
+            <a href="games/henry-stickman.html" class="bento-card" title="Play Henry Stickman unblocked" aria-label="Henry Stickman"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==" data-src="https://cdn2.steamgriddb.com/icon/9f61408e3afb633e50cdf1b20de6f466.png" alt="Play Henry Stickman unblocked adventure" loading="lazy" decoding="async"><div class="bento-label"><h3>Henry Stickman</h3></div></a>
+            <a href="games/cut-the-rope.html" class="bento-card" title="Play Cut the Rope unblocked" aria-label="Cut the Rope"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==" data-src="images/cuttherope.webp" alt="Play Cut the Rope unblocked puzzle" loading="lazy" decoding="async"><div class="bento-label"><h3>Cut the Rope</h3></div></a>
+            <a href="games/spelunky.html" class="bento-card" title="Play Spelunky unblocked" aria-label="Spelunky"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==" data-src="images/spelunky.webp" alt="Play Spelunky unblocked adventure game" loading="lazy" decoding="async"><div class="bento-label"><h3>Spelunky</h3></div></a>
         </div>
     </section>
 
@@ -949,9 +472,9 @@ function gtag_report_conversion(url) {
         <a href="https://forms.gle/wW6PmheV4PCEJkfg6" class="btn-submit-game">Submit Your Game Here!</a>
     </section>
 
-    <section class="games-grid-section" aria-labelledby="you-might-like-title">
-        <h2 id="you-might-like-title">You Might Like</h2>
-        <div class="games-grid" id="you-might-like-grid">
+    <section class="bento-section" aria-labelledby="you-might-like-title">
+        <span class="section-label" id="you-might-like-title">You Might Like</span>
+        <div class="bento-grid" id="you-might-like-grid">
         </div>
     </section>
 
@@ -973,123 +496,42 @@ function gtag_report_conversion(url) {
 
   <script>
     (function () {
-      var slider = document.querySelector('.promo-slider');
-      if (!slider) {
-        return;
-      }
+      // GIF preview on hover >3s
+      document.querySelectorAll('.bento-card[data-gif]').forEach(function (card) {
+        var img    = card.querySelector('img');
+        if (!img) return;
+        var gifSrc = card.getAttribute('data-gif');
+        var timer  = null;
+        var gifActive = false;
+        var savedSrc  = null;
 
-      var track = slider.querySelector('[data-slider-track]');
-      var slides = Array.from(track ? track.children : []);
-      if (!track || slides.length === 0) {
-        return;
-      }
-
-      var prevButton = slider.querySelector('[data-slider-prev]');
-      var nextButton = slider.querySelector('[data-slider-next]');
-      var dotButtons = Array.from(slider.querySelectorAll('[data-slider-dot]'));
-      var currentIndex = 0;
-      var autoTimer = null;
-      var autoDelay = 7000;
-      var prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-      var focusableSelector = 'a, button, input, select, textarea, [tabindex]';
-
-      function setSlideAccessibility(slide, isActive) {
-        slide.setAttribute('aria-hidden', isActive ? 'false' : 'true');
-        var focusables = slide.querySelectorAll(focusableSelector);
-        focusables.forEach(function (el) {
-          var stored = el.getAttribute('data-tabindex-store');
-          if (isActive) {
-            if (stored !== null) {
-              if (stored === '') {
-                el.removeAttribute('tabindex');
-              } else {
-                el.setAttribute('tabindex', stored);
-              }
-              el.removeAttribute('data-tabindex-store');
-            } else if (el.getAttribute('tabindex') === '-1') {
-              el.removeAttribute('tabindex');
-            }
-          } else {
-            if (stored === null) {
-              el.setAttribute('data-tabindex-store', el.hasAttribute('tabindex') ? el.getAttribute('tabindex') || '' : '');
-            }
-            el.setAttribute('tabindex', '-1');
+        card.addEventListener('mouseenter', function () {
+          if (gifActive) return;
+          // Always read current src so we restore after lazy-loading has run
+          var lazySrc = img.getAttribute('data-src');
+          if (lazySrc) {
+            img.src = lazySrc;             // force-load before gifSrc swap
+            img.removeAttribute('data-src');
           }
-        });
-      }
+          savedSrc = img.src;              // capture real src just-in-time
 
-      function updateSlides(targetIndex) {
-        currentIndex = (targetIndex + slides.length) % slides.length;
-        track.style.transform = 'translateX(-' + currentIndex * 100 + '%)';
-
-        slides.forEach(function (slide, index) {
-          setSlideAccessibility(slide, index === currentIndex);
+          timer = setTimeout(function () {
+            img.src = gifSrc;
+            gifActive = true;
+            card.classList.add('gif-active');
+          }, 3000);
         });
 
-        dotButtons.forEach(function (dot, index) {
-          if (index === currentIndex) {
-            dot.classList.add('active');
-            dot.setAttribute('aria-selected', 'true');
-          } else {
-            dot.classList.remove('active');
-            dot.setAttribute('aria-selected', 'false');
-          }
-        });
-      }
-
-      function goToNext() {
-        updateSlides(currentIndex + 1);
-      }
-
-      function goToPrevious() {
-        updateSlides(currentIndex - 1);
-      }
-
-      function stopAuto() {
-        if (autoTimer) {
-          clearInterval(autoTimer);
-          autoTimer = null;
-        }
-      }
-
-      function startAuto() {
-        if (prefersReducedMotion) {
-          return;
-        }
-
-        stopAuto();
-        autoTimer = setInterval(goToNext, autoDelay);
-      }
-
-      if (prevButton) {
-        prevButton.addEventListener('click', function () {
-          goToPrevious();
-          startAuto();
-        });
-      }
-
-      if (nextButton) {
-        nextButton.addEventListener('click', function () {
-          goToNext();
-          startAuto();
-        });
-      }
-
-      dotButtons.forEach(function (dot) {
-        dot.addEventListener('click', function (event) {
-          var target = Number(event.currentTarget.getAttribute('data-slider-dot'));
-          if (!Number.isNaN(target)) {
-            updateSlides(target);
-            startAuto();
+        card.addEventListener('mouseleave', function () {
+          clearTimeout(timer);
+          timer = null;
+          if (gifActive) {
+            img.src = savedSrc;
+            gifActive = false;
+            card.classList.remove('gif-active');
           }
         });
       });
-
-      slider.addEventListener('mouseenter', stopAuto);
-      slider.addEventListener('mouseleave', startAuto);
-
-      updateSlides(0);
-      startAuto();
     })();
   </script>
   <script src="js/script.js" defer></script>

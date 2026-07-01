@@ -25,28 +25,25 @@
 
         games.forEach(game => {
             const card = document.createElement('a');
-            card.className = 'game-card game-card-large';
+            card.className = 'bento-card';
             card.href = game.href;
-
-            const media = document.createElement('div');
-            media.className = 'game-card-media';
+            card.title = 'Play ' + game.name + ' unblocked';
 
             const image = document.createElement('img');
-            image.src = game.img;
-            image.alt = game.name;
+            image.src = 'data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==';
+            image.dataset.src = game.img;
+            image.alt = game.name + ' unblocked';
             image.loading = 'lazy';
             image.decoding = 'async';
-            media.appendChild(image);
 
-            const info = document.createElement('div');
-            info.className = 'game-info';
-
+            const label = document.createElement('div');
+            label.className = 'bento-label';
             const title = document.createElement('h3');
             title.textContent = game.name;
-            info.appendChild(title);
+            label.appendChild(title);
 
-            card.appendChild(media);
-            card.appendChild(info);
+            card.appendChild(image);
+            card.appendChild(label);
 
             fragment.appendChild(card);
         });

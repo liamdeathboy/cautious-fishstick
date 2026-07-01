@@ -25,6 +25,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preload" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
     <link rel="preload" href="css/new-style.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="stylesheet" href="css/bento.css">
     <link rel="preload" href="css/restyle.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
     <link rel="preload" href="css/user-choice.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
     <noscript>
@@ -53,7 +54,7 @@
         <h2 id="multiplayer-games-title">Multiplayer Must-Plays</h2>
         <span id="multiplayer-games-count" class="games-count" aria-live="polite"></span>
       </div>
-      <div class="games-grid" id="multiplayer-games-grid" aria-live="polite"></div>
+      <div class="bento-grid" id="multiplayer-games-grid" aria-live="polite"></div>
     </section>
 
     <section class="publish-game" aria-labelledby="multiplayer-request-title">
@@ -129,12 +130,9 @@
       grid.innerHTML = '';
       items.forEach(({ name, href, img }) => {
         const card = document.createElement('a');
-        card.className = 'game-card';
+        card.className = 'bento-card';
         card.href = href;
-        card.innerHTML = `
-          <img  src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==" data-src="${img}" alt="${name}" loading="lazy" decoding="async">
-          <h3>${name}</h3>
-        `;
+        card.innerHTML = `<img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==" data-src="${img}" alt="${name} unblocked" loading="lazy" decoding="async"><div class="bento-label"><h3>${name}</h3></div>`;
         grid.appendChild(card);
       });
 

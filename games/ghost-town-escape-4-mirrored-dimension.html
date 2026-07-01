@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="robots" content="index, follow">
-    <meta name="description" content="Play Ghost Town Escape 4 - Mirrored Dimension online and push through each stage with better timing, cleaner jumps, and smarter routes. This classroom-friendly activity is perfect for teachers and learning fun. Updated Sep 22, 2025 on Schplay.">
+    <meta name="description" content="Play Ghost Town Escape 4 - Mirrored Dimension online and push through each stage with better timing, cleaner jumps, and smarter routes.">
     <meta name="keywords" content="ghost town escape 4 - mirrored dimension, ghost-town-escape-4-mirrored-dimension, browser game, online game, schplay, gamemonetize, cool, math, maths, game, games, puzzle, puzzles, free, online, strategy, skill, shapes, colors, logic, memory, board, read, reading, spell, spelling, geography, science, learning fun, fun activities for kids, learning games, education games">
     <meta name="theme-color" content="#0f1a2a">
     <title>Play Ghost Town Escape 4 - Mirrored Dimension Online | Schplay</title>
@@ -14,18 +14,23 @@
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="Schplay">
     <meta property="og:title" content="Play Ghost Town Escape 4 - Mirrored Dimension Online | Schplay">
-    <meta property="og:description" content="Play Ghost Town Escape 4 - Mirrored Dimension online and push through each stage with better timing, cleaner jumps, and smarter routes. This classroom-friendly activity is perfect for teachers and learning fun. Updated Sep 22, 2025 on Schplay.">
+    <meta property="og:description" content="Play Ghost Town Escape 4 - Mirrored Dimension online and push through each stage with better timing, cleaner jumps, and smarter routes.">
     <meta property="og:url" content="https://schplay.com/games/ghost-town-escape-4-mirrored-dimension.html">
     <meta property="og:image" content="https://img.gamemonetize.com/83alolumjc1uxkn0vz2nx7oflexgnw04/512x384.jpg">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Play Ghost Town Escape 4 - Mirrored Dimension Online | Schplay">
-    <meta name="twitter:description" content="Play Ghost Town Escape 4 - Mirrored Dimension online and push through each stage with better timing, cleaner jumps, and smarter routes. This classroom-friendly activity is perfect for teachers and learning fun. Updated Sep 22, 2025 on Schplay.">
+    <meta name="twitter:description" content="Play Ghost Town Escape 4 - Mirrored Dimension online and push through each stage with better timing, cleaner jumps, and smarter routes.">
     <meta name="twitter:image" content="https://img.gamemonetize.com/83alolumjc1uxkn0vz2nx7oflexgnw04/512x384.jpg">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'" crossorigin="anonymous">
+    <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" crossorigin="anonymous"></noscript>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=optional" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=optional"></noscript>
     <link rel="stylesheet" href="../css/new-style.css">
     <link rel="stylesheet" href="../css/restyle.css">
     <link rel="stylesheet" href="../css/user-choice.css">
+    <link rel="stylesheet" href="../css/game-player.css">
     <script type="application/ld+json">
         [
                   {
@@ -78,298 +83,6 @@
                   }
         ]
     </script>
-    <style>
-        
-                .game-player-section {
-                    display: grid;
-                    grid-template-columns: minmax(0, 1fr);
-                    gap: 20px;
-                    margin-bottom: 32px;
-                }
-        
-                .game-player-card, .game-meta-card {
-                    background-color: #1c2a3e;
-                    border-radius: 16px;
-                    padding: 20px;
-                    box-shadow: 0 8px 24px rgba(5, 15, 32, 0.35);
-                }
-        
-                .game-player-header {
-                    display: flex;
-                    justify-content: flex-end;
-                    margin-bottom: 12px;
-                }
-        
-                .game-fullscreen-toggle {
-                    display: inline-flex;
-                    align-items: center;
-                    gap: 8px;
-                    background: rgba(15, 32, 58, 0.75);
-                    border: 1px solid rgba(86, 143, 215, 0.65);
-                    color: var(--text-color);
-                    padding: 8px 14px;
-                    border-radius: 12px;
-                    cursor: pointer;
-                    font-weight: 600;
-                    transition: transform 0.2s ease, background-color 0.2s ease;
-                }
-        
-                .game-fullscreen-toggle i {
-                    color: var(--secondary-color);
-                }
-        
-                .game-fullscreen-toggle:hover,
-                .game-fullscreen-toggle:focus-visible {
-                    transform: translateY(-1px);
-                    background: rgba(24, 46, 78, 0.9);
-                    outline: none;
-                }
-        
-                .game-player-card iframe {
-                    width: 100%;
-                    height: 640px;
-                    border: none;
-                    border-radius: 12px;
-                    background-color: #000;
-                }
-        
-                .game-player-card iframe:fullscreen,
-                .game-player-card iframe:-webkit-full-screen,
-                .game-player-card iframe:-moz-full-screen,
-                .game-player-card iframe:-ms-fullscreen {
-                    width: 100vw;
-                    height: 100vh;
-                    border-radius: 0;
-                }
-        
-                .game-meta-card h2 {
-                    font-size: 1.35rem;
-                    margin-bottom: 12px;
-                }
-        
-                .game-meta-card p {
-                    color: var(--text-muted);
-                    line-height: 1.6;
-                    margin-bottom: 16px;
-                }
-        
-                .game-meta-card ul {
-                    padding-left: 20px;
-                    color: var(--text-muted);
-                }
-        
-                .game-meta-card li {
-                    margin-bottom: 10px;
-                }
-        
-                .game-meta-card .game-ad-slot {
-                    margin: 0 0 20px;
-                }
-        
-                .meta-callout {
-                    display: flex;
-                    align-items: flex-start;
-                    gap: 14px;
-                    background: rgba(12, 24, 42, 0.85);
-                    border: 1px solid rgba(86, 143, 215, 0.35);
-                    border-radius: 12px;
-                    padding: 16px;
-                    margin-bottom: 24px;
-                }
-        
-                .meta-callout-icon {
-                    display: inline-flex;
-                    align-items: center;
-                    justify-content: center;
-                    width: 44px;
-                    height: 44px;
-                    border-radius: 12px;
-                    background: rgba(188, 165, 73, 0.15);
-                    color: var(--secondary-color);
-                    font-size: 1.4rem;
-                    flex-shrink: 0;
-                }
-        
-                .meta-callout-content {
-                    flex: 1;
-                }
-        
-                .meta-callout-eyebrow {
-                    font-size: 0.95rem;
-                    color: var(--text-muted);
-                    margin-bottom: 4px;
-                }
-        
-                .meta-callout a {
-                    color: var(--primary-color);
-                    font-weight: 600;
-                    font-size: 0.95rem;
-                }
-        
-                .meta-details {
-                    display: grid;
-                    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-                    gap: 18px;
-                    margin-bottom: 24px;
-                    list-style: none;
-                    padding: 0;
-                }
-        
-                .meta-details dt {
-                    font-size: 0.85rem;
-                    letter-spacing: 0.05em;
-                    text-transform: uppercase;
-                    color: var(--text-muted);
-                    margin-bottom: 6px;
-                }
-        
-                .meta-details dd {
-                    margin: 0;
-                    font-weight: 600;
-                }
-        
-                .meta-divider {
-                    height: 1px;
-                    border: none;
-                    background: rgba(255, 255, 255, 0.08);
-                    margin: 26px 0;
-                }
-        
-                .meta-subheading {
-                    font-size: 1.1rem;
-                    margin-top: 26px;
-                    margin-bottom: 12px;
-                }
-        
-                .meta-code-list {
-                    list-style: none;
-                    padding: 0;
-                    margin: 18px 0;
-                    font-family: "Courier New", Courier, monospace;
-                    font-size: 0.95rem;
-                    color: var(--text-muted);
-                }
-        
-                .meta-code-list li {
-                    margin-bottom: 6px;
-                }
-        
-                .meta-hint {
-                    font-size: 0.95rem;
-                    color: var(--text-muted);
-                    margin-top: 16px;
-                }
-        
-                .game-ad-slot {
-                    margin-top: 20px;
-                    background: rgba(12, 24, 42, 0.65);
-                    border-radius: 12px;
-                    padding: 12px;
-                    text-align: center;
-                }
-        
-                .game-ad-slot p {
-                    font-size: 0.85rem;
-                    margin-bottom: 12px;
-                    color: var(--text-muted);
-                }
-        
-                .game-learning {
-                    background-color: #1c2a3e;
-                    border-radius: 16px;
-                    padding: 24px;
-                    margin: 32px 0;
-                    box-shadow: 0 12px 30px rgba(5, 15, 32, 0.35);
-                }
-        
-                .learning-header {
-                    margin-bottom: 18px;
-                }
-        
-                .learning-eyebrow {
-                    text-transform: uppercase;
-                    letter-spacing: 0.06em;
-                    font-size: 0.85rem;
-                    color: var(--secondary-color);
-                    margin: 0 0 6px;
-                }
-        
-                .learning-grid {
-                    display: grid;
-                    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-                    gap: 16px;
-                }
-        
-                .learning-card {
-                    background: rgba(12, 24, 42, 0.85);
-                    border: 1px solid rgba(86, 143, 215, 0.35);
-                    border-radius: 14px;
-                    padding: 18px;
-                }
-        
-                .learning-card h3 {
-                    margin: 0 0 8px;
-                    font-size: 1.05rem;
-                }
-        
-                .learning-card p {
-                    margin: 0;
-                    color: var(--text-muted);
-                    line-height: 1.6;
-                }
-        
-                .learning-standard {
-                    display: inline-block;
-                    font-size: 0.75rem;
-                    letter-spacing: 0.08em;
-                    text-transform: uppercase;
-                    color: var(--secondary-color);
-                    margin-bottom: 8px;
-                }
-        
-                .learning-faq-list details {
-                    background: rgba(12, 24, 42, 0.85);
-                    border: 1px solid rgba(255, 255, 255, 0.08);
-                    border-radius: 12px;
-                    padding: 14px 18px;
-                    margin-bottom: 12px;
-                }
-        
-                .learning-faq-list summary {
-                    cursor: pointer;
-                    font-weight: 600;
-                    color: var(--text-color);
-                }
-        
-                .learning-faq-list summary::marker {
-                    color: var(--secondary-color);
-                }
-        
-                .learning-faq-list p {
-                    margin: 12px 0 0;
-                    color: var(--text-muted);
-                    line-height: 1.6;
-                }
-        
-                @media (max-width: 1100px) {
-                    .game-player-section {
-                        grid-template-columns: 1fr;
-                    }
-                    .game-player-card iframe {
-                        height: 520px;
-                    }
-                    .game-player-header {
-                        justify-content: center;
-                    }
-                }
-        
-                @media (max-width: 720px) {
-                    .game-learning {
-                        padding: 20px;
-                    }
-                }
-            
-    </style>
 </head>
 <body>
   <header id="site-header" role="banner">
