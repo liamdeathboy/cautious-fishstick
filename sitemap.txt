@@ -3,6 +3,9 @@ https://schplay.com/games/1v1lol.html
 https://schplay.com/games/2048-merge-run.html
 https://schplay.com/games/2048.html
 https://schplay.com/games/2d-car-driving-drive-safe.html
+https://schplay.com/games/LastBreathTrio.html
+https://schplay.com/games/Rejuvenation.html
+https://schplay.com/games/TheFinalExperiment.html
 https://schplay.com/games/acegangster.html
 https://schplay.com/games/adastra.html
 https://schplay.com/games/addition-bird-image-uncover.html
@@ -110,6 +113,7 @@ https://schplay.com/games/gravityguy.html
 https://schplay.com/games/gun-clone.html
 https://schplay.com/games/gun-mayhem.html
 https://schplay.com/games/gun-runner.html
+https://schplay.com/games/gunmayhem.html
 https://schplay.com/games/gunspin.html
 https://schplay.com/games/gyroball.html
 https://schplay.com/games/happy-wheels.html
@@ -130,7 +134,6 @@ https://schplay.com/games/juicy-tic-tac-toe-battle.html
 https://schplay.com/games/jump-over-alphabets.html
 https://schplay.com/games/jungle-jump.html
 https://schplay.com/games/kaji-run.html
-https://schplay.com/games/LastBreathTrio.html
 https://schplay.com/games/learntofly.html
 https://schplay.com/games/learntofly2.html
 https://schplay.com/games/learntofly3.html
@@ -186,7 +189,6 @@ https://schplay.com/games/rb-college.html
 https://schplay.com/games/real-driving-simulator.html
 https://schplay.com/games/real-savior.html
 https://schplay.com/games/redpool-legend-2-player.html
-https://schplay.com/games/Rejuvenation.html
 https://schplay.com/games/retrobowl.html
 https://schplay.com/games/riddleschool-all-games.html
 https://schplay.com/games/robot-invasion.html
@@ -238,7 +240,6 @@ https://schplay.com/games/the-big-adventure-of-owatas-life.html
 https://schplay.com/games/the-binding-of-isaac.html
 https://schplay.com/games/the-last-shot.html
 https://schplay.com/games/the-rabbit-adventure.html
-https://schplay.com/games/TheFinalExperiment.html
 https://schplay.com/games/there-is-no-game.html
 https://schplay.com/games/towerblaster.html
 https://schplay.com/games/towermaster.html
@@ -268,14 +269,12 @@ https://schplay.com/classic.html
 https://schplay.com/comments.html
 https://schplay.com/contact.html
 https://schplay.com/flash.html
-https://schplay.com/footer.html
 https://schplay.com/fps.html
 https://schplay.com/gamesforkids.html
 https://schplay.com/index.html
 https://schplay.com/logic.html
 https://schplay.com/morecategories.html
 https://schplay.com/multiplayer.html
-https://schplay.com/navbar.html
 https://schplay.com/new.html
 https://schplay.com/newgames.html
 https://schplay.com/numbers.html
@@ -295,4 +294,3 @@ https://schplay.com/blog/best-unblocked-puzzle-games-2026.html
 https://schplay.com/blog/best-unblocked-skill-games-2026.html
 https://schplay.com/blog/classroom-mode-guide.html
 https://schplay.com/blog/getting-started-with-schplay.html
-https://schplay.com/blog/weekly-update-template.html

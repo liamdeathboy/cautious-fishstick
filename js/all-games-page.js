@@ -21,6 +21,10 @@
 
         games.sort((a, b) => a.name.localeCompare(b.name));
 
+        // Clear any server-rendered (static, crawlable) cards before rendering the
+        // JS-enhanced, lazy-loaded versions so nothing is duplicated.
+        grid.innerHTML = '';
+
         const fragment = document.createDocumentFragment();
 
         games.forEach(game => {

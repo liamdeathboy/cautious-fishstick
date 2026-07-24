@@ -9,8 +9,23 @@ const SITEMAP_XML_PATH = path.join(ROOT, 'sitemap.xml');
 const SITEMAP_TXT_PATH = path.join(ROOT, 'sitemap.txt');
 
 const EXCLUDED_PATHS = new Set([
-  'blog/post-template.html'
+  // Blog templates (not real posts)
+  'blog/post-template.html',
+  'blog/weekly-update-template.html',
+  // JS-injected partials, not standalone pages
+  'navbar.html',
+  'footer.html'
 ]);
+
+// Sections whose pages were changed in this SEO pass — force a fresh lastmod so
+// search engines re-crawl. Everything else keeps its previously recorded date.
+const FORCE_FRESH_LASTMOD = (pagePath) =>
+  pagePath === 'index.html' ||
+  pagePath.startsWith('games/') ||
+  WEEKLY_TOP_LEVEL.has(pagePath) ||
+  pagePath === 'allgames.html' ||
+  pagePath === '2player.html' ||
+  pagePath === 'classic.html';
 
 const WEEKLY_TOP_LEVEL = new Set([
   'allgames.html',
@@ -149,7 +164,9 @@ const main = () => {
 
     return {
       path: pagePath,
-      lastmod: existing && existing.lastmod ? existing.lastmod : defaults.lastmod,
+      lastmod: FORCE_FRESH_LASTMOD(pagePath)
+        ? today
+        : (existing && existing.lastmod ? existing.lastmod : defaults.lastmod),
       changefreq: existing && existing.changefreq ? existing.changefreq : defaults.changefreq,
       priority: existing && existing.priority ? existing.priority : defaults.priority
     };

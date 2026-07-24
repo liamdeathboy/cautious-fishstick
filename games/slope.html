@@ -15,22 +15,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="robots" content="index, follow">
-    <meta name="description" content="Play Slope online for free. Guide the neon ball down an endless obstacle course, dodge barriers, and push your reflexes to the limit on any device.">
-    <meta name="keywords" content="Slope game, play Slope online, free slope, unblocked slope, reflex games, endless runner">
+    <meta name="description" content="Play Slope unblocked and free online at Schplay. Guide the neon ball down an endless obstacle course, dodge barriers, and test your reflexes on any device.">
+    <meta name="keywords" content="slope unblocked, slope game, play slope online, unblocked slope, slope unblocked games, free slope, reflex games, endless runner, unblocked games">
     <meta name="theme-color" content="#0f1a2a">
-    <title>Play Slope Online | Schplay</title>
+    <title>Slope Unblocked - Play Free Online | Schplay</title>
     <link rel="canonical" href="https://schplay.com/games/slope.html">
-    <link rel="icon" type="image/webp" href="/images/favicon.ico">
+    <link rel="icon" href="/images/favicon.ico" sizes="any">
     <link rel="apple-touch-icon" href="../images/favicon-32x32.png">
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="Schplay">
-    <meta property="og:title" content="Play Slope Online | Schplay">
-    <meta property="og:description" content="Race down the neon tunnel in Slope. Play the classic endless runner unblocked and test your reflexes right in your browser.">
+    <meta property="og:title" content="Slope Unblocked - Play Free Online | Schplay">
+    <meta property="og:description" content="Play Slope unblocked and free online. Race down the neon tunnel, dodge every obstacle, and test your reflexes right in your browser — no download.">
     <meta property="og:url" content="https://schplay.com/games/slope.html">
     <meta property="og:image" content="https://schplay.com/images/slope.webp">
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Play Slope Online | Schplay">
-    <meta name="twitter:description" content="Keep the ball on the track and dodge every obstacle in the unblocked hit Slope.">
+    <meta name="twitter:title" content="Slope Unblocked - Play Free Online | Schplay">
+    <meta name="twitter:description" content="Play Slope unblocked and free online. Keep the ball on the track and dodge every obstacle in this classic endless runner.">
     <meta name="twitter:image" content="https://schplay.com/images/slope.webp">
     <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'" crossorigin="anonymous">
     <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" crossorigin="anonymous"></noscript>
@@ -106,6 +106,17 @@
                         "text": "Slope loads locally in the browser and never asks for logins. Remind students to share only score screenshots and to close other tabs before grabbing a photo."
                     }
                 }
+            ]
+        }
+    </script>
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+                { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://schplay.com/" },
+                { "@type": "ListItem", "position": 2, "name": "All Games", "item": "https://schplay.com/allgames.html" },
+                { "@type": "ListItem", "position": 3, "name": "Slope Unblocked", "item": "https://schplay.com/games/slope.html" }
             ]
         }
     </script>
@@ -398,6 +409,75 @@
                 padding: 20px;
             }
         }
+
+        /* ── Breadcrumb, page H1 & static internal-link sections (SEO) ── */
+        .game-breadcrumb {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 8px;
+            font-size: 0.9rem;
+            margin: 4px 0 14px;
+            color: #9fb3c8;
+        }
+        .game-breadcrumb a {
+            color: #9fb3c8;
+            text-decoration: none;
+        }
+        .game-breadcrumb a:hover { color: #fff; text-decoration: underline; }
+        .game-breadcrumb .breadcrumb-sep { color: #52657d; }
+        .game-breadcrumb [aria-current="page"] { color: #dbe6f2; }
+
+        .game-title-block { margin: 0 0 18px; }
+        .game-title {
+            font-size: clamp(1.6rem, 3vw, 2.3rem);
+            line-height: 1.15;
+            margin: 0 0 6px;
+            color: #fff;
+            letter-spacing: -0.01em;
+        }
+        .game-subtitle {
+            margin: 0;
+            color: #9fb3c8;
+            font-size: 1rem;
+            max-width: 70ch;
+        }
+
+        .more-games-section { margin-top: 28px; }
+        .more-games-section .games-grid { margin-top: 4px; }
+
+        .category-browse {
+            margin: 32px 0 8px;
+            padding: 22px;
+            background-color: #1c2a3e;
+            border-radius: 16px;
+        }
+        .category-browse-title {
+            font-size: 1.15rem;
+            margin: 0 0 14px;
+            color: #fff;
+        }
+        .category-browse-links {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        .category-browse-links .category-chip {
+            display: inline-flex;
+            align-items: center;
+            padding: 8px 16px;
+            border-radius: 999px;
+            background-color: #24384f;
+            color: #dbe6f2;
+            font-weight: 600;
+            font-size: 0.92rem;
+            text-decoration: none;
+            transition: background-color 0.15s ease, color 0.15s ease;
+        }
+        .category-browse-links .category-chip:hover {
+            background-color: #2f9bff;
+            color: #fff;
+        }
     </style>
 </head>
 <body>
@@ -406,6 +486,20 @@
   </header>
 
   <main class="container" role="main">
+
+    <nav class="game-breadcrumb" aria-label="Breadcrumb">
+      <a href="../">Home</a>
+      <span class="breadcrumb-sep" aria-hidden="true">›</span>
+      <a href="../allgames.html">Games</a>
+      <span class="breadcrumb-sep" aria-hidden="true">›</span>
+      <span aria-current="page">Slope</span>
+    </nav>
+
+    <div class="game-title-block">
+      <h1 class="game-title">Slope Unblocked</h1>
+      <p class="game-subtitle">Play Slope free online — no download, no install, playable on any Chromebook or school laptop.</p>
+    </div>
+
     <section class="game-player-section">
       <div class="game-player-card" role="region" aria-label="Slope gameplay">
         <div class="game-player-header">
@@ -567,6 +661,53 @@
       </div>
       <div class="games-grid" id="slope-recommendations" aria-live="polite"></div>
     </section>
+
+    <section class="games-grid-section more-games-section" aria-labelledby="slope-more-title">
+      <div class="section-header">
+        <h2 id="slope-more-title">More Free Unblocked Games</h2>
+      </div>
+      <nav class="games-grid" aria-label="More free unblocked games">
+          <a class="game-card" href="subwaysurfer.html"><img src="https://img.poki.com/cdn-cgi/image/quality=78,width=314,height=314,fit=cover,f=auto/81a0a3f18cf0ee129e56edb50fc52c3b.png" alt="Subway Surfers unblocked" loading="lazy" decoding="async"><h3>Subway Surfers</h3></a>
+          <a class="game-card" href="1v1lol.html"><img src="https://play-lh.googleusercontent.com/QYGRIDJbyVO7L7jH8CwiKJ4NumTGgcTVqU3ITooLWxro-eeNns1RZ0uwGGFe-r8M4co" alt="1v1.lol unblocked" loading="lazy" decoding="async"><h3>1v1.lol</h3></a>
+          <a class="game-card" href="retrobowl.html"><img src="../images/retrobowl.webp" alt="Retro Bowl unblocked" loading="lazy" decoding="async"><h3>Retro Bowl</h3></a>
+          <a class="game-card" href="basketballstars.html"><img src="../images/basketballstars.webp" alt="Basketball Stars unblocked" loading="lazy" decoding="async"><h3>Basketball Stars</h3></a>
+          <a class="game-card" href="motox3m.html"><img src="../images/motocross.webp" alt="MotoX3M Games unblocked" loading="lazy" decoding="async"><h3>MotoX3M Games</h3></a>
+          <a class="game-card" href="ovo.html"><img src="../images/ovo.webp" alt="OVO unblocked" loading="lazy" decoding="async"><h3>OVO</h3></a>
+          <a class="game-card" href="cookie-clicker-working-2026.html"><img src="../games/cookie-clicker/img/cookieShower1.png" alt="Cookie Clicker Working 2026 unblocked" loading="lazy" decoding="async"><h3>Cookie Clicker Working 2026</h3></a>
+          <a class="game-card" href="idle-breakout.html"><img src="../images/idlebreakout.webp" alt="Idle Breakout unblocked" loading="lazy" decoding="async"><h3>Idle Breakout</h3></a>
+          <a class="game-card" href="agario.html"><img src="../images/agario.webp" alt="Agar.io unblocked" loading="lazy" decoding="async"><h3>Agar.io</h3></a>
+          <a class="game-card" href="slitherio.html"><img src="../images/slitherio.webp" alt="Slither.io unblocked" loading="lazy" decoding="async"><h3>Slither.io</h3></a>
+          <a class="game-card" href="bad-time-simulator.html"><img src="../images/badtimesimulator.webp" alt="Bad Time Simulator unblocked" loading="lazy" decoding="async"><h3>Bad Time Simulator</h3></a>
+          <a class="game-card" href="drivemad.html"><img src="../images/drivemad.webp" alt="Drive Mad unblocked" loading="lazy" decoding="async"><h3>Drive Mad</h3></a>
+          <a class="game-card" href="blockblast.html"><img src="../images/blockblast.webp" alt="Block Blast unblocked" loading="lazy" decoding="async"><h3>Block Blast</h3></a>
+          <a class="game-card" href="getaway-shootout.html"><img src="../images/getawayshootout.webp" alt="Getaway Shootout unblocked" loading="lazy" decoding="async"><h3>Getaway Shootout</h3></a>
+          <a class="game-card" href="rooftopsnipers.html"><img src="../images/rooftopsnipers.webp" alt="Rooftop Sniper unblocked" loading="lazy" decoding="async"><h3>Rooftop Sniper</h3></a>
+          <a class="game-card" href="houseofhazards.html"><img src="../images/houseofhazards.webp" alt="House Of Hazards unblocked" loading="lazy" decoding="async"><h3>House Of Hazards</h3></a>
+          <a class="game-card" href="doodlejump.html"><img src="../images/doodlejump.webp" alt="Doodle Jump unblocked" loading="lazy" decoding="async"><h3>Doodle Jump</h3></a>
+          <a class="game-card" href="flappy-bird.html"><img src="../images/flappybird.webp" alt="Flappy Bird unblocked" loading="lazy" decoding="async"><h3>Flappy Bird</h3></a>
+          <a class="game-card" href="pacman.html"><img src="../images/pacman.webp" alt="Pacman unblocked" loading="lazy" decoding="async"><h3>Pacman</h3></a>
+          <a class="game-card" href="minecraft.html"><img src="../images/mc.webp" alt="Minecraft (Eagler) unblocked" loading="lazy" decoding="async"><h3>Minecraft (Eagler)</h3></a>
+          <a class="game-card" href="duck-life-5.html"><img src="../images/ducklife5.webp" alt="Duck Life 5 unblocked" loading="lazy" decoding="async"><h3>Duck Life 5</h3></a>
+          <a class="game-card" href="real-driving-simulator.html"><img src="https://img.gamemonetize.com/86nvuq9kpejinx49fv27relwo1b8ulrz/512x384.jpg" alt="Real Driving Simulator unblocked" loading="lazy" decoding="async"><h3>Real Driving Simulator</h3></a>
+          <a class="game-card" href="tetris.html"><img src="../images/tetris.webp" alt="Tetris unblocked" loading="lazy" decoding="async"><h3>Tetris</h3></a>
+          <a class="game-card" href="z-machine.html"><img src="https://img.gamemonetize.com/6pb58yxizvrukc8x8wvbf3tqnaoffbtq/512x384.jpg" alt="Z Machine unblocked" loading="lazy" decoding="async"><h3>Z Machine</h3></a>
+      </nav>
+    </section>
+
+    <nav class="category-browse" aria-label="Browse unblocked games by category">
+      <h2 class="category-browse-title">Browse Unblocked Games by Category</h2>
+      <div class="category-browse-links">
+        <a class="category-chip" href="../allgames.html">All Games</a>
+        <a class="category-chip" href="../strategy.html">Strategy</a>
+        <a class="category-chip" href="../skill.html">Skill</a>
+        <a class="category-chip" href="../numbers.html">Numbers</a>
+        <a class="category-chip" href="../classic.html">Classic</a>
+        <a class="category-chip" href="../2player.html">2 Player</a>
+        <a class="category-chip" href="../sports.html">Sports</a>
+        <a class="category-chip" href="../logic.html">Logic</a>
+        <a class="category-chip" href="../multiplayer.html">Multiplayer</a>
+      </div>
+    </nav>
   </main>
 
   <footer id="site-footer" role="contentinfo">

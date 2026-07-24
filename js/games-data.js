@@ -48,7 +48,7 @@ window.SCHPLAY_GAMES.list = [
     { name: "1v1.lol", href: "games/1v1lol.html", img: "https://play-lh.googleusercontent.com/QYGRIDJbyVO7L7jH8CwiKJ4NumTGgcTVqU3ITooLWxro-eeNns1RZ0uwGGFe-r8M4co" },
     { name: "Slope", href: "games/slope.html", img: "images/slope.webp" },
     { name: "Slope 2", href: "games/slope2.html", img: "images/slope2.webp" },
-    { name: "Retro Bowl [New Verison]", href: "games/retrobowl.html", img: "images/retrobowl.webp" },
+    { name: "Retro Bowl", href: "games/retrobowl.html", img: "images/retrobowl.webp" },
     { name: "Block Blast", href: "games/blockblast.html", img: "images/blockblast.webp" },
     { name: "Blumgi Rocket", href: "games/blumgi-rocket.html", img: "images/blumgi-rocket.jpeg" },
     { name: "Idle Breakout", href: "games/idle-breakout.html", img: "images/idlebreakout.webp" },

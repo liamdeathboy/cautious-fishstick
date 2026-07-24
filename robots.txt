@@ -1,4 +1,15 @@
+# robots.txt for schplay.com — free unblocked games
+# All real pages are crawlable. Below we only keep crawl budget off
+# build artifacts and utility directories that should never rank.
+
 User-agent: *
 Allow: /
+
+# Node build scripts and error pages (not content)
+Disallow: /error/
+Disallow: /scripts/
+
+# Heavy game engine build artifacts (Unity .unityweb / .wasm bundles)
+Disallow: /games/*/Build/
 
 Sitemap: https://schplay.com/sitemap.xml

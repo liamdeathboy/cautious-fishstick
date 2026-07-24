@@ -395,23 +395,35 @@ function normalizeKeywords(value = '') {
 }
 
 function sanitizeCopy(value = '') {
-  return value
-    .replace(/unblocked/gi, '')
-    .replace(/free and\s*/gi, '')
-    .replace(/\s+/g, ' ')
-    .trim();
+  // Normalize whitespace only. (Previously this stripped the word "unblocked",
+  // which is the primary search term for this niche — see buildSeoTitle/buildMetaDescription.)
+  return String(value || '').replace(/\s+/g, ' ').trim();
+}
+
+function truncateAtWord(value, max = 160) {
+  const text = sanitizeCopy(value);
+  if (text.length <= max) return text;
+  const window = text.slice(0, max);
+  // Prefer ending on a complete sentence when one falls in a sensible range.
+  const lastSentence = Math.max(window.lastIndexOf('. '), window.lastIndexOf('! '), window.lastIndexOf('? '));
+  if (lastSentence >= max * 0.6) {
+    return text.slice(0, lastSentence + 1).trim();
+  }
+  return window.slice(0, max - 1).replace(/\s+\S*$/, '').replace(/[\s,;:.]+$/, '') + '.';
 }
 
 function buildMetaDescription(data, override) {
-  const base = override?.metaDescription || data.metaDescription || pickHeroParagraph(data, override) || `Play ${data.name} on Schplay.`;
-  const sanitized = sanitizeCopy(base);
-  const updated = formatUpdated(data.slug || '', override);
-  return `${sanitized} ${TEACHER_TAGLINE} Updated ${updated} on Schplay.`;
+  const name = data.name;
+  const raw = sanitizeCopy(override?.metaDescription || data.metaDescription || pickHeroParagraph(data, override) || '');
+  const desc = raw
+    ? `Play ${name} unblocked and free online at Schplay. ${raw}`
+    : `Play ${name} unblocked and free online at Schplay — no download, no install, works on any Chromebook or school laptop.`;
+  return truncateAtWord(desc, 160);
 }
 
 function buildSeoTitle(data, override) {
   if (override && override.metaTitle) return override.metaTitle;
-  return `Play ${data.name} Online | Schplay`;
+  return `${data.name} Unblocked - Play Free Online | Schplay`;
 }
 
 function buildCanonical(slug, override) {
@@ -441,17 +453,30 @@ function formatMetaDetails(slug, data, override) {
 
 function buildSchema(slug, data, override, metaDetails, imageUrl) {
   const description = sanitizeCopy(override?.schemaDescription || data.metaDescription || data.heroParagraph || `Play ${data.name} online.`);
+  const isMulti = /multiplayer|2 ?player|two ?player|\.io\b|\bio\b/i.test(`${data.name} ${metaDetails.genre}`);
+  // NOTE: we intentionally do NOT emit aggregateRating — the on-page star ratings
+  // are generated, and marking up self-serving/fake ratings violates Google policy.
   return {
     '@context': 'https://schema.org',
     '@type': 'VideoGame',
-    name: data.name,
+    name: `${data.name} Unblocked`,
+    alternateName: data.name,
     description,
     genre: metaDetails.genre.split('·').map((part) => part.trim()),
     url: buildCanonical(slug, override),
     image: imageUrl,
+    applicationCategory: 'Game',
+    operatingSystem: 'Any',
+    playMode: isMulti ? 'MultiPlayer' : 'SinglePlayer',
+    offers: {
+      '@type': 'Offer',
+      price: '0',
+      priceCurrency: 'USD'
+    },
     publisher: {
       '@type': 'Organization',
-      name: 'Schplay'
+      name: 'Schplay',
+      url: 'https://schplay.com/'
     }
   };
 }
@@ -1435,7 +1460,104 @@ function buildFaqSchema(canonical, name, faqItems) {
   };
 }
 
-function renderPage(slug, data, override = {}) {
+// ── Static, crawlable internal links ─────────────────────────────────────────
+// Server-render real <a href> links so every game page is reachable by crawlers
+// (especially Bing/Yandex, which barely execute the JS that injects the navbar,
+// footer, and "Players Also Enjoy" recommendations).
+const POPULAR_SLUGS = [
+  'slope', 'subwaysurfer', '1v1lol', 'retrobowl', 'basketballstars', 'motox3m',
+  'ovo', 'cookie-clicker-working-2026', 'idle-breakout', 'agario', 'slitherio',
+  'bad-time-simulator', 'drivemad', 'blockblast', 'getaway-shootout',
+  'rooftopsnipers', 'houseofhazards', 'doodlejump', 'flappy-bird', 'pacman',
+  'minecraft', 'duck-life-5'
+];
+
+const CATEGORY_LINKS = [
+  { href: '../allgames.html', label: 'All Games' },
+  { href: '../strategy.html', label: 'Strategy' },
+  { href: '../skill.html', label: 'Skill' },
+  { href: '../numbers.html', label: 'Numbers' },
+  { href: '../classic.html', label: 'Classic' },
+  { href: '../2player.html', label: '2 Player' },
+  { href: '../sports.html', label: 'Sports' },
+  { href: '../logic.html', label: 'Logic' },
+  { href: '../multiplayer.html', label: 'Multiplayer' }
+];
+
+function catalogSlug(href = '') {
+  return href.split('?')[0].replace(/^\.?\/?games\//, '').replace(/\.html$/i, '');
+}
+
+// Convert a root-relative catalog href ("games/slope.html") to a /games/-relative
+// href ("slope.html"). External URLs pass through unchanged.
+function toGameHref(href = '') {
+  if (/^(?:https?:)?\/\//i.test(href)) return href;
+  return href.replace(/^\.?\/?games\//, '');
+}
+
+// Convert a root-relative image path ("images/x.webp") to /games/-relative.
+function toGameImg(img = '') {
+  if (!img) return '';
+  if (/^(?:https?:)?\/\//i.test(img)) return img;
+  return '../' + img.replace(/^\.?\//, '');
+}
+
+function buildStaticGameLinks(currentSlug, gameList) {
+  const bySlug = new Map();
+  (gameList || []).forEach((g) => {
+    if (!g || !g.href || !g.name || !g.img) return;
+    const s = catalogSlug(g.href);
+    if (s && !bySlug.has(s)) bySlug.set(s, g);
+  });
+
+  const ordered = [];
+  const used = new Set([currentSlug]);
+  const push = (slug) => {
+    if (!slug || used.has(slug) || !bySlug.has(slug)) return;
+    used.add(slug);
+    ordered.push(bySlug.get(slug));
+  };
+
+  // 1) Popular hub games first — linked from every page to concentrate authority.
+  POPULAR_SLUGS.forEach(push);
+
+  // 2) Deterministic variety from the rest of the catalog (stable per page so the
+  //    crawlable link graph does not churn on every regeneration).
+  const rest = Array.from(bySlug.keys()).filter((s) => !used.has(s)).sort();
+  const rand = seededRandom(`${currentSlug}-links`);
+  for (let i = rest.length - 1; i > 0; i -= 1) {
+    const j = Math.floor(rand() * (i + 1));
+    [rest[i], rest[j]] = [rest[j], rest[i]];
+  }
+  rest.forEach(push);
+
+  return ordered.slice(0, 24).map((g) => {
+    const href = toGameHref(g.href);
+    const img = toGameImg(g.img);
+    const alt = `${g.name} unblocked`;
+    return `<a class="game-card" href="${escapeHtml(href)}"><img src="${escapeHtml(img)}" alt="${escapeHtml(alt)}" loading="lazy" decoding="async"><h3>${escapeHtml(g.name)}</h3></a>`;
+  }).join('\n          ');
+}
+
+function buildCategoryNav() {
+  return CATEGORY_LINKS
+    .map(({ href, label }) => `<a class="category-chip" href="${escapeHtml(href)}">${escapeHtml(label)}</a>`)
+    .join('\n        ');
+}
+
+function buildBreadcrumbSchema(name, canonical) {
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://schplay.com/' },
+      { '@type': 'ListItem', position: 2, name: 'All Games', item: 'https://schplay.com/allgames.html' },
+      { '@type': 'ListItem', position: 3, name: `${name} Unblocked`, item: canonical }
+    ]
+  };
+}
+
+function renderPage(slug, data, override = {}, gameList = []) {
   const id = slugToId(slug);
   const constName = slugToConst(slug);
   const name = data.name || override.name;
@@ -1444,7 +1566,15 @@ function renderPage(slug, data, override = {}) {
   }
   const heroParagraph = pickHeroParagraph({ ...data, slug, name }, override);
   const instructions = dedupeSentences(ensureInstructionParagraphs({ ...data, slug, name }, override)).slice(0, 3);
-  const sections = ensureSections({ ...data, slug, name }, override).slice(0, 4);
+  // Drop any "Tips" section whose body merely repeats an instruction (or an earlier
+  // section) so no paragraph is duplicated on the page — a thin-content signal.
+  const seenBody = new Set(instructions.map((s) => sanitizeCopy(s).toLowerCase()));
+  const sections = ensureSections({ ...data, slug, name }, override).filter((sec) => {
+    const key = sanitizeCopy(sec && sec.body ? sec.body : '').toLowerCase();
+    if (!key || seenBody.has(key)) return false;
+    seenBody.add(key);
+    return true;
+  }).slice(0, 4);
   const controls = inferControls(slug, data, override).slice(0, 5);
   const details = formatMetaDetails(slug, { ...data, slug, name }, override);
   const embedConfig = resolveGameEmbed(slug, data.iframeSrc, override);
@@ -1527,7 +1657,13 @@ function renderPage(slug, data, override = {}) {
   const imageUrl = absoluteImageUrl(override.image || data.image || override.img);
   const schema = buildSchema(slug, { ...data, slug, name }, override, details, imageUrl);
   const masterTitle = `Tips to Master ${name}`;
-  const { masterHeading, masterIntro, body } = renderMetaSections(sections, masterTitle, name, instructions);
+  const { masterHeading, masterIntro: rawMasterIntro, body } = renderMetaSections(sections, masterTitle, name, instructions);
+  // Never let the "Tips to Master" intro duplicate a sentence already shown under
+  // Instructions (a thin/duplicate-content signal on games without unique copy).
+  const instructionKeys = new Set(instructions.map((s) => sanitizeCopy(s).toLowerCase()));
+  const masterIntro = instructionKeys.has(sanitizeCopy(rawMasterIntro).toLowerCase())
+    ? `Get better at ${name} with short, focused sessions: learn the timing, study each mistake, and push for a new personal best every run.`
+    : rawMasterIntro;
 
   const gameContext = {
     slug,
@@ -1544,11 +1680,14 @@ function renderPage(slug, data, override = {}) {
   const curriculumHtml = renderCurriculumSection(id, learningContent.curriculum);
   const faqHtml = renderFaqSection(id, learningContent.faq);
   const faqSchema = buildFaqSchema(canonical, name, learningContent.faq.items);
-  const schemaEntries = faqSchema ? [schema, faqSchema] : [schema];
+  const breadcrumbSchema = buildBreadcrumbSchema(name, canonical);
+  const schemaEntries = [schema, breadcrumbSchema, ...(faqSchema ? [faqSchema] : [])];
   const schemaJson = JSON.stringify(schemaEntries.length === 1 ? schemaEntries[0] : schemaEntries, null, 12);
 
   const instructionsHtml = renderInstructions(instructions);
   const controlsHtml = renderControls(controls);
+  const staticGameLinksHtml = buildStaticGameLinks(slug, gameList);
+  const categoryNavHtml = buildCategoryNav();
 
   return `<!DOCTYPE html>
 <html lang="en">
@@ -1561,7 +1700,7 @@ function renderPage(slug, data, override = {}) {
     <meta name="theme-color" content="#0f1a2a">
     <title>${escapeHtml(seoTitle)}</title>
     <link rel="canonical" href="${escapeHtml(canonical)}">
-    <link rel="icon" type="image/webp" href="/images/favicon.ico">
+    <link rel="icon" href="/images/favicon.ico" sizes="any">
     <link rel="apple-touch-icon" href="../images/favicon-32x32.png">
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="Schplay">
@@ -1573,8 +1712,12 @@ function renderPage(slug, data, override = {}) {
     <meta name="twitter:title" content="${escapeHtml(seoTitle)}">
     <meta name="twitter:description" content="${escapeHtml(metaDescription)}">
     <meta name="twitter:image" content="${escapeHtml(imageUrl)}">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'" crossorigin="anonymous">
+    <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" crossorigin="anonymous"></noscript>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=optional" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=optional"></noscript>
     <link rel="stylesheet" href="../css/new-style.css">
     <link rel="stylesheet" href="../css/restyle.css">
     <link rel="stylesheet" href="../css/user-choice.css">
@@ -1591,6 +1734,19 @@ ${slopeStyle}${embedExtraStyles}
   </header>
 
   <main class="container" role="main">
+
+    <nav class="game-breadcrumb" aria-label="Breadcrumb">
+      <a href="../">Home</a>
+      <span class="breadcrumb-sep" aria-hidden="true">›</span>
+      <a href="../allgames.html">Games</a>
+      <span class="breadcrumb-sep" aria-hidden="true">›</span>
+      <span aria-current="page">${escapeHtml(name)}</span>
+    </nav>
+
+    <div class="game-title-block">
+      <h1 class="game-title">${escapeHtml(name)} Unblocked</h1>
+      <p class="game-subtitle">Play ${escapeHtml(name)} free online — no download, no install, playable on any Chromebook or school laptop.</p>
+    </div>
 
     <section class="game-player-section">
       <div class="game-player-card" role="region" aria-label="${escapeHtml(name)} gameplay">
@@ -1665,6 +1821,22 @@ ${faqHtml}
       </div>
       <div class="games-grid" id="${escapeHtml(id)}-recommendations" aria-live="polite"></div>
     </section>
+
+    <section class="games-grid-section more-games-section" aria-labelledby="${escapeHtml(id)}-more-title">
+      <div class="section-header">
+        <h2 id="${escapeHtml(id)}-more-title">More Free Unblocked Games</h2>
+      </div>
+      <nav class="games-grid" aria-label="More free unblocked games">
+          ${staticGameLinksHtml}
+      </nav>
+    </section>
+
+    <nav class="category-browse" aria-label="Browse unblocked games by category">
+      <h2 class="category-browse-title">Browse Unblocked Games by Category</h2>
+      <div class="category-browse-links">
+        ${categoryNavHtml}
+      </div>
+    </nav>
   </main>
 
   <footer id="site-footer" role="contentinfo">
@@ -1881,7 +2053,7 @@ function main() {
       console.warn(`Missing name for ${slug}, skipping.`);
       return;
     }
-    const html = renderPage(slug, data, override);
+    const html = renderPage(slug, data, override, gameList);
     const outputPath = path.join(GAMES_DIR, `${slug}.html`);
     fs.writeFileSync(outputPath, html, 'utf8');
     processed.push(slug);
