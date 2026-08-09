@@ -3410,5 +3410,239 @@
     ],
     "plainText": "Yume Nikki - Play Free Online\nYume Nikki is a wordless exploration game where a girl named Madotsuki wanders an ever-expanding dream world, collecting strange effects with no combat and almost no explanation.\nYume Nikki has no combat and almost no instructions — explore doors and paths from the dream world hub to discover new, often surreal areas. Collect the effects scattered throughout the dream world; each one changes your appearance and sometimes unlocks new ways to interact with the environment. There is no fail state here. Wander at your own pace and pay attention to the strange details each area hides.",
     "iframeSrc": "yume-nikki/index.html"
+  },
+  "thats-not-my-neighbor": {
+    "name": "That's Not My Neighbor",
+    "href": "games/thats-not-my-neighbor.html",
+    "image": "games/thats-not-my-neighbor/thats-not-my-neighbor.icon.png",
+    "title": "That's Not My Neighbor - Play Free Online",
+    "metaDescription": "Check IDs, compare faces, and decide who is really allowed into the building in this tense document-checking horror game.",
+    "metaKeywords": "That's Not My Neighbor, That's Not My Neighbor unblocked, play That's Not My Neighbor online",
+    "heroParagraph": "That's Not My Neighbor puts you at an apartment building entrance in a dystopian city, comparing IDs and faces to decide who is really a neighbor — and who is wearing someone else's skin.",
+    "instructions": [
+      "That's Not My Neighbor is a document-checking game in the vein of Papers, Please. Compare each visitor's ID card against their face and papers before deciding whether to let them in.",
+      "Look closely at small details — mismatched photos, wrong apartment numbers, or subtle visual glitches are often the only sign that something is wrong with a visitor.",
+      "Decisions have consequences, so balance being thorough against keeping the line moving. Letting the wrong visitor through rarely ends well."
+    ],
+    "sections": [
+      {
+        "heading": "Check every detail",
+        "body": "Compare the ID photo, name, and apartment number carefully — inconsistencies are usually deliberate."
+      },
+      {
+        "heading": "Trust your suspicion",
+        "body": "If something about a visitor feels off, it is worth a second look before waving them through."
+      }
+    ],
+    "plainText": "That's Not My Neighbor - Play Free Online\nThat's Not My Neighbor puts you at an apartment building entrance in a dystopian city, comparing IDs and faces to decide who is really a neighbor — and who is wearing someone else's skin.\nThat's Not My Neighbor is a document-checking game in the vein of Papers, Please. Compare each visitor's ID card against their face and papers before deciding whether to let them in. Look closely at small details — mismatched photos, wrong apartment numbers, or subtle visual glitches are often the only sign that something is wrong with a visitor. Decisions have consequences, so balance being thorough against keeping the line moving. Letting the wrong visitor through rarely ends well.",
+    "iframeSrc": "thats-not-my-neighbor/index.html"
+  },
+  "bloodmoney": {
+    "name": "Bloodmoney",
+    "href": "games/bloodmoney.html",
+    "image": "games/bloodmoney/icon/icon.png",
+    "title": "Bloodmoney - Play Free Online",
+    "metaDescription": "Take on gruesome odd jobs to make ends meet in this pixel-art narrative game about desperation and the things people will do for cash.",
+    "metaKeywords": "Bloodmoney, Bloodmoney unblocked, play Bloodmoney online",
+    "heroParagraph": "Bloodmoney is a pixel-art narrative game about taking on increasingly grim odd jobs to survive, one uncomfortable transaction at a time.",
+    "instructions": [
+      "Bloodmoney has you working through a series of small, hands-on tasks for cash — each one darker than the last.",
+      "Follow the on-screen prompts carefully for each job; precision often matters more than speed.",
+      "Pay attention to the story beats between jobs — they contextualize why your character keeps saying yes to worse and worse work."
+    ],
+    "sections": [
+      {
+        "heading": "One job at a time",
+        "body": "Each task is self-contained with its own simple mechanic — take a moment to learn each one before diving in."
+      },
+      {
+        "heading": "Follow the story",
+        "body": "The narrative around the jobs is as important as completing them — pay attention to what's being asked of you."
+      }
+    ],
+    "plainText": "Bloodmoney - Play Free Online\nBloodmoney is a pixel-art narrative game about taking on increasingly grim odd jobs to survive, one uncomfortable transaction at a time.\nBloodmoney has you working through a series of small, hands-on tasks for cash — each one darker than the last. Follow the on-screen prompts carefully for each job; precision often matters more than speed. Pay attention to the story beats between jobs — they contextualize why your character keeps saying yes to worse and worse work.",
+    "iframeSrc": "bloodmoney/index.html"
+  },
+  "buckshot-roulette": {
+    "name": "Buckshot Roulette",
+    "href": "games/buckshot-roulette.html",
+    "image": "games/buckshot-roulette/buckshot-roulette.icon.png",
+    "title": "Buckshot Roulette - Play Free Online",
+    "metaDescription": "Face off in a tense shotgun-loaded game of Russian roulette against a menacing opponent, reading item combos to survive each round.",
+    "metaKeywords": "Buckshot Roulette, Buckshot Roulette unblocked, play Buckshot Roulette online",
+    "heroParagraph": "Buckshot Roulette locks you in a dim room across from a menacing opponent and a shotgun loaded with live and blank rounds — every choice you make with your items can be the difference between surviving and losing everything.",
+    "instructions": [
+      "Buckshot Roulette alternates turns loading and firing a shotgun with a mix of live and blank shells. Use item pickups strategically to shift the odds in your favor.",
+      "Pay attention to what you can deduce about the shell order from earlier shots — informed guesses beat blind luck.",
+      "Some items let you inspect, skip, or manipulate shells directly — save the right item for the moment it matters most."
+    ],
+    "sections": [
+      {
+        "heading": "Track the shells",
+        "body": "Use every clue from previous rounds to narrow down whether the next shell is live or blank."
+      },
+      {
+        "heading": "Use items wisely",
+        "body": "Save powerful items for high-stakes moments instead of using them the instant you get them."
+      }
+    ],
+    "plainText": "Buckshot Roulette - Play Free Online\nBuckshot Roulette locks you in a dim room across from a menacing opponent and a shotgun loaded with live and blank rounds — every choice you make with your items can be the difference between surviving and losing everything.\nBuckshot Roulette alternates turns loading and firing a shotgun with a mix of live and blank shells. Use item pickups strategically to shift the odds in your favor. Pay attention to what you can deduce about the shell order from earlier shots — informed guesses beat blind luck. Some items let you inspect, skip, or manipulate shells directly — save the right item for the moment it matters most.",
+    "iframeSrc": "buckshot-roulette/index.html"
+  },
+  "class-of-09": {
+    "name": "Class of '09",
+    "href": "games/class-of-09.html",
+    "image": "games/class-of-09/icons/icon.png",
+    "title": "Class of '09 - Play Free Online",
+    "metaDescription": "Relive an unsettling high school reunion in this first-person found-footage style horror game full of old secrets.",
+    "metaKeywords": "Class of '09, Class of '09 unblocked, play Class of '09 online",
+    "heroParagraph": "Class of '09 sends you back to a high school reunion that starts out nostalgic and slowly turns into something far stranger, told through a found-footage horror lens.",
+    "instructions": [
+      "Class of '09 is a first-person narrative horror game. Explore the reunion setting, interact with objects and people the game highlights, and follow the story as it unfolds.",
+      "Take time to look around each area fully — background details often hint at what happened to the class since graduation.",
+      "The tension builds gradually, so stay alert to small changes rather than expecting constant jump scares."
+    ],
+    "sections": [
+      {
+        "heading": "Revisit old memories",
+        "body": "Explore the reunion setting fully — nostalgic details often double as story clues."
+      },
+      {
+        "heading": "Watch for what changes",
+        "body": "The horror here creeps in slowly, so notice what feels different each time you look again."
+      }
+    ],
+    "plainText": "Class of '09 - Play Free Online\nClass of '09 sends you back to a high school reunion that starts out nostalgic and slowly turns into something far stranger, told through a found-footage horror lens.\nClass of '09 is a first-person narrative horror game. Explore the reunion setting, interact with objects and people the game highlights, and follow the story as it unfolds. Take time to look around each area fully — background details often hint at what happened to the class since graduation. The tension builds gradually, so stay alert to small changes rather than expecting constant jump scares.",
+    "iframeSrc": "class-of-09/index.html"
+  },
+  "amanda-the-adventurer": {
+    "name": "Amanda the Adventurer",
+    "href": "games/amanda-the-adventurer.html",
+    "image": "https://cdn.cloudflare.steamstatic.com/steam/apps/2166060/header.jpg",
+    "title": "Amanda the Adventurer - Play Free Online",
+    "metaDescription": "Watch old VHS tapes of a cheerful children's show that slowly reveals something is very wrong with its host in this point-and-click horror game.",
+    "metaKeywords": "Amanda the Adventurer, Amanda the Adventurer unblocked, play Amanda the Adventurer online",
+    "heroParagraph": "Amanda the Adventurer has you babysitting a house full of old VHS tapes from a cheerful children's show — until the show's host starts talking directly to you in ways she really shouldn't.",
+    "instructions": [
+      "Amanda the Adventurer is a point-and-click horror game. Watch each VHS tape, follow along with the on-screen activities, and explore the house between viewings.",
+      "Pay close attention to what Amanda says and asks you to do — some choices affect how the story and threat level progress.",
+      "Explore the house fully between tapes; notes and objects you find often explain what happened to the show's original owners."
+    ],
+    "sections": [
+      {
+        "heading": "Watch closely",
+        "body": "Amanda's dialogue often hides real instructions or warnings inside the cheerful show format."
+      },
+      {
+        "heading": "Explore between tapes",
+        "body": "The house holds context for the story — take time to look around before starting the next tape."
+      }
+    ],
+    "plainText": "Amanda the Adventurer - Play Free Online\nAmanda the Adventurer has you babysitting a house full of old VHS tapes from a cheerful children's show — until the show's host starts talking directly to you in ways she really shouldn't.\nAmanda the Adventurer is a point-and-click horror game. Watch each VHS tape, follow along with the on-screen activities, and explore the house between viewings. Pay close attention to what Amanda says and asks you to do — some choices affect how the story and threat level progress. Explore the house fully between tapes; notes and objects you find often explain what happened to the show's original owners.",
+    "iframeSrc": "amanda-the-adventurer/index.html"
+  },
+  "andys-apple-farm": {
+    "name": "Andy's Apple Farm",
+    "href": "games/andys-apple-farm.html",
+    "image": "https://img.itch.zone/aW1nLzY3ODA0MjAucG5n/original/x3awst.png",
+    "title": "Andy's Apple Farm - Play Free Online",
+    "metaDescription": "Play a retro VHS-style edutainment game hosted by a cheerful apple and his friends, and see how long the wholesome facade holds up.",
+    "metaKeywords": "Andy's Apple Farm, Andy's Apple Farm unblocked, play Andy's Apple Farm online",
+    "heroParagraph": "Andy's Apple Farm looks like a wholesome retro kids' show about a cheerful apple and his farm friends — until it starts revealing why old VHS tapes like this one are usually best left unwatched.",
+    "instructions": [
+      "Andy's Apple Farm presents itself as a nostalgic, VHS-style edutainment game. Play along with each character's mini-activity as prompted on screen.",
+      "Each of Andy's friends hosts a different simple minigame — learn the pattern for each one to progress smoothly.",
+      "Keep an eye out for small glitches or odd dialogue — they are early warning signs of what the game is really building toward."
+    ],
+    "sections": [
+      {
+        "heading": "Play along",
+        "body": "Follow each character's activity as instructed — the minigames are simple once you know the pattern."
+      },
+      {
+        "heading": "Watch for glitches",
+        "body": "Visual or audio hiccups are rarely accidental in this game — they usually mean something."
+      }
+    ],
+    "plainText": "Andy's Apple Farm - Play Free Online\nAndy's Apple Farm looks like a wholesome retro kids' show about a cheerful apple and his farm friends — until it starts revealing why old VHS tapes like this one are usually best left unwatched.\nAndy's Apple Farm presents itself as a nostalgic, VHS-style edutainment game. Play along with each character's mini-activity as prompted on screen. Each of Andy's friends hosts a different simple minigame — learn the pattern for each one to progress smoothly. Keep an eye out for small glitches or odd dialogue — they are early warning signs of what the game is really building toward.",
+    "iframeSrc": "andys-apple-farm/index.html"
+  },
+  "baldi-remaster": {
+    "name": "Baldi's Basics Classic Remastered",
+    "href": "games/baldi-remaster.html",
+    "image": "https://img.itch.zone/aW1nLzU1NjE5MzgucG5n/original/tCxFaT.png",
+    "title": "Baldi's Basics Classic Remastered - Play Free Online",
+    "metaDescription": "Collect all seven notebooks from Baldi's schoolhouse while avoiding an ever-faster Baldi in this remastered edutainment horror parody.",
+    "metaKeywords": "Baldi's Basics Classic Remastered, Baldi's Basics Classic Remastered unblocked, play Baldi's Basics Classic Remastered online",
+    "heroParagraph": "Baldi's Basics Classic Remastered rebuilds the original edutainment-horror parody with smoother visuals: solve notebook questions, avoid Baldi's ruler, and get out of the schoolhouse.",
+    "instructions": [
+      "Baldi's Basics Classic Remastered tasks you with collecting seven notebooks scattered around a schoolhouse, each requiring you to answer simple questions correctly.",
+      "Wrong answers speed Baldi up permanently for the rest of the run, so only answer when you are confident, or run and gather easier notebooks first.",
+      "Use items you find around the school — like scissors or a energy drink — to slow Baldi down or escape a tight spot."
+    ],
+    "sections": [
+      {
+        "heading": "Answer carefully",
+        "body": "Every wrong answer makes Baldi faster for good, so accuracy matters more than speed on the questions themselves."
+      },
+      {
+        "heading": "Use your items",
+        "body": "Items scattered around the school can save a run — grab them along the way instead of rushing straight for notebooks."
+      }
+    ],
+    "plainText": "Baldi's Basics Classic Remastered - Play Free Online\nBaldi's Basics Classic Remastered rebuilds the original edutainment-horror parody with smoother visuals: solve notebook questions, avoid Baldi's ruler, and get out of the schoolhouse.\nBaldi's Basics Classic Remastered tasks you with collecting seven notebooks scattered around a schoolhouse, each requiring you to answer simple questions correctly. Wrong answers speed Baldi up permanently for the rest of the run, so only answer when you are confident, or run and gather easier notebooks first. Use items you find around the school — like scissors or a energy drink — to slow Baldi down or escape a tight spot.",
+    "iframeSrc": "baldi-remaster/index.html"
+  },
+  "bendy": {
+    "name": "Bendy and the Ink Machine",
+    "href": "games/bendy.html",
+    "image": "https://cdn.cloudflare.steamstatic.com/steam/apps/622650/header.jpg",
+    "title": "Bendy and the Ink Machine - Play Free Online",
+    "metaDescription": "Explore a decaying cartoon ink factory haunted by twisted versions of old animated characters in this episodic horror-adventure.",
+    "metaKeywords": "Bendy and the Ink Machine, Bendy and the Ink Machine unblocked, play Bendy and the Ink Machine online",
+    "heroParagraph": "Bendy and the Ink Machine drops you inside an abandoned animation studio where old cartoon characters have been twisted into something far more sinister by a mysterious ink machine.",
+    "instructions": [
+      "Bendy and the Ink Machine is an exploration-driven horror-adventure. Search the studio for tools and clues, solve environmental puzzles, and avoid the ink-soaked creatures stalking the halls.",
+      "Manage your resources carefully — items like axes and bacon soup are limited, so use them only when you need to.",
+      "Listen and watch for cues that signal a nearby threat, and use narrow corridors and hiding spots to your advantage."
+    ],
+    "sections": [
+      {
+        "heading": "Explore methodically",
+        "body": "Search each area for tools and notes before moving on — backtracking is common in this game."
+      },
+      {
+        "heading": "Manage your resources",
+        "body": "Save your limited items and health resources for moments when you truly need them."
+      }
+    ],
+    "plainText": "Bendy and the Ink Machine - Play Free Online\nBendy and the Ink Machine drops you inside an abandoned animation studio where old cartoon characters have been twisted into something far more sinister by a mysterious ink machine.\nBendy and the Ink Machine is an exploration-driven horror-adventure. Search the studio for tools and clues, solve environmental puzzles, and avoid the ink-soaked creatures stalking the halls. Manage your resources carefully — items like axes and bacon soup are limited, so use them only when you need to. Listen and watch for cues that signal a nearby threat, and use narrow corridors and hiding spots to your advantage.",
+    "iframeSrc": "bendy/index.html"
+  },
+  "bergentruck": {
+    "name": "Bergentruck",
+    "href": "games/bergentruck.html",
+    "image": "games/bergentruck/BERGENTRUCK_201X.icon.png",
+    "title": "Bergentruck - Play Free Online",
+    "metaDescription": "Drive a massive rig through absurd, hazard-filled routes in this Undertale-inspired truck simulator built for careful, technical driving.",
+    "metaKeywords": "Bergentruck, Bergentruck unblocked, play Bergentruck online",
+    "heroParagraph": "Bergentruck is a short, humor-filled truck simulator where realistic momentum, weight, and braking distance turn every haul into a careful technical challenge.",
+    "instructions": [
+      "Bergentruck is a physics-based truck driving game. Manage throttle, braking, and momentum carefully as you haul your rig along routes full of tight turns and inclines.",
+      "Sudden braking or turning can tip a heavy load, so plan your speed well ahead of each hazard instead of reacting late.",
+      "Take inclines and declines slowly — the truck's weight distribution makes aggressive driving risky."
+    ],
+    "sections": [
+      {
+        "heading": "Respect the momentum",
+        "body": "This truck does not stop or turn on a dime — plan your moves several seconds ahead."
+      },
+      {
+        "heading": "Handle inclines with care",
+        "body": "Weight distribution changes on slopes, so ease off the throttle rather than pushing through at full speed."
+      }
+    ],
+    "plainText": "Bergentruck - Play Free Online\nBergentruck is a short, humor-filled truck simulator where realistic momentum, weight, and braking distance turn every haul into a careful technical challenge.\nBergentruck is a physics-based truck driving game. Manage throttle, braking, and momentum carefully as you haul your rig along routes full of tight turns and inclines. Sudden braking or turning can tip a heavy load, so plan your speed well ahead of each hazard instead of reacting late. Take inclines and declines slowly — the truck's weight distribution makes aggressive driving risky.",
+    "iframeSrc": "bergentruck/BERGENTRUCK_201X.html"
   }
 }
