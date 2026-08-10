@@ -12,6 +12,8 @@ https://schplay.com/games/addition-bird-image-uncover.html
 https://schplay.com/games/adventurecapitalist.html
 https://schplay.com/games/agario.html
 https://schplay.com/games/air-slip.html
+https://schplay.com/games/amanda-the-adventurer.html
+https://schplay.com/games/andys-apple-farm.html
 https://schplay.com/games/angrybirdshalloween.html
 https://schplay.com/games/animalcraft-friends.html
 https://schplay.com/games/antbuster.html
@@ -22,14 +24,18 @@ https://schplay.com/games/bad-icecream-2.html
 https://schplay.com/games/bad-icecream-3.html
 https://schplay.com/games/bad-time-simulator.html
 https://schplay.com/games/baldi-plus.html
+https://schplay.com/games/baldi-remaster.html
 https://schplay.com/games/balloons-park.html
 https://schplay.com/games/basketballstars.html
 https://schplay.com/games/bejeweled2.html
+https://schplay.com/games/bendy.html
+https://schplay.com/games/bergentruck.html
 https://schplay.com/games/big-hand.html
 https://schplay.com/games/bit-gun-io.html
 https://schplay.com/games/bitcoin-millionaire.html
 https://schplay.com/games/block-craft-3d-school.html
 https://schplay.com/games/blockblast.html
+https://schplay.com/games/bloodmoney.html
 https://schplay.com/games/bloonstd5.html
 https://schplay.com/games/bloxors.html
 https://schplay.com/games/blumgi-rocket.html
@@ -37,6 +43,7 @@ https://schplay.com/games/bottle-battle.html
 https://schplay.com/games/boxingrandom.html
 https://schplay.com/games/brick-hit.html
 https://schplay.com/games/bridge-wars.html
+https://schplay.com/games/buckshot-roulette.html
 https://schplay.com/games/build-a-big-army.html
 https://schplay.com/games/build-a-plane.html
 https://schplay.com/games/buildnow-gg.html
@@ -50,6 +57,7 @@ https://schplay.com/games/catmario.html
 https://schplay.com/games/circle-of-heroes.html
 https://schplay.com/games/city-defense.html
 https://schplay.com/games/civiballs1.html
+https://schplay.com/games/class-of-09.html
 https://schplay.com/games/clothing-shop-3d.html
 https://schplay.com/games/clubpenguin.html
 https://schplay.com/games/connect-pipe-color-puzzle-game.html
@@ -261,6 +269,7 @@ https://schplay.com/games/telekinesis-drive.html
 https://schplay.com/games/telekinesis.html
 https://schplay.com/games/templerun2.html
 https://schplay.com/games/tetris.html
+https://schplay.com/games/thats-not-my-neighbor.html
 https://schplay.com/games/the-big-adventure-of-owatas-life.html
 https://schplay.com/games/the-binding-of-isaac.html
 https://schplay.com/games/the-last-shot.html

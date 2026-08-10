@@ -291,6 +291,15 @@ window.SCHPLAY_GAMES.list = [
     { name: 'Witch\'s Heart', href: "games/witch-heart.html", img: "games/witch-heart/games/default/Title/taitoru.png" },
     { name: 'Yandere Simulator', href: "games/yandere-simulator.html", img: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/Logo_Yandere_Simulator.svg/250px-Logo_Yandere_Simulator.svg.png" },
     { name: 'Yume Nikki', href: "games/yume-nikki.html", img: "https://cdn.cloudflare.steamstatic.com/steam/apps/650700/header.jpg" },
+    { name: 'That\'s Not My Neighbor', href: "games/thats-not-my-neighbor.html", img: "games/thats-not-my-neighbor/thats-not-my-neighbor.icon.png" },
+    { name: 'Bloodmoney', href: "games/bloodmoney.html", img: "games/bloodmoney/icon/icon.png" },
+    { name: 'Buckshot Roulette', href: "games/buckshot-roulette.html", img: "games/buckshot-roulette/buckshot-roulette.icon.png" },
+    { name: 'Class of \'09', href: "games/class-of-09.html", img: "games/class-of-09/icons/icon.png" },
+    { name: 'Amanda the Adventurer', href: "games/amanda-the-adventurer.html", img: "https://cdn.cloudflare.steamstatic.com/steam/apps/2166060/header.jpg" },
+    { name: 'Andy\'s Apple Farm', href: "games/andys-apple-farm.html", img: "https://img.itch.zone/aW1nLzY3ODA0MjAucG5n/original/x3awst.png" },
+    { name: 'Baldi\'s Basics Classic Remastered', href: "games/baldi-remaster.html", img: "https://img.itch.zone/aW1nLzU1NjE5MzgucG5n/original/tCxFaT.png" },
+    { name: 'Bendy and the Ink Machine', href: "games/bendy.html", img: "https://cdn.cloudflare.steamstatic.com/steam/apps/622650/header.jpg" },
+    { name: 'Bergentruck', href: "games/bergentruck.html", img: "games/bergentruck/BERGENTRUCK_201X.icon.png" },
 ];
 
 window.SCHPLAY_GAMES.ready = true;
