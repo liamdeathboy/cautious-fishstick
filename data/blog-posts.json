@@ -7,7 +7,8 @@
       "category": "Guides",
       "author": "Team Schplay",
       "date": "2026-02-23",
-      "readTime": "9 min read"
+      "readTime": "9 min read",
+      "tags": ["multiplayer", "rankings", "2026", "browser games"]
     },
     {
       "slug": "best-unblocked-puzzle-games-2026",
@@ -16,7 +17,8 @@
       "category": "Guides",
       "author": "Team Schplay",
       "date": "2026-02-23",
-      "readTime": "9 min read"
+      "readTime": "9 min read",
+      "tags": ["puzzle", "rankings", "2026", "logic"]
     },
     {
       "slug": "best-unblocked-2-player-games-2026",
@@ -25,7 +27,8 @@
       "category": "Guides",
       "author": "Team Schplay",
       "date": "2026-02-23",
-      "readTime": "9 min read"
+      "readTime": "9 min read",
+      "tags": ["2-player", "rankings", "2026", "co-op"]
     },
     {
       "slug": "best-unblocked-skill-games-2026",
@@ -34,7 +37,8 @@
       "category": "Guides",
       "author": "Team Schplay",
       "date": "2026-02-23",
-      "readTime": "9 min read"
+      "readTime": "9 min read",
+      "tags": ["skill", "rankings", "2026", "reflex"]
     },
     {
       "slug": "best-unblocked-classic-games-2026",
@@ -43,7 +47,8 @@
       "category": "Guides",
       "author": "Team Schplay",
       "date": "2026-02-23",
-      "readTime": "9 min read"
+      "readTime": "9 min read",
+      "tags": ["classic", "rankings", "2026", "retro"]
     },
     {
       "slug": "best-unblocked-games-2026",
@@ -52,7 +57,8 @@
       "category": "Guides",
       "author": "Team Schplay",
       "date": "2026-02-23",
-      "readTime": "12 min read"
+      "readTime": "12 min read",
+      "tags": ["rankings", "2026", "best-of", "unblocked games"]
     },
     {
       "slug": "getting-started-with-schplay",
@@ -61,7 +67,8 @@
       "category": "Updates",
       "author": "Team Schplay",
       "date": "2026-02-20",
-      "readTime": "4 min read"
+      "readTime": "4 min read",
+      "tags": ["updates", "behind-the-scenes", "site news"]
     },
     {
       "slug": "classroom-mode-guide",
@@ -70,16 +77,8 @@
       "category": "Guides",
       "author": "Team Schplay",
       "date": "2026-02-14",
-      "readTime": "5 min read"
-    },
-    {
-      "slug": "weekly-update-template",
-      "title": "Weekly Update Post Template",
-      "excerpt": "Use this post format for patch notes, release summaries, and community updates.",
-      "category": "Community",
-      "author": "Team Schplay",
-      "date": "2026-02-10",
-      "readTime": "3 min read"
+      "readTime": "5 min read",
+      "tags": ["classroom", "teachers", "how-to"]
     }
   ]
 }

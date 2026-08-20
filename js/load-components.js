@@ -47,7 +47,7 @@ document.addEventListener("DOMContentLoaded", function() {
         <li class="nav-item"><a class="nav-link" data-root-href="logic.html" data-category="logic" data-view-all="logic.html" aria-expanded="false" aria-haspopup="true"><span>Logic</span><svg class="nav-caret" viewBox="0 0 12 12" aria-hidden="true" focusable="false"><path d="M2.25 4.5L6 8.25L9.75 4.5" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg></a></li>
         <li class="nav-item"><a class="nav-link" data-root-href="multiplayer.html" data-category="multiplayer" data-view-all="multiplayer.html" aria-expanded="false" aria-haspopup="true"><span>Multiplayer</span><svg class="nav-caret" viewBox="0 0 12 12" aria-hidden="true" focusable="false"><path d="M2.25 4.5L6 8.25L9.75 4.5" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg></a></li>
         <li class="nav-item"><a class="nav-link" data-root-href="allgames.html"><span>All Games</span></a></li>
-        <li class="nav-item"><a class="nav-link" data-root-href="blog.html"><span>Blog</span></a></li>
+        <li class="nav-item"><a class="nav-link" data-root-href="blog/"><span>Blog</span></a></li>
       </ul>
     </nav>
     <div class="header-right">
