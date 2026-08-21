@@ -81,38 +81,6 @@
                                                 "item": "https://schplay.com/games/draw-the-hill.html"
                                       }
                             ]
-                  },
-                  {
-                            "@context": "https://schema.org",
-                            "@type": "FAQPage",
-                            "url": "https://schplay.com/games/draw-the-hill.html",
-                            "name": "Draw The Hill Classroom FAQ",
-                            "mainEntity": [
-                                      {
-                                                "@type": "Question",
-                                                "name": "Why use Draw The Hill in class?",
-                                                "acceptedAnswer": {
-                                                          "@type": "Answer",
-                                                          "text": "Students plan, prototype, and reflect on builds in Draw The Hill, mirroring the engineering design cycle."
-                                                }
-                                      },
-                                      {
-                                                "@type": "Question",
-                                                "name": "How do families stay connected?",
-                                                "acceptedAnswer": {
-                                                          "@type": "Answer",
-                                                          "text": "Send an invitation for families to tour the latest Draw The Hill creation through photos or narrated slides."
-                                                }
-                                      },
-                                      {
-                                                "@type": "Question",
-                                                "name": "Does Draw The Hill respect privacy?",
-                                                "acceptedAnswer": {
-                                                          "@type": "Answer",
-                                                          "text": "Yes—no logins or uploads are required. Screenshots can be cropped to show only the build."
-                                                }
-                                      }
-                            ]
                   }
         ]
     </script>
@@ -204,46 +172,6 @@
                     margin: 0 0 20px;
                 }
         
-                .meta-callout {
-                    display: flex;
-                    align-items: flex-start;
-                    gap: 14px;
-                    background: rgba(12, 24, 42, 0.85);
-                    border: 1px solid rgba(86, 143, 215, 0.35);
-                    border-radius: 12px;
-                    padding: 16px;
-                    margin-bottom: 24px;
-                }
-        
-                .meta-callout-icon {
-                    display: inline-flex;
-                    align-items: center;
-                    justify-content: center;
-                    width: 44px;
-                    height: 44px;
-                    border-radius: 12px;
-                    background: rgba(188, 165, 73, 0.15);
-                    color: var(--secondary-color);
-                    font-size: 1.4rem;
-                    flex-shrink: 0;
-                }
-        
-                .meta-callout-content {
-                    flex: 1;
-                }
-        
-                .meta-callout-eyebrow {
-                    font-size: 0.95rem;
-                    color: var(--text-muted);
-                    margin-bottom: 4px;
-                }
-        
-                .meta-callout a {
-                    color: var(--primary-color);
-                    font-weight: 600;
-                    font-size: 0.95rem;
-                }
-        
                 .meta-details {
                     display: grid;
                     grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
@@ -312,83 +240,6 @@
                     color: var(--text-muted);
                 }
         
-                .game-learning {
-                    background-color: #1c2a3e;
-                    border-radius: 16px;
-                    padding: 24px;
-                    margin: 32px 0;
-                    box-shadow: 0 12px 30px rgba(5, 15, 32, 0.35);
-                }
-        
-                .learning-header {
-                    margin-bottom: 18px;
-                }
-        
-                .learning-eyebrow {
-                    text-transform: uppercase;
-                    letter-spacing: 0.06em;
-                    font-size: 0.85rem;
-                    color: var(--secondary-color);
-                    margin: 0 0 6px;
-                }
-        
-                .learning-grid {
-                    display: grid;
-                    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-                    gap: 16px;
-                }
-        
-                .learning-card {
-                    background: rgba(12, 24, 42, 0.85);
-                    border: 1px solid rgba(86, 143, 215, 0.35);
-                    border-radius: 14px;
-                    padding: 18px;
-                }
-        
-                .learning-card h3 {
-                    margin: 0 0 8px;
-                    font-size: 1.05rem;
-                }
-        
-                .learning-card p {
-                    margin: 0;
-                    color: var(--text-muted);
-                    line-height: 1.6;
-                }
-        
-                .learning-standard {
-                    display: inline-block;
-                    font-size: 0.75rem;
-                    letter-spacing: 0.08em;
-                    text-transform: uppercase;
-                    color: var(--secondary-color);
-                    margin-bottom: 8px;
-                }
-        
-                .learning-faq-list details {
-                    background: rgba(12, 24, 42, 0.85);
-                    border: 1px solid rgba(255, 255, 255, 0.08);
-                    border-radius: 12px;
-                    padding: 14px 18px;
-                    margin-bottom: 12px;
-                }
-        
-                .learning-faq-list summary {
-                    cursor: pointer;
-                    font-weight: 600;
-                    color: var(--text-color);
-                }
-        
-                .learning-faq-list summary::marker {
-                    color: var(--secondary-color);
-                }
-        
-                .learning-faq-list p {
-                    margin: 12px 0 0;
-                    color: var(--text-muted);
-                    line-height: 1.6;
-                }
-        
                 @media (max-width: 1100px) {
                     .game-player-section {
                         grid-template-columns: 1fr;
@@ -398,12 +249,6 @@
                     }
                     .game-player-header {
                         justify-content: center;
-                    }
-                }
-        
-                @media (max-width: 720px) {
-                    .game-learning {
-                        padding: 20px;
                     }
                 }
         
@@ -518,27 +363,10 @@
             (adsbygoogle = window.adsbygoogle || []).push({});
           </script>
         </div>
-        <div class="meta-callout" role="note">
-          <span class="meta-callout-icon" aria-hidden="true">
-            <i class="fas fa-shield-check"></i>
-          </span>
-          <div class="meta-callout-content">
-            <p class="meta-callout-eyebrow">Game content reviewed by <strong>Schplay Editors</strong></p>
-            <a href="../about.html">Learn about our game review guidelines</a>
-          </div>
-        </div>
         <dl class="meta-details">
           <div>
             <dt>Genre</dt>
             <dd>Puzzle · Line Rider</dd>
-          </div>
-          <div>
-            <dt>Rating</dt>
-            <dd>⭐ 4.4 / 5 (14,660 votes)</dd>
-          </div>
-          <div>
-            <dt>Updated</dt>
-            <dd>Aug 07, 2025</dd>
           </div>
           <div>
             <dt>Release</dt>
@@ -563,79 +391,6 @@
         <h2>Tips to Master Draw The Hill</h2>
         <p>Build your rhythm, practice short sessions, and keep refining your strategy to stay ahead.</p>
       </aside>
-    </section>
-
-
-    <section class="game-learning teacher-toolkit" aria-labelledby="draw-the-hill-teacher-title">
-      <div class="learning-header">
-        <p class="learning-eyebrow">Teacher Toolkit</p>
-        <h2 id="draw-the-hill-teacher-title">Teacher Toolkit for Draw The Hill</h2>
-        <p>Draw The Hill invites design thinking, family showcases, and privacy-friendly publishing.</p>
-      </div>
-      <div class="learning-grid" role="list">
-        
-        <article class="learning-card" role="listitem">
-          <h3>Prototype critiques</h3>
-          <p>Use build phases in Draw The Hill as mini design reviews—students name one strength and one next step.</p>
-        </article>
-        <article class="learning-card" role="listitem">
-          <h3>Family studio tour</h3>
-          <p>Encourage learners to walk caregivers through their latest Draw The Hill build and explain its purpose.</p>
-        </article>
-        <article class="learning-card" role="listitem">
-          <h3>Ownership &amp; privacy</h3>
-          <p>Draw The Hill saves locally, so discuss how to share creations without exposing other windows or chat tabs.</p>
-        </article>
-      </div>
-    </section>
-
-    <section class="game-learning curriculum-grid" aria-labelledby="draw-the-hill-curriculum-title">
-      <div class="learning-header">
-        <p class="learning-eyebrow">Curriculum Alignment</p>
-        <h2 id="draw-the-hill-curriculum-title">Curriculum Alignment &amp; Family Bridges</h2>
-        <p>Tie Draw The Hill to engineering standards, home celebrations, and digital ownership.</p>
-      </div>
-      <div class="learning-grid" role="list">
-        
-        <article class="learning-card" role="listitem">
-          <span class="learning-standard">NGSS 3-5-ETS1-2</span>
-          <h3>Design Thinking</h3>
-          <p>Document constraints, brainstorms, and iterations from Draw The Hill.</p>
-        </article>
-        <article class="learning-card" role="listitem">
-          <span class="learning-standard">PTA National Standard 5</span>
-          <h3>Family Showcase</h3>
-          <p>Host a gallery walk of Draw The Hill creations families can react to at home.</p>
-        </article>
-        <article class="learning-card" role="listitem">
-          <span class="learning-standard">ISTE 1.6b</span>
-          <h3>Digital Ownership</h3>
-          <p>Credit original creators and keep personal data out of shared screenshots from Draw The Hill.</p>
-        </article>
-      </div>
-    </section>
-
-    <section class="game-learning learning-faq" aria-labelledby="draw-the-hill-faq-title">
-      <div class="learning-header">
-        <p class="learning-eyebrow">Family & Classroom FAQ</p>
-        <h2 id="draw-the-hill-faq-title">Draw The Hill Classroom FAQ</h2>
-        <p>Give a quick overview of how Draw The Hill fits design learning, home pride, and privacy.</p>
-      </div>
-      <div class="learning-faq-list" role="list">
-        
-        <details>
-          <summary>Why use Draw The Hill in class?</summary>
-          <p>Students plan, prototype, and reflect on builds in Draw The Hill, mirroring the engineering design cycle.</p>
-        </details>
-        <details>
-          <summary>How do families stay connected?</summary>
-          <p>Send an invitation for families to tour the latest Draw The Hill creation through photos or narrated slides.</p>
-        </details>
-        <details>
-          <summary>Does Draw The Hill respect privacy?</summary>
-          <p>Yes—no logins or uploads are required. Screenshots can be cropped to show only the build.</p>
-        </details>
-      </div>
     </section>
 
     <section class="games-grid-section" aria-labelledby="draw-the-hill-recommendations-title">
