@@ -128,7 +128,6 @@ const gameData = {
     { name: "Tower Blaster", image: "images/towerblaster.webp", url: "../games/towerblaster.html" },
     { name: "Tower Master", image: "images/towermaster.webp", url: "../games/towermaster.html" },
     { name: "World's Hardest Game 2", image: "images/worldshardestgame2.webp", url: "../games/worldshardestgame2.html" },
-    { name: "Undertale (Demo)", image: "images/undertale.webp", url: "../games/undertale(demo).html" },
     { name: "Undertale: Rejuvenation Mod", image: "images/rejuvenation.webp", url: "../games/Rejuvenation.html" },
     { name: "Last Breath Trio Mod", image: "images/lastbreathtrio.webp", url: "../games/LastBreathTrio.html" },
     { name: "The Final Experiment Mod", image: "images/thefinalexperiment.webp", url: "../games/TheFinalExperiment.html" }

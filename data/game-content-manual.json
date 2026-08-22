@@ -1830,19 +1830,19 @@
   "paperly-paper-plane-adventure": {
     "name": "Paperly: Paper Plane Adventure",
     "href": "games/paperly-paper-plane-adventure.html",
-    "image": "https://img.gamemonetize.com/ga0hdulxnef9p1hkw72ci2pk44lbcdar/512x384.jpg",
+    "image": "https://img.gamedistribution.com/df358b2a36f44e3fae813759d29bc384-512x384.jpg",
     "title": "Paperly: Paper Plane Adventure - Play Free Online",
-    "metaDescription": "Play Paperly: Paper Plane Adventure online and handle each route with smoother turns, better braking, and cleaner finishes.",
-    "metaKeywords": "paperly: paper plane adventure, paperly-paper-plane-adventure, browser game, online game, schplay, gamemonetize",
-    "heroParagraph": "Paperly: Paper Plane Adventure rewards clean steering, measured speed, and reading the route before you commit.",
+    "metaDescription": "Play Paperly: Paper Plane Adventure online, flying a paper plane through rings and obstacles across worlds from deserts to arctic ice caves.",
+    "metaKeywords": "paperly paper plane adventure, paperly-paper-plane-adventure, browser game, online game, schplay, gamedistribution",
+    "heroParagraph": "Paperly: Paper Plane Adventure sends a paper plane gliding through physics-driven courses, threading rings and obstacles across worlds from arid deserts to icy arctic caves.",
     "instructions": [
-      "Use W / A / S / D to move with purpose and avoid wasting position on unnecessary corrections.",
-      "Brake before tight spaces and accelerate only when the exit line is clear.",
-      "Use small steering inputs because smooth control beats panic movement every time."
+      "Use W / A / S / D to steer the plane and Shift for a speed boost.",
+      "Fly through rings along the course to stay on track and collect quantums.",
+      "Read the upcoming obstacles early since the plane handles with real momentum, not instant turns."
     ],
     "sections": [],
-    "plainText": "Paperly: Paper Plane Adventure - Play Free Online\nPaperly: Paper Plane Adventure rewards clean steering, measured speed, and reading the route before you commit.\nUse W / A / S / D to move with purpose and avoid wasting position on unnecessary corrections. Brake before tight spaces and accelerate only when the exit line is clear. Use small steering inputs because smooth control beats panic movement every time.",
-    "iframeSrc": "https://html5.gamemonetize.com/ga0hdulxnef9p1hkw72ci2pk44lbcdar/"
+    "plainText": "Paperly: Paper Plane Adventure - Play Free Online\nPaperly: Paper Plane Adventure sends a paper plane gliding through physics-driven courses, threading rings and obstacles across worlds from arid deserts to icy arctic caves.\nUse W / A / S / D to steer the plane and Shift for a speed boost. Fly through rings along the course to stay on track and collect quantums. Read the upcoming obstacles early since the plane handles with real momentum, not instant turns.",
+    "iframeSrc": "https://html5.gamedistribution.com/df358b2a36f44e3fae813759d29bc384/"
   },
   "bridge-wars": {
     "name": "Bridge Wars",
@@ -5540,36 +5540,6 @@
     "plainText": "Friday Night Funkin' Unblocked - Play Free Online\nFriday Night Funkin' was created by ninjamuffin99 (programming), PhantomArcade and evilsk8r (art), and Kawai Sprite (music). This build is an HTML5 port of that rhythm game where Boyfriend raps against a rotating cast of opponents. Arrow keys or WASD match each colored note at the judgment line; hitting late or early scores lower than hitting exactly on time. Health is a tug-of-war between Boyfriend and the opponent rather than a simple bar, so hitting notes well can recover from a bad section. Songs are grouped into weeks, each introducing a new opponent with different patterns and tempo that don't share timing familiarity with the last.",
     "iframeSrc": "FNF/index.html"
   },
-  "deltarune": {
-    "name": "Deltarune",
-    "href": "games/deltarune.html",
-    "image": "games/deltarune-main/logo.png",
-    "title": "Deltarune Unblocked - Play Free Online | Schplay",
-    "metaDescription": "Play Deltarune unblocked at Schplay, created by Toby Fox. Move with the arrow keys and press Z to confirm or interact; turn-based battles let each party member FIGHT, ACT, use an ITEM, or SPARE an enemy once they've been sufficiently weakened rather than defeated outright.",
-    "metaKeywords": "Deltarune, deltarune unblocked, toby fox, turn based rpg, undertale spiritual successor, schplay deltarune",
-    "heroParagraph": "Deltarune was created by Toby Fox as a spiritual successor to Undertale, following Kris and a small party through the Dark World in turn-based battles where FIGHT deals direct damage, ACT and MAGIC create situational openings, and SPARE offers a nonviolent way to end a fight once an enemy has been won over rather than simply beaten down.",
-    "instructions": [
-      "Move with the arrow keys and press Z to confirm menu choices or interact with objects and characters in the overworld; enemies are visible directly in the Dark World rather than triggering random encounters, so a fight can often be avoided entirely by running around a visible enemy.",
-      "In battle, each party member takes a turn choosing FIGHT to deal direct damage, ACT or MAGIC for a situational action tied to that specific enemy, ITEM to use a held consumable, or DEFEND to reduce incoming damage for that round.",
-      "SPARING an enemy ends the fight without defeating it, but usually requires performing the right ACT option (or otherwise satisfying that enemy) first — attempting to spare immediately without the correct setup action typically fails and the enemy continues fighting."
-    ],
-    "sections": [
-      {
-        "heading": "Visible enemies mean encounters are a choice",
-        "body": "Because Dark World enemies are visible on the overworld rather than triggering randomly, walking around a visible enemy avoids the fight entirely — a party in danger of losing a specific fight can often just choose not to engage it in the first place, which is not an option in games with random encounters."
-      },
-      {
-        "heading": "ACT usually has to happen before SPARE works",
-        "body": "Since most enemies will not accept a SPARE attempt until a specific ACT option has been used first, treating SPARE as an immediate first-turn option instead of a follow-up after the right ACT choice typically wastes a turn — reading what an enemy's ACT menu offers is the actual key to ending a fight peacefully."
-      },
-      {
-        "heading": "Defending buys time without ending the turn wasted",
-        "body": "Because DEFEND still counts as a full turn while reducing incoming damage, using it when unsure of the correct ACT or SPARE sequence is safer than guessing an ACT option that might provoke the enemy instead — defending buys a turn to observe the enemy's pattern without risking a bad ACT choice."
-      }
-    ],
-    "plainText": "Deltarune Unblocked - Play Free Online\nDeltarune was created by Toby Fox as a spiritual successor to Undertale, following Kris and a small party through the Dark World. Move with arrow keys, press Z to confirm or interact; enemies are visible in the overworld rather than random encounters, so fights can often be avoided by walking around them. In battle: FIGHT deals direct damage, ACT/MAGIC create situational openings, ITEM uses a consumable, DEFEND reduces incoming damage. SPARING an enemy ends a fight without defeating it, but usually requires the right ACT option first — attempting to spare immediately without that setup typically fails.",
-    "iframeSrc": "deltarune/index.html"
-  },
   "ducklife1": {
     "name": "Duck Life 1",
     "href": "games/ducklife1.html",
@@ -7495,36 +7465,6 @@
     "plainText": "Tower Master Unblocked - Play Free Online\nTower Master is an open-source tower-building game by iamkun, modeled on Tower Bloxx Deluxe Skyscraper. Click to drop a swinging block onto your tower; start with 3 HP, losing 1 per drop regardless of landing quality. A Success scores 25 points; a Perfect scores 50. Consecutive Perfects add 25 more each time (50, 75, 100...). Because only 3 total drops are allowed before the run ends, aiming for Perfect on every single drop extracts far more score from the same limited attempts than accepting an easier Success each time, and protecting an active Perfect streak is worth extra caution.",
     "iframeSrc": "towermaster/index.html"
   },
-  "undertale(demo)": {
-    "name": "Undertale (Demo)",
-    "href": "games/undertale(demo).html",
-    "image": "images/undertale.webp",
-    "title": "Undertale Unblocked - Play Free Online | Schplay",
-    "metaDescription": "Play Undertale unblocked at Schplay, the 2015 RPG created by Toby Fox. Arrow keys move your SOUL (a red heart) around the battle box to dodge bullet-hell attacks — blue bullets only hurt while moving, orange bullets only hurt while still — and choose FIGHT, ACT, ITEM, or SPARE each turn to fight, befriend, or flee every monster you meet.",
-    "metaKeywords": "Undertale, undertale unblocked, toby fox, bullet hell rpg, spare or fight, schplay undertale",
-    "heroParagraph": "Undertale is a 2015 RPG created by indie developer Toby Fox, where every battle plays out as a bullet-hell dodging challenge inside a small box using your SOUL (a red heart), and every monster encountered can be fought, appeased, or spared rather than always being killed for experience.",
-    "instructions": [
-      "Use the arrow keys to move your SOUL around the battle box during an enemy's turn, dodging bullet patterns that vary by monster — blue bullets only damage you while moving, while orange bullets only damage you while standing still, so reading bullet color changes how to react to each one.",
-      "On your own turn, choose FIGHT to attack directly, ACT to attempt a monster-specific interaction (sometimes required before a monster will accept being spared), ITEM to use something in your inventory, or SPARE to end the fight peacefully once the monster is willing.",
-      "Because different monsters require different ACT interactions before SPARE will work, learning what a specific monster responds to — rather than repeatedly trying SPARE with no setup — is usually necessary to end an encounter without fighting."
-    ],
-    "sections": [
-      {
-        "heading": "Bullet color changes the correct response, not just the pattern",
-        "body": "Because blue bullets only hurt while moving and orange bullets only hurt while standing still, the same general dodging instinct does not apply to every bullet — recognizing color before reacting is necessary, since moving through a blue bullet pattern is exactly backward from what an orange pattern requires."
-      },
-      {
-        "heading": "SPARE usually needs an ACT first, not repeated attempts",
-        "body": "Since most monsters will not accept a SPARE attempt until a specific ACT option has satisfied them somehow, trying SPARE repeatedly without the right setup wastes turns — reading what ACT options a monster offers and experimenting with them is the actual path to a peaceful resolution, not persistence alone."
-      },
-      {
-        "heading": "Every encounter offers a real choice, not just a forced fight",
-        "body": "Because FIGHT, ACT, ITEM, and SPARE are all genuinely viable paths through most encounters rather than SPARE being a hidden bonus option, deciding in advance whether to fight or attempt peace with a given monster shapes the encounter meaningfully rather than defaulting to combat by habit."
-      }
-    ],
-    "plainText": "Undertale Unblocked - Play Free Online\nUndertale is a 2015 RPG by Toby Fox where battles are bullet-hell dodging challenges: move your SOUL (a red heart) with arrow keys around the battle box, avoiding blue bullets (hurt while moving) and orange bullets (hurt while still). Each turn, choose FIGHT, ACT, ITEM, or SPARE. Most monsters require a specific ACT interaction before SPARE will actually work, so trying SPARE repeatedly with no setup wastes turns — reading what a monster's ACT options offer is the real path to a peaceful resolution. Every encounter offers fight-or-spare as a genuine choice, not a hidden bonus path.",
-    "iframeSrc": "UNDERTALE-main/UNDERTALE.html"
-  },
   "soundboard": {
     "name": "Soundboard Unblocked",
     "href": "games/soundboard.html",
@@ -7703,35 +7643,5 @@
     ],
     "plainText": "Undertale: The Final Experiment Unblocked - Play Free Online\nUndertale: The Final Experiment is a fan-made mod by LucasBr003 that expands the Undertale universe with new characters and storylines beyond the base game, built around the same core bullet-hell SOUL-dodging combat. Move your SOUL with arrow keys to dodge. Because this mod introduces new characters rather than reskinning existing fights, expect content beyond the original Sans encounter. Core dodge fundamentals (reading a pattern before committing to a direction) carry over from the base game, but new characters bring their own attack patterns that have to be learned fresh rather than assumed from familiarity with the original Sans fight.",
     "iframeSrc": "UNDERTALE-main/TheFinalExperiment.html"
-  },
-  "mob-control": {
-    "name": "Mob Control",
-    "href": "games/mob-control.html",
-    "image": "images/mobcontrol.jpeg",
-    "title": "Mob Control Unblocked - Play Free Online | Schplay",
-    "metaDescription": "Play Mob Control unblocked at Schplay, developed by Voodoo. Slide to aim your cannon and fire small blue units down the lane through multiplier gates like x2, x3, and x5 — every unit that passes a gate gets copied that many times, snowballing a handful of troops into an army that overwhelms the enemy base.",
-    "metaKeywords": "Mob Control, mob control unblocked, voodoo games, cannon multiplier game, army snowball game, schplay mob control",
-    "heroParagraph": "Mob Control was developed by Voodoo, the same studio behind Hole.io and Paper.io 2, and built around a cannon that fires small blue units down a lane toward multiplier gates — every unit that passes through a gate gets copied that many times, turning a handful of troops into a massive army before the enemy's red base can do the same to you.",
-    "instructions": [
-      "Slide to aim your cannon left and right, then fire units down the lane toward whichever multiplier gate — x2, x3, x5, or higher — best fits your current situation; every unit passing through a gate gets copied that many times over.",
-      "Because gates multiply whatever passes through them, funneling units toward the highest available multiplier snowballs your army fastest, but a gate positioned awkwardly relative to your aim can mean missing it entirely and wasting units that pass by untouched.",
-      "The goal is overwhelming the enemy base with a larger army than theirs, so building up multiplied numbers before engaging matters more than sending small groups forward as soon as they are fired."
-    ],
-    "sections": [
-      {
-        "heading": "Missed gates are the main way units get wasted",
-        "body": "Because a multiplier gate only affects units that actually pass through it, aiming carelessly and firing units past a gate rather than into it wastes their multiplying potential entirely — treating gate position as the primary aiming target, more than the enemy base itself, is what actually builds a large army."
-      },
-      {
-        "heading": "Higher multipliers compound faster than they first appear",
-        "body": "Since each gate multiplies whatever passes through it, sending units through a higher multiplier gate rather than the first one available produces a proportionally larger army for the same number of fired units — prioritizing distant, higher-value gates over an easy nearby low multiplier compounds into a much bigger force by the time the army reaches the enemy base."
-      },
-      {
-        "heading": "Army size at the point of engagement decides the outcome",
-        "body": "Because the win condition comes down to overwhelming the enemy base with more troops than they have, engaging too early with an undersized army wastes the multiplier setup already built — holding back to let gates finish multiplying a wave before pushing forward usually beats engaging piecemeal as units arrive."
-      }
-    ],
-    "plainText": "Mob Control Unblocked - Play Free Online\nMob Control was developed by Voodoo, also behind Hole.io and Paper.io 2. Slide to aim a cannon and fire small blue units down a lane toward multiplier gates (x2, x3, x5); every unit passing through a gate gets copied that many times, snowballing a handful of troops into an army. Missing a gate wastes a unit's multiplying potential entirely, so aiming at gates matters as much as aiming at the enemy base. Prioritizing higher-value gates over an easy nearby low multiplier compounds into a much bigger force. The goal is overwhelming the enemy's red base with a larger army than theirs, so holding back to let a wave finish multiplying usually beats engaging piecemeal.",
-    "iframeSrc": "mob-control/index.html"
   }
 }

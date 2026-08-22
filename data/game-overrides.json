@@ -2323,26 +2323,6 @@
       }
     ]
   },
-  "undertale(demo)": {
-    "name": "Undertale (Demo)",
-    "release": "Oct 31, 2013",
-    "genre": "RPG · Bullet Hell",
-    "platforms": "Browser, PC",
-    "controls": [
-      {
-        "input": "Arrow keys",
-        "action": "move the soul in battle and explore"
-      },
-      {
-        "input": "Z / Enter",
-        "action": "confirm and attack"
-      },
-      {
-        "input": "X / Shift",
-        "action": "cancel or open the menu"
-      }
-    ]
-  },
   "vex": {
     "name": "Vex's Games",
     "release": "Sep 15, 2013",

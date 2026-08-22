@@ -74,7 +74,6 @@ https://schplay.com/games/dadish-3.html
 https://schplay.com/games/dbz.html
 https://schplay.com/games/deadseat.html
 https://schplay.com/games/deep-freeze.html
-https://schplay.com/games/deltarune.html
 https://schplay.com/games/deltatraveler.html
 https://schplay.com/games/destiny-run-3d.html
 https://schplay.com/games/destroy-the-car-3d.html
@@ -103,7 +102,6 @@ https://schplay.com/games/find-the-alien.html
 https://schplay.com/games/fire-and-frost-master.html
 https://schplay.com/games/fireboy-and-watergirl-firetemple.html
 https://schplay.com/games/fitness-empire.html
-https://schplay.com/games/five-nights-at-epstein.html
 https://schplay.com/games/flappy-2048.html
 https://schplay.com/games/flappy-bird.html
 https://schplay.com/games/flappy-ship-classic.html
@@ -173,7 +171,6 @@ https://schplay.com/games/minescraftter-two-player.html
 https://schplay.com/games/minesweeper.html
 https://schplay.com/games/minesweeperplus.html
 https://schplay.com/games/mini-games-puzzle-collection.html
-https://schplay.com/games/mob-control.html
 https://schplay.com/games/money-rush.html
 https://schplay.com/games/monkey-mart.html
 https://schplay.com/games/monster-box-3d.html
@@ -280,7 +277,6 @@ https://schplay.com/games/tug-of-war-with-cars.html
 https://schplay.com/games/twerk-race-3d.html
 https://schplay.com/games/twisted-rope-3d.html
 https://schplay.com/games/ultrakill.html
-https://schplay.com/games/undertale(demo).html
 https://schplay.com/games/undertale-yellow.html
 https://schplay.com/games/vex.html
 https://schplay.com/games/wall-crawler.html
