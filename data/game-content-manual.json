@@ -2973,32 +2973,6 @@
     "plainText": "Minesweeper Plus - Play Free Online\nMinesweeper Plus takes the classic number-and-flag puzzle everyone grew up with and adds extra modes and features on top of the formula you already know.\nMinesweeper Plus follows the classic rules: reveal tiles, use the numbers to deduce where mines are hiding, and flag every mine without ever clicking one. Start in the corners or open areas of the board where the odds of hitting a mine are lowest, then work inward using the number clues you uncover. Extra modes build on the base rules, so check what is different about each one before diving in.",
     "iframeSrc": "minesweeperplus/MinesweeperPlus.html"
   },
-  "omori-fixed": {
-    "name": "OMORI",
-    "href": "games/omori-fixed.html",
-    "image": "https://cdn.cloudflare.steamstatic.com/steam/apps/1150690/header.jpg",
-    "title": "OMORI - Play Free Online",
-    "metaDescription": "Explore a surreal dream world and a quiet hometown in this story-driven RPG about memory, friendship, and facing what you have been avoiding.",
-    "metaKeywords": "OMORI, OMORI unblocked, play OMORI online",
-    "heroParagraph": "OMORI follows a boy and his dream-world counterpart through two intertwined stories, one in a colorful surreal dreamscape and one in the quieter reality of Faraway Town.",
-    "instructions": [
-      "OMORI is a story-driven RPG with turn-based battles. Explore Faraway Town and the dream world, talk to the characters you meet, and manage your party through fights using emotion-based mechanics.",
-      "Battles often hinge on managing emotions as much as raw stats — use the right skills to counter what enemies throw at your party.",
-      "Take the story at your own pace. OMORI deals with heavy themes, so explore areas fully to get the most out of its narrative."
-    ],
-    "sections": [
-      {
-        "heading": "Two worlds",
-        "body": "Events in the dream world and in Faraway Town connect to each other — pay attention to details that echo between them."
-      },
-      {
-        "heading": "Emotion-based combat",
-        "body": "Managing your party's emotional state is as important as HP when planning out a battle."
-      }
-    ],
-    "plainText": "OMORI - Play Free Online\nOMORI follows a boy and his dream-world counterpart through two intertwined stories, one in a colorful surreal dreamscape and one in the quieter reality of Faraway Town.\nOMORI is a story-driven RPG with turn-based battles. Explore Faraway Town and the dream world, talk to the characters you meet, and manage your party through fights using emotion-based mechanics. Battles often hinge on managing emotions as much as raw stats — use the right skills to counter what enemies throw at your party. Take the story at your own pace. OMORI deals with heavy themes, so explore areas fully to get the most out of its narrative.",
-    "iframeSrc": "omori-fixed/index.html"
-  },
   "people-playground": {
     "name": "People Playground",
     "href": "games/people-playground.html",

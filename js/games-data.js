@@ -266,7 +266,6 @@ window.SCHPLAY_GAMES.list = [
     { name: 'Lacy\'s Flash Games', href: "games/lacysflashgames.html", img: "games/lacysflashgames/Lacey's%20Flash%20Games.icon.png" },
     { name: 'Milkman Karlson', href: "games/milkman-karlson.html", img: "https://cdn.cloudflare.steamstatic.com/steam/apps/1228610/header.jpg" },
     { name: 'Minesweeper Plus', href: "games/minesweeperplus.html", img: "games/minesweeperplus/MinesweeperPlus.icon.png" },
-    { name: 'OMORI', href: "games/omori-fixed.html", img: "https://cdn.cloudflare.steamstatic.com/steam/apps/1150690/header.jpg" },
     { name: 'People Playground', href: "games/people-playground.html", img: "https://cdn.cloudflare.steamstatic.com/steam/apps/1118200/header.jpg" },
     { name: 'Raft', href: "games/raft.html", img: "https://cdn.cloudflare.steamstatic.com/steam/apps/648800/header.jpg" },
     { name: 'R.E.P.O.', href: "games/repo.html", img: "https://cdn.cloudflare.steamstatic.com/steam/apps/3241660/header.jpg" },
