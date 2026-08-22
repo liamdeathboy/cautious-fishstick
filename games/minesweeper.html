@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="robots" content="index, follow">
-    <meta name="description" content="Play Mine Sweeper unblocked and free online at Schplay. Play Minesweeper, the classic puzzle game. Use logic to uncover safe squares while avoiding mines.">
-    <meta name="keywords" content="Minesweeper, puzzle game, logic game, free online game, unblocked games, classic game, strategy game, schplay, cool, math, maths, game, games, puzzle, puzzles, free, online, strategy, skill, shapes, colors, logic, memory, board, read, reading, spell, spelling, geography, science, learning fun, fun activities for kids, learning games, education games">
+    <meta name="description" content="Play Mine Sweeper unblocked and free online at Schplay. Play Minesweeper unblocked at Schplay. Left-click a tile to reveal it; a number shows how many mines.">
+    <meta name="keywords" content="Minesweeper, minesweeper unblocked, logic puzzle game, mine flagging game, number grid puzzle, schplay minesweeper, schplay, cool, math, maths, game, games, puzzle, puzzles, free, online, strategy, skill, shapes, colors, logic, memory, board, read, reading, spell, spelling, geography, science, learning fun, fun activities for kids, learning games, education games">
     <meta name="theme-color" content="#0f1a2a">
     <title>Mine Sweeper Unblocked - Play Free Online | Schplay</title>
     <link rel="canonical" href="https://schplay.com/games/minesweeper.html">
@@ -14,12 +14,12 @@
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="Schplay">
     <meta property="og:title" content="Mine Sweeper Unblocked - Play Free Online | Schplay">
-    <meta property="og:description" content="Play Mine Sweeper unblocked and free online at Schplay. Play Minesweeper, the classic puzzle game. Use logic to uncover safe squares while avoiding mines.">
+    <meta property="og:description" content="Play Mine Sweeper unblocked and free online at Schplay. Play Minesweeper unblocked at Schplay. Left-click a tile to reveal it; a number shows how many mines.">
     <meta property="og:url" content="https://schplay.com/games/minesweeper.html">
     <meta property="og:image" content="https://schplay.com/images/minesweeper.webp">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Mine Sweeper Unblocked - Play Free Online | Schplay">
-    <meta name="twitter:description" content="Play Mine Sweeper unblocked and free online at Schplay. Play Minesweeper, the classic puzzle game. Use logic to uncover safe squares while avoiding mines.">
+    <meta name="twitter:description" content="Play Mine Sweeper unblocked and free online at Schplay. Play Minesweeper unblocked at Schplay. Left-click a tile to reveal it; a number shows how many mines.">
     <meta name="twitter:image" content="https://schplay.com/images/minesweeper.webp">
     <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'" crossorigin="anonymous">
     <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" crossorigin="anonymous"></noscript>
@@ -37,7 +37,7 @@
                             "@type": "VideoGame",
                             "name": "Mine Sweeper Unblocked",
                             "alternateName": "Mine Sweeper",
-                            "description": "Play Minesweeper, the classic puzzle game. Use logic to uncover safe squares while avoiding mines. Free and unblocked!",
+                            "description": "Play Minesweeper unblocked at Schplay. Left-click a tile to reveal it; a number shows how many mines touch that tile, right-click to flag a suspected mine, and clearing every non-mine tile without ever clicking a mine wins the board.",
                             "genre": [
                                       "Puzzle",
                                       "Logic"
@@ -379,9 +379,9 @@
         </dl>
         <hr class="meta-divider">
         <h2>Instructions</h2>
-        <p>Minesweeper is a classic puzzle game where players use logic to uncover safe squares while avoiding hidden mines. Test your problem-solving skills and aim for a perfect score!</p>
-        <p>Minesweeper has been a staple in the gaming world since its introduction in the 1980s. It has become a timeless classic, loved for its simplicity and challenging gameplay.</p>
-        <p>Start with the corners and edges to uncover safe squares. Use numbers to deduce the location of mines and mark them with flags. Plan your moves carefully to avoid mistakes.</p>
+        <p>Left-click a tile to reveal it; revealing a mine ends the run immediately, while revealing a safe tile shows a number (or nothing, if no adjacent tile has a mine, which automatically reveals the surrounding blank area too).</p>
+        <p>Right-click a tile to flag it as a suspected mine, which prevents an accidental left-click reveal on tiles you have already deduced are dangerous; flagging is optional but becomes necessary for tracking deductions on a larger board.</p>
+        <p>A revealed number tells you exactly how many of its neighboring tiles (including diagonals) contain a mine, so if a &quot;2&quot; tile already has two flagged neighbors, every other neighboring tile is guaranteed safe to reveal.</p>
         <h2>Controls</h2>
         <ul>
           <li><strong>Mouse</strong> &mdash; reveal tiles or place flags</li>
@@ -389,7 +389,11 @@
           <li><strong>F2</strong> &mdash; start a new board instantly</li>
         </ul>
         <h2>Tips to Master Mine Sweeper</h2>
-        <p>Build your rhythm, practice short sessions, and keep refining your strategy to stay ahead.</p>
+        <p>Because a revealed number counts precisely how many of its up-to-eight neighbors are mines, once that many neighbors are already flagged, every remaining unrevealed neighbor of that tile is provably safe — this is the core deduction that clears most of a board without guessing.</p>
+        <h3 class="meta-subheading">Blank-tile chains reveal information for free</h3>
+        <p>A revealed tile with no adjacent mines shows no number and automatically opens all of its neighbors too, cascading until every tile bordering the open area at least shows a number. Clicking near the edges or corners of a board first tends to trigger larger chain reveals than clicking near the center.</p>
+        <h3 class="meta-subheading">The endgame sometimes forces a genuine guess</h3>
+        <p>Because mine placement is fixed at the start but not fully knowable from the numbers alone, boards occasionally reach a state where two or more unrevealed tiles are equally likely to hold the last mine — recognizing when a position is a real 50/50 rather than continuing to search for a nonexistent logical certainty saves time on the final tiles.</p>
       </aside>
     </section>
 

@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="robots" content="index, follow">
-    <meta name="description" content="Play 2048 unblocked and free online at Schplay. Play 2048, the addictive puzzle game. Merge tiles, reach 2048, and test your strategy. Free and unblocked!">
-    <meta name="keywords" content="2048, puzzle game, free online game, unblocked games, merge tiles, strategy game, fun games, brain game, addictive game, schplay, cool, math, maths, game, games, puzzle, puzzles, free, online, strategy, skill, shapes, colors, logic, memory, board, read, reading, spell, spelling, geography, science, learning fun, fun activities for kids, learning games, education games">
+    <meta name="description" content="Play 2048 unblocked and free online at Schplay. Play 2048 unblocked at Schplay on a 4x4 grid built by Gabriele Cirulli.">
+    <meta name="keywords" content="2048, 2048 unblocked, gabriele cirulli, number merge puzzle, sliding tile game, schplay 2048, schplay, cool, math, maths, game, games, puzzle, puzzles, free, online, strategy, skill, shapes, colors, logic, memory, board, read, reading, spell, spelling, geography, science, learning fun, fun activities for kids, learning games, education games">
     <meta name="theme-color" content="#0f1a2a">
     <title>2048 Unblocked - Play Free Online | Schplay</title>
     <link rel="canonical" href="https://schplay.com/games/2048.html">
@@ -14,12 +14,12 @@
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="Schplay">
     <meta property="og:title" content="2048 Unblocked - Play Free Online | Schplay">
-    <meta property="og:description" content="Play 2048 unblocked and free online at Schplay. Play 2048, the addictive puzzle game. Merge tiles, reach 2048, and test your strategy. Free and unblocked!">
+    <meta property="og:description" content="Play 2048 unblocked and free online at Schplay. Play 2048 unblocked at Schplay on a 4x4 grid built by Gabriele Cirulli.">
     <meta property="og:url" content="https://schplay.com/games/2048.html">
     <meta property="og:image" content="https://schplay.com/images/2048.webp">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="2048 Unblocked - Play Free Online | Schplay">
-    <meta name="twitter:description" content="Play 2048 unblocked and free online at Schplay. Play 2048, the addictive puzzle game. Merge tiles, reach 2048, and test your strategy. Free and unblocked!">
+    <meta name="twitter:description" content="Play 2048 unblocked and free online at Schplay. Play 2048 unblocked at Schplay on a 4x4 grid built by Gabriele Cirulli.">
     <meta name="twitter:image" content="https://schplay.com/images/2048.webp">
     <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'" crossorigin="anonymous">
     <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" crossorigin="anonymous"></noscript>
@@ -37,7 +37,7 @@
                             "@type": "VideoGame",
                             "name": "2048 Unblocked",
                             "alternateName": "2048",
-                            "description": "Play 2048, the addictive puzzle game. Merge tiles, reach 2048, and test your strategy. Free and unblocked!",
+                            "description": "Play 2048 unblocked at Schplay on a 4x4 grid built by Gabriele Cirulli. Slide tiles with the arrow keys to merge matching numbers up to the 2048 tile, or hit the built-in Auto-run button to watch the AI solver play.",
                             "genre": [
                                       "Puzzle",
                                       "Number Merge"
@@ -379,17 +379,21 @@
         </dl>
         <hr class="meta-divider">
         <h2>Instructions</h2>
-        <p>2048 is an addictive puzzle game where you merge tiles to reach the number 2048. Test your strategy and planning skills in this fun and challenging game!</p>
-        <p>2048 became a viral sensation for its simple yet engaging gameplay. It has inspired countless players and remains a favorite for puzzle enthusiasts worldwide.</p>
-        <p>Plan your moves carefully to avoid running out of space. Focus on merging tiles in one direction and aim for high-value tiles. Practice to improve your strategy and achieve the elusive 2048 tile!</p>
+        <p>Use the arrow keys to slide every tile on the board in that direction at once; two tiles with the same number merge into one tile with double the value the instant they collide, and after every move the game drops a new tile into a random empty cell — 90% of the time a 2, 10% of the time a 4.</p>
+        <p>The game is won the moment any tile reaches the value 2048, but the board keeps accepting moves afterward if you want to keep merging toward higher tiles once that condition is met.</p>
+        <p>Press the Auto-run button to hand control to the built-in solver, which picks each move by evaluating board smoothness and monotonicity rather than playing randomly — watching a few of its moves is a fast way to see why keeping your highest tile in a corner matters.</p>
         <h2>Controls</h2>
         <ul>
-          <li><strong>Arrow keys</strong> &mdash; slide the grid in one direction</li>
+          <li><strong>Arrow keys / H,J,K,L</strong> &mdash; slide the grid; vim-style keys work as an alternate scheme</li>
           <li><strong>Swipe</strong> &mdash; swipe on touch screens to merge tiles</li>
-          <li><strong>R</strong> &mdash; restart with a fresh board</li>
+          <li><strong>Space</strong> &mdash; restart with a fresh board</li>
         </ul>
         <h2>Tips to Master 2048</h2>
-        <p>Build your rhythm, practice short sessions, and keep refining your strategy to stay ahead.</p>
+        <p>Because every arrow-key move slides the entire board in one direction, a high-value tile that is not pinned in a corner gets shuffled around and blocks merges instead of anchoring them. Picking one corner and repeatedly sliding toward it keeps your largest tiles stacked in descending order along that edge.</p>
+        <h3 class="meta-subheading">Watch the 90/10 spawn odds</h3>
+        <p>New tiles spawn as a 2 nine times out of ten and a 4 the rest of the time, always in an empty cell. Since you cannot control where the new tile lands, leaving at least one empty row or column gives the spawn room to land without immediately blocking your next planned merge.</p>
+        <h3 class="meta-subheading">Avoid sliding toward your empty side</h3>
+        <p>The board only fills up once open cells run out, so repeatedly sliding in the direction that empties tiles away from your corner strategy is what causes most losses — once movesAvailable() returns false because every adjacent tile has a different value, the run ends immediately.</p>
       </aside>
     </section>
 

@@ -115,16 +115,31 @@ function findFlashSwf(slug, override = {}) {
   return '';
 }
 
+// A .swf path can never be a valid iframe `src` (browsers can't render Flash
+// directly) — it always has to go through the Ruffle-player branch below.
+// Any caller that hands us an iframeSrc ending in .swf gets rerouted to
+// `{ type: 'flash', swf }` instead of silently producing a dead iframe.
+function asFlashEmbed(candidate) {
+  if (candidate && !/^https?:/i.test(candidate) && !candidate.startsWith('//') && candidate.toLowerCase().endsWith('.swf')) {
+    return { type: 'flash', swf: candidate };
+  }
+  return null;
+}
+
 function resolveGameEmbed(slug, dataIframeSrc, override = {}) {
   const overrideSrc = override.iframeSrc ? normalizeIframeSrc(override.iframeSrc, slug) : '';
   if (overrideSrc) {
-    return { type: 'iframe', src: overrideSrc };
+    return asFlashEmbed(overrideSrc) || { type: 'iframe', src: overrideSrc };
   }
 
   const candidate = normalizeIframeSrc(dataIframeSrc, slug);
   if (candidate) {
     if (/^https?:/i.test(candidate) || candidate.startsWith('//')) {
       return { type: 'iframe', src: candidate };
+    }
+    const flashCandidate = asFlashEmbed(candidate);
+    if (flashCandidate) {
+      return flashCandidate;
     }
     const candidatePath = path.join(GAMES_DIR, candidate);
     if (fs.existsSync(candidatePath)) {
@@ -457,7 +472,7 @@ function renderControls(controls) {
   return items.join('\n          ');
 }
 
-function renderMetaSections(sections, fallbackTitle, gameName, instructions = []) {
+function renderMetaSections(sections, fallbackTitle, gameName) {
   if (!sections.length) {
     return {
       masterHeading: fallbackTitle,
@@ -483,21 +498,18 @@ function renderMetaSections(sections, fallbackTitle, gameName, instructions = []
     };
   }
 
+  // Use the first section's own body as the intro paragraph (it's always
+  // per-game content from `sections`, never generic boilerplate), and render
+  // the remaining sections as subheadings below it. Pulling the intro from
+  // `instructions` instead (the old approach) meant the same sentence often
+  // also appeared under the page's "Instructions" heading, which tripped the
+  // caller's duplicate-content guard and fell back to templated filler text
+  // ("Get better at X with short, focused sessions...") that reads identically
+  // across every game page.
   const [first, ...rest] = filtered;
   const masterHeading = fallbackTitle;
-  const introCandidates = Array.isArray(instructions) ? instructions.slice() : [];
-  introCandidates.push(first.body);
-  let masterIntro = 'Practice consistently and keep experimenting with tactics to improve.';
-  for (const candidate of introCandidates) {
-    if (candidate && typeof candidate === 'string' && candidate.trim() && candidate.trim() !== first.body) {
-      masterIntro = candidate;
-      break;
-    }
-  }
-  if (masterIntro === 'Practice consistently and keep experimenting with tactics to improve.' && first.body) {
-    masterIntro = first.body;
-  }
-  const body = [{ heading: first.heading, body: first.body }, ...rest].map(({ heading, body: paragraph }) => `
+  const masterIntro = first.body || 'Practice consistently and keep experimenting with tactics to improve.';
+  const body = rest.map(({ heading, body: paragraph }) => `
         <h3 class="meta-subheading">${escapeHtml(heading)}</h3>
         <p>${escapeHtml(paragraph)}</p>`).join('');
   return { masterHeading, masterIntro, body };
@@ -710,13 +722,7 @@ function renderPage(slug, data, override = {}, gameList = []) {
   const imageUrl = absoluteImageUrl(override.image || data.image || override.img);
   const schema = buildSchema(slug, { ...data, slug, name }, override, details, imageUrl);
   const masterTitle = `Tips to Master ${name}`;
-  const { masterHeading, masterIntro: rawMasterIntro, body } = renderMetaSections(sections, masterTitle, name, instructions);
-  // Never let the "Tips to Master" intro duplicate a sentence already shown under
-  // Instructions (a thin/duplicate-content signal on games without unique copy).
-  const instructionKeys = new Set(instructions.map((s) => sanitizeCopy(s).toLowerCase()));
-  const masterIntro = instructionKeys.has(sanitizeCopy(rawMasterIntro).toLowerCase())
-    ? `Get better at ${name} with short, focused sessions: learn the timing, study each mistake, and push for a new personal best every run.`
-    : rawMasterIntro;
+  const { masterHeading, masterIntro, body } = renderMetaSections(sections, masterTitle, name);
 
   const breadcrumbSchema = buildBreadcrumbSchema(name, canonical);
   const schemaEntries = [schema, breadcrumbSchema];

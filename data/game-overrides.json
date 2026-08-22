@@ -6,15 +6,15 @@
     "platforms": "Browser, Mobile",
     "controls": [
       {
-        "input": "Arrow keys",
-        "action": "slide the grid in one direction"
+        "input": "Arrow keys / H,J,K,L",
+        "action": "slide the grid; vim-style keys work as an alternate scheme"
       },
       {
         "input": "Swipe",
         "action": "swipe on touch screens to merge tiles"
       },
       {
-        "input": "R",
+        "input": "Space",
         "action": "restart with a fresh board"
       }
     ]
@@ -642,16 +642,16 @@
     "platforms": "Browser, Mobile",
     "controls": [
       {
-        "input": "Arrow keys / Tilt",
-        "action": "steer the doodle between platforms"
+        "input": "Left / Right Arrow",
+        "action": "drift the doodle sideways; the screen wraps at both edges"
       },
       {
         "input": "Space",
-        "action": "fire at monsters"
+        "action": "start the run or restart after a fall"
       },
       {
-        "input": "Tap",
-        "action": "shoot on touch screens"
+        "input": "Landing on a platform",
+        "action": "bounce automatically — there is no jump button"
       }
     ]
   },
@@ -856,7 +856,7 @@
     ]
   },
   "fireboy-and-watergirl-firetemple": {
-    "name": "Fireboy and Watergirl Fire Temple",
+    "name": "Fireboy and Watergirl Forest Temple",
     "release": "Mar 15, 2013",
     "genre": "Puzzle · Co-op Platformer",
     "platforms": "Browser",
@@ -868,10 +868,6 @@
       {
         "input": "W / A / S / D",
         "action": "guide Watergirl"
-      },
-      {
-        "input": "Space",
-        "action": "trigger levers or reset levels"
       }
     ]
   },
@@ -903,15 +899,15 @@
     "controls": [
       {
         "input": "Space / Click",
-        "action": "flap to stay aloft"
+        "action": "flap upward with a fixed velocity kick"
       },
       {
         "input": "Tap",
-        "action": "keep airborne on touch devices"
+        "action": "flap on touch devices"
       },
       {
-        "input": "P",
-        "action": "pause mid-flight"
+        "input": "Space (on game-over screen)",
+        "action": "click the replay button to restart"
       }
     ]
   },
@@ -1136,22 +1132,14 @@
     ]
   },
   "henry-stickman": {
-    "name": "Stickman Games",
+    "name": "Henry Stickman: Full Collection",
     "release": "Jan 15, 2009",
     "genre": "Adventure · Interactive Story",
     "platforms": "Browser",
     "controls": [
       {
         "input": "Mouse",
-        "action": "choose branching story options"
-      },
-      {
-        "input": "Space",
-        "action": "skip cutscenes after completion"
-      },
-      {
-        "input": "R",
-        "action": "retry a decision quickly"
+        "action": "click through the story and choose branching options"
       }
     ]
   },
@@ -2419,11 +2407,7 @@
     "name": "Pizza Tower",
     "genre": "Platformer · Action",
     "platforms": "Browser",
-    "rating": "⭐ 4.7 / 5 (58,204 votes)",
     "release": "Jan 26, 2023",
-    "heroParagraph": "Pizza Tower is a high-octane platformer where you race through eclectic stages, smashing foes and searching for secrets as Peppino the pizza chef.",
-    "metaDescription": "Play Pizza Tower online. Sprint as Peppino the pizza chef, combo through wild stages, and chase high scores in this fast-paced platformer. Free and unblocked!",
-    "metaKeywords": "Pizza Tower, Peppino, fast platformer, speedrun game, retro inspired, play Pizza Tower online, unblocked",
     "controls": [
       {
         "input": "Arrow keys",
@@ -2447,9 +2431,7 @@
     "name": "Quake III Arena",
     "genre": "Shooter · Arena",
     "platforms": "Browser, PC",
-    "release": "Dec 02, 1999",
-    "rating": "⭐ 4.6 / 5 (92,411 votes)",
-    "heroParagraph": "Quake III Arena is the definitive arena shooter—tight movement, deadly weapons, and nonstop competitive action."
+    "release": "Dec 02, 1999"
   },
   "baldi-plus": {
     "name": "Baldi's Basics Plus",
@@ -2476,20 +2458,16 @@
     ]
   },
   "slope2": {
-    "name": "Slope Two Player",
+    "name": "Slope 2",
     "genre": "Arcade · Reflex",
     "platforms": "Browser",
-    "rating": "⭐ 4.6 / 5 (71,840 votes)",
-    "release": "Apr 12, 2024",
-    "heroParagraph": "Slope 2 keeps the endless downhill rush alive with faster tracks, tougher hazards, and a pulse-pounding soundtrack."
+    "release": "Apr 12, 2024"
   },
   "adastra": {
     "name": "Adastra",
     "genre": "Visual Novel · Sci-Fi",
     "platforms": "Browser",
-    "rating": "⭐ 4.5 / 5 (32,904 votes)",
-    "release": "May 14, 2020",
-    "heroParagraph": "Adastra blends space opera intrigue with heartfelt relationships in a branching visual novel experience."
+    "release": "May 14, 2020"
   },
   "2048-merge-run": {
     "name": "2048 Merge Run",
