@@ -12,7 +12,6 @@ https://schplay.com/games/addition-bird-image-uncover.html
 https://schplay.com/games/adventurecapitalist.html
 https://schplay.com/games/agario.html
 https://schplay.com/games/air-slip.html
-https://schplay.com/games/amanda-the-adventurer.html
 https://schplay.com/games/andys-apple-farm.html
 https://schplay.com/games/angrybirdshalloween.html
 https://schplay.com/games/animalcraft-friends.html
@@ -73,7 +72,6 @@ https://schplay.com/games/dadish-1.html
 https://schplay.com/games/dadish-2.html
 https://schplay.com/games/dadish-3.html
 https://schplay.com/games/dbz.html
-https://schplay.com/games/dead-plate.html
 https://schplay.com/games/deadseat.html
 https://schplay.com/games/deep-freeze.html
 https://schplay.com/games/deltarune.html
@@ -83,7 +81,6 @@ https://schplay.com/games/destroy-the-car-3d.html
 https://schplay.com/games/diamond-seeker.html
 https://schplay.com/games/doge-miner.html
 https://schplay.com/games/domino-adventure.html
-https://schplay.com/games/donottakethiscathome.html
 https://schplay.com/games/doodlejump.html
 https://schplay.com/games/draw-joust.html
 https://schplay.com/games/draw-the-hill.html
