@@ -1,1 +1,0 @@
-<div class="_tr5 alert alert-ss info">{{PROFILE_NAME}} @user_not_favorite@</div>

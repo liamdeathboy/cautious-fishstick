@@ -1,1 +1,0 @@
-<a href="{{CATEGORY_URL}}" class="">{{CATEGORY_NAME}}</a>

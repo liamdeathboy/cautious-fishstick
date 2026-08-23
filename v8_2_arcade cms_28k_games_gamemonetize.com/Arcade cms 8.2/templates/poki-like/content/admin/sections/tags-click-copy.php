@@ -1,1 +1,0 @@
-<a href="{{TAGS_URL_COPY}}" class="clickToCopy" data-name="{{TAGS_NAME_COPY}}">{{TAGS_NAME_COPY}}</a> 

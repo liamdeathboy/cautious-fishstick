@@ -1,1 +1,0 @@
-<button id="mc-slider-delete" class="mc_d-{{VIEW_SLIDER_ID}} btn-p btn-small btn-p3 fa fa-trash" data-sliders="{{VIEW_SLIDER_ID}}"></button>

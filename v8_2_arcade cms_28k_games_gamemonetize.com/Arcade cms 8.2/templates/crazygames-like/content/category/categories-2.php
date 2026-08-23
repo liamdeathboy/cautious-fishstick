@@ -1,1 +1,0 @@
-{{CATEGORIES_LIST_2}}

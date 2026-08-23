@@ -1,1 +1,0 @@
-<button id="mc-tags-delete" class="mc_d-{{VIEW_TAGS_ID}} btn-p btn-small btn-p3 fa fa-trash" data-tags="{{VIEW_TAGS_ID}}"></button>

@@ -1,1 +1,0 @@
-<button class="top-gm-btn fav-status-button fa fa-star {{PLAY_GAME_FAVORITE_BTN_CLASS}}" id="fav-btn" data-game="{{PLAY_GAME_ID}}"></button>
