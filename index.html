@@ -82,12 +82,32 @@ function gtag_report_conversion(url) {
       #site-header .nav-dropdown, #site-header #searchResults { z-index: 4100; }
 
       /* ── Home hero heading (SEO H1) ── */
-      .home-hero { text-align: center; padding: 2.2rem 1rem 0.6rem; max-width: 820px; margin: 0 auto; }
+      .home-hero { text-align: center; padding: 0.7rem 1rem 0.6rem; max-width: 820px; margin: 0 auto; }
       .home-hero-title {
         font-size: clamp(1.8rem, 4vw, 2.9rem); font-weight: 700; letter-spacing: -0.02em;
         color: #f5f5f7; margin: 0 0 0.6rem; line-height: 1.1;
       }
       .home-hero-sub { font-size: clamp(1rem, 2vw, 1.15rem); color: #a1a1aa; margin: 0 auto; max-width: 680px; line-height: 1.5; }
+
+      /* ── Home hero click-to-open disclosure ── */
+      .home-hero-details { display: inline-block; max-width: 720px; }
+      /* Collapsed: only this compact toggle shows; the H1 + intro stay hidden until opened */
+      .home-hero-summary {
+        list-style: none; cursor: pointer;
+        display: inline-flex; align-items: center; justify-content: center; gap: 0.4rem;
+        font-size: 0.95rem; font-weight: 600; color: #a1a1aa; padding: 0.3rem 0.4rem;
+      }
+      .home-hero-summary:hover { color: #f5f5f7; }
+      .home-hero-summary::-webkit-details-marker { display: none; }
+      .home-hero-summary::after {
+        content: ''; width: 0.5em; height: 0.5em; flex-shrink: 0;
+        border-right: 2px solid currentColor; border-bottom: 2px solid currentColor;
+        transform: translateY(-0.1em) rotate(45deg); transition: transform 0.2s ease;
+      }
+      .home-hero-details[open] .home-hero-summary::after { transform: translateY(0.05em) rotate(-135deg); }
+      .home-hero-summary:focus-visible { outline: 2px solid #2997ff; outline-offset: 4px; border-radius: 8px; }
+      .home-hero-details[open] .home-hero-title { margin-top: 0.5rem; }
+      .home-hero-details .home-hero-sub { margin-top: 0.9rem; }
 
       /* ── Browse button ── */
       .home-browse { padding: 1.1rem 0 1.75rem; text-align: center; }
@@ -212,10 +232,13 @@ function gtag_report_conversion(url) {
 
   <main class="container" role="main">
 
-    <!-- Hero heading (primary H1) -->
+    <!-- Hero heading (primary H1) — collapsed by default; the H1 + intro appear only when opened -->
     <header class="home-hero">
-      <h1 class="home-hero-title">Unblocked Games — Play Free Online</h1>
-      <p class="home-hero-sub">2,500+ free unblocked games you can play instantly in your browser — no download, no install. Classroom-friendly favorites like Slope, Subway Surfers, 1v1.LOL, Retro Bowl and Minecraft, playable on any Chromebook or school laptop.</p>
+      <details class="home-hero-details">
+        <summary class="home-hero-summary" aria-label="Show intro: Unblocked Games — Play Free Online">Unblocked Games</summary>
+        <h1 class="home-hero-title">Unblocked Games — Play Free Online</h1>
+        <p class="home-hero-sub">2,500+ free unblocked games you can play instantly in your browser — no download, no install. Classroom-friendly favorites like Slope, Subway Surfers, 1v1.LOL, Retro Bowl and Minecraft, playable on any Chromebook or school laptop.</p>
+      </details>
     </header>
 
     <!-- Browse all games -->
@@ -500,6 +523,65 @@ function gtag_report_conversion(url) {
         <p>Read our latest guide featuring top unblocked games, the full Schplay games catalog, and other online game websites.</p>
         <a class="btn-learn-more" href="blog/best-unblocked-games-2026/">Read the full article</a>
       </article>
+    </section>
+
+    <section class="games-grid-section" aria-labelledby="more-games-title">
+      <div class="section-header">
+        <h2 id="more-games-title">50 More Unblocked Games</h2>
+        <a class="see-all" href="allgames.html">See all</a>
+      </div>
+      <div class="games-grid">
+        <a class="game-card" href="games/deep-freeze.html"><img src="images/deepfreeze.webp" alt="Deep Freeze unblocked" loading="lazy" decoding="async"><h3>Deep Freeze</h3></a>
+        <a class="game-card" href="games/doodlejump.html"><img src="images/doodlejump.webp" alt="Doodle Jump unblocked" loading="lazy" decoding="async"><h3>Doodle Jump</h3></a>
+        <a class="game-card" href="games/dadish-1.html"><img src="images/dadish" alt="Dadish 1 unblocked" loading="lazy" decoding="async"><h3>Dadish 1</h3></a>
+        <a class="game-card" href="games/dadish-2.html"><img src="images/dadish2.jpeg" alt="Dadish 2 unblocked" loading="lazy" decoding="async"><h3>Dadish 2</h3></a>
+        <a class="game-card" href="games/dadish-3.html"><img src="images/dadish3.avif" alt="Dadish 3 unblocked" loading="lazy" decoding="async"><h3>Dadish 3</h3></a>
+        <a class="game-card" href="games/doge-miner.html"><img src="images/dogeminer.jpeg" alt="Doge Miner unblocked" loading="lazy" decoding="async"><h3>Doge Miner</h3></a>
+        <a class="game-card" href="games/evowars.html"><img src="images/evowars.jpeg" alt="EvoWars unblocked" loading="lazy" decoding="async"><h3>EvoWars</h3></a>
+        <a class="game-card" href="games/there-is-no-game.html"><img src="images/thereisnogame.jpg" alt="There Is No Game unblocked" loading="lazy" decoding="async"><h3>There Is No Game</h3></a>
+        <a class="game-card" href="games/bit-gun-io.html"><img src="images/bitgun.avif" alt="Bit Gun Io unblocked" loading="lazy" decoding="async"><h3>Bit Gun Io</h3></a>
+        <a class="game-card" href="games/steal-brainrot-online.html"><img src="images/stealbrainrot.avif" alt="Steal Brainrot Online unblocked" loading="lazy" decoding="async"><h3>Steal Brainrot Online</h3></a>
+        <a class="game-card" href="games/find-the-alien.html"><img src="images/findthealien.jpeg" alt="Find the Alien unblocked" loading="lazy" decoding="async"><h3>Find the Alien</h3></a>
+        <a class="game-card" href="games/magic-tiles-3.html"><img src="images/magictiles3.jpeg" alt="Magic Tiles 3 unblocked" loading="lazy" decoding="async"><h3>Magic Tiles 3</h3></a>
+        <a class="game-card" href="games/shovel-3d.html"><img src="images/shovel3d.jpeg" alt="Shovel 3D unblocked" loading="lazy" decoding="async"><h3>Shovel 3D</h3></a>
+        <a class="game-card" href="games/buildnow-gg.html"><img src="images/buildnow.jpeg" alt="BuildNow GG unblocked" loading="lazy" decoding="async"><h3>BuildNow GG</h3></a>
+        <a class="game-card" href="games/man-runner-2048.html"><img src="images/manrunner2048.png" alt="Man Runner 2048 unblocked" loading="lazy" decoding="async"><h3>Man Runner 2048</h3></a>
+        <a class="game-card" href="games/stickman-and-guns.html"><img src="images/stickmanandguns.avif" alt="Stickman and Guns unblocked" loading="lazy" decoding="async"><h3>Stickman and Guns</h3></a>
+        <a class="game-card" href="games/duck-life-3.html"><img src="images/ducklife3.webp" alt="Duck Life 3 unblocked" loading="lazy" decoding="async"><h3>Duck Life 3</h3></a>
+        <a class="game-card" href="games/duckhunt.html"><img src="images/duckhunt.webp" alt="Duck Hunt unblocked" loading="lazy" decoding="async"><h3>Duck Hunt</h3></a>
+        <a class="game-card" href="games/ducklife2.html"><img src="images/ducklife2.webp" alt="Duck Life 2 unblocked" loading="lazy" decoding="async"><h3>Duck Life 2</h3></a>
+        <a class="game-card" href="games/dunebuggy.html"><img src="images/dunebuggy.webp" alt="Dune Buggy unblocked" loading="lazy" decoding="async"><h3>Dune Buggy</h3></a>
+        <a class="game-card" href="games/electric-man-2.html"><img src="images/electricman2.webp" alt="Electric Man 2 unblocked" loading="lazy" decoding="async"><h3>Electric Man 2</h3></a>
+        <a class="game-card" href="games/fireboy-and-watergirl-firetemple.html"><img src="images/fireboywatergirlfiretemple.webp" alt="Fireboy and Watergirl Fire Temple unblocked" loading="lazy" decoding="async"><h3>Fireboy and Watergirl Fire Temple</h3></a>
+        <a class="game-card" href="games/flappy-2048.html"><img src="images/flappy2048.webp" alt="Flappy 2048 unblocked" loading="lazy" decoding="async"><h3>Flappy 2048</h3></a>
+        <a class="game-card" href="games/flappy-bird.html"><img src="images/flappybird.webp" alt="Flappy Bird unblocked" loading="lazy" decoding="async"><h3>Flappy Bird</h3></a>
+        <a class="game-card" href="games/bad-time-simulator.html"><img src="images/badtimesimulator.webp" alt="Bad Time Simulator unblocked" loading="lazy" decoding="async"><h3>Bad Time Simulator</h3></a>
+        <a class="game-card" href="games/baldi-plus.html"><img src="images/baldiplus.webp" alt="Baldi&#39;s Basics Plus unblocked" loading="lazy" decoding="async"><h3>Baldi&#39;s Basics Plus</h3></a>
+        <a class="game-card" href="games/bejeweled2.html"><img src="images/bejeweled2.webp" alt="Bejeweled 2 unblocked" loading="lazy" decoding="async"><h3>Bejeweled 2</h3></a>
+        <a class="game-card" href="games/bloxors.html"><img src="images/bloxors.webp" alt="Bloxors unblocked" loading="lazy" decoding="async"><h3>Bloxors</h3></a>
+        <a class="game-card" href="games/catmario.html"><img src="images/catmario.webp" alt="Cat Mario unblocked" loading="lazy" decoding="async"><h3>Cat Mario</h3></a>
+        <a class="game-card" href="games/clubpenguin.html"><img src="images/clubpenguin.webp" alt="Club Penguin unblocked" loading="lazy" decoding="async"><h3>Club Penguin</h3></a>
+        <a class="game-card" href="games/curveball.html"><img src="images/curveball.webp" alt="Curveball unblocked" loading="lazy" decoding="async"><h3>Curveball</h3></a>
+        <a class="game-card" href="games/adastra.html"><img src="images/adastra.webp" alt="Adastra unblocked" loading="lazy" decoding="async"><h3>Adastra</h3></a>
+        <a class="game-card" href="games/arcade-wizard.html"><img src="images/arcadewizard.webp" alt="Arcade Wizard unblocked" loading="lazy" decoding="async"><h3>Arcade Wizard</h3></a>
+        <a class="game-card" href="games/bad-icecream-1.html"><img src="images/badicecream1.webp" alt="Bad Ice Cream 1 unblocked" loading="lazy" decoding="async"><h3>Bad Ice Cream 1</h3></a>
+        <a class="game-card" href="games/bad-icecream-2.html"><img src="images/badicecream2.webp" alt="Bad Ice Cream 2 unblocked" loading="lazy" decoding="async"><h3>Bad Ice Cream 2</h3></a>
+        <a class="game-card" href="games/bad-icecream-3.html"><img src="images/badicecream3.webp" alt="Bad Ice Cream 3 unblocked" loading="lazy" decoding="async"><h3>Bad Ice Cream 3</h3></a>
+        <a class="game-card" href="games/angrybirdshalloween.html"><img src="images/angrybirdshalloween.webp" alt="Angry Birds Halloween unblocked" loading="lazy" decoding="async"><h3>Angry Birds Halloween</h3></a>
+        <a class="game-card" href="games/acegangster.html"><img src="images/acegangster.webp" alt="Ace Gangster unblocked" loading="lazy" decoding="async"><h3>Ace Gangster</h3></a>
+        <a class="game-card" href="games/10-minutes-till-dawn.html"><img src="images/10mintilldawn.webp" alt="10 Minutes Till Dawn unblocked" loading="lazy" decoding="async"><h3>10 Minutes Till Dawn</h3></a>
+        <a class="game-card" href="games/slope2.html"><img src="images/slope2.webp" alt="Slope 2 unblocked" loading="lazy" decoding="async"><h3>Slope 2</h3></a>
+        <a class="game-card" href="games/blockblast.html"><img src="images/blockblast.webp" alt="Block Blast unblocked" loading="lazy" decoding="async"><h3>Block Blast</h3></a>
+        <a class="game-card" href="games/blumgi-rocket.html"><img src="images/blumgi-rocket.jpeg" alt="Blumgi Rocket unblocked" loading="lazy" decoding="async"><h3>Blumgi Rocket</h3></a>
+        <a class="game-card" href="games/idle-breakout.html"><img src="images/idlebreakout.webp" alt="Idle Breakout unblocked" loading="lazy" decoding="async"><h3>Idle Breakout</h3></a>
+        <a class="game-card" href="games/gunspin.html"><img src="images/gunspin.webp" alt="Gunspin unblocked" loading="lazy" decoding="async"><h3>Gunspin</h3></a>
+        <a class="game-card" href="games/learntofly.html"><img src="games/learntofly/icon.png" alt="Learn To Fly unblocked" loading="lazy" decoding="async"><h3>Learn To Fly</h3></a>
+        <a class="game-card" href="games/learntofly2.html"><img src="images/learntofly2.webp" alt="Learn To Fly 2 unblocked" loading="lazy" decoding="async"><h3>Learn To Fly 2</h3></a>
+        <a class="game-card" href="games/learntofly3.html"><img src="images/learntofly3.webp" alt="Learn To Fly 3 unblocked" loading="lazy" decoding="async"><h3>Learn To Fly 3</h3></a>
+        <a class="game-card" href="games/houseofhazards.html"><img src="images/houseofhazards.webp" alt="House Of Hazards unblocked" loading="lazy" decoding="async"><h3>House Of Hazards</h3></a>
+        <a class="game-card" href="games/holeio.html"><img src="images/holeio.webp" alt="Hole.io unblocked" loading="lazy" decoding="async"><h3>Hole.io</h3></a>
+        <a class="game-card" href="games/tanktrouble.html"><img src="images/tanktrouble.webp" alt="Tank Trouble unblocked" loading="lazy" decoding="async"><h3>Tank Trouble</h3></a>
+      </div>
     </section>
   </main>
 
