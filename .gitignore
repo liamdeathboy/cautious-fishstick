@@ -109,4 +109,11 @@ games/omori-fixed/maps/map230.aubrey
 games/omori-fixed/maps/map23.aubrey
 games/omori-fixed/maps/map229.aubrey
 games/omori-fixed/maps/map228.aubrey
+
+# GTA Vice City WASM dev project (Vite source, node config, screenshots, zip).
+# The playable game is self-hosted at games/gta-vice-city/ — a trimmed static
+# copy with the full runtime asset set (core .data split into <50 MB parts, plus
+# the vcsky/ radio + cutscene + model streams). This dev folder is reference
+# only — keep it local, don't deploy it.
+games/GTA-Vice-City-Online-Play-Free-in-Browser-main/
 games/omori-fixed/maps/map227.aubrey

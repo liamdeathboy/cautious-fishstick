@@ -1,0 +1,226 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no" />
+  <meta name="robots" content="noindex" />
+  <title>GTA Vice City — Player</title>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+  <body
+    class="app-body"
+    data-is-touch="0"
+    data-state-car="0"
+    data-state-car-gun="0"
+    data-state-gun="0"
+    data-state-bike="0"
+    data-state-menu="1"
+    data-state-cutscene="0"
+    data-state-mobring="0"
+    data-state-job="0"
+    data-state-disable-controls="0"
+    data-state-panzer="0"
+    data-state-car-with-weapon="0"
+    data-state-hunter="0"
+    data-state-scope-mode="0"
+    data-state-scope-gun="0"
+  >
+
+    <!-- Rotate overlay (shown during gameplay in portrait) -->
+    <div class="rotate-overlay" role="alert" aria-live="polite">
+      <span class="rotate-overlay-icon" aria-hidden="true">&#128241;</span>
+      <span>Rotate to landscape to play</span>
+      <span>Turn your device sideways for the best experience</span>
+    </div>
+
+    <!-- Crash / fatal error overlay (shown when game fails after launching) -->
+    <div id="crash-overlay" class="crash-overlay hidden" role="alert" aria-live="assertive">
+      <div class="crash-box">
+        <p class="crash-title">⚠ Game Error</p>
+        <p class="crash-msg" id="crash-msg">The game encountered an error and cannot continue.</p>
+        <div class="crash-actions">
+          <button class="crash-btn crash-btn-primary" onclick="location.reload()">↺ Reload page</button>
+          <button class="crash-btn" onclick="document.getElementById('crash-overlay').classList.add('hidden')">Dismiss</button>
+        </div>
+        <p class="crash-hint">If this keeps happening, try setting FPS limit to 30 or use a different browser.</p>
+      </div>
+    </div>
+
+    <!-- Game intro + loader (shown during game load sequence) -->
+    <div class="wasted-container" hidden aria-hidden="true"></div>
+    <div class="intro-container" hidden aria-hidden="true">
+      <video class="intro" src="intro.mp4" aria-hidden="true"></video>
+      <div class="loader-container">
+        <div class="progress-bar-container" id="spinner">
+          <div class="progress-bar-fill"></div>
+        </div>
+        <div id="status">Loading...</div>
+        <div><progress id="progress"></progress></div>
+      </div>
+    </div>
+
+    <!-- Full-screen loading overlay (shown during download/extraction) -->
+    <div id="setup-progress" class="hidden" role="status" aria-label="Loading game files">
+      <p class="ls-title" id="setup-progress-title">LOADING...</p>
+      <div class="ls-bar-wrap" role="progressbar" aria-valuemin="0" aria-valuemax="100">
+        <div class="ls-bar-fill" id="setup-progress-bar"></div>
+        <div class="ls-bar-shimmer"></div>
+      </div>
+      <p id="setup-progress-percent" class="ls-pct" aria-live="polite">0%</p>
+      <p id="setup-progress-label" class="ls-label" aria-live="polite">Preparing&hellip;</p>
+      <p id="setup-progress-file" class="ls-file" aria-live="polite"></p>
+      <p id="setup-progress-tip" class="ls-tip"></p>
+    </div>
+
+    <!-- Save Manager Modal -->
+    <div id="save-manager-modal" class="sm-overlay hidden" role="dialog" aria-modal="true" aria-label="Save Manager" aria-hidden="true">
+      <div class="sm-panel">
+        <div class="sm-header">
+          <h2 class="sm-title">SAVE MANAGER</h2>
+          <button class="sm-close" id="save-manager-close" aria-label="Close save manager">✕</button>
+        </div>
+        <p id="sm-note" class="sm-note hidden"></p>
+        <p id="sm-loading" class="sm-loading">Loading save slots…</p>
+        <div id="sm-slots" class="sm-slots"></div>
+        <div class="sm-footer">
+          <button class="sm-refresh-btn" id="sm-refresh-btn">↻ Refresh</button>
+          <span class="sm-footer-note">Uploads take effect after restarting the game</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Main page -->
+    <div class="page-wrap">
+
+      <div class="vc-page">
+
+        <!-- Title -->
+        <header class="vc-header">
+          <h1 class="vc-title">GTA Vice City</h1>
+        </header>
+
+        <!-- Setup overlay (functional hook — keeps JS working) -->
+        <div id="setup-overlay">
+          <!-- Error box -->
+          <div id="setup-error" class="vc-error hidden" role="alert"></div>
+
+          <!-- Storage status (shown when checking/ready) -->
+          <div id="storage-status" class="vc-storage-status hidden" role="status" aria-live="polite">Checking local game files…</div>
+
+          <!-- Hidden file picker elements (used when no auto-URL configured) -->
+          <a id="dl-link" class="hidden" href="#" download>Download game.tar.gz</a>
+          <label class="file-picker hidden" for="game-file-input">
+            <span class="file-picker-label">Select game.tar.gz</span>
+            <span id="selected-file-name" class="file-picker-name">No file selected</span>
+          </label>
+          <input type="file" id="game-file-input" class="hidden" accept=".tar.gz,.gz,application/gzip" aria-label="Select game archive file" />
+        </div>
+
+        <!-- Game control card -->
+        <div class="vc-game-card">
+
+          <!-- PLAY GAME -->
+          <div class="play-wrap click-to-play">
+            <button id="click-to-play-button" class="vc-btn-play" type="button" disabled aria-label="Play GTA Vice City">
+              PLAY GAME
+            </button>
+          </div>
+
+          <!-- SAVE MANAGER -->
+          <button id="save-manager-btn" class="vc-btn-secondary" type="button">
+            SAVE MANAGER
+          </button>
+
+          <!-- Touch Controls Toggle -->
+          <div class="vc-fps-row">
+            <label class="vc-fps-label" for="touch-controls-toggle">TOUCH CONTROLS:</label>
+            <button id="touch-controls-toggle" class="vc-touch-toggle" type="button" aria-label="Toggle on-screen touch controls">AUTO</button>
+          </div>
+
+          <!-- FPS Limit -->
+          <div class="vc-fps-row">
+            <label class="vc-fps-label" for="fps-limit-input">FPS LIMIT:</label>
+            <input id="fps-limit-input" class="vc-fps-input" type="number" value="0" min="0" max="300" step="10" aria-label="FPS Limit" />
+          </div>
+
+          <p class="vc-note"><strong>Note:</strong> Frame rate is unlocked (0) for best performance on modern hardware. However, the original game was designed for 30 FPS. Unlocked framerates may cause weird physics bugs.</p>
+          <p class="vc-note">If you get stuck on a mission due to physics, or if you are playing on a low-end or mobile device that is overheating, change the limit above to 30.</p>
+
+          <!-- Share / Fullscreen -->
+          <div class="vc-action-row">
+            <button id="share-btn" class="vc-action-btn" type="button">&#x2B06; Share</button>
+            <button id="fullscreen-btn" class="vc-action-btn" type="button">&#x26F6; Fullscreen</button>
+          </div>
+
+          <!-- Reset (hidden until game is ready) -->
+          <button id="reset-game-btn" class="vc-reset-btn hidden" type="button">Reset game data</button>
+
+        </div>
+      </div>
+    </div>
+    <canvas class="emscripten" id="canvas" aria-hidden="true"></canvas>
+
+    <!-- Touch controls -->
+    <div class="touch-controls-wrapper" aria-hidden="true">
+      <div id="move"></div>
+      <div id="look"></div>
+
+      <!-- Always visible in-game -->
+      <div class="touch-control menu"></div>
+      <div class="touch-control weapon"></div>
+      <button id="tc-cheat-btn"></button>
+
+      <!-- On-foot actions (hidden in car) -->
+      <div class="touch-control fist"></div>
+      <div class="touch-control jump"></div>
+      <div class="touch-control run"></div>
+      <div class="touch-control car getIn"></div>
+
+      <!-- In-car actions (hidden on foot) -->
+      <div class="touch-control car getOut"></div>
+      <div class="touch-control camera"></div>
+      <div class="touch-control horn"></div>
+      <div class="touch-control drift"></div>
+
+      <!-- Contextual -->
+      <div class="touch-control mobile"></div>
+      <div class="touch-control job"></div>
+      <div class="touch-control radio">◀ RADIO ▶</div>
+      <div class="touch-control fireRight"></div>
+      <div class="touch-control fireLeft"></div>
+      <div class="touch-control gas"></div>
+      <div class="touch-control brake"></div>
+    </div>
+
+    <!-- Cheat keyboard overlay -->
+    <div id="cheat-overlay" class="cheat-overlay hidden">
+      <div class="cheat-panel">
+        <div class="cheat-header">
+          <span class="cheat-title">CHEAT CODES</span>
+          <button id="cheat-close-btn" class="cheat-close-btn">✕ CLOSE</button>
+        </div>
+        <div class="cheat-typed-row">
+          <span class="cheat-typed-label">TYPING:</span>
+          <span id="cheat-typed" class="cheat-typed">▮</span>
+        </div>
+        <div id="cheat-keys" class="cheat-keys"></div>
+        <div class="cheat-quick-title">QUICK CHEATS</div>
+        <div class="cheat-quick">
+          <button class="cheat-quick-btn" data-cheat="ASPIRINE">FULL HEALTH</button>
+          <button class="cheat-quick-btn" data-cheat="YOUWONTLIKETHIS">FULL ARMOR</button>
+          <button class="cheat-quick-btn" data-cheat="LEAVEMEALONE">CLEAR WANTED</button>
+          <button class="cheat-quick-btn" data-cheat="BRINGITON">6 STARS</button>
+          <button class="cheat-quick-btn" data-cheat="PANZER">SPAWN TANK</button>
+          <button class="cheat-quick-btn" data-cheat="BIGBANG">BLOW UP CARS</button>
+          <button class="cheat-quick-btn" data-cheat="NUTTERTOOLS">HEAVY WEAPONS</button>
+          <button class="cheat-quick-btn" data-cheat="PROFESSIONALTOOLS">COMBAT WEAPONS</button>
+          <button class="cheat-quick-btn" data-cheat="FANNYMAGNET">WOMEN FOLLOW</button>
+          <button class="cheat-quick-btn" data-cheat="STILLLIKEDRESSINGUP">CHANGE SKIN</button>
+        </div>
+      </div>
+    </div>
+
+    <script type="module" src="main.js"></script>
+  </body>
+</html>

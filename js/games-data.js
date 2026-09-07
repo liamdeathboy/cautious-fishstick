@@ -1,5 +1,6 @@
 window.SCHPLAY_GAMES = window.SCHPLAY_GAMES || {};
 window.SCHPLAY_GAMES.list = [
+    { name: "GTA Vice City", href: "games/gta-vice-city.html", img: "images/gta-vice-city.jpg" },
     { name: "Deep Freeze", href: "games/deep-freeze.html", img: "images/deepfreeze.webp" },
     { name: "Doodle Jump", href: "games/doodlejump.html", img: "images/doodlejump.webp" },
     { name: "Dadish 1", href: "games/dadish-1.html", img: "images/dadish" },
