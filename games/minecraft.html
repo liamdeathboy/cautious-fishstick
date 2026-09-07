@@ -352,7 +352,7 @@
           </button>
         </div>
 
-        <iframe id="minecraft-iframe" src="minecraft/hi.html" title="Play Minecraft (Eagler)" allowfullscreen loading="lazy"></iframe>
+        <iframe id="minecraft-iframe" src="minecraft/hi.html" title="Play Minecraft (Eagler)" allow="fullscreen; pointer-lock; gamepad; autoplay; keyboard-map" allowfullscreen loading="lazy"></iframe>
       </div>
       <aside class="game-meta-card" id="how-to-play">
         <div class="game-ad-slot" aria-label="Advertisement">
@@ -572,6 +572,24 @@
 
     const gameViewport = document.getElementById('minecraft-iframe');
     const fullscreenButton = document.querySelector('.game-player-card .game-fullscreen-toggle');
+
+    // Route keyboard focus into the game frame on any interaction with it, so
+    // movement keys (WASD / space / shift) reach Eaglercraft instead of the page.
+    if (gameViewport) {
+      const focusGame = () => {
+        try { gameViewport.contentWindow && gameViewport.contentWindow.focus(); } catch (e) {}
+        try { gameViewport.focus(); } catch (e) {}
+      };
+      ['pointerdown', 'mousedown', 'touchstart'].forEach((evt) => {
+        gameViewport.addEventListener(evt, focusGame);
+        const card = gameViewport.closest('.game-player-card');
+        if (card) card.addEventListener(evt, focusGame);
+      });
+      gameViewport.addEventListener('load', focusGame);
+      document.addEventListener('pointerlockchange', () => {
+        if (document.pointerLockElement) focusGame();
+      });
+    }
 
     if (gameViewport && fullscreenButton) {
       const updateFullscreenIcon = () => {
