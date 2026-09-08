@@ -1,5 +1,4 @@
 https://schplay.com/games/10-minutes-till-dawn.html
-https://schplay.com/games/1v1lol.html
 https://schplay.com/games/2048-merge-run.html
 https://schplay.com/games/2048.html
 https://schplay.com/games/2d-car-driving-drive-safe.html
@@ -161,7 +160,6 @@ https://schplay.com/games/memory-exclusive.html
 https://schplay.com/games/milkman-karlson.html
 https://schplay.com/games/minecraft-tower-defence-2.html
 https://schplay.com/games/minecraft-tower-defence.html
-https://schplay.com/games/minecraft.html
 https://schplay.com/games/minescraftter-two-player.html
 https://schplay.com/games/minesweeper.html
 https://schplay.com/games/minesweeperplus.html
@@ -218,7 +216,6 @@ https://schplay.com/games/shovel-3d.html
 https://schplay.com/games/shuffle.html
 https://schplay.com/games/slender.html
 https://schplay.com/games/slitherio.html
-https://schplay.com/games/slope.html
 https://schplay.com/games/slope2.html
 https://schplay.com/games/snailiad.html
 https://schplay.com/games/snake.html
@@ -281,6 +278,17 @@ https://schplay.com/games/worldshardestgame2.html
 https://schplay.com/games/yandere-simulator.html
 https://schplay.com/games/yume-nikki.html
 https://schplay.com/games/z-machine.html
+https://schplay.com/1v1-lol-unblocked/
+https://schplay.com/2-player-games-unblocked/
+https://schplay.com/arcade-games-unblocked/
+https://schplay.com/io-games-unblocked/
+https://schplay.com/minecraft-unblocked/
+https://schplay.com/puzzle-games-unblocked/
+https://schplay.com/racing-games-unblocked/
+https://schplay.com/shooting-games-unblocked/
+https://schplay.com/slope-unblocked/
+https://schplay.com/totally-science-alternative/
+https://schplay.com/unblocked-games-66/
 https://schplay.com/2player.html
 https://schplay.com/about-our-ads.html
 https://schplay.com/about.html

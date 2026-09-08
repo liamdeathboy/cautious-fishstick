@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="/css/monocraft.css">
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-WT144T942K"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-WT144T942K');
+    </script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="index, follow">
+    <meta name="description" content="Play Slope unblocked free at Schplay. Guide the neon ball down an endless course - no download, works on any Chromebook or school laptop.">
+    <meta name="keywords" content="slope unblocked, slope game, play slope online, unblocked slope, slope unblocked games, free slope, reflex games, endless runner, unblocked games">
+    <meta name="theme-color" content="#0f1a2a">
+    <title>Slope Unblocked - Play Free on Chromebook</title>
+    <link rel="canonical" href="https://schplay.com/slope-unblocked/">
+    <link rel="icon" href="/images/favicon.ico" sizes="any">
+    <link rel="apple-touch-icon" href="/images/favicon-32x32.png">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Schplay">
+    <meta property="og:title" content="Slope Unblocked - Play Free on Chromebook">
+    <meta property="og:description" content="Play Slope unblocked free at Schplay. Guide the neon ball down an endless course - no download, works on any Chromebook or school laptop.">
+    <meta property="og:url" content="https://schplay.com/slope-unblocked/">
+    <meta property="og:image" content="https://schplay.com/images/slope.webp">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Slope Unblocked - Play Free on Chromebook">
+    <meta name="twitter:description" content="Play Slope unblocked free at Schplay. Guide the neon ball down an endless course - no download, works on any Chromebook or school laptop.">
+    <meta name="twitter:image" content="https://schplay.com/images/slope.webp">
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'" crossorigin="anonymous">
+    <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" crossorigin="anonymous"></noscript>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=optional" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=optional"></noscript>
+    <link rel="stylesheet" href="/css/new-style.css">
+    <link rel="stylesheet" href="/css/restyle.css">
+    <link rel="stylesheet" href="/css/user-choice.css">
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "VideoGame",
+            "name": "Slope",
+            "description": "Slope is a high-speed endless runner where you guide a glowing ball down a neon tunnel filled with hazards.",
+            "genre": [
+                "Endless Runner",
+                "Skill"
+            ],
+            "keywords": [
+                "Slope unblocked no flash",
+                "Slope unblocked 66",
+                "Slope unblocked github",
+                "Slope full screen",
+                "Slope google chrome",
+                "Slope game at school"
+            ],
+            "url": "https://schplay.com/slope-unblocked/",
+            "image": "https://schplay.com/images/slope.webp",
+            "playMode": "SinglePlayer",
+            "applicationCategory": "Game",
+            "operatingSystem": "Any",
+            "offers": {
+                "@type": "Offer",
+                "price": "0",
+                "priceCurrency": "USD"
+            },
+            "publisher": {
+                "@type": "Organization",
+                "name": "Schplay"
+            }
+        }
+    </script>
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+                { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://schplay.com/" },
+                { "@type": "ListItem", "position": 2, "name": "All Games", "item": "https://schplay.com/allgames.html" },
+                { "@type": "ListItem", "position": 3, "name": "Slope Unblocked", "item": "https://schplay.com/slope-unblocked/" }
+            ]
+        }
+    </script>
+    <style>
+        .game-player-section {
+            display: grid;
+            grid-template-columns: minmax(0, 1fr);
+            gap: 20px;
+            margin-bottom: 32px;
+        }
+
+        .game-player-card, .game-meta-card {
+            background-color: #1c2a3e;
+            border-radius: 16px;
+            padding: 20px;
+            box-shadow: 0 8px 24px rgba(5, 15, 32, 0.35);
+        }
+
+        .game-player-header {
+            display: flex;
+            justify-content: flex-end;
+            margin-bottom: 12px;
+        }
+
+        .game-fullscreen-toggle {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: rgba(15, 32, 58, 0.75);
+            border: 1px solid rgba(86, 143, 215, 0.65);
+            color: var(--text-color);
+            padding: 8px 14px;
+            border-radius: 12px;
+            cursor: pointer;
+            font-weight: 600;
+            transition: transform 0.2s ease, background-color 0.2s ease;
+        }
+
+        .game-fullscreen-toggle i {
+            color: var(--secondary-color);
+        }
+
+        .game-fullscreen-toggle:hover,
+        .game-fullscreen-toggle:focus-visible {
+            transform: translateY(-1px);
+            background: rgba(24, 46, 78, 0.9);
+            outline: none;
+        }
+
+        .game-player-card iframe {
+            width: 100%;
+            height: 640px;
+            border: none;
+            border-radius: 12px;
+            background-color: #000;
+        }
+
+        .game-player-card iframe:fullscreen,
+        .game-player-card iframe:-webkit-full-screen,
+        .game-player-card iframe:-moz-full-screen,
+        .game-player-card iframe:-ms-fullscreen {
+            width: 100vw;
+            height: 100vh;
+            border-radius: 0;
+        }
+
+        .game-meta-card h2 {
+            font-size: 1.35rem;
+            margin-bottom: 12px;
+        }
+
+        .game-meta-card p {
+            color: var(--text-muted);
+            line-height: 1.6;
+            margin-bottom: 16px;
+        }
+
+        .game-meta-card ul {
+            padding-left: 20px;
+            color: var(--text-muted);
+        }
+
+        .game-meta-card li {
+            margin-bottom: 10px;
+        }
+
+        .game-meta-card .game-ad-slot {
+            margin: 0 0 20px;
+        }
+
+        .meta-details {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 18px;
+            margin-bottom: 24px;
+            list-style: none;
+            padding: 0;
+        }
+
+        .meta-details dt {
+            font-size: 0.85rem;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+            color: var(--text-muted);
+            margin-bottom: 6px;
+        }
+
+        .meta-details dd {
+            margin: 0;
+            font-weight: 600;
+        }
+
+        .meta-divider {
+            height: 1px;
+            border: none;
+            background: rgba(255, 255, 255, 0.08);
+            margin: 26px 0;
+        }
+
+        .meta-subheading {
+            font-size: 1.1rem;
+            margin-top: 26px;
+            margin-bottom: 12px;
+        }
+
+        .meta-code-list {
+            list-style: none;
+            padding: 0;
+            margin: 18px 0;
+            font-family: "Courier New", Courier, monospace;
+            font-size: 0.95rem;
+            color: var(--text-muted);
+        }
+
+        .meta-code-list li {
+            margin-bottom: 6px;
+        }
+
+        .meta-hint {
+            font-size: 0.95rem;
+            color: var(--text-muted);
+            margin-top: 16px;
+        }
+
+        .game-ad-slot {
+            margin-top: 20px;
+            background: rgba(12, 24, 42, 0.65);
+            border-radius: 12px;
+            padding: 12px;
+            text-align: center;
+        }
+
+        .game-ad-slot p {
+            font-size: 0.85rem;
+            margin-bottom: 12px;
+            color: var(--text-muted);
+        }
+
+        @media (max-width: 1100px) {
+            .game-player-section {
+                grid-template-columns: 1fr;
+            }
+            .game-player-card iframe {
+                height: 520px;
+            }
+            .game-player-header {
+                justify-content: center;
+            }
+        }
+
+        /* ── Breadcrumb, page H1 & static internal-link sections (SEO) ── */
+        .game-breadcrumb {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 8px;
+            font-size: 0.9rem;
+            margin: 4px 0 14px;
+            color: #9fb3c8;
+        }
+        .game-breadcrumb a {
+            color: #9fb3c8;
+            text-decoration: none;
+        }
+        .game-breadcrumb a:hover { color: #fff; text-decoration: underline; }
+        .game-breadcrumb .breadcrumb-sep { color: #52657d; }
+        .game-breadcrumb [aria-current="page"] { color: #dbe6f2; }
+
+        .game-title-block { margin: 0 0 18px; }
+        .game-title {
+            font-size: clamp(1.6rem, 3vw, 2.3rem);
+            line-height: 1.15;
+            margin: 0 0 6px;
+            color: #fff;
+            letter-spacing: -0.01em;
+        }
+        .game-subtitle {
+            margin: 0;
+            color: #9fb3c8;
+            font-size: 1rem;
+            max-width: 70ch;
+        }
+
+        .more-games-section { margin-top: 28px; }
+        .more-games-section .games-grid { margin-top: 4px; }
+
+        .category-browse {
+            margin: 32px 0 8px;
+            padding: 22px;
+            background-color: #1c2a3e;
+            border-radius: 16px;
+        }
+        .category-browse-title {
+            font-size: 1.15rem;
+            margin: 0 0 14px;
+            color: #fff;
+        }
+        .category-browse-links {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        .category-browse-links .category-chip {
+            display: inline-flex;
+            align-items: center;
+            padding: 8px 16px;
+            border-radius: 999px;
+            background-color: #24384f;
+            color: #dbe6f2;
+            font-weight: 600;
+            font-size: 0.92rem;
+            text-decoration: none;
+            transition: background-color 0.15s ease, color 0.15s ease;
+        }
+        .category-browse-links .category-chip:hover {
+            background-color: #2f9bff;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+  <header id="site-header" role="banner">
+    <div id="navbar-placeholder"></div>
+  </header>
+
+  <main class="container" role="main">
+
+    <nav class="game-breadcrumb" aria-label="Breadcrumb">
+      <a href="/">Home</a>
+      <span class="breadcrumb-sep" aria-hidden="true">›</span>
+      <a href="/allgames.html">Games</a>
+      <span class="breadcrumb-sep" aria-hidden="true">›</span>
+      <span aria-current="page">Slope Unblocked</span>
+    </nav>
+
+    <div class="game-title-block">
+      <h1 class="game-title">Slope Unblocked</h1>
+      <p class="game-subtitle">Play Slope free online — no download, no install, playable on any Chromebook or school laptop.</p>
+    </div>
+
+    <section class="game-player-section">
+      <div class="game-player-card" role="region" aria-label="Slope gameplay">
+        <div class="game-player-header">
+          <button class="game-fullscreen-toggle" type="button" aria-controls="slope-iframe" aria-label="Toggle fullscreen">
+            <i class="fas fa-expand" aria-hidden="true"></i>
+            <span>Fullscreen</span>
+          </button>
+        </div>
+        <iframe id="slope-iframe" data-game-src="/games/slope/index.html" title="Play Slope" allowfullscreen loading="lazy"></iframe>
+      </div>
+      <aside class="game-meta-card" id="how-to-play">
+        <div class="game-ad-slot" aria-label="Advertisement">
+          <p>Ads keep Schplay free for everyone.</p>
+          <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5690564842575659" crossorigin="anonymous"></script>
+          <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-5690564842575659" data-ad-slot="5102033888" data-ad-format="auto" data-full-width-responsive="true"></ins>
+          <script>
+            (adsbygoogle = window.adsbygoogle || []).push({});
+          </script>
+        </div>
+        <dl class="meta-details">
+          <div>
+            <dt>Genre</dt>
+            <dd>Reflex · Endless Runner</dd>
+          </div>
+          <div>
+            <dt>Release</dt>
+            <dd>Dec 03, 2014</dd>
+          </div>
+          <div>
+            <dt>Platforms</dt>
+            <dd>Browser, Mobile</dd>
+          </div>
+        </dl>
+        <hr class="meta-divider">
+        <h2>Instructions</h2>
+        <p>Hold A or the left arrow to drift left, D or the right arrow to drift right — there is no jump, brake, or speed control, so every obstacle has to be dodged sideways while the ball keeps accelerating down the track.</p>
+        <p>Red blocks, narrow rails, and sudden gaps appear with no warning beyond what is already visible ahead, so react to what is on-screen rather than trying to memorize a fixed layout since the course is procedurally generated and different every run.</p>
+        <p>Because speed increases continuously, a lane you can drift across safely in the first thirty seconds may require a much earlier steering commitment later in the same run — the correct reaction distance keeps shrinking.</p>
+        <h2>Controls</h2>
+        <ul>
+          <li><strong>Left / A</strong> &mdash; drift left</li>
+          <li><strong>Right / D</strong> &mdash; drift right</li>
+        </ul>
+        <h2>Tips to Master Slope</h2>
+        <p>Slope gives you exactly two inputs — left and right — and no way to slow the ball down. When a red block or gap appears, the only option is committing to a lane change early enough to clear it; hesitating and drifting halfway is what causes most falls, since the ball will still be centered over the hazard when it arrives.</p>
+        <h3 class="meta-subheading">Track the edges, not just the obstacles</h3>
+        <p>The slope has a limited width, and the ball can roll off the side just as easily as it can hit a red block. Chaining several steering corrections in the same direction to dodge one obstacle can carry you off the track entirely, so every dodge needs a matching correction back toward center.</p>
+        <h3 class="meta-subheading">Expect the run to get harder, not the pattern to repeat</h3>
+        <p>Because the course generates new terrain as you go and speed rises the longer you last, there is no fixed sequence of obstacles to learn by heart. Runs end when reaction time stops keeping pace with the current speed, so the practical skill being built is faster recognition, not memorization.</p>
+        <h3 class="meta-subheading">Who made Slope?</h3>
+        <p>Slope was built by Y8 Studio and published on Y8 Games, with design work credited to Rob Kay, previously known for lead design work on the Guitar Hero and Rock Band franchises.</p>
+      </aside>
+    </section>
+
+    <section class="games-grid-section" aria-labelledby="slope-recommendations-title">
+      <div class="section-header">
+        <h2 id="slope-recommendations-title">Players Also Enjoy</h2>
+        <span id="slope-recommendations-count" class="games-count" aria-live="polite"></span>
+      </div>
+      <div class="games-grid" id="slope-recommendations" aria-live="polite"></div>
+    </section>
+
+    <section class="games-grid-section more-games-section" aria-labelledby="slope-more-title">
+      <div class="section-header">
+        <h2 id="slope-more-title">More Free Unblocked Games</h2>
+      </div>
+      <nav class="games-grid" aria-label="More free unblocked games">
+          <a class="game-card" href="/games/subwaysurfer.html"><img src="https://img.poki.com/cdn-cgi/image/quality=78,width=314,height=314,fit=cover,f=auto/81a0a3f18cf0ee129e56edb50fc52c3b.png" alt="Subway Surfers unblocked" loading="lazy" decoding="async"><h3>Subway Surfers</h3></a>
+          <a class="game-card" href="/games/1v1lol.html"><img src="https://play-lh.googleusercontent.com/QYGRIDJbyVO7L7jH8CwiKJ4NumTGgcTVqU3ITooLWxro-eeNns1RZ0uwGGFe-r8M4co" alt="1v1.lol unblocked" loading="lazy" decoding="async"><h3>1v1.lol</h3></a>
+          <a class="game-card" href="/games/retrobowl.html"><img src="/images/retrobowl.webp" alt="Retro Bowl unblocked" loading="lazy" decoding="async"><h3>Retro Bowl</h3></a>
+          <a class="game-card" href="/games/basketballstars.html"><img src="/images/basketballstars.webp" alt="Basketball Stars unblocked" loading="lazy" decoding="async"><h3>Basketball Stars</h3></a>
+          <a class="game-card" href="/games/motox3m.html"><img src="/images/motocross.webp" alt="MotoX3M Games unblocked" loading="lazy" decoding="async"><h3>MotoX3M Games</h3></a>
+          <a class="game-card" href="/games/ovo.html"><img src="/images/ovo.webp" alt="OVO unblocked" loading="lazy" decoding="async"><h3>OVO</h3></a>
+          <a class="game-card" href="/games/cookie-clicker-working-2026.html"><img src="/games/cookie-clicker/img/cookieShower1.png" alt="Cookie Clicker Working 2026 unblocked" loading="lazy" decoding="async"><h3>Cookie Clicker Working 2026</h3></a>
+          <a class="game-card" href="/games/idle-breakout.html"><img src="/images/idlebreakout.webp" alt="Idle Breakout unblocked" loading="lazy" decoding="async"><h3>Idle Breakout</h3></a>
+          <a class="game-card" href="/games/agario.html"><img src="/images/agario.webp" alt="Agar.io unblocked" loading="lazy" decoding="async"><h3>Agar.io</h3></a>
+          <a class="game-card" href="/games/slitherio.html"><img src="/images/slitherio.webp" alt="Slither.io unblocked" loading="lazy" decoding="async"><h3>Slither.io</h3></a>
+          <a class="game-card" href="/games/bad-time-simulator.html"><img src="/images/badtimesimulator.webp" alt="Bad Time Simulator unblocked" loading="lazy" decoding="async"><h3>Bad Time Simulator</h3></a>
+          <a class="game-card" href="/games/drivemad.html"><img src="/images/drivemad.webp" alt="Drive Mad unblocked" loading="lazy" decoding="async"><h3>Drive Mad</h3></a>
+          <a class="game-card" href="/games/blockblast.html"><img src="/images/blockblast.webp" alt="Block Blast unblocked" loading="lazy" decoding="async"><h3>Block Blast</h3></a>
+          <a class="game-card" href="/games/getaway-shootout.html"><img src="/images/getawayshootout.webp" alt="Getaway Shootout unblocked" loading="lazy" decoding="async"><h3>Getaway Shootout</h3></a>
+          <a class="game-card" href="/games/rooftopsnipers.html"><img src="/images/rooftopsnipers.webp" alt="Rooftop Sniper unblocked" loading="lazy" decoding="async"><h3>Rooftop Sniper</h3></a>
+          <a class="game-card" href="/games/houseofhazards.html"><img src="/images/houseofhazards.webp" alt="House Of Hazards unblocked" loading="lazy" decoding="async"><h3>House Of Hazards</h3></a>
+          <a class="game-card" href="/games/doodlejump.html"><img src="/images/doodlejump.webp" alt="Doodle Jump unblocked" loading="lazy" decoding="async"><h3>Doodle Jump</h3></a>
+          <a class="game-card" href="/games/flappy-bird.html"><img src="/images/flappybird.webp" alt="Flappy Bird unblocked" loading="lazy" decoding="async"><h3>Flappy Bird</h3></a>
+          <a class="game-card" href="/games/pacman.html"><img src="/images/pacman.webp" alt="Pacman unblocked" loading="lazy" decoding="async"><h3>Pacman</h3></a>
+          <a class="game-card" href="/games/minecraft.html"><img src="/images/mc.webp" alt="Minecraft (Eagler) unblocked" loading="lazy" decoding="async"><h3>Minecraft (Eagler)</h3></a>
+          <a class="game-card" href="/games/duck-life-5.html"><img src="/images/ducklife5.webp" alt="Duck Life 5 unblocked" loading="lazy" decoding="async"><h3>Duck Life 5</h3></a>
+          <a class="game-card" href="/games/real-driving-simulator.html"><img src="https://img.gamemonetize.com/86nvuq9kpejinx49fv27relwo1b8ulrz/512x384.jpg" alt="Real Driving Simulator unblocked" loading="lazy" decoding="async"><h3>Real Driving Simulator</h3></a>
+          <a class="game-card" href="/games/tetris.html"><img src="/images/tetris.webp" alt="Tetris unblocked" loading="lazy" decoding="async"><h3>Tetris</h3></a>
+          <a class="game-card" href="/games/z-machine.html"><img src="https://img.gamemonetize.com/6pb58yxizvrukc8x8wvbf3tqnaoffbtq/512x384.jpg" alt="Z Machine unblocked" loading="lazy" decoding="async"><h3>Z Machine</h3></a>
+      </nav>
+    </section>
+
+    <nav class="category-browse" aria-label="Browse unblocked games by category">
+      <h2 class="category-browse-title">Browse Unblocked Games by Category</h2>
+      <div class="category-browse-links">
+        <a class="category-chip" href="/allgames.html">All Games</a>
+        <a class="category-chip" href="/strategy.html">Strategy</a>
+        <a class="category-chip" href="/skill.html">Skill</a>
+        <a class="category-chip" href="/numbers.html">Numbers</a>
+        <a class="category-chip" href="/classic.html">Classic</a>
+        <a class="category-chip" href="/2player.html">2 Player</a>
+        <a class="category-chip" href="/sports.html">Sports</a>
+        <a class="category-chip" href="/logic.html">Logic</a>
+        <a class="category-chip" href="/multiplayer.html">Multiplayer</a>
+      </div>
+    </nav>
+  </main>
+
+  <footer id="site-footer" role="contentinfo">
+    <div id="footer-placeholder"></div>
+  </footer>
+
+  <script>
+    const SLOPE_RECOMMENDATION_COUNT = 12;
+
+    const resolvePath = (path) => {
+      if (!path) return path;
+
+      if (/^(?:https?:)?\/\//.test(path) || path.startsWith('/')) {
+        return path;
+      }
+
+      if (path.startsWith('../')) {
+        return path;
+      }
+
+      const resolver = window.SCHPLAY_RESOLVE_ASSET_PATH;
+      if (typeof resolver === 'function') {
+        return resolver(path);
+      }
+
+      return `../${path}`;
+    };
+
+    const pickRandomGames = (games, limit) => {
+      const sample = games.slice();
+      for (let i = sample.length - 1; i > 0; i -= 1) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [sample[i], sample[j]] = [sample[j], sample[i]];
+      }
+      return sample.slice(0, limit);
+    };
+
+    let hasRenderedRecommendations = false;
+
+    const renderSlopeRecommendations = () => {
+      if (hasRenderedRecommendations) {
+        return;
+      }
+
+      const grid = document.getElementById('slope-recommendations');
+      const count = document.getElementById('slope-recommendations-count');
+      if (!grid) {
+        return;
+      }
+
+      const catalog = (window.SCHPLAY_GAMES && window.SCHPLAY_GAMES.list) || [];
+      if (!Array.isArray(catalog) || !catalog.length) {
+        return;
+      }
+
+      const eligibleGames = catalog.filter(({ name, href, img }) => {
+        return name && href && img && name !== 'Slope';
+      });
+
+      const selection = eligibleGames.length
+        ? pickRandomGames(eligibleGames, Math.min(SLOPE_RECOMMENDATION_COUNT, eligibleGames.length))
+        : [];
+
+      grid.innerHTML = '';
+      selection.forEach(({ name, href, img }) => {
+        const card = document.createElement('a');
+        card.className = 'game-card';
+        card.href = resolvePath(href);
+        card.innerHTML = '<img  src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==" data-src="' + resolvePath(img) + '" alt="' + name + '" loading="lazy" decoding="async"><h3>' + name + '</h3>';
+        grid.appendChild(card);
+      });
+
+      if (count) {
+        count.textContent = selection.length ? selection.length + ' games' : '';
+      }
+
+      if (!selection.length) {
+        const placeholder = document.createElement('p');
+        placeholder.textContent = 'Check back soon for more featured games.';
+        placeholder.style.color = 'var(--text-muted)';
+        placeholder.style.margin = '0';
+        placeholder.style.padding = '0.6rem 0';
+        grid.appendChild(placeholder);
+      }
+
+      hasRenderedRecommendations = true;
+    };
+
+    const ensureSlopeRecommendations = () => {
+      if (window.SCHPLAY_GAMES && Array.isArray(window.SCHPLAY_GAMES.list) && window.SCHPLAY_GAMES.list.length) {
+        renderSlopeRecommendations();
+      }
+    };
+
+    if (window.SCHPLAY_GAMES && window.SCHPLAY_GAMES.list) {
+      renderSlopeRecommendations();
+    } else {
+      document.addEventListener('schplay:games-ready', renderSlopeRecommendations);
+    }
+
+    document.addEventListener('schplay:navigation-ready', ensureSlopeRecommendations);
+    window.addEventListener('load', ensureSlopeRecommendations);
+    setTimeout(ensureSlopeRecommendations, 1200);
+
+    const iframe = document.getElementById('slope-iframe');
+    const fullscreenButton = document.querySelector('.game-player-card .game-fullscreen-toggle');
+
+    if (iframe && fullscreenButton) {
+      const updateFullscreenIcon = () => {
+        const icon = fullscreenButton.querySelector('i');
+        if (!icon) {
+          return;
+        }
+        if (!document.fullscreenElement && !document.webkitFullscreenElement && !document.mozFullScreenElement && !document.msFullscreenElement) {
+          icon.classList.remove('fa-compress');
+          icon.classList.add('fa-expand');
+          const label = fullscreenButton.querySelector('span');
+          if (label) {
+            label.textContent = 'Fullscreen';
+          }
+        } else {
+          icon.classList.remove('fa-expand');
+          icon.classList.add('fa-compress');
+          const label = fullscreenButton.querySelector('span');
+          if (label) {
+            label.textContent = 'Exit Fullscreen';
+          }
+        }
+      };
+
+      const requestIframeFullscreen = () => {
+        const fsElement = iframe;
+        if (fsElement.requestFullscreen) {
+          fsElement.requestFullscreen({ navigationUI: 'hide' }).catch(() => fsElement.requestFullscreen());
+        } else if (fsElement.webkitRequestFullscreen) {
+          fsElement.webkitRequestFullscreen();
+        } else if (fsElement.mozRequestFullScreen) {
+          fsElement.mozRequestFullScreen();
+        } else if (fsElement.msRequestFullscreen) {
+          fsElement.msRequestFullscreen();
+        }
+      };
+
+      const exitFullscreen = () => {
+        if (document.exitFullscreen) {
+          document.exitFullscreen();
+        } else if (document.webkitExitFullscreen) {
+          document.webkitExitFullscreen();
+        } else if (document.mozCancelFullScreen) {
+          document.mozCancelFullScreen();
+        } else if (document.msExitFullscreen) {
+          document.msExitFullscreen();
+        }
+      };
+
+      fullscreenButton.addEventListener('click', () => {
+        if (!document.fullscreenElement && !document.webkitFullscreenElement && !document.mozFullScreenElement && !document.msFullscreenElement) {
+          requestIframeFullscreen();
+        } else {
+          exitFullscreen();
+        }
+      });
+
+      document.addEventListener('fullscreenchange', updateFullscreenIcon);
+      document.addEventListener('webkitfullscreenchange', updateFullscreenIcon);
+      document.addEventListener('mozfullscreenchange', updateFullscreenIcon);
+      document.addEventListener('MSFullscreenChange', updateFullscreenIcon);
+    }
+
+  </script>
+  <script src="/js/load-components.js?v=2026-04-01-mobile-1" defer data-component-root="/"></script>
+<script src="/js/lazy-media.js" defer></script>
+</body>
+</html>
