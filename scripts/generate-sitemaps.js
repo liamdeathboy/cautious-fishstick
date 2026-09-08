@@ -30,7 +30,15 @@ const EXTRA_DIRECTORY_PAGES = [
   'arcade-games-unblocked/',
   'racing-games-unblocked/',
   'unblocked-games-66/',
-  'totally-science-alternative/'
+  'totally-science-alternative/',
+  'unblocked-games-67/',
+  'unblocked-games-wtf/',
+  'classroom-6x-unblocked/',
+  'unblocked-games-76/',
+  'unblocked-games-911/',
+  '3kh0-alternative/',
+  'tyrones-unblocked-games/',
+  'coolmathgames-alternative/'
 ];
 
 // Old /games/<slug>.html -> new clean landing URL, for top game pages relocated to
