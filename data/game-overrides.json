@@ -4927,5 +4927,221 @@
         "action": "hovering certain shapes changes how time flows"
       }
     ]
+  },
+  "spacebar-clicker": {
+    "name": "Spacebar Clicker",
+    "release": "Sep 13, 2021",
+    "genre": "Idle · Clicker",
+    "platforms": "Browser",
+    "controls": [
+      {
+        "input": "Spacebar",
+        "action": "press it to earn spacebars - this is the entire core loop"
+      },
+      {
+        "input": "Click",
+        "action": "buy upgrades and automation from the shop"
+      }
+    ]
+  },
+  "three-line": {
+    "name": "Three Line",
+    "release": "2000s",
+    "genre": "Puzzle · Number Match",
+    "platforms": "Browser",
+    "controls": [
+      {
+        "input": "Mouse",
+        "action": "select and move numbered tiles on the grid"
+      },
+      {
+        "input": "Click",
+        "action": "confirm a selection"
+      }
+    ]
+  },
+  "pushback": {
+    "name": "Pushback",
+    "release": "2010s",
+    "genre": "Puzzle · Block Pushing",
+    "platforms": "Browser, Mobile",
+    "controls": [
+      {
+        "input": "Arrow keys",
+        "action": "move and push"
+      },
+      {
+        "input": "Swipe",
+        "action": "touch controls work on phones and tablets"
+      },
+      {
+        "input": "Tap / click",
+        "action": "start the game and confirm menu choices"
+      }
+    ]
+  },
+  "super-mario-land": {
+    "name": "Super Mario Land",
+    "release": "Apr 21, 1989",
+    "genre": "Platformer · Classic Game Boy",
+    "platforms": "Browser, Controller",
+    "controls": [
+      {
+        "input": "Arrow keys",
+        "action": "the Game Boy d-pad - move and duck"
+      },
+      {
+        "input": "Z",
+        "action": "the A button: jump"
+      },
+      {
+        "input": "X",
+        "action": "the B button: hold to run, and fire in the shooter stages"
+      },
+      {
+        "input": "Enter",
+        "action": "Start - begin the game and pause"
+      },
+      {
+        "input": "Gamepad",
+        "action": "connect a controller and the emulator maps it automatically"
+      }
+    ]
+  },
+  "infinite-craft": {
+    "name": "Infinite Craft",
+    "release": "2020s",
+    "genre": "Puzzle · Crafting Sandbox",
+    "platforms": "Browser, Mobile",
+    "controls": [
+      {
+        "input": "Drag",
+        "action": "pull an element onto the board and drop it onto another to combine"
+      },
+      {
+        "input": "Click",
+        "action": "pick elements from the sidebar list"
+      },
+      {
+        "input": "Search box",
+        "action": "filter your discovered elements by name"
+      }
+    ]
+  },
+  "radius-raid": {
+    "name": "Radius Raid",
+    "release": "Sep 13, 2013",
+    "genre": "Shooter · Twin-Stick",
+    "platforms": "Browser",
+    "controls": [
+      {
+        "input": "WASD / arrow keys",
+        "action": "move your ship"
+      },
+      {
+        "input": "Mouse",
+        "action": "aim and fire"
+      },
+      {
+        "input": "F",
+        "action": "toggle autofire"
+      },
+      {
+        "input": "P",
+        "action": "pause"
+      },
+      {
+        "input": "M",
+        "action": "mute the sound"
+      }
+    ]
+  },
+  "line-rider": {
+    "name": "Line Rider",
+    "release": "Sep 2006",
+    "genre": "Sandbox · Physics Toy",
+    "platforms": "Browser",
+    "controls": [
+      {
+        "input": "Mouse drag",
+        "action": "draw the lines your rider will travel along"
+      },
+      {
+        "input": "Play button",
+        "action": "release Bosh onto the track you have drawn"
+      },
+      {
+        "input": "Pencil / eraser tools",
+        "action": "switch between drawing and removing line segments"
+      }
+    ]
+  },
+  "offline-paradise": {
+    "name": "Offline Paradise",
+    "release": "Sep 13, 2018",
+    "genre": "Platformer · Precision",
+    "platforms": "Browser",
+    "controls": [
+      {
+        "input": "Arrow keys / WASD",
+        "action": "run left and right"
+      },
+      {
+        "input": "Up / W / Space",
+        "action": "jump"
+      }
+    ]
+  },
+  "ducktales": {
+    "name": "DuckTales",
+    "release": "Oct 1989",
+    "genre": "Platformer · Classic NES",
+    "platforms": "Browser, Controller",
+    "controls": [
+      {
+        "input": "Arrow keys",
+        "action": "the NES d-pad - move, and aim the cane"
+      },
+      {
+        "input": "Z",
+        "action": "the A button: jump"
+      },
+      {
+        "input": "X",
+        "action": "the B button: swing the cane, or pogo when held with down in mid-air"
+      },
+      {
+        "input": "Enter",
+        "action": "Start - begin the game and pause"
+      },
+      {
+        "input": "Gamepad",
+        "action": "connect a controller and the emulator maps it automatically"
+      }
+    ]
+  },
+  "edge-not-found": {
+    "name": "Edge Not Found",
+    "release": "Sep 13, 2020",
+    "genre": "Puzzle · Wrapping Sokoban",
+    "platforms": "Browser",
+    "controls": [
+      {
+        "input": "Arrow keys / WASD",
+        "action": "move, pushing whatever is in front of you"
+      },
+      {
+        "input": "Z / Backspace",
+        "action": "undo the last move"
+      },
+      {
+        "input": "X / Space / Enter",
+        "action": "confirm menu selections"
+      },
+      {
+        "input": "R",
+        "action": "restart the current puzzle"
+      }
+    ]
   }
 }

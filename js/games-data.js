@@ -298,6 +298,16 @@ window.SCHPLAY_GAMES.list = [
     { name: 'XX142-B2.exe', href: "games/xx142-b2-exe.html", img: "images/xx142-b2-exe.webp" },
     { name: 'Super Mario Bros', href: "games/super-mario-bros.html", img: "images/super-mario-bros.webp" },
     { name: 'Retrohaunt', href: "games/retrohaunt.html", img: "images/retrohaunt.webp" },
+    { name: 'Spacebar Clicker', href: "games/spacebar-clicker.html", img: "images/spacebar-clicker.webp" },
+    { name: 'Three Line', href: "games/three-line.html", img: "images/three-line.webp" },
+    { name: 'Pushback', href: "games/pushback.html", img: "images/pushback.webp" },
+    { name: 'Super Mario Land', href: "games/super-mario-land.html", img: "images/super-mario-land.webp" },
+    { name: 'Infinite Craft', href: "games/infinite-craft.html", img: "images/infinite-craft.webp" },
+    { name: 'Radius Raid', href: "games/radius-raid.html", img: "images/radius-raid.webp" },
+    { name: 'Line Rider', href: "games/line-rider.html", img: "images/line-rider.webp" },
+    { name: 'Offline Paradise', href: "games/offline-paradise.html", img: "images/offline-paradise.webp" },
+    { name: 'DuckTales', href: "games/ducktales.html", img: "images/ducktales.webp" },
+    { name: 'Edge Not Found', href: "games/edge-not-found.html", img: "images/edge-not-found.webp" },
 ];
 
 window.SCHPLAY_GAMES.ready = true;

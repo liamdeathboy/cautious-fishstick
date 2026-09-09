@@ -92,7 +92,9 @@ https://schplay.com/games/duck-life-5.html
 https://schplay.com/games/duckhunt.html
 https://schplay.com/games/ducklife1.html
 https://schplay.com/games/ducklife2.html
+https://schplay.com/games/ducktales.html
 https://schplay.com/games/dunebuggy.html
+https://schplay.com/games/edge-not-found.html
 https://schplay.com/games/electric-man-2.html
 https://schplay.com/games/elonashooter.html
 https://schplay.com/games/escape-mystic-castle-mobile-version.html
@@ -142,6 +144,7 @@ https://schplay.com/games/human-expenditure-program.html
 https://schplay.com/games/idle-breakout.html
 https://schplay.com/games/idle-shark.html
 https://schplay.com/games/imposter-assassin-3d.html
+https://schplay.com/games/infinite-craft.html
 https://schplay.com/games/jelly-drift.html
 https://schplay.com/games/jelly-matches.html
 https://schplay.com/games/jetpack-joyride.html
@@ -156,6 +159,7 @@ https://schplay.com/games/konnekt.html
 https://schplay.com/games/learntofly.html
 https://schplay.com/games/learntofly2.html
 https://schplay.com/games/learntofly3.html
+https://schplay.com/games/line-rider.html
 https://schplay.com/games/little-princess-jigsaw.html
 https://schplay.com/games/magic-tiles-3.html
 https://schplay.com/games/make-a-superboat.html
@@ -185,6 +189,7 @@ https://schplay.com/games/ninja-vs-evilcorp.html
 https://schplay.com/games/noob-the-builder.html
 https://schplay.com/games/noodle-stack-runner.html
 https://schplay.com/games/office-fight.html
+https://schplay.com/games/offline-paradise.html
 https://schplay.com/games/oiligarchy.html
 https://schplay.com/games/ovo.html
 https://schplay.com/games/packabunchas.html
@@ -204,9 +209,11 @@ https://schplay.com/games/practice-on-me.html
 https://schplay.com/games/pregnancy-test.html
 https://schplay.com/games/pull-the-pin-much-money.html
 https://schplay.com/games/purrfect-clicker.html
+https://schplay.com/games/pushback.html
 https://schplay.com/games/pvz.html
 https://schplay.com/games/q1k3.html
 https://schplay.com/games/quake3.html
+https://schplay.com/games/radius-raid.html
 https://schplay.com/games/raft.html
 https://schplay.com/games/rb-college.html
 https://schplay.com/games/real-driving-simulator.html
@@ -237,6 +244,7 @@ https://schplay.com/games/snowline.html
 https://schplay.com/games/soccer-random.html
 https://schplay.com/games/sonic-exe.html
 https://schplay.com/games/sort-the-court.html
+https://schplay.com/games/spacebar-clicker.html
 https://schplay.com/games/spacegarden.html
 https://schplay.com/games/spacehuggers.html
 https://schplay.com/games/speed-stars.html
@@ -254,6 +262,7 @@ https://schplay.com/games/subwaysurfer.html
 https://schplay.com/games/sudoku.html
 https://schplay.com/games/super-doctor-body-examination.html
 https://schplay.com/games/super-mario-bros.html
+https://schplay.com/games/super-mario-land.html
 https://schplay.com/games/super-sonic.html
 https://schplay.com/games/super-tank-hero.html
 https://schplay.com/games/supermario63.html
@@ -276,6 +285,7 @@ https://schplay.com/games/the-man-in-the-window.html
 https://schplay.com/games/the-rabbit-adventure.html
 https://schplay.com/games/themazeofspacegoblins.html
 https://schplay.com/games/there-is-no-game.html
+https://schplay.com/games/three-line.html
 https://schplay.com/games/towerblaster.html
 https://schplay.com/games/towermaster.html
 https://schplay.com/games/triple-match-3d.html

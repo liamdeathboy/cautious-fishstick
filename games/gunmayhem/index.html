@@ -24,18 +24,17 @@
     </style>
   </head>
   <body>
-    <script src="/js/main.js"></script>
     <script>
-      function loadLocalRuffle() {
-          var script = document.createElement('script');
-          script.src = '../../storage/ruffle/ruffle.js';
-          document.body.appendChild(script);
+      function loadCdnRuffle() {
+          var s = document.createElement('script');
+          s.src = 'https://unpkg.com/@ruffle-rs/ruffle';
+          document.body.appendChild(s);
       }
 
-      var cdnScript = document.createElement('script');
-      cdnScript.src = 'https://unpkg.com/@ruffle-rs/ruffle';
-      cdnScript.onerror = loadLocalRuffle;
-      document.body.appendChild(cdnScript);
+      var localScript = document.createElement('script');
+      localScript.src = '../_ruffle/ruffle.js';
+      localScript.onerror = loadCdnRuffle;
+      document.body.appendChild(localScript);
     </script>
 
     <div id="ruffle" width="100%" height="100%"></div>

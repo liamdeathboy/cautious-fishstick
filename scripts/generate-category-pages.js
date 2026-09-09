@@ -71,7 +71,8 @@ const CATEGORIES = [
       'super-tank-hero', 'camouflage-and-sniper', 'the-binding-of-isaac', 'stickman-and-guns',
       'imposter-assassin-3d', 'candy-cat-shot',
       'q1k3', 'spacehuggers', 'asciispace',
-      'chroma-incident', 'evil-glitch', 'xx142-b2-exe'
+      'chroma-incident', 'evil-glitch', 'xx142-b2-exe',
+      'radius-raid'
     ]
   },
   {
@@ -89,7 +90,8 @@ const CATEGORIES = [
       'angrybirdshalloween', 'civiballs1', 'connect-pipe-color-puzzle-game', 'gyroball',
       'towerblaster', 'towermaster', 'watermelon-merge-3', 'draw-the-hill',
       'connect-3', 'packabunchas', 'sudoku', 'roadblocks',
-      'black-hole-square', 'themazeofspacegoblins', 'retrohaunt'
+      'black-hole-square', 'themazeofspacegoblins', 'retrohaunt',
+      'edge-not-found', 'three-line', 'infinite-craft'
     ]
   },
   {
@@ -106,7 +108,8 @@ const CATEGORIES = [
       'jetpack-joyride', 'duckhunt', 'galaga', 'googlesnake', 'snake', 'slope2', 'air-slip',
       'flappy-2048', 'learntofly', 'learntofly2', 'gunspin', 'curveball',
       'captain-callisto', 'spacegarden',
-      'backcountry', 'ninja-vs-evilcorp', 'shuttledeck', 'super-mario-bros'
+      'backcountry', 'ninja-vs-evilcorp', 'shuttledeck', 'super-mario-bros',
+      'spacebar-clicker', 'pushback', 'super-mario-land', 'ducktales'
     ]
   },
   {
