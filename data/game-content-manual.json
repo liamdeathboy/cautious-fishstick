@@ -7297,5 +7297,609 @@
     ],
     "plainText": "Undertale: The Final Experiment Unblocked - Play Free Online\nUndertale: The Final Experiment is a fan-made mod by LucasBr003 that expands the Undertale universe with new characters and storylines beyond the base game, built around the same core bullet-hell SOUL-dodging combat. Move your SOUL with arrow keys to dodge. Because this mod introduces new characters rather than reskinning existing fights, expect content beyond the original Sans encounter. Core dodge fundamentals (reading a pattern before committing to a direction) carry over from the base game, but new characters bring their own attack patterns that have to be learned fresh rather than assumed from familiarity with the original Sans fight.",
     "iframeSrc": "UNDERTALE-main/TheFinalExperiment.html"
+  },
+  "connect-3": {
+    "name": "Connect 3",
+    "href": "games/connect-3.html",
+    "image": "images/connect-3.webp",
+    "title": "Connect 3 Unblocked - Play Free Online | Schplay",
+    "metaDescription": "Swap adjacent tiles on an 8x8 board to line up three or more and trigger scoring cascades.",
+    "metaKeywords": "connect 3, connect 3 unblocked, match 3 game, tile swap puzzle, cascade puzzle, schplay connect 3",
+    "heroParagraph": "Connect 3 is a compact browser match-three built on an eight-by-eight board of seven tile types. What sets it apart from most match-three clones is that every colour is paired with its own shape - a plus, circle, triangle, square, hexagon, dash, or dot - so the board stays readable if you cannot separate the red and green tiles by hue alone. There is no timer, no move limit, and no fail state; the board simply refills forever and the only number that moves is your score.",
+    "instructions": [
+      "Click a tile to select it, then click a tile directly above, below, left, or right of it to swap the two. Diagonal swaps are rejected outright, and clicking the selected tile a second time cancels the selection so you can pick somewhere else without committing to a move.",
+      "A swap is only allowed to stand if it creates a line of three or more matching tiles. If the pair you swapped produces nothing, the two tiles slide back to where they started after about a fifth of a second, so an illegal-looking move costs you nothing except the moment it took to try it.",
+      "Every tile cleared is worth 100 points, and clears are resolved in a loop rather than one pass. Tiles above a gap drop down, fresh tiles enter from the top row, and if that reshuffle happens to form another line the game clears that too and keeps going until the board settles."
+    ],
+    "sections": [
+      {
+        "heading": "Shapes do the work that colour usually does",
+        "body": "Each of the seven tile types carries a distinct outline as well as a distinct colour, which means you can scan a column for triangles rather than for yellow. That matters more than it sounds on an eight-by-eight board where the orange circles and the red dashes sit next to each other constantly, and it is the reason the board stays legible during a long cascade when tiles are still animating into place."
+      },
+      {
+        "heading": "Play for the cascade, not the match",
+        "body": "Because clears resolve in a loop and new tiles fall in from the top, the highest-value moves are the ones made near the bottom of the board. Clearing low forces the entire column above to drop, which gives the game far more chances to form an accidental second or third line. A match made in the top row shifts almost nothing and usually scores exactly the tiles you lined up and no more."
+      },
+      {
+        "heading": "The board never runs out of moves",
+        "body": "The opening board is scrubbed before you see it - the game repeatedly replaces tiles until no line of three exists - so your first move is always a real one. From there the refill is random rather than curated, so there is no shuffle button and no deadlock check. Since nothing is lost by trying, probing an uncertain swap is genuinely free, and the failed attempt shows you a little more of the board."
+      }
+    ],
+    "plainText": "Connect 3 is a browser match-three played on an eight-by-eight grid of seven tile types, each with its own colour and its own shape. Click a tile and then an orthogonally adjacent tile to swap them; the swap sticks only if it forms a line of three or more, and otherwise reverses itself after about a fifth of a second. Cleared tiles are worth 100 points each, tiles above drop into the gaps, new tiles enter from the top row, and the game keeps resolving matches in a loop until the board is stable. There is no timer, no move limit and no lose condition.",
+    "iframeSrc": "connect-3/index.html"
+  },
+  "captain-callisto": {
+    "name": "Captain Callisto",
+    "href": "games/captain-callisto.html",
+    "image": "images/captain-callisto.webp",
+    "title": "Captain Callisto Unblocked - Play Free Online | Schplay",
+    "metaDescription": "Cody Ebberson's 3D jetpack platformer, which took 3rd place overall at js13kGames 2021.",
+    "metaKeywords": "captain callisto, captain callisto unblocked, js13kgames 2021, cody ebberson, jetpack platformer, 13kb 3d game, schplay captain callisto",
+    "heroParagraph": "The Adventures of Captain Callisto is a 3D platformer written by Cody Ebberson for js13kGames 2021, the annual competition where the entire game - code, textures, audio and levels - has to fit inside 13 kilobytes with no external files of any kind. It placed third overall out of 223 entries and was voted second for its use of the contest theme and fourth for graphics, which is remarkable company for a game smaller than most single photographs.",
+    "instructions": [
+      "Move with the arrow keys or WASD and jump with Z or the space bar. The camera sits behind the Captain in true 3D rather than the flat side-on view most 13 kilobyte entries settle for, so watch the shadow beneath him to judge where a landing will actually put you before committing to a jump.",
+      "The jetpack is the mechanic that defines the game. Hold X or shift to fire it and gain height in mid-air, which turns almost every gap into a question of fuel management rather than timing. A jump you have already committed to badly can often still be rescued with a short burst, so reach for the jetpack rather than accepting the fall.",
+      "Press R at any point to restart the current level instantly, M to toggle the music, and escape to return to the main menu. The quick restart is there because the game is built around learning a level's layout through repetition - failing a section, seeing exactly what caught you out, and clearing it on the next attempt."
+    ],
+    "sections": [
+      {
+        "heading": "Why a 13 kilobyte 3D game is remarkable",
+        "body": "js13kGames forbids external resources entirely, so there is no CDN request, no texture download and no audio file. Everything Captain Callisto renders is produced by the code itself at load time, and the zipped bundle still has to come in under 13,312 bytes. Third place out of 223 entries was won against a field that mostly stayed two-dimensional precisely because 3D consumes so much of that budget."
+      },
+      {
+        "heading": "Read the shadow, not the character",
+        "body": "The most useful habit in any third-person 3D platformer is to track the shadow rather than the character. Depth is genuinely ambiguous from a camera sitting behind the player, and the shadow is the only element on screen that tells you which platform you are actually above. Players who miss jumps here are almost always misjudging depth rather than distance."
+      },
+      {
+        "heading": "Jetpack fuel is the real resource",
+        "body": "Because the jetpack can extend or rescue nearly any jump, the interesting decisions are about when not to use it. Burning fuel early to clear a gap you could have jumped normally leaves nothing for the recovery you will need thirty seconds later, and since R restarts a level instantly, the cheapest way to learn a section's fuel budget is simply to run it a few times and watch where you run dry."
+      }
+    ],
+    "plainText": "The Adventures of Captain Callisto is a 3D platformer by Cody Ebberson, built for js13kGames 2021 where the whole game must fit in 13 kilobytes with no external files. It finished third overall out of 223 entries and was voted second for theme and fourth for graphics. Move with the arrow keys or WASD, jump with Z or space, and hold X or shift to fire the jetpack, which grants extra height in mid-air and turns most gaps into a fuel-management problem rather than a timing one. R restarts the current level instantly, M toggles the music and escape opens the menu. Because the view is third-person 3D, the shadow beneath the Captain is the reliable guide to where a jump will land.",
+    "iframeSrc": "captain-callisto/index.html"
+  },
+  "packabunchas": {
+    "name": "PACKABUNCHAS",
+    "href": "games/packabunchas.html",
+    "image": "images/packabunchas.webp",
+    "title": "PACKABUNCHAS Unblocked - Play Free Online | Schplay",
+    "metaDescription": "Mattia Fortunati's 13KB tiling puzzle - rescue polyomino space creatures by packing them into bins.",
+    "metaKeywords": "packabunchas, packabunchas unblocked, js13kgames 2021, mattia fortunati, polyomino packing puzzle, schplay packabunchas",
+    "heroParagraph": "PACKABUNCHAS is a tiling puzzle by Italian developer Mattia Fortunati, made for js13kGames 2021 on the theme of Space. The premise is that a crowd of space creatures need rescuing and the only way to save them is to pack them together, which turns the whole game into a polyomino fitting problem wrapped in soft pastel artwork Fortunati has credited to Sanrio and San-x. GitHub picked it out as one of their favourite entries from that year's competition.",
+    "instructions": [
+      "Every creature is a polyomino - a shape built from squares, like a tetromino with more variety. Click or tap one to pick it up, drag it over the bin, and release to drop it in. Everything is done with clicks or taps and nothing else, which is why the game plays the same on a school Chromebook as it does on a phone.",
+      "Levels are generated rather than hand-built, so the bins vary in shape from one to the next and some of them contain holes you have to work around. Read the container before you place anything: an awkward notch in the wall dictates which piece has to go there far more than your preferred order of play does.",
+      "Place the least flexible shapes first. A long bar or an L-bend has only a handful of legal positions against an edge and dozens in open ground, so committing those early and filling the middle with compact pieces avoids the usual failure - stranding a one-square gap that nothing left in your set can reach."
+    ],
+    "sections": [
+      {
+        "heading": "It is a packing problem, not a Tetris clone",
+        "body": "Nothing falls and nothing is on a timer, which changes the skill entirely. Tetris asks you to react under pressure; PACKABUNCHAS asks you to solve a static arrangement before you commit to it. There is no score chasing you either - the framing is a running joke about rescuing thirteen thousand creatures, a nod to the competition's 13 kilobyte limit, spread across a sequence of levels."
+      },
+      {
+        "heading": "Look at what a placement leaves behind",
+        "body": "The reliable way to lose a level is to create a gap in a shape that none of your remaining creatures matches. Before dropping a piece into open ground, check what the placement carves the empty space into. Splitting the bin into two regions when your smallest remaining piece covers three squares means a two-square region is already dead, even though the container still looks mostly empty."
+      },
+      {
+        "heading": "A tutorial and a mascot, inside 13 kilobytes",
+        "body": "A mascot character walks you through the first level and keeps up ambient chatter and hints as you play, which is an unusual thing to spend bytes on when the entire game has to fit in 13,312 of them. The audio is generated in code with the ZzFX and ZzFXM micro-libraries rather than loaded as files, and that is what buys the room for music, sound effects and a talking guide at the same time."
+      }
+    ],
+    "plainText": "PACKABUNCHAS is a tiling puzzle by Mattia Fortunati, built for js13kGames 2021 on the Space theme, in which you rescue polyomino-shaped space creatures by packing them into bins. Click or tap to pick a creature up, drag it over the container and release to place it - clicks and taps are the only input, so it plays identically on desktop and mobile. Levels and bins are generated rather than hand-designed and some contain holes to work around, so reading the container shape and placing the least flexible pieces against the edges first is the core skill. There is no timer and no score; a mascot character delivers a tutorial and hints, and the audio is generated in code using ZzFX and ZzFXM.",
+    "iframeSrc": "packabunchas/index.html"
+  },
+  "q1k3": {
+    "name": "Q1K3",
+    "href": "games/q1k3.html",
+    "image": "images/q1k3.webp",
+    "title": "Q1K3 Unblocked - Play Free Online | Schplay",
+    "metaDescription": "A 13KB tribute to Quake by phoboslab, with two levels, five enemy types and three weapons.",
+    "metaKeywords": "q1k3, q1k3 unblocked, quake demake, js13kgames 2021, phoboslab, dominic szablewski, 13kb fps, schplay q1k3",
+    "heroParagraph": "Q1K3 is a working first-person shooter that fits in 13 kilobytes, written by Dominic Szablewski - better known as phoboslab - for js13kGames 2021, with music by Andreas Loesch of no-fate.net. The competition theme that year was Space and Szablewski ignored it completely, building a tribute to id Software's Quake instead because the original had just turned twenty-five. What fits inside the size limit is genuinely startling: two levels, five enemy types, three weapons, roughly thirty textures, dynamic lighting, working doors and a soundtrack.",
+    "instructions": [
+      "Click the title screen to start, which hands the game pointer lock - press escape when you want the cursor back. Move with WASD or the arrow keys, look with the mouse and fire with left click. Jump with space or right click, and cycle the three weapons with Q and E or the mousewheel. The title screen also carries a mouse-speed slider, an invert toggle and a fullscreen button, all worth setting before your first run.",
+      "This is deliberately pre-modern shooter design, which means there is no reloading, no ironsights and no regenerating health. Ammunition and health are objects lying in the level, so exploring side rooms is not optional decoration - it is the only supply line you have, and a corridor you skipped is ammunition you do not get back.",
+      "Enemies do not take cover or flank, but they do fire the moment they have line of sight, and several of the five types lead their shots. Strafing sideways while keeping your crosshair on a target beats backing away in a straight line, because retreating in a straight line keeps you inside the firing solution they already have."
+    ],
+    "sections": [
+      {
+        "heading": "How a whole FPS fits in 13 kilobytes",
+        "body": "There are no image or audio files in Q1K3. Every texture is generated procedurally when the game loads, the music and sound effects are synthesised in code, and the level geometry is stored as a compact description rather than a model file. It still finds room for spatial audio with stereo separation and distance-based volume falloff, so you can hear roughly where an enemy is before you see it. Szablewski published a detailed making-of and the source under the MIT licence, and the game is still studied as a reference for extreme size optimisation."
+      },
+      {
+        "heading": "Movement speed is the mechanic",
+        "body": "Quake-lineage shooters move much faster than modern ones, and Q1K3 keeps that. You outrun most incoming fire simply by never standing still, and the level layouts are built around that assumption - open arenas with pillars to break line of sight rather than corridors with cover points. Playing it like a cover shooter, stopping behind geometry to trade shots, works badly."
+      },
+      {
+        "heading": "Two levels, and they are meant to be replayed",
+        "body": "The game is short by design because the byte budget went into systems rather than content. Both levels contain secrets and supply caches that are easy to miss on a first run, and because health does not regenerate, a second attempt with knowledge of where the armour is plays very differently from a blind one. Treat the first run as reconnaissance."
+      }
+    ],
+    "plainText": "Q1K3 is a first-person shooter by Dominic Szablewski, known as phoboslab, built in under 13 kilobytes for js13kGames 2021 as a tribute to Quake on its twenty-fifth anniversary. It contains two levels, five enemy types, three weapons, around thirty procedurally generated textures, dynamic lighting, doors and synthesised music, with no external asset files at all. Move with WASD, aim with the mouse, fire with left click, switch weapons with 1 to 3 and jump with space. There is no reloading or regenerating health, so ammunition and health pickups scattered through the levels are the only supply, and constant strafing movement is the primary defence.",
+    "iframeSrc": "q1k3/index.html"
+  },
+  "spacegarden": {
+    "name": "Space Garden",
+    "href": "games/spacegarden.html",
+    "image": "images/spacegarden.webp",
+    "title": "Space Garden Unblocked - Play Free Online | Schplay",
+    "metaDescription": "Ryan Malm's space exploration game, the outright winner of js13kGames 2021 in just 13KB.",
+    "metaKeywords": "space garden, space garden unblocked, js13kgames 2021 winner, rybar, ryan malm, space exploration game, schplay space garden",
+    "heroParagraph": "Space Garden won js13kGames 2021 outright. Built by Ryan Malm, who works as Rybar, it beat 222 other entries in a competition where the whole game has to fit in 13 kilobytes with no external files of any kind. You pilot a small craft through an open field of planets, charging each one back to life while red harvesters try to drain the energy you need to do it, and every planet you complete leaves you with a companion that follows you afterwards.",
+    "instructions": [
+      "Thrust with W, Z or the up arrow and turn with A and D or the arrow keys; S brakes with reverse thrust. The craft handles differently depending on where it is - in open space the direction keys rotate you and thrust pushes you along your facing, while standing on a planet's surface the same keys run and jump instead.",
+      "Your goal is to find planets and complete them by charging up their sectors. Each planet you finish rewards you with a companion sprite that orbits you from then on, and those companions are not decoration - they feed you energy and fight for you, which is what makes the back half of a run survivable.",
+      "Energy is the resource everything runs on and thrusting spends it. The game's own advice is to find energy mass to absorb or fly near a completed planet to recharge, so the loop is to build up a small network of finished planets early and then use them as refuelling points while you push further out into unexplored space."
+    ],
+    "sections": [
+      {
+        "heading": "What winning js13kGames 2021 meant",
+        "body": "The 2021 contest was the competition's tenth year and drew 223 entries on the theme of Space. Every one had to fit in 13,312 zipped bytes with no CDN, no image files and no audio files, which is why the intro screen pauses to tell you all sounds have been rendered - the entire soundtrack is generated in your browser at load time. Taking first across that field is the strongest credential a 13KB game holds."
+      },
+      {
+        "heading": "The red drain your energy, and you cannot shoot them",
+        "body": "Red harvesters guard the planets and steal energy from you when you get close, and the game is explicit that they can only be killed by planet sprites - the companions you earn by completing planets. Until you have some, the correct answer to a harvester is distance, not aggression. Giant drones show up later and attack the planets you have already finished, so a completed system still needs defending."
+      },
+      {
+        "heading": "Read the HUD before you burn fuel",
+        "body": "The display tracks energy remaining, a circular indicator pointing at nearby planets, and running totals of planets discovered against planets completed. Because thrust is the main energy cost, checking the planet indicator before committing to a direction is the difference between arriving somewhere with enough charge to do the work and drifting into empty space with nothing left to recharge from."
+      }
+    ],
+    "plainText": "Space Garden is a space exploration and combat game by Ryan Malm, known as Rybar, and it won js13kGames 2021 outright against 222 other entries, all built within a 13 kilobyte limit that forbids external image and audio files. You pilot a craft with W, Z or up to thrust, A and D or the arrow keys to turn, and S to brake, handling as a rotating ship in open space and as a running character on a planet surface. The objective is to discover planets and complete them by charging their sectors, which earns companion sprites that orbit you, supply energy and fight. Red harvesters drain your energy and can only be destroyed by those companions, and energy is recharged by absorbing energy mass or flying near completed planets.",
+    "iframeSrc": "spacegarden/index.html"
+  },
+  "sudoku": {
+    "name": "Sudoku",
+    "href": "games/sudoku.html",
+    "image": "images/sudoku.webp",
+    "title": "Sudoku Unblocked - Play Free Online | Schplay",
+    "metaDescription": "A clean 9x9 logic grid with 35 given digits, 46 blanks and a built-in duplicate checker.",
+    "metaKeywords": "sudoku, sudoku unblocked, 9x9 logic puzzle, number puzzle, sudoku online free, schplay sudoku",
+    "heroParagraph": "Sudoku is the number-placement puzzle that ran in Japanese magazines through the 1980s under the name Suuji wa dokushin ni kagiru before Wayne Gould's computer-generated grids took it worldwide in British newspapers in 2004. This build is a deliberately plain browser version of the classic rules: one fixed nine-by-nine grid with 35 digits already placed and 46 blank squares for you to fill, plus a button that checks your work whenever you want it.",
+    "instructions": [
+      "Fill every empty square so that each row, each column, and each of the nine three-by-three boxes contains the digits 1 through 9 exactly once. Click or tap a blank square to select it and type a number to place it. The 35 digits printed at the start are fixed clues and cannot be edited, so the puzzle always has the same solution.",
+      "Use the 'how am I going?' button whenever you want a check. It scans the grid and tells you one of three things: that there are duplicates, that there are no duplicates but empty cells remain, or that you have finished. Squares involved in a duplicate are highlighted so you can see exactly which pair of digits is in conflict.",
+      "Note that the checker only looks for repeated digits - it does not tell you whether a legal-looking digit is the correct one for the final solution. A grid can be entirely free of duplicates and still be wrong, so treat a clean check as evidence that you have not broken a rule yet rather than confirmation that you are on the solution path."
+    ],
+    "sections": [
+      {
+        "heading": "Start with the constraint, not the empty square",
+        "body": "The instinct is to pick a blank square and ask what could go there, which on a grid with 46 blanks gives you far too many candidates to hold in your head. The faster approach reverses it: take a digit, look at the three boxes in a band, and ask where that digit can still legally go. Rows and columns that already contain it eliminate most positions immediately, and often only one square survives."
+      },
+      {
+        "heading": "Scan bands and stacks, not the whole grid",
+        "body": "A nine-by-nine grid is really three horizontal bands and three vertical stacks of three boxes each. Because a digit must appear exactly once in each box of a band, placing it in two boxes of that band usually forces its position in the third. Working band by band rather than sweeping the whole grid is what turns a puzzle that looks intimidating into a sequence of small, closed questions."
+      },
+      {
+        "heading": "One fixed puzzle, which changes how you use it",
+        "body": "This version serves a single hand-placed grid rather than generating a new one each visit, so refreshing gives you the same 35 clues again. That makes it a poor choice for daily practice but a good one for learning technique, since you can abandon a half-finished attempt, come back later, and work the same position again with a different method to see which approach actually cracks it faster."
+      }
+    ],
+    "plainText": "Sudoku is the classic nine-by-nine number-placement puzzle, popularised worldwide in 2004 through Wayne Gould's computer-generated grids after decades in Japanese puzzle magazines. This browser build presents one fixed grid with 35 given digits and 46 blank squares. Fill every blank so each row, each column and each three-by-three box holds the digits 1 through 9 exactly once. A 'how am I going?' button checks the grid and reports duplicates, remaining empty cells, or completion, highlighting any conflicting squares. The checker detects repeated digits only, so a grid with no duplicates is not necessarily on the correct solution path.",
+    "iframeSrc": "sudoku/index.html"
+  },
+  "konnekt": {
+    "name": "Konnekt",
+    "href": "games/konnekt.html",
+    "image": "images/konnekt.webp",
+    "title": "Konnekt Unblocked - Play Free Online | Schplay",
+    "metaDescription": "A 13KB real-time strategy game played on a rotating sphere across twelve escalating levels.",
+    "metaKeywords": "konnekt, konnekt unblocked, js13kgames 2018, monsterkodi, node conquest strategy, sphere strategy game, schplay konnekt",
+    "heroParagraph": "Konnekt is a real-time conquest game built by the developer monsterkodi for js13kGames 2018, and its defining idea is that the board is a sphere rather than a flat plane. Nodes sit at points on a globe you can rotate, and the connections between them curve around its surface, which means a position that looks safe from one angle can be surrounded from the side you cannot currently see. The whole thing is rendered as SVG in under 13 kilobytes.",
+    "instructions": [
+      "Every node you own accumulates units over time, shown as a filling arc around it. Drag from one of your nodes to another to dispatch exactly half of its garrison along that link, and note that a node has to be holding at least twelve units before it is allowed to send anything at all. Nodes fill to a ceiling of 360, so a full one sitting idle is wasted production.",
+      "Distance costs you units, but only when you attack. Sending to a neutral or enemy node loses a share of the force in transit that scales with how far apart the two nodes are, while reinforcing one of your own nodes arrives at full strength no matter how far it travels. That single asymmetry is what makes short, local attacks and long, safe reinforcement the correct shape of most winning games.",
+      "An attack resolves as a straight comparison of the numbers that actually arrive. More than the defender and you capture the node with the surplus as its new garrison; fewer and you simply reduce it while it holds. An exact tie is reported as a draw and leaves the node empty for either side to take, which is usually the worst outcome available to you."
+    ],
+    "sections": [
+      {
+        "heading": "Twelve levels that escalate by economy, not intelligence",
+        "body": "Five tutorials lead into named boards - Easy, Circles, Ring, Close, Poles, Unfair, Frenzy and a randomised layout. What changes as you climb is the rate at which nodes generate units, which starts at zero in the tutorials and rises steeply by the time you reach Unfair and Frenzy. The opponent does not get cleverer, it gets richer, so those levels are won on tempo - striking during the window before its production advantage compounds."
+      },
+      {
+        "heading": "The sphere is the whole design",
+        "body": "On a flat conquest map you can see every threat at once. On a globe you cannot, and Konnekt uses that constantly - the Poles and Ring levels are built specifically around positions that are adjacent on the sphere but appear far apart from a given camera angle. Rotating to check the far side before committing units is not a convenience here, it is a core part of playing well."
+      },
+      {
+        "heading": "Half-strength attacks are the common mistake",
+        "body": "Because a send dispatches only part of a node's garrison, launching two attacks from the same node in quick succession usually delivers two forces that are each too small to take anything, while leaving the origin node stripped and vulnerable. Waiting for one node to fill and sending a single decisive wave beats trickling units at a target almost every time."
+      },
+      {
+        "heading": "Sound that is generated, not recorded",
+        "body": "Each level assigns different synthesised instruments to you and to the opponent - piano, bells, organ, strings and flute across the level list - so the note you hear tells you whose move just resolved without your having to look. It is also a practical necessity: with a 13 kilobyte budget and no audio files allowed, every sound in the game has to be produced by code at the moment it plays."
+      }
+    ],
+    "plainText": "Konnekt is a real-time conquest strategy game by monsterkodi, built for js13kGames 2018 in under 13 kilobytes and rendered entirely in SVG. It is played on a rotating sphere: nodes sit on the surface of a globe and their links curve around it, so threats can be hidden on the far side. Nodes you own gain units over time, and dragging from one node to another sends part of its garrison to reinforce or attack. Combat compares numbers directly - more units captures the node, fewer only reduces it, and a tie empties it. Five tutorials lead into named levels including Circles, Ring, Poles, Unfair and Frenzy, where the opponent's unit growth rate rises rather than its intelligence.",
+    "iframeSrc": "konnekt/index.html"
+  },
+  "roadblocks": {
+    "name": "Road Blocks",
+    "href": "games/roadblocks.html",
+    "image": "images/roadblocks.webp",
+    "title": "Road Blocks Unblocked - Play Free Online | Schplay",
+    "metaDescription": "Ash Kyd's isometric drag-and-drop city puzzle - connect the road from left edge to right.",
+    "metaKeywords": "road blocks, road blocks unblocked, js13kgames 2015, ash kyd, isometric puzzle, city building puzzle, schplay road blocks",
+    "heroParagraph": "Road Blocks is an isometric drag-and-drop puzzle written by Australian developer Ash Kyd for js13kGames 2015, whose theme that year was Reversed - an idea the game picks up directly in a level called Reverse the Flow. You build a working road across a small isometric town by pulling tiles from a tray at the top of the screen, and the entire thing, including the isometric renderer and the sound effects, fits inside 13 kilobytes.",
+    "instructions": [
+      "Drag tiles down from the tray at the top of the screen and drop them onto the map to build a continuous road connecting the left edge to the right. Tiles snap to the isometric grid, and a placement that cannot legally connect is refused rather than silently accepted, so an invalid drop costs you nothing.",
+      "You are not limited to road. Water, forest and helipad tiles appear as the puzzles progress, each with its own rule - forest tiles award bonus points, and the helipad lets you stack a tile aside for later rather than committing it immediately. Long-press any tile you have already placed to bulldoze it and free that square up again.",
+      "Puzzle mode runs through a sequence of named levels including Roads 101, Town Planning, Reverse the Flow, The Block Forest, Dual Carriageway and Little Condo by the Sea, each introducing one new idea. Completing enough of them unlocks Free Map mode from the main menu, where there is no objective and you simply build a town for its own sake."
+    ],
+    "sections": [
+      {
+        "heading": "The tray order is the real constraint",
+        "body": "Tiles arrive in a fixed sequence and you have to take them as they come, so the puzzle is less about where the road should go than about what you can afford to do with the piece currently in your hand. Placing a straight where a corner is coming is how most levels are lost, and the helipad exists precisely so you can park an awkward tile instead of forcing it somewhere damaging."
+      },
+      {
+        "heading": "Bulldozing is part of the loop, not a penalty",
+        "body": "Long-pressing to demolish a tile is not an admission of failure - several levels are difficult to solve without it, because committing early to a route and then adapting is cheaper than trying to plan the entire path before you know which tiles are coming. If a level tells you that you are stuck, the fix is almost always removing one badly-placed tile rather than restarting."
+      },
+      {
+        "heading": "Free Map is the reward, and it is worth unlocking",
+        "body": "The mode you unlock by clearing puzzles removes the win condition entirely and gives you the full tile set to build with. There is a camera button that exports whatever you have made as an image file, which in 2015 was an unusually generous feature to spend precious bytes on and remains the reason people still share screenshots of towns built in this game."
+      }
+    ],
+    "plainText": "Road Blocks is an isometric drag-and-drop puzzle game by Ash Kyd, built for js13kGames 2015 on the theme Reversed. You drag tiles from a tray at the top of the screen onto an isometric grid to connect a road from the left edge to the right, working with road, water, forest and helipad tiles as the levels introduce them. Forest tiles score bonus points and the helipad stores a tile for later; long-pressing a placed tile bulldozes it. Puzzle mode runs through named levels such as Roads 101, Town Planning, Reverse the Flow and Dual Carriageway, and completing enough of them unlocks a free-build mode with a screenshot export button. The whole game, renderer and sound included, fits in 13 kilobytes.",
+    "iframeSrc": "roadblocks/index.html"
+  },
+  "spacehuggers": {
+    "name": "Space Huggers",
+    "href": "games/spacehuggers.html",
+    "image": "images/spacehuggers.webp",
+    "title": "Space Huggers Unblocked - Play Free Online | Schplay",
+    "metaDescription": "Frank Force's run-and-gun roguelike with destructible levels and four-player local co-op.",
+    "metaKeywords": "space huggers, space huggers unblocked, js13kgames 2021, frank force, killedbyapixel, littlejs, run and gun roguelike, schplay space huggers",
+    "heroParagraph": "Space Huggers is a run-and-gun roguelike by Frank Force, who publishes as KilledByAPixel, built for js13kGames 2021 and openly modelled on Broforce, Metal Slug and Contra. It finished eighth out of 223 entries and took second place in both the fun and the gameplay categories. The engine Force wrote to make it fit in 13 kilobytes was later released on its own as LittleJS, which is now a widely used open-source JavaScript game engine.",
+    "instructions": [
+      "Run and jump on the keyboard while aiming independently with the mouse. That separation of aim from movement is the core of the game - you are expected to be firing in one direction while running in another, and players who stop moving to line up a shot tend not to last long. Analog gamepads and touchscreens are supported too, through the engine Force wrote for it.",
+      "Levels are procedurally generated, so there is no layout to memorise between runs, and much of the terrain is destructible. Shooting through a wall to make your own route is a legitimate tactic rather than an exploit, and it is often safer than taking the corridor an enemy is already covering.",
+      "As a roguelike it expects repeated runs rather than one long attempt. Death sends you back to the start with a fresh layout, and the skill you carry forward is reading generated terrain quickly - spotting which platforms are shootable, where the drop-offs are, and which enemy groupings are worth avoiding entirely."
+    ],
+    "sections": [
+      {
+        "heading": "Destructible terrain changes every fight",
+        "body": "Because the environment can be shot away, cover is temporary for both sides. An enemy behind a block is protected only until you remove the block, and the platform you are standing on is subject to the same rule. The most common self-inflicted death in the game is destroying the floor beneath your own feet during a firefight, so watch what your stray shots are hitting."
+      },
+      {
+        "heading": "The engine outlived the competition",
+        "body": "Force built the renderer, physics, particle system and audio from scratch to fit the 13 kilobyte limit, then open-sourced that work as LittleJS. That lineage is why the game feels heavier and more responsive than most jam entries - the particle effects, screen shake and physics were engineered as a reusable engine rather than assembled just far enough to submit before the deadline."
+      },
+      {
+        "heading": "Four-player co-op, a first for the competition",
+        "body": "Space Huggers supports up to four players in local cooperative play, which Force has noted was a first for js13kGames, alongside keyboard, mouse, touch and analog gamepad input. Co-op changes the game noticeably because every player can destroy the same terrain, so a second player is both extra firepower and an extra source of collapsing floors underneath you."
+      }
+    ],
+    "plainText": "Space Huggers is a run-and-gun roguelike platformer by Frank Force, known as KilledByAPixel, created for js13kGames 2021 and inspired by Broforce, Metal Slug and Contra. It placed eighth out of 223 entries and second for both fun and gameplay. Levels are procedurally generated and largely destructible, so cover is temporary and shooting a new route through terrain is a valid tactic. You run and jump on the keyboard while aiming independently with the mouse, and the game also supports touch and analog gamepads plus local cooperative play for up to four players, which Force notes was a first for the competition. The engine he wrote for it was later open-sourced as LittleJS.",
+    "iframeSrc": "spacehuggers/index.html"
+  },
+  "asciispace": {
+    "name": "Adventure in ASCII Space",
+    "href": "games/asciispace.html",
+    "image": "images/asciispace.webp",
+    "title": "Adventure in ASCII Space Unblocked - Play Free Online | Schplay",
+    "metaDescription": "A 13KB shooter drawn entirely in text characters. Hunt down the evil O across the galaxy.",
+    "metaKeywords": "asciispace, adventure in ascii space, ascii space unblocked, js13kgames 2021, nicklas lof, ascii shooter, schplay ascii space",
+    "heroParagraph": "Adventure in ASCII Space is a space shooter drawn entirely with text characters, written by Nicklas Lof for js13kGames 2021 and placed sixteenth in that year's competition. The premise is as direct as the presentation: you fly through a galaxy rendered in ASCII hunting a hostile entity known only as the evil O. It was the main entry of three that Lof submitted to the 2021 contest.",
+    "instructions": [
+      "Fly with W, A, S and D and shoot with the space bar. The entire playfield is built from text characters, so learning to read the screen is part of the challenge - enemies, projectiles and terrain are all distinguished by glyph and colour rather than by shape, and the display becomes dense quickly once a fight starts.",
+      "Press E to open the upgrade panel. This is the progression system and it is easy to miss entirely, since nothing forces you to open it - spending what you have collected on improving your ship between engagements is what makes the later parts of the run survivable.",
+      "Gamepad support is built in and was tested against Xbox controllers, so a pad works if you have one connected. Whichever input you use, keep moving: the ship has no shield and no invulnerability window, and the ASCII projectiles travel fast enough that a stationary target is hit almost immediately."
+    ],
+    "sections": [
+      {
+        "heading": "Reading a screen made of letters",
+        "body": "The visual language takes a minute to learn because everything is the same size - a hazard and a pickup occupy exactly one character cell. Colour is doing most of the work of telling you what matters, so the practical advice is to learn the palette before you learn the glyphs. Once that clicks, the ASCII presentation becomes an advantage: the screen is far less visually noisy than a comparable sprite-based shooter."
+      },
+      {
+        "heading": "The upgrade panel is not optional",
+        "body": "Because E opens a panel rather than pausing into an obvious menu, plenty of players finish a run without ever using it and conclude the game is harder than it is. Treat opening it as a routine step between fights. Progression is the intended counterweight to the difficulty curve, and skipping it means facing later enemies with a starting ship."
+      },
+      {
+        "heading": "Why text rendering suits a 13KB budget",
+        "body": "Drawing with characters costs almost nothing - there are no sprites to store or generate, and the font is already on the machine. That freed Lof to spend the byte budget on the systems instead: enemy behaviour, the upgrade tree and the generated galaxy. It is a common strategy among js13kGames entries, and this one is a particularly clean demonstration of what it buys you."
+      }
+    ],
+    "plainText": "Adventure in ASCII Space is a space shooter by Nicklas Lof, built for js13kGames 2021 and ranked sixteenth in that competition. The whole game is rendered in text characters, with enemies, projectiles and terrain distinguished by glyph and colour rather than sprites, and the goal is to hunt down a hostile entity called the evil O. Move with WASD, shoot with the space bar and press E to open the upgrade panel, which is the game's progression system and is easy to overlook. Gamepad support is included and was tested with Xbox controllers. The ship has no shield, so continuous movement is the only defence.",
+    "iframeSrc": "asciispace/index.html"
+  },
+  "backcountry": {
+    "name": "Backcountry",
+    "href": "games/backcountry.html",
+    "image": "images/backcountry.webp",
+    "title": "Backcountry Unblocked - Play Free Online | Schplay",
+    "metaDescription": "A low-poly Wild West bounty hunt built in 13KB for js13kGames 2019 by the piesku team.",
+    "metaKeywords": "backcountry, backcountry unblocked, js13kgames 2019, michalbe, stasm, piesku, wild west game, schplay backcountry",
+    "heroParagraph": "Backcountry is a low-polygon Wild West game built by Michal Budzynski and Stanislaw Malolepszy - the piesku pair - for js13kGames 2019, whose theme that year was Back. You ride out to track down bandits and collect the bounty on them, and the whole thing was written in 31 days between the 13th of August and the 13th of September 2019, finishing at 13,304 bytes. It placed third in the competition's monetization category and was later shown at the MozFest Arcade booth in London.",
+    "instructions": [
+      "The title screen frames every session the same way: earn as much money as you can in today's challenge. That daily framing is the point of the scoring - you are not working through a campaign towards an ending, you are trying to beat a number, and the run resets so you can immediately try a better line through the same territory.",
+      "Play is driven with the mouse or by tapping, so it works on a school Chromebook and a phone without any change. Bandits are what pay, so the loop is to find them, deal with them, and bring the bounty home rather than exploring the landscape for its own sake.",
+      "The world is rendered as untextured low-poly geometry in a flat red and tan palette. That is a size decision rather than a stylistic accident - with no room for texture files in 13 kilobytes, the terrain is built from coloured polygons, which is why silhouettes and shape read more clearly here than surface detail does."
+    ],
+    "sections": [
+      {
+        "heading": "Built on an engine the authors gave away",
+        "body": "Backcountry runs on goodluck, the piesku team's own template for tiny browser games, which they publish openly for anyone to clone and build on. That is worth knowing because it explains the game's shape: goodluck supplies a game loop and a rendering pipeline and deliberately not much else, so what you are playing is close to raw WebGL with the fat cut away to fit the byte limit."
+      },
+      {
+        "heading": "The daily challenge is the replay hook",
+        "body": "Because a session is scored in money earned rather than progress made, the game is designed around short repeated attempts. Knowing where bandits tend to appear is worth more than reflexes, and the second or third run through a given day's challenge is usually worth several times the first, which is the intended curve rather than a sign you played badly the first time."
+      },
+      {
+        "heading": "Hats, web monetization and a third-place finish",
+        "body": "js13kGames 2019 ran a separate monetization category using the Web Monetization standard, and Backcountry's entry into it let supporters pick different hats for their character - a cosmetic reward rather than a gameplay advantage. It took third in that category. The cosmetic unlocks are inactive here, but nothing about the core bounty hunting depends on them."
+      }
+    ],
+    "plainText": "Backcountry is a low-poly Wild West game by Michal Budzynski and Stanislaw Malolepszy of piesku, made for js13kGames 2019 on the theme Back and finished at 13,304 bytes over 31 days. You hunt bandits and collect bounties, with the title screen setting the goal as earning as much money as you can in the day's challenge, so it is a repeatable scoring run rather than a campaign. Play is entirely mouse or touch driven. The flat red and tan untextured geometry is a consequence of the size limit, since there is no room for texture files. It runs on the authors' open-source goodluck template and placed third in the competition's Web Monetization category, where supporters could choose cosmetic hats.",
+    "iframeSrc": "backcountry/index.html"
+  },
+  "black-hole-square": {
+    "name": "Black Hole Square",
+    "href": "games/black-hole-square.html",
+    "image": "images/black-hole-square.webp",
+    "title": "Black Hole Square Unblocked - Play Free Online | Schplay",
+    "metaDescription": "A minimalist 13KB puzzle from js13kGames 2021 - tap squares into a black hole and work out the rules.",
+    "metaKeywords": "black hole square, black hole square unblocked, js13kgames 2021, quinten, minimalist puzzle, schplay black hole square",
+    "heroParagraph": "Black Hole Square is a minimalist puzzle game built by the developer Quinten for js13kGames 2021 on the theme of Space. Its entire instruction set, in the author's own words, is to clean up all the other squares in the universe by tapping them and seeing what happens - there is no tutorial, no text explaining the rules, and working out what each square does when you touch it is the actual game rather than a preamble to it.",
+    "instructions": [
+      "Tap or click a square to activate it. Different squares behave differently and the game never tells you which is which, so early puzzles are effectively a laboratory: touch something, watch what it does to its neighbours, and build up a mental rulebook you can apply when the layouts get harder.",
+      "Swipe right to reset the puzzle you are on, or to travel back to puzzles you have already finished. Because experimentation is the intended method, resetting is cheap and expected - there is no penalty for wrecking a board to find out how a piece behaves.",
+      "Swipe left to skip a puzzle entirely. That escape hatch matters in a game that refuses to explain itself: if one layout has you stuck, moving on and meeting the same square type in a simpler arrangement often teaches you the rule you were missing, and you can swipe back afterwards."
+    ],
+    "sections": [
+      {
+        "heading": "A game that withholds its own rules",
+        "body": "Most puzzle games front-load an explanation and then test you on it. Black Hole Square inverts that: the mechanics are the puzzle, and each new square type is a small mystery you solve by experiment. It is a design that only works at this scale, because a long game built this way would exhaust the player - here the whole thing is short enough that curiosity carries you to the end."
+      },
+      {
+        "heading": "Minimal by constraint, not just by taste",
+        "body": "The stark black field with sparse geometric shards is what a 13 kilobyte budget buys once you have spent the space on puzzle logic. There are no sprites and no texture files anywhere in the bundle, so every shape on screen is drawn mathematically at runtime. The look and the size limit are the same decision seen from two directions."
+      },
+      {
+        "heading": "It installs like an app",
+        "body": "The game ships a web manifest and a service worker, which is unusual for a jam entry and means your browser can install it to a home screen and run it with no network at all after the first visit. Three additional bonus puzzles were originally gated behind Web Monetization support during the competition; the main sequence has never required it."
+      }
+    ],
+    "plainText": "Black Hole Square is a minimalist puzzle game by Quinten, built for js13kGames 2021 on the Space theme. The stated goal is to clean up all the other squares in the universe by tapping them, and the game deliberately never explains what any square does - deducing the rules by experiment is the puzzle itself. Tap or click a square to activate it, swipe right to reset the current puzzle or return to earlier ones, and swipe left to skip ahead. Everything on screen is drawn mathematically rather than loaded as artwork, which is how it fits the 13 kilobyte limit, and it ships a manifest and service worker so it can be installed and played offline.",
+    "iframeSrc": "black-hole-square/index.html"
+  },
+  "chroma-incident": {
+    "name": "The Chroma Incident",
+    "href": "games/chroma-incident.html",
+    "image": "images/chroma-incident.webp",
+    "title": "The Chroma Incident Unblocked - Play Free Online | Schplay",
+    "metaDescription": "Ryan Malm's 13KB twin-stick shooter from js13kGames 2018 - the Achromats stole colour, take it back.",
+    "metaKeywords": "chroma incident, the chroma incident unblocked, js13kgames 2018, rybar, ryan malm, twin stick shooter, schplay chroma incident",
+    "heroParagraph": "The Chroma Incident is a twin-stick shooter built by Ryan Malm, who works as Rybar, for js13kGames 2018. The premise is that colour itself has been stolen from the world by a faction called the Achromats and your job is to take it back, which is why the game opens in stark monochrome pixel art. Malm went on to win the competition outright three years later with Space Garden, and the same instinct for making a 13 kilobyte budget look deliberate is already visible here.",
+    "instructions": [
+      "Move with WASD, or with ZQSD if you are on an AZERTY keyboard - the game supports both layouts from the title screen. Aim with the mouse and hold the button to shoot. Movement and aim are fully independent, which is what makes this a twin-stick shooter rather than a run-and-gun.",
+      "Gamepads are supported and the title screen tells you how to switch: press any button on a connected controller and the game picks it up. On a pad the two sticks map to movement and aim directly, which is the control scheme the genre was designed around.",
+      "Because you can shoot in one direction while retreating in another, the correct habit is to keep circling rather than backing straight away from a threat. Retreating in a straight line keeps you inside the path enemies are already firing along, while orbiting them buys distance without ever taking your crosshair off the target."
+    ],
+    "sections": [
+      {
+        "heading": "Monochrome as a premise, not a limitation",
+        "body": "Plenty of 13 kilobyte games are visually plain because colour data costs bytes. The Chroma Incident turns that constraint into its story: the Achromats have drained the world, so the starting palette is deliberately bleached and recovering colour is the goal you are working toward. It is a neat piece of design economy, using the jam's hardest restriction as the thing the game is about."
+      },
+      {
+        "heading": "The same author who won js13kGames outright",
+        "body": "Rybar is Ryan Malm, who took first place in the 2021 competition with Space Garden. Playing the two back to back is a useful lesson in what these constraints reward - both games generate all their visuals in code, both lean on a single strong colour idea, and both are built to be readable instantly on a small screen rather than detailed up close."
+      },
+      {
+        "heading": "Keep moving, always",
+        "body": "There is no cover system, no dash and no invulnerability window, so survival is entirely a matter of positioning. The most common way players lose a twin-stick shooter is standing still to improve their aim, which trades a small accuracy gain for a very large increase in how easy you are to hit. Fire while strafing and accept a few missed shots."
+      }
+    ],
+    "plainText": "The Chroma Incident is a twin-stick shooter by Ryan Malm, known as Rybar, built for js13kGames 2018. Colour has been stolen from the world by the Achromats and the game opens in monochrome pixel art as a result, making the palette part of the premise rather than only a consequence of the size limit. Move with WASD or ZQSD for AZERTY keyboards, aim with the mouse and hold the button to fire; gamepads are supported and detected when you press a button on the title screen. Movement and aim are independent, so circling a target while firing is far safer than retreating in a straight line. Malm later won js13kGames 2021 outright with Space Garden.",
+    "iframeSrc": "chroma-incident/index.html"
+  },
+  "evil-glitch": {
+    "name": "Evil Glitch",
+    "href": "games/evil-glitch.html",
+    "image": "images/evil-glitch.webp",
+    "title": "Evil Glitch Unblocked - Play Free Online | Schplay",
+    "metaDescription": "The 13KB neon shoot-'em-up by Giovanny Beltran that won js13kGames 2016 outright.",
+    "metaKeywords": "evil glitch, evil glitch unblocked, js13kgames 2016 winner, agar3s, giovanny beltran, neon shooter, schplay evil glitch",
+    "heroParagraph": "Evil Glitch won js13kGames 2016. Built by Colombian developer Giovanny Beltran, who publishes as agar3s, it is an arcade shoot-'em-up with a neon WebGL look inspired by 1980s media, and its enemies are drawn from what Beltran describes as crazy sacred geometry. He has said the game came out of an obsession with making sprites that glow like neon, something he only managed once he moved the rendering to WebGL. The final entry compressed to 13,225 bytes.",
+    "instructions": [
+      "The game follows your cursor - move the mouse and your craft goes where you point it, with no separate movement keys to fight against. Hold the mouse button to keep firing. That leaves you one continuous decision to make at any moment, which is where the arcade pressure comes from.",
+      "The title screen carries a Controls entry alongside a fullscreen toggle, and it is worth opening before your first run since the game also accepts keyboard input. Fullscreen is more than cosmetic here: the neon effects and the CRT-style distortion read very differently at size than they do in a small embedded frame.",
+      "Enemies arrive as geometric shapes that split, rotate and multiply rather than flying fixed attack patterns. Because the whole screen is glitching by design, the reliable way to track danger is to watch the shapes rather than the colours, which are deliberately unstable."
+    ],
+    "sections": [
+      {
+        "heading": "What winning js13kGames 2016 meant",
+        "body": "The 2016 theme was Glitch, and Evil Glitch took the competition's top prize by committing to it completely - the visual noise, the tearing and the unstable palette are the game rather than an effect layered on top. Beltran was later interviewed by Mozilla about the win. Every entry had to fit in 13 kilobytes with no external image or audio files of any kind."
+      },
+      {
+        "heading": "Neon sprites, and why WebGL was the unlock",
+        "body": "Beltran has written that he wanted glowing neon sprites for a long time and could not get there until he used WebGL. That matters for a 13 kilobyte budget because shader code is tiny compared with the artwork it replaces - a few lines of GLSL produce a glow that would cost kilobytes as pre-rendered images, which is what makes the look affordable at this size."
+      },
+      {
+        "heading": "An arcade score chase, not a campaign",
+        "body": "There is no story mode and no ending to reach; the game is built around surviving escalating waves and posting a better number than last time. Beltran later released an expanded arcade version with global scoreboards, which tells you how the original was meant to be played - short repeated runs where each attempt teaches you one more enemy behaviour."
+      }
+    ],
+    "plainText": "Evil Glitch is the arcade shoot-'em-up by Giovanny Beltran, publishing as agar3s, that won js13kGames 2016 on the theme Glitch. It compressed to 13,225 bytes and renders glowing neon sprites through WebGL, an approach Beltran has said he pursued for years before the technology made it affordable at this size, with enemies styled after sacred geometry and a deliberately unstable 1980s palette. The craft follows your mouse cursor directly and holding the button fires continuously, with a Controls entry and a fullscreen toggle on the title screen. It is a score-chasing wave survival game rather than a campaign, and Beltran later released an expanded arcade version with global scoreboards.",
+    "iframeSrc": "evil-glitch/index.html"
+  },
+  "ninja-vs-evilcorp": {
+    "name": "Ninja vs EVILCORP",
+    "href": "games/ninja-vs-evilcorp.html",
+    "image": "images/ninja-vs-evilcorp.webp",
+    "title": "Ninja vs EVILCORP Unblocked - Play Free Online | Schplay",
+    "metaDescription": "A 13KB stealth platformer from js13kGames 2020 - scale the tower and find the evil plans unseen.",
+    "metaKeywords": "ninja vs evilcorp, ninja vs evilcorp unblocked, js13kgames 2020, remvst, stealth platformer, super meat boy like, schplay ninja",
+    "heroParagraph": "Ninja vs EVILCORP is a stealth platformer written by Remi Vansteelandt, who publishes as remvst, for js13kGames 2020. He has named Super Meat Boy and Stealth Bastard Deluxe as the games it is built after, and the goal is exactly as blunt as the title suggests: scale a corporate tower to find the evil plans without ever being spotted. Levels are laid out with an obvious route and a harder alternate one, and a timer runs so the whole thing can be speedrun.",
+    "instructions": [
+      "Move and climb with the arrow keys or WASD, jumping with up, W or space. The Super Meat Boy lineage shows in the handling - the ninja is fast, wall-jumps are central to vertical progress, and levels expect you to chain movement rather than take each jump as a separate considered decision.",
+      "Getting spotted is the fail condition, not taking damage. That changes how you approach a room: the question is never whether you can survive crossing it, but whether anything has line of sight while you do. Waiting a beat for a guard to look away is almost always cheaper than trying to outrun detection.",
+      "Every level has a straightforward path and at least one more difficult route that saves time, and the on-screen timer exists so you can chase those. The intended arc is to clear a level however you can first, then come back and find the faster line once you know where the sightlines are."
+    ],
+    "sections": [
+      {
+        "heading": "Stealth measured in sightlines, not noise",
+        "body": "Unlike stealth games that track sound, suspicion meters and alert states, this one reduces the genre to a single readable rule - can something see you right now. That is partly a byte-budget decision and partly what makes it work as a platformer: you can evaluate a room at a glance and commit to a run through it, which keeps the pace much closer to Super Meat Boy than to a conventional stealth game."
+      },
+      {
+        "heading": "Two routes per level, by design",
+        "body": "Vansteelandt has said the levels were deliberately built with obvious routes alongside more difficult alternates. That structure is what gives a short jam game replay value - the first clear teaches you the room, and the second run is about spotting the wall-jump chain or the gap in patrol timing that the safe route was letting you avoid."
+      },
+      {
+        "heading": "Made for the 404 theme",
+        "body": "The js13kGames 2020 theme was 404, the web's error code for something that cannot be found, and a game about infiltrating a tower to locate hidden plans while remaining unfound yourself is a direct reading of it. The whole game, including its levels and audio, fits inside 13 kilobytes with no external files."
+      }
+    ],
+    "plainText": "Ninja vs EVILCORP is a stealth platformer by Remi Vansteelandt, built for js13kGames 2020 on the theme 404 and inspired by Super Meat Boy and Stealth Bastard Deluxe. You scale a corporate tower to find the evil plans without being spotted, moving with the arrow keys or WASD and jumping with up, W or space, with touch input supported on mobile. Being seen is the fail condition rather than taking damage, so reading sightlines matters more than reflexes, though wall-jump chains and fast movement are central. Each level offers an obvious route plus a harder alternate, and an on-screen timer supports speedrunning.",
+    "iframeSrc": "ninja-vs-evilcorp/index.html"
+  },
+  "shuttledeck": {
+    "name": "SHUTTLEDECK",
+    "href": "games/shuttledeck.html",
+    "image": "images/shuttledeck.webp",
+    "title": "SHUTTLEDECK Unblocked - Play Free Online | Schplay",
+    "metaDescription": "Ariel Wexler's 13KB mashup of endless runner and deck-builder from js13kGames 2021.",
+    "metaKeywords": "shuttledeck, shuttledeck unblocked, js13kgames 2021, arikwex, ariel wexler, deck building runner, schplay shuttledeck",
+    "heroParagraph": "SHUTTLEDECK is what happens when an endless runner and a deck-builder are merged into 13 kilobytes. Built by Ariel Wexler, who publishes as arikwex, for js13kGames 2021, it casts you as a Space Courier carrying a very important package who has to reach a series of consecutive planets alive. The twist is that you do not steer directly - every action you take is a card played from a deck you build as you go.",
+    "instructions": [
+      "Obstacles damage your shields and running out of shields ends the run, so survival is the first priority on every screen. You avoid them by clicking or tapping cards in your hand, and the most basic cards in the deck are the red, green and blue lane changes that shift you out of the path of whatever is coming.",
+      "Every card costs energy, tracked by the meter in the bottom right, and a card you cannot pay for cannot be played. That budget is the real difficulty: the deck usually contains an answer to what is in front of you, and the question is whether you can afford it right now or need to survive on a cheaper option and save up.",
+      "Minerals collected during flight are spent between planets, where you buy new ability cards and ship upgrades, sometimes from decidedly sketchy characters. A deck that is too large dilutes the cards you actually need, so buying selectively beats buying everything you can afford."
+    ],
+    "sections": [
+      {
+        "heading": "Two genres that should not fit together",
+        "body": "Endless runners are about reaction speed and deck-builders are about deliberate planning, and SHUTTLEDECK works because the cards impose a rhythm on the runner - you are always deciding which resource to spend rather than how fast you can twitch. It is an unusually ambitious structure to attempt at this size, since it needs an economy, a shop and a card system all inside the same 13 kilobytes."
+      },
+      {
+        "heading": "Energy discipline beats card collection",
+        "body": "New players tend to spend energy on the first card that answers a threat, then find themselves with a full hand and an empty meter when a harder obstacle arrives. Reading one or two obstacles ahead and taking the cheapest survivable option is what carries runs, and it is the reason a small efficient deck usually outperforms a large one."
+      },
+      {
+        "heading": "Designed for a phone as well as a laptop",
+        "body": "Wexler built the game to be desktop and mobile friendly from the start, and the card interface is why that works - there is no virtual joystick or precise input to fake on a touchscreen, just cards large enough to tap accurately. It plays identically on a school Chromebook and a phone, which is rarer than it sounds for an action game."
+      }
+    ],
+    "plainText": "SHUTTLEDECK is a hybrid of endless runner and deck-builder by Ariel Wexler, made for js13kGames 2021. You play a Space Courier delivering an important package who must reach several consecutive planets while avoiding obstacles that damage your shields, and depleting your shields ends the run. Rather than steering directly you click or tap cards to trigger abilities, with the red, green and blue cards providing basic lane changes, and every card costs energy from a meter shown in the bottom right. Minerals collected in flight are spent between planets on new ability cards and ship upgrades. It was built to work on desktop and mobile alike.",
+    "iframeSrc": "shuttledeck/index.html"
+  },
+  "themazeofspacegoblins": {
+    "name": "The Maze of Space Goblins",
+    "href": "games/themazeofspacegoblins.html",
+    "image": "images/themazeofspacegoblins.webp",
+    "title": "The Maze of Space Goblins Unblocked - Play Free Online | Schplay",
+    "metaDescription": "Jani Nykanen's 13KB puzzle from js13kGames 2021 that crosses Sokoban with match-three.",
+    "metaKeywords": "maze of space goblins, space goblins unblocked, js13kgames 2021, jani nykanen, sokoban match 3, schplay space goblins",
+    "heroParagraph": "The Maze of Space Goblins is a puzzle game by Finnish developer Jani Nykanen, built for js13kGames 2021, and its idea is a genuine hybrid: it plays like Sokoban but scores like match-three. You pilot a flying saucer around a grid pushing coloured space goblins, and lining three or more of the same colour together destroys them. Nykanen liked the result enough that he later ported it to MS-DOS.",
+    "instructions": [
+      "Move the saucer one tile at a time with the arrow keys. Goblins are pushed rather than picked up, exactly as crates are in Sokoban, which means every push is permanent unless you undo it and a goblin shoved into a corner may be impossible to recover.",
+      "Line up three or more goblins of the same colour to destroy them. Clearing them is not the objective in itself though - a room is only solved when you have collected all of its stars, so the goblins are obstacles to be removed in the right order rather than a score to farm.",
+      "Backspace undoes your last move and R resets the room completely. Both are essential rather than optional in a pushing puzzle, because the standard failure is realising four moves later that a goblin is now permanently against a wall, and stepping back is the intended way to recover."
+    ],
+    "sections": [
+      {
+        "heading": "Sokoban rules with a match-three win condition",
+        "body": "The two genres pull in different directions and that tension is the puzzle. Sokoban punishes irreversible pushes; match-three encourages you to gather things together. Combining them means every group you assemble also risks stranding a goblin somewhere it can never leave, so the planning happens several moves before the match you are aiming for."
+      },
+      {
+        "heading": "Stars are the objective, goblins are the obstacle",
+        "body": "It is easy to spend a room clearing goblins efficiently and still fail, because the exit condition is collecting every star rather than emptying the board. Read where the stars are first and work out which goblins are blocking them, then clear only what is in the way - unnecessary matches often move a goblin into the exact square you needed to walk through."
+      },
+      {
+        "heading": "Small enough to run on DOS",
+        "body": "Nykanen followed the browser version with a port to MS-DOS, which is a useful measure of how tight the original is - a game written for a 13 kilobyte web budget turned out to be small enough to run on hardware from decades earlier. The art here is a single tiny sprite sheet and a bitmap font, both a fraction of a kilobyte."
+      }
+    ],
+    "plainText": "The Maze of Space Goblins is a puzzle game by Jani Nykanen made for js13kGames 2021 that combines Sokoban with match-three. You steer a flying saucer around a grid with the arrow keys, pushing coloured space goblins one tile at a time, and lining up three or more of the same colour destroys them. A room is solved by collecting all of its stars rather than by clearing goblins, so the goblins are obstacles to remove in the correct order. Backspace undoes a move and R resets the room, both necessary because a goblin pushed into a corner can become permanently stuck. Nykanen later ported the game to MS-DOS.",
+    "iframeSrc": "themazeofspacegoblins/index.html"
+  },
+  "xx142-b2-exe": {
+    "name": "XX142-B2.exe",
+    "href": "games/xx142-b2-exe.html",
+    "image": "images/xx142-b2-exe.webp",
+    "title": "XX142-B2.exe Unblocked - Play Free Online | Schplay",
+    "metaDescription": "The 13KB WebGL shooter that won js13kGames 2019 outright - you have 13 seconds before deletion.",
+    "metaKeywords": "xx142-b2.exe, xx142 b2 exe unblocked, js13kgames 2019 winner, bencoder, salvatore previti, webgl shooter, schplay xx142",
+    "heroParagraph": "XX142-B2.exe took first place in the Overall and Desktop categories at js13kGames 2019. Built by Ben Clark and Salvatore Previti, it opens in the year 2413, more than two centuries into humanity's enslavement by an alien race. You are an AI weaponised virus sent to infiltrate the alien network and shut down its power generators and weapon systems, and the alien antivirus will find and delete you thirteen seconds after you arrive.",
+    "instructions": [
+      "Move with WASD or the arrow keys and aim with the mouse. The thirteen-second timer is not a difficulty setting, it is the structure of the game - you are not expected to finish a run inside it, so treat each attempt as a scouting trip that ends on schedule rather than a failure you could have avoided.",
+      "The game's own line is that a file is never really deleted. Each time the antivirus removes you, the execution backtrace from that attempt persists and gives the next run a foothold further in, so progress accumulates across deaths rather than within any single life.",
+      "Backspace runs kill -9 on your own process, ending the current attempt immediately. That sounds like a joke and it is one, but it is also practical: once a run has gone wrong there is no reason to wait out the remaining seconds when you could be starting the next one with the trace you just earned."
+    ],
+    "sections": [
+      {
+        "heading": "Thirteen seconds, thirteen kilobytes",
+        "body": "The deletion timer is set to thirteen seconds because the competition's limit is thirteen kilobytes, and the 2019 theme was Back, which the game reads as coming back from deletion again and again. Very few jam entries manage to fold the contest's own constraints into their fiction this cleanly, and the judges gave it the top prize across the whole field."
+      },
+      {
+        "heading": "Death as the progression system",
+        "body": "Because the backtrace from each attempt carries forward, dying is how you advance rather than how you lose. That inverts the usual instinct to play cautiously - spending a run pushing recklessly into unexplored network to see what is there is often worth more than surviving the full timer in territory you have already mapped."
+      },
+      {
+        "heading": "A WebGL renderer inside the byte limit",
+        "body": "The game requires WebGL and will not run without it, which is what buys the lighting and the volumetric look the entry was praised for. Clark and Previti released the source under the MIT licence, and it remains a reference for how much visual ambition is achievable when the shaders are written by hand instead of the assets being shipped."
+      }
+    ],
+    "plainText": "XX142-B2.exe is a WebGL shooter by Ben Clark and Salvatore Previti that won first place in the Overall and Desktop categories at js13kGames 2019. Set in 2413 after two centuries of alien rule, you play an AI weaponised virus infiltrating the alien network to disable its power generators and weapon systems, with the alien antivirus deleting you thirteen seconds after each insertion - a nod to the competition's 13 kilobyte limit. Progress carries between attempts because the execution backtrace from previous runs survives deletion, making repeated death the progression system. Move with WASD or the arrow keys, aim with the mouse, and press Backspace to terminate your own process and restart early. The source is MIT licensed.",
+    "iframeSrc": "xx142-b2-exe/index.html"
+  },
+  "super-mario-bros": {
+    "name": "Super Mario Bros",
+    "href": "games/super-mario-bros.html",
+    "image": "images/super-mario-bros.webp",
+    "title": "Super Mario Bros Unblocked - Play Free Online | Schplay",
+    "metaDescription": "The 1985 NES original running in your browser - 32 levels across eight worlds, no download.",
+    "metaKeywords": "super mario bros, super mario bros unblocked, nes emulator online, nintendo 1985, shigeru miyamoto, world 1-1, schplay mario",
+    "heroParagraph": "Super Mario Bros arrived on the Famicom in Japan on the 13th of September 1985, directed by Shigeru Miyamoto with Takashi Tezuka and scored by Koji Kondo, and it reshaped what a platform game was expected to be. This is the original cartridge running in an emulator in your browser rather than a remake, so the physics, the level layouts, the warp zones and the sound are exactly as they shipped forty years ago.",
+    "instructions": [
+      "Press enter to start, move with the arrow keys, jump with Z and hold X to run - the emulator maps those to the NES A and B buttons, and X also throws fireballs once you have the Fire Flower. Holding X while you jump is the single most important habit in the game, because Mario's jump distance scales with how fast he is already moving.",
+      "There are 32 levels across eight worlds, each ending at a flagpole, with castle stages closing out every world. Hitting the flagpole higher scores more points, and the pipes, vines and hidden blocks scattered through the early worlds contain the warp zones that let you skip several worlds at once.",
+      "You can plug in a USB or Bluetooth controller and the emulator will detect it automatically, which is worth doing for a game built around precise analogue-feeling momentum on a d-pad. Save states and other emulator features are available from the menu at the bottom of the game frame."
+    ],
+    "sections": [
+      {
+        "heading": "Momentum is the whole game",
+        "body": "Mario accelerates rather than moving at a fixed speed, and he keeps sliding briefly after you release the direction key. Almost every gap in the game is tuned to that physics model, so a jump that feels impossible is usually one you attempted from a standing start. Build up a run before the gap and hold the run button through the jump and the distances become generous rather than tight."
+      },
+      {
+        "heading": "World 1-1 is a teaching level",
+        "body": "The opening stage is one of the most studied pieces of level design ever made. It introduces the Goomba, the question block, the mushroom and a pit in a fixed order and in a layout that makes the correct response the natural one, with no text instructions anywhere. Nintendo built it deliberately so that a player who had never held a controller would understand the rules within thirty seconds."
+      },
+      {
+        "heading": "Running the real cartridge, not a remake",
+        "body": "This page runs the original ROM through the EmulatorJS runtime hosted on this site, using the same emulator core as the other retro titles here. Nothing is streamed from a third-party server, which is why it works on locked-down school networks, and because it is the genuine cartridge every glitch, warp and frame-perfect trick from the original behaves the way speedrunners expect."
+      }
+    ],
+    "plainText": "Super Mario Bros is the 1985 Nintendo platformer that launched on the Famicom on the 13th of September that year, directed by Shigeru Miyamoto with Takashi Tezuka and with music by Koji Kondo. This is the original NES cartridge running in an emulator in the browser rather than a remake, so the physics, layouts, warp zones and audio are unchanged. Press enter to start, move with the arrow keys and use Z and X as the NES A and B buttons, with gamepads detected automatically. The game contains 32 levels across eight worlds, each ending at a flagpole. Mario accelerates rather than moving at constant speed, so building momentum and holding the run button through a jump is essential to clearing the longer gaps.",
+    "iframeSrc": "super-mario-bros/index.html"
+  },
+  "retrohaunt": {
+    "name": "Retrohaunt",
+    "href": "games/retrohaunt.html",
+    "image": "images/retrohaunt.webp",
+    "title": "Retrohaunt Unblocked - Play Free Online | Schplay",
+    "metaDescription": "Dennis Bengs's time-bending 13KB puzzle game, third place at js13kGames 2019.",
+    "metaKeywords": "retrohaunt, retrohaunt unblocked, js13kgames 2019, donitz, dennis bengs, time travel puzzle, schplay retrohaunt",
+    "heroParagraph": "Retrohaunt is a time-manipulation puzzle game by Dennis Bengs, who publishes as Donitz, and it finished third at js13kGames 2019. Its setup is that something is stealing time itself - today was yesterday and tomorrow is nowhere to be found - and Detective Clay is on the case. The game grew out of a simpler idea about dodging animated vector shapes, until Bengs found that letting the player bend the flow of time around those shapes was the more interesting game.",
+    "instructions": [
+      "Move with the arrow keys. The world is drawn entirely from animated vector shapes, and many of them are hazards that follow fixed, repeating paths - so the first thing to do in any new scene is watch a full cycle before you commit to moving through it.",
+      "Hovering over certain shapes changes how time flows. That is the central mechanic and it is not limited to slowing things down: you can wind time backwards, including further back than your own character has actually experienced, which is what turns some apparently impossible rooms into solvable ones.",
+      "Because time itself is the tool, the solution to a blocked path is often temporal rather than spatial. If there is no route past a hazard, the question to ask is not which way around it goes but what the room looked like at a different moment, and whether you can get the room back to that state."
+    ],
+    "sections": [
+      {
+        "heading": "Rewinding past your own timeline",
+        "body": "Most time-manipulation games cap the rewind at the moment you entered the level, because the developer only has to store what the player has seen. Retrohaunt lets you reverse past your character's experienced time, which means the world has a history that existed before you arrived. It is a genuinely unusual mechanic and the source of the game's best puzzles."
+      },
+      {
+        "heading": "From a dodging game to a time game",
+        "body": "Bengs has written that the project started as a concept about avoiding animated vector shapes, with time manipulation added as a way to help solve certain puzzles. The finished game keeps that skeleton visible - the hazards are still shapes on loops - but the interesting decisions moved from where you stand to when you are standing there."
+      },
+      {
+        "heading": "Third place, and a mix of pacing",
+        "body": "The 2019 competition theme was Back, which Retrohaunt reads as going back through time, and it placed third overall in a field where the top two were also strongly themed. Players tend to notice that the puzzles alternate between quick reactive sections and slow deliberate ones, which is deliberate pacing rather than uneven difficulty."
+      }
+    ],
+    "plainText": "Retrohaunt is a time-manipulation puzzle game by Dennis Bengs, publishing as Donitz, which took third place at js13kGames 2019 on the theme Back. Something is stealing time, and Detective Clay is investigating. You move with the arrow keys through scenes built from animated vector shapes that follow repeating paths, and hovering over certain shapes changes how time flows around them. The rewind is not limited to what your character has experienced - you can wind the world back further than your own arrival, which is the key to several puzzles. The project began as a game about dodging moving shapes before time control became its central mechanic.",
+    "iframeSrc": "retrohaunt/index.html"
   }
 }

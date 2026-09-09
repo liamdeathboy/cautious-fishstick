@@ -17,6 +17,8 @@ https://schplay.com/games/animalcraft-friends.html
 https://schplay.com/games/antbuster.html
 https://schplay.com/games/arcade-wizard.html
 https://schplay.com/games/arrow-fest-3d-online.html
+https://schplay.com/games/asciispace.html
+https://schplay.com/games/backcountry.html
 https://schplay.com/games/bad-icecream-1.html
 https://schplay.com/games/bad-icecream-2.html
 https://schplay.com/games/bad-icecream-3.html
@@ -31,6 +33,7 @@ https://schplay.com/games/bergentruck.html
 https://schplay.com/games/big-hand.html
 https://schplay.com/games/bit-gun-io.html
 https://schplay.com/games/bitcoin-millionaire.html
+https://schplay.com/games/black-hole-square.html
 https://schplay.com/games/block-craft-3d-school.html
 https://schplay.com/games/blockblast.html
 https://schplay.com/games/bloodmoney.html
@@ -48,14 +51,17 @@ https://schplay.com/games/bus-school-park-driver.html
 https://schplay.com/games/cake-maker-kids-cooking.html
 https://schplay.com/games/camouflage-and-sniper.html
 https://schplay.com/games/candy-cat-shot.html
+https://schplay.com/games/captain-callisto.html
 https://schplay.com/games/car-survival-3d.html
 https://schplay.com/games/cat-pet-doctor-dentist.html
 https://schplay.com/games/catmario.html
+https://schplay.com/games/chroma-incident.html
 https://schplay.com/games/circle-of-heroes.html
 https://schplay.com/games/city-defense.html
 https://schplay.com/games/civiballs1.html
 https://schplay.com/games/clothing-shop-3d.html
 https://schplay.com/games/clubpenguin.html
+https://schplay.com/games/connect-3.html
 https://schplay.com/games/connect-pipe-color-puzzle-game.html
 https://schplay.com/games/cookie-clicker-working-2026.html
 https://schplay.com/games/cool-cars-run-3d.html
@@ -90,6 +96,7 @@ https://schplay.com/games/dunebuggy.html
 https://schplay.com/games/electric-man-2.html
 https://schplay.com/games/elonashooter.html
 https://schplay.com/games/escape-mystic-castle-mobile-version.html
+https://schplay.com/games/evil-glitch.html
 https://schplay.com/games/evolving-bombs-3d.html
 https://schplay.com/games/evowars.html
 https://schplay.com/games/fall-guy-2024.html
@@ -145,6 +152,7 @@ https://schplay.com/games/kaji-run.html
 https://schplay.com/games/karlson.html
 https://schplay.com/games/kindergarten-2.html
 https://schplay.com/games/kindergarten.html
+https://schplay.com/games/konnekt.html
 https://schplay.com/games/learntofly.html
 https://schplay.com/games/learntofly2.html
 https://schplay.com/games/learntofly3.html
@@ -173,11 +181,13 @@ https://schplay.com/games/mouse-raider.html
 https://schplay.com/games/mrmine.html
 https://schplay.com/games/ngon.html
 https://schplay.com/games/nightmare-float.html
+https://schplay.com/games/ninja-vs-evilcorp.html
 https://schplay.com/games/noob-the-builder.html
 https://schplay.com/games/noodle-stack-runner.html
 https://schplay.com/games/office-fight.html
 https://schplay.com/games/oiligarchy.html
 https://schplay.com/games/ovo.html
+https://schplay.com/games/packabunchas.html
 https://schplay.com/games/pacman.html
 https://schplay.com/games/pacxon.html
 https://schplay.com/games/pandemic2.html
@@ -195,6 +205,7 @@ https://schplay.com/games/pregnancy-test.html
 https://schplay.com/games/pull-the-pin-much-money.html
 https://schplay.com/games/purrfect-clicker.html
 https://schplay.com/games/pvz.html
+https://schplay.com/games/q1k3.html
 https://schplay.com/games/quake3.html
 https://schplay.com/games/raft.html
 https://schplay.com/games/rb-college.html
@@ -202,7 +213,9 @@ https://schplay.com/games/real-driving-simulator.html
 https://schplay.com/games/real-savior.html
 https://schplay.com/games/redpool-legend-2-player.html
 https://schplay.com/games/retrobowl.html
+https://schplay.com/games/retrohaunt.html
 https://schplay.com/games/riddleschool-all-games.html
+https://schplay.com/games/roadblocks.html
 https://schplay.com/games/robot-invasion.html
 https://schplay.com/games/rooftopsnipers.html
 https://schplay.com/games/run-rich-3d.html
@@ -214,6 +227,7 @@ https://schplay.com/games/shape-transform-blob-racing.html
 https://schplay.com/games/shooting-master.html
 https://schplay.com/games/shovel-3d.html
 https://schplay.com/games/shuffle.html
+https://schplay.com/games/shuttledeck.html
 https://schplay.com/games/slender.html
 https://schplay.com/games/slitherio.html
 https://schplay.com/games/slope2.html
@@ -223,6 +237,8 @@ https://schplay.com/games/snowline.html
 https://schplay.com/games/soccer-random.html
 https://schplay.com/games/sonic-exe.html
 https://schplay.com/games/sort-the-court.html
+https://schplay.com/games/spacegarden.html
+https://schplay.com/games/spacehuggers.html
 https://schplay.com/games/speed-stars.html
 https://schplay.com/games/spelunky.html
 https://schplay.com/games/spending-elonmusk-money.html
@@ -235,7 +251,9 @@ https://schplay.com/games/stickman-and-guns.html
 https://schplay.com/games/stickmangolf.html
 https://schplay.com/games/stunt-maps.html
 https://schplay.com/games/subwaysurfer.html
+https://schplay.com/games/sudoku.html
 https://schplay.com/games/super-doctor-body-examination.html
+https://schplay.com/games/super-mario-bros.html
 https://schplay.com/games/super-sonic.html
 https://schplay.com/games/super-tank-hero.html
 https://schplay.com/games/supermario63.html
@@ -256,6 +274,7 @@ https://schplay.com/games/the-binding-of-isaac.html
 https://schplay.com/games/the-last-shot.html
 https://schplay.com/games/the-man-in-the-window.html
 https://schplay.com/games/the-rabbit-adventure.html
+https://schplay.com/games/themazeofspacegoblins.html
 https://schplay.com/games/there-is-no-game.html
 https://schplay.com/games/towerblaster.html
 https://schplay.com/games/towermaster.html
@@ -275,6 +294,7 @@ https://schplay.com/games/web-fishing.html
 https://schplay.com/games/wheel-scale.html
 https://schplay.com/games/worldshardestgame.html
 https://schplay.com/games/worldshardestgame2.html
+https://schplay.com/games/xx142-b2-exe.html
 https://schplay.com/games/yandere-simulator.html
 https://schplay.com/games/yume-nikki.html
 https://schplay.com/games/z-machine.html

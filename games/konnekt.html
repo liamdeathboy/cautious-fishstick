@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="index, follow">
+    <meta name="description" content="Play Konnekt unblocked and free online at Schplay. A 13KB real-time strategy game played on a rotating sphere across twelve escalating levels.">
+    <meta name="keywords" content="konnekt, konnekt unblocked, js13kgames 2018, monsterkodi, node conquest strategy, sphere strategy game, schplay konnekt, schplay, cool, math, maths, game, games, puzzle, puzzles, free, online, strategy, skill, shapes, colors, logic, memory, board, read, reading, spell, spelling, geography, science, learning fun, fun activities for kids, learning games, education games">
+    <meta name="theme-color" content="#0f1a2a">
+    <title>Konnekt Unblocked - Play Free Online | Schplay</title>
+    <link rel="canonical" href="https://schplay.com/games/konnekt.html">
+    <link rel="icon" href="/images/favicon.ico" sizes="any">
+    <link rel="apple-touch-icon" href="../images/favicon-32x32.png">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Schplay">
+    <meta property="og:title" content="Konnekt Unblocked - Play Free Online | Schplay">
+    <meta property="og:description" content="Play Konnekt unblocked and free online at Schplay. A 13KB real-time strategy game played on a rotating sphere across twelve escalating levels.">
+    <meta property="og:url" content="https://schplay.com/games/konnekt.html">
+    <meta property="og:image" content="https://schplay.com/images/konnekt.webp">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Konnekt Unblocked - Play Free Online | Schplay">
+    <meta name="twitter:description" content="Play Konnekt unblocked and free online at Schplay. A 13KB real-time strategy game played on a rotating sphere across twelve escalating levels.">
+    <meta name="twitter:image" content="https://schplay.com/images/konnekt.webp">
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'" crossorigin="anonymous">
+    <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" crossorigin="anonymous"></noscript>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=optional" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=optional"></noscript>
+    <link rel="stylesheet" href="../css/new-style.css">
+    <link rel="stylesheet" href="../css/restyle.css">
+    <link rel="stylesheet" href="../css/user-choice.css">
+    <script type="application/ld+json">
+        [
+                  {
+                            "@context": "https://schema.org",
+                            "@type": "VideoGame",
+                            "name": "Konnekt Unblocked",
+                            "alternateName": "Konnekt",
+                            "description": "A 13KB real-time strategy game played on a rotating sphere across twelve escalating levels.",
+                            "genre": [
+                                      "Strategy",
+                                      "Real-Time Conquest"
+                            ],
+                            "url": "https://schplay.com/games/konnekt.html",
+                            "image": "https://schplay.com/images/konnekt.webp",
+                            "applicationCategory": "Game",
+                            "operatingSystem": "Any",
+                            "playMode": "SinglePlayer",
+                            "offers": {
+                                      "@type": "Offer",
+                                      "price": "0",
+                                      "priceCurrency": "USD"
+                            },
+                            "publisher": {
+                                      "@type": "Organization",
+                                      "name": "Schplay",
+                                      "url": "https://schplay.com/"
+                            }
+                  },
+                  {
+                            "@context": "https://schema.org",
+                            "@type": "BreadcrumbList",
+                            "itemListElement": [
+                                      {
+                                                "@type": "ListItem",
+                                                "position": 1,
+                                                "name": "Home",
+                                                "item": "https://schplay.com/"
+                                      },
+                                      {
+                                                "@type": "ListItem",
+                                                "position": 2,
+                                                "name": "All Games",
+                                                "item": "https://schplay.com/allgames.html"
+                                      },
+                                      {
+                                                "@type": "ListItem",
+                                                "position": 3,
+                                                "name": "Konnekt Unblocked",
+                                                "item": "https://schplay.com/games/konnekt.html"
+                                      }
+                            ]
+                  }
+        ]
+    </script>
+    <style>
+        
+                .game-player-section {
+                    display: grid;
+                    grid-template-columns: minmax(0, 1fr);
+                    gap: 20px;
+                    margin-bottom: 32px;
+                }
+        
+                .game-player-card, .game-meta-card {
+                    background-color: #1c2a3e;
+                    border-radius: 16px;
+                    padding: 20px;
+                    box-shadow: 0 8px 24px rgba(5, 15, 32, 0.35);
+                }
+        
+                .game-player-header {
+                    display: flex;
+                    justify-content: flex-end;
+                    margin-bottom: 12px;
+                }
+        
+                .game-fullscreen-toggle {
+                    display: inline-flex;
+                    align-items: center;
+                    gap: 8px;
+                    background: rgba(15, 32, 58, 0.75);
+                    border: 1px solid rgba(86, 143, 215, 0.65);
+                    color: var(--text-color);
+                    padding: 8px 14px;
+                    border-radius: 12px;
+                    cursor: pointer;
+                    font-weight: 600;
+                    transition: transform 0.2s ease, background-color 0.2s ease;
+                }
+        
+                .game-fullscreen-toggle i {
+                    color: var(--secondary-color);
+                }
+        
+                .game-fullscreen-toggle:hover,
+                .game-fullscreen-toggle:focus-visible {
+                    transform: translateY(-1px);
+                    background: rgba(24, 46, 78, 0.9);
+                    outline: none;
+                }
+        
+                .game-player-card iframe {
+                    width: 100%;
+                    height: 640px;
+                    border: none;
+                    border-radius: 12px;
+                    background-color: #000;
+                }
+        
+                .game-player-card iframe:fullscreen,
+                .game-player-card iframe:-webkit-full-screen,
+                .game-player-card iframe:-moz-full-screen,
+                .game-player-card iframe:-ms-fullscreen {
+                    width: 100vw;
+                    height: 100vh;
+                    border-radius: 0;
+                }
+        
+                .game-meta-card h2 {
+                    font-size: 1.35rem;
+                    margin-bottom: 12px;
+                }
+        
+                .game-meta-card p {
+                    color: var(--text-muted);
+                    line-height: 1.6;
+                    margin-bottom: 16px;
+                }
+        
+                .game-meta-card ul {
+                    padding-left: 20px;
+                    color: var(--text-muted);
+                }
+        
+                .game-meta-card li {
+                    margin-bottom: 10px;
+                }
+        
+                .game-meta-card .game-ad-slot {
+                    margin: 0 0 20px;
+                }
+        
+                .meta-details {
+                    display: grid;
+                    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+                    gap: 18px;
+                    margin-bottom: 24px;
+                    list-style: none;
+                    padding: 0;
+                }
+        
+                .meta-details dt {
+                    font-size: 0.85rem;
+                    letter-spacing: 0.05em;
+                    text-transform: uppercase;
+                    color: var(--text-muted);
+                    margin-bottom: 6px;
+                }
+        
+                .meta-details dd {
+                    margin: 0;
+                    font-weight: 600;
+                }
+        
+                .meta-divider {
+                    height: 1px;
+                    border: none;
+                    background: rgba(255, 255, 255, 0.08);
+                    margin: 26px 0;
+                }
+        
+                .meta-subheading {
+                    font-size: 1.1rem;
+                    margin-top: 26px;
+                    margin-bottom: 12px;
+                }
+        
+                .meta-code-list {
+                    list-style: none;
+                    padding: 0;
+                    margin: 18px 0;
+                    font-family: "Courier New", Courier, monospace;
+                    font-size: 0.95rem;
+                    color: var(--text-muted);
+                }
+        
+                .meta-code-list li {
+                    margin-bottom: 6px;
+                }
+        
+                .meta-hint {
+                    font-size: 0.95rem;
+                    color: var(--text-muted);
+                    margin-top: 16px;
+                }
+        
+                .game-ad-slot {
+                    margin-top: 20px;
+                    background: rgba(12, 24, 42, 0.65);
+                    border-radius: 12px;
+                    padding: 12px;
+                    text-align: center;
+                }
+        
+                .game-ad-slot p {
+                    font-size: 0.85rem;
+                    margin-bottom: 12px;
+                    color: var(--text-muted);
+                }
+        
+                @media (max-width: 1100px) {
+                    .game-player-section {
+                        grid-template-columns: 1fr;
+                    }
+                    .game-player-card iframe {
+                        height: 520px;
+                    }
+                    .game-player-header {
+                        justify-content: center;
+                    }
+                }
+        
+                /* ── Breadcrumb, page H1 & static internal-link sections (SEO) ── */
+                .game-breadcrumb {
+                    display: flex;
+                    flex-wrap: wrap;
+                    align-items: center;
+                    gap: 8px;
+                    font-size: 0.9rem;
+                    margin: 4px 0 14px;
+                    color: #9fb3c8;
+                }
+                .game-breadcrumb a {
+                    color: #9fb3c8;
+                    text-decoration: none;
+                }
+                .game-breadcrumb a:hover { color: #fff; text-decoration: underline; }
+                .game-breadcrumb .breadcrumb-sep { color: #52657d; }
+                .game-breadcrumb [aria-current="page"] { color: #dbe6f2; }
+        
+                .game-title-block { margin: 0 0 18px; }
+                .game-title {
+                    font-size: clamp(1.6rem, 3vw, 2.3rem);
+                    line-height: 1.15;
+                    margin: 0 0 6px;
+                    color: #fff;
+                    letter-spacing: -0.01em;
+                }
+                .game-subtitle {
+                    margin: 0;
+                    color: #9fb3c8;
+                    font-size: 1rem;
+                    max-width: 70ch;
+                }
+        
+                .more-games-section { margin-top: 28px; }
+                .more-games-section .games-grid { margin-top: 4px; }
+        
+                .category-browse {
+                    margin: 32px 0 8px;
+                    padding: 22px;
+                    background-color: #1c2a3e;
+                    border-radius: 16px;
+                }
+                .category-browse-title {
+                    font-size: 1.15rem;
+                    margin: 0 0 14px;
+                    color: #fff;
+                }
+                .category-browse-links {
+                    display: flex;
+                    flex-wrap: wrap;
+                    gap: 10px;
+                }
+                .category-browse-links .category-chip {
+                    display: inline-flex;
+                    align-items: center;
+                    padding: 8px 16px;
+                    border-radius: 999px;
+                    background-color: #24384f;
+                    color: #dbe6f2;
+                    font-weight: 600;
+                    font-size: 0.92rem;
+                    text-decoration: none;
+                    transition: background-color 0.15s ease, color 0.15s ease;
+                }
+                .category-browse-links .category-chip:hover {
+                    background-color: #2f9bff;
+                    color: #fff;
+                }
+            
+    </style>
+</head>
+<body>
+  <header id="site-header" role="banner">
+    <div id="navbar-placeholder"></div>
+  </header>
+
+  <main class="container" role="main">
+
+    <nav class="game-breadcrumb" aria-label="Breadcrumb">
+      <a href="../">Home</a>
+      <span class="breadcrumb-sep" aria-hidden="true">›</span>
+      <a href="../allgames.html">Games</a>
+      <span class="breadcrumb-sep" aria-hidden="true">›</span>
+      <span aria-current="page">Konnekt</span>
+    </nav>
+
+    <div class="game-title-block">
+      <h1 class="game-title">Konnekt Unblocked</h1>
+      <p class="game-subtitle">Play Konnekt free online — no download, no install, playable on any Chromebook or school laptop.</p>
+    </div>
+
+    <section class="game-player-section">
+      <div class="game-player-card" role="region" aria-label="Konnekt gameplay">
+        <div class="game-player-header">
+          <button class="game-fullscreen-toggle" type="button" aria-controls="konnekt-iframe" aria-label="Toggle fullscreen">
+            <i class="fas fa-expand" aria-hidden="true"></i>
+            <span>Fullscreen</span>
+          </button>
+        </div>
+
+        <iframe id="konnekt-iframe" src="konnekt/index.html" title="Play Konnekt" allowfullscreen loading="lazy"></iframe>
+      </div>
+      <aside class="game-meta-card" id="how-to-play">
+        <div class="game-ad-slot" aria-label="Advertisement">
+          <p>Ads keep Schplay free for everyone.</p>
+          <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5690564842575659" crossorigin="anonymous"></script>
+          <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-5690564842575659" data-ad-slot="5102033888" data-ad-format="auto" data-full-width-responsive="true"></ins>
+          <script>
+            (adsbygoogle = window.adsbygoogle || []).push({});
+          </script>
+        </div>
+        <dl class="meta-details">
+          <div>
+            <dt>Genre</dt>
+            <dd>Strategy · Real-Time Conquest</dd>
+          </div>
+          <div>
+            <dt>Release</dt>
+            <dd>Sep 13, 2018</dd>
+          </div>
+          <div>
+            <dt>Platforms</dt>
+            <dd>Browser, Mobile</dd>
+          </div>
+        </dl>
+        <hr class="meta-divider">
+        <h2>Instructions</h2>
+        <p>Every node you own accumulates units over time, shown as a filling arc around it. Drag from one of your nodes to another to dispatch exactly half of its garrison along that link, and note that a node has to be holding at least twelve units before it is allowed to send anything at all. Nodes fill to a ceiling of 360, so a full one sitting idle is wasted production.</p>
+        <p>Distance costs you units, but only when you attack. Sending to a neutral or enemy node loses a share of the force in transit that scales with how far apart the two nodes are, while reinforcing one of your own nodes arrives at full strength no matter how far it travels. That single asymmetry is what makes short, local attacks and long, safe reinforcement the correct shape of most winning games.</p>
+        <p>An attack resolves as a straight comparison of the numbers that actually arrive. More than the defender and you capture the node with the surplus as its new garrison; fewer and you simply reduce it while it holds. An exact tie is reported as a draw and leaves the node empty for either side to take, which is usually the worst outcome available to you.</p>
+        <h2>Controls</h2>
+        <ul>
+          <li><strong>Drag between nodes</strong> &mdash; send units from one of your dots to another</li>
+          <li><strong>Click / tap</strong> &mdash; select a node and choose menu options</li>
+          <li><strong>VOL + / -</strong> &mdash; adjust the generated music and effects volume</li>
+        </ul>
+        <h2>Tips to Master Konnekt</h2>
+        <p>Five tutorials lead into named boards - Easy, Circles, Ring, Close, Poles, Unfair, Frenzy and a randomised layout. What changes as you climb is the rate at which nodes generate units, which starts at zero in the tutorials and rises steeply by the time you reach Unfair and Frenzy. The opponent does not get cleverer, it gets richer, so those levels are won on tempo - striking during the window before its production advantage compounds.</p>
+        <h3 class="meta-subheading">The sphere is the whole design</h3>
+        <p>On a flat conquest map you can see every threat at once. On a globe you cannot, and Konnekt uses that constantly - the Poles and Ring levels are built specifically around positions that are adjacent on the sphere but appear far apart from a given camera angle. Rotating to check the far side before committing units is not a convenience here, it is a core part of playing well.</p>
+        <h3 class="meta-subheading">Half-strength attacks are the common mistake</h3>
+        <p>Because a send dispatches only part of a node&#39;s garrison, launching two attacks from the same node in quick succession usually delivers two forces that are each too small to take anything, while leaving the origin node stripped and vulnerable. Waiting for one node to fill and sending a single decisive wave beats trickling units at a target almost every time.</p>
+        <h3 class="meta-subheading">Sound that is generated, not recorded</h3>
+        <p>Each level assigns different synthesised instruments to you and to the opponent - piano, bells, organ, strings and flute across the level list - so the note you hear tells you whose move just resolved without your having to look. It is also a practical necessity: with a 13 kilobyte budget and no audio files allowed, every sound in the game has to be produced by code at the moment it plays.</p>
+      </aside>
+    </section>
+
+    <section class="games-grid-section" aria-labelledby="konnekt-recommendations-title">
+      <div class="section-header">
+        <h2 id="konnekt-recommendations-title">Players Also Enjoy</h2>
+        <span id="konnekt-recommendations-count" class="games-count" aria-live="polite"></span>
+      </div>
+      <div class="games-grid" id="konnekt-recommendations" aria-live="polite"></div>
+    </section>
+
+    <section class="games-grid-section more-games-section" aria-labelledby="konnekt-more-title">
+      <div class="section-header">
+        <h2 id="konnekt-more-title">More Free Unblocked Games</h2>
+      </div>
+      <nav class="games-grid" aria-label="More free unblocked games">
+          <a class="game-card" href="slope.html"><img src="../images/slope.webp" alt="Slope unblocked" loading="lazy" decoding="async"><h3>Slope</h3></a>
+          <a class="game-card" href="subwaysurfer.html"><img src="https://img.poki.com/cdn-cgi/image/quality=78,width=314,height=314,fit=cover,f=auto/81a0a3f18cf0ee129e56edb50fc52c3b.png" alt="Subway Surfers unblocked" loading="lazy" decoding="async"><h3>Subway Surfers</h3></a>
+          <a class="game-card" href="1v1lol.html"><img src="https://play-lh.googleusercontent.com/QYGRIDJbyVO7L7jH8CwiKJ4NumTGgcTVqU3ITooLWxro-eeNns1RZ0uwGGFe-r8M4co" alt="1v1.lol unblocked" loading="lazy" decoding="async"><h3>1v1.lol</h3></a>
+          <a class="game-card" href="retrobowl.html"><img src="../images/retrobowl.webp" alt="Retro Bowl unblocked" loading="lazy" decoding="async"><h3>Retro Bowl</h3></a>
+          <a class="game-card" href="basketballstars.html"><img src="../images/basketballstars.webp" alt="Basketball Stars unblocked" loading="lazy" decoding="async"><h3>Basketball Stars</h3></a>
+          <a class="game-card" href="motox3m.html"><img src="../images/motocross.webp" alt="MotoX3M Games unblocked" loading="lazy" decoding="async"><h3>MotoX3M Games</h3></a>
+          <a class="game-card" href="ovo.html"><img src="../images/ovo.webp" alt="OVO unblocked" loading="lazy" decoding="async"><h3>OVO</h3></a>
+          <a class="game-card" href="cookie-clicker-working-2026.html"><img src="../games/cookie-clicker/img/cookieShower1.png" alt="Cookie Clicker Working 2026 unblocked" loading="lazy" decoding="async"><h3>Cookie Clicker Working 2026</h3></a>
+          <a class="game-card" href="idle-breakout.html"><img src="../images/idlebreakout.webp" alt="Idle Breakout unblocked" loading="lazy" decoding="async"><h3>Idle Breakout</h3></a>
+          <a class="game-card" href="agario.html"><img src="../images/agario.webp" alt="Agar.io unblocked" loading="lazy" decoding="async"><h3>Agar.io</h3></a>
+          <a class="game-card" href="slitherio.html"><img src="../images/slitherio.webp" alt="Slither.io unblocked" loading="lazy" decoding="async"><h3>Slither.io</h3></a>
+          <a class="game-card" href="bad-time-simulator.html"><img src="../images/badtimesimulator.webp" alt="Bad Time Simulator unblocked" loading="lazy" decoding="async"><h3>Bad Time Simulator</h3></a>
+          <a class="game-card" href="drivemad.html"><img src="../images/drivemad.webp" alt="Drive Mad unblocked" loading="lazy" decoding="async"><h3>Drive Mad</h3></a>
+          <a class="game-card" href="blockblast.html"><img src="../images/blockblast.webp" alt="Block Blast unblocked" loading="lazy" decoding="async"><h3>Block Blast</h3></a>
+          <a class="game-card" href="getaway-shootout.html"><img src="../images/getawayshootout.webp" alt="Getaway Shootout unblocked" loading="lazy" decoding="async"><h3>Getaway Shootout</h3></a>
+          <a class="game-card" href="rooftopsnipers.html"><img src="../images/rooftopsnipers.webp" alt="Rooftop Sniper unblocked" loading="lazy" decoding="async"><h3>Rooftop Sniper</h3></a>
+          <a class="game-card" href="houseofhazards.html"><img src="../images/houseofhazards.webp" alt="House Of Hazards unblocked" loading="lazy" decoding="async"><h3>House Of Hazards</h3></a>
+          <a class="game-card" href="doodlejump.html"><img src="../images/doodlejump.webp" alt="Doodle Jump unblocked" loading="lazy" decoding="async"><h3>Doodle Jump</h3></a>
+          <a class="game-card" href="flappy-bird.html"><img src="../images/flappybird.webp" alt="Flappy Bird unblocked" loading="lazy" decoding="async"><h3>Flappy Bird</h3></a>
+          <a class="game-card" href="pacman.html"><img src="../images/pacman.webp" alt="Pacman unblocked" loading="lazy" decoding="async"><h3>Pacman</h3></a>
+          <a class="game-card" href="minecraft.html"><img src="../images/mc.webp" alt="Minecraft (Eagler) unblocked" loading="lazy" decoding="async"><h3>Minecraft (Eagler)</h3></a>
+          <a class="game-card" href="duck-life-5.html"><img src="../images/ducklife5.webp" alt="Duck Life 5 unblocked" loading="lazy" decoding="async"><h3>Duck Life 5</h3></a>
+          <a class="game-card" href="camouflage-and-sniper.html"><img src="../images/camouflagensniper.webp" alt="Camouflage and Sniper unblocked" loading="lazy" decoding="async"><h3>Camouflage and Sniper</h3></a>
+          <a class="game-card" href="candy-cat-shot.html"><img src="https://img.gamemonetize.com/g9piog0gw7q75u64j5lo9vrdpke10tsi/512x384.jpg" alt="Candy Cat Shot unblocked" loading="lazy" decoding="async"><h3>Candy Cat Shot</h3></a>
+          <a class="game-card" href="captain-callisto.html"><img src="../images/captain-callisto.webp" alt="Captain Callisto unblocked" loading="lazy" decoding="async"><h3>Captain Callisto</h3></a>
+          <a class="game-card" href="car-survival-3d.html"><img src="../images/carsurvival3d.webp" alt="Car Survival 3D unblocked" loading="lazy" decoding="async"><h3>Car Survival 3D</h3></a>
+          <a class="game-card" href="cat-pet-doctor-dentist.html"><img src="https://img.gamemonetize.com/2k0wbrioi2gllnf2nns4d33n8gt6fmio/512x384.jpg" alt="Cat Pet Doctor Dentist unblocked" loading="lazy" decoding="async"><h3>Cat Pet Doctor Dentist</h3></a>
+          <a class="game-card" href="catmario.html"><img src="../images/catmario.webp" alt="Cat Mario unblocked" loading="lazy" decoding="async"><h3>Cat Mario</h3></a>
+          <a class="game-card" href="circle-of-heroes.html"><img src="https://img.gamemonetize.com/fr5m0kur9spb79mo9mnhi9mbp4ncus2a/512x384.jpg" alt="Circle Of Heroes unblocked" loading="lazy" decoding="async"><h3>Circle Of Heroes</h3></a>
+          <a class="game-card" href="city-defense.html"><img src="../images/citdefense.png" alt="City Defense unblocked" loading="lazy" decoding="async"><h3>City Defense</h3></a>
+          <a class="game-card" href="civiballs1.html"><img src="../images/civiballs1-Gameplay2_thumb.jpg" alt="Civiballs 1 unblocked" loading="lazy" decoding="async"><h3>Civiballs 1</h3></a>
+          <a class="game-card" href="clothing-shop-3d.html"><img src="../games/clothing-shop-3d/logo.png" alt="Clothing Shop 3D unblocked" loading="lazy" decoding="async"><h3>Clothing Shop 3D</h3></a>
+          <a class="game-card" href="clubpenguin.html"><img src="../images/clubpenguin.webp" alt="Club Penguin unblocked" loading="lazy" decoding="async"><h3>Club Penguin</h3></a>
+          <a class="game-card" href="connect-3.html"><img src="../images/connect-3.webp" alt="Connect 3 unblocked" loading="lazy" decoding="async"><h3>Connect 3</h3></a>
+          <a class="game-card" href="connect-pipe-color-puzzle-game.html"><img src="https://img.gamemonetize.com/nszriut9whcdc3w98wh18ls3u0qhmf7v/512x384.jpg" alt="Connect Pipe! Color Puzzle Game unblocked" loading="lazy" decoding="async"><h3>Connect Pipe! Color Puzzle Game</h3></a>
+          <a class="game-card" href="cool-cars-run-3d.html"><img src="../images/coolcarsrun3d.jpeg" alt="Cool Cars Run 3D unblocked" loading="lazy" decoding="async"><h3>Cool Cars Run 3D</h3></a>
+          <a class="game-card" href="crossyroad.html"><img src="../images/crossyroad.webp" alt="Crossy Road unblocked" loading="lazy" decoding="async"><h3>Crossy Road</h3></a>
+          <a class="game-card" href="crush-cars-3d.html"><img src="../images/crushcars3d.png" alt="Crush Cars 3D unblocked" loading="lazy" decoding="async"><h3>Crush Cars 3D</h3></a>
+          <a class="game-card" href="csgo-clicker.html"><img src="../images/csgoclicker.webp" alt="CSGO Case Opener unblocked" loading="lazy" decoding="async"><h3>CSGO Case Opener</h3></a>
+          <a class="game-card" href="cupcake2048.html"><img src="../images/cupcake2048.webp" alt="Cupcake 2048 unblocked" loading="lazy" decoding="async"><h3>Cupcake 2048</h3></a>
+          <a class="game-card" href="curveball.html"><img src="../images/curveball.webp" alt="Curveball unblocked" loading="lazy" decoding="async"><h3>Curveball</h3></a>
+          <a class="game-card" href="cut-the-rope.html"><img src="../images/cuttherope.webp" alt="Cut The Rope unblocked" loading="lazy" decoding="async"><h3>Cut The Rope</h3></a>
+      </nav>
+    </section>
+
+    <nav class="category-browse" aria-label="Browse unblocked games by category">
+      <h2 class="category-browse-title">Browse Unblocked Games by Category</h2>
+      <div class="category-browse-links">
+        <a class="category-chip" href="../allgames.html">All Games</a>
+        <a class="category-chip" href="../strategy.html">Strategy</a>
+        <a class="category-chip" href="../skill.html">Skill</a>
+        <a class="category-chip" href="../numbers.html">Numbers</a>
+        <a class="category-chip" href="../classic.html">Classic</a>
+        <a class="category-chip" href="../2player.html">2 Player</a>
+        <a class="category-chip" href="../sports.html">Sports</a>
+        <a class="category-chip" href="../logic.html">Logic</a>
+        <a class="category-chip" href="../multiplayer.html">Multiplayer</a>
+      </div>
+    </nav>
+  </main>
+
+  <footer id="site-footer" role="contentinfo">
+    <div id="footer-placeholder"></div>
+  </footer>
+
+  <script>
+    const GAME_KONNEKT_RECOMMENDATION_COUNT = 12;
+    const CURRENT_GAME_NAME = "Konnekt";
+
+    const resolvePath = (path) => {
+      if (!path) return path;
+
+      if (/^(?:https?:)?\/\//.test(path) || path.startsWith('/')) {
+        return path;
+      }
+
+      if (path.startsWith('../')) {
+        return path;
+      }
+
+      const resolver = window.SCHPLAY_RESOLVE_ASSET_PATH;
+      if (typeof resolver === 'function') {
+        return resolver(path);
+      }
+
+      return '../' + path;
+    };
+
+    const pickRandomGames = (games, limit) => {
+      const sample = games.slice();
+      for (let i = sample.length - 1; i > 0; i -= 1) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [sample[i], sample[j]] = [sample[j], sample[i]];
+      }
+      return sample.slice(0, limit);
+    };
+
+
+    let hasRenderedRecommendations = false;
+
+    const renderRecommendations = () => {
+      if (hasRenderedRecommendations) {
+        return;
+      }
+
+      const grid = document.getElementById('konnekt-recommendations');
+      const count = document.getElementById('konnekt-recommendations-count');
+      if (!grid) {
+        return;
+      }
+
+      const catalog = (window.SCHPLAY_GAMES && window.SCHPLAY_GAMES.list) || [];
+      if (!Array.isArray(catalog) || !catalog.length) {
+        return;
+      }
+
+      const eligibleGames = catalog.filter(({ name, href, img }) => {
+        return name && href && img && name !== CURRENT_GAME_NAME;
+      });
+
+      const selection = eligibleGames.length
+        ? pickRandomGames(eligibleGames, Math.min(GAME_KONNEKT_RECOMMENDATION_COUNT, eligibleGames.length))
+        : [];
+
+      grid.innerHTML = '';
+      selection.forEach(({ name, href, img }) => {
+        const card = document.createElement('a');
+        card.className = 'game-card';
+        card.href = resolvePath(href);
+        card.innerHTML = '<img src="' + resolvePath(img) + '" alt="' + name + '" loading="lazy" decoding="async"><h3>' + name + '</h3>';
+        grid.appendChild(card);
+      });
+
+      if (count) {
+        count.textContent = selection.length ? selection.length + ' games' : '';
+      }
+
+      if (!selection.length) {
+        const placeholder = document.createElement('p');
+        placeholder.textContent = 'Check back soon for more featured games.';
+        placeholder.style.color = 'var(--text-muted)';
+        placeholder.style.margin = '0';
+        placeholder.style.padding = '0.6rem 0';
+        grid.appendChild(placeholder);
+      }
+
+      hasRenderedRecommendations = true;
+    };
+
+    const ensureRecommendations = () => {
+      if (window.SCHPLAY_GAMES && Array.isArray(window.SCHPLAY_GAMES.list) && window.SCHPLAY_GAMES.list.length) {
+        renderRecommendations();
+      }
+    };
+
+    if (window.SCHPLAY_GAMES && window.SCHPLAY_GAMES.list) {
+      renderRecommendations();
+    } else {
+      document.addEventListener('schplay:games-ready', renderRecommendations);
+    }
+
+    document.addEventListener('schplay:navigation-ready', ensureRecommendations);
+    window.addEventListener('load', ensureRecommendations);
+    setTimeout(ensureRecommendations, 1200);
+
+    const gameViewport = document.getElementById('konnekt-iframe');
+    const fullscreenButton = document.querySelector('.game-player-card .game-fullscreen-toggle');
+
+    if (gameViewport && fullscreenButton) {
+      const updateFullscreenIcon = () => {
+        const icon = fullscreenButton.querySelector('i');
+        if (!icon) {
+          return;
+        }
+        if (!document.fullscreenElement && !document.webkitFullscreenElement && !document.mozFullScreenElement && !document.msFullscreenElement) {
+          icon.classList.remove('fa-compress');
+          icon.classList.add('fa-expand');
+          const label = fullscreenButton.querySelector('span');
+          if (label) {
+            label.textContent = 'Fullscreen';
+          }
+        } else {
+          icon.classList.remove('fa-expand');
+          icon.classList.add('fa-compress');
+          const label = fullscreenButton.querySelector('span');
+          if (label) {
+            label.textContent = 'Exit Fullscreen';
+          }
+        }
+      };
+
+      const requestViewportFullscreen = () => {
+        const fsElement = gameViewport;
+        if (fsElement.requestFullscreen) {
+          fsElement.requestFullscreen({ navigationUI: 'hide' }).catch(() => fsElement.requestFullscreen());
+        } else if (fsElement.webkitRequestFullscreen) {
+          fsElement.webkitRequestFullscreen();
+        } else if (fsElement.mozRequestFullScreen) {
+          fsElement.mozRequestFullScreen();
+        } else if (fsElement.msRequestFullscreen) {
+          fsElement.msRequestFullscreen();
+        }
+      };
+
+      const exitFullscreen = () => {
+        if (document.exitFullscreen) {
+          document.exitFullscreen();
+        } else if (document.webkitExitFullscreen) {
+          document.webkitExitFullscreen();
+        } else if (document.mozCancelFullScreen) {
+          document.mozCancelFullScreen();
+        } else if (document.msExitFullscreen) {
+          document.msExitFullscreen();
+        }
+      };
+
+      fullscreenButton.addEventListener('click', () => {
+        if (!document.fullscreenElement && !document.webkitFullscreenElement && !document.mozFullScreenElement && !document.msFullscreenElement) {
+          requestViewportFullscreen();
+        } else {
+          exitFullscreen();
+        }
+      });
+
+      document.addEventListener('fullscreenchange', updateFullscreenIcon);
+      document.addEventListener('webkitfullscreenchange', updateFullscreenIcon);
+      document.addEventListener('mozfullscreenchange', updateFullscreenIcon);
+      document.addEventListener('MSFullscreenChange', updateFullscreenIcon);
+    }
+
+  </script>
+  <script src="../js/load-components.js" defer data-component-root="../"></script>
+</body>
+</html>

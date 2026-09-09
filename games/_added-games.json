@@ -1,0 +1,902 @@
+[
+ {
+  "slug": "connect-3",
+  "name": "Connect 3",
+  "source": "gfiles",
+  "icon": null,
+  "size_mb": 0.01,
+  "needs_emulatorjs": false,
+  "origin": "gfiles-master/games/connect3"
+ },
+ {
+  "slug": "captain-callisto",
+  "name": "Captain Callisto",
+  "source": "gfiles",
+  "icon": null,
+  "size_mb": 0.02,
+  "needs_emulatorjs": false,
+  "origin": "gfiles-master/games/captaincallisto"
+ },
+ {
+  "slug": "packabunchas",
+  "name": "PACKABUNCHAS",
+  "source": "gfiles",
+  "icon": "icon.png",
+  "size_mb": 0.02,
+  "needs_emulatorjs": false,
+  "origin": "gfiles-master/games/packabunchas"
+ },
+ {
+  "slug": "q1k3",
+  "name": "Q1K3",
+  "source": "gfiles",
+  "icon": null,
+  "size_mb": 0.02,
+  "needs_emulatorjs": false,
+  "origin": "gfiles-master/games/q1k3"
+ },
+ {
+  "slug": "spacegarden",
+  "name": "spacegarden",
+  "source": "gfiles",
+  "icon": "icon.png",
+  "size_mb": 0.02,
+  "needs_emulatorjs": false,
+  "origin": "gfiles-master/games/spacegarden"
+ },
+ {
+  "slug": "sudoku",
+  "name": "Sudoku",
+  "source": "seraph",
+  "icon": "icon.jpg",
+  "size_mb": 0.02,
+  "needs_emulatorjs": false,
+  "origin": "seraph-main/games/sudoku"
+ },
+ {
+  "slug": "konnekt",
+  "name": "konnekt",
+  "source": "gfiles",
+  "icon": null,
+  "size_mb": 0.03,
+  "needs_emulatorjs": false,
+  "origin": "gfiles-master/games/konnekt"
+ },
+ {
+  "slug": "roadblocks",
+  "name": "ROADBLOCKS",
+  "source": "gfiles",
+  "icon": null,
+  "size_mb": 0.03,
+  "needs_emulatorjs": false,
+  "origin": "gfiles-master/games/roadblocks"
+ },
+ {
+  "slug": "spacehuggers",
+  "name": "spacehuggers",
+  "source": "gfiles",
+  "icon": "icon.png",
+  "size_mb": 0.03,
+  "needs_emulatorjs": false,
+  "origin": "gfiles-master/games/spacehuggers"
+ },
+ {
+  "slug": "asciispace",
+  "name": "asciispace",
+  "source": "gfiles",
+  "icon": null,
+  "size_mb": 0.04,
+  "needs_emulatorjs": false,
+  "origin": "gfiles-master/games/asciispace"
+ },
+ {
+  "slug": "backcountry",
+  "name": "Backcountry",
+  "source": "gfiles",
+  "icon": null,
+  "size_mb": 0.04,
+  "needs_emulatorjs": false,
+  "origin": "gfiles-master/games/backcountry"
+ },
+ {
+  "slug": "black-hole-square",
+  "name": "Black Hole Square",
+  "source": "gfiles",
+  "icon": "icon.png",
+  "size_mb": 0.04,
+  "needs_emulatorjs": false,
+  "origin": "gfiles-master/games/blackholesquare"
+ },
+ {
+  "slug": "chroma-incident",
+  "name": "Chroma Incident",
+  "source": "gfiles",
+  "icon": "icon.png",
+  "size_mb": 0.04,
+  "needs_emulatorjs": false,
+  "origin": "gfiles-master/games/chromaincident"
+ },
+ {
+  "slug": "evil-glitch",
+  "name": "Evil Glitch",
+  "source": "gfiles",
+  "icon": "icon.png",
+  "size_mb": 0.04,
+  "needs_emulatorjs": false,
+  "origin": "gfiles-master/games/evilglitch"
+ },
+ {
+  "slug": "ninja-vs-evilcorp",
+  "name": "Ninja vs EVILCORP",
+  "source": "gfiles",
+  "icon": "icon.png",
+  "size_mb": 0.04,
+  "needs_emulatorjs": false,
+  "origin": "gfiles-master/games/ninjavsevilcorp"
+ },
+ {
+  "slug": "shuttledeck",
+  "name": "SHUTTLEDECK",
+  "source": "gfiles",
+  "icon": "icon.png",
+  "size_mb": 0.04,
+  "needs_emulatorjs": false,
+  "origin": "gfiles-master/games/shuttledeck"
+ },
+ {
+  "slug": "themazeofspacegoblins",
+  "name": "themazeofspacegoblins",
+  "source": "gfiles",
+  "icon": "icon.png",
+  "size_mb": 0.04,
+  "needs_emulatorjs": false,
+  "origin": "gfiles-master/games/themazeofspacegoblins"
+ },
+ {
+  "slug": "xx142-b2-exe",
+  "name": "XX142-B2.exe",
+  "source": "native",
+  "icon": "icon.jpg",
+  "size_mb": 0.04,
+  "needs_emulatorjs": false,
+  "origin": "nativegames.net-v1-1.9/nativegames.net-v1-1.9/play/xx142-b2exe"
+ },
+ {
+  "slug": "super-mario-bros",
+  "name": "Super Mario Bros",
+  "source": "seraph",
+  "icon": "icon.jpg",
+  "size_mb": 0.05,
+  "needs_emulatorjs": true,
+  "origin": "seraph-main/games/supermariobros"
+ },
+ {
+  "slug": "retrohaunt",
+  "name": "Retrohaunt",
+  "source": "gfiles",
+  "icon": "icon.png",
+  "size_mb": 0.05,
+  "needs_emulatorjs": false,
+  "origin": "gfiles-master/games/retrohaunt"
+ },
+ {
+  "slug": "spacebar-clicker",
+  "name": "SPACEBAR CLICKER",
+  "source": "55GMS",
+  "icon": "icon.webp",
+  "size_mb": 0.05,
+  "needs_emulatorjs": false,
+  "origin": "55GMS-main/static/misc/spacebarclicker"
+ },
+ {
+  "slug": "three-line",
+  "name": "three line",
+  "source": "seraph",
+  "icon": "icon.jpg",
+  "size_mb": 0.05,
+  "needs_emulatorjs": false,
+  "origin": "seraph-main/games/3line"
+ },
+ {
+  "slug": "pushback",
+  "name": "pushback",
+  "source": "gfiles",
+  "icon": "icon.png",
+  "size_mb": 0.06,
+  "needs_emulatorjs": false,
+  "origin": "gfiles-master/games/pushback"
+ },
+ {
+  "slug": "super-mario-land",
+  "name": "Super Mario Land",
+  "source": "seraph",
+  "icon": "icon.jpg",
+  "size_mb": 0.07,
+  "needs_emulatorjs": true,
+  "origin": "seraph-main/games/supermarioland"
+ },
+ {
+  "slug": "infinite-craft",
+  "name": "Infinite Craft",
+  "source": "seraph",
+  "icon": "icon.jpg",
+  "size_mb": 0.09,
+  "needs_emulatorjs": false,
+  "origin": "seraph-main/games/infinitecraft"
+ },
+ {
+  "slug": "radius-raid",
+  "name": "Radius Raid",
+  "source": "gfiles",
+  "icon": null,
+  "size_mb": 0.1,
+  "needs_emulatorjs": false,
+  "origin": "gfiles-master/games/radiusraid"
+ },
+ {
+  "slug": "line-rider",
+  "name": "Line Rider",
+  "source": "seraph",
+  "icon": "icon.jpg",
+  "size_mb": 0.11,
+  "needs_emulatorjs": false,
+  "origin": "seraph-main/games/linerider"
+ },
+ {
+  "slug": "offline-paradise",
+  "name": "Offline Paradise",
+  "source": "seraph",
+  "icon": "icon.jpg",
+  "size_mb": 0.13,
+  "needs_emulatorjs": false,
+  "origin": "seraph-main/games/offlineparadise"
+ },
+ {
+  "slug": "ducktales",
+  "name": "DuckTales",
+  "source": "seraph",
+  "icon": "icon.jpg",
+  "size_mb": 0.14,
+  "needs_emulatorjs": true,
+  "origin": "seraph-main/games/ducktales"
+ },
+ {
+  "slug": "edge-not-found",
+  "name": "Edge Not Found",
+  "source": "55GMS",
+  "icon": "icon.png",
+  "size_mb": 0.14,
+  "needs_emulatorjs": false,
+  "origin": "55GMS-main/static/misc/edgenotfound"
+ },
+ {
+  "slug": "kid-icarus",
+  "name": "Kid Icarus",
+  "source": "seraph",
+  "icon": "icon.jpg",
+  "size_mb": 0.14,
+  "needs_emulatorjs": true,
+  "origin": "seraph-main/games/kidicarus"
+ },
+ {
+  "slug": "bounce-back",
+  "name": "Bounce Back",
+  "source": "gfiles",
+  "icon": "icon.png",
+  "size_mb": 0.15,
+  "needs_emulatorjs": false,
+  "origin": "gfiles-master/games/bounceback"
+ },
+ {
+  "slug": "contra",
+  "name": "Contra",
+  "source": "seraph",
+  "icon": "icon.jpg",
+  "size_mb": 0.15,
+  "needs_emulatorjs": true,
+  "origin": "seraph-main/games/contra"
+ },
+ {
+  "slug": "bubble-spinner",
+  "name": "Bubble Spinner",
+  "source": "seraph",
+  "icon": "icon.jpg",
+  "size_mb": 0.16,
+  "needs_emulatorjs": false,
+  "origin": "seraph-main/games/bubblespinner"
+ },
+ {
+  "slug": "chrome-easter-egg-t-rex-runner",
+  "name": "chrome easter egg: t-rex runner",
+  "source": "gfiles",
+  "icon": "icon.png",
+  "size_mb": 0.2,
+  "needs_emulatorjs": false,
+  "origin": "gfiles-master/games/chromedino"
+ },
+ {
+  "slug": "wordle",
+  "name": "Wordle",
+  "source": "55GMS",
+  "icon": "icon.jpg",
+  "size_mb": 0.24,
+  "needs_emulatorjs": false,
+  "origin": "55GMS-main/static/misc/wordle"
+ },
+ {
+  "slug": "asteroids",
+  "name": "asteroids",
+  "source": "gfiles",
+  "icon": null,
+  "size_mb": 0.25,
+  "needs_emulatorjs": false,
+  "origin": "gfiles-master/games/asteroids"
+ },
+ {
+  "slug": "shift",
+  "name": "Shift",
+  "source": "seraph",
+  "icon": "icon.jpg",
+  "size_mb": 0.25,
+  "needs_emulatorjs": false,
+  "origin": "seraph-main/games/shift"
+ },
+ {
+  "slug": "battletoads",
+  "name": "Battletoads",
+  "source": "seraph",
+  "icon": "icon.jpg",
+  "size_mb": 0.27,
+  "needs_emulatorjs": true,
+  "origin": "seraph-main/games/battletoads"
+ },
+ {
+  "slug": "kirbys-dream-land",
+  "name": "Kirby's Dream Land",
+  "source": "seraph",
+  "icon": "icon.jpg",
+  "size_mb": 0.27,
+  "needs_emulatorjs": true,
+  "origin": "seraph-main/games/kirbysdreamland"
+ },
+ {
+  "slug": "mega-man-2",
+  "name": "Mega Man 2",
+  "source": "seraph",
+  "icon": "icon.jpg",
+  "size_mb": 0.27,
+  "needs_emulatorjs": true,
+  "origin": "seraph-main/games/megaman2"
+ },
+ {
+  "slug": "metroid-ii",
+  "name": "Metroid II",
+  "source": "seraph",
+  "icon": "icon.jpg",
+  "size_mb": 0.27,
+  "needs_emulatorjs": true,
+  "origin": "seraph-main/games/metroidii"
+ },
+ {
+  "slug": "mike-tysons-punch-out",
+  "name": "Mike Tyson's Punch Out!",
+  "source": "seraph",
+  "icon": "icon.jpg",
+  "size_mb": 0.27,
+  "needs_emulatorjs": true,
+  "origin": "seraph-main/games/punchout"
+ },
+ {
+  "slug": "ninja-gaiden",
+  "name": "Ninja Gaiden",
+  "source": "seraph",
+  "icon": "icon.jpg",
+  "size_mb": 0.27,
+  "needs_emulatorjs": true,
+  "origin": "seraph-main/games/ninjagaiden"
+ },
+ {
+  "slug": "super-tennis",
+  "name": "Super Tennis",
+  "source": "seraph",
+  "icon": "icon.jpg",
+  "size_mb": 0.27,
+  "needs_emulatorjs": true,
+  "origin": "seraph-main/games/supertennis"
+ },
+ {
+  "slug": "factory-balls",
+  "name": "Factory Balls",
+  "source": "seraph",
+  "icon": "icon.jpg",
+  "size_mb": 0.29,
+  "needs_emulatorjs": false,
+  "origin": "seraph-main/games/factoryballs"
+ },
+ {
+  "slug": "twitchtetris",
+  "name": "TwitchTetris",
+  "source": "55GMS",
+  "icon": "icon.png",
+  "size_mb": 0.29,
+  "needs_emulatorjs": false,
+  "origin": "55GMS-main/static/misc/twitchtetris"
+ },
+ {
+  "slug": "1-on-1-soccer",
+  "name": "1 on 1 Soccer",
+  "source": "seraph",
+  "icon": "icon.jpg",
+  "size_mb": 0.31,
+  "needs_emulatorjs": false,
+  "origin": "seraph-main/games/1on1soccer"
+ },
+ {
+  "slug": "super-bomberman",
+  "name": "Super Bomberman",
+  "source": "seraph",
+  "icon": "icon.jpg",
+  "size_mb": 0.31,
+  "needs_emulatorjs": true,
+  "origin": "seraph-main/games/superbomberman"
+ },
+ {
+  "slug": "tron",
+  "name": "Tron",
+  "source": "seraph",
+  "icon": "icon.jpg",
+  "size_mb": 0.31,
+  "needs_emulatorjs": false,
+  "origin": "seraph-main/games/tron"
+ },
+ {
+  "slug": "altered-beast",
+  "name": "Altered Beast",
+  "source": "seraph",
+  "icon": "icon.jpg",
+  "size_mb": 0.34,
+  "needs_emulatorjs": true,
+  "origin": "seraph-main/games/alteredbeast"
+ },
+ {
+  "slug": "unlimited-wordle-a-word-game",
+  "name": "Unlimited Wordle - A word game",
+  "source": "native",
+  "icon": "icon.png",
+  "size_mb": 0.34,
+  "needs_emulatorjs": false,
+  "origin": "nativegames.net-v1-1.9/nativegames.net-v1-1.9/play/wordle"
+ },
+ {
+  "slug": "golden-axe",
+  "name": "Golden Axe",
+  "source": "seraph",
+  "icon": "icon.jpg",
+  "size_mb": 0.36,
+  "needs_emulatorjs": true,
+  "origin": "seraph-main/games/goldenaxe"
+ },
+ {
+  "slug": "chess",
+  "name": "Chess",
+  "source": "seraph",
+  "icon": "icon.jpg",
+  "size_mb": 0.37,
+  "needs_emulatorjs": false,
+  "origin": "seraph-main/games/chess"
+ },
+ {
+  "slug": "streets-of-rage",
+  "name": "Streets of Rage",
+  "source": "seraph",
+  "icon": "icon.jpg",
+  "size_mb": 0.38,
+  "needs_emulatorjs": true,
+  "origin": "seraph-main/games/streetsofrage"
+ },
+ {
+  "slug": "battleships",
+  "name": "Battleships",
+  "source": "seraph",
+  "icon": "icon.jpg",
+  "size_mb": 0.39,
+  "needs_emulatorjs": false,
+  "origin": "seraph-main/games/battleships"
+ },
+ {
+  "slug": "connect-4",
+  "name": "Connect 4",
+  "source": "seraph",
+  "icon": "icon.jpg",
+  "size_mb": 0.39,
+  "needs_emulatorjs": false,
+  "origin": "seraph-main/games/connect4"
+ },
+ {
+  "slug": "sprinter",
+  "name": "Sprinter",
+  "source": "seraph",
+  "icon": "icon.jpg",
+  "size_mb": 0.41,
+  "needs_emulatorjs": false,
+  "origin": "seraph-main/games/sprinter"
+ },
+ {
+  "slug": "solitaire",
+  "name": "Solitaire",
+  "source": "gfiles",
+  "icon": "icon.jpg",
+  "size_mb": 0.42,
+  "needs_emulatorjs": false,
+  "origin": "gfiles-master/games/solitaire"
+ },
+ {
+  "slug": "universal-paperclips",
+  "name": "Universal Paperclips",
+  "source": "55GMS",
+  "icon": "icon.webp",
+  "size_mb": 0.42,
+  "needs_emulatorjs": false,
+  "origin": "55GMS-main/static/misc/universal-paperclips"
+ },
+ {
+  "slug": "wall-smash",
+  "name": "Wall Smash",
+  "source": "seraph",
+  "icon": "icon.jpg",
+  "size_mb": 0.43,
+  "needs_emulatorjs": false,
+  "origin": "seraph-main/games/wallsmash"
+ },
+ {
+  "slug": "chrome-dino-game",
+  "name": "chrome dino game",
+  "source": "native",
+  "icon": "icon.jpg",
+  "size_mb": 0.45,
+  "needs_emulatorjs": false,
+  "origin": "nativegames.net-v1-1.9/nativegames.net-v1-1.9/play/dino"
+ },
+ {
+  "slug": "mario-paint",
+  "name": "Mario Paint",
+  "source": "seraph",
+  "icon": "icon.jpg",
+  "size_mb": 0.48,
+  "needs_emulatorjs": true,
+  "origin": "seraph-main/games/mariopaint"
+ },
+ {
+  "slug": "donkey-kong-land",
+  "name": "Donkey Kong Land",
+  "source": "seraph",
+  "icon": "icon.jpg",
+  "size_mb": 0.53,
+  "needs_emulatorjs": true,
+  "origin": "seraph-main/games/donkeykongland"
+ },
+ {
+  "slug": "f-zero",
+  "name": "F-Zero",
+  "source": "seraph",
+  "icon": "icon.jpg",
+  "size_mb": 0.53,
+  "needs_emulatorjs": true,
+  "origin": "seraph-main/games/fzero"
+ },
+ {
+  "slug": "kirbys-dream-land-2",
+  "name": "Kirby's Dream Land 2",
+  "source": "seraph",
+  "icon": "icon.jpg",
+  "size_mb": 0.53,
+  "needs_emulatorjs": true,
+  "origin": "seraph-main/games/kirbysdreamland2"
+ },
+ {
+  "slug": "super-mario-land-2",
+  "name": "Super Mario Land 2",
+  "source": "seraph",
+  "icon": "icon.jpg",
+  "size_mb": 0.53,
+  "needs_emulatorjs": true,
+  "origin": "seraph-main/games/supermarioland2"
+ },
+ {
+  "slug": "super-mario-world",
+  "name": "Super Mario World",
+  "source": "seraph",
+  "icon": "icon.jpg",
+  "size_mb": 0.53,
+  "needs_emulatorjs": true,
+  "origin": "seraph-main/games/supermarioworld"
+ },
+ {
+  "slug": "bloons-tower-defence",
+  "name": "Bloons Tower Defence",
+  "source": "seraph",
+  "icon": "icon.jpg",
+  "size_mb": 0.54,
+  "needs_emulatorjs": false,
+  "origin": "seraph-main/games/btd/btd"
+ },
+ {
+  "slug": "sonic-spinball",
+  "name": "Sonic Spinball",
+  "source": "seraph",
+  "icon": "icon.jpg",
+  "size_mb": 0.54,
+  "needs_emulatorjs": true,
+  "origin": "seraph-main/games/sonicspinball"
+ },
+ {
+  "slug": "sonic-the-hedgehog",
+  "name": "sonic the hedgehog",
+  "source": "seraph",
+  "icon": "icon.jpg",
+  "size_mb": 0.54,
+  "needs_emulatorjs": true,
+  "origin": "seraph-main/games/sonicthehedgehog"
+ },
+ {
+  "slug": "super-mario-kart",
+  "name": "Super Mario Kart",
+  "source": "seraph",
+  "icon": "icon.jpg",
+  "size_mb": 0.54,
+  "needs_emulatorjs": true,
+  "origin": "seraph-main/games/supermariokart"
+ },
+ {
+  "slug": "wubzzys-adventure",
+  "name": "wubzzys adventure",
+  "source": "seraph",
+  "icon": "icon.jpg",
+  "size_mb": 0.58,
+  "needs_emulatorjs": false,
+  "origin": "seraph-main/games/wubzzysamazingadventure"
+ },
+ {
+  "slug": "javascript-breakout",
+  "name": "Javascript Breakout",
+  "source": "gfiles",
+  "icon": "icon.png",
+  "size_mb": 0.6,
+  "needs_emulatorjs": false,
+  "origin": "gfiles-master/games/breakout"
+ },
+ {
+  "slug": "warios-woods",
+  "name": "Wario's Woods",
+  "source": "seraph",
+  "icon": "icon.jpg",
+  "size_mb": 0.62,
+  "needs_emulatorjs": true,
+  "origin": "seraph-main/games/warioswoods"
+ },
+ {
+  "slug": "breaklock",
+  "name": "BreakLock",
+  "source": "native",
+  "icon": "icon.png",
+  "size_mb": 0.67,
+  "needs_emulatorjs": false,
+  "origin": "nativegames.net-v1-1.9/nativegames.net-v1-1.9/play/breaklock"
+ },
+ {
+  "slug": "link-to-the-past",
+  "name": "link to the past",
+  "source": "seraph",
+  "icon": "icon.jpg",
+  "size_mb": 0.71,
+  "needs_emulatorjs": true,
+  "origin": "seraph-main/games/linktothepast"
+ },
+ {
+  "slug": "frost-bite",
+  "name": "Frost Bite",
+  "source": "seraph",
+  "icon": "icon.jpg",
+  "size_mb": 0.72,
+  "needs_emulatorjs": false,
+  "origin": "seraph-main/games/frostbite"
+ },
+ {
+  "slug": "run",
+  "name": "Run",
+  "source": "seraph",
+  "icon": "icon.jpg",
+  "size_mb": 0.74,
+  "needs_emulatorjs": false,
+  "origin": "seraph-main/games/run"
+ },
+ {
+  "slug": "btd-2",
+  "name": "btd 2",
+  "source": "seraph",
+  "icon": "icon.jpg",
+  "size_mb": 0.79,
+  "needs_emulatorjs": false,
+  "origin": "seraph-main/games/btd/btd2"
+ },
+ {
+  "slug": "stack",
+  "name": "Stack",
+  "source": "gfiles",
+  "icon": "icon.jpg",
+  "size_mb": 0.8,
+  "needs_emulatorjs": false,
+  "origin": "gfiles-master/games/stack"
+ },
+ {
+  "slug": "shellshock",
+  "name": "shellshock",
+  "source": "55GMS",
+  "icon": "icon.jpg",
+  "size_mb": 0.81,
+  "needs_emulatorjs": false,
+  "origin": "55GMS-main/static/misc/shellshock"
+ },
+ {
+  "slug": "metal-gear-solid",
+  "name": "Metal Gear Solid",
+  "source": "seraph",
+  "icon": "icon.jpg",
+  "size_mb": 0.85,
+  "needs_emulatorjs": true,
+  "origin": "seraph-main/games/metalgearsolid"
+ },
+ {
+  "slug": "deal-or-no-deal",
+  "name": "Deal or no deal",
+  "source": "55GMS",
+  "icon": "icon.jpg",
+  "size_mb": 0.86,
+  "needs_emulatorjs": false,
+  "origin": "55GMS-main/static/misc/deal-or-no-deal"
+ },
+ {
+  "slug": "redball",
+  "name": "redball",
+  "source": "seraph",
+  "icon": "icon.jpg",
+  "size_mb": 0.89,
+  "needs_emulatorjs": false,
+  "origin": "seraph-main/games/redball1"
+ },
+ {
+  "slug": "reality-opium",
+  "name": "Reality",
+  "source": "native",
+  "icon": null,
+  "size_mb": 0.97,
+  "needs_emulatorjs": false,
+  "origin": "nativegames.net-v1-1.9/nativegames.net-v1-1.9/play/assessment"
+ },
+ {
+  "slug": "shift-3",
+  "name": "Shift 3",
+  "source": "seraph",
+  "icon": "icon.jpg",
+  "size_mb": 1.02,
+  "needs_emulatorjs": false,
+  "origin": "seraph-main/games/shift3"
+ },
+ {
+  "slug": "particle-clicker",
+  "name": "Particle Clicker",
+  "source": "gfiles",
+  "icon": "icon.png",
+  "size_mb": 1.04,
+  "needs_emulatorjs": false,
+  "origin": "gfiles-master/games/particleclicker"
+ },
+ {
+  "slug": "the-legend-of-zelda",
+  "name": "the legend of zelda",
+  "source": "seraph",
+  "icon": "icon.jpg",
+  "size_mb": 1.05,
+  "needs_emulatorjs": true,
+  "origin": "seraph-main/games/thelegendofzelda"
+ },
+ {
+  "slug": "bomberman",
+  "name": "Bomberman",
+  "source": "seraph",
+  "icon": "icon.jpg",
+  "size_mb": 1.06,
+  "needs_emulatorjs": true,
+  "origin": "seraph-main/games/bomberman"
+ },
+ {
+  "slug": "castlevania",
+  "name": "Castlevania",
+  "source": "seraph",
+  "icon": "icon.jpg",
+  "size_mb": 1.06,
+  "needs_emulatorjs": true,
+  "origin": "seraph-main/games/castlevania"
+ },
+ {
+  "slug": "contra-iii",
+  "name": "Contra III",
+  "source": "seraph",
+  "icon": "icon.jpg",
+  "size_mb": 1.06,
+  "needs_emulatorjs": true,
+  "origin": "seraph-main/games/contraiii"
+ },
+ {
+  "slug": "donkey-kong",
+  "name": "Donkey Kong",
+  "source": "seraph",
+  "icon": "icon.jpg",
+  "size_mb": 1.06,
+  "needs_emulatorjs": true,
+  "origin": "seraph-main/games/donkeykong"
+ },
+ {
+  "slug": "dr-mario",
+  "name": "Dr Mario",
+  "source": "seraph",
+  "icon": "icon.jpg",
+  "size_mb": 1.06,
+  "needs_emulatorjs": true,
+  "origin": "seraph-main/games/drmario"
+ },
+ {
+  "slug": "ecco-the-dolphin",
+  "name": "ecco the dolphin",
+  "source": "seraph",
+  "icon": "icon.jpg",
+  "size_mb": 1.06,
+  "needs_emulatorjs": true,
+  "origin": "seraph-main/games/eccothedolphin"
+ },
+ {
+  "slug": "gunstar-heroes",
+  "name": "Gunstar Heroes",
+  "source": "seraph",
+  "icon": "icon.jpg",
+  "size_mb": 1.06,
+  "needs_emulatorjs": true,
+  "origin": "seraph-main/games/gunstarheroes"
+ },
+ {
+  "slug": "ice-climber",
+  "name": "Ice Climber",
+  "source": "seraph",
+  "icon": "icon.jpg",
+  "size_mb": 1.06,
+  "needs_emulatorjs": true,
+  "origin": "seraph-main/games/iceclimber"
+ },
+ {
+  "slug": "links-awakening-dx",
+  "name": "Links Awakening DX",
+  "source": "seraph",
+  "icon": "icon.jpg",
+  "size_mb": 1.06,
+  "needs_emulatorjs": true,
+  "origin": "seraph-main/games/linksawakeningdx"
+ },
+ {
+  "slug": "metroid",
+  "name": "Metroid",
+  "source": "seraph",
+  "icon": "icon.jpg",
+  "size_mb": 1.06,
+  "needs_emulatorjs": true,
+  "origin": "seraph-main/games/metroid"
+ },
+ {
+  "slug": "ranger-x",
+  "name": "Ranger X",
+  "source": "seraph",
+  "icon": "icon.jpg",
+  "size_mb": 1.06,
+  "needs_emulatorjs": true,
+  "origin": "seraph-main/games/rangerx"
+ }
+]

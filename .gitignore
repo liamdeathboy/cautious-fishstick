@@ -117,3 +117,8 @@ games/omori-fixed/maps/map228.aubrey
 # only — keep it local, don't deploy it.
 games/GTA-Vice-City-Online-Play-Free-in-Browser-main/
 games/omori-fixed/maps/map227.aubrey
+
+# Staging library of scraped games (518 deduped folders, ~9 GB) plus its shared
+# EmulatorJS runtime. Source material only — the games that ship are copied into
+# games/ individually. Keep it local, never commit it.
+ugb new games/

@@ -4491,5 +4491,441 @@
         "action": "flip cards and match each pair"
       }
     ]
+  },
+  "connect-3": {
+    "name": "Connect 3",
+    "release": "2010s",
+    "genre": "Puzzle · Match 3",
+    "platforms": "Browser, Mobile",
+    "controls": [
+      {
+        "input": "Click / tap",
+        "action": "select a tile, then click an adjacent tile to swap the pair"
+      },
+      {
+        "input": "Click again",
+        "action": "click the selected tile a second time to cancel the selection"
+      }
+    ]
+  },
+  "captain-callisto": {
+    "name": "Captain Callisto",
+    "release": "Sep 13, 2021",
+    "genre": "Platformer · 3D Adventure",
+    "platforms": "Browser",
+    "controls": [
+      {
+        "input": "Arrow keys / WASD",
+        "action": "move"
+      },
+      {
+        "input": "Z / Space",
+        "action": "jump"
+      },
+      {
+        "input": "X / Shift",
+        "action": "fire the jetpack"
+      },
+      {
+        "input": "R",
+        "action": "restart the current level"
+      },
+      {
+        "input": "M",
+        "action": "toggle the music"
+      }
+    ]
+  },
+  "packabunchas": {
+    "name": "PACKABUNCHAS",
+    "release": "Sep 13, 2021",
+    "genre": "Puzzle · Tile Packing",
+    "platforms": "Browser, Mobile",
+    "controls": [
+      {
+        "input": "Click / tap",
+        "action": "pick up a creature and drop it into the bin"
+      },
+      {
+        "input": "Drag",
+        "action": "position a piece before releasing it"
+      }
+    ]
+  },
+  "q1k3": {
+    "name": "Q1K3",
+    "release": "Sep 13, 2021",
+    "genre": "Shooter · Retro FPS",
+    "platforms": "Browser",
+    "controls": [
+      {
+        "input": "W / A / S / D or arrow keys",
+        "action": "move and strafe"
+      },
+      {
+        "input": "Mouse",
+        "action": "look and aim"
+      },
+      {
+        "input": "Left click",
+        "action": "fire the equipped weapon"
+      },
+      {
+        "input": "Q / E or mousewheel",
+        "action": "cycle between the three weapons"
+      },
+      {
+        "input": "Space / right click",
+        "action": "jump"
+      }
+    ]
+  },
+  "spacegarden": {
+    "name": "Space Garden",
+    "release": "Sep 13, 2021",
+    "genre": "Action · Space Exploration",
+    "platforms": "Browser",
+    "controls": [
+      {
+        "input": "W / Z / Up",
+        "action": "thrust forward, and jump when standing on a planet"
+      },
+      {
+        "input": "A / Q / Left",
+        "action": "rotate left in flight, strafe left on a surface"
+      },
+      {
+        "input": "D / Right",
+        "action": "rotate right in flight, strafe right on a surface"
+      },
+      {
+        "input": "S / Down",
+        "action": "reverse thrust to brake"
+      }
+    ]
+  },
+  "sudoku": {
+    "name": "Sudoku",
+    "release": "2010s",
+    "genre": "Puzzle · Logic",
+    "platforms": "Browser, Mobile",
+    "controls": [
+      {
+        "input": "Click / tap a cell",
+        "action": "select an empty square"
+      },
+      {
+        "input": "Number keys 1-9",
+        "action": "enter a digit into the selected square"
+      },
+      {
+        "input": "Backspace / Delete",
+        "action": "clear a digit you entered"
+      },
+      {
+        "input": "How am I going?",
+        "action": "check the grid for duplicate digits"
+      }
+    ]
+  },
+  "konnekt": {
+    "name": "Konnekt",
+    "release": "Sep 13, 2018",
+    "genre": "Strategy · Real-Time Conquest",
+    "platforms": "Browser, Mobile",
+    "controls": [
+      {
+        "input": "Drag between nodes",
+        "action": "send units from one of your dots to another"
+      },
+      {
+        "input": "Click / tap",
+        "action": "select a node and choose menu options"
+      },
+      {
+        "input": "VOL + / -",
+        "action": "adjust the generated music and effects volume"
+      }
+    ]
+  },
+  "roadblocks": {
+    "name": "Road Blocks",
+    "release": "Sep 13, 2015",
+    "genre": "Puzzle · Isometric Builder",
+    "platforms": "Browser, Mobile",
+    "controls": [
+      {
+        "input": "Drag from the top tray",
+        "action": "pull a tile down and place it on the map"
+      },
+      {
+        "input": "Click / tap",
+        "action": "select and position tiles"
+      },
+      {
+        "input": "Long press",
+        "action": "bulldoze a tile you no longer want"
+      },
+      {
+        "input": "Camera button",
+        "action": "export the current map as a screenshot"
+      }
+    ]
+  },
+  "spacehuggers": {
+    "name": "Space Huggers",
+    "release": "Sep 13, 2021",
+    "genre": "Action · Run and Gun Roguelike",
+    "platforms": "Browser, Controller",
+    "controls": [
+      {
+        "input": "Keyboard",
+        "action": "run and jump"
+      },
+      {
+        "input": "Mouse",
+        "action": "aim independently of the direction you are running"
+      },
+      {
+        "input": "Left click",
+        "action": "fire"
+      },
+      {
+        "input": "Analog gamepad",
+        "action": "full controller support through the LittleJS engine"
+      },
+      {
+        "input": "Touch",
+        "action": "playable on a touchscreen as well as a keyboard"
+      }
+    ]
+  },
+  "asciispace": {
+    "name": "Adventure in ASCII Space",
+    "release": "Sep 13, 2021",
+    "genre": "Action · Twin-Stick Shooter",
+    "platforms": "Browser, Controller",
+    "controls": [
+      {
+        "input": "W / A / S / D",
+        "action": "move your ship through space"
+      },
+      {
+        "input": "Space",
+        "action": "shoot"
+      },
+      {
+        "input": "E",
+        "action": "open the upgrade panel"
+      },
+      {
+        "input": "Gamepad",
+        "action": "controller support, tested with Xbox pads"
+      }
+    ]
+  },
+  "backcountry": {
+    "name": "Backcountry",
+    "release": "Sep 13, 2019",
+    "genre": "Action · Wild West",
+    "platforms": "Browser, Mobile",
+    "controls": [
+      {
+        "input": "Mouse / tap",
+        "action": "aim and act on the world"
+      },
+      {
+        "input": "Click",
+        "action": "confirm menu choices and start a run"
+      }
+    ]
+  },
+  "black-hole-square": {
+    "name": "Black Hole Square",
+    "release": "Sep 13, 2021",
+    "genre": "Puzzle · Minimalist",
+    "platforms": "Browser, Mobile",
+    "controls": [
+      {
+        "input": "Click / tap a square",
+        "action": "activate it and see what it does"
+      },
+      {
+        "input": "Swipe right",
+        "action": "reset the current puzzle or step back to earlier ones"
+      },
+      {
+        "input": "Swipe left",
+        "action": "skip ahead to the next puzzle"
+      }
+    ]
+  },
+  "chroma-incident": {
+    "name": "The Chroma Incident",
+    "release": "Sep 13, 2018",
+    "genre": "Shooter · Twin-Stick",
+    "platforms": "Browser, Controller",
+    "controls": [
+      {
+        "input": "WASD or ZQSD",
+        "action": "move in eight directions"
+      },
+      {
+        "input": "Mouse",
+        "action": "aim independently of where you are moving"
+      },
+      {
+        "input": "Mouse button",
+        "action": "shoot"
+      },
+      {
+        "input": "Gamepad",
+        "action": "supported - press any button on the title screen to use one"
+      }
+    ]
+  },
+  "evil-glitch": {
+    "name": "Evil Glitch",
+    "release": "Sep 13, 2016",
+    "genre": "Shooter · Arcade",
+    "platforms": "Browser",
+    "controls": [
+      {
+        "input": "Mouse",
+        "action": "steer - the game tracks your cursor position directly"
+      },
+      {
+        "input": "Hold mouse button",
+        "action": "fire continuously"
+      },
+      {
+        "input": "Controls menu",
+        "action": "the title screen lists the full scheme, including keyboard"
+      }
+    ]
+  },
+  "ninja-vs-evilcorp": {
+    "name": "Ninja vs EVILCORP",
+    "release": "Sep 13, 2020",
+    "genre": "Platformer · Stealth",
+    "platforms": "Browser, Mobile",
+    "controls": [
+      {
+        "input": "Arrow keys / WASD",
+        "action": "run and climb"
+      },
+      {
+        "input": "Up / W / Space",
+        "action": "jump and wall-jump"
+      },
+      {
+        "input": "Touch",
+        "action": "on-screen input is supported on phones and tablets"
+      }
+    ]
+  },
+  "shuttledeck": {
+    "name": "SHUTTLEDECK",
+    "release": "Sep 13, 2021",
+    "genre": "Strategy · Deck-Building Runner",
+    "platforms": "Browser, Mobile",
+    "controls": [
+      {
+        "input": "Click / tap a card",
+        "action": "spend energy to trigger that ability"
+      },
+      {
+        "input": "Lane cards",
+        "action": "the red, green and blue cards move you between lanes"
+      },
+      {
+        "input": "Shop screens",
+        "action": "buy new ability cards and upgrades between planets"
+      }
+    ]
+  },
+  "themazeofspacegoblins": {
+    "name": "The Maze of Space Goblins",
+    "release": "Sep 13, 2021",
+    "genre": "Puzzle · Sokoban Match-3",
+    "platforms": "Browser",
+    "controls": [
+      {
+        "input": "Arrow keys",
+        "action": "move the flying saucer one tile at a time"
+      },
+      {
+        "input": "Backspace",
+        "action": "undo your last move"
+      },
+      {
+        "input": "R",
+        "action": "reset the room from the beginning"
+      }
+    ]
+  },
+  "xx142-b2-exe": {
+    "name": "XX142-B2.exe",
+    "release": "Sep 13, 2019",
+    "genre": "Action · Twin-Stick Shooter",
+    "platforms": "Browser",
+    "controls": [
+      {
+        "input": "WASD / arrow keys",
+        "action": "move through the alien network"
+      },
+      {
+        "input": "Mouse",
+        "action": "aim and fire"
+      },
+      {
+        "input": "Backspace",
+        "action": "kill the process yourself and restart the run early"
+      }
+    ]
+  },
+  "super-mario-bros": {
+    "name": "Super Mario Bros",
+    "release": "Sep 13, 1985",
+    "genre": "Platformer · Classic NES",
+    "platforms": "Browser, Controller",
+    "controls": [
+      {
+        "input": "Arrow keys",
+        "action": "the NES d-pad - move, and duck when large"
+      },
+      {
+        "input": "Z",
+        "action": "the A button: jump"
+      },
+      {
+        "input": "X",
+        "action": "the B button: hold to run, and throw fireballs with the Fire Flower"
+      },
+      {
+        "input": "Enter",
+        "action": "Start - begin the game and pause"
+      },
+      {
+        "input": "Gamepad",
+        "action": "connect a controller and the emulator maps it automatically"
+      }
+    ]
+  },
+  "retrohaunt": {
+    "name": "Retrohaunt",
+    "release": "Sep 13, 2019",
+    "genre": "Puzzle · Time Manipulation",
+    "platforms": "Browser",
+    "controls": [
+      {
+        "input": "Arrow keys",
+        "action": "move Detective Clay around the scene"
+      },
+      {
+        "input": "Mouse hover",
+        "action": "hovering certain shapes changes how time flows"
+      }
+    ]
   }
 }

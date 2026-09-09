@@ -24,7 +24,7 @@ const OVERRIDES_PATH = path.join(ROOT, 'data', 'game-overrides.json');
 const MANUAL_PATH = path.join(ROOT, 'data', 'game-content-manual.json');
 const COMPONENT_VERSION = '2026-04-01-mobile-1';
 const OG_IMAGE = 'https://schplay.com/images/logo.webp';
-const MAX_CARDS = 18;
+const MAX_CARDS = 30;
 
 const CATEGORIES = [
   {
@@ -69,7 +69,9 @@ const CATEGORIES = [
       '1v1lol', 'quake3', 'pixelgun', 'ngon', 'galaga', 'duckhunt', 'gunspin',
       'deep-freeze', '10-minutes-till-dawn', 'getaway-shootout', 'gunmayhem', 'z-machine',
       'super-tank-hero', 'camouflage-and-sniper', 'the-binding-of-isaac', 'stickman-and-guns',
-      'imposter-assassin-3d', 'candy-cat-shot'
+      'imposter-assassin-3d', 'candy-cat-shot',
+      'q1k3', 'spacehuggers', 'asciispace',
+      'chroma-incident', 'evil-glitch', 'xx142-b2-exe'
     ]
   },
   {
@@ -85,7 +87,9 @@ const CATEGORIES = [
       '2048', 'tetris', 'blockblast', 'bloxors', 'cut-the-rope', 'minesweeper',
       'cupcake2048', 'bejeweled2', 'worldshardestgame', 'worldshardestgame2',
       'angrybirdshalloween', 'civiballs1', 'connect-pipe-color-puzzle-game', 'gyroball',
-      'towerblaster', 'towermaster', 'watermelon-merge-3', 'draw-the-hill'
+      'towerblaster', 'towermaster', 'watermelon-merge-3', 'draw-the-hill',
+      'connect-3', 'packabunchas', 'sudoku', 'roadblocks',
+      'black-hole-square', 'themazeofspacegoblins', 'retrohaunt'
     ]
   },
   {
@@ -100,7 +104,9 @@ const CATEGORIES = [
     include: [
       'pacman', 'doodlejump', 'flappy-bird', 'crossyroad', 'subwaysurfer', 'templerun2',
       'jetpack-joyride', 'duckhunt', 'galaga', 'googlesnake', 'snake', 'slope2', 'air-slip',
-      'flappy-2048', 'learntofly', 'learntofly2', 'gunspin', 'curveball'
+      'flappy-2048', 'learntofly', 'learntofly2', 'gunspin', 'curveball',
+      'captain-callisto', 'spacegarden',
+      'backcountry', 'ninja-vs-evilcorp', 'shuttledeck', 'super-mario-bros'
     ]
   },
   {
