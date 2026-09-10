@@ -6,15 +6,15 @@
     "platforms": "Browser, Mobile",
     "controls": [
       {
-        "input": "Arrow keys / H,J,K,L",
-        "action": "slide the grid; vim-style keys work as an alternate scheme"
+        "input": "Arrow keys",
+        "action": "slide the grid in one direction"
       },
       {
         "input": "Swipe",
         "action": "swipe on touch screens to merge tiles"
       },
       {
-        "input": "Space",
+        "input": "R",
         "action": "restart with a fresh board"
       }
     ]
@@ -642,16 +642,16 @@
     "platforms": "Browser, Mobile",
     "controls": [
       {
-        "input": "Left / Right Arrow",
-        "action": "drift the doodle sideways; the screen wraps at both edges"
+        "input": "Arrow keys / Tilt",
+        "action": "steer the doodle between platforms"
       },
       {
         "input": "Space",
-        "action": "start the run or restart after a fall"
+        "action": "fire at monsters"
       },
       {
-        "input": "Landing on a platform",
-        "action": "bounce automatically — there is no jump button"
+        "input": "Tap",
+        "action": "shoot on touch screens"
       }
     ]
   },
@@ -868,6 +868,10 @@
       {
         "input": "W / A / S / D",
         "action": "guide Watergirl"
+      },
+      {
+        "input": "Space",
+        "action": "trigger levers or reset levels"
       }
     ]
   },
@@ -899,15 +903,15 @@
     "controls": [
       {
         "input": "Space / Click",
-        "action": "flap upward with a fixed velocity kick"
+        "action": "flap to stay aloft"
       },
       {
         "input": "Tap",
-        "action": "flap on touch devices"
+        "action": "keep airborne on touch devices"
       },
       {
-        "input": "Space (on game-over screen)",
-        "action": "click the replay button to restart"
+        "input": "P",
+        "action": "pause mid-flight"
       }
     ]
   },
@@ -1139,7 +1143,15 @@
     "controls": [
       {
         "input": "Mouse",
-        "action": "click through the story and choose branching options"
+        "action": "choose branching story options"
+      },
+      {
+        "input": "Space",
+        "action": "skip cutscenes after completion"
+      },
+      {
+        "input": "R",
+        "action": "retry a decision quickly"
       }
     ]
   },
@@ -1300,26 +1312,6 @@
       {
         "input": "1-3",
         "action": "trigger gadgets"
-      }
-    ]
-  },
-  "learntofly3": {
-    "name": "Learn To Fly 3",
-    "release": "Feb 19, 2016",
-    "genre": "Arcade · Rocket Builder",
-    "platforms": "Browser",
-    "controls": [
-      {
-        "input": "Arrow keys",
-        "action": "stabilize in zero-g"
-      },
-      {
-        "input": "Space",
-        "action": "fire stage boosters"
-      },
-      {
-        "input": "Shift",
-        "action": "deploy special modules"
       }
     ]
   },
@@ -5141,6 +5133,1501 @@
       {
         "input": "R",
         "action": "restart the current puzzle"
+      }
+    ]
+  },
+  "contra": {
+    "name": "Contra",
+    "release": "1988",
+    "genre": "Run and Gun · Co-op Action",
+    "platforms": "NES (emulated in browser)",
+    "controls": [
+      {
+        "input": "Arrow keys",
+        "action": "run, aim, crouch and climb"
+      },
+      {
+        "input": "Z",
+        "action": "jump"
+      },
+      {
+        "input": "X",
+        "action": "fire"
+      },
+      {
+        "input": "Enter",
+        "action": "START - begin the game and pause"
+      },
+      {
+        "input": "V",
+        "action": "SELECT - switch between 1 and 2 player mode"
+      }
+    ]
+  },
+  "kid-icarus": {
+    "name": "Kid Icarus",
+    "release": "1986",
+    "genre": "Platformer · Action Adventure",
+    "platforms": "NES (emulated in browser)",
+    "controls": [
+      {
+        "input": "Arrow keys",
+        "action": "walk left and right, crouch, aim upward"
+      },
+      {
+        "input": "Z",
+        "action": "jump"
+      },
+      {
+        "input": "X",
+        "action": "fire an arrow"
+      },
+      {
+        "input": "Enter",
+        "action": "START - begin the game and pause"
+      },
+      {
+        "input": "V",
+        "action": "SELECT - menu and password entry"
+      }
+    ]
+  },
+  "battletoads": {
+    "name": "Battletoads",
+    "release": "1991",
+    "genre": "Beat 'em Up · Action",
+    "platforms": "NES (emulated in browser)",
+    "controls": [
+      {
+        "input": "Arrow keys",
+        "action": "move, duck and climb"
+      },
+      {
+        "input": "Z",
+        "action": "jump"
+      },
+      {
+        "input": "X",
+        "action": "attack - punch, kick and smash"
+      },
+      {
+        "input": "Enter",
+        "action": "START - begin the game and pause"
+      },
+      {
+        "input": "V",
+        "action": "SELECT - choose one or two players"
+      }
+    ]
+  },
+  "kirbys-dream-land": {
+    "name": "Kirby's Dream Land",
+    "release": "1992",
+    "genre": "Platformer · Action",
+    "platforms": "Game Boy (emulated in browser)",
+    "controls": [
+      {
+        "input": "Arrow keys",
+        "action": "walk, duck and aim; hold up to float upward"
+      },
+      {
+        "input": "Z",
+        "action": "jump, and flap to stay airborne"
+      },
+      {
+        "input": "X",
+        "action": "inhale, then press again to spit the enemy back out"
+      },
+      {
+        "input": "Enter",
+        "action": "START - begin the game and pause"
+      },
+      {
+        "input": "V",
+        "action": "SELECT"
+      }
+    ]
+  },
+  "bounce-back": {
+    "name": "Bounce Back",
+    "release": "Sep 13, 2019",
+    "genre": "Roguelite · Action",
+    "platforms": "Browser",
+    "controls": [
+      {
+        "input": "WASD",
+        "action": "move"
+      },
+      {
+        "input": "Mouse",
+        "action": "aim the boomerang"
+      },
+      {
+        "input": "Click",
+        "action": "throw the boomerang"
+      },
+      {
+        "input": "Space",
+        "action": "dash - and you take no damage while dashing"
+      }
+    ]
+  },
+  "chrome-easter-egg-t-rex-runner": {
+    "name": "T-Rex Runner",
+    "release": "2014",
+    "genre": "Endless Runner · Arcade",
+    "platforms": "Browser, Mobile",
+    "controls": [
+      {
+        "input": "Space",
+        "action": "start the game, and jump"
+      },
+      {
+        "input": "Up arrow",
+        "action": "jump"
+      },
+      {
+        "input": "Down arrow",
+        "action": "duck under pterodactyls"
+      },
+      {
+        "input": "Tap",
+        "action": "jump, on a touchscreen"
+      }
+    ]
+  },
+  "wordle": {
+    "name": "Wordle+",
+    "release": "2022",
+    "genre": "Word Puzzle",
+    "platforms": "Browser, Mobile",
+    "controls": [
+      {
+        "input": "Keyboard letters",
+        "action": "type your guess"
+      },
+      {
+        "input": "Enter",
+        "action": "submit a five-letter guess"
+      },
+      {
+        "input": "Backspace",
+        "action": "delete a letter"
+      },
+      {
+        "input": "Click / tap",
+        "action": "use the on-screen keyboard instead"
+      }
+    ]
+  },
+  "asteroids": {
+    "name": "Asteroids",
+    "release": "2010",
+    "genre": "Arcade · Space Shooter",
+    "platforms": "Browser",
+    "controls": [
+      {
+        "input": "Left / Right arrows",
+        "action": "rotate the ship"
+      },
+      {
+        "input": "Up arrow",
+        "action": "thrust - the ship keeps drifting when you let go"
+      },
+      {
+        "input": "Space",
+        "action": "start the game, and fire"
+      }
+    ]
+  },
+  "shift": {
+    "name": "Shift",
+    "release": "2008",
+    "genre": "Puzzle Platformer",
+    "platforms": "Browser (Flash via Ruffle)",
+    "controls": [
+      {
+        "input": "Left / Right arrows",
+        "action": "run"
+      },
+      {
+        "input": "Space",
+        "action": "jump"
+      },
+      {
+        "input": "Shift",
+        "action": "flip the world - rotates the level 180 degrees and swaps black for white"
+      },
+      {
+        "input": "P",
+        "action": "open the menu"
+      }
+    ]
+  },
+  "bubble-shooter": {
+    "name": "Bubble Shooter",
+    "release": "2002",
+    "genre": "Puzzle · Match Three",
+    "platforms": "Browser (Flash via Ruffle)",
+    "controls": [
+      {
+        "input": "Mouse",
+        "action": "aim the launcher at the bottom of the board"
+      },
+      {
+        "input": "Click",
+        "action": "fire the bubble"
+      }
+    ]
+  },
+  "mega-man-2": {
+    "name": "Mega Man 2",
+    "release": "1989",
+    "genre": "Action Platformer",
+    "platforms": "NES (emulated in browser)",
+    "controls": [
+      {
+        "input": "Arrow keys",
+        "action": "run, climb ladders and aim"
+      },
+      {
+        "input": "Z",
+        "action": "jump"
+      },
+      {
+        "input": "X",
+        "action": "fire the Mega Buster or the equipped weapon"
+      },
+      {
+        "input": "Enter",
+        "action": "START - begin the game and open the weapon menu"
+      },
+      {
+        "input": "V",
+        "action": "SELECT"
+      }
+    ]
+  },
+  "metroid-ii": {
+    "name": "Metroid II: Return of Samus",
+    "release": "1991",
+    "genre": "Action Adventure · Metroidvania",
+    "platforms": "Game Boy (emulated in browser)",
+    "controls": [
+      {
+        "input": "Arrow keys",
+        "action": "run, crouch, aim up and enter doors"
+      },
+      {
+        "input": "Z",
+        "action": "jump - hold a direction first to spin jump"
+      },
+      {
+        "input": "X",
+        "action": "fire beam or missile"
+      },
+      {
+        "input": "Enter",
+        "action": "START - pause and open the equipment screen"
+      },
+      {
+        "input": "V",
+        "action": "SELECT - switch between beam and missiles"
+      }
+    ]
+  },
+  "mike-tysons-punch-out": {
+    "name": "Mike Tyson's Punch-Out!!",
+    "release": "1987",
+    "genre": "Sports · Boxing",
+    "platforms": "NES (emulated in browser)",
+    "controls": [
+      {
+        "input": "Left / Right arrows",
+        "action": "dodge to either side"
+      },
+      {
+        "input": "Down arrow",
+        "action": "block, and duck when held"
+      },
+      {
+        "input": "Up + Z or X",
+        "action": "throw a punch to the head"
+      },
+      {
+        "input": "Z / X",
+        "action": "right and left body blows"
+      },
+      {
+        "input": "Enter",
+        "action": "START - and press it with stars banked for an uppercut"
+      }
+    ]
+  },
+  "ninja-gaiden": {
+    "name": "Ninja Gaiden",
+    "release": "1989",
+    "genre": "Action Platformer",
+    "platforms": "NES (emulated in browser)",
+    "controls": [
+      {
+        "input": "Arrow keys",
+        "action": "run, crouch and climb; press up at a wall to cling"
+      },
+      {
+        "input": "Z",
+        "action": "jump - press again on a wall to wall-jump"
+      },
+      {
+        "input": "X",
+        "action": "attack with the Dragon Sword"
+      },
+      {
+        "input": "Up + X",
+        "action": "use the equipped ninja art"
+      },
+      {
+        "input": "Enter",
+        "action": "START - pause and cycle sub-weapons"
+      }
+    ]
+  },
+  "super-tennis": {
+    "name": "Super Tennis",
+    "release": "1991",
+    "genre": "Sports · Tennis",
+    "platforms": "SNES (emulated in browser)",
+    "controls": [
+      {
+        "input": "Arrow keys",
+        "action": "move your player around the court"
+      },
+      {
+        "input": "Z",
+        "action": "the SNES A button - flat drive"
+      },
+      {
+        "input": "X",
+        "action": "the SNES B button - topspin"
+      },
+      {
+        "input": "A / S",
+        "action": "the SNES X and Y buttons - lob and slice"
+      },
+      {
+        "input": "Enter",
+        "action": "START - serve and pause"
+      }
+    ]
+  },
+  "super-bomberman": {
+    "name": "Super Bomberman",
+    "release": "1993",
+    "genre": "Action · Maze",
+    "platforms": "SNES (emulated in browser)",
+    "controls": [
+      {
+        "input": "Arrow keys",
+        "action": "move through the maze"
+      },
+      {
+        "input": "Z",
+        "action": "drop a bomb"
+      },
+      {
+        "input": "X",
+        "action": "detonate remotely, once you have the remote control power-up"
+      },
+      {
+        "input": "Enter",
+        "action": "START - begin and pause"
+      },
+      {
+        "input": "V",
+        "action": "SELECT - menus"
+      }
+    ]
+  },
+  "factory-balls": {
+    "name": "Factory Balls",
+    "release": "2009",
+    "genre": "Puzzle · Logic",
+    "platforms": "Browser (Flash via Ruffle)",
+    "controls": [
+      {
+        "input": "Mouse",
+        "action": "drag a ball from the bin onto a tool"
+      },
+      {
+        "input": "Click and drag",
+        "action": "apply paint, belts and covers in sequence"
+      },
+      {
+        "input": "Drag to the bin",
+        "action": "discard a ball and start the level again"
+      }
+    ]
+  },
+  "tron": {
+    "name": "FL-TRON 2.0",
+    "release": "2000s",
+    "genre": "Arcade · Light Cycles",
+    "platforms": "Browser (Flash via Ruffle)",
+    "controls": [
+      {
+        "input": "Arrow keys",
+        "action": "steer your light cycle - player one"
+      },
+      {
+        "input": "A / D / W / S",
+        "action": "steer the second cycle in two-player mode"
+      },
+      {
+        "input": "Space",
+        "action": "continue between rounds"
+      }
+    ]
+  },
+  "1-on-1-soccer": {
+    "name": "1 on 1 Soccer",
+    "release": "2000s",
+    "genre": "Sports · Two Player",
+    "platforms": "Browser (Flash via Ruffle)",
+    "controls": [
+      {
+        "input": "Left / Right arrows",
+        "action": "player one runs"
+      },
+      {
+        "input": "Up arrow",
+        "action": "player one jumps and heads the ball"
+      },
+      {
+        "input": "A / D",
+        "action": "player two runs"
+      },
+      {
+        "input": "W",
+        "action": "player two jumps"
+      }
+    ]
+  },
+  "twitchtetris": {
+    "name": "TwitchTetris",
+    "release": "2011",
+    "genre": "Puzzle · Falling Blocks",
+    "platforms": "Browser",
+    "controls": [
+      {
+        "input": "Left / Right arrows",
+        "action": "move the piece sideways"
+      },
+      {
+        "input": "Down arrow",
+        "action": "soft drop"
+      },
+      {
+        "input": "Space",
+        "action": "hard drop - slam the piece down instantly"
+      },
+      {
+        "input": "Z / X / Up",
+        "action": "rotate - Z counter-clockwise, X or Up clockwise"
+      },
+      {
+        "input": "C / Shift",
+        "action": "hold the current piece for later"
+      }
+    ]
+  },
+  "altered-beast": {
+    "name": "Altered Beast",
+    "release": "1988",
+    "genre": "Beat 'em Up · Arcade",
+    "platforms": "Sega Genesis (emulated in browser)",
+    "controls": [
+      {
+        "input": "Arrow keys",
+        "action": "walk left and right, crouch"
+      },
+      {
+        "input": "X",
+        "action": "punch"
+      },
+      {
+        "input": "Z",
+        "action": "jump"
+      },
+      {
+        "input": "S",
+        "action": "kick"
+      },
+      {
+        "input": "Enter",
+        "action": "START - begin the game"
+      }
+    ]
+  },
+  "golden-axe": {
+    "name": "Golden Axe",
+    "release": "1989",
+    "genre": "Beat 'em Up · Fantasy",
+    "platforms": "Sega Genesis (emulated in browser)",
+    "controls": [
+      {
+        "input": "Arrow keys",
+        "action": "move around the battlefield in all directions"
+      },
+      {
+        "input": "X",
+        "action": "attack with your weapon"
+      },
+      {
+        "input": "Z",
+        "action": "jump"
+      },
+      {
+        "input": "S",
+        "action": "cast magic - spends your collected potions"
+      },
+      {
+        "input": "Enter",
+        "action": "START - begin the game"
+      }
+    ]
+  },
+  "streets-of-rage": {
+    "name": "Streets of Rage",
+    "release": "1991",
+    "genre": "Beat 'em Up",
+    "platforms": "Sega Genesis (emulated in browser)",
+    "controls": [
+      {
+        "input": "Arrow keys",
+        "action": "move in all directions"
+      },
+      {
+        "input": "X",
+        "action": "attack - combos when repeated"
+      },
+      {
+        "input": "Z",
+        "action": "jump"
+      },
+      {
+        "input": "S",
+        "action": "call in the police special attack"
+      },
+      {
+        "input": "Enter",
+        "action": "START - begin and pause"
+      }
+    ]
+  },
+  "f-zero": {
+    "name": "F-Zero",
+    "release": "1990",
+    "genre": "Racing · Futuristic",
+    "platforms": "SNES (emulated in browser)",
+    "controls": [
+      {
+        "input": "Up arrow / Z",
+        "action": "accelerate"
+      },
+      {
+        "input": "Left / Right arrows",
+        "action": "steer"
+      },
+      {
+        "input": "Q / E",
+        "action": "the L and R shoulder buttons - lean into a turn"
+      },
+      {
+        "input": "X",
+        "action": "brake"
+      },
+      {
+        "input": "Enter",
+        "action": "START"
+      }
+    ]
+  },
+  "battleships": {
+    "name": "Battleships: General Quarters",
+    "release": "2003",
+    "genre": "Strategy · Board Game",
+    "platforms": "Browser (Flash via Ruffle)",
+    "controls": [
+      {
+        "input": "Mouse",
+        "action": "place your fleet and pick target squares"
+      },
+      {
+        "input": "Click",
+        "action": "confirm a placement or fire on a grid square"
+      },
+      {
+        "input": "Drag",
+        "action": "reposition a ship before the game starts"
+      }
+    ]
+  },
+  "connect-4": {
+    "name": "Connect 4",
+    "release": "2000s",
+    "genre": "Strategy · Two Player",
+    "platforms": "Browser (Flash via Ruffle)",
+    "controls": [
+      {
+        "input": "Mouse",
+        "action": "choose a column"
+      },
+      {
+        "input": "Click",
+        "action": "drop a token into that column"
+      }
+    ]
+  },
+  "sprinter": {
+    "name": "Sprinter",
+    "release": "2000s",
+    "genre": "Sports · Arcade",
+    "platforms": "Browser (Flash via Ruffle)",
+    "controls": [
+      {
+        "input": "Left and Right arrows",
+        "action": "alternate them rapidly to run"
+      },
+      {
+        "input": "Rhythm",
+        "action": "the speed comes from alternating cleanly, not from mashing"
+      }
+    ]
+  },
+  "chess": {
+    "name": "Chess",
+    "release": "2010s",
+    "genre": "Strategy · Board Game",
+    "platforms": "Browser",
+    "controls": [
+      {
+        "input": "Mouse",
+        "action": "drag a piece to its destination square"
+      },
+      {
+        "input": "Search depth menu",
+        "action": "set how many moves ahead the engine looks"
+      }
+    ]
+  },
+  "universal-paperclips": {
+    "name": "Universal Paperclips",
+    "release": "2017",
+    "genre": "Incremental · Strategy",
+    "platforms": "Browser",
+    "controls": [
+      {
+        "input": "Mouse",
+        "action": "click buttons to make clips, buy upgrades and launch projects"
+      },
+      {
+        "input": "Click",
+        "action": "the only input the game has, from start to finish"
+      }
+    ]
+  },
+  "wall-smash": {
+    "name": "Wall Smash",
+    "release": "2010s",
+    "genre": "Puzzle · Arcade",
+    "platforms": "Browser, Mobile",
+    "controls": [
+      {
+        "input": "Mouse",
+        "action": "aim the launch line"
+      },
+      {
+        "input": "Click / drag",
+        "action": "set the angle, release to fire the whole row of balls"
+      }
+    ]
+  },
+  "sonic-the-hedgehog": {
+    "name": "Sonic the Hedgehog",
+    "release": "1991",
+    "genre": "Platformer",
+    "platforms": "Sega Genesis (emulated in browser)",
+    "controls": [
+      {
+        "input": "Left / Right arrows",
+        "action": "run"
+      },
+      {
+        "input": "Down arrow",
+        "action": "crouch, and roll while moving"
+      },
+      {
+        "input": "X or Z",
+        "action": "jump"
+      },
+      {
+        "input": "Down + jump",
+        "action": "spin dash is not in this game - hold down and roll instead"
+      },
+      {
+        "input": "Enter",
+        "action": "START - begin and pause"
+      }
+    ]
+  },
+  "sonic-spinball": {
+    "name": "Sonic Spinball",
+    "release": "1993",
+    "genre": "Pinball · Action",
+    "platforms": "Sega Genesis (emulated in browser)",
+    "controls": [
+      {
+        "input": "Left / Right arrows",
+        "action": "operate the flippers on each side"
+      },
+      {
+        "input": "Down arrow",
+        "action": "pull back and release the plunger"
+      },
+      {
+        "input": "X or Z",
+        "action": "jump when Sonic is walking, and nudge the table"
+      },
+      {
+        "input": "Enter",
+        "action": "START - begin and pause"
+      }
+    ]
+  },
+  "super-mario-world": {
+    "name": "Super Mario World",
+    "release": "1991",
+    "genre": "Platformer",
+    "platforms": "SNES (emulated in browser)",
+    "controls": [
+      {
+        "input": "Arrow keys",
+        "action": "run, duck and climb"
+      },
+      {
+        "input": "X",
+        "action": "run - hold it, and it also throws items"
+      },
+      {
+        "input": "Z",
+        "action": "jump"
+      },
+      {
+        "input": "S",
+        "action": "spin jump"
+      },
+      {
+        "input": "Enter",
+        "action": "START - and SELECT is V on the map screen"
+      }
+    ]
+  },
+  "super-mario-land-2": {
+    "name": "Super Mario Land 2: 6 Golden Coins",
+    "release": "1992",
+    "genre": "Platformer",
+    "platforms": "Game Boy (emulated in browser)",
+    "controls": [
+      {
+        "input": "Arrow keys",
+        "action": "run, duck and swim"
+      },
+      {
+        "input": "Z",
+        "action": "jump"
+      },
+      {
+        "input": "X",
+        "action": "run, and throw fireballs when powered up"
+      },
+      {
+        "input": "Enter",
+        "action": "START - begin and pause"
+      },
+      {
+        "input": "V",
+        "action": "SELECT"
+      }
+    ]
+  },
+  "kirbys-dream-land-2": {
+    "name": "Kirby's Dream Land 2",
+    "release": "1995",
+    "genre": "Platformer",
+    "platforms": "Game Boy (emulated in browser)",
+    "controls": [
+      {
+        "input": "Arrow keys",
+        "action": "walk, duck and aim; hold up to float"
+      },
+      {
+        "input": "Z",
+        "action": "jump, and flap to stay airborne"
+      },
+      {
+        "input": "X",
+        "action": "inhale, then press again to spit or swallow to copy a power"
+      },
+      {
+        "input": "Enter",
+        "action": "START - begin and pause"
+      },
+      {
+        "input": "V",
+        "action": "SELECT"
+      }
+    ]
+  },
+  "donkey-kong-land": {
+    "name": "Donkey Kong Land",
+    "release": "1995",
+    "genre": "Platformer",
+    "platforms": "Game Boy (emulated in browser)",
+    "controls": [
+      {
+        "input": "Arrow keys",
+        "action": "run, duck and climb"
+      },
+      {
+        "input": "Z",
+        "action": "jump"
+      },
+      {
+        "input": "X",
+        "action": "run, roll, and pick up barrels"
+      },
+      {
+        "input": "Enter",
+        "action": "START - begin and pause"
+      },
+      {
+        "input": "V",
+        "action": "SELECT - swap between Donkey and Diddy"
+      }
+    ]
+  },
+  "super-mario-kart": {
+    "name": "Super Mario Kart",
+    "release": "1992",
+    "genre": "Racing · Kart",
+    "platforms": "SNES (emulated in browser)",
+    "controls": [
+      {
+        "input": "Z",
+        "action": "accelerate"
+      },
+      {
+        "input": "Left / Right arrows",
+        "action": "steer"
+      },
+      {
+        "input": "Q / E",
+        "action": "hop with the shoulder buttons - hold into a turn to power slide"
+      },
+      {
+        "input": "X",
+        "action": "use the item you are holding"
+      },
+      {
+        "input": "Enter",
+        "action": "START"
+      }
+    ]
+  },
+  "warios-woods": {
+    "name": "Wario's Woods",
+    "release": "1994",
+    "genre": "Puzzle · Action",
+    "platforms": "SNES (emulated in browser)",
+    "controls": [
+      {
+        "input": "Arrow keys",
+        "action": "walk Toad along the floor and climb"
+      },
+      {
+        "input": "Z",
+        "action": "pick up and set down monsters and bombs"
+      },
+      {
+        "input": "X",
+        "action": "kick a stack sideways"
+      },
+      {
+        "input": "Enter",
+        "action": "START - begin and pause"
+      }
+    ]
+  },
+  "mario-paint": {
+    "name": "Mario Paint",
+    "release": "1992",
+    "genre": "Creative Tool · Music",
+    "platforms": "SNES (emulated in browser)",
+    "controls": [
+      {
+        "input": "Mouse",
+        "action": "everything - this game was built for the SNES Mouse"
+      },
+      {
+        "input": "Click",
+        "action": "select tools, draw, and place notes on the stave"
+      },
+      {
+        "input": "Drag",
+        "action": "paint strokes and move stamps around the canvas"
+      }
+    ]
+  },
+  "bloons-tower-defence": {
+    "name": "Bloons Tower Defense",
+    "release": "2007",
+    "genre": "Tower Defense · Strategy",
+    "platforms": "Browser (Flash via Ruffle)",
+    "controls": [
+      {
+        "input": "Mouse",
+        "action": "pick a tower and place it beside the path"
+      },
+      {
+        "input": "Click",
+        "action": "buy, place and upgrade towers"
+      }
+    ]
+  },
+  "link-to-the-past": {
+    "name": "The Legend of Zelda: A Link to the Past",
+    "release": "1991",
+    "genre": "Action Adventure",
+    "platforms": "SNES (emulated in browser)",
+    "controls": [
+      {
+        "input": "Arrow keys",
+        "action": "move Link in eight directions"
+      },
+      {
+        "input": "X",
+        "action": "swing the sword"
+      },
+      {
+        "input": "Z",
+        "action": "use the equipped item"
+      },
+      {
+        "input": "A",
+        "action": "lift, throw, run and talk - the action button"
+      },
+      {
+        "input": "Enter",
+        "action": "START - open the inventory and map"
+      }
+    ]
+  },
+  "metal-gear-solid": {
+    "name": "Metal Gear Solid: Ghost Babel",
+    "release": "2000",
+    "genre": "Stealth · Action",
+    "platforms": "Game Boy Color (emulated in browser)",
+    "controls": [
+      {
+        "input": "Arrow keys",
+        "action": "move Snake, and press against a wall to flatten"
+      },
+      {
+        "input": "X",
+        "action": "attack, punch or fire the equipped weapon"
+      },
+      {
+        "input": "Z",
+        "action": "use the equipped item"
+      },
+      {
+        "input": "Enter",
+        "action": "START - open the menu, weapons and items"
+      },
+      {
+        "input": "V",
+        "action": "SELECT - Codec"
+      }
+    ]
+  },
+  "the-legend-of-zelda": {
+    "name": "The Legend of Zelda",
+    "release": "1986",
+    "genre": "Action Adventure",
+    "platforms": "Classic NES Series on GBA (emulated in browser)",
+    "controls": [
+      {
+        "input": "Arrow keys",
+        "action": "move Link in four directions"
+      },
+      {
+        "input": "X",
+        "action": "the B button - use the item you have selected"
+      },
+      {
+        "input": "Z",
+        "action": "the A button - swing the sword"
+      },
+      {
+        "input": "Enter",
+        "action": "START - open the subscreen to select an item"
+      },
+      {
+        "input": "V",
+        "action": "SELECT"
+      }
+    ]
+  },
+  "bomberman": {
+    "name": "Bomberman",
+    "release": "1987",
+    "genre": "Action · Maze",
+    "platforms": "Classic NES Series on GBA (emulated in browser)",
+    "controls": [
+      {
+        "input": "Arrow keys",
+        "action": "move through the maze"
+      },
+      {
+        "input": "X",
+        "action": "drop a bomb"
+      },
+      {
+        "input": "Z",
+        "action": "detonate remotely, with the remote control power-up"
+      },
+      {
+        "input": "Enter",
+        "action": "START - begin and pause"
+      },
+      {
+        "input": "V",
+        "action": "SELECT"
+      }
+    ]
+  },
+  "castlevania": {
+    "name": "Castlevania",
+    "release": "1986",
+    "genre": "Action Platformer",
+    "platforms": "Classic NES Series on GBA (emulated in browser)",
+    "controls": [
+      {
+        "input": "Arrow keys",
+        "action": "walk, crouch and climb stairs"
+      },
+      {
+        "input": "Z",
+        "action": "jump - and you cannot change direction in mid-air"
+      },
+      {
+        "input": "X",
+        "action": "crack the whip"
+      },
+      {
+        "input": "Up + X",
+        "action": "use the sub-weapon you are carrying"
+      },
+      {
+        "input": "Enter",
+        "action": "START - begin and pause"
+      }
+    ]
+  },
+  "frost-bite": {
+    "name": "Frost Bite",
+    "release": "2008",
+    "genre": "Puzzle Platformer",
+    "platforms": "Browser (Flash via Ruffle)",
+    "controls": [
+      {
+        "input": "Arrow keys",
+        "action": "move and climb"
+      },
+      {
+        "input": "Up arrow",
+        "action": "jump"
+      },
+      {
+        "input": "Mouse",
+        "action": "navigate the level map and menus"
+      }
+    ]
+  },
+  "btd-2": {
+    "name": "Bloons Tower Defense 2",
+    "release": "2008",
+    "genre": "Tower Defense · Strategy",
+    "platforms": "Browser (Flash via Ruffle)",
+    "controls": [
+      {
+        "input": "Mouse",
+        "action": "select towers and place them beside the track"
+      },
+      {
+        "input": "Click",
+        "action": "buy, place, upgrade and start each round"
+      }
+    ]
+  },
+  "deal-or-no-deal": {
+    "name": "Deal or No Deal",
+    "release": "2000s",
+    "genre": "Game Show · Chance",
+    "platforms": "Browser (Flash via Ruffle)",
+    "controls": [
+      {
+        "input": "Mouse",
+        "action": "pick your case and open the rest"
+      },
+      {
+        "input": "Click",
+        "action": "choose cases and answer the banker"
+      }
+    ]
+  },
+  "stack": {
+    "name": "Stack",
+    "release": "2010s",
+    "genre": "Arcade · Timing",
+    "platforms": "Browser, Mobile",
+    "controls": [
+      {
+        "input": "Click",
+        "action": "place the moving block"
+      },
+      {
+        "input": "Spacebar",
+        "action": "place the block, if you prefer the keyboard"
+      }
+    ]
+  },
+  "javascript-breakout": {
+    "name": "Breakout",
+    "release": "2010s",
+    "genre": "Arcade · Brick Breaker",
+    "platforms": "Browser",
+    "controls": [
+      {
+        "input": "Mouse",
+        "action": "move the paddle along the bottom"
+      },
+      {
+        "input": "Left / Right arrows",
+        "action": "move the paddle with the keyboard"
+      },
+      {
+        "input": "Space",
+        "action": "launch the ball"
+      }
+    ]
+  },
+  "contra-iii": {
+    "name": "Contra III: The Alien Wars",
+    "release": "1992",
+    "genre": "Run and Gun",
+    "platforms": "SNES (emulated in browser)",
+    "controls": [
+      {
+        "input": "Arrow keys",
+        "action": "run, crouch and aim"
+      },
+      {
+        "input": "S",
+        "action": "fire your weapon"
+      },
+      {
+        "input": "X",
+        "action": "jump"
+      },
+      {
+        "input": "Z",
+        "action": "switch between your two weapons"
+      },
+      {
+        "input": "A",
+        "action": "detonate a smart bomb"
+      },
+      {
+        "input": "Q / E",
+        "action": "lock your aim in place while you keep moving"
+      },
+      {
+        "input": "Enter",
+        "action": "START - pause"
+      }
+    ]
+  },
+  "donkey-kong": {
+    "name": "Donkey Kong",
+    "release": "1981",
+    "genre": "Arcade Platformer",
+    "platforms": "Game Boy Advance (Classic NES Series, emulated in browser)",
+    "controls": [
+      {
+        "input": "Arrow keys",
+        "action": "run and climb ladders"
+      },
+      {
+        "input": "Z",
+        "action": "jump"
+      },
+      {
+        "input": "Enter",
+        "action": "START - begin the game and pause"
+      },
+      {
+        "input": "V",
+        "action": "SELECT - choose one or two players"
+      }
+    ]
+  },
+  "dr-mario": {
+    "name": "Dr. Mario",
+    "release": "1990",
+    "genre": "Puzzle",
+    "platforms": "Game Boy Advance (Classic NES Series, emulated in browser)",
+    "controls": [
+      {
+        "input": "Left / Right arrows",
+        "action": "move the capsule"
+      },
+      {
+        "input": "Down arrow",
+        "action": "drop the capsule faster"
+      },
+      {
+        "input": "Z / X",
+        "action": "rotate the capsule"
+      },
+      {
+        "input": "Enter",
+        "action": "START - begin and pause"
+      },
+      {
+        "input": "V",
+        "action": "SELECT - change virus level and speed"
+      }
+    ]
+  },
+  "metroid": {
+    "name": "Metroid",
+    "release": "1986",
+    "genre": "Action Adventure",
+    "platforms": "Game Boy Advance (Classic NES Series, emulated in browser)",
+    "controls": [
+      {
+        "input": "Left / Right arrows",
+        "action": "run"
+      },
+      {
+        "input": "Up arrow",
+        "action": "aim upward"
+      },
+      {
+        "input": "Down arrow",
+        "action": "roll into the Morph Ball"
+      },
+      {
+        "input": "X",
+        "action": "fire"
+      },
+      {
+        "input": "Z",
+        "action": "jump"
+      },
+      {
+        "input": "Enter",
+        "action": "START - open the status screen"
+      },
+      {
+        "input": "V",
+        "action": "SELECT - switch to missiles"
+      }
+    ]
+  },
+  "ice-climber": {
+    "name": "Ice Climber",
+    "release": "1985",
+    "genre": "Arcade Platformer",
+    "platforms": "Game Boy Advance (Classic NES Series, emulated in browser)",
+    "controls": [
+      {
+        "input": "Left / Right arrows",
+        "action": "walk"
+      },
+      {
+        "input": "Z",
+        "action": "jump"
+      },
+      {
+        "input": "X",
+        "action": "swing your hammer"
+      },
+      {
+        "input": "Enter",
+        "action": "START - begin and pause"
+      },
+      {
+        "input": "V",
+        "action": "SELECT - choose one or two players"
+      }
+    ]
+  },
+  "links-awakening-dx": {
+    "name": "The Legend of Zelda: Link's Awakening DX",
+    "release": "1998",
+    "genre": "Action Adventure",
+    "platforms": "Game Boy Color (emulated in browser)",
+    "controls": [
+      {
+        "input": "Arrow keys",
+        "action": "move Link"
+      },
+      {
+        "input": "Z",
+        "action": "use the item in the A slot"
+      },
+      {
+        "input": "X",
+        "action": "use the item in the B slot"
+      },
+      {
+        "input": "Enter",
+        "action": "START - open the inventory and swap items"
+      },
+      {
+        "input": "V",
+        "action": "SELECT - open the map"
+      }
+    ]
+  },
+  "ecco-the-dolphin": {
+    "name": "Ecco the Dolphin",
+    "release": "1992",
+    "genre": "Action Adventure",
+    "platforms": "Sega Genesis (emulated in browser)",
+    "controls": [
+      {
+        "input": "Arrow keys",
+        "action": "swim in any direction"
+      },
+      {
+        "input": "S",
+        "action": "sonar - map the area and talk to other sea life"
+      },
+      {
+        "input": "X",
+        "action": "charge forward to attack"
+      },
+      {
+        "input": "Z",
+        "action": "accelerate"
+      },
+      {
+        "input": "Enter",
+        "action": "START - pause"
+      }
+    ]
+  },
+  "gunstar-heroes": {
+    "name": "Gunstar Heroes",
+    "release": "1993",
+    "genre": "Run and Gun",
+    "platforms": "Sega Genesis (emulated in browser)",
+    "controls": [
+      {
+        "input": "Arrow keys",
+        "action": "run, aim and crouch"
+      },
+      {
+        "input": "S",
+        "action": "fire your weapon"
+      },
+      {
+        "input": "X",
+        "action": "jump"
+      },
+      {
+        "input": "Z",
+        "action": "grab and throw enemies"
+      },
+      {
+        "input": "Enter",
+        "action": "START - pause"
+      }
+    ]
+  },
+  "ranger-x": {
+    "name": "Ranger X",
+    "release": "1993",
+    "genre": "Run and Gun",
+    "platforms": "Sega Genesis (emulated in browser)",
+    "controls": [
+      {
+        "input": "Arrow keys",
+        "action": "move and aim"
+      },
+      {
+        "input": "S",
+        "action": "fire your main weapon"
+      },
+      {
+        "input": "X",
+        "action": "thrust and hover"
+      },
+      {
+        "input": "Z",
+        "action": "fire the sub-weapon"
+      },
+      {
+        "input": "Enter",
+        "action": "START - pause"
+      }
+    ]
+  },
+  "particle-clicker": {
+    "name": "Particle Clicker",
+    "release": "2014",
+    "genre": "Idle Clicker",
+    "platforms": "Browser (HTML5)",
+    "controls": [
+      {
+        "input": "Mouse click",
+        "action": "click the detector to collect data"
+      },
+      {
+        "input": "Mouse click",
+        "action": "buy research, hire staff and purchase upgrades from the side panels"
+      }
+    ]
+  },
+  "undertale(demo)": {
+    "release": "Oct 31, 2013",
+    "genre": "RPG · Bullet Hell",
+    "platforms": "Browser, PC",
+    "controls": [
+      {
+        "input": "Arrow keys",
+        "action": "move the soul in battle and explore"
+      },
+      {
+        "input": "Z / Enter",
+        "action": "confirm and attack"
+      },
+      {
+        "input": "X / Shift",
+        "action": "cancel or open the menu"
       }
     ]
   }

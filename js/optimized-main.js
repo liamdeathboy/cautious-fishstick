@@ -42,7 +42,6 @@ const gameData = {
     { name: "Gunspin", image: "images/gunspin.webp", url: "../games/gunspin.html" },
     { name: "Learn To Fly", image: "games/learntofly/icon.png", url: "../games/learntofly.html" },
     { name: "Learn To Fly 2", image: "images/learntofly2.webp", url: "../games/learntofly2.html" },
-    { name: "Learn To Fly 3", image: "images/learntofly3.webp", url: "../games/learntofly3.html" },
     { name: "House Of Hazards", image: "images/houseofhazards.webp", url: "../games/houseofhazards.html" },
     { name: "Hole.io", image: "images/holeio.webp", url: "../games/holeio.html" },
     { name: "Cut The Rope", image: "images/cuttherope.webp", url: "../games/cut-the-rope.html" },

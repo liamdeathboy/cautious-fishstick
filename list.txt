@@ -43,7 +43,6 @@
             `<button class="button"><a style="text-decoration:none" href='../games/gunspin.html'><img src="images/gunspin.webp" alt=""> <span> Gunspin</span></a></button>`,
             `<button class="button"><a style="text-decoration:none" href='../games/learntofly.html'><img src="games/learntofly/icon.png" alt=""> <span>Learn To Fly</span></a></button>`,
             `<button class="button"><a style="text-decoration:none" href='../games/learntofly2.html'><img src="images/learntofly2.webp" alt=""> <span>Learn To Fly 2</span></a></button>`,
-            `<button class="button"><a style="text-decoration:none" href='../games/learntofly3.html'><img src="images/learntofly3.webp" alt=""> <span>Learn To Fly 3</span></a></button>`,
             `<button class="button"><a style="text-decoration:none" href='../games/houseofhazards.html'><img src="images/houseofhazards.webp" alt=""> <span>House Of Hazards</span></a></button>`,
             `<button class="button"><a style="text-decoration:none" href='../games/holeio.html'><img src="images/holeio.webp" alt=""> <span>Hole.io </span></a></button>`,
             `<button class="button"><a style="text-decoration:none" href='../games/cut-the-rope.html'><img src="images/cuttherope.webp" alt=""> <span>Cut The Rope</span></a></button>`,

@@ -1,6 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://schplay.com/games/1-on-1-soccer.html</loc>
+    <lastmod>2026-09-09</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://schplay.com/games/10-minutes-till-dawn.html</loc>
     <lastmod>2026-09-09</lastmod>
     <changefreq>weekly</changefreq>
@@ -79,6 +85,12 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://schplay.com/games/altered-beast.html</loc>
+    <lastmod>2026-09-09</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://schplay.com/games/andys-apple-farm.html</loc>
     <lastmod>2026-09-09</lastmod>
     <changefreq>weekly</changefreq>
@@ -116,6 +128,12 @@
   </url>
   <url>
     <loc>https://schplay.com/games/asciispace.html</loc>
+    <lastmod>2026-09-09</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://schplay.com/games/asteroids.html</loc>
     <lastmod>2026-09-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
@@ -170,6 +188,18 @@
   </url>
   <url>
     <loc>https://schplay.com/games/basketballstars.html</loc>
+    <lastmod>2026-09-09</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://schplay.com/games/battleships.html</loc>
+    <lastmod>2026-09-09</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://schplay.com/games/battletoads.html</loc>
     <lastmod>2026-09-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
@@ -235,6 +265,12 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://schplay.com/games/bloons-tower-defence.html</loc>
+    <lastmod>2026-09-09</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://schplay.com/games/bloonstd5.html</loc>
     <lastmod>2026-09-09</lastmod>
     <changefreq>weekly</changefreq>
@@ -253,7 +289,19 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://schplay.com/games/bomberman.html</loc>
+    <lastmod>2026-09-09</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://schplay.com/games/bottle-battle.html</loc>
+    <lastmod>2026-09-09</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://schplay.com/games/bounce-back.html</loc>
     <lastmod>2026-09-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
@@ -272,6 +320,18 @@
   </url>
   <url>
     <loc>https://schplay.com/games/bridge-wars.html</loc>
+    <lastmod>2026-09-09</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://schplay.com/games/btd-2.html</loc>
+    <lastmod>2026-09-09</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://schplay.com/games/bubble-shooter.html</loc>
     <lastmod>2026-09-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
@@ -331,6 +391,12 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://schplay.com/games/castlevania.html</loc>
+    <lastmod>2026-09-09</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://schplay.com/games/cat-pet-doctor-dentist.html</loc>
     <lastmod>2026-09-09</lastmod>
     <changefreq>weekly</changefreq>
@@ -343,7 +409,19 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://schplay.com/games/chess.html</loc>
+    <lastmod>2026-09-09</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://schplay.com/games/chroma-incident.html</loc>
+    <lastmod>2026-09-09</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://schplay.com/games/chrome-easter-egg-t-rex-runner.html</loc>
     <lastmod>2026-09-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
@@ -385,7 +463,25 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://schplay.com/games/connect-4.html</loc>
+    <lastmod>2026-09-09</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://schplay.com/games/connect-pipe-color-puzzle-game.html</loc>
+    <lastmod>2026-09-09</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://schplay.com/games/contra-iii.html</loc>
+    <lastmod>2026-09-09</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://schplay.com/games/contra.html</loc>
     <lastmod>2026-09-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
@@ -469,6 +565,12 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://schplay.com/games/deal-or-no-deal.html</loc>
+    <lastmod>2026-09-09</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://schplay.com/games/deep-freeze.html</loc>
     <lastmod>2026-09-09</lastmod>
     <changefreq>weekly</changefreq>
@@ -505,7 +607,25 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://schplay.com/games/donkey-kong-land.html</loc>
+    <lastmod>2026-09-09</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://schplay.com/games/donkey-kong.html</loc>
+    <lastmod>2026-09-09</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://schplay.com/games/doodlejump.html</loc>
+    <lastmod>2026-09-09</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://schplay.com/games/dr-mario.html</loc>
     <lastmod>2026-09-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
@@ -577,6 +697,12 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://schplay.com/games/ecco-the-dolphin.html</loc>
+    <lastmod>2026-09-09</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://schplay.com/games/edge-not-found.html</loc>
     <lastmod>2026-09-09</lastmod>
     <changefreq>weekly</changefreq>
@@ -614,6 +740,18 @@
   </url>
   <url>
     <loc>https://schplay.com/games/evowars.html</loc>
+    <lastmod>2026-09-09</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://schplay.com/games/f-zero.html</loc>
+    <lastmod>2026-09-09</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://schplay.com/games/factory-balls.html</loc>
     <lastmod>2026-09-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
@@ -691,6 +829,12 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://schplay.com/games/frost-bite.html</loc>
+    <lastmod>2026-09-09</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://schplay.com/games/galaga.html</loc>
     <lastmod>2026-09-09</lastmod>
     <changefreq>weekly</changefreq>
@@ -728,6 +872,12 @@
   </url>
   <url>
     <loc>https://schplay.com/games/gold-miner-tower-defense.html</loc>
+    <lastmod>2026-09-09</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://schplay.com/games/golden-axe.html</loc>
     <lastmod>2026-09-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
@@ -776,6 +926,12 @@
   </url>
   <url>
     <loc>https://schplay.com/games/gunspin.html</loc>
+    <lastmod>2026-09-09</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://schplay.com/games/gunstar-heroes.html</loc>
     <lastmod>2026-09-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
@@ -859,6 +1015,12 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://schplay.com/games/ice-climber.html</loc>
+    <lastmod>2026-09-09</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://schplay.com/games/idle-breakout.html</loc>
     <lastmod>2026-09-09</lastmod>
     <changefreq>weekly</changefreq>
@@ -878,6 +1040,12 @@
   </url>
   <url>
     <loc>https://schplay.com/games/infinite-craft.html</loc>
+    <lastmod>2026-09-09</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://schplay.com/games/javascript-breakout.html</loc>
     <lastmod>2026-09-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
@@ -931,6 +1099,12 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://schplay.com/games/kid-icarus.html</loc>
+    <lastmod>2026-09-09</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://schplay.com/games/kindergarten-2.html</loc>
     <lastmod>2026-09-09</lastmod>
     <changefreq>weekly</changefreq>
@@ -938,6 +1112,18 @@
   </url>
   <url>
     <loc>https://schplay.com/games/kindergarten.html</loc>
+    <lastmod>2026-09-09</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://schplay.com/games/kirbys-dream-land-2.html</loc>
+    <lastmod>2026-09-09</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://schplay.com/games/kirbys-dream-land.html</loc>
     <lastmod>2026-09-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
@@ -961,13 +1147,19 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://schplay.com/games/learntofly3.html</loc>
+    <loc>https://schplay.com/games/line-rider.html</loc>
     <lastmod>2026-09-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://schplay.com/games/line-rider.html</loc>
+    <loc>https://schplay.com/games/link-to-the-past.html</loc>
+    <lastmod>2026-09-09</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://schplay.com/games/links-awakening-dx.html</loc>
     <lastmod>2026-09-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
@@ -1003,6 +1195,12 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://schplay.com/games/mario-paint.html</loc>
+    <lastmod>2026-09-09</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://schplay.com/games/marippy.html</loc>
     <lastmod>2026-09-09</lastmod>
     <changefreq>weekly</changefreq>
@@ -1021,7 +1219,37 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://schplay.com/games/mega-man-2.html</loc>
+    <lastmod>2026-09-09</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://schplay.com/games/memory-exclusive.html</loc>
+    <lastmod>2026-09-09</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://schplay.com/games/metal-gear-solid.html</loc>
+    <lastmod>2026-09-09</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://schplay.com/games/metroid-ii.html</loc>
+    <lastmod>2026-09-09</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://schplay.com/games/metroid.html</loc>
+    <lastmod>2026-09-09</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://schplay.com/games/mike-tysons-punch-out.html</loc>
     <lastmod>2026-09-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
@@ -1123,6 +1351,12 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://schplay.com/games/ninja-gaiden.html</loc>
+    <lastmod>2026-09-09</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://schplay.com/games/ninja-vs-evilcorp.html</loc>
     <lastmod>2026-09-09</lastmod>
     <changefreq>weekly</changefreq>
@@ -1213,6 +1447,12 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://schplay.com/games/particle-clicker.html</loc>
+    <lastmod>2026-09-09</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://schplay.com/games/people-playground.html</loc>
     <lastmod>2026-09-09</lastmod>
     <changefreq>weekly</changefreq>
@@ -1298,6 +1538,12 @@
   </url>
   <url>
     <loc>https://schplay.com/games/raft.html</loc>
+    <lastmod>2026-09-09</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://schplay.com/games/ranger-x.html</loc>
     <lastmod>2026-09-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
@@ -1399,6 +1645,12 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://schplay.com/games/shift.html</loc>
+    <lastmod>2026-09-09</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://schplay.com/games/shooting-master.html</loc>
     <lastmod>2026-09-09</lastmod>
     <changefreq>weekly</changefreq>
@@ -1471,6 +1723,18 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://schplay.com/games/sonic-spinball.html</loc>
+    <lastmod>2026-09-09</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://schplay.com/games/sonic-the-hedgehog.html</loc>
+    <lastmod>2026-09-09</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://schplay.com/games/sort-the-court.html</loc>
     <lastmod>2026-09-09</lastmod>
     <changefreq>weekly</changefreq>
@@ -1513,7 +1777,19 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://schplay.com/games/sprinter.html</loc>
+    <lastmod>2026-09-09</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://schplay.com/games/stack-bump-3d.html</loc>
+    <lastmod>2026-09-09</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://schplay.com/games/stack.html</loc>
     <lastmod>2026-09-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
@@ -1555,6 +1831,12 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://schplay.com/games/streets-of-rage.html</loc>
+    <lastmod>2026-09-09</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://schplay.com/games/stunt-maps.html</loc>
     <lastmod>2026-09-09</lastmod>
     <changefreq>weekly</changefreq>
@@ -1573,6 +1855,12 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://schplay.com/games/super-bomberman.html</loc>
+    <lastmod>2026-09-09</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://schplay.com/games/super-doctor-body-examination.html</loc>
     <lastmod>2026-09-09</lastmod>
     <changefreq>weekly</changefreq>
@@ -1585,7 +1873,25 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://schplay.com/games/super-mario-kart.html</loc>
+    <lastmod>2026-09-09</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://schplay.com/games/super-mario-land-2.html</loc>
+    <lastmod>2026-09-09</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://schplay.com/games/super-mario-land.html</loc>
+    <lastmod>2026-09-09</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://schplay.com/games/super-mario-world.html</loc>
     <lastmod>2026-09-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
@@ -1598,6 +1904,12 @@
   </url>
   <url>
     <loc>https://schplay.com/games/super-tank-hero.html</loc>
+    <lastmod>2026-09-09</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://schplay.com/games/super-tennis.html</loc>
     <lastmod>2026-09-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
@@ -1675,12 +1987,6 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://schplay.com/games/thats-not-my-neighbor.html</loc>
-    <lastmod>2026-09-09</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
     <loc>https://schplay.com/games/the-big-adventure-of-owatas-life.html</loc>
     <lastmod>2026-09-09</lastmod>
     <changefreq>weekly</changefreq>
@@ -1694,6 +2000,12 @@
   </url>
   <url>
     <loc>https://schplay.com/games/the-last-shot.html</loc>
+    <lastmod>2026-09-09</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://schplay.com/games/the-legend-of-zelda.html</loc>
     <lastmod>2026-09-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
@@ -1747,6 +2059,12 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://schplay.com/games/tron.html</loc>
+    <lastmod>2026-09-09</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://schplay.com/games/tug-of-war-with-cars.html</loc>
     <lastmod>2026-09-09</lastmod>
     <changefreq>weekly</changefreq>
@@ -1765,7 +2083,19 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://schplay.com/games/twitchtetris.html</loc>
+    <lastmod>2026-09-09</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://schplay.com/games/ultrakill.html</loc>
+    <lastmod>2026-09-09</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://schplay.com/games/universal-paperclips.html</loc>
     <lastmod>2026-09-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
@@ -1783,7 +2113,19 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://schplay.com/games/wall-smash.html</loc>
+    <lastmod>2026-09-09</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://schplay.com/games/war-regions.html</loc>
+    <lastmod>2026-09-09</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://schplay.com/games/warios-woods.html</loc>
     <lastmod>2026-09-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
@@ -1820,6 +2162,12 @@
   </url>
   <url>
     <loc>https://schplay.com/games/wheel-scale.html</loc>
+    <lastmod>2026-09-09</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://schplay.com/games/wordle.html</loc>
     <lastmod>2026-09-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>

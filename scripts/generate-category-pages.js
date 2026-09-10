@@ -41,7 +41,10 @@ const CATEGORIES = [
       'houseofhazards', 'hideandsmash', 'boxingrandom', 'basketballstars', 'soccer-random',
       'fireboy-and-watergirl-firetemple', 'bad-icecream-1', 'bad-icecream-2', 'bad-icecream-3',
       'minescraftter-two-player', 'redpool-legend-2-player', 'juicy-tic-tac-toe-battle',
-      'swords-and-sandals-2'
+      'swords-and-sandals-2',
+      'contra', 'battletoads',
+      'super-bomberman', 'super-tennis', '1-on-1-soccer', 'tron',
+      'streets-of-rage', 'golden-axe', 'altered-beast', 'connect-4', 'battleships', 'sprinter'
     ]
   },
   {
@@ -72,7 +75,9 @@ const CATEGORIES = [
       'imposter-assassin-3d', 'candy-cat-shot',
       'q1k3', 'spacehuggers', 'asciispace',
       'chroma-incident', 'evil-glitch', 'xx142-b2-exe',
-      'radius-raid'
+      'radius-raid',
+      'contra', 'asteroids', 'bounce-back', 'bubble-shooter',
+      'mega-man-2'
     ]
   },
   {
@@ -91,7 +96,8 @@ const CATEGORIES = [
       'towerblaster', 'towermaster', 'watermelon-merge-3', 'draw-the-hill',
       'connect-3', 'packabunchas', 'sudoku', 'roadblocks',
       'black-hole-square', 'themazeofspacegoblins', 'retrohaunt',
-      'edge-not-found', 'three-line', 'infinite-craft'
+      'edge-not-found', 'three-line', 'infinite-craft',
+      'wordle', 'shift'
     ]
   },
   {
@@ -109,7 +115,8 @@ const CATEGORIES = [
       'flappy-2048', 'learntofly', 'learntofly2', 'gunspin', 'curveball',
       'captain-callisto', 'spacegarden',
       'backcountry', 'ninja-vs-evilcorp', 'shuttledeck', 'super-mario-bros',
-      'spacebar-clicker', 'pushback', 'super-mario-land', 'ducktales'
+      'spacebar-clicker', 'pushback', 'super-mario-land', 'ducktales',
+      'chrome-easter-egg-t-rex-runner', 'kirbys-dream-land'
     ]
   },
   {
@@ -125,7 +132,9 @@ const CATEGORIES = [
       'drifthunters', 'drivemad', 'dunebuggy', 'motox3m', 'real-driving-simulator',
       'bus-school-park-driver', 'duck-life-3', 'ducklife1', 'ducklife2', 'duck-life-5',
       'jelly-drift', 'speed-stars', 'crush-cars-3d', 'cool-cars-run-3d', 'car-survival-3d',
-      'mega-car-jumps', 'happy-wheels', 'tug-of-war-with-cars'
+      'mega-car-jumps', 'happy-wheels', 'tug-of-war-with-cars',
+      'f-zero',
+      'super-mario-kart'
     ]
   }
 ];

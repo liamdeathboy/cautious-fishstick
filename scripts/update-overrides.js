@@ -656,16 +656,6 @@ const updates = {
       { input: '1-3', action: 'trigger gadgets' }
     ]
   },
-  learntofly3: {
-    release: 'Feb 19, 2016',
-    genre: 'Arcade · Rocket Builder',
-    platforms: 'Browser',
-    controls: [
-      { input: 'Arrow keys', action: 'stabilize in zero-g' },
-      { input: 'Space', action: 'fire stage boosters' },
-      { input: 'Shift', action: 'deploy special modules' }
-    ]
-  },
   marippy: {
     release: 'Jan 12, 2015',
     genre: 'Arcade · Crossover',
