@@ -9,3 +9,6 @@ games/GTA-Vice-City-Online-Play-Free-in-Browser-main/
 # EmulatorJS runtime. Source material only — the games that ship are copied into
 # games/ individually. Keep it local, never commit it.
 ugb new games/
+
+# Local UGB source dump
+/ugb new games/
