@@ -1,5 +1,6 @@
 window.SCHPLAY_GAMES = window.SCHPLAY_GAMES || {};
 window.SCHPLAY_GAMES.list = [
+    { name: "Black Ops Zombies", href: "games/black-ops-zombies.html", img: "images/black-ops-zombies.webp" },
     { name: "Basket Random", href: "games/basket-random.html", img: "games/basket-random/icon.jpg" },
     { name: "Slope Ball", href: "games/slope-ball.html", img: "games/slope-ball/icon.jpg" },
     { name: "Space Company", href: "games/space-company.html", img: "games/space-company/SpaceCompanyFavicon.png" },

@@ -109,6 +109,29 @@ function gtag_report_conversion(url) {
       .home-hero-details[open] .home-hero-title { margin-top: 0.5rem; }
       .home-hero-details .home-hero-sub { margin-top: 0.9rem; }
 
+      /* ── New game spotlight ── */
+      .home-spotlight {
+        display: flex; align-items: center; gap: 1.1rem; max-width: 760px; margin: 0.6rem auto 0.4rem;
+        padding: 0.7rem; border-radius: 18px; text-decoration: none; color: #f5f5f7;
+        background: linear-gradient(120deg, rgba(150,10,14,0.55), rgba(20,8,10,0.9));
+        border: 1px solid rgba(224,32,42,0.55); box-shadow: 0 6px 30px rgba(224,32,42,0.25);
+        transition: transform 0.15s ease, box-shadow 0.2s ease;
+      }
+      .home-spotlight:hover { transform: translateY(-2px); box-shadow: 0 10px 36px rgba(224,32,42,0.4); }
+      .home-spotlight img { width: 44%; max-width: 300px; height: auto; border-radius: 12px; flex-shrink: 0; }
+      .home-spotlight-text { display: flex; flex-direction: column; gap: 0.35rem; text-align: left; line-height: 1.35; }
+      .home-spotlight-text strong { font-size: clamp(1.05rem, 2.2vw, 1.4rem); }
+      .home-spotlight-text > span:not([class]) { color: #c9c9cf; font-size: 0.95rem; }
+      .home-spotlight-tag {
+        align-self: flex-start; background: #e0202a; color: #fff; font-size: 0.72rem; font-weight: 700;
+        letter-spacing: 0.08em; text-transform: uppercase; padding: 0.2rem 0.6rem; border-radius: 999px;
+      }
+      .home-spotlight-cta { color: #ff5a62; font-weight: 700; }
+      @media (max-width: 560px) {
+        .home-spotlight { flex-direction: column; text-align: center; }
+        .home-spotlight img { width: 100%; max-width: none; }
+      }
+
       /* ── Browse button ── */
       .home-browse { padding: 0.35rem 0 0.9rem; text-align: center; }
       .btn-browse-all {
@@ -276,6 +299,17 @@ function gtag_report_conversion(url) {
         <p class="home-hero-sub">550+ free unblocked games you can play instantly in your browser — no download, no install. Classroom-friendly favorites like Slope, Subway Surfers, 1v1.LOL, Retro Bowl and Minecraft, playable on any Chromebook or school laptop.</p>
       </details>
     </header>
+
+    <!-- New game spotlight -->
+    <a class="home-spotlight" href="games/black-ops-zombies.html" title="Play Black Ops Zombies with friends">
+      <img src="images/black-ops-zombies.webp" alt="Black Ops Zombies - now playable with friends" width="600" height="315" loading="eager" decoding="async">
+      <span class="home-spotlight-text">
+        <span class="home-spotlight-tag">New</span>
+        <strong>Black Ops 1 Zombies is now playable &mdash; with friends</strong>
+        <span>Team up in co-op, hit the Mystery Box and survive round after round.</span>
+        <span class="home-spotlight-cta">Play Now &rarr;</span>
+      </span>
+    </a>
 
     <!-- Browse all games -->
     <div class="home-browse">

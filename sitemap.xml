@@ -391,6 +391,12 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://schplay.com/games/black-ops-zombies.html</loc>
+    <lastmod>2026-11-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://schplay.com/games/block-craft-3d-school.html</loc>
     <lastmod>2026-11-15</lastmod>
     <changefreq>weekly</changefreq>
