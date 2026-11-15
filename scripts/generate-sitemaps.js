@@ -2,6 +2,7 @@
 
 const fs = require('fs');
 const path = require('path');
+const { execFileSync } = require('child_process');
 
 const ROOT = process.cwd();
 const BASE_URL = 'https://schplay.com';
@@ -63,17 +64,34 @@ const isSupersededGameStub = (pagePath) => {
 // and must never appear in the sitemap themselves.
 const isLegacyBlogRedirectStub = (pagePath) => pagePath === 'blog.html' || /^blog\/[^/]+\.html$/.test(pagePath);
 
-// Sections whose pages were changed in this SEO pass — force a fresh lastmod so
-// search engines re-crawl. Everything else keeps its previously recorded date.
-const FORCE_FRESH_LASTMOD = (pagePath) =>
-  pagePath === 'index.html' ||
-  pagePath.startsWith('games/') ||
-  pagePath.startsWith('blog/') ||
-  EXTRA_DIRECTORY_PAGES.includes(pagePath) ||
-  WEEKLY_TOP_LEVEL.has(pagePath) ||
-  pagePath === 'allgames.html' ||
-  pagePath === '2player.html' ||
-  pagePath === 'classic.html';
+// lastmod must reflect when a page's content actually changed. Stamping every page with
+// the deploy date on every push teaches Google to ignore lastmod entirely, so take each
+// file's last git commit date instead (the deploy workflow checks out full history).
+const pathToFile = (pagePath) => (pagePath === '' || pagePath.endsWith('/') ? `${pagePath}index.html` : pagePath);
+
+const gitLastModified = (pagePath) => {
+  try {
+    const out = execFileSync('git', ['log', '-1', '--format=%cs', '--', pathToFile(pagePath)], {
+      cwd: ROOT,
+      encoding: 'utf8',
+      stdio: ['ignore', 'pipe', 'ignore']
+    }).trim();
+    return /^\d{4}-\d{2}-\d{2}$/.test(out) ? out : '';
+  } catch (error) {
+    return '';
+  }
+};
+
+// Only advertise URLs Google can actually index: skip pages marked noindex and pages
+// whose rel=canonical points at a different URL (duplicates, relocated game stubs).
+const isIndexableCanonical = (pagePath) => {
+  const html = fs.readFileSync(path.join(ROOT, pathToFile(pagePath)), 'utf8');
+  if (/<meta\s+name=["']robots["']\s+content=["'][^"']*noindex/i.test(html)) {
+    return false;
+  }
+  const canonical = html.match(/<link\s+rel=["']canonical["']\s+href=["']([^"']+)["']/i);
+  return !canonical || canonical[1] === `${BASE_URL}/${pagePath}`;
+};
 
 const WEEKLY_TOP_LEVEL = new Set([
   'allgames.html',
@@ -164,7 +182,7 @@ const parseExistingSitemapXml = () => {
 };
 
 const getDefaultMeta = (pagePath, today) => {
-  if (pagePath === 'index.html') {
+  if (pagePath === '') {
     return { lastmod: today, changefreq: 'daily', priority: '1.0' };
   }
 
@@ -205,7 +223,9 @@ const buildTargetPagePaths = () => {
     .sort();
   const blogPages = listBlogDirectoryUrls(path.join(ROOT, 'blog')).sort();
 
-  const orderedPaths = [...gamePages, ...landingPages, ...topLevelPages, ...blogPages];
+  // The homepage is served (and canonicalised) as the bare domain, not /index.html.
+  const orderedPaths = [...gamePages, ...landingPages, ...topLevelPages, ...blogPages]
+    .map((pagePath) => (pagePath === 'index.html' ? '' : pagePath));
   const deduped = [];
   const seen = new Set();
 
@@ -214,7 +234,8 @@ const buildTargetPagePaths = () => {
       EXCLUDED_PATHS.has(pagePath) ||
       isSupersededGameStub(pagePath) ||
       isLegacyBlogRedirectStub(pagePath) ||
-      seen.has(pagePath)
+      seen.has(pagePath) ||
+      !isIndexableCanonical(pagePath)
     ) {
       continue;
     }
@@ -222,7 +243,8 @@ const buildTargetPagePaths = () => {
     deduped.push(pagePath);
   }
 
-  return deduped;
+  // Homepage first.
+  return deduped.sort((a, b) => (a === '' ? -1 : b === '' ? 1 : 0));
 };
 
 const writeSitemapXml = (entries) => {
@@ -260,9 +282,7 @@ const main = () => {
 
     return {
       path: pagePath,
-      lastmod: FORCE_FRESH_LASTMOD(pagePath)
-        ? today
-        : (existing && existing.lastmod ? existing.lastmod : defaults.lastmod),
+      lastmod: gitLastModified(pagePath) || (existing && existing.lastmod ? existing.lastmod : defaults.lastmod),
       changefreq: existing && existing.changefreq ? existing.changefreq : defaults.changefreq,
       priority: existing && existing.priority ? existing.priority : defaults.priority
     };

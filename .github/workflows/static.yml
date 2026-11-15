@@ -31,6 +31,9 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+        with:
+          # Full history so the sitemap generator can read each page's real last-modified date
+          fetch-depth: 0
       - name: Setup Node
         uses: actions/setup-node@v4
         with:
