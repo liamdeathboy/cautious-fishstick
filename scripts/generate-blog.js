@@ -101,7 +101,7 @@ function loadPosts() {
 }
 
 // ── Page shell ────────────────────────────────────────────────────────────
-function pageShell({ title, description, canonicalPath, ogType, bodyClass, schemaEntries, main }) {
+function pageShell({ title, description, canonicalPath, ogType, bodyClass, schemaEntries, main, robots = 'index, follow' }) {
   const canonical = `${SITE_URL}${canonicalPath}`;
   const schemaJson = JSON.stringify(schemaEntries.length === 1 ? schemaEntries[0] : schemaEntries, null, 8);
 
@@ -111,7 +111,7 @@ function pageShell({ title, description, canonicalPath, ogType, bodyClass, schem
     <link rel="stylesheet" href="/css/monocraft.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="robots" content="index, follow">
+    <meta name="robots" content="${robots}">
     <meta name="description" content="${escapeHtml(description)}">
     <meta name="theme-color" content="#0f1a2a">
     <title>${escapeHtml(title)}</title>
@@ -457,6 +457,9 @@ ${posts.map(postCardHtml).join('\n')}
     ogType: 'website',
     bodyClass: 'blog-paper blog-archive',
     schemaEntries,
+    // Tag/category archives only repeat post excerpts; keep them out of the index so
+    // Google spends its crawl on game pages and the posts themselves.
+    robots: 'noindex, follow',
     main
   });
 }

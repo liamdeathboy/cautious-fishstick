@@ -38,6 +38,8 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: 20
+      - name: Build internal game links
+        run: node scripts/build-internal-links.js
       - name: Generate sitemaps
         run: node scripts/generate-sitemaps.js
       - name: Setup Pages
