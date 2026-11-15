@@ -9,7 +9,18 @@ Allow: /
 Disallow: /error/
 Disallow: /scripts/
 
-# Heavy game engine build artifacts (Unity .unityweb / .wasm bundles)
-Disallow: /games/*/Build/
+# Raw game builds. Every game's landing page is /games/<slug>.html; the files it
+# embeds live in /games/<slug>/... (index.html, engine bundles, ROMs). Google was
+# crawling those folders as hundreds of thin, untitled "pages" (/games/run3/,
+# /games/vex/vex7/, /games/FNF/index.html ...) and filing them under "Crawled -
+# currently not indexed", wasting crawl budget meant for the real game pages.
+Disallow: /games/*/
+# ...but keep game thumbnails crawlable (used as og:image and in Google Images).
+Allow: /games/*.jpg$
+Allow: /games/*.jpeg$
+Allow: /games/*.png$
+Allow: /games/*.webp$
+Allow: /games/*.gif$
+Allow: /games/*.avif$
 
 Sitemap: https://schplay.com/sitemap.xml
