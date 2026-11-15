@@ -110,7 +110,7 @@
                 "name": "Can I play Black Ops Zombies with friends?",
                 "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "Yes. Click the Play button on this page to open the game on vel.gg, then invite your friends to the same session. Zombies is built for co-op and is at its best with a full squad of four."
+                    "text": "Yes. Click Play Now on the game player at the top of this page to start it right here on Schplay, then invite your friends to the same session. Zombies is built for co-op and is at its best with a full squad of four."
                 }
             },
             {
@@ -118,7 +118,7 @@
                 "name": "Is Black Ops Zombies free to play here?",
                 "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "Yes. Schplay links to a free browser version hosted on vel.gg, so there is nothing to buy or install."
+                    "text": "Yes. Black Ops Zombies plays free right here on Schplay in your browser, so there is nothing to buy or install."
                 }
             },
             {
@@ -345,32 +345,6 @@
                     background-color: #2f9bff;
                     color: #fff;
                 }
-
-                .game-launch-card {
-                    position: relative;
-                    display: block;
-                    border-radius: 14px;
-                    overflow: hidden;
-                    aspect-ratio: 1200 / 630;
-                    background: #0b0608;
-                }
-                .game-launch-card img {
-                    width: 100%;
-                    height: 100%;
-                    object-fit: cover;
-                    display: block;
-                }
-                .game-launch-overlay {
-                    position: absolute;
-                    inset: auto 0 0 0;
-                    display: flex;
-                    flex-wrap: wrap;
-                    align-items: center;
-                    justify-content: space-between;
-                    gap: 12px;
-                    padding: 18px 20px;
-                    background: linear-gradient(transparent, rgba(0, 0, 0, 0.85));
-                }
                 .game-launch-btn {
                     display: inline-flex;
                     align-items: center;
@@ -389,10 +363,37 @@
                     background: #f0333c;
                     transform: translateY(-1px);
                 }
-                .game-launch-note {
-                    color: rgba(255, 255, 255, 0.78);
-                    font-size: 0.9rem;
-                    margin: 0;
+
+                .game-frame-wrap {
+                    position: relative;
+                }
+                .game-player-card iframe {
+                    width: 100%;
+                    height: 640px;
+                    border: none;
+                    border-radius: 12px;
+                    background-color: #000;
+                }
+                .game-player-card iframe:fullscreen,
+                .game-player-card iframe:-webkit-full-screen {
+                    width: 100vw;
+                    height: 100vh;
+                    border-radius: 0;
+                }
+                @media (max-width: 720px) {
+                    .game-player-card iframe {
+                        height: 520px;
+                    }
+                }
+                .game-frame-fallback {
+                    margin: 10px 0 0;
+                    font-size: 0.85rem;
+                    color: var(--text-muted, #9aa4b2);
+                    text-align: center;
+                }
+                .game-frame-fallback a {
+                    color: inherit;
+                    text-decoration: underline;
                 }
 
     </style>
@@ -418,14 +419,17 @@
     </div>
 
     <section class="game-player-section">
-      <div class="game-player-card" role="region" aria-label="Play Black Ops Zombies">
-        <a class="game-launch-card" href="https://vel.gg/bsz" target="_blank" rel="noopener" aria-label="Play Black Ops Zombies with friends on vel.gg">
-          <img src="../images/black-ops-zombies.jpg" alt="Black Ops Zombies - play Call of Duty Zombies with friends online" width="1200" height="630" fetchpriority="high" decoding="async">
-          <div class="game-launch-overlay">
-            <span class="game-launch-btn"><i class="fas fa-play" aria-hidden="true"></i> Play With Friends</span>
-            <p class="game-launch-note">Opens on vel.gg in a new tab</p>
-          </div>
-        </a>
+      <div class="game-player-card" role="region" aria-label="Black Ops Zombies gameplay">
+        <div class="game-player-header">
+          <button class="game-fullscreen-toggle" type="button" aria-controls="black-ops-zombies-iframe" aria-label="Toggle fullscreen">
+            <i class="fas fa-expand" aria-hidden="true"></i>
+            <span>Fullscreen</span>
+          </button>
+        </div>
+        <div class="game-frame-wrap" id="play">
+          <iframe id="black-ops-zombies-iframe" data-game-src="https://vel.gg/bsz" title="Play Black Ops Zombies" allow="fullscreen; pointer-lock; gamepad; autoplay; clipboard-write" allowfullscreen loading="lazy"></iframe>
+        </div>
+        <p class="game-frame-fallback">Game not loading? <a href="https://vel.gg/bsz" target="_blank" rel="noopener">Open Black Ops Zombies in a new tab</a>.</p>
       </div>
       <aside class="game-meta-card" id="how-to-play">
         <div class="game-ad-slot" aria-label="Advertisement">
@@ -452,7 +456,7 @@
         </dl>
         <hr class="meta-divider">
         <h2>How to Play Black Ops Zombies With Friends</h2>
-        <p>Click <a href="https://vel.gg/bsz" target="_blank" rel="noopener">Play With Friends</a> to open Black Ops Zombies on vel.gg in a new tab, then share the session with your friends so you all drop into the same match. You can also play solo if your squad is offline.</p>
+        <p>Click <a href="#play" class="js-play-bo">Play Now</a> on the game player at the top of this page and the game loads right here on Schplay. Then share the session with your friends so you all drop into the same match. You can also play solo if your squad is offline.</p>
         <p>Each round sends a new wave of zombies at you. Shoot them, knife them and survive until the round ends; every round after that brings more zombies that are faster and tougher. Every hit and kill earns points, which are the currency for everything else in the game.</p>
         <p>Spend points on weapons from the walls, buy random weapons from the Mystery Box, open doors to reach new parts of the map, and drink Perk-a-Colas such as Juggernog and Speed Cola for permanent boosts. If a teammate goes down, get to them and hold the interact key to revive them before they bleed out.</p>
         <h2>Controls</h2>
@@ -478,20 +482,20 @@
         <p>Decide who holds each window or hallway and call out when you are reloading or moving. One player watching the doors while another trains zombies or hits the Mystery Box keeps the whole team alive much longer than everyone fighting on their own.</p>
         <h2 id="black-ops-zombies-about">About Black Ops Zombies</h2>
         <p>Zombies is the co-op survival mode from <em>Call of Duty: Black Ops</em>, developed by Treyarch and released by Activision in 2010. It grew out of the surprise zombies mode in <em>Call of Duty: World at War</em> and became one of the most loved parts of the whole Call of Duty series.</p>
-        <p>The original game shipped with Kino der Toten, a haunted German theatre, and Five, set inside the Pentagon, and later map packs added Ascension, Call of the Dead, Shangri-La and Moon. Black Ops Zombies introduced classic weapons like the Thundergun, Winter&#39;s Howl and the Ray Gun returning from World at War, alongside the Mystery Box, Pack-a-Punch and Perk-a-Cola machines that have defined the mode ever since. Which maps you can play depends on the browser version hosted on vel.gg.</p>
+        <p>The original game shipped with Kino der Toten, a haunted German theatre, and Five, set inside the Pentagon, and later map packs added Ascension, Call of the Dead, Shangri-La and Moon. Black Ops Zombies introduced classic weapons like the Thundergun, Winter&#39;s Howl and the Ray Gun returning from World at War, alongside the Mystery Box, Pack-a-Punch and Perk-a-Cola machines that have defined the mode ever since. Which maps you can play depends on the browser version running here.</p>
         <p>What makes Black Ops Zombies so replayable is that it never ends: there is no final round, just a horde that keeps getting stronger. Every game is a race to build up points, weapons and perks quickly enough to survive one more round, and with friends it turns into a team effort full of last-second revives and close calls.</p>
         <h2 id="black-ops-zombies-faq">Black Ops Zombies FAQ</h2>
         <h3 class="meta-subheading">Can I play Black Ops Zombies with friends?</h3>
-        <p>Yes. Click the Play button on this page to open the game on vel.gg, then invite your friends to the same session. Zombies is built for co-op and is at its best with a full squad of four.</p>
+        <p>Yes. Click Play Now on the game player at the top of this page to start it right here on Schplay, then invite your friends to the same session. Zombies is built for co-op and is at its best with a full squad of four.</p>
         <h3 class="meta-subheading">Is Black Ops Zombies free to play here?</h3>
-        <p>Yes. Schplay links to a free browser version hosted on vel.gg, so there is nothing to buy or install.</p>
+        <p>Yes. Black Ops Zombies plays free right here on Schplay in your browser, so there is nothing to buy or install.</p>
         <h3 class="meta-subheading">Does Black Ops Zombies work on a Chromebook?</h3>
         <p>It runs in a web browser, so it can work on Chromebooks and school laptops. It is a 3D shooter, so it plays best on a computer with a decent graphics chip and a stable internet connection.</p>
         <h3 class="meta-subheading">What is the highest round in Black Ops Zombies?</h3>
         <p>There is no final round. Zombies keep getting tougher every round, so the goal is to survive as long as you can and beat your own record or your friends'.</p>
         <h3 class="meta-subheading">What does Pack-a-Punch do?</h3>
         <p>The Pack-a-Punch machine upgrades a weapon for a fee, giving it a new name, more damage and bigger ammo reserves. Upgraded weapons are the key to surviving high rounds.</p>
-        <p><a class="game-launch-btn" href="https://vel.gg/bsz" target="_blank" rel="noopener"><i class="fas fa-play" aria-hidden="true"></i> Play Black Ops Zombies With Friends</a></p>
+        <p><a class="game-launch-btn js-play-bo" href="#play"><i class="fas fa-play" aria-hidden="true"></i> Play Black Ops Zombies With Friends</a></p>
       </aside>
     </section>
 
@@ -653,6 +657,83 @@
     window.addEventListener('load', ensureRecommendations);
     setTimeout(ensureRecommendations, 1200);
 
+
+    // "Play With Friends" links scroll up to the player and press the site's standard Play button.
+    document.querySelectorAll('.js-play-bo').forEach((link) => {
+      link.addEventListener('click', (event) => {
+        event.preventDefault();
+        document.getElementById('play').scrollIntoView({ behavior: 'smooth', block: 'center' });
+        const playButton = document.querySelector('#play .game-play-button');
+        if (playButton) {
+          playButton.click();
+        }
+      });
+    });
+
+    const gameViewport = document.getElementById('black-ops-zombies-iframe');
+    const fullscreenButton = document.querySelector('.game-player-card .game-fullscreen-toggle');
+
+    if (gameViewport && fullscreenButton) {
+      const updateFullscreenIcon = () => {
+        const icon = fullscreenButton.querySelector('i');
+        if (!icon) {
+          return;
+        }
+        if (!document.fullscreenElement && !document.webkitFullscreenElement && !document.mozFullScreenElement && !document.msFullscreenElement) {
+          icon.classList.remove('fa-compress');
+          icon.classList.add('fa-expand');
+          const label = fullscreenButton.querySelector('span');
+          if (label) {
+            label.textContent = 'Fullscreen';
+          }
+        } else {
+          icon.classList.remove('fa-expand');
+          icon.classList.add('fa-compress');
+          const label = fullscreenButton.querySelector('span');
+          if (label) {
+            label.textContent = 'Exit Fullscreen';
+          }
+        }
+      };
+
+      const requestViewportFullscreen = () => {
+        const fsElement = gameViewport;
+        if (fsElement.requestFullscreen) {
+          fsElement.requestFullscreen({ navigationUI: 'hide' }).catch(() => fsElement.requestFullscreen());
+        } else if (fsElement.webkitRequestFullscreen) {
+          fsElement.webkitRequestFullscreen();
+        } else if (fsElement.mozRequestFullScreen) {
+          fsElement.mozRequestFullScreen();
+        } else if (fsElement.msRequestFullscreen) {
+          fsElement.msRequestFullscreen();
+        }
+      };
+
+      const exitFullscreen = () => {
+        if (document.exitFullscreen) {
+          document.exitFullscreen();
+        } else if (document.webkitExitFullscreen) {
+          document.webkitExitFullscreen();
+        } else if (document.mozCancelFullScreen) {
+          document.mozCancelFullScreen();
+        } else if (document.msExitFullscreen) {
+          document.msExitFullscreen();
+        }
+      };
+
+      fullscreenButton.addEventListener('click', () => {
+        if (!document.fullscreenElement && !document.webkitFullscreenElement && !document.mozFullScreenElement && !document.msFullscreenElement) {
+          requestViewportFullscreen();
+        } else {
+          exitFullscreen();
+        }
+      });
+
+      document.addEventListener('fullscreenchange', updateFullscreenIcon);
+      document.addEventListener('webkitfullscreenchange', updateFullscreenIcon);
+      document.addEventListener('mozfullscreenchange', updateFullscreenIcon);
+      document.addEventListener('MSFullscreenChange', updateFullscreenIcon);
+    }
 
   </script>
   <script src="../js/load-components.js" defer data-component-root="../"></script>
